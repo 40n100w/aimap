@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090b0c"><meta name="description" content="An explorable 3D atlas of the modern AI economy, from physical matter to end markets.">
+  <title>AI Ecosystem Atlas — See the whole machine</title>
+  <link rel="stylesheet" href="./public/standalone/ai-atlas.css">
+</head>
+<body>
+<a class="skip-link" href="#searchInput">Skip to controls</a>
+<main id="app">
+  <div id="scene" role="application" aria-label="Interactive 3D AI ecosystem. Use pointer to orbit and select nodes, or use the searchable controls."></div>
+  <header class="topbar">
+    <a class="brand" href="#" data-action="reset" aria-label="Reset AI Ecosystem Atlas"><span class="brand-mark">A·E</span><span><strong>AI Ecosystem</strong><small>System atlas / 2026</small></span></a>
+    <nav class="view-switch" aria-label="View mode"><button class="active" data-view="ecosystem">Ecosystem</button><button data-view="architecture">Architecture</button><button data-view="gravity">Gravity</button><button data-view="models">Models</button><button data-view="timeline">Timeline</button></nav>
+    <div class="top-actions"><button class="text-button" data-action="journeys">Journeys</button><button class="icon-button" data-action="methodology" aria-label="About the methodology">i</button></div>
+  </header>
+
+  <section class="intro" aria-labelledby="intro-title">
+    <p class="eyebrow">A living map of artificial intelligence</p><h1 id="intro-title">See the whole<br><em>machine.</em></h1>
+    <p>Explore the organizations, technologies and dependencies that turn physical matter into machine intelligence.</p>
+    <button class="explore" data-action="explore">Enter the ecosystem <span>↗</span></button>
+  </section>
+
+  <aside class="control-dock" aria-label="Explore controls">
+    <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search 955 entities" autocomplete="off" aria-label="Search companies and technologies"><kbd>⌘ K</kbd></div>
+    <div id="searchResults" class="search-results" hidden></div>
+    <button class="dock-button" data-action="layers"><span class="button-symbol">≡</span><span>Layers</span><b id="layerCount">12/12</b></button>
+    <button class="dock-button" data-action="relations"><span class="button-symbol">⌁</span><span>Relationships</span><b>ALL</b></button>
+    <button class="dock-button" data-action="time"><span class="button-symbol">◷</span><span>Time</span><b id="timeLabel">2026</b></button>
+    <button class="dock-button" data-action="geography"><span class="button-symbol">◎</span><span>Geography</span><b id="geoLabel">ALL</b></button>
+    <button class="dock-button" data-action="reset"><span class="button-symbol">↺</span><span>Reset universe</span></button>
+  </aside>
+
+  <aside id="filterPanel" class="floating-panel filters" hidden aria-label="Filters"></aside>
+  <aside id="detailPanel" class="detail-panel" hidden aria-live="polite"></aside>
+  <aside id="journeyPanel" class="journey-panel" hidden></aside>
+  <aside id="methodPanel" class="method-panel" hidden></aside>
+  <div id="journeyPlayer" class="journey-player" hidden></div>
+  <div id="traceNotice" class="trace-notice" hidden></div>
+  <section id="timelineView" class="timeline-view" hidden aria-label="AI ecosystem timeline"></section>
+  <aside class="model-guide" aria-hidden="true"><span>↑ Creation inputs</span><i>Selected model</i><span>↓ Deployment &amp; inference</span></aside>
+
+  <aside class="layer-rail" aria-hidden="true"><span>12</span><div class="rail-line"></div><p>Layers<br>from matter<br>to physical AI</p></aside>
+  <nav class="map-nav" aria-label="Map camera controls"><button data-camera="fit" title="Fit visible map (0)">Fit</button><button data-camera="front" title="Front view (1)">Front</button><button data-camera="top" title="Top view (2)">Top</button><button data-camera="zoom-out" title="Zoom out (−)" aria-label="Zoom out">−</button><button data-camera="zoom-in" title="Zoom in (+)" aria-label="Zoom in">+</button></nav>
+  <div class="legend" aria-label="Entity shape and relationship legend"><span><i class="shape organization"></i>Company</span><span><i class="shape hardware"></i>Hardware</span><span><i class="shape software"></i>Software</span><span><i class="line-key directional"></i>Flow direction</span></div>
+  <footer class="hud"><div><span class="pulse"></span><strong id="scopeCount">0 ENTITIES · 12 LAYERS</strong></div><p>Drag to orbit · Right-drag to pan · Scroll to zoom</p><span class="updated">DATA UPDATED 23 AUG 2026</span></footer>
+</main>
+<script defer src="./public/standalone/ai-atlas.js"></script>
+</body>
+</html>
