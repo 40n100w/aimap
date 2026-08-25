@@ -11,3 +11,9 @@
 /* Relationship flow and temporal snapshot controls. */
 .line-key.directional{position:relative;border-top-color:#d6a86b}.line-key.directional::after{content:"";position:absolute;right:-1px;top:-4px;border-left:5px solid #d6a86b;border-block:3px solid transparent}.time-control{padding:15px 2px 4px}.time-readout{display:flex;align-items:baseline;justify-content:space-between}.time-readout strong{font:28px 'DM Mono';font-weight:300;color:#e4c38f}.time-readout span{font:7px 'DM Mono';letter-spacing:.1em;text-transform:uppercase;color:#6e7674}.time-control input{width:100%;margin:18px 0 8px;accent-color:#d6a86b}.time-ticks{display:flex;justify-content:space-between;font:7px 'DM Mono';color:#69706f}.time-control p{margin:15px 0 0;font-size:9px;line-height:1.55;color:#858d8b}.time-control .time-key{display:grid;grid-template-columns:auto 1fr;gap:8px;margin-top:13px;padding-top:12px;border-top:1px solid var(--line);font:7px 'DM Mono';color:#747c7a}.time-key i{width:18px;border-top:2px solid #d6a86b;margin-top:4px}.time-key i.uncertain{opacity:.25}
 @media(max-width:760px){.control-dock .dock-button[data-action="time"]{display:flex}.time-control{padding-bottom:8px}}
+
+/* Browser fullscreen control. */
+.fullscreen-button{display:grid;place-items:center;font-style:normal}
+.fullscreen-button svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.fullscreen-button[data-fullscreen="true"] svg{transform:rotate(180deg)}
+.fullscreen-button:disabled{cursor:not-allowed;opacity:.35}

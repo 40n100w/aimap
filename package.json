@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "vite build --config vite.file.config.js && vite build",
     "preview": "vite preview",
-    "validate:data": "node scripts/validate-data.mjs"
+    "validate:data": "node scripts/validate-data.mjs",
+    "validate:locations": "node scripts/validate-locations.mjs",
+    "report:location-coverage": "node scripts/report-location-coverage.mjs"
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
     "three": "^0.179.1"
   },
   "devDependencies": {

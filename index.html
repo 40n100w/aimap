@@ -12,8 +12,8 @@
   <div id="scene" role="application" aria-label="Interactive 3D AI ecosystem. Use pointer to orbit and select nodes, or use the searchable controls."></div>
   <header class="topbar">
     <a class="brand" href="#" data-action="reset" aria-label="Reset AI Ecosystem Atlas"><span class="brand-mark">A·E</span><span><strong>AI Ecosystem</strong><small>System atlas / 2026</small></span></a>
-    <nav class="view-switch" aria-label="View mode"><button class="active" data-view="ecosystem">Ecosystem</button><button data-view="architecture">Architecture</button><button data-view="gravity">Gravity</button><button data-view="models">Models</button><button data-view="timeline">Timeline</button></nav>
-    <div class="top-actions"><button class="text-button" data-action="journeys">Journeys</button><button class="icon-button" data-action="methodology" aria-label="About the methodology">i</button></div>
+    <nav class="view-switch" aria-label="View mode"><button class="active" data-view="ecosystem">Ecosystem</button><button data-view="architecture">Architecture</button><button data-view="gravity">Gravity</button><button data-view="models">Models</button><button data-view="timeline">Timeline</button><button data-view="map">Map</button></nav>
+    <div class="top-actions"><button class="text-button" data-action="journeys">Journeys</button><button class="icon-button fullscreen-button" data-action="fullscreen" aria-label="Enter fullscreen" aria-pressed="false" title="Enter fullscreen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5m13 5h5v-5"/></svg></button><button class="icon-button" data-action="methodology" aria-label="About the methodology">i</button></div>
   </header>
 
   <section class="intro" aria-labelledby="intro-title">
@@ -39,6 +39,16 @@
   <div id="journeyPlayer" class="journey-player" hidden></div>
   <div id="traceNotice" class="trace-notice" hidden></div>
   <section id="timelineView" class="timeline-view" hidden aria-label="AI ecosystem timeline"></section>
+  <section id="officeMapView" class="office-map-view" hidden aria-label="Verified company office map">
+    <div id="officeMap" class="office-map-canvas"></div>
+    <header class="office-map-head">
+      <p>Verified physical footprint</p>
+      <h1>Company offices</h1>
+      <span id="officeMapStats">Loading verified buildings…</span>
+    </header>
+    <button id="officeMapReset" class="office-map-reset" type="button" hidden>Show every company ×</button>
+    <p class="office-map-note">Hover for company · Select a dot to isolate every office from that company · Scroll or pinch to zoom</p>
+  </section>
   <aside class="model-guide" aria-hidden="true"><span>↑ Creation inputs</span><i>Selected model</i><span>↓ Deployment &amp; inference</span></aside>
 
   <aside class="layer-rail" aria-hidden="true"><span>12</span><div class="rail-line"></div><p>Layers<br>from matter<br>to physical AI</p></aside>
