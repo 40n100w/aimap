@@ -48380,6 +48380,27 @@
       "verifiedOn": "2026-08-25",
       "researchComplete": true,
       "researchNote": "Complete current disclosed-office outcome. Udio’s live official careers board describes its Manhattan office and lists New York City roles, while its first-party Holiday Challenge rules publish the company contact address at 750 Lexington Avenue, Floor 9. The live board discloses no second employee office; roles that are open to remote work do not establish additional premises."
+    },
+    {
+      "id": "airi-001",
+      "companyId": "airi",
+      "companyName": "AIRI",
+      "locationName": "Moscow City office",
+      "locationType": "headquarters",
+      "address": "Empire Business Complex, 6 Presnenskaya Embankment, Building 2, Floor 4, Moscow 123112, Russia",
+      "country": "Russia",
+      "latitude": 55.7482496,
+      "longitude": 37.5401354,
+      "coordinateAccuracy": "building",
+      "status": "map_ready",
+      "sourceUrl": "https://airi.net/ru/?force=ru",
+      "sourceType": "official_institute_contact_page",
+      "supportingSourceUrl": "https://airi.net/upload/iblock/d60/a4juzn9r1ysqvt90eecitnynahmvi5ji/AIRI_report_2024_digital_eng.pdf",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/4821286521",
+      "coordinateSourceType": "openstreetmap_exact_address_point",
+      "verifiedOn": "2026-08-25",
+      "researchComplete": true,
+      "researchNote": "Complete current office outcome. AIRI’s official contact page identifies a single office in the Empire business complex at 6 Presnenskaya Embankment, Building 2, fourth floor. Its latest published annual report independently repeats the same address and discloses no additional AIRI premises. Partner laboratories and collaborator institutions are excluded."
     }
   ],
   "researchOutcomes": [
@@ -48404,6 +48425,17 @@
       "verifiedOn": "2026-08-25",
       "researchComplete": true,
       "researchNote": "Complete zero-location outcome. Gretel identifies itself as a remote company across the U.S. and Canada, funds home offices, and offers optional coworking access. Its San Diego contact suite and Sunnyvale post-office box are not documented as employee premises. Employee homes, coworking choices, NVIDIA parent-company offices, and cloud infrastructure are excluded."
+    },
+    {
+      "companyId": "bigscience",
+      "companyName": "BigScience",
+      "outcome": "no_physical_office",
+      "sourceUrl": "https://huggingface.co/bigscience",
+      "sourceType": "official_project_organization_profile",
+      "supportingSourceUrl": "https://huggingface.co/spaces/bigscience/data-host-provider-agreement/blob/main/data_host_provider_agreement.txt",
+      "verifiedOn": "2026-08-25",
+      "researchComplete": true,
+      "researchNote": "Complete zero-location outcome. Despite being represented as a Company record in the atlas, BigScience identifies itself as a one-year open, collaborative research workshop involving more than 1,000 participants across 60 countries and many independent institutions—not as an operating company with employee premises. Hugging Face facilities, contributor institutions, participant homes, and the Jean Zay compute site are not BigScience offices and are excluded."
     }
   ]
 }
