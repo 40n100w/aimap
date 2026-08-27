@@ -1,12 +1,10 @@
-import { readFileSync } from 'node:fs';
-import { entities } from '../src/data.js';
+import { entities, officeLocations } from './load-csv-data.mjs';
 
-const path = new URL('../research/office-locations/locations.json', import.meta.url);
-const data = JSON.parse(readFileSync(path, 'utf8'));
+const data = { locations: officeLocations };
 const companyIds = new Set(entities.filter(entity => entity.type === 'Company').map(entity => entity.id));
 const ids = new Set();
 const errors = [];
-const outcomes = data.researchOutcomes ?? [];
+const outcomes = [];
 
 for (const [index, location] of data.locations.entries()) {
   const label = location.id || `record ${index + 1}`;

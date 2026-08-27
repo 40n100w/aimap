@@ -1,0 +1,13 @@
+id,name,short,y,color,symbol
+materials,Raw materials & industrial inputs,Materials,-55,#9b806b,◇
+equipment,Semiconductor equipment & components,Equipment,-45,#a08f6a,⬡
+fabrication,Fabrication & advanced packaging,Fabrication,-35,#72938e,◆
+compute,Compute hardware,Compute,-25,#5f8798,▣
+datacenter,Data center & system hardware,Data centers,-15,#718b93,▤
+cloud,Cloud & hyperscalers,Cloud,-5,#7d7aa1,◉
+models,Foundation model labs,Models,5,#998095,✦
+infra,Model & AI infrastructure,AI infrastructure,15,#8f7c9e,⬢
+developer,AI developer stack,Developer stack,25,#819b7a,⌘
+agents,AI harness & agent layer,Agents / harness,35,#a18b6c,◎
+applications,Application companies,Applications,45,#9b776e,▱
+robotics,Robotics & physical AI,Physical AI,55,#748e85,△

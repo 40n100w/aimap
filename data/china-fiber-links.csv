@@ -1,0 +1,48 @@
+id,network_id,source_node,target_node,confidence,relationship,notes,source_url
+chinanet-bj-sh,chinanet,beijing,shanghai,logical,backbone connectivity,"Logical link between documented national core hubs; not a physical route.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+chinanet-sh-gz,chinanet,shanghai,guangzhou,logical,backbone connectivity,"Logical link between documented national core hubs; not a physical route.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+chinanet-gz-bj,chinanet,guangzhou,beijing,logical,backbone connectivity,"Logical link between documented national core hubs; not a physical route.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+china169-bj-sh,china169,beijing,shanghai,logical,backbone connectivity,"Logical link between documented national core hubs; not a physical route.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+china169-sh-gz,china169,shanghai,guangzhou,logical,backbone connectivity,"Logical link between documented national core hubs; not a physical route.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+china169-gz-bj,china169,guangzhou,beijing,logical,backbone connectivity,"Logical link between documented national core hubs; not a physical route.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+cmnet-bj-sh,cmnet,beijing,shanghai,logical,backbone connectivity,"Logical link between documented national core hubs; not a physical route.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+cmnet-sh-gz,cmnet,shanghai,guangzhou,logical,backbone connectivity,"Logical link between documented national core hubs; not a physical route.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+cmnet-gz-bj,cmnet,guangzhou,beijing,logical,backbone connectivity,"Logical link between documented national core hubs; not a physical route.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+cn2-bj-sh,cn2,beijing,shanghai,logical,core connectivity,"Logical CN2 core; physical alignment unavailable.",https://www.ctamericas.com/wp-content/uploads/2023/02/China-Telecom-Global-Infrastructure-Map.pdf
+cn2-sh-gz,cn2,shanghai,guangzhou,logical,core connectivity,"Logical CN2 core; physical alignment unavailable.",https://www.ctamericas.com/wp-content/uploads/2023/02/China-Telecom-Global-Infrastructure-Map.pdf
+cuii-bj-sh,cuii,beijing,shanghai,logical,core connectivity,"Logical premium-network core; physical alignment unavailable.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+cuii-sh-gz,cuii,shanghai,guangzhou,logical,core connectivity,"Logical premium-network core; physical alignment unavailable.",https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+cmi-bj-sh,cmi,beijing,shanghai,logical,core connectivity,"Logical domestic CMI connectivity; physical alignment unavailable.",https://mainwebapi.cmi.chinamobile.com/uploads/template/202310273c5756c2ad770d0dda80d752ccf4112a.pdf
+cmi-sh-gz,cmi,shanghai,guangzhou,logical,core connectivity,"Logical domestic CMI connectivity; physical alignment unavailable.",https://mainwebapi.cmi.chinamobile.com/uploads/template/202310273c5756c2ad770d0dda80d752ccf4112a.pdf
+broadnet-bj-sh,china-broadnet,beijing,shanghai,logical,interconnection,"Logical connection between national backbone interconnection points.",https://www.nrta.gov.cn/art/2018/6/12/art_114_38173.html
+broadnet-sh-gz,china-broadnet,shanghai,guangzhou,logical,interconnection,"Logical connection between national backbone interconnection points.",https://www.nrta.gov.cn/art/2018/6/12/art_114_38173.html
+cernet-bj-xa,cernet,beijing,xian,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-xa-cd,cernet,xian,chengdu,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-cd-wh,cernet,chengdu,wuhan,documented_topology,published backbone link,"Topology link through Chongqing corridor.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-wh-nj,cernet,wuhan,nanjing,documented_topology,published backbone link,"Topology link through Hefei corridor.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-nj-sh,cernet,nanjing,shanghai,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-sh-hz,cernet,shanghai,hangzhou,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-wh-cs,cernet,wuhan,changsha,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-cs-gz,cernet,changsha,guangzhou,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-gz-sz,cernet,guangzhou,shenzhen,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-sz-xm,cernet,shenzhen,xiamen,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-bj-tj,cernet,beijing,tianjin,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-bj-sy,cernet,beijing,shenyang,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-sy-cc,cernet,shenyang,changchun,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet-cc-heb,cernet,changchun,harbin,documented_topology,published backbone link,"Topology link, not surveyed fiber alignment.",https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+cernet2-bj-sh,cernet2,beijing,shanghai,documented_topology,representative mesh link,"Representative published CERNET2 mesh core.",https://cerecp.cernet.edu.cn/en/topology/cernet.shtml
+cernet2-sh-gz,cernet2,shanghai,guangzhou,documented_topology,representative mesh link,"Representative published CERNET2 mesh core.",https://cerecp.cernet.edu.cn/en/topology/cernet.shtml
+cernet2-gz-wh,cernet2,guangzhou,wuhan,documented_topology,representative mesh link,"Representative published CERNET2 mesh core.",https://cerecp.cernet.edu.cn/en/topology/cernet.shtml
+cernet2-wh-bj,cernet2,wuhan,beijing,documented_topology,representative mesh link,"Representative published CERNET2 mesh core.",https://cerecp.cernet.edu.cn/en/topology/cernet.shtml
+cstnet-bj-sh,cstnet,beijing,shanghai,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-gz,cstnet,beijing,guangzhou,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-cd,cstnet,beijing,chengdu,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-wh,cstnet,beijing,wuhan,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-nj,cstnet,beijing,nanjing,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-sy,cstnet,beijing,shenyang,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-cc,cstnet,beijing,changchun,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-km,cstnet,beijing,kunming,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-xa,cstnet,beijing,xian,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-lz,cstnet,beijing,lanzhou,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-urumqi,cstnet,beijing,urumqi,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing
+cstnet-bj-hf,cstnet,beijing,hefei,logical,operating-center connectivity,"Logical connection between reported CSTNET operating centers.",https://www.cstnet.cn/runing

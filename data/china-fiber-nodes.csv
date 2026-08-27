@@ -1,0 +1,23 @@
+id,name,province,latitude,longitude,node_role,source_url
+beijing,Beijing,Beijing,39.9042,116.4074,national core and interconnection hub,https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+shanghai,Shanghai,Shanghai,31.2304,121.4737,national core and interconnection hub,https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+guangzhou,Guangzhou,Guangdong,23.1291,113.2644,national core and interconnection hub,https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+chengdu,Chengdu,Sichuan,30.5728,104.0668,national backbone direct-connection point,https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+wuhan,Wuhan,Hubei,30.5928,114.3055,national backbone direct-connection point,https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+xian,Xi'an,Shaanxi,34.3416,108.9398,national backbone direct-connection point,https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+shenyang,Shenyang,Liaoning,41.8057,123.4315,national backbone direct-connection point,https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+nanjing,Nanjing,Jiangsu,32.0603,118.7969,national backbone direct-connection point,https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+chongqing,Chongqing,Chongqing,29.5630,106.5516,national backbone direct-connection point,https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+zhengzhou,Zhengzhou,Henan,34.7466,113.6254,national backbone direct-connection point,https://www.cac.gov.cn/2014-02/26/c_126195316.htm
+tianjin,Tianjin,Tianjin,39.3434,117.3616,published CERNET node,https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+jinan,Jinan,Shandong,36.6512,117.1201,published CERNET node,https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+hefei,Hefei,Anhui,31.8206,117.2272,published CERNET and CSTNET center,https://www.cstnet.cn/runing
+hangzhou,Hangzhou,Zhejiang,30.2741,120.1551,published CERNET node,https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+changsha,Changsha,Hunan,28.2282,112.9388,published CERNET node,https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+shenzhen,Shenzhen,Guangdong,22.5431,114.0579,published CERNET node,https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+xiamen,Xiamen,Fujian,24.4798,118.0894,published CERNET node,https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+lanzhou,Lanzhou,Gansu,36.0611,103.8343,published CERNET and CSTNET center,https://www.cstnet.cn/runing
+changchun,Changchun,Jilin,43.8171,125.3235,published CERNET and CSTNET center,https://www.cstnet.cn/runing
+harbin,Harbin,Heilongjiang,45.8038,126.5349,published CERNET node,https://pkucc50.pku.edu.cn/docs/20131014093804829713.pdf
+kunming,Kunming,Yunnan,25.0389,102.7183,CSTNET operating center,https://www.cstnet.cn/runing
+urumqi,Urumqi,Xinjiang,43.8256,87.6168,CSTNET operating center,https://www.cstnet.cn/runing

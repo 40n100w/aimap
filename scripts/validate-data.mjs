@@ -1,4 +1,4 @@
-import { entities,relationships,representativePaths,aliases,LAYERS } from '../src/data.js';
+import { entities,relationships,representativePaths,aliases,LAYERS } from './load-csv-data.mjs';
 
 const errors=[];
 const ids=new Set();

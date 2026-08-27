@@ -8,9 +8,8 @@ The site is fully static and GitHub Pages-safe: there is no backend, database, a
 
 ```text
 index.html          Accessible application shell and interface overlays
-src/data.js         Core entities, typed relationships, layers and journeys
-src/catalog.js      Broad subcluster catalog used to build the 955-node edition
-src/geography.js    Curated US, Chinese and Russian ecosystem classifications
+data/*.csv          Editable entities, relationships, layers, journeys and map points
+src/data.js         CSV parsing and typed runtime data adapter
 src/scene.js        Three.js scene, camera, node layout, lines, focus and traces
 src/ui.js           Search, filters, panels, journeys and textual interactions
 src/main.js         Application bootstrap
@@ -38,16 +37,16 @@ npm run build
 ```
 
 The command first refreshes the standalone browser assets, then writes the
-deployable site to `dist/`. You can also double-click `index.html`; its classic
-IIFE bundle does not depend on HTTP module loading.
+deployable site to `dist/index.html`. That one file contains the complete site,
+including its styles, JavaScript, libraries, and data, so it can be transferred
+by itself and opened directly in a browser. The root `index.html` remains the
+lighter development copy and uses the generated files in `public/standalone/`.
 
 ## Data schema
 
-Core ecosystem knowledge and direct relationships live in `src/data.js`.
-The broader taxonomy lives in `src/catalog.js`, separate from visualization
-code. The current edition deliberately stops at 955 visible entities so there
-is room beneath the 1,000-entity ceiling for future high-priority additions.
-Geographic views use the `geography` field derived by `src/geography.js`.
+All website records live in the CSV files under `data/`. See `data/README.md`
+for the file-by-file schema and manual editing rules. The current edition
+contains 2,000 visible entities. Geographic views use the `geography` column.
 Geography is an editorial classification of principal association rather than
 a claim about incorporation, ownership, data residency, or every market where
 an organization operates.
@@ -89,23 +88,19 @@ Supported evidence statuses are `confirmed`, `reported`, `inferred`, and `repres
 
 ## Add an entity
 
-1. For a core/high-impact entity, choose the appropriate group in `groups`
-   inside `src/data.js`. For broader coverage, add it to the relevant cluster
-   in `src/catalog.js`.
-2. Add a unique, URL-safe ID and the entity tuple: ID, display name, type, country, products, and importance (1–3).
-3. Keep `positionIndex` automatic; it is derived from layer order. Layer budgets
-   in `src/data.js` select members evenly across subclusters.
-4. Run `npm run build` and search for the new entity in the interface.
+1. Add a row to `data/entities.csv` with a unique URL-safe ID.
+2. Use JSON array syntax in `categories`, `products`, and `profileSources`.
+3. Give the row a unique numeric `positionIndex` within its layer.
+4. Run `npm run check:data`, then `npm run build` and search for the entity.
 
 To add a new kind of metadata, extend the entity mapper in `src/data.js`, then render it in `UI.showEntity()`.
 
 ## Add a relationship
 
-Add an `R()` entry to `relationships`:
+Add a row to `data/relationships.csv`:
 
 ```js
-R('supplier-id', 'customer-id', 'SUPPLIES',
-  'A concise explanation of the relationship.', 'reported')
+supplier-id,customer-id,SUPPLIES,A concise explanation,reported
 ```
 
 Both IDs must exist in `entities` or be mapped in `aliases`. Relationship types are discovered automatically for the filter. Prefer the existing vocabulary: `SUPPLIES`, `MANUFACTURES`, `DESIGNS`, `RUNS_ON`, `TRAINS_ON`, `HOSTS`, `INVESTS_IN`, `PARTNERS_WITH`, `INTEGRATES_WITH`, `COMPETES_WITH`, `DEPENDS_ON`, `PROVIDES_MEMORY_TO`, `PROVIDES_EQUIPMENT_TO`, `PROVIDES_NETWORKING_TO`, `USES_MODEL_FROM`, `PART_OF`, and `ENABLES`. Taxonomy links must remain `representative` so cluster membership is never mistaken for a supplier contract.
@@ -118,7 +113,7 @@ Both IDs must exist in `entities` or be mapped in `aliases`. Relationship types 
 
 1. Run `npm run build`.
 2. In the repository’s **Settings → Pages**, choose **GitHub Actions** as the source, or publish the contents of `dist/` with your preferred Pages action.
-3. Configure the action to run `npm ci` and `npm run build`, then upload `dist/` as the Pages artifact.
+3. Configure the action to run `npm ci` and `npm run build`, then upload `dist/` as the Pages artifact. The artifact contains just one website file: `index.html`.
 
 Vite’s `base: './'` setting makes generated assets relative, so the site works at both `username.github.io` and `username.github.io/repository-name/`.
 
