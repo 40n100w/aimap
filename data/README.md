@@ -32,12 +32,13 @@ quote those cells automatically when saving.
 
 For a map point to appear, set `status` to `map_ready`,
 `coordinateAccuracy` to `building`, and provide numeric `latitude` and
-`longitude`. Save as UTF-8 CSV, then run `npm run check:data` and `npm run build`.
+`longitude`. Save as UTF-8 CSV, then refresh the website. Run
+`npm run check:data` when you want to validate the edit; rebuilding is not
+needed for CSV-only changes.
 
-The built page still opens directly from disk. Browsers do not allow a page
-opened with `file://` to fetch neighboring files, so the build embeds the CSV
-content into the standalone JavaScript. Rebuild after editing a CSV to refresh
-that offline copy.
+When opened directly from disk, choose this `data` folder in the page's folder
+picker. Browsers require that explicit permission before a local HTML page can
+read neighboring files. The page remains fully offline and needs no server.
 
 ## Submarine-cable attribution
 

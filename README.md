@@ -25,6 +25,11 @@ Three.js renders the universe to one WebGL canvas. Important labels use a small 
 
 Requires Node.js 20 or newer.
 
+The page can also be opened directly from disk with no server or internet
+connection. Drag the neighboring `data` folder onto the prompt, or choose it
+with the folder picker in browsers that support local directory access. CSV
+edits appear after a refresh and loading the folder again.
+
 ```bash
 npm install
 npm run dev
@@ -37,10 +42,12 @@ npm run build
 ```
 
 The command first refreshes the standalone browser assets, then writes the
-deployable site to `dist/index.html`. That one file contains the complete site,
-including its styles, JavaScript, libraries, and data, so it can be transferred
-by itself and opened directly in a browser. The root `index.html` remains the
-lighter development copy and uses the generated files in `public/standalone/`.
+deployable site to `dist/`. The JavaScript and styles are contained in
+`dist/index.html`; the editable CSV database is copied to `dist/data/`. Serve
+that folder over HTTP. After the initial build, CSV-only changes can be made
+directly in `dist/data/` and appear on the next browser refresh without another
+build. The root site likewise reads directly from the repository's `data/`
+folder when served by Vite or another static server.
 
 ## Data schema
 
@@ -91,7 +98,8 @@ Supported evidence statuses are `confirmed`, `reported`, `inferred`, and `repres
 1. Add a row to `data/entities.csv` with a unique URL-safe ID.
 2. Use JSON array syntax in `categories`, `products`, and `profileSources`.
 3. Give the row a unique numeric `positionIndex` within its layer.
-4. Run `npm run check:data`, then `npm run build` and search for the entity.
+4. Refresh the served website and search for the entity. Run
+   `npm run check:data` when you want to validate the edit.
 
 To add a new kind of metadata, extend the entity mapper in `src/data.js`, then render it in `UI.showEntity()`.
 

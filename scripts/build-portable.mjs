@@ -1,4 +1,4 @@
-import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
 const [html, javascript, css] = await Promise.all([
@@ -21,3 +21,4 @@ const outputDirectory = new URL('dist/', root);
 await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
 await writeFile(new URL('index.html', outputDirectory), portableHtml);
+await cp(new URL('data/', root), new URL('data/', outputDirectory), { recursive: true });
