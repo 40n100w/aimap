@@ -1,8 +1,13 @@
-import { chinaFiberLinks, chinaFiberNetworks, chinaFiberNodes } from './load-csv-data.mjs';
+import { chinaFiberLinks, chinaFiberNetworks, chinaFiberNodes, dataCenterNetworkLinks, nationalComputeHubs } from './load-csv-data.mjs';
+import { readFileSync } from 'node:fs';
+import { parseCsv } from '../src/csv.js';
 
 const errors=[],networkIds=new Set(),nodeIds=new Set(),linkIds=new Set();
 for(const network of chinaFiberNetworks){if(!network.id||networkIds.has(network.id))errors.push(`Missing or duplicate network: ${network.id}`);networkIds.add(network.id);if(!network.name||!network.operator||!network.source_url)errors.push(`${network.id}: incomplete network metadata`)}
 for(const node of chinaFiberNodes){if(!node.id||nodeIds.has(node.id))errors.push(`Missing or duplicate node: ${node.id}`);nodeIds.add(node.id);if(!Number.isFinite(node.latitude)||!Number.isFinite(node.longitude))errors.push(`${node.id}: invalid coordinates`)}
 for(const link of chinaFiberLinks){if(!link.id||linkIds.has(link.id))errors.push(`Missing or duplicate link: ${link.id}`);linkIds.add(link.id);if(!networkIds.has(link.network_id))errors.push(`${link.id}: unknown network ${link.network_id}`);if(!nodeIds.has(link.source_node)||!nodeIds.has(link.target_node))errors.push(`${link.id}: unknown endpoint`);if(!['logical','documented_topology'].includes(link.confidence))errors.push(`${link.id}: invalid confidence`)}
+const campusIds=new Set(parseCsv(readFileSync(new URL('../data/data-center-campuses.csv',import.meta.url),'utf8')).map(site=>site.id)),hubIds=new Set();
+for(const hub of nationalComputeHubs){if(!hub.id||hubIds.has(hub.id))errors.push(`Missing or duplicate national hub: ${hub.id}`);hubIds.add(hub.id);if(!Number.isFinite(hub.latitude)||!Number.isFinite(hub.longitude)||!hub.source_url)errors.push(`${hub.id}: incomplete national hub`)}
+for(const link of dataCenterNetworkLinks){if(!campusIds.has(link.campus_id))errors.push(`${link.id}: unknown campus`);if(!nodeIds.has(link.backbone_node_id))errors.push(`${link.id}: unknown backbone node`);if(!hubIds.has(link.national_hub_id))errors.push(`${link.id}: unknown national hub`);if(link.confidence!=='inferred_last_mile')errors.push(`${link.id}: campus access must remain explicitly inferred`);if(!Number.isFinite(link.distance_to_backbone_km)||!Number.isFinite(link.distance_to_national_hub_km))errors.push(`${link.id}: invalid distance`)}
 if(errors.length){console.error(errors.join('\n'));process.exit(1)}
-console.log(`${chinaFiberNetworks.length} China fiber networks; ${chinaFiberNodes.length} backbone nodes; ${chinaFiberLinks.length} topology links`);
+console.log(`${chinaFiberNetworks.length} China fiber networks; ${chinaFiberNodes.length} backbone nodes; ${chinaFiberLinks.length} topology links; ${nationalComputeHubs.length} national compute clusters; ${dataCenterNetworkLinks.length} campus access links`);

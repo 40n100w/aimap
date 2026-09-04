@@ -26,6 +26,8 @@ export class OfficeMapView{
     this.chinaNetworks=cableData.chinaNetworks||[];
     this.chinaNodes=cableData.chinaNodes||[];
     this.chinaLinks=cableData.chinaLinks||[];
+    this.dataCenterNetworkLinks=cableData.dataCenterNetworkLinks||[];
+    this.nationalComputeHubs=(cableData.nationalComputeHubs||[]).filter(hub=>Number.isFinite(hub.latitude)&&Number.isFinite(hub.longitude));
     this.internetExchanges=(cableData.internetExchanges||[]).filter(exchange=>Number.isFinite(exchange.latitude)&&Number.isFinite(exchange.longitude));
     this.modelInferenceRegions=(cableData.modelInferenceRegions||[]).filter(region=>Number.isFinite(region.latitude)&&Number.isFinite(region.longitude));
     this.modelNetworkLinks=cableData.modelNetworkLinks||[];
@@ -34,6 +36,9 @@ export class OfficeMapView{
     this.dataCenterMarkers=[];
     this.cableLines=[];
     this.chinaFiberLines=[];
+    this.dataCenterAccessLines=[];
+    this.chinaNodeMarkers=[];
+    this.nationalHubMarkers=[];
     this.modelRegionMarkers=[];
     this.modelPathLines=[];
     this.modelOfficeMarkers=[];
@@ -57,7 +62,7 @@ export class OfficeMapView{
     this.dataCenterLayer=L.layerGroup().addTo(this.map);
     this.officeLayer=L.layerGroup();
     this.cableLayer=L.layerGroup();
-    this.chinaFiberLayer=L.layerGroup();
+    this.chinaFiberLayer=L.layerGroup().addTo(this.map);
     this.exchangeLayer=L.layerGroup();
     this.modelInferenceLayer=L.layerGroup();
     this.cableRenderer=L.canvas({padding:.5});
@@ -222,17 +227,33 @@ export class OfficeMapView{
       if(!source||!target||!network)continue;
       const logical=link.confidence==='logical';
       const line=L.polyline([[source.latitude,source.longitude],[target.latitude,target.longitude]],{renderer:this.chinaFiberRenderer,color:network.color,weight:logical?2:2.6,opacity:logical ? .72 : .9,dashArray:logical?'3 7':null,bubblingMouseEvents:false});
-      line.networkId=network.id;line.baseStyle={color:network.color,weight:logical?2:2.6,opacity:logical ? .72 : .9,dashArray:logical?'3 7':null};
+      line.networkId=network.id;line.linkId=link.id;line.baseStyle={color:network.color,weight:logical?2:2.6,opacity:logical ? .72 : .9,dashArray:logical?'3 7':null};
       line.bindTooltip(`${network.name} · ${logical?'logical connection':'documented topology'}`,{sticky:true,className:'office-company-tooltip'});
-      line.on('click',()=>this.selectChinaNetwork(network.id));
+      line.on('click',()=>this.selectChinaFiberLink(link.id));
       line.addTo(this.chinaFiberLayer);this.chinaFiberLines.push(line);
     }
     for(const node of this.chinaNodes){
       const marker=L.circleMarker([node.latitude,node.longitude],{renderer:this.chinaFiberRenderer,radius:4,weight:1.5,color:'#f5d88b',fillColor:'#151b1b',fillOpacity:1,opacity:.9});
-      marker.bindTooltip(`${node.name} · ${node.node_role}`,{direction:'top',className:'office-company-tooltip'});
-      marker.addTo(this.chinaFiberLayer);bounds.push([node.latitude,node.longitude]);
+      marker.nodeId=node.id;marker.bindTooltip(`${node.name} · ${node.node_role}`,{direction:'top',className:'office-company-tooltip'});
+      marker.on('click',()=>this.selectChinaNode(node.id));marker.addTo(this.chinaFiberLayer);this.chinaNodeMarkers.push(marker);bounds.push([node.latitude,node.longitude]);
     }
+    this.addNationalComputeHubs(bounds,nodes);
+    this.addDataCenterAccessLinks(nodes);
   }
+
+  addNationalComputeHubs(bounds,backboneNodes){
+    for(const hub of this.nationalComputeHubs){const marker=L.circleMarker([hub.latitude,hub.longitude],{renderer:this.chinaFiberRenderer,radius:8,weight:2,color:'#fff0a6',fillColor:'#b88516',fillOpacity:.48,opacity:1,className:'national-compute-hub'});marker.hubId=hub.id;marker.bindTooltip(`${hub.cluster_name} · ${hub.hub_region}`,{direction:'top',className:'office-company-tooltip'});marker.on('click',()=>this.selectNationalHub(hub.id));marker.addTo(this.chinaFiberLayer);this.nationalHubMarkers.push(marker);bounds.push([hub.latitude,hub.longitude])}
+  }
+
+  addDataCenterAccessLinks(backboneNodes){const sites=new Map(this.dataCenters.map(site=>[site.id,site]));for(const link of this.dataCenterNetworkLinks){const site=sites.get(link.campus_id),node=backboneNodes.get(link.backbone_node_id);if(!site||!node)continue;const line=L.polyline([[site.latitude,site.longitude],[node.latitude,node.longitude]],{renderer:this.chinaFiberRenderer,color:'#86a9af',weight:1,opacity:.28,dashArray:'2 6',className:'campus-access-line'});line.accessLinkId=link.id;line.baseStyle={color:'#86a9af',weight:1,opacity:.28,dashArray:'2 6'};line.bindTooltip(`${site.name} → ${node.name} · inferred access`,{sticky:true,className:'office-company-tooltip'});line.on('click',()=>this.selectDataCenterAccessLink(link.id));line.addTo(this.chinaFiberLayer);this.dataCenterAccessLines.push(line)} }
+
+  selectChinaFiberLink(linkId){const link=this.chinaLinks.find(item=>item.id===linkId),network=this.chinaNetworks.find(item=>item.id===link?.network_id),source=this.chinaNodes.find(item=>item.id===link?.source_node),target=this.chinaNodes.find(item=>item.id===link?.target_node);if(!link||!network||!source||!target)return;this.clearDataCenterSelection(false);this.clearSelection(false);this.clearCableSelection(false);this.clearModelSelection(false);for(const line of this.chinaFiberLines)line.setStyle(line.linkId===linkId?{weight:4.5,opacity:1}:{weight:1,opacity:.07});const detail=this.root.querySelector('#cableDetail');detail.innerHTML=`<button type="button" data-close-cable aria-label="Close fiber-link details">×</button><p class="eyebrow">${this.escape(link.confidence.replaceAll('_',' '))}</p><h2>${this.escape(source.name)} → ${this.escape(target.name)}</h2><p class="detail-lede">${this.escape(link.notes)}</p><dl><div><dt>Backbone</dt><dd>${this.escape(network.name)}</dd></div><div><dt>Operator</dt><dd>${this.escape(network.operator)}</dd></div><div><dt>Network type</dt><dd>${this.escape(network.network_type)}</dd></div><div><dt>Relationship</dt><dd>${this.escape(link.relationship)}</dd></div></dl><a href="${this.escape(link.source_url)}" target="_blank" rel="noreferrer">Open topology source ↗</a><small>A line shows documented topology or logical connectivity between cities. Unless explicitly stated otherwise it is not a surveyed conduit path, fiber pair, wavelength, latency measurement, or proof of campus traffic.</small>`;detail.hidden=false}
+
+  selectChinaNode(nodeId){const node=this.chinaNodes.find(item=>item.id===nodeId);if(!node)return;const links=this.chinaLinks.filter(link=>link.source_node===nodeId||link.target_node===nodeId),networks=[...new Set(links.map(link=>this.chinaNetworks.find(network=>network.id===link.network_id)?.name).filter(Boolean))],campuses=this.dataCenterNetworkLinks.filter(link=>link.backbone_node_id===nodeId);this.map.flyTo([node.latitude,node.longitude],Math.max(this.map.getZoom(),6),{duration:.5});const detail=this.root.querySelector('#cableDetail');detail.innerHTML=`<button type="button" data-close-cable aria-label="Close backbone-node details">×</button><p class="eyebrow">Backbone interconnection node</p><h2>${this.escape(node.name)}</h2><dl><div><dt>Province</dt><dd>${this.escape(node.province)}</dd></div><div><dt>Published role</dt><dd>${this.escape(node.node_role)}</dd></div><div><dt>Mapped backbone links</dt><dd>${links.length}</dd></div><div><dt>Networks represented</dt><dd>${networks.length}</dd></div><div><dt>Associated compute footprints</dt><dd>${campuses.length}</dd></div></dl><section><h3>Networks at this mapped node</h3><p>${networks.map(name=>this.escape(name)).join(' · ')||'No named network'}</p></section><a href="${this.escape(node.source_url)}" target="_blank" rel="noreferrer">Open node source ↗</a><small>Campus associations use nearest-node geography where operator access contracts are not public. They indicate a cartographic attachment point, not a confirmed carrier circuit.</small>`;detail.hidden=false}
+
+  selectNationalHub(hubId){const hub=this.nationalComputeHubs.find(item=>item.id===hubId);if(!hub)return;const links=this.dataCenterNetworkLinks.filter(link=>link.national_hub_id===hubId);this.map.flyTo([hub.latitude,hub.longitude],Math.max(this.map.getZoom(),6),{duration:.5});const detail=this.root.querySelector('#cableDetail');detail.innerHTML=`<button type="button" data-close-cable aria-label="Close national-hub details">×</button><p class="eyebrow">East Data, West Computing</p><h2>${this.escape(hub.cluster_name)}</h2><p class="detail-lede">${this.escape(hub.description)}</p><dl><div><dt>National hub</dt><dd>${this.escape(hub.hub_region)}</dd></div><div><dt>Location</dt><dd>${this.escape(hub.city)}, ${this.escape(hub.province)}</dd></div><div><dt>Role</dt><dd>${this.escape(hub.role)}</dd></div><div><dt>Associated mapped footprints</dt><dd>${links.length}</dd></div><div><dt>Coordinate precision</dt><dd>${this.escape(hub.coordinate_precision)}</dd></div></dl><a href="${this.escape(hub.source_url)}" target="_blank" rel="noreferrer">Open NDRC source ↗</a><small>This is one of ten national data-center clusters within eight national computing hubs. Association is geographic and policy-level; it does not prove a dedicated circuit to every nearby campus.</small>`;detail.hidden=false}
+
+  selectDataCenterAccessLink(linkId){const link=this.dataCenterNetworkLinks.find(item=>item.id===linkId),site=this.dataCenters.find(item=>item.id===link?.campus_id),node=this.chinaNodes.find(item=>item.id===link?.backbone_node_id),hub=this.nationalComputeHubs.find(item=>item.id===link?.national_hub_id);if(!link||!site||!node)return;for(const line of this.dataCenterAccessLines)line.setStyle(line.accessLinkId===linkId?{weight:3,opacity:1,color:'#b9eaf2'}:{weight:.7,opacity:.05});const detail=this.root.querySelector('#cableDetail');detail.innerHTML=`<button type="button" data-close-cable aria-label="Close access-link details">×</button><p class="eyebrow">${this.escape(link.confidence.replaceAll('_',' '))}</p><h2>${this.escape(site.name)} → ${this.escape(node.name)}</h2><p class="detail-lede">${this.escape(link.description)}</p><dl><div><dt>Campus operator</dt><dd>${this.escape(site.operator)}</dd></div><div><dt>Network scope</dt><dd>${this.escape(link.network_scope)}</dd></div><div><dt>Nearest mapped backbone node</dt><dd>${this.escape(node.name)} · ${link.distance_to_backbone_km} km geodesic</dd></div><div><dt>Nearest national cluster</dt><dd>${this.escape(hub?.cluster_name||'Not assigned')} · ${link.distance_to_national_hub_km} km geodesic</dd></div><div><dt>Relationship basis</dt><dd>${this.escape(link.relationship)}</dd></div></dl><a href="${this.escape(link.source_url)}" target="_blank" rel="noreferrer">Open campus source ↗</a><small>This dashed line is a transparent cartographic inference. It does not claim the route, carrier, capacity, fiber ownership, redundancy, or traffic flow of a private campus connection.</small>`;detail.hidden=false}
 
   addInternetExchanges(bounds){
     for(const exchange of this.internetExchanges){
@@ -271,6 +292,7 @@ export class OfficeMapView{
   clearChinaNetwork(hideDetail=true){
     this.selectedChinaNetwork=null;
     for(const line of this.chinaFiberLines)line.setStyle(line.baseStyle);
+    for(const line of this.dataCenterAccessLines)line.setStyle(line.baseStyle);
     if(hideDetail)this.root.querySelector('#cableDetail').hidden=true;
   }
 

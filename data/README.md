@@ -16,6 +16,8 @@ Google Sheets, or a text editor.
 - `china-fiber-networks.csv` — backbone and telecom network profiles
 - `china-fiber-nodes.csv` — publicly documented backbone hubs and operating centers
 - `china-fiber-links.csv` — documented-topology and logical intercity connections
+- `national-compute-hubs.csv` — the ten national “East Data, West Computing” clusters
+- `data-center-network-links.csv` — cartographic campus-to-backbone and national-hub associations with explicit confidence and distance fields
 - `internet-exchanges.csv` — active global Internet exchange points from PCH
 - `layers.csv` — the 12 vertical ecosystem layers
 - `journeys.csv` — guided journeys; `nodes` is a JSON-style ID list
