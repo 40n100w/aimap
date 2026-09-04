@@ -42,15 +42,15 @@
   <section id="officeMapView" class="office-map-view" hidden aria-label="Verified company office map">
     <div id="officeMap" class="office-map-canvas"></div>
     <header class="office-map-head">
-      <p>Verified physical footprint</p>
-      <h1>AI infrastructure map</h1>
+      <p>Asia infrastructure atlas</p>
+      <h1>Data-center campuses</h1>
       <span id="officeMapStats">Loading infrastructure…</span>
       <label class="model-map-select"><span>Trace a model</span><select id="mapModelSelect"><option value="">Choose a model…</option></select></label>
-      <div class="office-map-layers" aria-label="Map layers"><button type="button" data-map-layer="offices" class="active" aria-pressed="true"><i class="office-key"></i> Offices</button><button type="button" data-map-layer="cables" class="active" aria-pressed="true"><i class="cable-key"></i> Submarine cables</button><button type="button" data-map-layer="china-fiber" class="active" aria-pressed="true"><i class="china-fiber-key"></i> China fiber</button><button type="button" data-map-layer="exchanges" class="active" aria-pressed="true"><i class="exchange-key"></i> IXPs</button><button type="button" data-map-layer="model-inference" class="active" aria-pressed="true"><i class="model-key"></i> Model inference</button></div>
+      <div class="office-map-layers" aria-label="Map layers"><button type="button" data-map-layer="data-centers" class="active" aria-pressed="true"><i class="data-center-key"></i> Data centers</button><button type="button" data-map-layer="offices" aria-pressed="false"><i class="office-key"></i> Offices</button><button type="button" data-map-layer="cables" aria-pressed="false"><i class="cable-key"></i> Submarine cables</button><button type="button" data-map-layer="china-fiber" aria-pressed="false"><i class="china-fiber-key"></i> China fiber</button><button type="button" data-map-layer="exchanges" aria-pressed="false"><i class="exchange-key"></i> IXPs</button><button type="button" data-map-layer="model-inference" aria-pressed="false"><i class="model-key"></i> Model inference</button></div>
     </header>
     <button id="officeMapReset" class="office-map-reset" type="button" hidden>Show every company ×</button>
     <aside id="cableDetail" class="cable-detail" hidden aria-live="polite"></aside>
-    <p class="office-map-note">Select a model, office, network, exchange or cable · Dashed model paths are logical, not live traffic</p>
+    <p class="office-map-note">Select any point for sources, status and location precision · Campus coordinates may be generalized</p>
   </section>
   <aside class="model-guide" aria-hidden="true"><span>↑ Creation inputs</span><i>Selected model</i><span>↓ Deployment &amp; inference</span></aside>
 

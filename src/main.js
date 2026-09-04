@@ -8,9 +8,10 @@ import { UI } from './ui.js';
 import { jsonArray, loadCsv, numberOrNull } from './csv.js';
 
 async function start() {
-  const mapFiles = ['office-locations.csv','submarine-cables.csv','submarine-cable-routes.csv','submarine-cable-landings.csv','china-fiber-networks.csv','china-fiber-nodes.csv','china-fiber-links.csv','internet-exchanges.csv','model-inference-regions.csv','model-network-links.csv','model-organization-sites.csv'];
-  const [,[officeRows,cableRows,routeRows,landingRows,chinaNetworkRows,chinaNodeRows,chinaLinkRows,exchangeRows,inferenceRows,networkLinkRows,organizationSiteRows]] = await Promise.all([loadCoreData(),Promise.all(mapFiles.map(loadCsv))]);
+  const mapFiles = ['office-locations.csv','data-center-campuses.csv','submarine-cables.csv','submarine-cable-routes.csv','submarine-cable-landings.csv','china-fiber-networks.csv','china-fiber-nodes.csv','china-fiber-links.csv','internet-exchanges.csv','model-inference-regions.csv','model-network-links.csv','model-organization-sites.csv'];
+  const [,[officeRows,dataCenterRows,cableRows,routeRows,landingRows,chinaNetworkRows,chinaNodeRows,chinaLinkRows,exchangeRows,inferenceRows,networkLinkRows,organizationSiteRows]] = await Promise.all([loadCoreData(),Promise.all(mapFiles.map(loadCsv))]);
   const officeLocations=officeRows.map(row=>({...row,latitude:numberOrNull(row.latitude),longitude:numberOrNull(row.longitude),entityIds:jsonArray(row.entityIds)}));
+  const dataCenters=dataCenterRows.map(row=>({...row,latitude:Number(row.latitude),longitude:Number(row.longitude),capacity_mw:numberOrNull(row.capacity_mw),facilities:numberOrNull(row.facilities)}));
   const submarineCables=cableRows.map(row=>({...row,rfs_year:numberOrNull(row.rfs_year),is_planned:row.is_planned==='True',length_km:numberOrNull(row.length_km),landing_point_count:Number(row.landing_point_count)||0}));
   const submarineCableRoutes=routeRows.map(row=>({...row,segment_id:Number(row.segment_id),point_order:Number(row.point_order),longitude:Number(row.longitude),latitude:Number(row.latitude)}));
   const chinaFiberNodes=chinaNodeRows.map(row=>({...row,latitude:Number(row.latitude),longitude:Number(row.longitude)}));
@@ -20,7 +21,7 @@ async function start() {
   window.ecosystemData={representativePaths};
   let ui;
   const scene=new EcosystemScene(document.querySelector('#scene'),entities,relationships,id=>{ui.showEntity(id);ui.renderEntityProfile(id);ui.renderModelPortfolio(id)});
-  ui=new UI(entities,relationships,scene,id=>{ui.showEntity(id);ui.renderEntityProfile(id);ui.renderModelPortfolio(id)},officeLocations,{cables:submarineCables,routes:submarineCableRoutes,landings:landingRows,chinaNetworks:chinaNetworkRows,chinaNodes:chinaFiberNodes,chinaLinks:chinaLinkRows,internetExchanges,modelInferenceRegions,modelNetworkLinks:networkLinkRows,modelOrganizationSites});
+  ui=new UI(entities,relationships,scene,id=>{ui.showEntity(id);ui.renderEntityProfile(id);ui.renderModelPortfolio(id)},officeLocations,{dataCenters,cables:submarineCables,routes:submarineCableRoutes,landings:landingRows,chinaNetworks:chinaNetworkRows,chinaNodes:chinaFiberNodes,chinaLinks:chinaLinkRows,internetExchanges,modelInferenceRegions,modelNetworkLinks:networkLinkRows,modelOrganizationSites});
 }
 
 start().catch(error=>{

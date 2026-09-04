@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --config vite.file.config.js && node scripts/build-portable.mjs",
-    "check:data": "npm run validate:data && npm run validate:locations && npm run validate:cables && npm run validate:china-fiber && npm run validate:exchanges && npm run validate:model-inference",
+    "check:data": "npm run validate:data && npm run validate:locations && npm run validate:data-centers && npm run validate:cables && npm run validate:china-fiber && npm run validate:exchanges && npm run validate:model-inference",
     "preview": "vite preview",
     "validate:data": "node scripts/validate-data.mjs",
     "validate:locations": "node scripts/validate-locations.mjs",
+    "validate:data-centers": "node scripts/validate-data-centers.mjs",
     "validate:cables": "node scripts/validate-cables.mjs",
     "validate:china-fiber": "node scripts/validate-china-fiber.mjs",
     "validate:exchanges": "node scripts/validate-exchanges.mjs",

@@ -9,10 +9,17 @@ const markerIcon=L.divIcon({
   tooltipAnchor:[0,-10]
 });
 
+const dataCenterIcon=status=>L.divIcon({
+  className:'data-center-marker-shell',
+  html:`<span class="data-center-marker ${status==='Operational'?'is-live':'is-future'}"><i></i></span>`,
+  iconSize:[24,24],iconAnchor:[12,12],tooltipAnchor:[0,-12]
+});
+
 export class OfficeMapView{
   constructor(root,locations,cableData={}){
     this.root=root;
     this.locations=locations.filter(location=>location.status==='map_ready'&&location.coordinateAccuracy==='building'&&Number.isFinite(location.latitude)&&Number.isFinite(location.longitude));
+    this.dataCenters=(cableData.dataCenters||[]).filter(site=>Number.isFinite(site.latitude)&&Number.isFinite(site.longitude));
     this.cables=cableData.cables||[];
     this.cableRoutes=cableData.routes||[];
     this.cableLandings=cableData.landings||[];
@@ -24,6 +31,7 @@ export class OfficeMapView{
     this.modelNetworkLinks=cableData.modelNetworkLinks||[];
     this.modelOrganizationSites=(cableData.modelOrganizationSites||[]).filter(site=>Number.isFinite(site.latitude)&&Number.isFinite(site.longitude));
     this.markers=[];
+    this.dataCenterMarkers=[];
     this.cableLines=[];
     this.chinaFiberLines=[];
     this.modelRegionMarkers=[];
@@ -32,7 +40,7 @@ export class OfficeMapView{
     this.selectedCompany=null;
     root.querySelector('#officeMapReset').addEventListener('click',()=>this.clearSelection());
     root.querySelectorAll('[data-map-layer]').forEach(button=>button.addEventListener('click',()=>this.toggleLayer(button)));
-    root.querySelector('#cableDetail').addEventListener('click',event=>{if(event.target.closest('[data-close-cable]')){this.clearCableSelection();this.clearChinaNetwork();this.clearModelSelection()}});
+    root.querySelector('#cableDetail').addEventListener('click',event=>{if(event.target.closest('[data-close-cable]')){this.clearDataCenterSelection();this.clearSelection(false);this.clearCableSelection();this.clearChinaNetwork();this.clearModelSelection()}});
     this.setupModelSelector();
   }
 
@@ -45,16 +53,18 @@ export class OfficeMapView{
       maxZoom:20,
       attribution:'Tiles &copy; Esri and contributors'
     }).addTo(this.map);
-    this.officeLayer=L.layerGroup().addTo(this.map);
-    this.cableLayer=L.layerGroup().addTo(this.map);
-    this.chinaFiberLayer=L.layerGroup().addTo(this.map);
-    this.exchangeLayer=L.layerGroup().addTo(this.map);
-    this.modelInferenceLayer=L.layerGroup().addTo(this.map);
+    this.dataCenterLayer=L.layerGroup().addTo(this.map);
+    this.officeLayer=L.layerGroup();
+    this.cableLayer=L.layerGroup();
+    this.chinaFiberLayer=L.layerGroup();
+    this.exchangeLayer=L.layerGroup();
+    this.modelInferenceLayer=L.layerGroup();
     this.cableRenderer=L.canvas({padding:.5});
     this.chinaFiberRenderer=L.canvas({padding:.5});
     this.exchangeRenderer=L.canvas({padding:.5});
     this.modelRenderer=L.svg({padding:.5});
     const bounds=[];
+    this.addDataCenters(bounds);
     for(const location of this.locations){
       const marker=L.marker([location.latitude,location.longitude],{icon:markerIcon,riseOnHover:true,keyboard:true,title:location.companyName});
       marker.companyId=location.companyId;
@@ -62,15 +72,41 @@ export class OfficeMapView{
       marker.on('click',()=>this.selectCompany(location.companyId));
       marker.addTo(this.officeLayer);
       this.markers.push(marker);
-      bounds.push([location.latitude,location.longitude]);
     }
-    this.addCableRoutes(bounds);
-    this.addChinaFiber(bounds);
-    this.addInternetExchanges(bounds);
-    this.addModelInfrastructure(bounds);
-    if(bounds.length)this.map.fitBounds(bounds,{padding:[45,45],maxZoom:4});else this.map.setView([20,0],2);
-    const companies=new Set(this.locations.map(location=>location.companyId));
-    this.root.querySelector('#officeMapStats').textContent=`${this.locations.length.toLocaleString()} buildings · ${this.cables.length.toLocaleString()} subsea cables · ${this.chinaNetworks.length} China backbones · ${this.internetExchanges.length.toLocaleString()} IXPs · ${this.modelInferenceRegions.length} model regions`;
+    this.addCableRoutes([]);
+    this.addChinaFiber([]);
+    this.addInternetExchanges([]);
+    this.addModelInfrastructure([]);
+    if(bounds.length)this.map.fitBounds(bounds,{padding:[55,55],maxZoom:4});else this.map.setView([28,105],3);
+    const countries=new Set(this.dataCenters.map(site=>site.country)),operators=new Set(this.dataCenters.map(site=>site.operator));
+    this.root.querySelector('#officeMapStats').textContent=`${this.dataCenters.length} documented campuses · ${countries.size} markets · ${operators.size} operators`;
+  }
+
+  addDataCenters(bounds){
+    for(const site of this.dataCenters){
+      const marker=L.marker([site.latitude,site.longitude],{icon:dataCenterIcon(site.status),riseOnHover:true,keyboard:true,title:`${site.name}, ${site.city}`});
+      marker.siteId=site.id;
+      marker.bindTooltip(`<b>${this.escape(site.name)}</b><br>${this.escape(site.city)}, ${this.escape(site.country)} · ${this.escape(site.status)}`,{direction:'top',offset:[0,-9],className:'office-company-tooltip'});
+      marker.on('click',()=>this.selectDataCenter(site.id));
+      marker.addTo(this.dataCenterLayer);this.dataCenterMarkers.push(marker);bounds.push([site.latitude,site.longitude]);
+    }
+  }
+
+  selectDataCenter(siteId){
+    const site=this.dataCenters.find(item=>item.id===siteId);if(!site)return;
+    this.clearSelection(false);this.clearCableSelection(false);this.clearChinaNetwork(false);this.clearModelSelection(false);
+    for(const marker of this.dataCenterMarkers)marker.getElement()?.classList.toggle('is-muted',marker.siteId!==siteId);
+    this.selectedDataCenter=siteId;this.map.flyTo([site.latitude,site.longitude],Math.max(this.map.getZoom(),7),{duration:.5});
+    const detail=this.root.querySelector('#cableDetail'),safeUrl=/^https?:\/\//.test(site.source_url)?site.source_url:'';
+    const precision=site.coordinate_precision==='locality'?'Locality-level':site.coordinate_precision==='city'?'City-level':site.coordinate_precision==='region'?'Regional':'Metro-level';
+    detail.innerHTML=`<button type="button" data-close-cable aria-label="Close campus details">×</button><p class="eyebrow">${this.escape(site.status)} · ${this.escape(site.campus_type)}</p><h2>${this.escape(site.name)}</h2><p class="detail-lede">${this.escape(site.description)}</p><dl><div><dt>Operator</dt><dd>${this.escape(site.operator)}</dd></div><div><dt>Market</dt><dd>${this.escape(site.city)}, ${this.escape(site.country)}</dd></div>${site.capacity_mw?`<div><dt>Published capacity</dt><dd>${site.capacity_mw.toLocaleString()} MW+</dd></div>`:''}${site.facilities?`<div><dt>Facilities represented</dt><dd>${site.facilities}</dd></div>`:''}<div><dt>Map precision</dt><dd>${precision}</dd></div><div><dt>Services</dt><dd>${this.escape(site.services)}</dd></div></dl>${safeUrl?`<a href="${this.escape(safeUrl)}" target="_blank" rel="noreferrer">Open operator source ↗</a>`:''}<small>Source checked ${this.escape(site.verified_on)}. ${this.escape(site.notes)} A marker identifies a documented campus or grouped metro footprint; it does not imply ownership of the underlying land or disclose a private building location.</small>`;
+    detail.hidden=false;
+  }
+
+  clearDataCenterSelection(hideDetail=true){
+    this.selectedDataCenter=null;
+    for(const marker of this.dataCenterMarkers)marker.getElement()?.classList.remove('is-muted');
+    if(hideDetail)this.root.querySelector('#cableDetail').hidden=true;
   }
 
   setupModelSelector(){
@@ -110,7 +146,7 @@ export class OfficeMapView{
     const regions=this.modelInferenceRegions.filter(region=>region.model_id===modelId),offices=this.modelOrganizationSites.filter(site=>site.model_id===modelId);if(!regions.length&&!offices.length)return;
     this.clearSelection(false);this.clearCableSelection(false);this.clearChinaNetwork(false);
     this.selectedModel=modelId;this.root.classList.add('model-isolated');
-    for(const group of [this.officeLayer,this.cableLayer,this.chinaFiberLayer,this.exchangeLayer])group.removeFrom(this.map);
+    for(const group of [this.dataCenterLayer,this.officeLayer,this.cableLayer,this.chinaFiberLayer,this.exchangeLayer])group.removeFrom(this.map);
     if(!this.map.hasLayer(this.modelInferenceLayer))this.modelInferenceLayer.addTo(this.map);
     const family=modelId.startsWith('qwen')?'qwen':modelId;
     for(const marker of this.modelRegionMarkers)marker.setStyle(marker.modelId===modelId?{radius:marker.training?9:8,weight:2.5,opacity:1,fillOpacity:.92}:{radius:4,weight:1,opacity:.08,fillOpacity:.04});
@@ -134,7 +170,7 @@ export class OfficeMapView{
     for(const line of this.modelPathLines)line.setStyle(line.baseStyle);
     const select=this.root.querySelector('#mapModelSelect');if(select)select.value='';
     if(wasSelected&&this.map){
-      const groups={offices:this.officeLayer,cables:this.cableLayer,'china-fiber':this.chinaFiberLayer,exchanges:this.exchangeLayer,'model-inference':this.modelInferenceLayer};
+      const groups={'data-centers':this.dataCenterLayer,offices:this.officeLayer,cables:this.cableLayer,'china-fiber':this.chinaFiberLayer,exchanges:this.exchangeLayer,'model-inference':this.modelInferenceLayer};
       for(const button of this.root.querySelectorAll('[data-map-layer]'))if(button.getAttribute('aria-pressed')==='true')groups[button.dataset.mapLayer]?.addTo(this.map);
     }
     if(hideDetail)this.root.querySelector('#cableDetail').hidden=true;
@@ -260,9 +296,10 @@ export class OfficeMapView{
     if(this.selectedModel&&button.dataset.mapLayer!=='model-inference')return;
     const layer=button.dataset.mapLayer,active=button.getAttribute('aria-pressed')!=='true';
     button.setAttribute('aria-pressed',String(active));button.classList.toggle('active',active);
-    const group=layer==='offices'?this.officeLayer:layer==='cables'?this.cableLayer:layer==='china-fiber'?this.chinaFiberLayer:layer==='exchanges'?this.exchangeLayer:this.modelInferenceLayer;
+    const group=layer==='data-centers'?this.dataCenterLayer:layer==='offices'?this.officeLayer:layer==='cables'?this.cableLayer:layer==='china-fiber'?this.chinaFiberLayer:layer==='exchanges'?this.exchangeLayer:this.modelInferenceLayer;
     if(active)group.addTo(this.map);else group.removeFrom(this.map);
     if(layer==='cables'&&!active)this.clearCableSelection();
+    if(layer==='data-centers'&&!active)this.clearDataCenterSelection();
     if(layer==='offices'&&!active)this.clearSelection();
     if(layer==='china-fiber'&&!active)this.clearChinaNetwork();
     if(layer==='exchanges'&&!active)this.root.querySelector('#cableDetail').hidden=true;
@@ -272,18 +309,24 @@ export class OfficeMapView{
   escape(value){return String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))}
 
   selectCompany(companyId){
+    this.clearDataCenterSelection(false);
     this.selectedCompany=companyId;
     const matching=this.markers.filter(marker=>marker.companyId===companyId);
     for(const marker of this.markers)marker.getElement()?.classList.toggle('is-muted',marker.companyId!==companyId);
     this.root.querySelector('#officeMapReset').hidden=false;
     if(matching.length)this.map.fitBounds(L.featureGroup(matching).getBounds(),{padding:[100,100],maxZoom:17});
+    const sites=this.locations.filter(location=>location.companyId===companyId),location=sites[0],detail=this.root.querySelector('#cableDetail');
+    const safeUrl=/^https?:\/\//.test(location?.sourceUrl)?location.sourceUrl:'';
+    detail.innerHTML=`<button type="button" data-close-cable aria-label="Close office details">×</button><p class="eyebrow">Verified company footprint</p><h2>${this.escape(location.companyName)}</h2><p class="detail-lede">${sites.length} mapped ${sites.length===1?'location':'locations'} for this company.</p><dl><div><dt>Selected site</dt><dd>${this.escape(location.locationName)}</dd></div><div><dt>Type</dt><dd>${this.escape(location.locationType)}</dd></div><div><dt>Address</dt><dd>${this.escape(location.address)}</dd></div><div><dt>Coordinate accuracy</dt><dd>${this.escape(location.coordinateAccuracy)}</dd></div><div><dt>Verified</dt><dd>${this.escape(location.verifiedOn||'Not listed')}</dd></div></dl>${safeUrl?`<a href="${this.escape(safeUrl)}" target="_blank" rel="noreferrer">Open location source ↗</a>`:''}<small>This is a verified company location, not necessarily a data center. Selecting the company highlights all of its mapped sites.</small>`;
+    detail.hidden=false;
   }
 
   clearSelection(refit=true){
     this.selectedCompany=null;
     for(const marker of this.markers)marker.getElement()?.classList.remove('is-muted');
     this.root.querySelector('#officeMapReset').hidden=true;
-    if(refit&&this.map&&this.locations.length)this.map.fitBounds(this.locations.map(location=>[location.latitude,location.longitude]),{padding:[45,45],maxZoom:4});
+    if(refit&&this.map&&this.dataCenters.length)this.map.fitBounds(this.dataCenters.map(site=>[site.latitude,site.longitude]),{padding:[55,55],maxZoom:4});
+    if(refit)this.root.querySelector('#cableDetail').hidden=true;
   }
 
   show(){
