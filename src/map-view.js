@@ -51,11 +51,12 @@ export class OfficeMapView{
     this.modelOfficeMarkers=[];
     this.systemMarkers=[];
     this.systemLines=[];
+    this.exchangeMarkers=[];
     this.selectedCompany=null;
     root.querySelector('#officeMapReset').addEventListener('click',()=>this.clearSelection());
     root.querySelector('#chinaMapFocus')?.addEventListener('click',()=>this.focusChina());
     root.querySelector('#strategyMapFocus')?.addEventListener('click',()=>this.showNationalStrategy());
-    root.querySelector('#systemScenarioSelect')?.addEventListener('change',event=>event.target.value&&this.selectSystemScenario(event.target.value));
+    root.querySelector('#systemScenarioSelect')?.addEventListener('change',event=>{if(event.target.value){this.prepareScenarioLayers(event.target.value);this.selectSystemScenario(event.target.value)}});
     root.querySelectorAll('[data-map-layer]').forEach(button=>button.addEventListener('click',()=>this.toggleLayer(button)));
     root.querySelector('#cableDetail').addEventListener('click',event=>{if(event.target.closest('[data-close-cable]')){this.clearDataCenterSelection();this.clearSelection(false);this.clearCableSelection();this.clearChinaNetwork();this.clearModelSelection();this.clearAsiaSystems()}});
     this.setupModelSelector();
@@ -74,7 +75,7 @@ export class OfficeMapView{
     this.officeLayer=L.layerGroup();
     this.cableLayer=L.layerGroup();
     this.chinaFiberLayer=L.layerGroup().addTo(this.map);
-    this.exchangeLayer=L.layerGroup().addTo(this.map);
+    this.exchangeLayer=L.layerGroup();
     this.modelInferenceLayer=L.layerGroup();
     this.asiaSystemsLayer=L.layerGroup();
     this.cableRenderer=L.canvas({padding:.5});
@@ -97,11 +98,19 @@ export class OfficeMapView{
     this.addInternetExchanges([]);
     this.addModelInfrastructure([]);
     this.addAsiaSystems([]);
+    this.map.on('zoomend',()=>this.applyMapDensity());
     const chinaBounds=this.dataCenters.filter(site=>site.country==='China').map(site=>[site.latitude,site.longitude]);
     if(chinaBounds.length)this.map.fitBounds(chinaBounds,{padding:[55,55],maxZoom:5});else if(bounds.length)this.map.fitBounds(bounds,{padding:[55,55],maxZoom:4});else this.map.setView([35,105],4);
     const china=this.dataCenters.filter(site=>site.country==='China'),operators=new Set(china.map(site=>site.operator)),facilities=china.reduce((sum,site)=>sum+(site.facilities||1),0);
     this.root.querySelector('#officeMapStats').textContent=`${china.length} footprints · ${facilities} facilities / zones · ${this.chinaNetworks.length} backbones · ${this.nationalComputeHubs.length} clusters`;
+    this.applyMapDensity();
   }
+
+  setLayerVisible(name,visible){const button=this.root.querySelector(`[data-map-layer="${name}"]`);if(!button||((button.getAttribute('aria-pressed')==='true')===visible))return;this.toggleLayer(button)}
+
+  prepareScenarioLayers(scenario){const sets={training:['data-centers','china-fiber','systems'],inference:['data-centers','cables','exchanges','systems'],hardware:['systems'],resilience:['cables','systems']},visible=new Set(sets[scenario]||['systems']);this.clearModelSelection(false);for(const name of ['data-centers','offices','cables','china-fiber','exchanges','systems','model-inference'])this.setLayerVisible(name,visible.has(name))}
+
+  applyMapDensity(){if(!this.map)return;const zoom=this.map.getZoom(),wide=zoom<5;this.root.classList.toggle('map-wide',wide);if(!this.selectedCable)for(const line of this.cableLines){const cable=this.cables.find(item=>item.id===line.cableId);line.setStyle({color:cable?.is_planned?'#d9a45f':'#36b7c8',weight:wide?.65:zoom<6?1:1.35,opacity:wide?.12:zoom<6?.22:.42,dashArray:cable?.is_planned?'5 7':null})}for(const marker of this.exchangeMarkers||[]){const visible=!wide||marker.participants>=25;marker.setStyle({radius:wide?2.5:marker.baseRadius,weight:wide?.7:1.2,opacity:visible?(wide?.45:.82):0,fillOpacity:visible?(wide?.35:.75):0});marker.options.interactive=visible}}
 
   focusChina(){const sites=this.dataCenters.filter(site=>site.country==='China');this.clearDataCenterSelection(false);if(sites.length)this.map.fitBounds(sites.map(site=>[site.latitude,site.longitude]),{padding:[55,55],maxZoom:5})}
 
@@ -296,10 +305,10 @@ export class OfficeMapView{
     for(const exchange of this.internetExchanges){
       const china=exchange.ctry==='China',radius=Math.min(7,2.5+Math.log10(exchange.participants+1));
       const marker=L.circleMarker([exchange.latitude,exchange.longitude],{renderer:this.exchangeRenderer,radius,weight:1.2,color:china?'#ffd1fa':'#e8b4ef',fillColor:china?'#ef6ed7':'#b75bd0',fillOpacity:china ? .95 : .7,opacity:.9});
-      marker.exchangeId=exchange.id;
+      marker.exchangeId=exchange.id;marker.participants=exchange.participants;marker.baseRadius=radius;
       marker.bindTooltip(`${exchange.name} · ${exchange.cit}, ${exchange.ctry}`,{direction:'top',className:'office-company-tooltip'});
       marker.on('click',()=>this.selectInternetExchange(exchange.id));
-      marker.addTo(this.exchangeLayer);bounds.push([exchange.latitude,exchange.longitude]);
+      marker.addTo(this.exchangeLayer);this.exchangeMarkers.push(marker);bounds.push([exchange.latitude,exchange.longitude]);
     }
   }
 
@@ -353,7 +362,7 @@ export class OfficeMapView{
 
   clearCableSelection(hideDetail=true){
     this.selectedCable=null;
-    for(const line of this.cableLines){const cable=this.cables.find(item=>item.id===line.cableId);line.setStyle({color:cable?.is_planned?'#d9a45f':'#3cb8c3',weight:cable?.is_planned?1.25:1.5,opacity:cable?.is_planned ? .55 : .72});}
+    this.applyMapDensity();
     if(hideDetail)this.root.querySelector('#cableDetail').hidden=true;
   }
 
