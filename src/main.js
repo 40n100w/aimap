@@ -20,8 +20,8 @@ async function start() {
   const modelOrganizationSites=organizationSiteRows.map(row=>({...row,latitude:Number(row.latitude),longitude:Number(row.longitude)}));
   window.ecosystemData={representativePaths};
   let ui;
-  const scene=new EcosystemScene(document.querySelector('#scene'),entities,relationships,id=>{ui.showEntity(id);ui.renderEntityProfile(id);ui.renderModelPortfolio(id)});
-  ui=new UI(entities,relationships,scene,id=>{ui.showEntity(id);ui.renderEntityProfile(id);ui.renderModelPortfolio(id)},officeLocations,{dataCenters,cables:submarineCables,routes:submarineCableRoutes,landings:landingRows,chinaNetworks:chinaNetworkRows,chinaNodes:chinaFiberNodes,chinaLinks:chinaLinkRows,internetExchanges,modelInferenceRegions,modelNetworkLinks:networkLinkRows,modelOrganizationSites});
+  const scene=new EcosystemScene(document.querySelector('#scene'),entities,relationships,id=>{ui.showEntity(id);ui.renderEntityProfile(id);ui.renderModelPortfolio(id);ui.appendPhysicalProvenance(id)});
+  ui=new UI(entities,relationships,scene,id=>{ui.showEntity(id);ui.renderEntityProfile(id);ui.renderModelPortfolio(id);ui.appendPhysicalProvenance(id)},officeLocations,{dataCenters,cables:submarineCables,routes:submarineCableRoutes,landings:landingRows,chinaNetworks:chinaNetworkRows,chinaNodes:chinaFiberNodes,chinaLinks:chinaLinkRows,internetExchanges,modelInferenceRegions,modelNetworkLinks:networkLinkRows,modelOrganizationSites});
 }
 
 start().catch(error=>{

@@ -85,3 +85,14 @@ specific building location.
 Models whose providers disclose an API but no mappable serving region appear
 with organization sites only. `inference_access_region` means a documented API
 access location and is deliberately weaker than a confirmed serving region.
+
+## Model-to-material provenance
+
+The entity catalog supports up to 4,000 records. Every `Model` record must have
+one documented developer, one deployment-runtime edge, and a representative
+physical path. Model profiles group their upstream graph by lab, cloud, data
+center, compute, fabrication, equipment, and raw-material layers. `confirmed`
+and `reported` edges describe published evidence; `representative` edges fill a
+legibility gap without claiming an undisclosed training cluster or bill of
+materials. Run `scripts/expand-model-catalog.mjs` idempotently to restore the
+audited global-model additions in this edition.

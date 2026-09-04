@@ -33,6 +33,6 @@ for(const model of entities.filter(entity=>entity.type==='Model')){
  if(!path)errors.push(`${model.name} has no representative physical path`);
  else for(let i=0;i<path.length-1;i++)if(!relationships.some(r=>(r.source===path[i]&&r.target===path[i+1])||(r.target===path[i]&&r.source===path[i+1])))errors.push(`${model.name} path has an unlinked step: ${path[i]} -> ${path[i+1]}`);
 }
-if(entities.length>2000)errors.push(`Entity ceiling exceeded: ${entities.length}`);
+if(entities.length>4000)errors.push(`Entity ceiling exceeded: ${entities.length}`);
 console.log(JSON.stringify({entities:entities.length,models:entities.filter(e=>e.type==='Model').length,relationships:relationships.length,relationshipTypes:new Set(relationships.map(r=>r.type)).size,errors},null,2));
 if(errors.length)process.exit(1);
