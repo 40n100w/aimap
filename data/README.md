@@ -9,7 +9,7 @@ Google Sheets, or a text editor.
 - `entities.csv` — every searchable node and its profile text
 - `relationships.csv` — links between entity IDs
 - `office-locations.csv` — map points and their coordinates
-- `data-center-campuses.csv` — documented Asian data-center campuses and grouped metro footprints, including status, operator, services, source, and coordinate precision
+- `data-center-campuses.csv` — documented Asian data-center campuses and grouped metro footprints, with a China-first inventory of named campuses and publicly documented cloud availability zones; includes status, operator, services, source, and coordinate precision
 - `submarine-cables.csv` — cable names, status, owners, suppliers and length
 - `submarine-cable-routes.csv` — ordered route vertices grouped by cable and segment
 - `submarine-cable-landings.csv` — landing points associated with each cable

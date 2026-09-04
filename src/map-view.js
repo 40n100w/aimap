@@ -39,6 +39,7 @@ export class OfficeMapView{
     this.modelOfficeMarkers=[];
     this.selectedCompany=null;
     root.querySelector('#officeMapReset').addEventListener('click',()=>this.clearSelection());
+    root.querySelector('#chinaMapFocus')?.addEventListener('click',()=>this.focusChina());
     root.querySelectorAll('[data-map-layer]').forEach(button=>button.addEventListener('click',()=>this.toggleLayer(button)));
     root.querySelector('#cableDetail').addEventListener('click',event=>{if(event.target.closest('[data-close-cable]')){this.clearDataCenterSelection();this.clearSelection(false);this.clearCableSelection();this.clearChinaNetwork();this.clearModelSelection()}});
     this.setupModelSelector();
@@ -77,10 +78,13 @@ export class OfficeMapView{
     this.addChinaFiber([]);
     this.addInternetExchanges([]);
     this.addModelInfrastructure([]);
-    if(bounds.length)this.map.fitBounds(bounds,{padding:[55,55],maxZoom:4});else this.map.setView([28,105],3);
-    const countries=new Set(this.dataCenters.map(site=>site.country)),operators=new Set(this.dataCenters.map(site=>site.operator));
-    this.root.querySelector('#officeMapStats').textContent=`${this.dataCenters.length} documented campuses · ${countries.size} markets · ${operators.size} operators`;
+    const chinaBounds=this.dataCenters.filter(site=>site.country==='China').map(site=>[site.latitude,site.longitude]);
+    if(chinaBounds.length)this.map.fitBounds(chinaBounds,{padding:[55,55],maxZoom:5});else if(bounds.length)this.map.fitBounds(bounds,{padding:[55,55],maxZoom:4});else this.map.setView([35,105],4);
+    const china=this.dataCenters.filter(site=>site.country==='China'),operators=new Set(china.map(site=>site.operator)),facilities=china.reduce((sum,site)=>sum+(site.facilities||1),0);
+    this.root.querySelector('#officeMapStats').textContent=`${china.length} mainland footprints · ${facilities} facilities / zones represented · ${operators.size} operators`;
   }
+
+  focusChina(){const sites=this.dataCenters.filter(site=>site.country==='China');this.clearDataCenterSelection(false);if(sites.length)this.map.fitBounds(sites.map(site=>[site.latitude,site.longitude]),{padding:[55,55],maxZoom:5})}
 
   addDataCenters(bounds){
     for(const site of this.dataCenters){
