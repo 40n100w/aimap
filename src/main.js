@@ -8,8 +8,8 @@ import { UI } from './ui.js';
 import { jsonArray, loadCsv, numberOrNull } from './csv.js';
 
 async function start() {
-  const mapFiles = ['office-locations.csv','data-center-campuses.csv','data-center-network-links.csv','national-compute-hubs.csv','submarine-cables.csv','submarine-cable-routes.csv','submarine-cable-landings.csv','china-fiber-networks.csv','china-fiber-nodes.csv','china-fiber-links.csv','internet-exchanges.csv','model-inference-regions.csv','model-network-links.csv','model-organization-sites.csv'];
-  const [,[officeRows,dataCenterRows,dataCenterNetworkRows,nationalHubRows,cableRows,routeRows,landingRows,chinaNetworkRows,chinaNodeRows,chinaLinkRows,exchangeRows,inferenceRows,networkLinkRows,organizationSiteRows]] = await Promise.all([loadCoreData(),Promise.all(mapFiles.map(loadCsv))]);
+  const mapFiles = ['office-locations.csv','data-center-campuses.csv','data-center-network-links.csv','national-compute-hubs.csv','national-compute-corridors.csv','submarine-cables.csv','submarine-cable-routes.csv','submarine-cable-landings.csv','china-fiber-networks.csv','china-fiber-nodes.csv','china-fiber-links.csv','internet-exchanges.csv','model-inference-regions.csv','model-network-links.csv','model-organization-sites.csv'];
+  const [,[officeRows,dataCenterRows,dataCenterNetworkRows,nationalHubRows,nationalCorridorRows,cableRows,routeRows,landingRows,chinaNetworkRows,chinaNodeRows,chinaLinkRows,exchangeRows,inferenceRows,networkLinkRows,organizationSiteRows]] = await Promise.all([loadCoreData(),Promise.all(mapFiles.map(loadCsv))]);
   const officeLocations=officeRows.map(row=>({...row,latitude:numberOrNull(row.latitude),longitude:numberOrNull(row.longitude),entityIds:jsonArray(row.entityIds)}));
   const dataCenters=dataCenterRows.map(row=>({...row,latitude:Number(row.latitude),longitude:Number(row.longitude),capacity_mw:numberOrNull(row.capacity_mw),facilities:numberOrNull(row.facilities)}));
   const nationalComputeHubs=nationalHubRows.map(row=>({...row,latitude:Number(row.latitude),longitude:Number(row.longitude)}));
@@ -22,7 +22,7 @@ async function start() {
   window.ecosystemData={representativePaths};
   let ui;
   const scene=new EcosystemScene(document.querySelector('#scene'),entities,relationships,id=>{ui.showEntity(id);ui.renderEntityProfile(id);ui.renderModelPortfolio(id);ui.appendPhysicalProvenance(id)});
-  ui=new UI(entities,relationships,scene,id=>{ui.showEntity(id);ui.renderEntityProfile(id);ui.renderModelPortfolio(id);ui.appendPhysicalProvenance(id)},officeLocations,{dataCenters,dataCenterNetworkLinks:dataCenterNetworkRows,nationalComputeHubs,cables:submarineCables,routes:submarineCableRoutes,landings:landingRows,chinaNetworks:chinaNetworkRows,chinaNodes:chinaFiberNodes,chinaLinks:chinaLinkRows,internetExchanges,modelInferenceRegions,modelNetworkLinks:networkLinkRows,modelOrganizationSites});
+  ui=new UI(entities,relationships,scene,id=>{ui.showEntity(id);ui.renderEntityProfile(id);ui.renderModelPortfolio(id);ui.appendPhysicalProvenance(id)},officeLocations,{dataCenters,dataCenterNetworkLinks:dataCenterNetworkRows,nationalComputeHubs,nationalComputeCorridors:nationalCorridorRows,cables:submarineCables,routes:submarineCableRoutes,landings:landingRows,chinaNetworks:chinaNetworkRows,chinaNodes:chinaFiberNodes,chinaLinks:chinaLinkRows,internetExchanges,modelInferenceRegions,modelNetworkLinks:networkLinkRows,modelOrganizationSites});
 }
 
 start().catch(error=>{

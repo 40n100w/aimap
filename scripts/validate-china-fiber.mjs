@@ -1,4 +1,4 @@
-import { chinaFiberLinks, chinaFiberNetworks, chinaFiberNodes, dataCenterNetworkLinks, nationalComputeHubs } from './load-csv-data.mjs';
+import { chinaFiberLinks, chinaFiberNetworks, chinaFiberNodes, dataCenterNetworkLinks, nationalComputeCorridors, nationalComputeHubs } from './load-csv-data.mjs';
 import { readFileSync } from 'node:fs';
 import { parseCsv } from '../src/csv.js';
 
@@ -9,5 +9,6 @@ for(const link of chinaFiberLinks){if(!link.id||linkIds.has(link.id))errors.push
 const campusIds=new Set(parseCsv(readFileSync(new URL('../data/data-center-campuses.csv',import.meta.url),'utf8')).map(site=>site.id)),hubIds=new Set();
 for(const hub of nationalComputeHubs){if(!hub.id||hubIds.has(hub.id))errors.push(`Missing or duplicate national hub: ${hub.id}`);hubIds.add(hub.id);if(!Number.isFinite(hub.latitude)||!Number.isFinite(hub.longitude)||!hub.source_url)errors.push(`${hub.id}: incomplete national hub`)}
 for(const link of dataCenterNetworkLinks){if(!campusIds.has(link.campus_id))errors.push(`${link.id}: unknown campus`);if(!nodeIds.has(link.backbone_node_id))errors.push(`${link.id}: unknown backbone node`);if(!hubIds.has(link.national_hub_id))errors.push(`${link.id}: unknown national hub`);if(link.confidence!=='inferred_last_mile')errors.push(`${link.id}: campus access must remain explicitly inferred`);if(!Number.isFinite(link.distance_to_backbone_km)||!Number.isFinite(link.distance_to_national_hub_km))errors.push(`${link.id}: invalid distance`)}
+for(const corridor of nationalComputeCorridors){if(!nodeIds.has(corridor.demand_node_id))errors.push(`${corridor.id}: unknown demand node`);if(!hubIds.has(corridor.hub_id))errors.push(`${corridor.id}: unknown national hub`);if(corridor.confidence!=='conceptual_policy'||!corridor.source_url)errors.push(`${corridor.id}: corridor must remain sourced and conceptual`)}
 if(errors.length){console.error(errors.join('\n'));process.exit(1)}
-console.log(`${chinaFiberNetworks.length} China fiber networks; ${chinaFiberNodes.length} backbone nodes; ${chinaFiberLinks.length} topology links; ${nationalComputeHubs.length} national compute clusters; ${dataCenterNetworkLinks.length} campus access links`);
+console.log(`${chinaFiberNetworks.length} China fiber networks; ${chinaFiberNodes.length} backbone nodes; ${chinaFiberLinks.length} topology links; ${nationalComputeHubs.length} national compute clusters; ${dataCenterNetworkLinks.length} campus access links; ${nationalComputeCorridors.length} policy corridors`);

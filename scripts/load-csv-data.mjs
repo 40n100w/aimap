@@ -35,6 +35,7 @@ export const chinaFiberNetworks = read('china-fiber-networks.csv');
 export const chinaFiberNodes = read('china-fiber-nodes.csv').map(row => ({ ...row, latitude: Number(row.latitude), longitude: Number(row.longitude) }));
 export const chinaFiberLinks = read('china-fiber-links.csv');
 export const nationalComputeHubs = read('national-compute-hubs.csv').map(row => ({ ...row, latitude: Number(row.latitude), longitude: Number(row.longitude) }));
+export const nationalComputeCorridors = read('national-compute-corridors.csv');
 export const dataCenterNetworkLinks = read('data-center-network-links.csv').map(row => ({ ...row, distance_to_backbone_km: Number(row.distance_to_backbone_km), distance_to_national_hub_km: Number(row.distance_to_national_hub_km) }));
 export const internetExchanges = read('internet-exchanges.csv').map(row => { let latitude=Number(row.lat),longitude=Number(row.lon);if(Math.abs(latitude)>90&&Math.abs(longitude)<=90)[latitude,longitude]=[longitude,latitude];return { ...row, latitude, longitude, participants: Number(row.prts) || 0, prefixes: Number(row.prfs) || 0 } });
 export const modelInferenceRegions = read('model-inference-regions.csv').map(row => ({ ...row, latitude: Number(row.latitude), longitude: Number(row.longitude) }));
