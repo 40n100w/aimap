@@ -18,6 +18,8 @@ Google Sheets, or a text editor.
 - `china-fiber-links.csv` — documented-topology and logical intercity connections
 - `national-compute-hubs.csv` — the ten national “East Data, West Computing” clusters
 - `national-compute-corridors.csv` — conceptual demand-to-cluster workload directions; explicitly not physical fiber routes
+- `asia-system-nodes.csv` / `asia-system-links.csv` — power context, chip production, international gateways, resilience exposures and explicitly qualified system flows
+- `model-training-evidence.csv` — model-level training scale, hardware and location-disclosure status without treating headquarters or API regions as training campuses
 - `data-center-network-links.csv` — cartographic campus-to-backbone and national-hub associations with explicit confidence and distance fields
 - `internet-exchanges.csv` — active global Internet exchange points from PCH
 - `layers.csv` — the 12 vertical ecosystem layers

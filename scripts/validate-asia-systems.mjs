@@ -1,0 +1,9 @@
+import { asiaSystemLinks, asiaSystemNodes, chinaFiberNodes, modelTrainingEvidence, nationalComputeHubs } from './load-csv-data.mjs';
+
+const errors=[],nodeIds=new Set();
+for(const node of asiaSystemNodes){if(!node.id||nodeIds.has(node.id))errors.push(`Missing or duplicate system node: ${node.id}`);nodeIds.add(node.id);if(!['power','semiconductor','cable_gateway','hazard'].includes(node.type))errors.push(`${node.id}: invalid type`);if(!Number.isFinite(node.latitude)||!Number.isFinite(node.longitude))errors.push(`${node.id}: invalid coordinates`);if(!node.evidence||!node.source_url)errors.push(`${node.id}: missing evidence or source`)}
+const endpointIds=new Set([...nodeIds,...chinaFiberNodes.map(node=>node.id),...nationalComputeHubs.map(hub=>hub.id)]),linkIds=new Set();
+for(const link of asiaSystemLinks){if(!link.id||linkIds.has(link.id))errors.push(`Missing or duplicate system link: ${link.id}`);linkIds.add(link.id);if(!endpointIds.has(link.source_id)||!endpointIds.has(link.target_id))errors.push(`${link.id}: unknown endpoint`);if(!['energy_context','hardware_supply','international_data'].includes(link.flow_type))errors.push(`${link.id}: invalid flow type`);if(!link.confidence||!link.source_url||!link.notes)errors.push(`${link.id}: missing evidence metadata`)}
+for(const model of modelTrainingEvidence){if(!model.model_id||!model.model_name||!model.developer||!model.location_status||!model.evidence_level||!model.source_url)errors.push(`${model.model_id}: incomplete training evidence`);if(!['undisclosed','managed_regions_only'].includes(model.location_status))errors.push(`${model.model_id}: unsupported location status`)}
+if(errors.length){console.error(errors.join('\n'));process.exit(1)}
+console.log(`${asiaSystemNodes.length} Asia system nodes; ${asiaSystemLinks.length} contextual flows; ${modelTrainingEvidence.length} model-training disclosures`);

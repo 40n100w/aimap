@@ -1,0 +1,16 @@
+id,source_id,target_id,flow_type,label,confidence,source_url,notes
+energy-zhangbei-zhangjiakou,power-zhangbei,hub-zhangjiakou,energy_context,Renewable power context,regional_association,https://www.ndrc.gov.cn/xxgk/jd/jd/202202/t20220217_1315795_ext.html,Not a traced utility circuit or power purchase agreement.
+energy-mengxi-horinger,power-mengxi,hub-horinger,energy_context,Northern energy context,regional_association,https://www.ndrc.gov.cn/xxgk/jd/jd/202202/t20220217_1315795_ext.html,Not a traced utility circuit.
+energy-ningxia-zhongwei,power-ningxia,hub-zhongwei,energy_context,Cluster energy context,regional_association,https://www.ndrc.gov.cn/xxgk/jd/jd/202202/t20220217_1315795_ext.html,Not a traced utility circuit.
+energy-gansu-qingyang,power-gansu,hub-qingyang,energy_context,Cluster energy context,regional_association,https://www.ndrc.gov.cn/xxgk/jd/jd/202202/t20220217_1315795_ext.html,Not a traced utility circuit.
+energy-guizhou-guian,power-guizhou,hub-guian,energy_context,Hydro-rich grid context,regional_association,https://eng.csg.cn/,Not a facility-specific electricity contract.
+energy-sichuan-tianfu,power-sichuan,hub-tianfu,energy_context,Hydro-rich grid context,regional_association,https://www.sgcc.com.cn/,Not a facility-specific electricity contract.
+chips-tsmc-hk,fab-tsmc-hsinchu,gateway-hong-kong,hardware_supply,Advanced chips enter regional systems,conceptual_supply_flow,https://www.tsmc.com/english/aboutTSMC/company_profile,Illustrative supply direction rather than tracked shipments.
+chips-samsung-tokyo,fab-samsung-pyeongtaek,gateway-tokyo,hardware_supply,Memory and logic supply into Asian cloud markets,conceptual_supply_flow,https://semiconductor.samsung.com/about-us/locations/korea/,Illustrative regional supply relationship.
+chips-sk-tokyo,fab-sk-icheon,gateway-tokyo,hardware_supply,HBM and memory supply into compute systems,conceptual_supply_flow,https://www.skhynix.com/company/UI-FR-CP05/,Illustrative regional supply relationship.
+chips-smic-shanghai,fab-smic-shanghai,gateway-shanghai,hardware_supply,Domestic semiconductor supply,conceptual_supply_flow,https://www.smics.com/en/site/company_summary,Does not assert chips used by a named model.
+chips-ymtc-wuhan,fab-ymtc-wuhan,wuhan,hardware_supply,Storage supply into domestic compute ecosystem,conceptual_supply_flow,https://www.ymtc.com/en/,Does not assert a named customer or shipment.
+chips-cxmt-hefei,fab-cxmt-hefei,hefei,hardware_supply,Memory supply into domestic compute ecosystem,conceptual_supply_flow,https://www.cxmt.com/en/,Does not assert a named customer or shipment.
+data-hk-shenzhen,gateway-hong-kong,shenzhen,international_data,International gateway to mainland backbone,logical_gateway,https://bbmaps.itu.int/bbmaps/,Not observed traffic or a surveyed route.
+data-shanghai-core,gateway-shanghai,shanghai,international_data,International gateway to mainland backbone,logical_gateway,https://bbmaps.itu.int/bbmaps/,Not observed traffic or a surveyed route.
+data-singapore-hk,gateway-singapore,gateway-hong-kong,international_data,Regional cloud and cable corridor,logical_gateway,https://bbmaps.itu.int/bbmaps/,Submarine cable layer provides system-level route detail.

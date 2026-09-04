@@ -31,10 +31,13 @@ export class OfficeMapView{
     this.dataCenterNetworkLinks=cableData.dataCenterNetworkLinks||[];
     this.nationalComputeHubs=(cableData.nationalComputeHubs||[]).filter(hub=>Number.isFinite(hub.latitude)&&Number.isFinite(hub.longitude));
     this.nationalComputeCorridors=cableData.nationalComputeCorridors||[];
+    this.asiaSystemNodes=(cableData.asiaSystemNodes||[]).filter(node=>Number.isFinite(node.latitude)&&Number.isFinite(node.longitude));
+    this.asiaSystemLinks=cableData.asiaSystemLinks||[];
     this.internetExchanges=(cableData.internetExchanges||[]).filter(exchange=>Number.isFinite(exchange.latitude)&&Number.isFinite(exchange.longitude));
     this.modelInferenceRegions=(cableData.modelInferenceRegions||[]).filter(region=>Number.isFinite(region.latitude)&&Number.isFinite(region.longitude));
     this.modelNetworkLinks=cableData.modelNetworkLinks||[];
     this.modelOrganizationSites=(cableData.modelOrganizationSites||[]).filter(site=>Number.isFinite(site.latitude)&&Number.isFinite(site.longitude));
+    this.modelTrainingEvidence=cableData.modelTrainingEvidence||[];
     this.markers=[];
     this.dataCenterMarkers=[];
     this.cableLines=[];
@@ -46,12 +49,15 @@ export class OfficeMapView{
     this.modelRegionMarkers=[];
     this.modelPathLines=[];
     this.modelOfficeMarkers=[];
+    this.systemMarkers=[];
+    this.systemLines=[];
     this.selectedCompany=null;
     root.querySelector('#officeMapReset').addEventListener('click',()=>this.clearSelection());
     root.querySelector('#chinaMapFocus')?.addEventListener('click',()=>this.focusChina());
     root.querySelector('#strategyMapFocus')?.addEventListener('click',()=>this.showNationalStrategy());
+    root.querySelector('#systemScenarioSelect')?.addEventListener('change',event=>event.target.value&&this.selectSystemScenario(event.target.value));
     root.querySelectorAll('[data-map-layer]').forEach(button=>button.addEventListener('click',()=>this.toggleLayer(button)));
-    root.querySelector('#cableDetail').addEventListener('click',event=>{if(event.target.closest('[data-close-cable]')){this.clearDataCenterSelection();this.clearSelection(false);this.clearCableSelection();this.clearChinaNetwork();this.clearModelSelection()}});
+    root.querySelector('#cableDetail').addEventListener('click',event=>{if(event.target.closest('[data-close-cable]')){this.clearDataCenterSelection();this.clearSelection(false);this.clearCableSelection();this.clearChinaNetwork();this.clearModelSelection();this.clearAsiaSystems()}});
     this.setupModelSelector();
   }
 
@@ -70,10 +76,12 @@ export class OfficeMapView{
     this.chinaFiberLayer=L.layerGroup().addTo(this.map);
     this.exchangeLayer=L.layerGroup().addTo(this.map);
     this.modelInferenceLayer=L.layerGroup();
+    this.asiaSystemsLayer=L.layerGroup();
     this.cableRenderer=L.canvas({padding:.5});
     this.chinaFiberRenderer=L.canvas({padding:.5});
     this.exchangeRenderer=L.canvas({padding:.5});
     this.modelRenderer=L.svg({padding:.5});
+    this.systemRenderer=L.svg({padding:.5});
     const bounds=[];
     this.addDataCenters(bounds);
     for(const location of this.locations){
@@ -88,6 +96,7 @@ export class OfficeMapView{
     this.addChinaFiber([]);
     this.addInternetExchanges([]);
     this.addModelInfrastructure([]);
+    this.addAsiaSystems([]);
     const chinaBounds=this.dataCenters.filter(site=>site.country==='China').map(site=>[site.latitude,site.longitude]);
     if(chinaBounds.length)this.map.fitBounds(chinaBounds,{padding:[55,55],maxZoom:5});else if(bounds.length)this.map.fitBounds(bounds,{padding:[55,55],maxZoom:4});else this.map.setView([35,105],4);
     const china=this.dataCenters.filter(site=>site.country==='China'),operators=new Set(china.map(site=>site.operator)),facilities=china.reduce((sum,site)=>sum+(site.facilities||1),0);
@@ -95,6 +104,8 @@ export class OfficeMapView{
   }
 
   focusChina(){const sites=this.dataCenters.filter(site=>site.country==='China');this.clearDataCenterSelection(false);if(sites.length)this.map.fitBounds(sites.map(site=>[site.latitude,site.longitude]),{padding:[55,55],maxZoom:5})}
+
+  selectSystemScenario(scenario){this.clearModelSelection(false);const systemsButton=this.root.querySelector('[data-map-layer="systems"]');if(systemsButton?.getAttribute('aria-pressed')!=='true')this.toggleLayer(systemsButton);const configurations={training:{title:'Train a frontier model',types:['power','semiconductor'],flows:['energy_context','hardware_supply'],summary:'Accelerators and memory are manufactured across East Asia, assembled into clustered systems, powered at data-center scale, and synchronized over high-bandwidth networks. Exact model-to-campus assignments are usually undisclosed.'},inference:{title:'Serve an AI request',types:['cable_gateway'],flows:['international_data'],summary:'A request enters through an API or cloud edge, crosses carrier and cloud networks to an inference region, and returns a generated response. The access endpoint may not be the physical serving facility.'},hardware:{title:'Build the compute hardware',types:['semiconductor'],flows:['hardware_supply'],summary:'Foundries and memory manufacturers supply logic, HBM, storage and supporting components to server production and ultimately data-center clusters. These arrows are supply-chain explanations, not tracked shipments.'},resilience:{title:'Trace a connectivity failure',types:['hazard','cable_gateway'],flows:['international_data'],summary:'Cable concentrations, seismic zones and shared gateways can affect several services at once. Operators mitigate this with diverse cable systems, landing stations, terrestrial paths and replicated compute.'}},config=configurations[scenario];if(!config)return;for(const line of this.systemLines){const link=this.asiaSystemLinks.find(item=>item.id===line.systemLinkId);line.setStyle(config.flows.includes(link?.flow_type)?{weight:5,opacity:1}:{weight:1,opacity:.05})}for(const marker of this.systemMarkers){const node=this.asiaSystemNodes.find(item=>item.id===marker.systemNodeId);marker.getElement()?.classList.toggle('is-muted',!config.types.includes(node?.type))}const selected=this.asiaSystemNodes.filter(node=>config.types.includes(node.type));if(selected.length)this.map.fitBounds(selected.map(node=>[node.latitude,node.longitude]),{padding:[70,380],maxZoom:4});const detail=this.root.querySelector('#cableDetail');detail.innerHTML=`<button type="button" data-close-cable aria-label="Close scenario details">×</button><p class="eyebrow">Illustrative system flow</p><h2>${this.escape(config.title)}</h2><p class="detail-lede">${this.escape(config.summary)}</p><dl><div><dt>Highlighted nodes</dt><dd>${selected.length}</dd></div><div><dt>Highlighted flows</dt><dd>${this.asiaSystemLinks.filter(link=>config.flows.includes(link.flow_type)).length}</dd></div><div><dt>Evidence rule</dt><dd>Every point and relationship preserves its individual confidence label</dd></div></dl><small>This scenario explains system mechanics; it is not live traffic telemetry, a shipment tracker, or proof that a named model used a particular campus.</small>`;detail.hidden=false}
 
   showNationalStrategy(){this.clearDataCenterSelection(false);this.clearSelection(false);this.clearCableSelection(false);this.clearModelSelection(false);for(const line of this.computeCorridorLines)line.setStyle({weight:9,opacity:.72,color:'#ff6b35'});const points=[...this.nationalComputeHubs.map(hub=>[hub.latitude,hub.longitude]),...this.nationalComputeCorridors.map(corridor=>{const node=this.chinaNodes.find(item=>item.id===corridor.demand_node_id);return node?[node.latitude,node.longitude]:null}).filter(Boolean)];if(points.length)this.map.fitBounds(points,{padding:[70,380],maxZoom:5});const eastern=[...new Set(this.nationalComputeCorridors.map(corridor=>this.chinaNodes.find(node=>node.id===corridor.demand_node_id)?.name).filter(Boolean))];const western=[...new Set(this.nationalComputeCorridors.map(corridor=>this.nationalComputeHubs.find(hub=>hub.id===corridor.hub_id)?.cluster_name).filter(Boolean))];const detail=this.root.querySelector('#cableDetail');detail.innerHTML=`<button type="button" data-close-cable aria-label="Close national strategy details">×</button><p class="eyebrow">National strategy overview</p><h2>East Data, West Computing</h2><p class="detail-lede">A national workload-allocation strategy linking high-demand eastern markets with energy- and land-rich computing clusters. The carrier backbones underneath it remain independently operated networks.</p><dl><div><dt>National computing hubs</dt><dd>8 hub regions</dd></div><div><dt>Data-center clusters</dt><dd>${this.nationalComputeHubs.length}</dd></div><div><dt>Conceptual workload corridors</dt><dd>${this.nationalComputeCorridors.length}</dd></div><div><dt>Mapped carrier backbones</dt><dd>${this.chinaNetworks.length}</dd></div></dl><section><h3>Demand centers represented</h3><p>${eastern.map(name=>this.escape(name)).join(' · ')}</p></section><section><h3>Destination clusters represented</h3><p>${western.map(name=>this.escape(name)).join(' · ')}</p></section><small>Orange bands show policy-level workload direction, not a single government fiber network. Colored carrier lines show the communications layer that can carry traffic. Click a gold hub to isolate its role.</small>`;detail.hidden=false}
 
@@ -127,7 +138,7 @@ export class OfficeMapView{
 
   setupModelSelector(){
     const select=this.root.querySelector('#mapModelSelect');if(!select)return;
-    const models=[...new Map([...this.modelInferenceRegions,...this.modelOrganizationSites].map(site=>[site.model_id,site.model_name])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
+    const models=[...new Map([...this.modelInferenceRegions,...this.modelOrganizationSites,...this.modelTrainingEvidence].map(site=>[site.model_id,site.model_name])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
     select.insertAdjacentHTML('beforeend',models.map(([id,name])=>`<option value="${this.escape(id)}">${this.escape(name)}</option>`).join(''));
     select.addEventListener('change',()=>select.value?this.selectModel(select.value):this.clearModelSelection());
   }
@@ -159,10 +170,10 @@ export class OfficeMapView{
   }
 
   selectModel(modelId,focusRegionId){
-    const regions=this.modelInferenceRegions.filter(region=>region.model_id===modelId),offices=this.modelOrganizationSites.filter(site=>site.model_id===modelId);if(!regions.length&&!offices.length)return;
+    const regions=this.modelInferenceRegions.filter(region=>region.model_id===modelId),offices=this.modelOrganizationSites.filter(site=>site.model_id===modelId),training=this.modelTrainingEvidence.find(item=>item.model_id===modelId);if(!regions.length&&!offices.length&&!training)return;
     this.clearSelection(false);this.clearCableSelection(false);this.clearChinaNetwork(false);
     this.selectedModel=modelId;this.root.classList.add('model-isolated');
-    for(const group of [this.dataCenterLayer,this.officeLayer,this.cableLayer,this.chinaFiberLayer,this.exchangeLayer])group.removeFrom(this.map);
+    for(const group of [this.dataCenterLayer,this.officeLayer,this.cableLayer,this.chinaFiberLayer,this.exchangeLayer,this.asiaSystemsLayer])group.removeFrom(this.map);
     if(!this.map.hasLayer(this.modelInferenceLayer))this.modelInferenceLayer.addTo(this.map);
     const family=modelId.startsWith('qwen')?'qwen':modelId;
     for(const marker of this.modelRegionMarkers)marker.setStyle(marker.modelId===modelId?{radius:marker.training?9:8,weight:2.5,opacity:1,fillOpacity:.92}:{radius:4,weight:1,opacity:.08,fillOpacity:.04});
@@ -173,9 +184,10 @@ export class OfficeMapView{
     const focus=[...this.modelInferenceRegions,...this.modelOrganizationSites].find(site=>site.id===focusRegionId);
     if(focus)this.map.flyTo([focus.latitude,focus.longitude],Math.max(this.map.getZoom(),5),{duration:.5});
     else if(selectedMarkers.length)this.map.fitBounds(L.featureGroup(selectedMarkers).getBounds(),{padding:[70,340],maxZoom:5});
-    const modelName=regions[0]?.model_name||offices[0].model_name,provider=regions[0]?.provider||offices[0].organization,detail=this.root.querySelector('#cableDetail');
-    const trainingRegions=regions.filter(region=>region.workload_role==='managed_training_and_inference'),inferenceRegions=regions.filter(region=>region.workload_role!=='managed_training_and_inference'),source=trainingRegions[0]?.workload_source_url||regions[0]?.source_url||offices[0].source_url;
+    const modelName=regions[0]?.model_name||offices[0]?.model_name||training.model_name,provider=regions[0]?.provider||offices[0]?.organization||training.developer,detail=this.root.querySelector('#cableDetail');
+    const trainingRegions=regions.filter(region=>region.workload_role==='managed_training_and_inference'),inferenceRegions=regions.filter(region=>region.workload_role!=='managed_training_and_inference'),source=trainingRegions[0]?.workload_source_url||regions[0]?.source_url||offices[0]?.source_url||training?.source_url;
     detail.innerHTML=`<button type="button" data-close-cable aria-label="Close model infrastructure details">×</button><p class="eyebrow">Isolated model footprint</p><h2>${this.escape(modelName)}</h2><dl><div><dt>Provider</dt><dd>${this.escape(provider)}</dd></div><div><dt>Offices</dt><dd><i class="site-swatch office"></i>${offices.length} listed</dd></div><div><dt>Training + inference</dt><dd><i class="site-swatch training"></i>${trainingRegions.length} managed regions</dd></div><div><dt>Inference / access</dt><dd><i class="site-swatch inference"></i>${inferenceRegions.length} published regions</dd></div></dl>${trainingRegions.length?`<section><h3>Training-capable regions</h3><p>${trainingRegions.map(region=>`${this.escape(region.region_name)} <small>${this.escape(region.deployment_scope)}</small>`).join(' · ')}</p></section>`:''}${inferenceRegions.length?`<section><h3>Inference or API-access regions</h3><p>${inferenceRegions.map(region=>`${this.escape(region.region_name)} <small>${this.escape(region.workload_role==='inference_access_region'?'access point—not confirmed serving facility':region.deployment_scope)}</small>`).join(' · ')}</p></section>`:`<section><h3>Infrastructure location undisclosed</h3><p>The provider publishes model API access but no sufficiently specific training or inference region that can be responsibly plotted.</p></section>`}<section><h3>Animated flow</h3><p>Moving dashes travel from each CSV source toward its target. They show an illustrative service or organizational direction—not live packet telemetry.</p></section><a href="${this.escape(source)}" target="_blank" rel="noreferrer">Open primary documentation ↗</a><small>Office, API access, service region, and physical serving facility are different claims. The map labels each separately and never upgrades an endpoint into a data center without evidence.</small>`;
+    if(training)detail.querySelector('dl')?.insertAdjacentHTML('afterend',`<section><h3>Original training evidence</h3><p><b>${this.escape(training.location_claim)}</b><br>${this.escape(training.training_scale)} · ${this.escape(training.hardware)}${training.accelerator_count?` · ${this.escape(training.accelerator_count)} accelerators`:''}</p><small>${this.escape(training.evidence_level.replaceAll('_',' '))}. ${this.escape(training.notes)}</small></section>`);
     detail.hidden=false;
   }
 
@@ -186,11 +198,24 @@ export class OfficeMapView{
     for(const line of this.modelPathLines)line.setStyle(line.baseStyle);
     const select=this.root.querySelector('#mapModelSelect');if(select)select.value='';
     if(wasSelected&&this.map){
-      const groups={'data-centers':this.dataCenterLayer,offices:this.officeLayer,cables:this.cableLayer,'china-fiber':this.chinaFiberLayer,exchanges:this.exchangeLayer,'model-inference':this.modelInferenceLayer};
+      const groups={'data-centers':this.dataCenterLayer,offices:this.officeLayer,cables:this.cableLayer,'china-fiber':this.chinaFiberLayer,exchanges:this.exchangeLayer,'model-inference':this.modelInferenceLayer,systems:this.asiaSystemsLayer};
       for(const button of this.root.querySelectorAll('[data-map-layer]'))if(button.getAttribute('aria-pressed')==='true')groups[button.dataset.mapLayer]?.addTo(this.map);
     }
     if(hideDetail)this.root.querySelector('#cableDetail').hidden=true;
   }
+
+  addAsiaSystems(bounds){
+    const colors={power:'#b9ff4a',semiconductor:'#ff4fd8',cable_gateway:'#35d7ff',hazard:'#ff465f'},symbols={power:'⚡',semiconductor:'◆',cable_gateway:'↔',hazard:'!'};
+    const endpoints=new Map([...this.asiaSystemNodes,...this.nationalComputeHubs,...this.chinaNodes].map(node=>[node.id,node]));
+    for(const link of this.asiaSystemLinks){const source=endpoints.get(link.source_id),target=endpoints.get(link.target_id);if(!source||!target)continue;const color=link.flow_type==='energy_context'?'#b9ff4a':link.flow_type==='hardware_supply'?'#ff4fd8':'#35d7ff';const line=L.polyline([[source.latitude,source.longitude],[target.latitude,target.longitude]],{renderer:this.systemRenderer,color,weight:3,opacity:.72,dashArray:'7 9',className:`system-flow ${link.flow_type}`});line.systemLinkId=link.id;line.baseStyle={color,weight:3,opacity:.72,dashArray:'7 9'};line.bindTooltip(`${link.label} · ${link.confidence.replaceAll('_',' ')}`,{sticky:true,className:'office-company-tooltip'});line.on('click',()=>this.selectSystemLink(link.id));line.addTo(this.asiaSystemsLayer);this.systemLines.push(line)}
+    for(const node of this.asiaSystemNodes){const color=colors[node.type]||'#fff',marker=L.marker([node.latitude,node.longitude],{icon:L.divIcon({className:'system-node-shell',html:`<span class="system-node ${node.type}" style="--system-color:${color}">${symbols[node.type]||'•'}</span>`,iconSize:[28,28],iconAnchor:[14,14],tooltipAnchor:[0,-14]}),riseOnHover:true,keyboard:true,title:node.name});marker.systemNodeId=node.id;marker.bindTooltip(`${node.name} · ${node.type.replaceAll('_',' ')}`,{direction:'top',className:'office-company-tooltip'});marker.on('click',()=>this.selectSystemNode(node.id));marker.addTo(this.asiaSystemsLayer);this.systemMarkers.push(marker);bounds.push([node.latitude,node.longitude])}
+  }
+
+  selectSystemNode(nodeId){const node=this.asiaSystemNodes.find(item=>item.id===nodeId);if(!node)return;const links=this.asiaSystemLinks.filter(link=>link.source_id===nodeId||link.target_id===nodeId);for(const marker of this.systemMarkers)marker.getElement()?.classList.toggle('is-muted',marker.systemNodeId!==nodeId);for(const line of this.systemLines)line.setStyle(links.some(link=>link.id===line.systemLinkId)?{weight:5,opacity:1}:{weight:1,opacity:.06});this.map.flyTo([node.latitude,node.longitude],Math.max(this.map.getZoom(),6),{duration:.5});const detail=this.root.querySelector('#cableDetail');detail.innerHTML=`<button type="button" data-close-cable aria-label="Close system-node details">×</button><p class="eyebrow">${this.escape(node.type.replaceAll('_',' '))} · ${this.escape(node.evidence.replaceAll('_',' '))}</p><h2>${this.escape(node.name)}</h2><p class="detail-lede">${this.escape(node.notes)}</p><dl><div><dt>Operator / system</dt><dd>${this.escape(node.operator)}</dd></div><div><dt>Location</dt><dd>${this.escape(node.city)}, ${this.escape(node.country)}</dd></div><div><dt>Role</dt><dd>${this.escape(node.role)}</dd></div><div><dt>Capacity or scale</dt><dd>${this.escape(node.capacity_or_scale)}</dd></div><div><dt>Hardware / resource</dt><dd>${this.escape(node.hardware_or_resource)}</dd></div><div><dt>Mapped flows</dt><dd>${links.length}</dd></div></dl><a href="${this.escape(node.source_url)}" target="_blank" rel="noreferrer">Open source ↗</a><small>System markers may represent a campus, metro ecosystem, regional energy base, or generalized risk zone. The evidence label states which.</small>`;detail.hidden=false}
+
+  selectSystemLink(linkId){const link=this.asiaSystemLinks.find(item=>item.id===linkId);if(!link)return;const endpoints=new Map([...this.asiaSystemNodes,...this.nationalComputeHubs,...this.chinaNodes].map(node=>[node.id,node])),source=endpoints.get(link.source_id),target=endpoints.get(link.target_id);for(const line of this.systemLines)line.setStyle(line.systemLinkId===linkId?{weight:6,opacity:1}:{weight:1,opacity:.05});const detail=this.root.querySelector('#cableDetail');detail.innerHTML=`<button type="button" data-close-cable aria-label="Close system-flow details">×</button><p class="eyebrow">${this.escape(link.flow_type.replaceAll('_',' '))}</p><h2>${this.escape(source?.name||link.source_id)} → ${this.escape(target?.name||link.target_id)}</h2><p class="detail-lede">${this.escape(link.label)}</p><dl><div><dt>Evidence</dt><dd>${this.escape(link.confidence.replaceAll('_',' '))}</dd></div><div><dt>Interpretation</dt><dd>${this.escape(link.notes)}</dd></div></dl><a href="${this.escape(link.source_url)}" target="_blank" rel="noreferrer">Open source ↗</a><small>Dashed system flows provide explanatory context. They are not live telemetry, verified shipments, utility circuits, or surveyed fiber routes unless explicitly stated.</small>`;detail.hidden=false}
+
+  clearAsiaSystems(hideDetail=true){for(const marker of this.systemMarkers)marker.getElement()?.classList.remove('is-muted');for(const line of this.systemLines)line.setStyle(line.baseStyle);const select=this.root.querySelector('#systemScenarioSelect');if(select)select.value='';if(hideDetail)this.root.querySelector('#cableDetail').hidden=true}
 
   addCableRoutes(bounds){
     const cableById=new Map(this.cables.map(cable=>[cable.id,cable]));
@@ -336,13 +361,14 @@ export class OfficeMapView{
     if(this.selectedModel&&button.dataset.mapLayer!=='model-inference')return;
     const layer=button.dataset.mapLayer,active=button.getAttribute('aria-pressed')!=='true';
     button.setAttribute('aria-pressed',String(active));button.classList.toggle('active',active);
-    const group=layer==='data-centers'?this.dataCenterLayer:layer==='offices'?this.officeLayer:layer==='cables'?this.cableLayer:layer==='china-fiber'?this.chinaFiberLayer:layer==='exchanges'?this.exchangeLayer:this.modelInferenceLayer;
+    const group=layer==='data-centers'?this.dataCenterLayer:layer==='offices'?this.officeLayer:layer==='cables'?this.cableLayer:layer==='china-fiber'?this.chinaFiberLayer:layer==='exchanges'?this.exchangeLayer:layer==='systems'?this.asiaSystemsLayer:this.modelInferenceLayer;
     if(active)group.addTo(this.map);else group.removeFrom(this.map);
     if(layer==='cables'&&!active)this.clearCableSelection();
     if(layer==='data-centers'&&!active)this.clearDataCenterSelection();
     if(layer==='offices'&&!active)this.clearSelection();
     if(layer==='china-fiber'&&!active)this.clearChinaNetwork();
     if(layer==='exchanges'&&!active)this.root.querySelector('#cableDetail').hidden=true;
+    if(layer==='systems'&&!active)this.clearAsiaSystems();
     if(layer==='model-inference'&&!active)this.clearModelSelection();
   }
 
