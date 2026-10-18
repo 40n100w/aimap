@@ -29,7 +29,7 @@ function chooseLocalDataFolder() {
     const scene = document.querySelector('#scene');
     const picker = document.createElement('div');
     picker.className = 'local-data-picker';
-    picker.innerHTML = `<strong>Load the atlas data folder</strong><span>Drag the complete <b>data</b> folder onto this box, or use the folder picker if your browser supports it.</span><button type="button">Choose “data” folder</button><input type="file" multiple accept=".csv,text/csv"><small>No files are uploaded. They remain on this machine.</small>`;
+    picker.innerHTML = `<strong>Load the atlas data folder</strong><span>Drag the complete <b>data</b> folder onto this box, or use the folder picker if your browser supports it.</span><button type="button">Choose “data” folder</button><input type="file" multiple accept=".csv,.json,text/csv,application/json"><small>No files are uploaded. They remain on this machine.</small>`;
     const button = picker.querySelector('button');
     const input = picker.querySelector('input');
     input.setAttribute('webkitdirectory', '');
@@ -37,7 +37,7 @@ function chooseLocalDataFolder() {
     input.webkitdirectory = true;
     const finish = files => {
       picker.remove();
-      resolve(new Map(files.filter(file => file.name.endsWith('.csv')).map(file => [file.name, file])));
+      resolve(new Map(files.filter(file => /\.(csv|json)$/.test(file.name)).map(file => [file.name, file])));
     };
     const readEntry = entry => new Promise((resolveEntry, rejectEntry) => entry.file(resolveEntry, rejectEntry));
     const readDirectory = async directory => {
@@ -84,14 +84,17 @@ function chooseLocalDataFolder() {
   return localFilesPromise;
 }
 
-export async function loadCsv(name) {
+export async function loadDataText(name) {
   if (location.protocol === 'file:') {
     const files = await chooseLocalDataFolder();
     const file = files.get(name);
     if (!file) throw new Error(`${name} was not found in the selected folder`);
-    return parseCsv(await file.text());
+    return file.text();
   }
   const response = await fetch(new URL(`data/${name}`, document.baseURI), { cache: 'no-store' });
   if (!response.ok) throw new Error(`Could not load data/${name} (${response.status})`);
-  return parseCsv(await response.text());
+  return response.text();
 }
+
+export async function loadCsv(name) { return parseCsv(await loadDataText(name)); }
+export async function loadJson(name) { return JSON.parse(await loadDataText(name)); }

@@ -7,6 +7,7 @@ import { chromium } from 'playwright';
 import { entities, relationships, aliases } from './load-csv-data.mjs';
 import { coverageSummary } from '../src/coverage.js';
 import { relationshipSummary } from '../src/relationships.js';
+import { checkUpdates } from './check-updates-browser.mjs';
 
 const catalogCoverage = coverageSummary(entities, relationships);
 const nvidiaLinks = relationshipSummary(relationships, 'nvidia', aliases).total;
@@ -75,6 +76,7 @@ async function mobileMenuAction(page, action) {
 }
 try {
   browser = await chromium.launch({executablePath, headless:true, args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader','--disable-dev-shm-usage']});
+  if (process.env.BROWSER_SUITE !== 'updates') {
   await check('desktop exploration, coverage, fonts and optional map tiles', async page => {
     const csv = []; page.on('request', request => { if (request.url().endsWith('.csv')) csv.push(request.url()); });
     await ready(page);
@@ -380,6 +382,8 @@ try {
     await page.locator('.data-load-error button').click();
     await page.locator('#app[data-ready="true"]').waitFor();
   });
+  }
+  await checkUpdates({check,ready,screenshot,base});
 } finally {
   await browser?.close();
   await new Promise(resolve => server.close(resolve));

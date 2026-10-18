@@ -1,11 +1,13 @@
 # Editable atlas data
 
-These CSV files are the website's source of truth. They are plain text, so the
-entire site remains portable and can be edited in Excel, Numbers, LibreOffice,
-Google Sheets, or a text editor.
+These plain-text files are the website's source of truth. The CSV catalog can
+be edited in Excel, Numbers, LibreOffice, Google Sheets, or a text editor.
+The reviewed Updates ledger is JSON and should be edited in a text editor,
+following the append-only [update workflow](../docs/updates.md).
 
 ## The files
 
+- `updates.json` — reviewed events, pinned sources, scoped claim versions and separately assessed potential effects; the event ledger is independent of illustrative atlas relationships
 - `entities.csv` — every searchable node and its profile text
 - `catalog-reviews.csv` — entity-level review dates, the precise scope checked, and primary documentation URLs; a review does not imply that all corporate facts or deployments were audited
 - `relationships.csv` — links between entity IDs

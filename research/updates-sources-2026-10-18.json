@@ -1,0 +1,35 @@
+[
+  {
+    "id": "deepseek-v3",
+    "url": "https://raw.githubusercontent.com/deepseek-ai/DeepSeek-V3/9b4e9788e4a3a731f7567338ed15d3ec549ce03b/README.md",
+    "publisher": "DeepSeek",
+    "revision": "9b4e9788e4a3a731f7567338ed15d3ec549ce03b",
+    "retrievedOn": "2026-10-18",
+    "sha256": "1f766f151bb4d501b18c9d1e229ac25682c68c75893d6d3bc9734e2a60125c0e",
+    "bytes": 20851,
+    "title": "DeepSeek-V3 model repository",
+    "publishedOn": null
+  },
+  {
+    "id": "qwen3",
+    "url": "https://raw.githubusercontent.com/QwenLM/Qwen3/7a2f61ffc7a20d47efcd2bf97f6f2bf52729042e/README.md",
+    "publisher": "Qwen team",
+    "revision": "7a2f61ffc7a20d47efcd2bf97f6f2bf52729042e",
+    "retrievedOn": "2026-10-18",
+    "sha256": "0b2c2bb11806f7a00c8465f2586e2e99f15de28622fd5c9b70b83ae1ab18c75d",
+    "bytes": 24732,
+    "title": "Qwen3 release history",
+    "publishedOn": null
+  },
+  {
+    "id": "openai-chat-model",
+    "url": "https://raw.githubusercontent.com/openai/openai-python/553703e2d3db379a83e3ead9e40436b7a66f639e/src/openai/types/shared/chat_model.py",
+    "publisher": "OpenAI",
+    "revision": "553703e2d3db379a83e3ead9e40436b7a66f639e",
+    "retrievedOn": "2026-10-18",
+    "sha256": "163abe668430a8a7c46d307c5a5cca98b3bef46d8aeaadd30b96c5e882286a4d",
+    "bytes": 6443,
+    "title": "OpenAI Python SDK \u00b7 ChatModel lifecycle notes",
+    "publishedOn": null
+  }
+]

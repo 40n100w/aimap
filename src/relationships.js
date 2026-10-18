@@ -3,9 +3,8 @@ export const MUTUAL = new Set(['PARTNERS_WITH', 'INTEGRATES_WITH', 'COMPETES_WIT
 
 export function directionalNeighbor(relationship, current, direction) {
   if (relationship.source === relationship.target) return null;
-  if (MUTUAL.has(relationship.type)) {
-    return relationship.source === current ? relationship.target : relationship.target === current ? relationship.source : null;
-  }
+  // A partnership or competitor is context, not a directed dependency.
+  if (MUTUAL.has(relationship.type)) return null;
   const [consumer, provider] = DEPENDENCY_SOURCE.has(relationship.type)
     ? [relationship.source, relationship.target] : [relationship.target, relationship.source];
   return direction === 'upstream' ? (consumer === current ? provider : null) : (provider === current ? consumer : null);
@@ -28,14 +27,20 @@ export function relationshipSummary(relationships, id, aliases = {}) {
 export function buildDirectionalTrace(relationships, root, direction, canVisit = () => true, maxHops = 6, maxNodes = 180) {
   const hops = new Map([[root, 0]]), nodes = [root], edges = [], queue = [root];
   let truncated = false;
+  const seenEdges = new Set();
   while (queue.length) {
     const current = queue.shift(), hop = hops.get(current);
     if (hop >= maxHops) continue;
     for (const relationship of relationships) {
       const next = directionalNeighbor(relationship, current, direction);
-      if (!next || !canVisit(next) || hops.has(next)) continue;
-      if (nodes.length >= maxNodes) { truncated = true; continue; }
-      hops.set(next, hop + 1); nodes.push(next); queue.push(next); edges.push(relationship);
+      if (!next || !canVisit(next)) continue;
+      if (!hops.has(next)) {
+        if (nodes.length >= maxNodes) { truncated = true; continue; }
+        hops.set(next, hop + 1); nodes.push(next); queue.push(next);
+      }
+      // Keep alternate paths among reached nodes instead of reducing the
+      // evidence graph to whichever spanning tree was visited first.
+      if (!seenEdges.has(relationship)) { edges.push(relationship); seenEdges.add(relationship); }
     }
   }
   return {nodes, edges, hops, truncated, maxDepth: Math.max(0, ...hops.values())};

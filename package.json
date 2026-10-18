@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --config vite.file.config.js && node scripts/build-portable.mjs",
-    "check:data": "npm run validate:data && npm run validate:locations && npm run validate:data-centers && npm run validate:cables && npm run validate:china-fiber && npm run validate:asia-systems && npm run validate:exchanges && npm run validate:model-inference",
+    "check:data": "npm run validate:data && npm run validate:locations && npm run validate:data-centers && npm run validate:cables && npm run validate:china-fiber && npm run validate:asia-systems && npm run validate:exchanges && npm run validate:model-inference && npm run validate:updates",
     "preview": "vite preview",
     "validate:data": "node scripts/validate-data.mjs",
     "validate:locations": "node scripts/validate-locations.mjs",
@@ -18,7 +18,8 @@
     "validate:model-inference": "node scripts/validate-model-inference.mjs",
     "report:location-coverage": "node scripts/report-location-coverage.mjs",
     "test": "node --test tests/*.test.mjs",
-    "test:browser": "node scripts/check-browser.mjs"
+    "test:browser": "node scripts/check-browser.mjs",
+    "validate:updates": "node scripts/validate-updates.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

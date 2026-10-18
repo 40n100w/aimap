@@ -33,7 +33,7 @@ export class MobileUI {
     this.observer = new MutationObserver(records => {
       // Animated node labels change every frame; only interface changes need
       // to update sheets and focus management.
-      if (records.some(record => !record.target.closest?.('#scene'))) this.scheduleSync();
+      if (records.some(record => !record.target.closest?.('#scene,#upNodeLabels'))) this.scheduleSync();
     });
     this.observer.observe(this.app, {subtree:true, childList:true, attributes:true, attributeFilter:['hidden','open']});
     this.observer.observe(document.body, {attributes:true, attributeFilter:['class']});
@@ -119,7 +119,7 @@ export class MobileUI {
 
   onClick(event) {
     if (!this.media.matches) return;
-    if (event.target.closest('.skip-link')) {
+    if (event.target.closest('.skip-link') && !document.body.classList.contains('updates-mode')) {
       event.preventDefault(); event.stopPropagation(); document.querySelector('[data-mobile="search"]').click(); return;
     }
     const button = event.target.closest('[data-mobile],[data-action],[data-view],[data-camera],[data-entity],[data-journey]');
@@ -157,7 +157,7 @@ export class MobileUI {
     this.scheduleSync();
   }
 
-  currentView() { return document.querySelector('.view-switch .active')?.dataset.view || 'ecosystem'; }
+  currentView() { if (document.body.classList.contains('updates-mode')) return 'updates'; return document.querySelector('.view-switch .active')?.dataset.view || 'ecosystem'; }
   scheduleSync() {
     if (this.syncPending) return;
     this.syncPending=true;
@@ -186,7 +186,7 @@ export class MobileUI {
     for (const button of document.querySelectorAll('.view-switch [data-view]')) {
       if (button.dataset.view===view) button.setAttribute('aria-current','page'); else button.removeAttribute('aria-current');
     }
-    this.scene.mobilePaused=Boolean(dialog)||view==='map'||view==='timeline';
+    this.scene.mobilePaused=Boolean(dialog)||view==='map'||view==='timeline'||view==='updates';
   }
 
   addTimelinePicker() {
@@ -253,6 +253,7 @@ export class MobileUI {
   }
 
   onKeydown(event) {
+    if (document.body.classList.contains('updates-mode')) return;
     if (!this.media.matches) return;
     if ((event.metaKey||event.ctrlKey) && event.key.toLowerCase()==='k') {
       event.preventDefault(); event.stopImmediatePropagation(); document.querySelector('[data-mobile="search"]').click(); return;

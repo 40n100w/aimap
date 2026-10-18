@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-18",
+  "coverage": "Three curated records from developer documentation. This is a limited reviewed collection, not a live or comprehensive news feed.",
+  "sources": [
+    {
+      "id": "deepseek-v3",
+      "url": "https://raw.githubusercontent.com/deepseek-ai/DeepSeek-V3/9b4e9788e4a3a731f7567338ed15d3ec549ce03b/README.md",
+      "publisher": "DeepSeek",
+      "revision": "9b4e9788e4a3a731f7567338ed15d3ec549ce03b",
+      "retrievedOn": "2026-10-18",
+      "sha256": "1f766f151bb4d501b18c9d1e229ac25682c68c75893d6d3bc9734e2a60125c0e",
+      "bytes": 20851,
+      "title": "DeepSeek-V3 model repository",
+      "publishedOn": null
+    },
+    {
+      "id": "qwen3",
+      "url": "https://raw.githubusercontent.com/QwenLM/Qwen3/7a2f61ffc7a20d47efcd2bf97f6f2bf52729042e/README.md",
+      "publisher": "Qwen team",
+      "revision": "7a2f61ffc7a20d47efcd2bf97f6f2bf52729042e",
+      "retrievedOn": "2026-10-18",
+      "sha256": "0b2c2bb11806f7a00c8465f2586e2e99f15de28622fd5c9b70b83ae1ab18c75d",
+      "bytes": 24732,
+      "title": "Qwen3 release history",
+      "publishedOn": null
+    },
+    {
+      "id": "openai-chat-model",
+      "url": "https://raw.githubusercontent.com/openai/openai-python/553703e2d3db379a83e3ead9e40436b7a66f639e/src/openai/types/shared/chat_model.py",
+      "publisher": "OpenAI",
+      "revision": "553703e2d3db379a83e3ead9e40436b7a66f639e",
+      "retrievedOn": "2026-10-18",
+      "sha256": "163abe668430a8a7c46d307c5a5cca98b3bef46d8aeaadd30b96c5e882286a4d",
+      "bytes": 6443,
+      "title": "OpenAI Python SDK · ChatModel lifecycle notes",
+      "publishedOn": null
+    }
+  ],
+  "nodes": [
+    {
+      "id": "h800-gpu",
+      "name": "H800 GPU",
+      "kind": "hardware",
+      "role": "Training accelerator",
+      "description": "The H800 accelerator identified in the DeepSeek-V3 developer training disclosure. Facility and supplier allocation are not established by this record.",
+      "sourceIds": [
+        "deepseek-v3"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "qwen3-release-record",
+      "sequence": 1,
+      "root": "qwen3",
+      "namedEntityIds": [
+        "qwen",
+        "qwen3"
+      ],
+      "lens": "serving",
+      "title": "Qwen3 release enters the record",
+      "summary": "A historical release provides a dated anchor for the Qwen3 series. Later variants need their own evidence.",
+      "category": "Historical announcement",
+      "occurredOn": "2025-04-29",
+      "recordedOn": "2026-10-18",
+      "reviewedOn": "2026-10-18",
+      "scope": "Series-level release, explicitly dated in the developer’s release history.",
+      "unknowns": "Original training hardware, facilities, serving providers, customer adoption and business outcomes are not assessed in this update.",
+      "changeVersionIds": [
+        "qwen3-release-v1"
+      ],
+      "contextClaimIds": []
+    },
+    {
+      "id": "o4-lifecycle-review",
+      "sequence": 2,
+      "root": "o4-mini",
+      "namedEntityIds": [
+        "openai",
+        "o4-mini"
+      ],
+      "lens": "serving",
+      "title": "o4-mini: a shutdown date is announced",
+      "summary": "The SDK records a 23 October 2026 shutdown schedule. Treat it as a provider announcement until completion is verified.",
+      "category": "Lifecycle documentation review",
+      "occurredOn": null,
+      "recordedOn": "2026-10-18",
+      "reviewedOn": "2026-10-18",
+      "scope": "Provider SDK notes reviewed on 18 October 2026. The announcement’s original publication date is not established.",
+      "unknowns": "Actual service status, affected customer counts, migrations and commercial effects have not been verified.",
+      "changeVersionIds": [
+        "o4-sdk-listing-v1",
+        "o4-scheduled-shutdown-v1"
+      ],
+      "contextClaimIds": []
+    },
+    {
+      "id": "deepseek-v3-evidence-review",
+      "sequence": 3,
+      "root": "deepseek-v3",
+      "namedEntityIds": [
+        "deepseek",
+        "deepseek-v3",
+        "h800-gpu",
+        "vllm",
+        "sglang",
+        "tensorrt-llm"
+      ],
+      "lens": "serving",
+      "title": "DeepSeek-V3: trace the documented stack",
+      "summary": "Training on H800 and support from three inference runtimes are recorded separately. Follow each connection back to the developer’s evidence.",
+      "category": "Model documentation review",
+      "occurredOn": null,
+      "recordedOn": "2026-10-18",
+      "reviewedOn": "2026-10-18",
+      "scope": "A review of existing documentation on 18 October 2026, not a new model launch. Runtime support does not identify a production serving provider.",
+      "unknowns": "Training location, cloud contracts, chip manufacturing path, live serving deployments, customer adoption and financial outcomes are not established by these records.",
+      "changeVersionIds": [
+        "deepseek-v3-developer-v1",
+        "deepseek-v3-h800-v1",
+        "deepseek-v3-vllm-v1",
+        "deepseek-v3-sglang-v1",
+        "deepseek-v3-trt-v1"
+      ],
+      "contextClaimIds": []
+    }
+  ],
+  "versions": [
+    {
+      "id": "qwen3-release-v1",
+      "claimId": "qwen3-release",
+      "eventId": "qwen3-release-record",
+      "state": "published",
+      "basis": "primary",
+      "subject": "qwen",
+      "relation": "RELEASED",
+      "object": "qwen3",
+      "value": null,
+      "statement": "The Qwen team records the Qwen3 series release on 29 April 2025.",
+      "scope": "Series-level release. This does not establish the launch date, hardware or adoption of every later Qwen3 variant.",
+      "lenses": [
+        "serving",
+        "training",
+        "hardware"
+      ],
+      "citations": [
+        {
+          "sourceId": "qwen3",
+          "excerpt": "2025.04.29: We released the Qwen3 series."
+        }
+      ],
+      "supersedes": null,
+      "validFrom": "2025-04-29",
+      "validTo": null
+    },
+    {
+      "id": "o4-sdk-listing-v1",
+      "claimId": "o4-sdk-listing",
+      "eventId": "o4-lifecycle-review",
+      "state": "published",
+      "basis": "primary",
+      "subject": "openai",
+      "relation": "LISTS_MODEL",
+      "object": "o4-mini",
+      "value": null,
+      "statement": "The OpenAI Python SDK lists o4-mini as a ChatModel identifier.",
+      "scope": "SDK identifier and provider context only. Listing is not a live check of API access, commercial availability or training infrastructure.",
+      "lenses": [
+        "serving",
+        "training",
+        "hardware"
+      ],
+      "citations": [
+        {
+          "sourceId": "openai-chat-model",
+          "excerpt": "\"o4-mini\",\n    \"o4-mini-2025-04-16\","
+        }
+      ],
+      "supersedes": null,
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "o4-scheduled-shutdown-v1",
+      "claimId": "o4-scheduled-shutdown",
+      "eventId": "o4-lifecycle-review",
+      "state": "published",
+      "basis": "primary",
+      "subject": "o4-mini",
+      "relation": "ANNOUNCED_SHUTDOWN",
+      "object": null,
+      "value": "2026-10-23",
+      "statement": "The SDK lifecycle note includes o4-mini among identifiers with an announced shutdown date of 23 October 2026.",
+      "scope": "An announced schedule, reviewed on 18 October 2026. It does not prove an outage, completed shutdown, customer migration or replacement choice. Recheck the provider deprecations page before acting.",
+      "lenses": [
+        "serving"
+      ],
+      "citations": [
+        {
+          "sourceId": "openai-chat-model",
+          "excerpt": "- \"gpt-4.1-nano\", \"gpt-4.1-nano-2025-04-14\", \"o4-mini\", \"o4-mini-2025-04-16\",\n  \"o3-mini\", \"o3-mini-2025-01-31\", \"o1\", \"o1-2024-12-17\", \"gpt-4o-2024-05-13\",\n  \"gpt-4-turbo\", \"gpt-4-turbo-2024-04-09\", \"gpt-4-1106-preview\", \"gpt-4\",\n  \"gpt-4-0613\", \"gpt-3.5-turbo\", \"gpt-3.5-turbo-0125\": Announced shutdown date:\n  2026-10-23. See https://developers.openai.com/api/docs/deprecations for\n  details and recommended replacements."
+        }
+      ],
+      "supersedes": null,
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "deepseek-v3-developer-v1",
+      "claimId": "deepseek-v3-developer",
+      "eventId": "deepseek-v3-evidence-review",
+      "state": "published",
+      "basis": "primary",
+      "subject": "deepseek",
+      "relation": "DEVELOPS",
+      "object": "deepseek-v3",
+      "value": null,
+      "statement": "DeepSeek presents DeepSeek-V3 as its model.",
+      "scope": "The original DeepSeek-V3 record. No inference about later V3 revisions, R1 or V4 infrastructure.",
+      "lenses": [
+        "serving",
+        "training",
+        "hardware"
+      ],
+      "citations": [
+        {
+          "sourceId": "deepseek-v3",
+          "excerpt": "We present DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token."
+        }
+      ],
+      "supersedes": null,
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "deepseek-v3-h800-v1",
+      "claimId": "deepseek-v3-h800",
+      "eventId": "deepseek-v3-evidence-review",
+      "state": "published",
+      "basis": "primary",
+      "subject": "deepseek-v3",
+      "relation": "TRAINED_ON",
+      "object": "h800-gpu",
+      "value": null,
+      "statement": "DeepSeek reports 2.788 million H800 GPU hours for DeepSeek-V3 full training.",
+      "scope": "A developer-reported training input for this model. It does not identify a facility, cloud supplier, chip purchase value, serving allocation or total company R&D cost.",
+      "lenses": [
+        "training",
+        "hardware"
+      ],
+      "citations": [
+        {
+          "sourceId": "deepseek-v3",
+          "excerpt": "Despite its excellent performance, DeepSeek-V3 requires only 2.788M H800 GPU hours for its full training."
+        }
+      ],
+      "supersedes": null,
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "deepseek-v3-vllm-v1",
+      "claimId": "deepseek-v3-vllm",
+      "eventId": "deepseek-v3-evidence-review",
+      "state": "published",
+      "basis": "primary",
+      "subject": "vllm",
+      "relation": "SUPPORTS_INFERENCE",
+      "object": "deepseek-v3",
+      "value": null,
+      "statement": "DeepSeek documents vLLM v0.6.6 support for DeepSeek-V3 FP8 and BF16 inference.",
+      "scope": "Version-specific runtime compatibility in the reviewed document. It does not establish that DeepSeek or any named customer operates vLLM in production.",
+      "lenses": [
+        "serving"
+      ],
+      "citations": [
+        {
+          "sourceId": "deepseek-v3",
+          "excerpt": "v0.6.6 supports DeepSeek-V3 inference for FP8 and BF16 modes on both NVIDIA and AMD GPUs."
+        }
+      ],
+      "supersedes": null,
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "deepseek-v3-sglang-v1",
+      "claimId": "deepseek-v3-sglang",
+      "eventId": "deepseek-v3-evidence-review",
+      "state": "published",
+      "basis": "primary",
+      "subject": "sglang",
+      "relation": "SUPPORTS_INFERENCE",
+      "object": "deepseek-v3",
+      "value": null,
+      "statement": "DeepSeek documents SGLang v0.4.1 support for running DeepSeek-V3 on NVIDIA and AMD GPUs.",
+      "scope": "Runtime compatibility, not original training hardware, a managed endpoint or verified production deployment.",
+      "lenses": [
+        "serving"
+      ],
+      "citations": [
+        {
+          "sourceId": "deepseek-v3",
+          "excerpt": "fully supports running DeepSeek-V3 on both **NVIDIA and AMD GPUs**, making it a highly versatile and robust solution."
+        }
+      ],
+      "supersedes": null,
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "deepseek-v3-trt-v1",
+      "claimId": "deepseek-v3-trt",
+      "eventId": "deepseek-v3-evidence-review",
+      "state": "published",
+      "basis": "primary",
+      "subject": "tensorrt-llm",
+      "relation": "SUPPORTS_INFERENCE",
+      "object": "deepseek-v3",
+      "value": null,
+      "statement": "DeepSeek documents TensorRT-LLM support for DeepSeek-V3 BF16 and INT4/INT8 weight-only inference.",
+      "scope": "The pinned document describes FP8 support as in progress. This is a documentation observation, not a current runtime test or evidence of training hardware.",
+      "lenses": [
+        "serving"
+      ],
+      "citations": [
+        {
+          "sourceId": "deepseek-v3",
+          "excerpt": "now supports the DeepSeek-V3 model, offering precision options such as BF16 and INT4/INT8 weight-only. Support for FP8 is currently in progress and will be released soon."
+        }
+      ],
+      "supersedes": null,
+      "validFrom": null,
+      "validTo": null
+    }
+  ],
+  "assessments": [
+    {
+      "id": "deepseek-v3-self-hosting",
+      "eventId": "deepseek-v3-evidence-review",
+      "subject": "vllm",
+      "object": "deepseek-v3",
+      "lens": "serving",
+      "status": "potential",
+      "title": "A possible self-hosting route",
+      "mechanism": "Documented runtime support could let an operator evaluate serving the model on its own infrastructure. Compatibility alone does not establish a successful deployment or a cost advantage.",
+      "assumptions": [
+        "The operator has suitable hardware, memory and engineering capacity.",
+        "The documented runtime and model weights meet its workload, license and security requirements.",
+        "Operational evaluation succeeds and the operator chooses to deploy."
+      ],
+      "horizon": "After an operator completes evaluation; no deployment date estimated.",
+      "unknowns": "No named operator, adoption, revenue shift or capacity effect is established.",
+      "basedOnVersionIds": [
+        "deepseek-v3-vllm-v1"
+      ]
+    }
+  ]
+}

@@ -14,8 +14,8 @@ test('counts dependency directions consistently with traces and separates mutual
   ];
   const summary = relationshipSummary(edges, 'chip');
   assert.deepEqual([summary.upstream, summary.downstream, summary.mutual, summary.total], [2, 2, 1, 5]);
-  assert.deepEqual(new Set(buildDirectionalTrace(edges, 'chip', 'upstream').nodes), new Set(['chip', 'fab', 'memory', 'peer']));
-  assert.deepEqual(new Set(buildDirectionalTrace(edges, 'chip', 'downstream').nodes), new Set(['chip', 'lab', 'customer', 'peer']));
+  assert.deepEqual(new Set(buildDirectionalTrace(edges, 'chip', 'upstream').nodes), new Set(['chip', 'fab', 'memory']));
+  assert.deepEqual(new Set(buildDirectionalTrace(edges, 'chip', 'downstream').nodes), new Set(['chip', 'lab', 'customer']));
 });
 
 test('resolves aliases and terminates cyclic traces with limits and filters', () => {

@@ -14,6 +14,10 @@ src/scene.js        Three.js scene, camera, node layout, lines, focus and traces
 src/ui.js           Search, filters, panels, journeys and textual interactions
 src/mobile-ui.js    Touch navigation and accessible sheets using the same controllers
 src/mobile.css      Mobile-only layout, safe areas and keyboard-aware sizing
+data/updates.json    Reviewed events, source snapshots and append-only claim history
+src/update-records.js Validated record snapshots and scoped evidence selection
+src/updates-view.js  Responsive Updates feed, evidence, history and local watchlists
+src/updates-graph.js Focused 3D graph of the update's explicit claims
 src/main.js         Application bootstrap
 src/styles.css      Visual system, responsive layout and reduced motion
 vite.config.js      Relative-path production build for project-site hosting
@@ -30,7 +34,7 @@ Requires Node.js 20 or newer.
 The page can also be opened directly from disk with no server or internet
 connection. Drag the neighboring `data` folder onto the prompt, or choose it
 with the folder picker in browsers that support local directory access. CSV
-edits appear after a refresh and loading the folder again.
+and JSON edits appear after a refresh and loading the folder again.
 
 ```bash
 npm install
@@ -62,7 +66,18 @@ Set `CHROMIUM_PATH` to use a different Chromium installation. Optional
 `SCREENSHOT_DIR=work/browser-checks` saves screenshots from the same checks.
 
 The development server serves the checked-in standalone bundle. Rebuild after
-editing JavaScript or styles to refresh it; CSV-only edits need no rebuild.
+editing JavaScript or styles to refresh it; data-only edits need no rebuild for
+the development page. Rebuild before deployment so `dist/data` is refreshed.
+
+## Reviewed updates
+
+The **Updates** workspace connects curated announcements and documentation
+reviews to scoped 3D relationships, source excerpts and claim history. Desktop
+uses three panels; phones use Updates / 3D map / Evidence tabs. Compare earlier
+and updated records, follow entities locally, and explicitly enable potential
+effects with their assumptions. The initial collection is limited and reviewed;
+it is not a live news feed. See [the update workflow](docs/updates.md) for coverage,
+data semantics, adding records and publishing corrections.
 
 The command first refreshes the standalone browser assets, then writes the
 deployable site to `dist/`. The JavaScript and styles are contained in

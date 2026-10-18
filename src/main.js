@@ -4,12 +4,14 @@ import './timeline.css';
 import './map-view.css';
 import './usability.css';
 import './mobile.css';
+import './updates.css';
 import { entities, loadCoreData, relationships, representativePaths } from './data.js';
 import { EcosystemScene } from './scene.js';
 import { TextScene } from './text-scene.js';
 import { UI } from './ui.js';
 import { loadMapData } from './map-data.js';
 import { MobileUI } from './mobile-ui.js';
+import { UpdatesView } from './updates-view.js';
 
 async function start() {
   await loadCoreData();
@@ -26,7 +28,8 @@ async function start() {
     scene = new TextScene(mount, entities, relationships, select);
   }
   ui = new UI(entities, relationships, scene, select, [], {}, loadMapData);
-  new MobileUI(ui, scene);
+  const mobileUI = new MobileUI(ui, scene);
+  new UpdatesView(ui, mobileUI);
   document.querySelector('#app').setAttribute('data-ready', 'true');
 }
 
