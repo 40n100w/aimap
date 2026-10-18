@@ -1,0 +1,302 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/openai/openai-python/main/src/openai/types/shared/chat_model.py",
+    "retrievedOn": "2026-10-18",
+    "sha256": "163abe668430a8a7c46d307c5a5cca98b3bef46d8aeaadd30b96c5e882286a4d",
+    "bytes": 6443
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-python/main/src/anthropic/types/model.py",
+    "retrievedOn": "2026-10-18",
+    "sha256": "460fb8dd6ff0cbbc3d6e4821d0fd559dff22ab4d79ad004f4aa4389e70b8b46c",
+    "bytes": 737
+  },
+  {
+    "url": "https://raw.githubusercontent.com/googleapis/python-genai/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "66952d47594d7a9c588782f57cb02d04fa4fd27b108112fd06b036234cdebc34",
+    "bytes": 56828
+  },
+  {
+    "url": "https://raw.githubusercontent.com/QwenLM/Qwen3/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "0b2c2bb11806f7a00c8465f2586e2e99f15de28622fd5c9b70b83ae1ab18c75d",
+    "bytes": 24732
+  },
+  {
+    "url": "https://raw.githubusercontent.com/QwenLM/Qwen3.5/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "a71ec46607f81d6056336fb0a8431a26a1c7d8db6ac568a0c021c36f1ed3c92e",
+    "bytes": 14334
+  },
+  {
+    "url": "https://raw.githubusercontent.com/MiniMax-AI/MiniMax-M3/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "a223cf692dd0da954e819a8ec6870d7f08002fb97e6fe39e65c5582350b1a820",
+    "bytes": 4950
+  },
+  {
+    "url": "https://raw.githubusercontent.com/zai-org/GLM-5/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "78ebb1936e94a4c4412bca2abc1c9cbe599455df12fb1373e75c495cb043651e",
+    "bytes": 15185
+  },
+  {
+    "url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "c64fa5329d7daac7ea9dc78867595f83e83f6f189116e02fd0c52f75c9beaaa7",
+    "bytes": 29767
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ROCm/ROCm/develop/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "9a994e5acede9dc1d8617214272b528157b9253f74c3210918e90b521b2df619",
+    "bytes": 8267
+  },
+  {
+    "url": "https://raw.githubusercontent.com/aws-neuron/aws-neuron-sdk/master/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "88eb4d7f21fed8c567757027c70186e9990bb0bc19a47e54e21bd3ecea022439",
+    "bytes": 1043
+  },
+  {
+    "url": "https://raw.githubusercontent.com/MoonshotAI/Kimi-K3/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "849a303d849486aac61d1f0c253e3a1148ca59e801be807151c2dc3cce57ccb2",
+    "bytes": 45004
+  },
+  {
+    "url": "https://raw.githubusercontent.com/MoonshotAI/Kimi-K2/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "c03aae84ce013a298699fc5ef9be474a825308fddd2c4571da8cd4b6f89af90b",
+    "bytes": 27490
+  },
+  {
+    "url": "https://raw.githubusercontent.com/deepseek-ai/DeepSeek-V3.2/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "dffcdf358a42599945d49293a4f210dbe589141085207b76c081c9ace1f8fd74",
+    "bytes": 6899
+  },
+  {
+    "url": "https://raw.githubusercontent.com/deepseek-ai/DeepSeek-R1/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "4ed979e497121ae4dd9f1573da1668219f43be55d62cc0bf2be5429211a67486",
+    "bytes": 20736
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/openai-python/main/src/openai/types/image_model.py",
+    "retrievedOn": "2026-10-18",
+    "sha256": "235a883f7b13f9f9f4532c9e6485f9e5bf3d594742b8b30d29d308aba4956972",
+    "bytes": 632
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/openai-python/main/src/openai/types/video_model.py",
+    "retrievedOn": "2026-10-18",
+    "sha256": "ac8abe6add17e5642d6109bbc261f32a7ff4b0c1656617311dae9e0e637a64db",
+    "bytes": 328
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/codex/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7",
+    "bytes": 3334
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/openai-agents-python/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "cf68cb43182d6ea4f79a32421f6723e8ee2cc0f68f97524da7f300e9fc77940b",
+    "bytes": 9009
+  },
+  {
+    "url": "https://raw.githubusercontent.com/anthropics/claude-code/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "aa0d8b80ac083e1591be0789273f447058cc9187b4331634a5614155da27778d",
+    "bytes": 2873
+  },
+  {
+    "url": "https://raw.githubusercontent.com/google/gemma_pytorch/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "86f6cd7c50eec67f1ad74b54a59c40c40748dde840b405bda897f92a754f201d",
+    "bytes": 5754
+  },
+  {
+    "url": "https://raw.githubusercontent.com/meta-llama/llama-models/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "0ac5f064caca753d78aa286ca382cf7e819b54b1f90edca9a905786b2aac238e",
+    "bytes": 10065
+  },
+  {
+    "url": "https://raw.githubusercontent.com/black-forest-labs/flux2/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "435753749320bbb395c15983e63e3dc73936c03f0f1870c628e7bf922c55eef7",
+    "bytes": 8466
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mistralai/client-python/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "ed12b0b758e9a43c11543e1e1498b4afb02f03e12e6e99296edaeb85c04d2560",
+    "bytes": 62866
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mistralai/mistral-vibe/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "dfe5c431c0806524120e637e7c2ef402b12b7fc055eb37ea62acea8d6b867d27",
+    "bytes": 66116
+  },
+  {
+    "url": "https://raw.githubusercontent.com/cohere-ai/cohere-python/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "135b58d36d42e09ed2d52c86d2b102a6798017fbb0fa5cfec5bcd606dd49728f",
+    "bytes": 5271
+  },
+  {
+    "url": "https://raw.githubusercontent.com/aws-samples/amazon-bedrock-samples/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "c96d78b1674c840c1eef2af1be17666d7c95121843fd76e8a8b5c41c7d2a9807",
+    "bytes": 3585
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Azure/azure-sdk-for-python/main/sdk/ai/azure-ai-projects/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "79d553cbdddcaded94a29ef629932a36815b7fc5349a0fcd437d91037fadf65b",
+    "bytes": 19404
+  },
+  {
+    "url": "https://raw.githubusercontent.com/huggingface/huggingface_hub/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "ef11081839bdea72c6ae7be4832e4d4c94ef76e5888b0ddd935850c675e7d91a",
+    "bytes": 9571
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nebius/pysdk/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "2485ef90c5ceebe53b210be3ad9417e0be2f3e83a011ded9021048c4b9bb4704",
+    "bytes": 38707
+  },
+  {
+    "url": "https://raw.githubusercontent.com/groq/groq-python/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "fbe2d274b599ac6cb9bf4a201bd80301f8274edfa3f6e6718da6794afc1473ae",
+    "bytes": 15749
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Cerebras/cerebras-cloud-sdk-python/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "ef5782798d14b72ab7e08261737d969142870e1d4d582fc76dbeec1984bb9cb7",
+    "bytes": 18373
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fw-ai/cookbook/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "936b99e6a1e943a96317527235def6d57aca7ab811e58dfe1c8e2e8a625f4b41",
+    "bytes": 3966
+  },
+  {
+    "url": "https://raw.githubusercontent.com/OpenRouterTeam/python-sdk/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "b0d90ae1d2cfb087984c037f2805a9030c813fecca443ca34ec58f18049bb82f",
+    "bytes": 10526
+  },
+  {
+    "url": "https://raw.githubusercontent.com/weaviate/weaviate/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "8dc0086a08ce896fca55ed99881694a5baae63a4e671489cb98c3e6a07da096a",
+    "bytes": 19636
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pinecone-io/pinecone-python-client/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "2f930a7a01fc2065803e51870427440c5eb16aceca6f4a9e63e411d161f6c2a1",
+    "bytes": 5172
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wandb/wandb/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "a98d28dabf4834c40f7c30b12fa5ae170250d1fbfd23d5023b1f008cac671adc",
+    "bytes": 6429
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ROCm/rocm-install-on-linux/develop/docs/reference/system-requirements.rst",
+    "retrievedOn": "2026-10-18",
+    "sha256": "7dd8d8f06daccaaca3d9022da3ce763a3e0db274ceab765d85468e5e83b0f0d4",
+    "bytes": 16776
+  },
+  {
+    "url": "https://raw.githubusercontent.com/amd/RyzenAI-SW/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "dc7de8d2ec4fcced1a617cd1e9d634da556ab7311c341e768ff458bca186b60f",
+    "bytes": 3563
+  },
+  {
+    "url": "https://raw.githubusercontent.com/apple/coremltools/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "45afb380a2aae0db4fb847ba0bfb63ea45db26909a0e96b4ce39565e7f12c27b",
+    "bytes": 2948
+  },
+  {
+    "url": "https://raw.githubusercontent.com/NVIDIA/bionemo-framework/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "5e85a4fdb5663c70a972ee53d400f20d5ca6ccaa83ccd3fda415f9b89379e853",
+    "bytes": 15815
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Stability-AI/sd3.5/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "da1c8ed3cde5b6118eb49c2732d1499d57c77a924ee357bdd76dde707485ac82",
+    "bytes": 7570
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ArcInstitute/evo2/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "58787c8ef5cb4fba4c04322a4ceb9f174e2233ec22d4193622fb6bc67d651d89",
+    "bytes": 12895
+  },
+  {
+    "url": "https://raw.githubusercontent.com/google-deepmind/alphafold3/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "0aff5538016f91aae06209319e4514e23a2fc6156854271f75873f8b78e0e44f",
+    "bytes": 13259
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Biohub/esm/main/_assets/ESM3_README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "2f564153712e32ad668f1586b6e78599d1a7fd6a3b3b7049718d85f9b33f79a6",
+    "bytes": 6442
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Biohub/esm/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "57ea7f51b5e9ec3a334beab4ebf024f445cf557da0602986e7e5087a4a194a81",
+    "bytes": 21113
+  },
+  {
+    "url": "https://raw.githubusercontent.com/togethercomputer/together-py/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "9f5cc8ebb78ff556b8d7760b6979ab7cd9bc028763b0e5faae35bb6b4458f40a",
+    "bytes": 24399
+  },
+  {
+    "url": "https://raw.githubusercontent.com/google-gemini/cookbook/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "b75c8d874948caf31042766bdb4abcebc8959d9a8d424c7c3ec7fdc3070cf669",
+    "bytes": 24691
+  },
+  {
+    "url": "https://raw.githubusercontent.com/QwenLM/qwen-code/main/README.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "8ad684d5404161d34d879e640d94a5d51ba9243ec9b06f44217d06b8509ec2ef",
+    "bytes": 12081
+  },
+  {
+    "url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/main/docs/source/blogs/tech_blog/blog26_DeepSeek_V4_on_NVIDIA_Blackwell_Model_Specific_and_Agentic_Workload_Optimizations_in_TensorRT-LLM.md",
+    "retrievedOn": "2026-10-18",
+    "sha256": "5edba49fdb08cd947081bee93e4a2b0ad9df0cbda3c90173997a4d75545a242a",
+    "bytes": 92527
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Stability-AI/sd3.5/main/requirements.txt",
+    "retrievedOn": "2026-10-18",
+    "sha256": "602f9b7c2900bda1294613a535ecca296c506313c9ab1878074585ce9d764d88",
+    "bytes": 152
+  }
+]

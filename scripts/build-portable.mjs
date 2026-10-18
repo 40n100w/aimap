@@ -22,3 +22,11 @@ await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
 await writeFile(new URL('index.html', outputDirectory), portableHtml);
 await cp(new URL('data/', root), new URL('data/', outputDirectory), { recursive: true });
+
+const licensesDirectory = new URL('licenses/', outputDirectory);
+await mkdir(licensesDirectory, { recursive: true });
+for (const name of ['Manrope', 'DM-Mono']) {
+  await cp(new URL(`src/assets/fonts/${name}-LICENSE.txt`, root), new URL(`${name}-LICENSE.txt`, licensesDirectory));
+}
+await cp(new URL('src/assets/World-Atlas-LICENSE.txt', root), new URL('World-Atlas-LICENSE.txt', licensesDirectory));
+await cp(new URL('src/assets/README.md', root), new URL('asset-notices.md', licensesDirectory));

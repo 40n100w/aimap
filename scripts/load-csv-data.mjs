@@ -4,8 +4,11 @@ import { jsonArray, numberOrNull, parseCsv } from '../src/csv.js';
 const read = name => parseCsv(readFileSync(new URL(`../data/${name}`, import.meta.url), 'utf8'));
 
 export const LAYERS = read('layers.csv').map(row => ({ ...row, y: Number(row.y) }));
+export const catalogReviews = read('catalog-reviews.csv').map(row => ({ ...row, sourceUrls: jsonArray(row.sourceUrls) }));
+const reviewsById = new Map(catalogReviews.map(row => [row.entityId, row]));
 export const entities = read('entities.csv').map(row => ({
   ...row,
+  catalogReview: reviewsById.get(row.id) || null,
   categories: jsonArray(row.categories),
   products: jsonArray(row.products),
   profileSources: jsonArray(row.profileSources),

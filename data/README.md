@@ -7,6 +7,7 @@ Google Sheets, or a text editor.
 ## The files
 
 - `entities.csv` — every searchable node and its profile text
+- `catalog-reviews.csv` — entity-level review dates, the precise scope checked, and primary documentation URLs; a review does not imply that all corporate facts or deployments were audited
 - `relationships.csv` — links between entity IDs
 - `office-locations.csv` — map points and their coordinates
 - `data-center-campuses.csv` — documented Asian data-center campuses and grouped metro footprints, with a China-first inventory of named campuses and publicly documented cloud availability zones; includes status, operator, services, source, and coordinate precision
@@ -26,7 +27,7 @@ Google Sheets, or a text editor.
 - `journeys.csv` — guided journeys; `nodes` is a JSON-style ID list
 - `representative-paths.csv` — the “Trace a representative stack” routes
 - `aliases.csv` — alternate IDs used by relationships
-- `settings.csv` — the displayed data-update date
+- `settings.csv` — base edition date and latest scoped catalog review date
 
 ## Manual editing rules
 
@@ -100,4 +101,22 @@ center, compute, fabrication, equipment, and raw-material layers. `confirmed`
 and `reported` edges describe published evidence; `representative` edges fill a
 legibility gap without claiming an undisclosed training cluster or bill of
 materials. Run `scripts/expand-model-catalog.mjs` idempotently to restore the
-audited global-model additions in this edition.
+original global-model additions in this edition. This historical helper does
+not refresh existing records or discover current releases.
+
+## Catalog freshness
+
+The October 18, 2026 refresh covers 108 records: 82 existing entries and 26
+additions. It includes company product portfolios, API model identifiers,
+specialist model capabilities, software products and selected accelerator
+families. See [the review report](../research/catalog-refresh-2026-10-18.md).
+The base edition remains September 3, 2026; map, cable and exchange datasets
+retain their independently documented snapshot dates.
+
+For a catalog review, record `entityId`, ISO `reviewedOn` date, a specific
+`scope`, and a JSON array of HTTPS `sourceUrls` in `catalog-reviews.csv`.
+Only record a review after reading the cited documentation. Include source
+links in the entity profile, and use the scope to distinguish an SDK identifier
+check from a capability, lifecycle, product or corporate review. An SDK model
+enum alone does not establish current service availability. Existing records
+without a review remain explicitly undated in their profiles.

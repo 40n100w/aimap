@@ -12,6 +12,8 @@ data/*.csv          Editable entities, relationships, layers, journeys and map p
 src/data.js         CSV parsing and typed runtime data adapter
 src/scene.js        Three.js scene, camera, node layout, lines, focus and traces
 src/ui.js           Search, filters, panels, journeys and textual interactions
+src/mobile-ui.js    Touch navigation and accessible sheets using the same controllers
+src/mobile.css      Mobile-only layout, safe areas and keyboard-aware sizing
 src/main.js         Application bootstrap
 src/styles.css      Visual system, responsive layout and reduced motion
 vite.config.js      Relative-path production build for project-site hosting
@@ -41,6 +43,27 @@ Open the local URL Vite prints. Create the deployable static build with:
 npm run build
 ```
 
+Run the data checks and regression tests with:
+
+```bash
+npm run check:data
+npm test
+npm run build
+npm run test:browser
+```
+
+The browser checks serve the build on an ephemeral local port and exercise
+desktop navigation, touch interactions at phone/tablet sizes and in landscape,
+profiles, filters, journeys, timeline browsing, map layers and flows, resizing,
+map retries, unavailable WebGL, missing data, and offline presentation resources.
+They use `/usr/bin/chromium` when present;
+otherwise install the Playwright browser with `npx playwright install chromium`.
+Set `CHROMIUM_PATH` to use a different Chromium installation. Optional
+`SCREENSHOT_DIR=work/browser-checks` saves screenshots from the same checks.
+
+The development server serves the checked-in standalone bundle. Rebuild after
+editing JavaScript or styles to refresh it; CSV-only edits need no rebuild.
+
 The command first refreshes the standalone browser assets, then writes the
 deployable site to `dist/`. The JavaScript and styles are contained in
 `dist/index.html`; the editable CSV database is copied to `dist/data/`. Serve
@@ -49,14 +72,45 @@ directly in `dist/data/` and appear on the next browser refresh without another
 build. The root site likewise reads directly from the repository's `data/`
 folder when served by Vite or another static server.
 
+Fonts and coarse Natural Earth land outlines are bundled for offline use.
+Online street-map tiles are optional; when unavailable, the map shows land
+outlines and a retry notice. Map datasets load on first opening Map, and missing
+files leave other map layers and the core explorer available. If WebGL is
+unavailable, a text catalog preserves search, profiles, relationship tracing,
+timeline and map access. Asset notices and licenses are included in `dist/licenses/`.
+
+## Mobile interface
+
+Small screens use a six-view bottom navigation bar, search and filter shortcuts,
+and scrollable sheets for complete profiles, evidence, controls and map details.
+The More menu contains guided journeys, relationship time, camera controls,
+fullscreen where supported, and methodology. Timeline charts scroll horizontally;
+a year picker makes every dated entry accessible without tapping tiny chart marks.
+
+The 3D scene supports one-finger orbit, pinch zoom, two-finger pan and node taps.
+Touch targets are enlarged, drag/pinch gestures cannot become accidental selections,
+and mobile rendering pauses behind sheets or other views. Search sheets follow the
+visual viewport when the keyboard opens, and respect device safe areas. Modal sheets
+trap keyboard focus, support Escape and backdrop dismissal, and restore focus.
+
+The mobile interface reuses all existing data and feature controllers. Its styles
+apply at widths up to 900px, or to touch screens up to 1100px wide and 600px high
+(landscape phones). Larger desktop layouts retain their existing presentation.
+Keep the media query in `src/mobile-layout.js` and `src/mobile.css` in sync.
+
 ## Data schema
 
 All website records live in the CSV files under `data/`. See `data/README.md`
 for the file-by-file schema and manual editing rules. The current edition
-contains 2,000 visible entities. Geographic views use the `geography` column.
+contains over 2,000 visible entities. Geographic views use the `geography` column.
 Geography is an editorial classification of principal association rather than
 a claim about incorporation, ownership, data residency, or every market where
 an organization operates.
+
+The October 18, 2026 [catalog refresh](research/catalog-refresh-2026-10-18.md)
+covers 108 company, lab, model and technology records, including 26 additions.
+Profiles display the date and scope from `data/catalog-reviews.csv`. The catalog
+review date is separate from the base edition and geographic dataset snapshots.
 
 Each entity has a stable `id` and the following shape:
 
@@ -121,7 +175,7 @@ Both IDs must exist in `entities` or be mapped in `aliases`. Relationship types 
 
 1. Run `npm run build`.
 2. In the repository’s **Settings → Pages**, choose **GitHub Actions** as the source, or publish the contents of `dist/` with your preferred Pages action.
-3. Configure the action to run `npm ci` and `npm run build`, then upload `dist/` as the Pages artifact. The artifact contains just one website file: `index.html`.
+3. Configure the action to run `npm ci` and `npm run build`, then upload `dist/` as the Pages artifact. It contains `index.html`, the editable `data/` directory, and asset notices in `licenses/`. The included workflow also runs data, unit, and browser checks before deployment.
 
 Vite’s `base: './'` setting makes generated assets relative, so the site works at both `username.github.io` and `username.github.io/repository-name/`.
 

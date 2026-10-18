@@ -1,4 +1,4 @@
-import { entities,relationships,representativePaths,aliases,LAYERS } from './load-csv-data.mjs';
+import { entities,relationships,representativePaths,aliases,LAYERS,catalogReviews } from './load-csv-data.mjs';
 
 const errors=[];
 const ids=new Set();
@@ -12,7 +12,21 @@ for(const entity of entities){
  if(entity.layer==='markets'||['Architecture layer','End market','Capability'].includes(entity.type))errors.push(`Category exposed as entity: ${entity.id} (${entity.type})`);
 }
 const edgeKeys=new Set();
+const reviewedIds=new Set();
+for(const review of catalogReviews){
+ if(!ids.has(review.entityId))errors.push(`Unknown reviewed entity: ${review.entityId}`);
+ if(reviewedIds.has(review.entityId))errors.push(`Duplicate catalog review: ${review.entityId}`);
+ reviewedIds.add(review.entityId);
+ const parsed=new Date(`${review.reviewedOn}T00:00:00Z`);
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(review.reviewedOn)||!Number.isFinite(parsed.getTime())||parsed.toISOString().slice(0,10)!==review.reviewedOn)errors.push(`Invalid review date: ${review.entityId}`);
+ if(!review.scope?.trim())errors.push(`Missing review scope: ${review.entityId}`);
+ if(!review.sourceUrls.length)errors.push(`Missing review sources: ${review.entityId}`);
+ for(const source of review.sourceUrls){
+  try{const parsed=new URL(source);if(parsed.protocol!=='https:')errors.push(`Invalid review source protocol: ${source}`)}catch{errors.push(`Invalid review source: ${source}`)}
+ }
+}
 for(const relation of relationships){
+ if((aliases[relation.source]||relation.source)===(aliases[relation.target]||relation.target))errors.push(`Self relationship: ${relation.source} -> ${relation.target}`);
  if(!ids.has(relation.source)&&!aliases[relation.source])errors.push(`Missing relationship source: ${relation.source}`);
  if(!ids.has(relation.target)&&!aliases[relation.target])errors.push(`Missing relationship target: ${relation.target}`);
  if(!['confirmed','reported','inferred','representative'].includes(relation.status))errors.push(`Invalid status: ${relation.status}`);

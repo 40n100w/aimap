@@ -16,13 +16,16 @@
     "validate:asia-systems": "node scripts/validate-asia-systems.mjs",
     "validate:exchanges": "node scripts/validate-exchanges.mjs",
     "validate:model-inference": "node scripts/validate-model-inference.mjs",
-    "report:location-coverage": "node scripts/report-location-coverage.mjs"
+    "report:location-coverage": "node scripts/report-location-coverage.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node scripts/check-browser.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
     "three": "^0.179.1"
   },
   "devDependencies": {
+    "playwright": "1.62.1",
     "vite": "^7.1.2"
   }
 }

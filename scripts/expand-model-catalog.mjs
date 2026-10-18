@@ -49,7 +49,7 @@ for(const model of entities.filter(entity=>entity.type==='Model')){
  const owner=relationships.find(relation=>relation.type==='DEVELOPS'&&relation.target===model.id)?.source;
  if(!owner||relationships.some(relation=>relation.source===owner&&relation.type==='TRAINS_ON'))continue;
  const physicalTarget=(pathByModel.get(model.id)||[]).map(id=>entityById.get(id)).find(entity=>entity&&['cloud','datacenter','compute'].includes(entity.layer));
- if(!physicalTarget)continue;
+ if(!physicalTarget||physicalTarget.id===owner)continue;
  const key=`${owner}|${physicalTarget.id}|TRAINS_ON`;if(keys.has(key))continue;
  relationships.push({source:owner,target:physicalTarget.id,type:'TRAINS_ON',explanation:`${physicalTarget.name} is a representative compute or hosting path for ${entityById.get(owner)?.name||owner}; public evidence does not establish it as the training system for every model release.`,status:'representative',sourceUrl:'',activeFrom:'',activeTo:''});keys.add(key);
 }

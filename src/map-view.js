@@ -1,5 +1,7 @@
 import L from 'leaflet';
+import land from './assets/land-110m.json';
 import 'leaflet/dist/leaflet.css';
+import { isMobileLayout } from './mobile-layout.js';
 
 const markerIcon=L.divIcon({
   className:'office-dot-shell',
@@ -18,26 +20,10 @@ const dataCenterIcon=status=>L.divIcon({
 const nationalHubIcon=L.divIcon({className:'national-hub-shell',html:'<span class="national-hub-marker"><i></i></span>',iconSize:[30,30],iconAnchor:[15,15],tooltipAnchor:[0,-15]});
 
 export class OfficeMapView{
-  constructor(root,locations,cableData={}){
+  constructor(root,locations,cableData={},loadData=null){
+    this.loadData=loadData; this.failedFiles=[];
     this.root=root;
-    this.locations=locations.filter(location=>location.status==='map_ready'&&location.coordinateAccuracy==='building'&&Number.isFinite(location.latitude)&&Number.isFinite(location.longitude));
-    this.dataCenters=(cableData.dataCenters||[]).filter(site=>Number.isFinite(site.latitude)&&Number.isFinite(site.longitude));
-    this.cables=cableData.cables||[];
-    this.cableRoutes=cableData.routes||[];
-    this.cableLandings=cableData.landings||[];
-    this.chinaNetworks=cableData.chinaNetworks||[];
-    this.chinaNodes=cableData.chinaNodes||[];
-    this.chinaLinks=cableData.chinaLinks||[];
-    this.dataCenterNetworkLinks=cableData.dataCenterNetworkLinks||[];
-    this.nationalComputeHubs=(cableData.nationalComputeHubs||[]).filter(hub=>Number.isFinite(hub.latitude)&&Number.isFinite(hub.longitude));
-    this.nationalComputeCorridors=cableData.nationalComputeCorridors||[];
-    this.asiaSystemNodes=(cableData.asiaSystemNodes||[]).filter(node=>Number.isFinite(node.latitude)&&Number.isFinite(node.longitude));
-    this.asiaSystemLinks=cableData.asiaSystemLinks||[];
-    this.internetExchanges=(cableData.internetExchanges||[]).filter(exchange=>Number.isFinite(exchange.latitude)&&Number.isFinite(exchange.longitude));
-    this.modelInferenceRegions=(cableData.modelInferenceRegions||[]).filter(region=>Number.isFinite(region.latitude)&&Number.isFinite(region.longitude));
-    this.modelNetworkLinks=cableData.modelNetworkLinks||[];
-    this.modelOrganizationSites=(cableData.modelOrganizationSites||[]).filter(site=>Number.isFinite(site.latitude)&&Number.isFinite(site.longitude));
-    this.modelTrainingEvidence=cableData.modelTrainingEvidence||[];
+    this.setData(locations,cableData);
     this.markers=[];
     this.dataCenterMarkers=[];
     this.cableLines=[];
@@ -60,6 +46,31 @@ export class OfficeMapView{
     root.querySelectorAll('[data-map-layer]').forEach(button=>button.addEventListener('click',()=>this.toggleLayer(button)));
     root.querySelector('#cableDetail').addEventListener('click',event=>{if(event.target.closest('[data-close-cable]')){this.clearDataCenterSelection();this.clearSelection(false);this.clearCableSelection();this.clearChinaNetwork();this.clearModelSelection();this.clearAsiaSystems()}});
     this.setupModelSelector();
+    if(isMobileLayout())this.root.querySelector('.office-map-head').open=false;
+    this.root.querySelector('[data-retry-map]').onclick=()=>this.refreshData();
+    this.root.querySelector('[data-retry-tiles]').onclick=()=>{this.tileErrors=false;this.updateStatus();this.tiles?.redraw()};
+    this.root.addEventListener('toggle',()=>this.map?.invalidateSize(),true);
+  }
+
+  setData(locations,cableData){
+    this.locations=locations.filter(location=>location.status==='map_ready'&&location.coordinateAccuracy==='building'&&Number.isFinite(location.latitude)&&Number.isFinite(location.longitude));
+    this.dataCenters=(cableData.dataCenters||[]).filter(site=>Number.isFinite(site.latitude)&&Number.isFinite(site.longitude));
+    this.cables=cableData.cables||[];
+    this.cableRoutes=cableData.routes||[];
+    this.cableLandings=cableData.landings||[];
+    this.chinaNetworks=cableData.chinaNetworks||[];
+    this.chinaNodes=cableData.chinaNodes||[];
+    this.chinaLinks=cableData.chinaLinks||[];
+    this.dataCenterNetworkLinks=cableData.dataCenterNetworkLinks||[];
+    this.nationalComputeHubs=(cableData.nationalComputeHubs||[]).filter(hub=>Number.isFinite(hub.latitude)&&Number.isFinite(hub.longitude));
+    this.nationalComputeCorridors=cableData.nationalComputeCorridors||[];
+    this.asiaSystemNodes=(cableData.asiaSystemNodes||[]).filter(node=>Number.isFinite(node.latitude)&&Number.isFinite(node.longitude));
+    this.asiaSystemLinks=cableData.asiaSystemLinks||[];
+    this.internetExchanges=(cableData.internetExchanges||[]).filter(exchange=>Number.isFinite(exchange.latitude)&&Number.isFinite(exchange.longitude));
+    this.modelInferenceRegions=(cableData.modelInferenceRegions||[]).filter(region=>Number.isFinite(region.latitude)&&Number.isFinite(region.longitude));
+    this.modelNetworkLinks=cableData.modelNetworkLinks||[];
+    this.modelOrganizationSites=(cableData.modelOrganizationSites||[]).filter(site=>Number.isFinite(site.latitude)&&Number.isFinite(site.longitude));
+    this.modelTrainingEvidence=cableData.modelTrainingEvidence||[];
   }
 
   ensureMap(){
@@ -67,10 +78,16 @@ export class OfficeMapView{
     this.map=L.map(this.root.querySelector('#officeMap'),{zoomControl:false,minZoom:2,maxZoom:20,worldCopyJump:true,preferCanvas:true});
     L.control.zoom({position:'bottomright'}).addTo(this.map);
     // Esri's global street basemap uses English as its default label language.
-    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{
+    this.map.createPane('offline-land');
+    this.map.getPane('offline-land').style.zIndex='190';
+    this.map.getPane('offline-land').style.pointerEvents='none';
+    L.geoJSON(land,{pane:'offline-land',interactive:false,style:{color:'#738e91',weight:1,fillColor:'#263b3f',fillOpacity:1},attribution:'Land: Natural Earth (public domain)'}).addTo(this.map);
+    this.tiles=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{
       maxZoom:20,
       attribution:'Tiles &copy; Esri and contributors'
-    }).addTo(this.map);
+    });
+    this.tiles.on('tileerror',()=>{this.tileErrors=true;this.updateStatus()});
+    this.tiles.addTo(this.map);
     this.dataCenterLayer=L.layerGroup().addTo(this.map);
     this.officeLayer=L.layerGroup();
     this.cableLayer=L.layerGroup();
@@ -148,8 +165,8 @@ export class OfficeMapView{
   setupModelSelector(){
     const select=this.root.querySelector('#mapModelSelect');if(!select)return;
     const models=[...new Map([...this.modelInferenceRegions,...this.modelOrganizationSites,...this.modelTrainingEvidence].map(site=>[site.model_id,site.model_name])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
-    select.insertAdjacentHTML('beforeend',models.map(([id,name])=>`<option value="${this.escape(id)}">${this.escape(name)}</option>`).join(''));
-    select.addEventListener('change',()=>select.value?this.selectModel(select.value):this.clearModelSelection());
+    select.innerHTML='<option value="">Choose a model…</option>'+models.map(([id,name])=>`<option value="${this.escape(id)}">${this.escape(name)}</option>`).join('');
+    select.onchange=()=>select.value?this.selectModel(select.value):this.clearModelSelection();
   }
 
   addModelInfrastructure(bounds){
@@ -192,7 +209,7 @@ export class OfficeMapView{
     const selectedMarkers=[...this.modelRegionMarkers,...this.modelOfficeMarkers].filter(marker=>marker.modelId===modelId);
     const focus=[...this.modelInferenceRegions,...this.modelOrganizationSites].find(site=>site.id===focusRegionId);
     if(focus)this.map.flyTo([focus.latitude,focus.longitude],Math.max(this.map.getZoom(),5),{duration:.5});
-    else if(selectedMarkers.length)this.map.fitBounds(L.featureGroup(selectedMarkers).getBounds(),{padding:[70,340],maxZoom:5});
+    else if(selectedMarkers.length)this.map.fitBounds(L.featureGroup(selectedMarkers).getBounds(),{padding:isMobileLayout()?[32,32]:[70,340],maxZoom:5});
     const modelName=regions[0]?.model_name||offices[0]?.model_name||training.model_name,provider=regions[0]?.provider||offices[0]?.organization||training.developer,detail=this.root.querySelector('#cableDetail');
     const trainingRegions=regions.filter(region=>region.workload_role==='managed_training_and_inference'),inferenceRegions=regions.filter(region=>region.workload_role!=='managed_training_and_inference'),source=trainingRegions[0]?.workload_source_url||regions[0]?.source_url||offices[0]?.source_url||training?.source_url;
     detail.innerHTML=`<button type="button" data-close-cable aria-label="Close model infrastructure details">×</button><p class="eyebrow">Isolated model footprint</p><h2>${this.escape(modelName)}</h2><dl><div><dt>Provider</dt><dd>${this.escape(provider)}</dd></div><div><dt>Offices</dt><dd><i class="site-swatch office"></i>${offices.length} listed</dd></div><div><dt>Training + inference</dt><dd><i class="site-swatch training"></i>${trainingRegions.length} managed regions</dd></div><div><dt>Inference / access</dt><dd><i class="site-swatch inference"></i>${inferenceRegions.length} published regions</dd></div></dl>${trainingRegions.length?`<section><h3>Training-capable regions</h3><p>${trainingRegions.map(region=>`${this.escape(region.region_name)} <small>${this.escape(region.deployment_scope)}</small>`).join(' · ')}</p></section>`:''}${inferenceRegions.length?`<section><h3>Inference or API-access regions</h3><p>${inferenceRegions.map(region=>`${this.escape(region.region_name)} <small>${this.escape(region.workload_role==='inference_access_region'?'access point—not confirmed serving facility':region.deployment_scope)}</small>`).join(' · ')}</p></section>`:`<section><h3>Infrastructure location undisclosed</h3><p>The provider publishes model API access but no sufficiently specific training or inference region that can be responsibly plotted.</p></section>`}<section><h3>Animated flow</h3><p>Moving dashes travel from each CSV source toward its target. They show an illustrative service or organizational direction—not live packet telemetry.</p></section><a href="${this.escape(source)}" target="_blank" rel="noreferrer">Open primary documentation ↗</a><small>Office, API access, service region, and physical serving facility are different claims. The map labels each separately and never upgrades an endpoint into a data center without evidence.</small>`;
@@ -327,7 +344,7 @@ export class OfficeMapView{
     const network=this.chinaNetworks.find(item=>item.id===networkId),links=this.chinaLinks.filter(item=>item.network_id===networkId);
     for(const line of this.chinaFiberLines)line.setStyle(line.networkId===networkId?{weight:4,opacity:1}:{weight:1,opacity:.06});
     const matching=this.chinaFiberLines.filter(line=>line.networkId===networkId);
-    if(matching.length)this.map.fitBounds(L.featureGroup(matching).getBounds(),{padding:[70,340],maxZoom:6});
+    if(matching.length)this.map.fitBounds(L.featureGroup(matching).getBounds(),{padding:isMobileLayout()?[32,32]:[70,340],maxZoom:6});
     const nodeIds=new Set(links.flatMap(link=>[link.source_node,link.target_node])),nodeNames=this.chinaNodes.filter(node=>nodeIds.has(node.id)).map(node=>node.name);
     const documented=links.filter(link=>link.confidence==='documented_topology').length,logical=links.length-documented;
     const detail=this.root.querySelector('#cableDetail');
@@ -351,7 +368,7 @@ export class OfficeMapView{
     const cable=this.cables.find(item=>item.id===cableId);
     const matching=this.cableLines.filter(line=>line.cableId===cableId);
     for(const line of this.cableLines)line.setStyle(line.cableId===cableId?{weight:4,opacity:1}:{weight:1,opacity:.08});
-    if(matching.length)this.map.fitBounds(L.featureGroup(matching).getBounds(),{padding:[70,340],maxZoom:7});
+    if(matching.length)this.map.fitBounds(L.featureGroup(matching).getBounds(),{padding:isMobileLayout()?[32,32]:[70,340],maxZoom:7});
     const landings=this.cableLandings.filter(item=>item.cable_id===cableId);
     const detail=this.root.querySelector('#cableDetail');
     const value=value=>value||'Not listed';
@@ -389,7 +406,7 @@ export class OfficeMapView{
     const matching=this.markers.filter(marker=>marker.companyId===companyId);
     for(const marker of this.markers)marker.getElement()?.classList.toggle('is-muted',marker.companyId!==companyId);
     this.root.querySelector('#officeMapReset').hidden=false;
-    if(matching.length)this.map.fitBounds(L.featureGroup(matching).getBounds(),{padding:[100,100],maxZoom:17});
+    if(matching.length)this.map.fitBounds(L.featureGroup(matching).getBounds(),{padding:isMobileLayout()?[36,36]:[100,100],maxZoom:17});
     const sites=this.locations.filter(location=>location.companyId===companyId),location=sites[0],detail=this.root.querySelector('#cableDetail');
     const safeUrl=/^https?:\/\//.test(location?.sourceUrl)?location.sourceUrl:'';
     detail.innerHTML=`<button type="button" data-close-cable aria-label="Close office details">×</button><p class="eyebrow">Verified company footprint</p><h2>${this.escape(location.companyName)}</h2><p class="detail-lede">${sites.length} mapped ${sites.length===1?'location':'locations'} for this company.</p><dl><div><dt>Selected site</dt><dd>${this.escape(location.locationName)}</dd></div><div><dt>Type</dt><dd>${this.escape(location.locationType)}</dd></div><div><dt>Address</dt><dd>${this.escape(location.address)}</dd></div><div><dt>Coordinate accuracy</dt><dd>${this.escape(location.coordinateAccuracy)}</dd></div><div><dt>Verified</dt><dd>${this.escape(location.verifiedOn||'Not listed')}</dd></div></dl>${safeUrl?`<a href="${this.escape(safeUrl)}" target="_blank" rel="noreferrer">Open location source ↗</a>`:''}<small>This is a verified company location, not necessarily a data center. Selecting the company highlights all of its mapped sites.</small>`;
@@ -404,10 +421,48 @@ export class OfficeMapView{
     if(refit)this.root.querySelector('#cableDetail').hidden=true;
   }
 
-  show(){
+  updateStatus(){
+    for(const control of this.root.querySelectorAll('.map-controls-body button,.map-controls-body select'))control.disabled=Boolean(this.loading)||!this.map;
+    const status=this.root.querySelector('.map-status');
+    const dataMessage=this.root.querySelector('[data-map-data-message]');
+    dataMessage.textContent=this.loading?'Loading map layers…':this.failedFiles.length?`${this.failedFiles.length} map data file${this.failedFiles.length===1?' is':'s are'} unavailable. Some layers may be incomplete.`:'';
+    dataMessage.title=this.failedFiles.join(', ');
+    this.root.querySelector('[data-retry-map]').hidden=this.loading||!this.failedFiles.length;
+    this.root.querySelector('[data-map-tile-message]').hidden=!this.tileErrors;
+    this.root.querySelector('[data-retry-tiles]').hidden=!this.tileErrors;
+    status.hidden=!this.loading&&!this.failedFiles.length&&!this.tileErrors;
+  }
+
+  async refreshData(){
+    if(this.loading)return this.loading;
+    this.loading=(async()=>{
+      try{
+        const {officeLocations,data,failed}=await this.loadData();
+        this.failedFiles=failed;
+        this.map?.remove();this.map=null;this.tileErrors=false;
+        for(const name of ['markers','dataCenterMarkers','cableLines','chinaFiberLines','dataCenterAccessLines','chinaNodeMarkers','nationalHubMarkers','computeCorridorLines','modelRegionMarkers','modelPathLines','modelOfficeMarkers','systemMarkers','systemLines','exchangeMarkers'])this[name]=[];
+        for(const name of ['selectedCable','selectedChinaNetwork','selectedCompany','selectedDataCenter','selectedModel'])this[name]=null;
+        this.root.classList.remove('model-isolated');
+        this.root.querySelector('#cableDetail').hidden=true;
+        this.root.querySelector('#officeMapReset').hidden=true;
+        this.root.querySelector('#systemScenarioSelect').value='';
+        for(const button of this.root.querySelectorAll('[data-map-layer]')){const active=['data-centers','china-fiber'].includes(button.dataset.mapLayer);button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active))}
+        this.setData(officeLocations,data);this.setupModelSelector();if(!this.root.hidden)this.ensureMap();
+        this.loaded=true;
+        if(!this.root.hidden)requestAnimationFrame(()=>this.map.invalidateSize());
+      }catch(error){
+        this.failedFiles=['Map data'];
+        console.warn('Map data could not be loaded.',error);
+      }finally{this.loading=null;this.root.removeAttribute('aria-busy');this.updateStatus()}
+    })();
+    this.root.setAttribute('aria-busy','true');this.updateStatus();
+    return this.loading;
+  }
+
+  async show(){
     this.root.hidden=false;
-    this.ensureMap();
-    requestAnimationFrame(()=>this.map.invalidateSize());
+    if(this.loadData&&!this.loaded)await this.refreshData();
+    else{this.ensureMap();this.updateStatus();requestAnimationFrame(()=>this.map.invalidateSize())}
   }
 
   hide(){this.root.hidden=true}
