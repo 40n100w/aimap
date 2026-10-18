@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1318">
+  <title>AI Ecosystem Atlas · Updates design review</title>
+  <!-- CONCEPT_STYLES -->
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#main"><span class="brand-mark">A·E</span><span>AI Ecosystem<small>A living atlas</small></span></a>
+    <div class="workspace-name"><span class="live-dot"></span> Updates <span class="divider">/</span><span>Follow what changes.</span></div>
+    <span class="review-label">DESIGN REVIEW <b>01</b></span>
+  </header>
+  <div class="concept-banner"><span>INTERACTIVE CONCEPT</span> Fictional companies, news and evidence. No live reporting or automated impact predictions.</div>
+  <main id="main" class="workspace">
+    <aside class="updates-panel" id="updatesPanel" aria-label="Sample news updates">
+      <div class="panel-title"><div><p class="eyebrow">Your field of view</p><h1>What changed.</h1></div><span class="count-chip">03</span></div>
+      <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg><input id="eventSearch" type="search" placeholder="Find an update…" aria-label="Search sample updates"></label>
+      <div class="feed-filters" aria-label="Update filters"><button data-feed="all" aria-pressed="true">All updates</button><button data-feed="watching" aria-pressed="false">Following <span id="followCount">0</span></button></div>
+      <p class="feed-date">THREE SAMPLE SCENARIOS <span>3 EVENTS</span></p>
+      <div id="eventFeed" class="event-feed"></div>
+      <div class="feed-bottom"><span class="small-orbit">◎</span><div><strong>Start with a fact.</strong><p>Follow the evidence into the network. Stop where the evidence stops.</p></div></div>
+    </aside>
+
+    <section class="graph-panel" id="graphPanel" aria-label="Interactive event graph">
+      <header class="graph-heading"><div class="heading-meta"><p class="eyebrow" id="eventCategory"></p><button id="followButton" class="follow-button" aria-pressed="false">+ Follow entity</button></div><h2 id="eventHeadline"></h2><p id="eventSummary" class="event-summary"></p></header>
+      <div class="lens-row"><div class="lens-buttons" aria-label="Supply chain segment"><button data-lens="serving" aria-pressed="true">Serving</button><button data-lens="training" aria-pressed="false">Training</button><button data-lens="hardware" aria-pressed="false">Hardware</button></div><button id="effectsToggle" class="effects-toggle" aria-pressed="false"><span></span>Possible effects</button></div>
+      <div class="graph-stage" id="graphStage"><div id="graphCanvas" aria-hidden="true"></div><div id="nodeLabels" class="node-labels"></div><div class="stage-caption"><span id="stageContext"></span><small id="stageScope"></small></div><div id="unknownNote" class="unknown-note" hidden><i>?</i><div><strong>Evidence stops here.</strong><span>No model-specific training hardware is disclosed in this sample record.</span></div></div><div class="camera-tools"><span>Drag to orbit · Scroll / pinch to zoom</span><button id="resetCamera" aria-label="Reset graph camera">↺ <span>Reset view</span></button></div><div class="graph-fallback" hidden>3D is unavailable in this browser. Every connection remains available in Evidence.</div></div>
+      <div class="graph-legend"><span><i class="key-solid"></i>Documented</span><span><i class="key-dashed"></i>Reported</span><span><i class="key-possible"></i>Possible effect</span><span><i class="key-change">+</i>Changed record</span></div>
+      <section class="change-strip" aria-label="Recorded change"><div><p class="eyebrow">One event. Two records.</p><strong id="changeSummary"></strong><small id="snapshotNote"></small></div><div class="snapshot-buttons" aria-label="Compare recorded snapshots"><button data-snapshot="before" aria-pressed="false">Earlier record</button><button data-snapshot="after" aria-pressed="true">Updated record <span>●</span></button></div></section>
+    </section>
+
+    <aside class="evidence-panel" id="evidencePanel" aria-label="Evidence and implications"><div class="evidence-header"><p class="eyebrow">Follow the evidence</p><button id="backToGraph" class="mobile-back">Back to map</button></div><div id="evidenceContent" aria-live="polite"></div></aside>
+  </main>
+  <nav class="mobile-tabs" aria-label="Update workspace"><button data-mobile-panel="updates" aria-pressed="false">Updates <span>03</span></button><button data-mobile-panel="graph" aria-pressed="true">3D map</button><button data-mobile-panel="evidence" aria-pressed="false">Evidence</button></nav>
+  <div id="announcement" class="sr-only" aria-live="polite"></div>
+  <!-- CONCEPT_SCRIPT -->
+</body>
+</html>
