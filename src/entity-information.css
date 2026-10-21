@@ -1,0 +1,47 @@
+.entity-profile .profile-heading { display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
+.entity-profile .profile-heading small { text-align:right; }
+.entity-profile .information-summary { margin:12px 0 18px; padding:12px 14px; border:1px solid #79998b40; background:#92bca908; border-radius:8px; }
+.entity-profile .information-summary strong { color:#d7e5de; }
+.entity-profile .information-summary p { margin:5px 0 0; font-size:12px!important; }
+.entity-profile dl { margin:18px 0; }
+.entity-profile dl>div { display:grid; grid-template-columns:120px minmax(0,1fr); gap:12px; margin:12px 0; align-items:start; }
+.entity-profile dd { margin:0; min-width:0; overflow-wrap:anywhere; }
+.entity-profile .information-missing { color:#a4afac; font-style:italic; }
+.entity-profile .information-context,.field-evidence .information-context { display:block; margin-top:5px; font-size:11px; line-height:1.6; color:#9baaa4; }
+.field-evidence { margin:8px 0; padding:0; border-top:1px solid #7e918826; font-size:12px; }
+.field-evidence>summary { padding:9px 0; color:#bdcfc4; font-size:11px; line-height:1.5; }
+.field-evidence p { font-size:12px!important; margin:6px 0!important; }
+.field-evidence ul { list-style:none; padding:0; margin:8px 0; }
+.field-evidence li { margin:8px 0; }
+.field-evidence a { display:inline-block; max-width:100%; line-height:1.6; overflow-wrap:anywhere; }
+.field-evidence blockquote { margin:7px 0; padding-left:10px; border-left:2px solid #8eafa544; color:#aebcb5; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6; }
+.field-evidence .evidence-attributes { margin:12px 0; }
+.field-evidence .evidence-attributes>div { display:block; margin:9px 0; }
+.field-evidence .evidence-attributes dt { color:#9baaa4; font-size:11px; line-height:1.6; letter-spacing:0; text-transform:none; }
+.field-evidence .evidence-attributes dd { margin:2px 0 0; color:#c3d0c9; font-size:12px!important; line-height:1.6; overflow-wrap:anywhere; }
+.entity-profile .legacy-profile-sources { display:block; margin-top:18px; font-family:inherit; text-transform:none; }
+.entity-profile .legacy-profile-sources summary { color:#b4c2bb; font-size:12px; padding:10px 0; }
+.entity-profile .legacy-profile-sources ul { margin:0; padding:0; list-style:none; }
+.entity-profile .legacy-profile-sources li { margin:7px 0; font-size:12px; overflow-wrap:anywhere; }
+.entity-profile .legacy-profile-sources a { display:inline-flex; min-height:28px; padding:0; border:0; }
+.entity-products .product-evidence-intro { font-size:12px!important; color:#aabcb2; }
+.entity-products .documented-products { display:grid; gap:12px; }
+.entity-products .documented-product { padding:12px 14px; border:1px solid #86aa9940; border-radius:8px; background:#82b39a06; min-width:0; }
+.entity-products .documented-product>strong { color:#dfe9e2; font-size:13px; overflow-wrap:anywhere; }
+.entity-products .documented-product>p { font-size:12px; line-height:1.6; margin:6px 0; }
+.entity-products .unreviewed-products { margin-top:18px; }
+.entity-products .unreviewed-products h4 { margin-bottom:8px; }
+.entity-products .unreviewed-products>p { font-size:12px!important; line-height:1.6; }
+.entity-profile .recorded-locations { margin-top:20px; }
+.entity-profile .recorded-locations>summary { font-size:12px; line-height:1.6; color:#bfcec5; padding:10px 0; }
+.entity-profile .recorded-locations>p { font-size:12px!important; }
+.entity-profile .recorded-location { border-top:1px solid #83978b30; padding:10px 0; }
+.entity-profile .recorded-location p { margin:5px 0; font-size:12px!important; }
+.entity-profile .recorded-location strong { font-size:12px; }
+@media(max-width:760px) {
+ .entity-profile .profile-heading { display:block; }
+ .entity-profile .profile-heading small { display:block; text-align:left; margin:5px 0; }
+ .entity-profile dl>div { grid-template-columns:1fr; gap:5px; }
+ .entity-profile .field-evidence>summary,.entity-profile .recorded-locations>summary,.entity-products .field-evidence>summary,.entity-profile .legacy-profile-sources>summary { min-height:44px; padding:12px 0; }
+ .field-evidence a,.legacy-profile-sources a,.recorded-location a { min-height:44px; display:inline-flex; align-items:center; }
+}

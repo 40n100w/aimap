@@ -9,6 +9,7 @@ The site is fully static and GitHub Pages-safe: there is no backend, database, a
 ```text
 index.html          Accessible application shell and interface overlays
 data/*.csv          Editable entities, relationships, layers, journeys and map points
+data/entity-facts.json Field/item evidence, product details and dated location references
 src/data.js         CSV parsing and typed runtime data adapter
 src/scene.js        Three.js scene, camera, node layout, lines, focus and traces
 src/ui.js           Search, filters, panels, journeys and textual interactions
@@ -115,7 +116,7 @@ Keep the media query in `src/mobile-layout.js` and `src/mobile.css` in sync.
 
 ## Data schema
 
-All website records live in the CSV files under `data/`. See `data/README.md`
+Website records live in CSV and JSON files under `data/`. See `data/README.md`
 for the file-by-file schema and manual editing rules. The current edition
 contains over 2,000 visible entities. Geographic views use the `geography` column.
 Geography is an editorial classification of principal association rather than

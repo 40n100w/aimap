@@ -1,0 +1,1540 @@
+{
+  "reviewedOn": "2026-10-20",
+  "scope": "18 existing cloud/data-center/power/network entities; source-scoped changes only, with dated historical locations kept as notes.",
+  "sources": [
+    {
+      "id": "cloud-aws-sagemaker",
+      "url": "https://raw.githubusercontent.com/aws/sagemaker-python-sdk/61213e938b667a3c41167eb2b61844ec5356265d/README.rst",
+      "revision": "61213e938b667a3c41167eb2b61844ec5356265d",
+      "retrievedOn": "2026-10-20",
+      "sha256": "08d13ce92101b98c839f43b4d3b677a196f61869176da08c42b5a4147a475cc4",
+      "title": "aws/sagemaker-python-sdk \u2014 README.rst",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "SageMaker Python SDK is an open source library for training and deploying machine learning models on Amazon SageMaker.\n\nWith the SDK, you can train and deploy models using popular deep learning frameworks **Apache MXNet** and **PyTorch**.\nYou can also train and deploy models with **Amazon algorithms**,\nwhich are scalable implementations of core machine learning algorithms that are optimized for SageMaker and GPU training.\nIf you have **your own algorithms** built into SageMaker compatible Docker containers, you can train and host models using these as well.",
+      "excerptStartLine": 29,
+      "scope": "Amazon SageMaker model training and deployment; custom containers and supported frameworks.",
+      "limitations": "This source documents technical capabilities, not a complete corporate profile, current capacity, named customers, headquarters, leadership, founding dates or ownership."
+    },
+    {
+      "id": "cloud-azure-foundry",
+      "url": "https://raw.githubusercontent.com/Azure/azure-sdk-for-python/31f3f0115c599da702ae70218daac04c6778055b/sdk/ai/azure-ai-projects/README.md",
+      "revision": "31f3f0115c599da702ae70218daac04c6778055b",
+      "retrievedOn": "2026-10-20",
+      "sha256": "79d553cbdddcaded94a29ef629932a36815b7fc5349a0fcd437d91037fadf65b",
+      "title": "Azure/azure-sdk-for-python \u2014 sdk/ai/azure-ai-projects/README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The AI Projects client library is part of the Microsoft Foundry SDK, and provides easy access to\nresources in your [Microsoft Foundry](https://ai.azure.com/) Project. Use it to:\n\n* **Create and run Agents** using methods on the `.agents` client property. This includes **Hosted Agents**, which let you run your own containerized agent runtime while using Microsoft Foundry for managed hosting and scaling.\n* **Build and run Voice Agents (preview)** for real-time, speech-to-speech conversational AI, reachable over a WebSocket (`.beta.voice_agents.realtime`) or telephony (`.beta.voice_agents.telephony`), with persisted conversation transcripts and audio through `.beta.voice_agents.conversations`.\n* **Enhance Agents with specialized tools and toolbox tools** such as:\n  * Agent-to-Agent (A2A)\n  * Azure AI Search\n  * Azure Functions\n  * Bing Custom Search (Preview)\n  * Bing Grounding\n  * Browser Automation (Preview)\n  * Code Interpreter\n  * Computer\n  * Computer Use (Preview)\n  * Fabric IQ (Preview)\n  * File Search\n  * Function Tool\n  * Image Generation\n  * Memory Search (Preview)\n  * Microsoft Fabric (Preview)\n  * Microsoft SharePoint (Preview)\n  * Model Context Protocol (MCP)\n  * OpenAPI\n  * Reminder Tool (Preview)\n  * Toolbox Search\n  * Web Search\n  * Work IQ (Preview)\n* **Get an OpenAI client** using `.get_openai_client()` method to run Responses, Conversations, Evaluations and Fine-Tuning operations with your Agent.\n* **Create and version toolboxes** that bundle collections of tools and skills for your agents, using `.toolboxes` operations.\n* **Fine-tune** AI Models on your data.\n* **Enumerate AI Models** deployed to your Foundry Project using `.deployments` operations.\n* **Enumerate connected Azure resources** in your Foundry project using `.connections` operations.\n* **Upload documents and create Datasets** to reference them using `.datasets` operations.\n* **Create and enumerate Search Indexes** using `.indexes` operations.\n* **Explore additional evaluation tools (some in preview)** to assess the performance of your generative AI application, using `.evaluation_rules`,\n`.beta.evaluation_taxonomies`, `.beta.evaluators`, `.beta.insights`, and `.beta.schedules` operations.\n* **Manage memory stores (preview)** for Agent conversations, using `.beta.memory_stores` operations.\n* **Register and manage local AI model weights (preview)** using `.beta.models` operations.",
+      "excerptStartLine": 3,
+      "scope": "Microsoft Foundry project API, agents, model operations, datasets, indexes and explicitly preview functionality.",
+      "limitations": "This source documents technical capabilities, not a complete corporate profile, current capacity, named customers, headquarters, leadership, founding dates or ownership.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 46,
+          "excerpt": "**Important:** This stable package includes Preview features. Preview features available through stable methods require setting `allow_preview=True` when constructing the client, while Preview features exposed via the .beta sub-clients do not. Preview features may change or be removed in future versions and are not recommended for production use."
+        }
+      ]
+    },
+    {
+      "id": "cloud-google-genai",
+      "url": "https://raw.githubusercontent.com/googleapis/python-genai/4c1abccf258c9247218e66610790043893cd6950/README.md",
+      "revision": "4c1abccf258c9247218e66610790043893cd6950",
+      "retrievedOn": "2026-10-20",
+      "sha256": "66952d47594d7a9c588782f57cb02d04fa4fd27b108112fd06b036234cdebc34",
+      "title": "googleapis/python-genai \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Google Gen AI Python SDK provides an interface for developers to integrate\nGoogle's generative models into their Python applications. It supports\nthe [Gemini Developer API](https://ai.google.dev/gemini-api/docs) and\n[Gemini Enterprise Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform)\nAPIs.",
+      "excerptStartLine": 11,
+      "scope": "Google Gen AI SDK names Gemini Developer API and Gemini Enterprise Agent Platform APIs.",
+      "limitations": "This source documents technical capabilities, not a complete corporate profile, current capacity, named customers, headquarters, leadership, founding dates or ownership."
+    },
+    {
+      "id": "cloud-oci-python",
+      "url": "https://raw.githubusercontent.com/oracle/oci-python-sdk/91d1af980aca36b5f111370060e047d17cf5416d/README.rst",
+      "revision": "91d1af980aca36b5f111370060e047d17cf5416d",
+      "retrievedOn": "2026-10-20",
+      "sha256": "e1c3c585b9b5dd9f680ee3fd56e569072d008e11e25bd78d45a58902295a8084",
+      "title": "oracle/oci-python-sdk \u2014 README.rst",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "This is the Python SDK for Oracle Cloud Infrastructure. Supported Python versions are mentioned `here`__.\n\n__ https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/pythonsdk.htm#pythonsdk_topic-supported_python_versions",
+      "excerptStartLine": 8,
+      "scope": "Oracle Cloud Infrastructure SDK. The same document names Oracle Corp as maintainer.",
+      "limitations": "This source documents technical capabilities, not a complete corporate profile, current capacity, named customers, headquarters, leadership, founding dates or ownership.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 34,
+          "excerpt": "The project is open source and maintained by Oracle Corp. The home page for the project is `here`__."
+        }
+      ]
+    },
+    {
+      "id": "cloud-oci-services",
+      "url": "https://raw.githubusercontent.com/oracle/oci-python-sdk/91d1af980aca36b5f111370060e047d17cf5416d/src/oci/__init__.py",
+      "revision": "91d1af980aca36b5f111370060e047d17cf5416d",
+      "retrievedOn": "2026-10-20",
+      "sha256": "48e85e3a7bb04bfbe1ef7127465dc9875a8ea2822eb0f21d17231675e4e85e6a",
+      "title": "oracle/oci-python-sdk \u2014 src/oci/__init__.py",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "        \"access_governance_cp\", \"adm\", \"ai_data_platform\", \"ai_document\", \"ai_language\", \"ai_speech\", \"ai_vision\", \"analytics\", \"announcements_service\", \"api_platform\", \"apiaccesscontrol\", \"apigateway\", \"apm_config\", \"apm_control_plane\", \"apm_synthetics\", \"apm_traces\", \"appmgmt_control\", \"artifacts\", \"audit\", \"autoscaling\", \"bastion\", \"batch\", \"bds\", \"blockchain\", \"budget\", \"capacity_management\", \"ccd_offers\", \"certificates\", \"certificates_management\", \"cims\", \"cloud_bridge\", \"cloud_guard\", \"cloud_migrations\", \"cluster_health\", \"cluster_placement_groups\", \"compute_cloud_at_customer\", \"compute_instance_agent\", \"container_engine\", \"container_instances\", \"container_registry\", \"core\", \"costad\", \"dashboard_service\", \"data_catalog\", \"data_flow\", \"data_integration\", \"data_labeling_service\", \"data_labeling_service_dataplane\", \"data_safe\", \"data_science\", \"database\", \"database_management\", \"database_migration\", \"database_tools\", \"database_tools_runtime\", \"datacc\", \"dblm\", \"dbmulticloud\", \"ddfs\", \"delegate_access_control\", \"demand_signal\", \"desktops\", \"devops\", \"dif\", \"disaster_recovery\", \"distributed_database\", \"dns\", \"em_warehouse\", \"email\", \"email_data_plane\", \"events\", \"file_storage\", \"fleet_apps_management\", \"fleet_software_update\", \"functions\", \"fusion_apps\", \"gdp\", \"generative_ai\", \"generative_ai_agent\", \"generative_ai_agent_runtime\", \"generative_ai_data\", \"generative_ai_inference\", \"generative_ai_sandbox\", \"generic_artifacts_content\", \"golden_gate\", \"governance_rules_control_plane\", \"healthchecks\", \"identity\", \"identity_data_plane\", \"identity_domains\", \"integration\", \"iot\", \"jms\", \"jms_java_downloads\", \"jms_utils\", \"key_management\", \"license_manager\", \"limits\", \"limits_increase\", \"load_balancer\", \"lockbox\", \"log_analytics\", \"logging\", \"loggingingestion\", \"loggingsearch\", \"lustre_file_storage\", \"managed_kafka\", \"management_agent\", \"management_dashboard\", \"marketplace\", \"marketplace_private_offer\", \"marketplace_publisher\", \"media_services\", \"mngdmac\", \"model_deployment\", \"monitoring\", \"multicloud\", \"mysql\", \"network_firewall\", \"network_load_balancer\", \"nosql\", \"object_storage\", \"oce\", \"oci_control_center\", \"oci_product_catalog\", \"ocvp\", \"oda\", \"onesubscription\", \"ons\", \"opa\", \"opensearch\", \"operator_access_control\", \"opsi\", \"optimizer\", \"os_management_hub\", \"osp_gateway\", \"osub_billing_schedule\", \"osub_organization_subscription\", \"osub_subscription\", \"osub_usage\", \"psa\", \"psql\", \"pss\", \"queue\", \"recovery\", \"redis\", \"resource_analytics\", \"resource_manager\", \"resource_scheduler\", \"resource_search\", \"rover\", \"sch\", \"secrets\", \"security_attribute\", \"self\", \"service_catalog\", \"service_manager_proxy\", \"stack_monitoring\", \"streaming\", \"tenant_manager_control_plane\", \"threat_intelligence\", \"usage\", \"usage_api\", \"vault\", \"vbs_inst\", \"visual_builder\", \"vn_monitoring\", \"vulnerability_scanning\", \"waa\", \"waas\", \"waf\", \"wlms\", \"work_requests\", \"zpr\"",
+      "excerptStartLine": 22,
+      "scope": "SDK module inventory includes generative AI, inference, agent, data-science and object-storage interfaces.",
+      "limitations": "SDK module presence establishes interface coverage; it does not prove regional availability, access entitlement, performance or production capacity."
+    },
+    {
+      "id": "cloud-coreweave-cloud",
+      "url": "https://raw.githubusercontent.com/coreweave/kubernetes-cloud/3005605371d85eced85ab78191f962285914fd14/README.md",
+      "revision": "3005605371d85eced85ab78191f962285914fd14",
+      "retrievedOn": "2026-10-20",
+      "sha256": "1ab8867b4fc52b75e296b73d65cdcc1be0f3e80760d195854d036330a8ecf42b",
+      "title": "coreweave/kubernetes-cloud \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "# CoreWeave Kubernetes Cloud\nDocumentation lives at [https://docs.coreweave.com](https://docs.coreweave.com). This repository contains related examples.",
+      "excerptStartLine": 1,
+      "scope": "CoreWeave Kubernetes Cloud documentation identity.",
+      "limitations": "This source documents technical capabilities, not a complete corporate profile, current capacity, named customers, headquarters, leadership, founding dates or ownership."
+    },
+    {
+      "id": "cloud-coreweave-tensorizer",
+      "url": "https://raw.githubusercontent.com/coreweave/tensorizer/652d3c016c84836bba97153e108821c11428ac40/README.md",
+      "revision": "652d3c016c84836bba97153e108821c11428ac40",
+      "retrievedOn": "2026-10-20",
+      "sha256": "54829755210177bb8498c4f04c766f613a2e0b671bba10248201bac3c7e9b8a4",
+      "title": "coreweave/tensorizer \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "CoreWeave and our customers use KNative to deploy models as serverless\nfunctions. How long a model takes to load is a major factor in the latency\nof KNative scale-up. `tensorizer` is a tool to serialize models and their\nassociated tensors into a single file that can be loaded quickly and\nefficiently off an HTTP/HTTPS or S3 endpoint.",
+      "excerptStartLine": 10,
+      "scope": "Tensorizer serializes model tensors for loading from HTTP/HTTPS and S3 endpoints.",
+      "limitations": "Do not repeat performance figures as independently verified; model examples do not identify an original training customer or complete hardware fleet."
+    },
+    {
+      "id": "cloud-crusoe-terraform",
+      "url": "https://raw.githubusercontent.com/crusoecloud/terraform-provider-crusoe/db09671e1014f7ac34a4159fea8a0ae2b0973ae3/readme.md",
+      "revision": "db09671e1014f7ac34a4159fea8a0ae2b0973ae3",
+      "retrievedOn": "2026-10-20",
+      "sha256": "9c74c98d93d8bd61b9a56dab7337d7476cc672d4248a0e61a397c42897d97010",
+      "title": "crusoecloud/terraform-provider-crusoe \u2014 readme.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "This repo defines the official Terraform Provider for use with [Crusoe Cloud](https://crusoecloud.com/), the world's first carbon-reducing, low-cost GPU cloud platform.",
+      "excerptStartLine": 4,
+      "scope": "Crusoe Cloud official Terraform provider and GPU cloud description.",
+      "limitations": "Do not repeat carbon-reduction or low-cost marketing claims as independently verified; a configuration example is not proof of current available capacity or named customers.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 106,
+          "excerpt": "You can then use Terraform to create instances, disks, and networking rules. To create 10 VMs with 8 80GB A100s, we would add the following block: "
+        }
+      ]
+    },
+    {
+      "id": "cloud-lambda-stack",
+      "url": "https://raw.githubusercontent.com/lambdal/lambda-stack-dockerfiles/76fc289137a7cb028870442d246bd695cc0b8925/README.md",
+      "revision": "76fc289137a7cb028870442d246bd695cc0b8925",
+      "retrievedOn": "2026-10-20",
+      "sha256": "9d669eb7d42cf729c1fd582e96764e83f58e013455dabecf908d797596e9159f",
+      "title": "lambdal/lambda-stack-dockerfiles \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Dockerfiles with rolling-release Lambda Stack, designed for use with nvidia-container-toolkit",
+      "excerptStartLine": 3,
+      "scope": "Lambda Stack Dockerfiles support NVIDIA container tooling.",
+      "limitations": "This is a software-stack source; GPU-cloud fleet, bare-metal availability and current hardware product catalog are not verified by it."
+    },
+    {
+      "id": "cloud-nscale-terraform",
+      "url": "https://raw.githubusercontent.com/nscaledev/terraform-provider-nscale/1786ce2df739432680090e83b087bf9e4c4cdc9f/README.md",
+      "revision": "1786ce2df739432680090e83b087bf9e4c4cdc9f",
+      "retrievedOn": "2026-10-20",
+      "sha256": "27ebec5b4cccfc106af40c314572220939d5741be765186072aae72a70bb3088",
+      "title": "nscaledev/terraform-provider-nscale \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The Nscale Terraform provider allows Terraform to manage Nscale resources, letting you define and provision them using standard Terraform workflows.\n\n**Note**: For now, the provider supports Nscale networks, security groups, file storages, compute instances and compute clusters, with more resources planned for future releases.",
+      "excerptStartLine": 3,
+      "scope": "Nscale resource classes: networks, security groups, file storage, compute instances and clusters.",
+      "limitations": "Does not establish GPU generation, fleet size, named model-maker contract or full current corporate profile."
+    },
+    {
+      "id": "cloud-fluidstack-api",
+      "url": "https://raw.githubusercontent.com/fluidstackio/fern-config/05928aa9a25ab252cd17b3726241ada2236f5588/fern/openapi/fluidstack-openapi.json",
+      "revision": "05928aa9a25ab252cd17b3726241ada2236f5588",
+      "retrievedOn": "2026-10-20",
+      "sha256": "4e930e146c128eba2f0ea085ce3e174db0198ae09f8f7ec28d7fb31be51335d9",
+      "title": "fluidstackio/fern-config \u2014 fern/openapi/fluidstack-openapi.json",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "        \"summary\": \"Create a new instance\",\n        \"description\": \"This endpoint is used to create a new instance. You must provide a custom `name` for the instance, its `gpu_type`, and the name of its `ssh_key`. \\n\\nIf no values are provided for the `gpu_count` and `operating_system_label`, the default values of `1` and `ubuntu_20_04_lts_nvidia` are used respectively.\",\n        \"operationId\": \"create_instance_instances_post\",",
+      "excerptStartLine": 139,
+      "scope": "Fluidstack GPU-instance creation API; read associated paths for instance lifecycle, configuration and SSH key operations.",
+      "limitations": "The checked API version does not establish current available inventory, data-center ownership, regional availability or model-maker contracts.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 684,
+          "excerpt": "        \"summary\": \"List available configurations\",\n        \"description\": \"List available configurations including GPU type, GPU count, RAM size, and disk size.\",\n        \"operationId\": \"list_available_configurations_list_available_configurations_get\","
+        },
+        {
+          "excerptStartLine": 4,
+          "excerpt": "    \"title\": \"Fluidstack API Service\",\n    \"version\": \"0.1.0\""
+        }
+      ]
+    },
+    {
+      "id": "cloud-nebius-sdk",
+      "url": "https://raw.githubusercontent.com/nebius/pysdk/90b143cebfe56829b62cc9d1a9418d1ab9bfa053/README.md",
+      "revision": "90b143cebfe56829b62cc9d1a9418d1ab9bfa053",
+      "retrievedOn": "2026-10-20",
+      "sha256": "2485ef90c5ceebe53b210be3ad9417e0be2f3e83a011ded9021048c4b9bb4704",
+      "title": "nebius/pysdk \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The **Nebius Python\u00ae SDK** is a client library for\n[Nebius AI Cloud](https://nebius.com) services. It uses gRPC and supports all\nAPIs in the [Nebius API repository](https://github.com/nebius/api). Use the SDK\nto authenticate, manage resources, and communicate with Nebius services.",
+      "excerptStartLine": 3,
+      "scope": "Nebius AI Cloud gRPC client SDK, authentication and cloud resource management.",
+      "limitations": "This source documents technical capabilities, not a complete corporate profile, current capacity, named customers, headquarters, leadership, founding dates or ownership.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 256,
+          "excerpt": "from nebius.api.nebius.compute.v1 import Instance, InstanceServiceClient\n```\n\nThe SDK no longer contains generated `*_pb2.py`, `*_pb2.pyi`, and"
+        }
+      ]
+    },
+    {
+      "id": "cloud-arista-eapi",
+      "url": "https://raw.githubusercontent.com/arista-eosplus/pyeapi/6816d9e498f06d773fd97121b805dec198c9f6e2/README.md",
+      "revision": "6816d9e498f06d773fd97121b805dec198c9f6e2",
+      "retrievedOn": "2026-10-20",
+      "sha256": "1e469fc684c87da4de0d9bc4ec8f4afe8e067ec1ad6012a7575719b04aa98002",
+      "title": "arista-eosplus/pyeapi \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The Python library for Arista's eAPI command API implementation provides a\nclient API work using eAPI and communicating with EOS nodes.  The Python\nlibrary can be used to communicate with EOS either locally (on-box) or remotely\n(off-box).  It uses a standard INI-style configuration file to specify one or\nmore nodes and connection properties.\n\nThe pyeapi library also provides an API layer for building native Python\nobjects to interact with the destination nodes. The API layer is a convenient\nimplementation for working with the EOS configuration and is extensible for\ndeveloping custom implementations.",
+      "excerptStartLine": 5,
+      "scope": "Arista EOS/eAPI software and local/remote network-node configuration.",
+      "limitations": "Does not verify the current hardware catalog, switch generation, named customer design wins, company leadership or current headquarters."
+    },
+    {
+      "id": "cloud-broadcom-sdk",
+      "url": "https://raw.githubusercontent.com/Broadcom-Network-Switching-Software/OpenBCM/6d2330ce1b4fc49d681cffcf09af408661be4c62/README.md",
+      "revision": "6d2330ce1b4fc49d681cffcf09af408661be4c62",
+      "retrievedOn": "2026-10-20",
+      "sha256": "5fa4887d0fd208cbab59db44d413495c769ca0b9810fffbfed52304ee9d2a0b6",
+      "title": "Broadcom-Network-Switching-Software/OpenBCM \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "This release has support for XGS switch devices such as Trident (TD2, TD3, TD4), Tomahawk (TH, TH2, TH3)\nand DNX devices such as Ramon, Qumran (Q2A, Q2U) and Jericho (JR2, J2C).",
+      "excerptStartLine": 18,
+      "scope": "OpenBCM names Trident, Tomahawk, Ramon, Qumran and Jericho device families supported by this release.",
+      "limitations": "This is a supported-device list in one SDK release, not a complete or latest Broadcom product roadmap, ASIC customer list or availability guarantee.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 6,
+          "excerpt": "OpenBCM Broadcom Switch Software Development Kit contains the source code for Broadcom network switch APIs \nand drivers for programming Broadcom network switch silicon based platforms."
+        }
+      ]
+    },
+    {
+      "id": "cloud-marvell-dao",
+      "url": "https://raw.githubusercontent.com/MarvellEmbeddedProcessors/dao/f21548c3d53b37cc0f2bb787730927479404f94b/README.md",
+      "revision": "f21548c3d53b37cc0f2bb787730927479404f94b",
+      "retrievedOn": "2026-10-20",
+      "sha256": "d6dbfab47dad96e9ac49ea30528f2e45b3992248c57eb7ff0d0fe27e3eac40d5",
+      "title": "MarvellEmbeddedProcessors/dao \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Data Accelerator Offload(DAO) provides library interfaces which enable developers\nto implement their own application on top of Marvell's OCTEON based data\nprocessing units.\nIt also comes with applications aimed at supporting accelerated switching and\npacket processing.",
+      "excerptStartLine": 3,
+      "scope": "Marvell OCTEON-based DPUs and DAO packet-processing/accelerated-switching software.",
+      "limitations": "No inference about custom AI silicon customers, interconnect design wins, headquarters or full current company product lineup."
+    },
+    {
+      "id": "cloud-schneider-profile",
+      "url": "https://raw.githubusercontent.com/schneider-electric/.github/079097da09a4bc174dd84aceee217901cc920286/profile/README.md",
+      "revision": "079097da09a4bc174dd84aceee217901cc920286",
+      "retrievedOn": "2026-10-20",
+      "sha256": "501ed640fdc28880710d9bce92625918945daba84266ffa4732a193f6d2f3dad",
+      "title": "schneider-electric/.github \u2014 profile/README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "- Visit the dedicated Schneider Electric Open Source web page to read [our manifesto](https://www.se.com/ww/en/about-us/open-source/manifesto.jsp).",
+      "excerptStartLine": 20,
+      "scope": "Schneider Electric official domain linked by its open-source program.",
+      "limitations": "This source supports official identity/domain and open-source program only; it does not establish the power/cooling product portfolio."
+    },
+    {
+      "id": "cloud-coreweave-identity",
+      "url": "https://github.com/coreweave",
+      "title": "coreweave GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "f055d5282ca16edb86087aece35787c69d3120e25617531b998d6d292262a803",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://www.coreweave.com\" href=\"https://www.coreweave.com\">https://www.coreweave.com</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-crusoe-identity",
+      "url": "https://github.com/crusoecloud",
+      "title": "crusoecloud GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "d4fa948929a1223b121ea83fef26fc1875271b429f4814d87efcee387a0b5a05",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://crusoe.ai/cloud\" href=\"https://crusoe.ai/cloud\">https://crusoe.ai/cloud</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-lambda-identity",
+      "url": "https://github.com/lambdal",
+      "title": "lambdal GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "77a7780f9c0e1b416e5569c159b2e9aeaf107428c0c5e1eec08ae549f5a4c5ae",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://lambda.ai\" href=\"https://lambda.ai\">https://lambda.ai</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-nscale-identity",
+      "url": "https://github.com/nscaledev",
+      "title": "nscaledev GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "f02af7adf51443119aaa71a899c12e75b82beadf4e30e8f167df7f66d1553f09",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"nscale.com\" href=\"https://nscale.com\">https://nscale.com</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-fluidstack-identity",
+      "url": "https://github.com/fluidstackio",
+      "title": "fluidstackio GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "30702327a52f10a366d918340a3ee2f3569e8fc46235f5e1bd0bd29cdd381645",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://fluidstack.io\" href=\"https://fluidstack.io\">https://fluidstack.io</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-arista-identity",
+      "url": "https://github.com/arista-eosplus",
+      "title": "arista-eosplus GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "12308d727b38057912a626b84bbcf4d5420837567f606c5268a62e5218476721",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"http://www.arista.com\" href=\"http://www.arista.com\">http://www.arista.com</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-broadcom-identity",
+      "url": "https://github.com/Broadcom-Network-Switching-Software",
+      "title": "Broadcom-Network-Switching-Software GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "f0eb8f6de3813a8773a6ac9cd066ec3320671ab273c831675165f23123d560c3",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://www.broadcom.com\" href=\"https://www.broadcom.com\">https://www.broadcom.com</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-marvell-identity",
+      "url": "https://github.com/MarvellEmbeddedProcessors",
+      "title": "MarvellEmbeddedProcessors GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "6435acc0bf0566a8a18198850eda75411a369df2d335ff8a0e561d4bd472a065",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"http://www.marvell.com/embedded-processors/\" href=\"http://www.marvell.com/embedded-processors/\">http://www.marvell.com/embedded-processors/</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-google-cloud-identity",
+      "url": "https://github.com/GoogleCloudPlatform",
+      "title": "GoogleCloudPlatform GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "0ed4c5609b97795c2edab4b070f50d41dadf76c199fbf739abac039dd1f0b50f",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://cloud.google.com\" href=\"https://cloud.google.com\">https://cloud.google.com</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-nebius-identity",
+      "url": "https://github.com/nebius",
+      "title": "nebius GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "be307a380b3065bf8e08f1d9fdc7abdc272336d3885d8f92b9e3d0db64d80086",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://nebius.com\" href=\"https://nebius.com\">https://nebius.com</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-aws-identity",
+      "url": "https://github.com/aws",
+      "title": "aws GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "1e119d0faf56b6ec1c796fe0fd4a39e32ec4a030a8f960ccbd105d8235535003",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://amazon.com/aws\" href=\"https://amazon.com/aws\">https://amazon.com/aws</a>",
+      "scope": "Organization profile links this corporate website.",
+      "limitations": "Mutable profile. Corporate destination was not freshly readable; this establishes linked website identity, not reachability or the full company profile."
+    },
+    {
+      "id": "cloud-existing-coreweave-002",
+      "url": "https://www.coreweave.com/coreweave-company-culture",
+      "title": "CoreWeave \u2014 Livingston headquarters",
+      "revision": null,
+      "retrievedOn": null,
+      "recordedVerifiedOn": "2026-08-25",
+      "reviewedLocallyOn": "2026-10-20",
+      "sha256": "32f33fcba7eb4e08c3113cd5e8410931046828973c1a661539a842ef9e40ccb6",
+      "evidenceOrigin": "existing_record",
+      "excerpt": "290 W Mt Pleasant Ave, Suite 4100, Livingston, NJ 07039, United States",
+      "scope": "Address/type preserved in the existing location research, record coreweave-002.",
+      "limitations": "Original page was not freshly retrieved. Hash identifies the local location-research file, not the remote document. Prior status: map_ready. Country/office label does not establish current legal or global headquarters.",
+      "localRecord": "research/office-locations/locations.json#coreweave-002"
+    },
+    {
+      "id": "cloud-existing-coreweave-006",
+      "url": "https://www.coreweave.com/coreweave-company-culture",
+      "title": "CoreWeave \u2014 London European headquarters",
+      "revision": null,
+      "retrievedOn": null,
+      "recordedVerifiedOn": "2026-08-25",
+      "reviewedLocallyOn": "2026-10-20",
+      "sha256": "32f33fcba7eb4e08c3113cd5e8410931046828973c1a661539a842ef9e40ccb6",
+      "evidenceOrigin": "existing_record",
+      "excerpt": "Second Floor, Connexion House, Dray Walk, London E1 6QL, United Kingdom",
+      "scope": "Address/type preserved in the existing location research, record coreweave-006.",
+      "limitations": "Original page was not freshly retrieved. Hash identifies the local location-research file, not the remote document. Prior status: needs_review. Country/office label does not establish current legal or global headquarters.",
+      "localRecord": "research/office-locations/locations.json#coreweave-006"
+    },
+    {
+      "id": "cloud-existing-arista-001",
+      "url": "https://www.arista.com/en/company/contact-us",
+      "title": "Arista Networks \u2014 Arista Networks Santa Clara",
+      "revision": null,
+      "retrievedOn": null,
+      "recordedVerifiedOn": "2026-08-24",
+      "reviewedLocallyOn": "2026-10-20",
+      "sha256": "32f33fcba7eb4e08c3113cd5e8410931046828973c1a661539a842ef9e40ccb6",
+      "evidenceOrigin": "existing_record",
+      "excerpt": "5453 Great America Parkway, Santa Clara, CA 95054, United States",
+      "scope": "Address/type preserved in the existing location research, record arista-001.",
+      "limitations": "Original page was not freshly retrieved. Hash identifies the local location-research file, not the remote document. Prior status: map_ready. Country/office label does not establish current legal or global headquarters.",
+      "localRecord": "research/office-locations/locations.json#arista-001"
+    },
+    {
+      "id": "cloud-existing-broadcom-001",
+      "url": "https://www.broadcom.com/company/contact",
+      "title": "Broadcom \u2014 California, Palo Alto (Corporate Headquarters)",
+      "revision": null,
+      "retrievedOn": null,
+      "recordedVerifiedOn": "2026-08-25",
+      "reviewedLocallyOn": "2026-10-20",
+      "sha256": "32f33fcba7eb4e08c3113cd5e8410931046828973c1a661539a842ef9e40ccb6",
+      "evidenceOrigin": "existing_record",
+      "excerpt": "3421 Hillview Ave, Palo Alto, California, 94304, United States",
+      "scope": "Address/type preserved in the existing location research, record broadcom-001.",
+      "limitations": "Original page was not freshly retrieved. Hash identifies the local location-research file, not the remote document. Prior status: geocoded. Country/office label does not establish current legal or global headquarters.",
+      "localRecord": "research/office-locations/locations.json#broadcom-001"
+    },
+    {
+      "id": "cloud-existing-marvell-001",
+      "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000011/mrvl-20260131.htm",
+      "title": "Marvell \u2014 Wilmington corporate headquarters",
+      "revision": null,
+      "retrievedOn": null,
+      "recordedVerifiedOn": "2026-08-25",
+      "reviewedLocallyOn": "2026-10-20",
+      "sha256": "32f33fcba7eb4e08c3113cd5e8410931046828973c1a661539a842ef9e40ccb6",
+      "evidenceOrigin": "existing_record",
+      "excerpt": "1000 N. West Street, Suite 1200, Wilmington, DE 19801, United States",
+      "scope": "Address/type preserved in the existing location research, record marvell-001.",
+      "limitations": "Original page was not freshly retrieved. Hash identifies the local location-research file, not the remote document. Prior status: needs_review. Country/office label does not establish current legal or global headquarters.",
+      "localRecord": "research/office-locations/locations.json#marvell-001"
+    },
+    {
+      "id": "cloud-existing-marvell-003",
+      "url": "https://www.marvell.com/company/offices.html",
+      "title": "Marvell \u2014 Santa Clara U.S. headquarters",
+      "revision": null,
+      "retrievedOn": null,
+      "recordedVerifiedOn": "2026-08-25",
+      "reviewedLocallyOn": "2026-10-20",
+      "sha256": "32f33fcba7eb4e08c3113cd5e8410931046828973c1a661539a842ef9e40ccb6",
+      "evidenceOrigin": "existing_record",
+      "excerpt": "5488 Marvell Lane, Santa Clara, CA 95054, United States",
+      "scope": "Address/type preserved in the existing location research, record marvell-003.",
+      "limitations": "Original page was not freshly retrieved. Hash identifies the local location-research file, not the remote document. Prior status: geocoded. Country/office label does not establish current legal or global headquarters.",
+      "localRecord": "research/office-locations/locations.json#marvell-003"
+    },
+    {
+      "id": "cloud-existing-vertiv-001",
+      "url": "https://www.vertiv.com/en-us/contacts/",
+      "title": "Vertiv \u2014 Global headquarters",
+      "revision": null,
+      "retrievedOn": null,
+      "recordedVerifiedOn": "2026-08-25",
+      "reviewedLocallyOn": "2026-10-20",
+      "sha256": "32f33fcba7eb4e08c3113cd5e8410931046828973c1a661539a842ef9e40ccb6",
+      "evidenceOrigin": "existing_record",
+      "excerpt": "505 N Cleveland Ave, Westerville, OH 43082, United States",
+      "scope": "Address/type preserved in the existing location research, record vertiv-001.",
+      "limitations": "Original page was not freshly retrieved. Hash identifies the local location-research file, not the remote document. Prior status: geocoded. Country/office label does not establish current legal or global headquarters.",
+      "localRecord": "research/office-locations/locations.json#vertiv-001"
+    },
+    {
+      "id": "cloud-existing-vertiv-006",
+      "url": "https://www.vertiv.com/en-us/contacts/",
+      "title": "Vertiv \u2014 Americas headquarters",
+      "revision": null,
+      "retrievedOn": null,
+      "recordedVerifiedOn": "2026-08-25",
+      "reviewedLocallyOn": "2026-10-20",
+      "sha256": "32f33fcba7eb4e08c3113cd5e8410931046828973c1a661539a842ef9e40ccb6",
+      "evidenceOrigin": "existing_record",
+      "excerpt": "610 Executive Campus Drive, Westerville, OH 43082, United States",
+      "scope": "Address/type preserved in the existing location research, record vertiv-006.",
+      "limitations": "Original page was not freshly retrieved. Hash identifies the local location-research file, not the remote document. Prior status: geocoded. Country/office label does not establish current legal or global headquarters.",
+      "localRecord": "research/office-locations/locations.json#vertiv-006"
+    },
+    {
+      "id": "cloud-existing-nebius-001",
+      "url": "https://assets.nebius.com/assets/70b9d3f9-cd33-40f8-805b-8596b02b8478/20260311%20NVIDIA%20and%20Nebius%20partner%20to%20scale%20full-stack%20AI%20cloud.pdf",
+      "title": "Nebius \u2014 Amsterdam main office",
+      "revision": null,
+      "retrievedOn": null,
+      "recordedVerifiedOn": "2026-08-25",
+      "reviewedLocallyOn": "2026-10-20",
+      "sha256": "32f33fcba7eb4e08c3113cd5e8410931046828973c1a661539a842ef9e40ccb6",
+      "evidenceOrigin": "existing_record",
+      "excerpt": "Tripolis Park, Burgerweeshuispad 101, 1076 ES Amsterdam, Netherlands",
+      "scope": "Address/type preserved in the existing location research, record nebius-001.",
+      "limitations": "Original page was not freshly retrieved. Hash identifies the local location-research file, not the remote document. Prior status: address_verified. Country/office label does not establish current legal or global headquarters.",
+      "localRecord": "research/office-locations/locations.json#nebius-001"
+    }
+  ],
+  "entities": [
+    {
+      "entityId": "aws",
+      "changes": {
+        "howUsed": "Data scientists use Amazon SageMaker to train models with supported machine-learning frameworks or custom containers, then deploy models for hosted inference.",
+        "website": "https://amazon.com/aws"
+      },
+      "fieldEvidence": {
+        "howUsed": {
+          "sourceIds": [
+            "cloud-aws-sagemaker"
+          ],
+          "scope": "Amazon SageMaker SDK documents training and model deployment."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-aws-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "AWS is a cloud business/platform; separate the Amazon parent identity from product launch dates. Other existing Bedrock and Neuron portfolio claims retain their prior review scope."
+      ]
+    },
+    {
+      "entityId": "azure",
+      "changes": {
+        "provides": "Microsoft Foundry project APIs for managed and hosted agents, model deployments, fine-tuning, datasets, search indexes and evaluations. Selected voice-agent, memory and other capabilities are explicitly marked preview.",
+        "howUsed": "Teams authenticate a Foundry project with Microsoft Entra ID, connect deployed models and tools, run agents, and evaluate their applications. Preview features require separate consideration."
+      },
+      "fieldEvidence": {
+        "provides": {
+          "sourceIds": [
+            "cloud-azure-foundry"
+          ],
+          "scope": "Documented Microsoft Foundry SDK resources and workflows; preview labels preserved."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-azure-foundry"
+          ],
+          "scope": "Documented Microsoft Foundry SDK resources and workflows; preview labels preserved."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "A cloud platform launch year must not be displayed as the founding date of Microsoft."
+      ]
+    },
+    {
+      "entityId": "google-cloud",
+      "changes": {
+        "products": [
+          "Gemini Enterprise Agent Platform",
+          "Google Gen AI SDK"
+        ],
+        "description": "Google Cloud provides Gemini Enterprise Agent Platform APIs. Google's Gen AI SDK lets Python applications access those APIs and the separate Gemini Developer API.",
+        "provides": "Cloud generative-model API access through the Google Gen AI SDK and Gemini Enterprise Agent Platform.",
+        "howUsed": "Developers select the appropriate API, authenticate their client and call supported generative models from applications.",
+        "website": "https://cloud.google.com"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "cloud-google-genai"
+          ],
+          "scope": "Exact platform and SDK identities documented in the source; not all Google Cloud services."
+        },
+        "description": {
+          "sourceIds": [
+            "cloud-google-genai"
+          ],
+          "scope": "Exact platform and SDK identities documented in the source; not all Google Cloud services."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-google-genai"
+          ],
+          "scope": "Exact platform and SDK identities documented in the source; not all Google Cloud services."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-google-genai"
+          ],
+          "scope": "Exact platform and SDK identities documented in the source; not all Google Cloud services."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-google-cloud-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "Gemini Developer API and the Cloud platform are distinct API choices. Do not infer cloud-region or model-training location from SDK examples."
+      ],
+      "productFacts": [
+        {
+          "name": "Gemini Enterprise Agent Platform",
+          "kind": "cloud_service",
+          "role": "A Google cloud API platform for generative models, accessed through the Google Gen AI SDK.",
+          "sourceIds": [
+            "cloud-google-genai"
+          ],
+          "scope": "The SDK explicitly names and supports the platform API. This does not verify all platform capabilities, regional availability, pricing or original model-training infrastructure."
+        },
+        {
+          "name": "Google Gen AI SDK",
+          "kind": "software_sdk",
+          "role": "A Python client interface for integrating Google's generative models through Gemini Developer API and Gemini Enterprise Agent Platform APIs.",
+          "sourceIds": [
+            "cloud-google-genai"
+          ],
+          "scope": "Python SDK interface and supported API identities only; the SDK is software, not a separate compute-hosting service."
+        }
+      ]
+    },
+    {
+      "entityId": "oracle-cloud",
+      "changes": {
+        "description": "Oracle Cloud Infrastructure provides cloud-service APIs and an official Python SDK maintained by Oracle. Its SDK includes interfaces for generative AI, model inference, agents, data science and storage.",
+        "products": [
+          "Oracle Cloud Infrastructure Python SDK",
+          "OCI Generative AI APIs",
+          "OCI Data Science APIs"
+        ],
+        "provides": "Programmatic access to OCI cloud services, including generative-AI inference, agent, data-science and object-storage interfaces.",
+        "howUsed": "Developers authenticate OCI service clients to manage cloud resources and call the service-specific APIs used by their applications."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "cloud-oci-python",
+            "cloud-oci-services"
+          ],
+          "scope": "Oracle SDK maintainer identity and explicitly named service modules; not capacity or universal regional availability."
+        },
+        "products": {
+          "sourceIds": [
+            "cloud-oci-python",
+            "cloud-oci-services"
+          ],
+          "scope": "Oracle SDK maintainer identity and explicitly named service modules; not capacity or universal regional availability."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-oci-python",
+            "cloud-oci-services"
+          ],
+          "scope": "Oracle SDK maintainer identity and explicitly named service modules; not capacity or universal regional availability."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-oci-python",
+            "cloud-oci-services"
+          ],
+          "scope": "Oracle SDK maintainer identity and explicitly named service modules; not capacity or universal regional availability."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "The current generic OCI AI Infrastructure label lacks a product-specific citation; these named software interfaces are the verified scope."
+      ],
+      "productFacts": [
+        {
+          "name": "Oracle Cloud Infrastructure Python SDK",
+          "kind": "software_sdk",
+          "role": "Oracle-maintained Python clients for accessing Oracle Cloud Infrastructure services.",
+          "sourceIds": [
+            "cloud-oci-python"
+          ],
+          "scope": "The README identifies the SDK and Oracle Corp maintenance; it does not enumerate all OCI products or guarantee access to every service."
+        },
+        {
+          "name": "OCI Generative AI APIs",
+          "kind": "service_api_group",
+          "role": "The OCI Python SDK exposes generative-AI, inference and agent client modules.",
+          "sourceIds": [
+            "cloud-oci-services"
+          ],
+          "scope": "Verified SDK module coverage: generative_ai, generative_ai_inference, generative_ai_agent and generative_ai_agent_runtime. This is an API grouping, not a new standalone product brand or an availability guarantee."
+        },
+        {
+          "name": "OCI Data Science APIs",
+          "kind": "service_api_group",
+          "role": "Data-science service interfaces exposed through the OCI Python SDK.",
+          "sourceIds": [
+            "cloud-oci-services"
+          ],
+          "scope": "The data_science module is explicitly present. Module presence alone does not establish full product features, supported hardware, regional access or pricing."
+        }
+      ]
+    },
+    {
+      "entityId": "coreweave",
+      "changes": {
+        "description": "CoreWeave documents a Kubernetes cloud and publishes tools for deploying model workloads. Its Tensorizer software stores model tensors separately from container images and loads them from local or network storage.",
+        "products": [
+          "CoreWeave Kubernetes Cloud",
+          "Tensorizer"
+        ],
+        "provides": "Kubernetes cloud resources and Tensorizer model-serialization software for model deployment workflows.",
+        "howUsed": "Infrastructure teams use Kubernetes to deploy model services and load serialized model weights from HTTP, HTTPS, S3 or local storage with Tensorizer.",
+        "website": "https://www.coreweave.com"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "cloud-coreweave-cloud",
+            "cloud-coreweave-tensorizer"
+          ],
+          "scope": "Documented cloud identity and model loading/deployment tools; no current facility count or commercial capacity claim."
+        },
+        "products": {
+          "sourceIds": [
+            "cloud-coreweave-cloud",
+            "cloud-coreweave-tensorizer"
+          ],
+          "scope": "Documented cloud identity and model loading/deployment tools; no current facility count or commercial capacity claim."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-coreweave-cloud",
+            "cloud-coreweave-tensorizer"
+          ],
+          "scope": "Documented cloud identity and model loading/deployment tools; no current facility count or commercial capacity claim."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-coreweave-cloud",
+            "cloud-coreweave-tensorizer"
+          ],
+          "scope": "Documented cloud identity and model loading/deployment tools; no current facility count or commercial capacity claim."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-coreweave-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "The model names in Tensorizer examples do not identify CoreWeave as their original training provider.",
+        "Historical location evidence (2026-08-25): Livingston headquarters \u2014 290 W Mt Pleasant Ave, Suite 4100, Livingston, NJ 07039, United States; source cloud-existing-coreweave-002. Current status not reverified.",
+        "Historical location evidence (2026-08-25): London European headquarters \u2014 Second Floor, Connexion House, Dray Walk, London E1 6QL, United Kingdom; source cloud-existing-coreweave-006. Current status not reverified."
+      ],
+      "productFacts": [
+        {
+          "name": "CoreWeave Kubernetes Cloud",
+          "kind": "documented_platform_name",
+          "role": "The cloud platform identified by CoreWeave's Kubernetes documentation and example repository.",
+          "sourceIds": [
+            "cloud-coreweave-cloud"
+          ],
+          "scope": "The pinned README establishes this documented name and links CoreWeave documentation. It does not establish current branding, facility count, hardware fleet or the complete commercial offering."
+        },
+        {
+          "name": "Tensorizer",
+          "kind": "software_library",
+          "role": "Serializes model tensors into a file that can be loaded from HTTP, HTTPS, S3 or local storage, separating model weights from container images.",
+          "sourceIds": [
+            "cloud-coreweave-tensorizer"
+          ],
+          "scope": "Software function and documented deployment workflow; example models and benchmark figures do not establish customer contracts or independently verified performance."
+        }
+      ]
+    },
+    {
+      "entityId": "crusoe",
+      "changes": {
+        "description": "Crusoe Cloud provides a GPU cloud platform with an official Terraform provider for provisioning compute instances, disks and networking rules.",
+        "products": [
+          "Crusoe Cloud",
+          "Crusoe Terraform Provider"
+        ],
+        "provides": "GPU cloud compute and infrastructure provisioning through Terraform.",
+        "howUsed": "Teams define compute instances, storage disks and network rules in Terraform and authenticate with Crusoe credentials to provision resources.",
+        "website": "https://crusoe.ai/cloud"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "cloud-crusoe-terraform"
+          ],
+          "scope": "Official provider identifies Crusoe Cloud and supported resource workflow."
+        },
+        "products": {
+          "sourceIds": [
+            "cloud-crusoe-terraform"
+          ],
+          "scope": "Official provider identifies Crusoe Cloud and supported resource workflow."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-crusoe-terraform"
+          ],
+          "scope": "Official provider identifies Crusoe Cloud and supported resource workflow."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-crusoe-terraform"
+          ],
+          "scope": "Official provider identifies Crusoe Cloud and supported resource workflow."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-crusoe-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "Do not repeat the source marketing superlatives about cost or carbon reduction as verified measurements. An A100 example is not proof of available inventory."
+      ],
+      "productFacts": [
+        {
+          "name": "Crusoe Cloud",
+          "kind": "cloud_service",
+          "role": "A GPU cloud platform with documented compute instances, disks and network rules.",
+          "sourceIds": [
+            "cloud-crusoe-terraform"
+          ],
+          "scope": "The official Terraform documentation identifies the GPU cloud and resource workflow. No current GPU inventory, site allocation, model-maker contract, price or carbon-reduction result is established."
+        },
+        {
+          "name": "Crusoe Terraform Provider",
+          "kind": "infrastructure_tool",
+          "role": "An official Terraform provider for declaring and provisioning Crusoe compute instances, storage disks and network rules.",
+          "sourceIds": [
+            "cloud-crusoe-terraform"
+          ],
+          "scope": "Infrastructure-as-code software and documented authentication/provisioning workflow; this is not a separate hardware product or a guarantee that example instance types are currently available."
+        }
+      ]
+    },
+    {
+      "entityId": "lambda",
+      "changes": {
+        "description": "Lambda publishes Lambda Stack software and Dockerfiles for running GPU workloads with NVIDIA container tooling. The documented container workflow includes a PyTorch GPU check.",
+        "products": [
+          "Lambda Stack",
+          "Lambda Stack Dockerfiles"
+        ],
+        "provides": "A GPU software stack and container build definitions for supported Ubuntu releases.",
+        "howUsed": "Teams build Lambda Stack container images and run GPU-enabled workloads with NVIDIA container tooling.",
+        "website": "https://lambda.ai"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "cloud-lambda-stack"
+          ],
+          "scope": "Lambda Stack software and container tooling only; a partial portfolio."
+        },
+        "products": {
+          "sourceIds": [
+            "cloud-lambda-stack"
+          ],
+          "scope": "Lambda Stack software and container tooling only; a partial portfolio."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-lambda-stack"
+          ],
+          "scope": "Lambda Stack software and container tooling only; a partial portfolio."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-lambda-stack"
+          ],
+          "scope": "Lambda Stack software and container tooling only; a partial portfolio."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-lambda-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "Cloud-instance catalog, bare-metal availability and hardware systems remain unverified in this pass; the retrieved source is not a complete Lambda company profile."
+      ],
+      "productFacts": [
+        {
+          "name": "Lambda Stack",
+          "kind": "software_stack",
+          "role": "A GPU software stack used in Lambda-published container images with NVIDIA container tooling.",
+          "sourceIds": [
+            "cloud-lambda-stack"
+          ],
+          "scope": "The source documents rolling-release Lambda Stack containers; it does not verify Lambda cloud inventory, hardware-system offerings, or every bundled package."
+        },
+        {
+          "name": "Lambda Stack Dockerfiles",
+          "kind": "container_build_definitions",
+          "role": "Docker build definitions for Lambda Stack images on the supported Ubuntu releases listed in the repository.",
+          "sourceIds": [
+            "cloud-lambda-stack"
+          ],
+          "scope": "Container build tooling, with a PyTorch GPU test and NVIDIA container-toolkit instructions. This is a software artifact rather than a separately established paid cloud service."
+        }
+      ]
+    },
+    {
+      "entityId": "nscale",
+      "changes": {
+        "description": "Nscale exposes compute, storage and network resources through its Terraform provider. The documented resource types include compute instances and clusters, file storage, networks and security groups.",
+        "products": [
+          "Nscale compute instances",
+          "Nscale compute clusters",
+          "Nscale file storage",
+          "Nscale Terraform Provider"
+        ],
+        "provides": "Infrastructure resources with Terraform-based provisioning and service-token authentication.",
+        "howUsed": "Teams declare Nscale infrastructure as Terraform configuration and provision resources within an organization, project and region.",
+        "website": "https://nscale.com"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "cloud-nscale-terraform"
+          ],
+          "scope": "Exact resource classes and provisioning workflow in Nscale documentation."
+        },
+        "products": {
+          "sourceIds": [
+            "cloud-nscale-terraform"
+          ],
+          "scope": "Exact resource classes and provisioning workflow in Nscale documentation."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-nscale-terraform"
+          ],
+          "scope": "Exact resource classes and provisioning workflow in Nscale documentation."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-nscale-terraform"
+          ],
+          "scope": "Exact resource classes and provisioning workflow in Nscale documentation."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-nscale-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "No GPU generation, fleet size, data-center ownership or named model-maker contract is established. The github.com/Nscale organization is an unrelated node.js project; nscaledev is the linked company organization."
+      ],
+      "productFacts": [
+        {
+          "name": "Nscale compute instances",
+          "kind": "cloud_resource",
+          "role": "Compute-instance resources that can be defined and provisioned through the Nscale Terraform provider.",
+          "sourceIds": [
+            "cloud-nscale-terraform"
+          ],
+          "scope": "An explicitly supported resource class. Accelerator generation, available inventory, instance specifications and prices were not established."
+        },
+        {
+          "name": "Nscale compute clusters",
+          "kind": "cloud_resource",
+          "role": "Compute-cluster resources supported by the Nscale Terraform provider.",
+          "sourceIds": [
+            "cloud-nscale-terraform"
+          ],
+          "scope": "An explicitly supported resource class; the README does not establish cluster scale, topology, workload allocation or commercial capacity."
+        },
+        {
+          "name": "Nscale file storage",
+          "kind": "cloud_resource",
+          "role": "File-storage resources managed through Nscale Terraform workflows.",
+          "sourceIds": [
+            "cloud-nscale-terraform"
+          ],
+          "scope": "The source names file storages as supported resources. Performance tiers, implementation, capacity and availability were not verified."
+        },
+        {
+          "name": "Nscale Terraform Provider",
+          "kind": "infrastructure_tool",
+          "role": "Terraform tooling for Nscale networks, security groups, file storage, compute instances and compute clusters.",
+          "sourceIds": [
+            "cloud-nscale-terraform"
+          ],
+          "scope": "Infrastructure provisioning software using Nscale service-token authentication; it is distinct from the underlying paid infrastructure resources."
+        }
+      ]
+    },
+    {
+      "entityId": "fluidstack",
+      "changes": {
+        "description": "Fluidstack publishes an API for creating and managing GPU compute instances. Its API includes instance lifecycle operations, available hardware configurations, operating-system templates and SSH keys.",
+        "products": [
+          "Fluidstack GPU instances",
+          "Fluidstack API"
+        ],
+        "provides": "API-based GPU-instance provisioning, start/stop/termination operations and configuration discovery.",
+        "howUsed": "Developers authenticate to the Fluidstack platform, choose an available GPU configuration and operating-system template, and manage instances with registered SSH keys.",
+        "website": "https://fluidstack.io"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "cloud-fluidstack-api"
+          ],
+          "scope": "Documented Fluidstack API operations; not a complete current hosting or data-center portfolio."
+        },
+        "products": {
+          "sourceIds": [
+            "cloud-fluidstack-api"
+          ],
+          "scope": "Documented Fluidstack API operations; not a complete current hosting or data-center portfolio."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-fluidstack-api"
+          ],
+          "scope": "Documented Fluidstack API operations; not a complete current hosting or data-center portfolio."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-fluidstack-api"
+          ],
+          "scope": "Documented Fluidstack API operations; not a complete current hosting or data-center portfolio."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-fluidstack-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "Public API schema version 0.1.0 may lag current commercial offerings. No capacity availability or model-maker training relationship is inferred. The github.com/fluidstack personal Drupal profile was rejected."
+      ],
+      "productFacts": [
+        {
+          "name": "Fluidstack GPU instances",
+          "kind": "cloud_resource",
+          "role": "GPU compute instances created and managed by the documented Fluidstack platform API.",
+          "sourceIds": [
+            "cloud-fluidstack-api"
+          ],
+          "scope": "The API schema defines GPU-type/count inputs, available configurations and instance start/stop/termination operations. The schema does not verify current inventory, hardware ownership or workload customers."
+        },
+        {
+          "name": "Fluidstack API",
+          "kind": "service_api",
+          "role": "An interface for GPU-instance lifecycle management, configuration discovery, operating-system templates and SSH-key management.",
+          "sourceIds": [
+            "cloud-fluidstack-api"
+          ],
+          "scope": "Functions documented by the pinned API schema version 0.1.0. Current API availability and the complete commercial service portfolio remain unverified."
+        }
+      ]
+    },
+    {
+      "entityId": "nebius",
+      "changes": {
+        "description": "Nebius provides Nebius AI Cloud services and a gRPC-based Python SDK for authentication, cloud resource management and service operations.",
+        "products": [
+          "Nebius AI Cloud",
+          "Nebius Python SDK"
+        ],
+        "provides": "Cloud service APIs and an authenticated Python client for managing resources and operations.",
+        "howUsed": "Infrastructure software uses Nebius SDK clients to authenticate, manage cloud resources and track asynchronous service operations.",
+        "website": "https://nebius.com"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "cloud-nebius-sdk"
+          ],
+          "scope": "SDK and AI Cloud identity; partial company portfolio."
+        },
+        "products": {
+          "sourceIds": [
+            "cloud-nebius-sdk"
+          ],
+          "scope": "SDK and AI Cloud identity; partial company portfolio."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-nebius-sdk"
+          ],
+          "scope": "SDK and AI Cloud identity; partial company portfolio."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-nebius-sdk"
+          ],
+          "scope": "SDK and AI Cloud identity; partial company portfolio."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-nebius-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "The historical Amsterdam main office and Schiphol registered office are different records; do not flatten them into one newly verified headquarters.",
+        "Historical location evidence (2026-08-25): Amsterdam main office \u2014 Tripolis Park, Burgerweeshuispad 101, 1076 ES Amsterdam, Netherlands; source cloud-existing-nebius-001. Current status not reverified."
+      ],
+      "productFacts": [
+        {
+          "name": "Nebius AI Cloud",
+          "kind": "cloud_service",
+          "role": "Nebius cloud services accessed through its authenticated resource-management APIs and Python SDK.",
+          "sourceIds": [
+            "cloud-nebius-sdk"
+          ],
+          "scope": "The SDK README names and links Nebius AI Cloud. It does not establish an exhaustive service catalog, fleet capacity, available GPU generation or customer relationships."
+        },
+        {
+          "name": "Nebius Python SDK",
+          "kind": "software_sdk",
+          "role": "A gRPC-based Python client for authenticating, managing resources and communicating with Nebius services.",
+          "sourceIds": [
+            "cloud-nebius-sdk"
+          ],
+          "scope": "Client-software function and authentication/resource-management workflow. The SDK is distinct from provisioned cloud compute or storage services."
+        }
+      ]
+    },
+    {
+      "entityId": "arista",
+      "changes": {
+        "description": "Arista Networks publishes EOS network software interfaces and the pyeapi Python client. The client communicates with EOS nodes locally or remotely and exposes APIs for configuration automation.",
+        "products": [
+          "Arista EOS",
+          "Arista eAPI",
+          "pyeapi"
+        ],
+        "provides": "Network-node configuration interfaces and Python tooling for automating Arista EOS.",
+        "howUsed": "Network teams connect to EOS devices through eAPI and use Python APIs to inspect or change network configuration.",
+        "website": "http://www.arista.com"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "cloud-arista-eapi"
+          ],
+          "scope": "EOS/eAPI software ecosystem; hardware portfolio remains outside the inspected source."
+        },
+        "products": {
+          "sourceIds": [
+            "cloud-arista-eapi"
+          ],
+          "scope": "EOS/eAPI software ecosystem; hardware portfolio remains outside the inspected source."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-arista-eapi"
+          ],
+          "scope": "EOS/eAPI software ecosystem; hardware portfolio remains outside the inspected source."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-arista-eapi"
+          ],
+          "scope": "EOS/eAPI software ecosystem; hardware portfolio remains outside the inspected source."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-arista-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "The corporate switch catalog and customer deployments require separate product documentation.",
+        "Historical location evidence (2026-08-24): Arista Networks Santa Clara \u2014 5453 Great America Parkway, Santa Clara, CA 95054, United States; source cloud-existing-arista-001. Current status not reverified."
+      ],
+      "productFacts": [
+        {
+          "name": "Arista EOS",
+          "kind": "network_software",
+          "role": "Arista network software whose nodes can be configured and accessed through eAPI.",
+          "sourceIds": [
+            "cloud-arista-eapi"
+          ],
+          "scope": "The pyeapi documentation establishes EOS integration and node-configuration workflows; the complete operating-system feature set, licensing and supported switch catalog were not reviewed."
+        },
+        {
+          "name": "Arista eAPI",
+          "kind": "network_api",
+          "role": "A command API for communicating with Arista EOS nodes locally on a device or remotely.",
+          "sourceIds": [
+            "cloud-arista-eapi"
+          ],
+          "scope": "Documented network-device interface, not a standalone switch, cloud-hosting service or customer deployment."
+        },
+        {
+          "name": "pyeapi",
+          "kind": "software_library",
+          "role": "An Arista-published Python client and configuration API layer for communicating with EOS through eAPI.",
+          "sourceIds": [
+            "cloud-arista-eapi"
+          ],
+          "scope": "Python software function; the README describes community availability and best-effort GitHub support. No separate paid-service or enterprise support entitlement is inferred."
+        }
+      ]
+    },
+    {
+      "entityId": "broadcom",
+      "changes": {
+        "description": "Broadcom supplies network-switch silicon with programming APIs and drivers in the OpenBCM SDK. The inspected SDK release lists Trident, Tomahawk, Ramon, Qumran and Jericho device families.",
+        "products": [
+          "OpenBCM SDK",
+          "Trident switch devices",
+          "Tomahawk switch devices",
+          "Ramon switch devices",
+          "Qumran switch devices",
+          "Jericho switch devices"
+        ],
+        "provides": "Network-switch silicon interfaces, drivers and SDK source for supported Broadcom switching platforms.",
+        "howUsed": "Network-system developers use OpenBCM APIs and drivers to program supported Broadcom switch-silicon platforms.",
+        "website": "https://www.broadcom.com"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "cloud-broadcom-sdk"
+          ],
+          "scope": "Named supported-device families and OpenBCM function for the pinned SDK release; not the complete Broadcom portfolio."
+        },
+        "products": {
+          "sourceIds": [
+            "cloud-broadcom-sdk"
+          ],
+          "scope": "Named supported-device families and OpenBCM function for the pinned SDK release; not the complete Broadcom portfolio."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-broadcom-sdk"
+          ],
+          "scope": "Named supported-device families and OpenBCM function for the pinned SDK release; not the complete Broadcom portfolio."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-broadcom-sdk"
+          ],
+          "scope": "Named supported-device families and OpenBCM function for the pinned SDK release; not the complete Broadcom portfolio."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-broadcom-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "Custom ASIC products, latest generation claims and customer allocations need separate sources. Supported older SDK device families are not asserted to be the latest products.",
+        "Historical location evidence (2026-08-25): California, Palo Alto (Corporate Headquarters) \u2014 3421 Hillview Ave, Palo Alto, California, 94304, United States; source cloud-existing-broadcom-001. Current status not reverified."
+      ],
+      "productFacts": [
+        {
+          "name": "OpenBCM SDK",
+          "kind": "software_sdk",
+          "role": "APIs, drivers and samples for programming supported Broadcom network-switch silicon platforms.",
+          "sourceIds": [
+            "cloud-broadcom-sdk"
+          ],
+          "scope": "The pinned SDK release documents its function and supported device families. This is software for switch silicon, not a model-training accelerator or complete Broadcom portfolio."
+        },
+        {
+          "name": "Trident switch devices",
+          "kind": "switch_silicon_family",
+          "role": "Broadcom XGS switch-device family supported by the inspected OpenBCM release.",
+          "sourceIds": [
+            "cloud-broadcom-sdk"
+          ],
+          "scope": "The source specifically lists TD2, TD3 and TD4. These names are supported-device evidence, not a claim that they are the latest generations or currently shipping in every configuration."
+        },
+        {
+          "name": "Tomahawk switch devices",
+          "kind": "switch_silicon_family",
+          "role": "Broadcom XGS switch-device family supported by the inspected OpenBCM release.",
+          "sourceIds": [
+            "cloud-broadcom-sdk"
+          ],
+          "scope": "The source specifically lists TH, TH2 and TH3. It does not verify the latest Tomahawk roadmap, design wins, shipment status or model-maker exposure."
+        },
+        {
+          "name": "Ramon switch devices",
+          "kind": "switch_silicon_family",
+          "role": "Broadcom DNX switch devices named as supported by the inspected OpenBCM release.",
+          "sourceIds": [
+            "cloud-broadcom-sdk"
+          ],
+          "scope": "Supported-device name only; no particular generation, production allocation, customer or commercial availability is established."
+        },
+        {
+          "name": "Qumran switch devices",
+          "kind": "switch_silicon_family",
+          "role": "Broadcom DNX switch-device family supported by the inspected OpenBCM release.",
+          "sourceIds": [
+            "cloud-broadcom-sdk"
+          ],
+          "scope": "The source specifically lists Q2A and Q2U. This is scoped SDK compatibility evidence, not a complete/current product catalog."
+        },
+        {
+          "name": "Jericho switch devices",
+          "kind": "switch_silicon_family",
+          "role": "Broadcom DNX switch-device family supported by the inspected OpenBCM release.",
+          "sourceIds": [
+            "cloud-broadcom-sdk"
+          ],
+          "scope": "The source specifically lists JR2 and J2C. No latest-generation, shipping-status, customer-design-win or model-maker dependency claim is made."
+        }
+      ]
+    },
+    {
+      "entityId": "marvell",
+      "changes": {
+        "description": "Marvell develops OCTEON-based data-processing units and the Data Accelerator Offload software interfaces used to build accelerated switching and packet-processing applications.",
+        "products": [
+          "OCTEON data-processing units",
+          "Data Accelerator Offload (DAO)"
+        ],
+        "provides": "Data-processing-unit software interfaces and applications for accelerated switching and packet processing.",
+        "howUsed": "Developers build packet-processing and switching applications on OCTEON-based DPUs using the DAO libraries and associated software.",
+        "website": "http://www.marvell.com/embedded-processors/"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "cloud-marvell-dao"
+          ],
+          "scope": "OCTEON DPU and DAO software function; a subset of the semiconductor portfolio."
+        },
+        "products": {
+          "sourceIds": [
+            "cloud-marvell-dao"
+          ],
+          "scope": "OCTEON DPU and DAO software function; a subset of the semiconductor portfolio."
+        },
+        "provides": {
+          "sourceIds": [
+            "cloud-marvell-dao"
+          ],
+          "scope": "OCTEON DPU and DAO software function; a subset of the semiconductor portfolio."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "cloud-marvell-dao"
+          ],
+          "scope": "OCTEON DPU and DAO software function; a subset of the semiconductor portfolio."
+        },
+        "website": {
+          "sourceIds": [
+            "cloud-marvell-identity"
+          ],
+          "scope": "Official company/platform website linked by its company-associated GitHub organization; destination availability not verified."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "The existing Wilmington corporate headquarters record is marked needs_review; Santa Clara is separately labeled U.S. headquarters. Current legal/corporate office identity requires a filing review.",
+        "Historical location evidence (2026-08-25): Wilmington corporate headquarters \u2014 1000 N. West Street, Suite 1200, Wilmington, DE 19801, United States; source cloud-existing-marvell-001. Current status not reverified.",
+        "Historical location evidence (2026-08-25): Santa Clara U.S. headquarters \u2014 5488 Marvell Lane, Santa Clara, CA 95054, United States; source cloud-existing-marvell-003. Current status not reverified."
+      ],
+      "productFacts": [
+        {
+          "name": "OCTEON data-processing units",
+          "kind": "data_processing_hardware_family",
+          "role": "Marvell's data-processing units on which DAO-based accelerated switching and packet-processing applications run.",
+          "sourceIds": [
+            "cloud-marvell-dao"
+          ],
+          "scope": "The DAO documentation identifies OCTEON-based DPUs and their software role. It does not establish a complete device lineup, AI training capability, available inventory or customer allocations."
+        },
+        {
+          "name": "Data Accelerator Offload (DAO)",
+          "kind": "software_libraries_and_applications",
+          "role": "Library interfaces and applications for implementing accelerated switching and packet processing on Marvell OCTEON-based DPUs.",
+          "sourceIds": [
+            "cloud-marvell-dao"
+          ],
+          "scope": "Documented software function and target hardware family. DAO is distinct from the DPU hardware and is not itself evidence of a deployment or supply contract."
+        }
+      ]
+    },
+    {
+      "entityId": "schneider",
+      "changes": {
+        "website": "https://www.se.com"
+      },
+      "fieldEvidence": {
+        "website": {
+          "sourceIds": [
+            "cloud-schneider-profile"
+          ],
+          "scope": "Official Schneider Electric domain linked by its open-source program."
+        }
+      },
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "The inspected program profile establishes an Open Source Program Office and an OPC-UA device-service contribution. It does not substantiate the complete data-center power/cooling portfolio, headquarters or leadership. Corporate product pages remain blocked."
+      ]
+    },
+    {
+      "entityId": "vertiv",
+      "changes": {},
+      "fieldEvidence": {},
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "Corporate product/contact source is blocked; no new current product or headquarters facts are proposed.",
+        "Historical location evidence (2026-08-25): Global headquarters \u2014 505 N Cleveland Ave, Westerville, OH 43082, United States; source cloud-existing-vertiv-001. Current status not reverified.",
+        "Historical location evidence (2026-08-25): Americas headquarters \u2014 610 Executive Campus Drive, Westerville, OH 43082, United States; source cloud-existing-vertiv-006. Current status not reverified."
+      ]
+    },
+    {
+      "entityId": "iren",
+      "changes": {},
+      "fieldEvidence": {},
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "Corporate source is proxy-blocked. No sufficient first-party product/company source was inspected; existing generic product categories must remain unverified."
+      ]
+    },
+    {
+      "entityId": "applied-digital",
+      "changes": {},
+      "fieldEvidence": {},
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "Corporate source is proxy-blocked. No sufficient first-party product/company source was inspected; existing generic product categories must remain unverified."
+      ]
+    },
+    {
+      "entityId": "eaton",
+      "changes": {},
+      "fieldEvidence": {},
+      "notes": [
+        "This is a scoped technical/product review, not an exhaustive corporate or current commercial-offering audit. No founding, leadership, ownership, revenue, funding, customer or capacity claim is inferred.",
+        "Corporate source is proxy-blocked. No sufficient first-party product/company source was inspected; existing generic product categories must remain unverified."
+      ]
+    }
+  ],
+  "blockedSources": [
+    {
+      "url": "https://www.coreweave.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.vertiv.com/en-us/contacts/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.eaton.com/us/en-us/company/about-us.html",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.marvell.com/company/offices.html",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.se.com/ww/en/about-us/company-profile/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://iren.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.applieddigital.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nscale.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.fluidstack.io/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://lambda.ai/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ],
+  "rejectedIdentityMatches": [
+    {
+      "name": "Nscale",
+      "rejected": "https://github.com/Nscale",
+      "reason": "Node.js microservices project links nscale.io; intended company organization links nscale.com."
+    },
+    {
+      "name": "Fluidstack",
+      "rejected": "https://github.com/fluidstack",
+      "reason": "Personal Drupal developer; intended company organization is fluidstackio."
+    },
+    {
+      "name": "Eaton",
+      "rejected": "https://github.com/Eaton",
+      "reason": "Personal account; not the power-management company."
+    },
+    {
+      "name": "Eaton via 42ITy",
+      "rejected": "https://github.com/42ity/fty-core",
+      "reason": "Retrieved README did not establish Eaton attribution or a current company product, so no claim was proposed."
+    }
+  ]
+}

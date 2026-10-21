@@ -1,0 +1,2800 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-20",
+  "coverage": {
+    "requestedBrands": 18,
+    "entityCount": 35,
+    "entitiesWithProposedChanges": 19,
+    "entitiesWithProductFacts": 19,
+    "productFactCount": 62,
+    "sourceCount": 22,
+    "scope": "18 specialist brands plus their existing company/program/model/app records; direct product evidence where accessible, with blocked and identity-unresolved records explicit."
+  },
+  "sources": [
+    {
+      "id": "specialist-ai21",
+      "repository": "AI21Labs/ai21-python",
+      "url": "https://raw.githubusercontent.com/AI21Labs/ai21-python/bbc422f6f955134c2e33a9473ec0f71d21611764/README.md",
+      "revision": "bbc422f6f955134c2e33a9473ec0f71d21611764",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "be741f581cdad57b44e75817378f1bdc451f56bcd6599332f1e1eb78fb9991b0",
+      "bytes": 18845,
+      "title": "AI21Labs/ai21-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "    model=\"jamba-mini\",",
+      "excerpts": [
+        {
+          "line": 85,
+          "excerpt": "    model=\"jamba-mini\","
+        },
+        {
+          "line": 203,
+          "excerpt": "We currently support streaming for the Chat Completions API in Jamba."
+        },
+        {
+          "line": 252,
+          "excerpt": "### Maestro\n\nAI Planning & Orchestration System built for the enterprise. Read more [here](https://www.ai21.com/maestro/).\n"
+        },
+        {
+          "line": 285,
+          "excerpt": "### Agents (Beta)\n\nAI21 Agents provide a comprehensive way to create, manage, and run your Agents.\n"
+        },
+        {
+          "line": 340,
+          "excerpt": "### Conversational RAG (Beta)\n\nLike chat, but with the ability to retrieve information from your Studio library.\n"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-stability",
+      "repository": "Stability-AI/sd3.5",
+      "url": "https://raw.githubusercontent.com/Stability-AI/sd3.5/8565799a3b41eb0c7ba976d18375f0f753f56402/README.md",
+      "revision": "8565799a3b41eb0c7ba976d18375f0f753f56402",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "da1c8ed3cde5b6118eb49c2732d1499d57c77a924ee357bdd76dde707485ac82",
+      "bytes": 7570,
+      "title": "Stability-AI/sd3.5 / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Inference-only tiny reference implementation of SD3.5 and SD3 - everything you need for simple inference using SD3.5/SD3, as well as the SD3.5 Large ControlNets, excluding the weights files.\n\nContains code for the text encoders (OpenAI CLIP-L/14, OpenCLIP bigG, Google T5-XXL) (these models are all public), the VAE Decoder (similar to previous SD models, but 16-channels and no postquantconv step), and the core MM-DiT (entirely new).\n\nNote: this repo is a reference library meant to assist partner organizations in implementing SD3.5/SD3. For alternate inference, use [Comfy](https://github.com/comfyanonymous/ComfyUI).",
+      "excerpts": [
+        {
+          "line": 3,
+          "excerpt": "Inference-only tiny reference implementation of SD3.5 and SD3 - everything you need for simple inference using SD3.5/SD3, as well as the SD3.5 Large ControlNets, excluding the weights files.\n\nContains code for the text encoders (OpenAI CLIP-L/14, OpenCLIP bigG, Google T5-XXL) (these models are all public), the VAE Decoder (similar to previous SD models, but 16-channels and no postquantconv step), and the core MM-DiT (entirely new).\n\nNote: this repo is a reference library meant to assist partner organizations in implementing SD3.5/SD3. For alternate inference, use [Comfy](https://github.com/comfyanonymous/ComfyUI)."
+        },
+        {
+          "line": 9,
+          "excerpt": "## Updates\n\n- Nov 26, 2024 : Released ControlNets for SD3.5-Large.\n- Oct 29, 2024 : Released inference code for SD3.5-Medium.\n- Oct 24, 2024 : Updated code license to MIT License.\n- Oct 22, 2024 : Released inference code for SD3.5-Large, Large-Turbo. Also works on SD3-Medium."
+        },
+        {
+          "line": 16,
+          "excerpt": "## Download\n\nDownload the following models from HuggingFace into `models` directory:\n1. [Stability AI SD3.5 Large](https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/sd3.5_large.safetensors) or [Stability AI SD3.5 Large Turbo](https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo/blob/main/sd3.5_large_turbo.safetensors) or [Stability AI SD3.5 Medium](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium/blob/main/sd3.5_medium.safetensors)\n2. [OpenAI CLIP-L](https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/text_encoders/clip_l.safetensors)\n3. [OpenCLIP bigG](https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/text_encoders/clip_g.safetensors)\n4. [Google T5-XXL](https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/text_encoders/t5xxl_fp16.safetensors)"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-stable-audio",
+      "repository": "Stability-AI/stable-audio-tools",
+      "url": "https://raw.githubusercontent.com/Stability-AI/stable-audio-tools/3241adba4fc2a85cf5b29d9eb68d42f40a28e820/README.md",
+      "revision": "3241adba4fc2a85cf5b29d9eb68d42f40a28e820",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "55d170f97663ca9ce361e73ca680c7e1399cfc9ee1604e59a226dacffdad3a46",
+      "bytes": 7930,
+      "title": "Stability-AI/stable-audio-tools / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "# stable-audio-tools\nTraining and inference code for audio generation models\n\n# Install\n\nRequires PyTorch 2.5 or later for Flash Attention and Flex Attention support. Development for the repo is done in Python 3.10.\n",
+      "excerpts": [
+        {
+          "line": 1,
+          "excerpt": "# stable-audio-tools\nTraining and inference code for audio generation models\n\n# Install\n\nRequires PyTorch 2.5 or later for Flash Attention and Flex Attention support. Development for the repo is done in Python 3.10.\n"
+        },
+        {
+          "line": 44,
+          "excerpt": "For example, to create an interface for the [`stable-audio-open-1.0`](https://huggingface.co/stabilityai/stable-audio-open-1.0) model, once you've accepted the terms for the model on Hugging Face, you can run:\n```bash\n$ python3 ./run_gradio.py --pretrained-name stabilityai/stable-audio-open-1.0\n```\n"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-bfl",
+      "repository": "black-forest-labs/flux2",
+      "url": "https://raw.githubusercontent.com/black-forest-labs/flux2/50fe5162777813d869182b139e83b10743caef15/README.md",
+      "revision": "50fe5162777813d869182b139e83b10743caef15",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "435753749320bbb395c15983e63e3dc73936c03f0f1870c628e7bf922c55eef7",
+      "bytes": 8466,
+      "title": "black-forest-labs/flux2 / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "This repo contains minimal inference code to run image generation & editing with our FLUX.2 open-weight models.",
+      "excerpts": [
+        {
+          "line": 13,
+          "excerpt": "This repo contains minimal inference code to run image generation & editing with our FLUX.2 open-weight models."
+        },
+        {
+          "line": 20,
+          "excerpt": "## Model Overview\n\n| Name | Step-distilled | Guidance-distilled | Text-to-Image | Image Editing (Single reference) | Image Editing (Multi-reference) | License |\n| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n| [FLUX.2 [klein] 4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B) | ✅ | ✅ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 9B KV](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 4B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) | ❌ | ❌ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B) | ❌ | ❌ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [dev]](https://huggingface.co/black-forest-labs/FLUX.2-dev) | ❌ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n\n**All models support**: Text-to-Image ✅ | Single-ref Editing ✅ | Multi-ref Editing ✅\n"
+        },
+        {
+          "line": 3,
+          "excerpt": "**Frontier Visual Intelligence** — State-of-the-art image generation and editing from [Black Forest Labs](https://bfl.ai)."
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-runway",
+      "repository": "runwayml/sdk-python",
+      "url": "https://raw.githubusercontent.com/runwayml/sdk-python/6568d7c5f5200fba62389fcf8eca429b14a5643e/README.md",
+      "revision": "6568d7c5f5200fba62389fcf8eca429b14a5643e",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "18f0638b345a865e5ab322dab17e99185f22dd2f0bfc94ca5527a071e349d533",
+      "bytes": 15354,
+      "title": "runwayml/sdk-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The RunwayML Python library provides convenient access to the RunwayML REST API from any Python 3.9+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx).",
+      "excerpts": [
+        {
+          "line": 6,
+          "excerpt": "The RunwayML Python library provides convenient access to the RunwayML REST API from any Python 3.9+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx)."
+        },
+        {
+          "line": 35,
+          "excerpt": "image_to_video = client.image_to_video.create(\n    model=\"gen4_turbo\",\n    prompt_image=\"https://example.com/assets/bunny.jpg\",\n    ratio=\"1280:720\",\n    prompt_text=\"The bunny is eating a carrot\",\n)\nprint(image_to_video.id)\n```"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-runway-api",
+      "repository": "runwayml/sdk-python",
+      "url": "https://raw.githubusercontent.com/runwayml/sdk-python/6568d7c5f5200fba62389fcf8eca429b14a5643e/api.md",
+      "revision": "6568d7c5f5200fba62389fcf8eca429b14a5643e",
+      "path": "api.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "44c055dadcb23e23147075e28d727d54142e523d9fd60cc9abfc1197ab767129",
+      "bytes": 21485,
+      "title": "runwayml/sdk-python / api.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "# ImageToVideo\n\nTypes:\n\n```python\nfrom runwayml.types import ImageToVideoCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/image_to_video\">client.image_to_video.<a href=\"./src/runwayml/resources/image_to_video.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/image_to_video_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/image_to_video_create_response.py\">ImageToVideoCreateResponse</a></code>",
+      "excerpts": [
+        {
+          "line": 14,
+          "excerpt": "# ImageToVideo\n\nTypes:\n\n```python\nfrom runwayml.types import ImageToVideoCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/image_to_video\">client.image_to_video.<a href=\"./src/runwayml/resources/image_to_video.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/image_to_video_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/image_to_video_create_response.py\">ImageToVideoCreateResponse</a></code>"
+        },
+        {
+          "line": 50,
+          "excerpt": "# TextToVideo\n\nTypes:\n\n```python\nfrom runwayml.types import TextToVideoCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/text_to_video\">client.text_to_video.<a href=\"./src/runwayml/resources/text_to_video.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/text_to_video_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/text_to_video_create_response.py\">TextToVideoCreateResponse</a></code>"
+        },
+        {
+          "line": 62,
+          "excerpt": "# TextToImage\n\nTypes:\n\n```python\nfrom runwayml.types import TextToImageCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/text_to_image\">client.text_to_image.<a href=\"./src/runwayml/resources/text_to_image.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/text_to_image_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/text_to_image_create_response.py\">TextToImageCreateResponse</a></code>"
+        },
+        {
+          "line": 86,
+          "excerpt": "# TextToSpeech\n\nTypes:\n\n```python\nfrom runwayml.types import TextToSpeechCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/text_to_speech\">client.text_to_speech.<a href=\"./src/runwayml/resources/text_to_speech.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/text_to_speech_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/text_to_speech_create_response.py\">TextToSpeechCreateResponse</a></code>"
+        },
+        {
+          "line": 122,
+          "excerpt": "# VoiceDubbing\n\nTypes:\n\n```python\nfrom runwayml.types import VoiceDubbingCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/voice_dubbing\">client.voice_dubbing.<a href=\"./src/runwayml/resources/voice_dubbing.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/voice_dubbing_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/voice_dubbing_create_response.py\">VoiceDubbingCreateResponse</a></code>"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-luma",
+      "repository": "lumalabs/lumaai-python",
+      "url": "https://raw.githubusercontent.com/lumalabs/lumaai-python/a58d384ed8eecb845e9b68397451938cf237d17b/README.md",
+      "revision": "a58d384ed8eecb845e9b68397451938cf237d17b",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "b0b89264eb906c849064fa52b8ddbb32be70e4cbb511be3b91e7ffe48965d1b3",
+      "bytes": 14003,
+      "title": "lumalabs/lumaai-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The LumaAI Python library provides convenient access to the LumaAI REST API from any Python 3.9+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx).",
+      "excerpts": [
+        {
+          "line": 6,
+          "excerpt": "The LumaAI Python library provides convenient access to the LumaAI REST API from any Python 3.9+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx)."
+        },
+        {
+          "line": 33,
+          "excerpt": "generation = client.generations.create(\n    model=\"ray-2\",\n    aspect_ratio=\"16:9\",\n    loop=False,\n    prompt=\"A teddy bear in sunglasses playing electric guitar, dancing and headbanging in the jungle in front of a large beautiful waterfall\",\n)\nprint(generation.id)"
+        },
+        {
+          "line": 12,
+          "excerpt": "The REST API documentation can be found on [lumalabs.ai](https://lumalabs.ai). The full API of this library can be found in [api.md](api.md)."
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-luma-api",
+      "repository": "lumalabs/lumaai-python",
+      "url": "https://raw.githubusercontent.com/lumalabs/lumaai-python/a58d384ed8eecb845e9b68397451938cf237d17b/api.md",
+      "revision": "a58d384ed8eecb845e9b68397451938cf237d17b",
+      "path": "api.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "6e584d215e6e0016ea0315759d24f201ecb10e7a59ef2745b2cf81235116f952",
+      "bytes": 3892,
+      "title": "lumalabs/lumaai-python / api.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "# Generations\n\nTypes:\n\n```python\nfrom lumaai.types import Generation, GenerationListResponse\n```\n\nMethods:\n\n- <code title=\"post /generations/video\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">create</a>(\\*\\*<a href=\"src/lumaai/types/generation_create_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>\n- <code title=\"get /generations\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">list</a>(\\*\\*<a href=\"src/lumaai/types/generation_list_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation_list_response.py\">GenerationListResponse</a></code>\n- <code title=\"delete /generations/{id}\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">delete</a>(id) -> None</code>\n- <code title=\"post /generations/{id}/audio\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">audio</a>(id, \\*\\*<a href=\"src/lumaai/types/generation_audio_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>\n- <code title=\"get /generations/{id}\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">get</a>(id) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>",
+      "excerpts": [
+        {
+          "line": 1,
+          "excerpt": "# Generations\n\nTypes:\n\n```python\nfrom lumaai.types import Generation, GenerationListResponse\n```\n\nMethods:\n\n- <code title=\"post /generations/video\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">create</a>(\\*\\*<a href=\"src/lumaai/types/generation_create_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>\n- <code title=\"get /generations\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">list</a>(\\*\\*<a href=\"src/lumaai/types/generation_list_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation_list_response.py\">GenerationListResponse</a></code>\n- <code title=\"delete /generations/{id}\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">delete</a>(id) -> None</code>\n- <code title=\"post /generations/{id}/audio\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">audio</a>(id, \\*\\*<a href=\"src/lumaai/types/generation_audio_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>\n- <code title=\"get /generations/{id}\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">get</a>(id) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>"
+        },
+        {
+          "line": 30,
+          "excerpt": "## Image\n\nMethods:\n\n- <code title=\"post /generations/image\">client.generations.image.<a href=\"./src/lumaai/resources/generations/image.py\">create</a>(\\*\\*<a href=\"src/lumaai/types/generations/image_create_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>\n- <code title=\"post /generations/image/reframe\">client.generations.image.<a href=\"./src/lumaai/resources/generations/image.py\">reframe</a>(\\*\\*<a href=\"src/lumaai/types/generations/image_reframe_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>"
+        },
+        {
+          "line": 37,
+          "excerpt": "## Video\n\nMethods:\n\n- <code title=\"post /generations/video\">client.generations.video.<a href=\"./src/lumaai/resources/generations/video.py\">create</a>(\\*\\*<a href=\"src/lumaai/types/generations/video_create_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>\n- <code title=\"post /generations/video/modify\">client.generations.video.<a href=\"./src/lumaai/resources/generations/video.py\">modify</a>(\\*\\*<a href=\"src/lumaai/types/generations/video_modify_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>\n- <code title=\"post /generations/video/reframe\">client.generations.video.<a href=\"./src/lumaai/resources/generations/video.py\">reframe</a>(\\*\\*<a href=\"src/lumaai/types/generations/video_reframe_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-elevenlabs",
+      "repository": "elevenlabs/elevenlabs-python",
+      "url": "https://raw.githubusercontent.com/elevenlabs/elevenlabs-python/f5d53e09e35717523435cee238ac5cc7f51966fb/README.md",
+      "revision": "f5d53e09e35717523435cee238ac5cc7f51966fb",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "0557cf1557bf1e6088585a4c5e24fe22b86f4f5e25b7eef521235b6287c8363e",
+      "bytes": 13918,
+      "title": "elevenlabs/elevenlabs-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The official Python SDK for [ElevenLabs](https://elevenlabs.io/). ElevenLabs brings the most compelling, rich and lifelike voices to creators and developers in just a few lines of code.",
+      "excerpts": [
+        {
+          "line": 11,
+          "excerpt": "The official Python SDK for [ElevenLabs](https://elevenlabs.io/). ElevenLabs brings the most compelling, rich and lifelike voices to creators and developers in just a few lines of code."
+        },
+        {
+          "line": 25,
+          "excerpt": "### Main Models\n\n1. **Eleven v3** (`eleven_v3`)\n    - Dramatic delivery and performances\n    - 70+ languages supported\n    - Supported for natural multi-speaker dialogue\n\n2. **Eleven Multilingual v2** (`eleven_multilingual_v2`)\n\n    - Excels in stability, language diversity, and accent accuracy\n    - Supports 29 languages\n    - Recommended for most use cases\n\n3. **Eleven Flash v2.5** (`eleven_flash_v2_5`)\n\n    - Ultra-low latency\n    - Supports 32 languages\n    - Faster model, 50% lower price per character\n\n4. **Eleven Turbo v2.5** (`eleven_turbo_v2_5`)\n\n    - Good balance of quality and latency\n    - Ideal for developer use cases where speed is crucial\n    - Supports 32 languages\n"
+        },
+        {
+          "line": 61,
+          "excerpt": "audio = elevenlabs.text_to_speech.convert(\n    text=\"The first move is what sets everything in motion.\",\n    voice_id=\"JBFqnCBsd6RMkjVDRZzb\",\n    model_id=\"eleven_v3\",\n    output_format=\"mp3_44100_128\",\n)\n"
+        },
+        {
+          "line": 166,
+          "excerpt": "## ElevenAgents\n\nBuild interactive AI agents with real-time audio capabilities using ElevenAgents.\n"
+        },
+        {
+          "line": 269,
+          "excerpt": "## Speech Engine\n\nSpeech Engine lets you build server-side voice agents that receive real-time transcripts from the ElevenLabs API and stream LLM responses back for text-to-speech synthesis. Your server acts as a WebSocket endpoint — ElevenLabs connects to it, sends user transcripts, and your code decides how to respond.\n\nSpeech Engine is async-only and available on `AsyncElevenLabs`."
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-hume",
+      "repository": "HumeAI/hume-python-sdk",
+      "url": "https://raw.githubusercontent.com/HumeAI/hume-python-sdk/84e24b3be3e8e53df94bf23c28d9191aaa1217c0/README.md",
+      "revision": "84e24b3be3e8e53df94bf23c28d9191aaa1217c0",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "0dc1da80038a0a600fe61fd70bfddf94f073b0ea6a898761ebafb05b415bf625",
+      "bytes": 7468,
+      "title": "HumeAI/hume-python-sdk / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "## Compatibility\n\nThe Hume Python SDK is compatible across several Python versions and operating systems.\n\n- For the [Empathic Voice Interface](https://dev.hume.ai/docs/empathic-voice-interface-evi/overview), Python versions `3.9` through `3.13` are supported on macOS and Linux.\n- For [Text-to-speech (TTS)](https://dev.hume.ai/docs/text-to-speech-tts/overview), Python versions `3.9` through `3.13` are supported on macOS, Linux, and Windows.\n\nBelow is a table which shows the version and operating system compatibilities by product:\n\n|                          | Python Version                         | Operating System      |\n| ------------------------ | -------------------------------------- | --------------------- |\n| Empathic Voice Interface | `3.9`, `3.10`, `3.11`, `3.12`, `3.13` | macOS, Linux          |\n| Text-to-speech (TTS)     | `3.9`, `3.10`, `3.11`, `3.12`, `3.13` | macOS, Linux, Windows |",
+      "excerpts": [
+        {
+          "line": 26,
+          "excerpt": "## Compatibility\n\nThe Hume Python SDK is compatible across several Python versions and operating systems.\n\n- For the [Empathic Voice Interface](https://dev.hume.ai/docs/empathic-voice-interface-evi/overview), Python versions `3.9` through `3.13` are supported on macOS and Linux.\n- For [Text-to-speech (TTS)](https://dev.hume.ai/docs/text-to-speech-tts/overview), Python versions `3.9` through `3.13` are supported on macOS, Linux, and Windows.\n\nBelow is a table which shows the version and operating system compatibilities by product:\n\n|                          | Python Version                         | Operating System      |\n| ------------------------ | -------------------------------------- | --------------------- |\n| Empathic Voice Interface | `3.9`, `3.10`, `3.11`, `3.12`, `3.13` | macOS, Linux          |\n| Text-to-speech (TTS)     | `3.9`, `3.10`, `3.11`, `3.12`, `3.13` | macOS, Linux, Windows |"
+        },
+        {
+          "line": 83,
+          "excerpt": "## Namespaces\n\nThis SDK contains the APIs for empathic voice and tts. Even\nif you do not plan on using more than one API to start, the SDK provides easy access in\ncase you would like to use additional APIs in the future.\n\nEach API is namespaced accordingly:\n\n```python\nfrom hume.client import HumeClient\n\nclient = HumeClient(api_key=\"YOUR_API_KEY\")\n\nclient.empathic_voice. # APIs specific to Empathic Voice\nclient.tts.            # APIs specific to Text-to-speech"
+        },
+        {
+          "line": 19,
+          "excerpt": "There were major breaking changes in version `0.7.0` of the SDK. If upgrading from a previous version, please \n**[View the Migration Guide](https://github.com/HumeAI/hume-python-sdk/wiki/Python-SDK-Migration-Guide)**. That release deprecated several interfaces and moved them to the `hume[legacy]` package extra. The `legacy` extra was removed in `0.9.0`. The last version to include `legacy` was `0.8.6`."
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-writer",
+      "repository": "writer/writer-python",
+      "url": "https://raw.githubusercontent.com/writer/writer-python/6e66089d6532945349c9cbf81a9d9966bfb834b8/README.md",
+      "revision": "6e66089d6532945349c9cbf81a9d9966bfb834b8",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "f05d1c4f05e088f98394b8774eb9c93ce8fea1e5b8ea50d97b86732be3b1be52",
+      "bytes": 19737,
+      "title": "writer/writer-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The Writer Python library provides access to the Writer REST API from any Python 3.9+\napplication. It includes a set of tools and utilities that make it easy to integrate the capabilities\nof Writer into your projects.",
+      "excerpts": [
+        {
+          "line": 6,
+          "excerpt": "The Writer Python library provides access to the Writer REST API from any Python 3.9+\napplication. It includes a set of tools and utilities that make it easy to integrate the capabilities\nof Writer into your projects."
+        },
+        {
+          "line": 88,
+          "excerpt": "    model=\"palmyra-x5\","
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-writer-api",
+      "repository": "writer/writer-python",
+      "url": "https://raw.githubusercontent.com/writer/writer-python/6e66089d6532945349c9cbf81a9d9966bfb834b8/api.md",
+      "revision": "6e66089d6532945349c9cbf81a9d9966bfb834b8",
+      "path": "api.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "21267e3b18e063f64ceae8a1a775ceaa4e1b2b76e35101dda082f2b2e6a319cc",
+      "bytes": 9513,
+      "title": "writer/writer-python / api.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "- <code title=\"post /v1/applications/{application_id}\">client.applications.<a href=\"./src/writerai/resources/applications/applications.py\">generate_content</a>(application_id, \\*\\*<a href=\"src/writerai/types/application_generate_content_params.py\">params</a>) -> <a href=\"./src/writerai/types/application_generate_content_response.py\">ApplicationGenerateContentResponse</a></code>",
+      "excerpts": [
+        {
+          "line": 38,
+          "excerpt": "- <code title=\"post /v1/applications/{application_id}\">client.applications.<a href=\"./src/writerai/resources/applications/applications.py\">generate_content</a>(application_id, \\*\\*<a href=\"src/writerai/types/application_generate_content_params.py\">params</a>) -> <a href=\"./src/writerai/types/application_generate_content_response.py\">ApplicationGenerateContentResponse</a></code>"
+        },
+        {
+          "line": 90,
+          "excerpt": "- <code title=\"post /v1/chat\">client.chat.<a href=\"./src/writerai/resources/chat.py\">chat</a>(\\*\\*<a href=\"src/writerai/types/chat_chat_params.py\">params</a>) -> <a href=\"./src/writerai/types/chat_completion.py\">ChatCompletion</a></code>"
+        },
+        {
+          "line": 140,
+          "excerpt": "- <code title=\"post /v1/graphs/question\">client.graphs.<a href=\"./src/writerai/resources/graphs.py\">question</a>(\\*\\*<a href=\"src/writerai/types/graph_question_params.py\">params</a>) -> <a href=\"./src/writerai/types/question.py\">Question</a></code>"
+        },
+        {
+          "line": 170,
+          "excerpt": "- <code title=\"post /v1/tools/pdf-parser/{file_id}\">client.tools.<a href=\"./src/writerai/resources/tools.py\">parse_pdf</a>(file_id, \\*\\*<a href=\"src/writerai/types/tool_parse_pdf_params.py\">params</a>) -> <a href=\"./src/writerai/types/tool_parse_pdf_response.py\">ToolParsePdfResponse</a></code>\n- <code title=\"post /v1/tools/web-search\">client.tools.<a href=\"./src/writerai/resources/tools.py\">web_search</a>(\\*\\*<a href=\"src/writerai/types/tool_web_search_params.py\">params</a>) -> <a href=\"./src/writerai/types/tool_web_search_response.py\">ToolWebSearchResponse</a></code>"
+        },
+        {
+          "line": 183,
+          "excerpt": "- <code title=\"post /v1/vision\">client.vision.<a href=\"./src/writerai/resources/vision.py\">analyze</a>(\\*\\*<a href=\"src/writerai/types/vision_analyze_params.py\">params</a>) -> <a href=\"./src/writerai/types/vision_response.py\">VisionResponse</a></code>"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-perplexity",
+      "repository": "perplexityai/perplexity-py",
+      "url": "https://raw.githubusercontent.com/perplexityai/perplexity-py/1d4ba52e875a858a12fc26f854ae9470b8496835/README.md",
+      "revision": "1d4ba52e875a858a12fc26f854ae9470b8496835",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "324b79ea94a40a92c77c0323ad44d9219fc45ab86aa5ac17fc103b7e23878d83",
+      "bytes": 15102,
+      "title": "perplexityai/perplexity-py / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The Perplexity Python library provides convenient access to the Perplexity REST API from any Python 3.10+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx).",
+      "excerpts": [
+        {
+          "line": 6,
+          "excerpt": "The Perplexity Python library provides convenient access to the Perplexity REST API from any Python 3.10+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx)."
+        },
+        {
+          "line": 21,
+          "excerpt": "## Search API\n\nGet web search results:\n\n```python\nimport os\nfrom perplexity import Perplexity\n\nclient = Perplexity(\n    api_key=os.environ.get(\"PERPLEXITY_API_KEY\"),  # This is the default and can be omitted\n)\n\nsearch = client.search.create(query=\"latest AI developments 2024\", max_results=5)\n\nfor result in search.results:\n    print(f\"{result.title}: {result.url}\")\n```"
+        },
+        {
+          "line": 39,
+          "excerpt": "## Chat Completions\n\nThe full API of this library can be found in [api.md](api.md).\n\n```python\nimport os\nfrom perplexity import Perplexity\n\nclient = Perplexity(\n    api_key=os.environ.get(\"PERPLEXITY_API_KEY\"),  # This is the default and can be omitted\n)\n\nstream_chunk = client.chat.completions.create(\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": \"Tell me about the latest developments in AI\",\n        }\n    ],\n    model=\"sonar\",\n)\nprint(stream_chunk.id)\n```\n"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-suno-bark",
+      "repository": "suno-ai/bark",
+      "url": "https://raw.githubusercontent.com/suno-ai/bark/f4f32d4cd480dfec1c245d258174bc9bde3c2148/README.md",
+      "revision": "f4f32d4cd480dfec1c245d258174bc9bde3c2148",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "727acc4ec3d37ad8e20a8333fb779edece39271f3be9a813019d01849b256c72",
+      "bytes": 15207,
+      "title": "suno-ai/bark / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "> Notice: Bark is Suno's open-source text-to-speech+ model. If you are looking for our text-to-music models, please visit us on our [web page](https://suno.ai) and join our community on [Discord](https://suno.ai/discord). ",
+      "excerpts": [
+        {
+          "line": 1,
+          "excerpt": "> Notice: Bark is Suno's open-source text-to-speech+ model. If you are looking for our text-to-music models, please visit us on our [web page](https://suno.ai) and join our community on [Discord](https://suno.ai/discord). "
+        },
+        {
+          "line": 18,
+          "excerpt": "Bark is a transformer-based text-to-audio model created by [Suno](https://suno.ai). Bark can generate highly realistic, multilingual speech as well as other audio - including music, background noise and simple sound effects. The model can also produce nonverbal communications like laughing, sighing and crying. To support the research community, we are providing access to pretrained model checkpoints, which are ready for inference and available for commercial use."
+        },
+        {
+          "line": 21,
+          "excerpt": "Bark was developed for research purposes. It is not a conventional text-to-speech model but instead a fully generative text-to-audio model, which can deviate in unexpected ways from provided prompts. Suno does not take responsibility for any output generated. Use at your own risk, and please act responsibly."
+        },
+        {
+          "line": 289,
+          "excerpt": "Bark is licensed under the MIT License. "
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-deepl",
+      "repository": "DeepLcom/deepl-python",
+      "url": "https://raw.githubusercontent.com/DeepLcom/deepl-python/07a2914d7711bbab99f14d41c81836dc7c210a35/README.md",
+      "revision": "07a2914d7711bbab99f14d41c81836dc7c210a35",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "c919bb7db6eacb956e386cc1db8b26c4ce2d4e0d518852a4399a6a9b64c2c108",
+      "bytes": 49285,
+      "title": "DeepLcom/deepl-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The [DeepL API][api-docs] is a language AI API that allows other computer programs\nto send texts and documents to DeepL's servers and receive high-quality\ntranslations and improvements to the text. This opens a whole universe of\nopportunities for developers: any translation product you can imagine can now\nbe built on top of DeepL's best-in-class translation technology.\n\nThe DeepL Python library offers a convenient way for applications written in\nPython to interact with the DeepL API. We intend to support all API functions\nwith the library, though support for new features may be added to the library",
+      "excerpts": [
+        {
+          "line": 8,
+          "excerpt": "The [DeepL API][api-docs] is a language AI API that allows other computer programs\nto send texts and documents to DeepL's servers and receive high-quality\ntranslations and improvements to the text. This opens a whole universe of\nopportunities for developers: any translation product you can imagine can now\nbe built on top of DeepL's best-in-class translation technology.\n\nThe DeepL Python library offers a convenient way for applications written in\nPython to interact with the DeepL API. We intend to support all API functions\nwith the library, though support for new features may be added to the library"
+        },
+        {
+          "line": 224,
+          "excerpt": "### Improving text (Write API)\n\nYou can use the Write API to improve or rephrase text. This is implemented in\nthe `rephrase_text()` method. The first argument is a string containing the text\nyou want to translate, or a list of strings if you want to translate multiple texts.\n\n`target_lang` optionally specifies the target language, e.g. when you want to change\nthe variant of a text (for example, you can send an english text to the write API and\nuse `target_lang` to turn it into British or American English). Please note that the\nWrite API itself does NOT translate. If you wish to translate and improve a text, you\nwill need to make multiple calls in a chain."
+        },
+        {
+          "line": 279,
+          "excerpt": "### Translating documents\n\nTo translate documents, you may call either `translate_document()` using file IO\nobjects, or `translate_document_from_filepath()` using file paths. For both\nfunctions, the first and second arguments correspond to the input and output\nfiles respectively.\n\nJust as for the `translate_text()` function, the `source_lang` and\n`target_lang` arguments specify the source and target language codes."
+        },
+        {
+          "line": 354,
+          "excerpt": "### Glossaries\n\nGlossaries allow you to customize your translations using user-defined terms.\nMultiple glossaries can be stored with your account, each with a user-specified\nname and a uniquely-assigned ID."
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-heygen-live",
+      "repository": "heygen-com/liveavatar-web-sdk",
+      "url": "https://raw.githubusercontent.com/heygen-com/liveavatar-web-sdk/9faaf2dca3cafce51d1b2a39b5dd7ea6a1c8a5a1/README.md",
+      "revision": "9faaf2dca3cafce51d1b2a39b5dd7ea6a1c8a5a1",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "9195504c10412ef1cf9e477e2144fbfc3548ff327a86366274fac95ab7bad795",
+      "bytes": 1690,
+      "title": "heygen-com/liveavatar-web-sdk / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "This repository contains the web resources for LiveAvatar.\n\n### Packages\n\nWe offer the following web SDKs to help you quickly build with Live Avatar.\n\n- `@heygen/liveavatar-web-sdk`: [The LiveAvatar Web SDK](https://www.npmjs.com/package/@heygen/liveavatar-web-sdk)",
+      "excerpts": [
+        {
+          "line": 3,
+          "excerpt": "This repository contains the web resources for LiveAvatar.\n\n### Packages\n\nWe offer the following web SDKs to help you quickly build with Live Avatar.\n\n- `@heygen/liveavatar-web-sdk`: [The LiveAvatar Web SDK](https://www.npmjs.com/package/@heygen/liveavatar-web-sdk)"
+        },
+        {
+          "line": 17,
+          "excerpt": "| Basic demo         | [`apps/demo`](./apps/demo)                       | 3001 | Minimal LiveAvatar session — config form, video stream, voice chat. Good starting point.                                        |\n| Background removal | [`apps/bg-removal-demo`](./apps/bg-removal-demo) | 3002 | Client-side chroma-key on the green-screen video stream. Swap background to color, image, or video URL with no session restart. |"
+        },
+        {
+          "line": 30,
+          "excerpt": "### Additional Resources\n\n- LiveAvatar Website: [https://liveavatar.com](https://liveavatar.com)\n- API Documentation: [https://docs.liveavatar.com](https://docs.liveavatar.com)"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-assemblyai",
+      "repository": "AssemblyAI/assemblyai-python-sdk",
+      "url": "https://raw.githubusercontent.com/AssemblyAI/assemblyai-python-sdk/ae2e53cec45bf940dcaad4bdcbb448a05fbbd72a/README.md",
+      "revision": "ae2e53cec45bf940dcaad4bdcbb448a05fbbd72a",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "e7a8b31cc8b3b47f170017af07d9bc9ec7362621ce469dd5c58bc7d49dc41fb4",
+      "bytes": 78573,
+      "title": "AssemblyAI/assemblyai-python-sdk / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "### Choosing a transcriber\n\n| Class | Use it for |\n| --- | --- |\n| `assemblyai.prerecorded.v2.Transcriber` | Long-form audio, URLs, and the audio-intelligence features (speaker labels, chapters, sentiment, …), over the polled job API |\n| `assemblyai.prerecorded.v2.AsyncTranscriber` | The same, from asyncio code |\n| `assemblyai.sync.v1.SyncTranscriber` | Short clips (≤120s, ≤40MB) where you want the transcript back in one request, at the lowest latency — from a file you already have (`transcribe()`) or uploaded while it is still being recorded (`open_live()`, `transcribe_live()`) |\n| `assemblyai.sync.v1.AsyncSyncTranscriber` | The same, from asyncio code |\n| `assemblyai.dictation.v1.DictationTranscriber` | Dictation: short spoken notes uploaded as they are spoken, returned as one transcript with an optional LLM rewrite (`final_text`). Push audio from a callback (`open_live()`) or hand over an iterator, file object, bytes or path (`transcribe_live()`) |\n| `assemblyai.dictation.v1.AsyncDictationTranscriber` | The same, from asyncio code |\n| `assemblyai.streaming.v3.RealTimeTranscriber` | Live audio (microphone, telephony, voice agents), transcribed as it arrives over a websocket session |\n| `assemblyai.streaming.v3.AsyncRealTimeTranscriber` | The same, from asyncio code |\n\nThe versioned path is the preferred import for new code. The prerecorded, sync and dictation classes are also available as top-level shortcuts (`aai.Transcriber`, `aai.SyncTranscriber`, `aai.DictationTranscriber`, …) — see [Migrating to 1.0](MIGRATION.md) for the details.",
+      "excerpts": [
+        {
+          "line": 100,
+          "excerpt": "### Choosing a transcriber\n\n| Class | Use it for |\n| --- | --- |\n| `assemblyai.prerecorded.v2.Transcriber` | Long-form audio, URLs, and the audio-intelligence features (speaker labels, chapters, sentiment, …), over the polled job API |\n| `assemblyai.prerecorded.v2.AsyncTranscriber` | The same, from asyncio code |\n| `assemblyai.sync.v1.SyncTranscriber` | Short clips (≤120s, ≤40MB) where you want the transcript back in one request, at the lowest latency — from a file you already have (`transcribe()`) or uploaded while it is still being recorded (`open_live()`, `transcribe_live()`) |\n| `assemblyai.sync.v1.AsyncSyncTranscriber` | The same, from asyncio code |\n| `assemblyai.dictation.v1.DictationTranscriber` | Dictation: short spoken notes uploaded as they are spoken, returned as one transcript with an optional LLM rewrite (`final_text`). Push audio from a callback (`open_live()`) or hand over an iterator, file object, bytes or path (`transcribe_live()`) |\n| `assemblyai.dictation.v1.AsyncDictationTranscriber` | The same, from asyncio code |\n| `assemblyai.streaming.v3.RealTimeTranscriber` | Live audio (microphone, telephony, voice agents), transcribed as it arrives over a websocket session |\n| `assemblyai.streaming.v3.AsyncRealTimeTranscriber` | The same, from asyncio code |\n\nThe versioned path is the preferred import for new code. The prerecorded, sync and dictation classes are also available as top-level shortcuts (`aai.Transcriber`, `aai.SyncTranscriber`, `aai.DictationTranscriber`, …) — see [Migrating to 1.0](MIGRATION.md) for the details."
+        },
+        {
+          "line": 1353,
+          "excerpt": "### **LLM Gateway Examples**\n\n`aai.LLMGateway` is a client for AssemblyAI's LLM Gateway — model listing, OpenAI-shaped chat completions routed to OpenAI/Claude/Gemini/Bedrock models, and speech understanding over an existing transcript. `aai.AsyncLLMGateway` is the asyncio counterpart, with the same resources and every API call a coroutine.\n\n[Read more about the LLM Gateway.](https://www.assemblyai.com/docs/llm-gateway/quickstart)"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-speechmatics",
+      "repository": "speechmatics/speechmatics-python",
+      "url": "https://raw.githubusercontent.com/speechmatics/speechmatics-python/fc97b09c2f33cecb5a14333c59e3c065f4b9986a/README.md",
+      "revision": "fc97b09c2f33cecb5a14333c59e3c065f4b9986a",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "af00c21906fb5d4e7f9c9447ac6dff404936ae80fa017a58dfe0792ed6a15d91",
+      "bytes": 12264,
+      "title": "speechmatics/speechmatics-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "# Legacy Speechmatics Python Client\n\n> **⚠️ WARNING: This package (`speechmatics-python`) has been deprecated.**\n>\n> - **No new features** will be added\n> - **Bug fixes and security patches only** until **2025-12-31**\n>\n\n### Migration Path\n\n**New Official SDKs** (at [speechmatics-python-sdk](https://github.com/speechmatics/speechmatics-python-sdk)):\n\n| Old Package | New Package | Purpose | Migration Guide |\n|-------------|-------------|---------|-----------------|\n| `speechmatics-python` | [`speechmatics-batch`](https://pypi.org/project/speechmatics-batch) | Batch transcription | [📖 Batch Migration Guide](https://github.com/speechmatics/speechmatics-python-sdk/blob/main/sdk/batch/MIGRATION.md) |\n| `speechmatics-python` | [`speechmatics-rt`](https://pypi.org/project/speechmatics-rt) | Real-time transcription | [📖 RT Migration Guide](https://github.com/speechmatics/speechmatics-python-sdk/blob/main/sdk/rt/MIGRATION.md) |\n| `speechmatics.cli` | Not available (will be released as a separate package) | | |\n",
+      "excerpts": [
+        {
+          "line": 1,
+          "excerpt": "# Legacy Speechmatics Python Client\n\n> **⚠️ WARNING: This package (`speechmatics-python`) has been deprecated.**\n>\n> - **No new features** will be added\n> - **Bug fixes and security patches only** until **2025-12-31**\n>\n\n### Migration Path\n\n**New Official SDKs** (at [speechmatics-python-sdk](https://github.com/speechmatics/speechmatics-python-sdk)):\n\n| Old Package | New Package | Purpose | Migration Guide |\n|-------------|-------------|---------|-----------------|\n| `speechmatics-python` | [`speechmatics-batch`](https://pypi.org/project/speechmatics-batch) | Batch transcription | [📖 Batch Migration Guide](https://github.com/speechmatics/speechmatics-python-sdk/blob/main/sdk/batch/MIGRATION.md) |\n| `speechmatics-python` | [`speechmatics-rt`](https://pypi.org/project/speechmatics-rt) | Real-time transcription | [📖 RT Migration Guide](https://github.com/speechmatics/speechmatics-python-sdk/blob/main/sdk/rt/MIGRATION.md) |\n| `speechmatics.cli` | Not available (will be released as a separate package) | | |\n"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-speechmatics-current",
+      "repository": "speechmatics/speechmatics-python-sdk",
+      "url": "https://raw.githubusercontent.com/speechmatics/speechmatics-python-sdk/9e6260b3b1b9c6ccf6004ff595220ed3bdfd2799/README.md",
+      "revision": "9e6260b3b1b9c6ccf6004ff595220ed3bdfd2799",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "d12ab4583dfb066c710f96f8ea1b369f449b76eaf3016d0d7f902be2cd52a28e",
+      "bytes": 51805,
+      "title": "speechmatics/speechmatics-python-sdk / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "**Speechmatics Python SDK provides convenient access to enterprise-grade speech-to-text APIs from Python applications.**",
+      "excerpts": [
+        {
+          "line": 11,
+          "excerpt": "**Speechmatics Python SDK provides convenient access to enterprise-grade speech-to-text APIs from Python applications.**"
+        },
+        {
+          "line": 23,
+          "excerpt": "**55+ Languages • Realtime & Batch • Custom vocabularies • Speaker diarization • Speaker ID**"
+        },
+        {
+          "line": 73,
+          "excerpt": "**[speechmatics-batch](./sdk/batch/README.md)** - Async batch transcription API\n\n- Upload audio files for processing\n- Get transcripts with timestamps, speakers, entities\n- Supports all audio intelligence features\n\n**[speechmatics-rt](./sdk/rt/README.md)** - Realtime WebSocket streaming\n\n- Stream audio for live transcription\n- Ultra-low latency (150ms p95)\n- Partial and final transcripts\n\n**[speechmatics-agent-stt](./sdk/agent_stt/README.md)** - Agent STT SDK\n\n- Segment-level transcription for voice agents\n- Server-side VAD and turn detection, or bring your own (Pipecat, LiveKit)\n- Lightweight install: pure Python, no ML runtime or GPU required, all heavy lifting is done in the service itself\n\n**[speechmatics-voice](./sdk/voice/README.md)** - Voice agent SDK\n\n- Build conversational AI applications\n- Speaker diarization and turn detection\n- Optional ML-based smart turn: `pip install speechmatics-voice[smart]`\n\n**[speechmatics-tts](./sdk/tts/README.md)** - Text-to-speech\n\n- Convert text to natural-sounding speech\n- Multiple voices and languages\n- Streaming and batch modes\n\n</details>"
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-fal",
+      "repository": "fal-ai/fal",
+      "url": "https://raw.githubusercontent.com/fal-ai/fal/5b24fa2f3789b6712709ab2f24dd1a95cc405270/README.md",
+      "revision": "5b24fa2f3789b6712709ab2f24dd1a95cc405270",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "0f5301a5e4653e2ae55047a63c6fad86ec1eee03b59ee27af7d635691da0b2e6",
+      "bytes": 2980,
+      "title": "fal-ai/fal / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "fal is a serverless Python runtime that lets you run and scale code in the cloud with no infra management.\n\nWith fal, you can build pipelines, serve ML models and scale them up to many users. You scale down to 0 when you don't use any resources.\n\nThis repository contains the main Python packages for building on [fal](https://fal.ai):\n\n- `fal` (in `projects/fal`): define, test, and deploy serverless apps on fal\n- `fal-client` (in `projects/fal_client`): call fal model APIs or your deployed endpoints from Python\n\nFor full product and platform documentation, see [fal.ai/docs](https://fal.ai/docs/documentation).\n",
+      "excerpts": [
+        {
+          "line": 6,
+          "excerpt": "fal is a serverless Python runtime that lets you run and scale code in the cloud with no infra management.\n\nWith fal, you can build pipelines, serve ML models and scale them up to many users. You scale down to 0 when you don't use any resources.\n\nThis repository contains the main Python packages for building on [fal](https://fal.ai):\n\n- `fal` (in `projects/fal`): define, test, and deploy serverless apps on fal\n- `fal-client` (in `projects/fal_client`): call fal model APIs or your deployed endpoints from Python\n\nFor full product and platform documentation, see [fal.ai/docs](https://fal.ai/docs/documentation).\n"
+        },
+        {
+          "line": 21,
+          "excerpt": "The `fal` package includes the Python SDK and CLI for building serverless apps, testing them with temporary URLs, and deploying them to production."
+        }
+      ],
+      "limitations": "This is scoped product/interface evidence. It does not establish legal ownership, corporate HQ/leadership, complete portfolio, pricing, universal access, original training infrastructure, supplier contracts or independent performance results."
+    },
+    {
+      "id": "specialist-midjourney-profile",
+      "url": "https://github.com/Midjourney",
+      "title": "Midjourney GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "reviewedOn": "2026-10-20",
+      "sha256": "93cfabcb0d6ed470b6dac0d541e20d311a3c5d2205c3291f2dfe737dae730c97",
+      "bytes": 296644,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "New research lab. Exploring new mediums of thought. Expanding the imaginative powers of the human species. - Midjourney",
+      "documentedWebsiteLinks": [
+        "https://midjourney.com"
+      ],
+      "limitations": "Mutable self-described organization profile. The linked website helps identity attribution but does not verify products, legal ownership, HQ or active service availability."
+    },
+    {
+      "id": "specialist-writer-profile",
+      "url": "https://github.com/writer",
+      "title": "writer GitHub organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "reviewedOn": "2026-10-20",
+      "sha256": "fe792eed2b9313434a054ae016e9a0a269b68a5ade78b387c831941875282229",
+      "bytes": 297879,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Generative AI built for your business. Writer has 27 repositories available. Follow their code on GitHub.",
+      "documentedWebsiteLinks": [
+        "https://writer.com"
+      ],
+      "limitations": "Mutable self-described organization profile. The linked website helps identity attribution but does not verify products, legal ownership, HQ or active service availability."
+    }
+  ],
+  "entities": [
+    {
+      "entityId": "ai21",
+      "changes": {
+        "description": "AI21 Labs publishes model APIs and developer tools for language-model applications. Its SDK documents Jamba chat, Maestro planning and orchestration, agent operations and retrieval from a Studio document library.",
+        "provides": "Jamba model API access, Maestro orchestration, and beta agent and conversational retrieval interfaces.",
+        "howUsed": "Applications call Jamba through the AI21 SDK, stream chat responses, or use the separately documented Maestro, agent and document-library workflows."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-ai21"
+          ],
+          "scope": "AI21 SDK examples and named feature sections; beta status is retained and model identifiers do not establish release dates."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-ai21"
+          ],
+          "scope": "AI21 SDK examples and named feature sections; beta status is retained and model identifiers do not establish release dates."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-ai21"
+          ],
+          "scope": "AI21 SDK examples and named feature sections; beta status is retained and model identifiers do not establish release dates."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Jamba",
+          "kind": "Model/API family",
+          "role": "Chat completions and streaming",
+          "sourceIds": [
+            "specialist-ai21"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "We currently support streaming for the Chat Completions API in Jamba.",
+          "evidenceLine": 203,
+          "evidenceSourceId": "specialist-ai21"
+        },
+        {
+          "name": "Maestro",
+          "kind": "Orchestration system",
+          "role": "AI planning and orchestration",
+          "sourceIds": [
+            "specialist-ai21"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "### Maestro\n\nAI Planning & Orchestration System built for the enterprise. Read more [here](https://www.ai21.com/maestro/).",
+          "evidenceLine": 252,
+          "evidenceSourceId": "specialist-ai21"
+        },
+        {
+          "name": "AI21 Agents",
+          "kind": "API",
+          "role": "Create, manage and run agents",
+          "sourceIds": [
+            "specialist-ai21"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Agents and Conversational RAG are explicitly labeled beta; other interface availability depends on account/service terms.",
+          "evidenceExcerpt": "### Agents (Beta)\n\nAI21 Agents provide a comprehensive way to create, manage, and run your Agents.",
+          "evidenceLine": 285,
+          "evidenceSourceId": "specialist-ai21"
+        },
+        {
+          "name": "AI21 Conversational RAG",
+          "kind": "API",
+          "role": "Chat with retrieval from a Studio library",
+          "sourceIds": [
+            "specialist-ai21"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Agents and Conversational RAG are explicitly labeled beta; other interface availability depends on account/service terms.",
+          "evidenceExcerpt": "### Conversational RAG (Beta)\n\nLike chat, but with the ability to retrieve information from your Studio library.",
+          "evidenceLine": 340,
+          "evidenceSourceId": "specialist-ai21"
+        }
+      ],
+      "notes": [],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "stability",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [
+        {
+          "name": "Stable Diffusion 3.5 Large",
+          "kind": "Image model / control model",
+          "role": "Documented image-generation or conditioning model",
+          "sourceIds": [
+            "specialist-stability"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Publisher lists downloadable models and reference inference code; model weight terms must be checked separately from the code license.",
+          "evidenceExcerpt": "Download the following models from HuggingFace into `models` directory:\n1. [Stability AI SD3.5 Large](https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/sd3.5_large.safetensors) or [Stability AI SD3.5 Large Turbo](https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo/blob/main/sd3.5_large_turbo.safetensors) or [Stability AI SD3.5 Medium](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium/blob/main/sd3.5_medium.safetensors)",
+          "evidenceLine": 18,
+          "evidenceSourceId": "specialist-stability"
+        },
+        {
+          "name": "Stable Diffusion 3.5 Large Turbo",
+          "kind": "Image model / control model",
+          "role": "Documented image-generation or conditioning model",
+          "sourceIds": [
+            "specialist-stability"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Publisher lists downloadable models and reference inference code; model weight terms must be checked separately from the code license.",
+          "evidenceExcerpt": "Download the following models from HuggingFace into `models` directory:\n1. [Stability AI SD3.5 Large](https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/sd3.5_large.safetensors) or [Stability AI SD3.5 Large Turbo](https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo/blob/main/sd3.5_large_turbo.safetensors) or [Stability AI SD3.5 Medium](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium/blob/main/sd3.5_medium.safetensors)",
+          "evidenceLine": 18,
+          "evidenceSourceId": "specialist-stability"
+        },
+        {
+          "name": "Stable Diffusion 3.5 Medium",
+          "kind": "Image model / control model",
+          "role": "Documented image-generation or conditioning model",
+          "sourceIds": [
+            "specialist-stability"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Publisher lists downloadable models and reference inference code; model weight terms must be checked separately from the code license.",
+          "evidenceExcerpt": "Download the following models from HuggingFace into `models` directory:\n1. [Stability AI SD3.5 Large](https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/sd3.5_large.safetensors) or [Stability AI SD3.5 Large Turbo](https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo/blob/main/sd3.5_large_turbo.safetensors) or [Stability AI SD3.5 Medium](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium/blob/main/sd3.5_medium.safetensors)",
+          "evidenceLine": 18,
+          "evidenceSourceId": "specialist-stability"
+        },
+        {
+          "name": "SD3.5 Large ControlNets",
+          "kind": "Image model / control model",
+          "role": "Documented image-generation or conditioning model",
+          "sourceIds": [
+            "specialist-stability"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Publisher lists downloadable models and reference inference code; model weight terms must be checked separately from the code license.",
+          "evidenceExcerpt": "To use SD3.5 Large ControlNets, additionally download your chosen ControlNet model from the [model repository](https://huggingface.co/stabilityai/stable-diffusion-3.5-controlnets), then run inference, like so:",
+          "evidenceLine": 80,
+          "evidenceSourceId": "specialist-stability"
+        },
+        {
+          "name": "stable-audio-tools",
+          "kind": "Framework",
+          "role": "Training and inference tools for audio-generation models",
+          "sourceIds": [
+            "specialist-stable-audio"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "# stable-audio-tools\nTraining and inference code for audio generation models",
+          "evidenceLine": 1,
+          "evidenceSourceId": "specialist-stable-audio"
+        }
+      ],
+      "notes": [
+        "SD3.5 reference-code licensing does not establish the license for every model weight file. Stable Audio tooling is separate from speech-recognition functionality."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "stability-audio",
+      "changes": {
+        "description": "This entry covers Stability AI’s audio-generation tooling and models. The stable-audio-tools repository provides training, fine-tuning and inference workflows and demonstrates Stable Audio Open 1.0.",
+        "provides": "Audio-generation training and inference tools, including a documented Stable Audio Open 1.0 interface.",
+        "howUsed": "Researchers configure audio-generation training or fine-tuning, or load an existing checkpoint for inference after checking and accepting its model terms."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-stable-audio"
+          ],
+          "scope": "Stability AI audio-generation tooling and the named model example, not a separately established company or verified speech-recognition portfolio."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-stable-audio"
+          ],
+          "scope": "Stability AI audio-generation tooling and the named model example, not a separately established company or verified speech-recognition portfolio."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-stable-audio"
+          ],
+          "scope": "Stability AI audio-generation tooling and the named model example, not a separately established company or verified speech-recognition portfolio."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "stable-audio-tools",
+          "kind": "Framework",
+          "role": "Audio-model training and inference",
+          "sourceIds": [
+            "specialist-stable-audio"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "# stable-audio-tools\nTraining and inference code for audio generation models",
+          "evidenceLine": 1,
+          "evidenceSourceId": "specialist-stable-audio"
+        },
+        {
+          "name": "Stable Audio Open 1.0",
+          "kind": "Model",
+          "role": "Audio-generation model used by the toolkit example",
+          "sourceIds": [
+            "specialist-stable-audio"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Example requires accepting the model’s terms; code documentation is not proof of unrestricted weight licensing.",
+          "evidenceExcerpt": "For example, to create an interface for the [`stable-audio-open-1.0`](https://huggingface.co/stabilityai/stable-audio-open-1.0) model, once you've accepted the terms for the model on Hugging Face, you can run:\n```bash\n$ python3 ./run_gradio.py --pretrained-name stabilityai/stable-audio-open-1.0\n```",
+          "evidenceLine": 44,
+          "evidenceSourceId": "specialist-stable-audio"
+        }
+      ],
+      "notes": [
+        "The current Company type should be reviewed: this label appears to represent an audio product/program. The inherited Speech recognition category is not established by this source."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "black-forest-labs",
+      "changes": {
+        "website": "https://bfl.ai"
+      },
+      "fieldEvidence": {
+        "website": {
+          "sourceIds": [
+            "specialist-bfl"
+          ],
+          "scope": "Publisher repository explicitly identifies Black Forest Labs and links bfl.ai."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "FLUX.2 [klein] 4B",
+          "kind": "Image model",
+          "role": "Text-to-image and single-/multi-reference image editing",
+          "sourceIds": [
+            "specialist-bfl"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "License is variant-specific as listed by the publisher; commercial licensing/access must be checked for the intended use.",
+          "documentedAttributes": {
+            "inputTasks": [
+              "text-to-image",
+              "single-reference image editing",
+              "multi-reference image editing"
+            ],
+            "listedLicense": "Apache-2.0"
+          },
+          "evidenceExcerpt": "| Name | Step-distilled | Guidance-distilled | Text-to-Image | Image Editing (Single reference) | Image Editing (Multi-reference) | License |\n| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n| [FLUX.2 [klein] 4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B) | ✅ | ✅ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 9B KV](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 4B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) | ❌ | ❌ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B) | ❌ | ❌ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [dev]](https://huggingface.co/black-forest-labs/FLUX.2-dev) | ❌ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n\n**All models support**: Text-to-Image ✅ | Single-ref Editing ✅ | Multi-ref Editing ✅",
+          "evidenceLine": 22,
+          "evidenceSourceId": "specialist-bfl"
+        },
+        {
+          "name": "FLUX.2 [klein] 4B Base",
+          "kind": "Image model",
+          "role": "Text-to-image and single-/multi-reference image editing",
+          "sourceIds": [
+            "specialist-bfl"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "License is variant-specific as listed by the publisher; commercial licensing/access must be checked for the intended use.",
+          "documentedAttributes": {
+            "inputTasks": [
+              "text-to-image",
+              "single-reference image editing",
+              "multi-reference image editing"
+            ],
+            "listedLicense": "Apache-2.0"
+          },
+          "evidenceExcerpt": "| Name | Step-distilled | Guidance-distilled | Text-to-Image | Image Editing (Single reference) | Image Editing (Multi-reference) | License |\n| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n| [FLUX.2 [klein] 4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B) | ✅ | ✅ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 9B KV](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 4B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) | ❌ | ❌ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B) | ❌ | ❌ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [dev]](https://huggingface.co/black-forest-labs/FLUX.2-dev) | ❌ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n\n**All models support**: Text-to-Image ✅ | Single-ref Editing ✅ | Multi-ref Editing ✅",
+          "evidenceLine": 22,
+          "evidenceSourceId": "specialist-bfl"
+        },
+        {
+          "name": "FLUX.2 [klein] 9B",
+          "kind": "Image model",
+          "role": "Text-to-image and single-/multi-reference image editing",
+          "sourceIds": [
+            "specialist-bfl"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "License is variant-specific as listed by the publisher; commercial licensing/access must be checked for the intended use.",
+          "documentedAttributes": {
+            "inputTasks": [
+              "text-to-image",
+              "single-reference image editing",
+              "multi-reference image editing"
+            ],
+            "listedLicense": "FLUX Non-Commercial License"
+          },
+          "evidenceExcerpt": "| Name | Step-distilled | Guidance-distilled | Text-to-Image | Image Editing (Single reference) | Image Editing (Multi-reference) | License |\n| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n| [FLUX.2 [klein] 4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B) | ✅ | ✅ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 9B KV](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 4B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) | ❌ | ❌ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B) | ❌ | ❌ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [dev]](https://huggingface.co/black-forest-labs/FLUX.2-dev) | ❌ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n\n**All models support**: Text-to-Image ✅ | Single-ref Editing ✅ | Multi-ref Editing ✅",
+          "evidenceLine": 22,
+          "evidenceSourceId": "specialist-bfl"
+        },
+        {
+          "name": "FLUX.2 [klein] 9B KV",
+          "kind": "Image model",
+          "role": "Text-to-image and single-/multi-reference image editing",
+          "sourceIds": [
+            "specialist-bfl"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "License is variant-specific as listed by the publisher; commercial licensing/access must be checked for the intended use.",
+          "documentedAttributes": {
+            "inputTasks": [
+              "text-to-image",
+              "single-reference image editing",
+              "multi-reference image editing"
+            ],
+            "listedLicense": "FLUX Non-Commercial License"
+          },
+          "evidenceExcerpt": "| Name | Step-distilled | Guidance-distilled | Text-to-Image | Image Editing (Single reference) | Image Editing (Multi-reference) | License |\n| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n| [FLUX.2 [klein] 4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B) | ✅ | ✅ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 9B KV](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 4B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) | ❌ | ❌ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B) | ❌ | ❌ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [dev]](https://huggingface.co/black-forest-labs/FLUX.2-dev) | ❌ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n\n**All models support**: Text-to-Image ✅ | Single-ref Editing ✅ | Multi-ref Editing ✅",
+          "evidenceLine": 22,
+          "evidenceSourceId": "specialist-bfl"
+        },
+        {
+          "name": "FLUX.2 [klein] 9B Base",
+          "kind": "Image model",
+          "role": "Text-to-image and single-/multi-reference image editing",
+          "sourceIds": [
+            "specialist-bfl"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "License is variant-specific as listed by the publisher; commercial licensing/access must be checked for the intended use.",
+          "documentedAttributes": {
+            "inputTasks": [
+              "text-to-image",
+              "single-reference image editing",
+              "multi-reference image editing"
+            ],
+            "listedLicense": "FLUX Non-Commercial License"
+          },
+          "evidenceExcerpt": "| Name | Step-distilled | Guidance-distilled | Text-to-Image | Image Editing (Single reference) | Image Editing (Multi-reference) | License |\n| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n| [FLUX.2 [klein] 4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B) | ✅ | ✅ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 9B KV](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 4B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) | ❌ | ❌ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B) | ❌ | ❌ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [dev]](https://huggingface.co/black-forest-labs/FLUX.2-dev) | ❌ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n\n**All models support**: Text-to-Image ✅ | Single-ref Editing ✅ | Multi-ref Editing ✅",
+          "evidenceLine": 22,
+          "evidenceSourceId": "specialist-bfl"
+        },
+        {
+          "name": "FLUX.2 [dev]",
+          "kind": "Image model",
+          "role": "Text-to-image and single-/multi-reference image editing",
+          "sourceIds": [
+            "specialist-bfl"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "License is variant-specific as listed by the publisher; commercial licensing/access must be checked for the intended use.",
+          "documentedAttributes": {
+            "inputTasks": [
+              "text-to-image",
+              "single-reference image editing",
+              "multi-reference image editing"
+            ],
+            "listedLicense": "FLUX Non-Commercial License"
+          },
+          "evidenceExcerpt": "| Name | Step-distilled | Guidance-distilled | Text-to-Image | Image Editing (Single reference) | Image Editing (Multi-reference) | License |\n| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n| [FLUX.2 [klein] 4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B) | ✅ | ✅ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 9B KV](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv) | ✅ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [klein] 4B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) | ❌ | ❌ | ✅ | ✅ | ✅ | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md) |\n| [FLUX.2 [klein] 9B Base](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B) | ❌ | ❌ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n| [FLUX.2 [dev]](https://huggingface.co/black-forest-labs/FLUX.2-dev) | ❌ | ✅ | ✅ | ✅ | ✅ | [FLUX Non-Commercial License](model_licenses/LICENSE-FLUX-NON-COMMERICAL) |\n\n**All models support**: Text-to-Image ✅ | Single-ref Editing ✅ | Multi-ref Editing ✅",
+          "evidenceLine": 22,
+          "evidenceSourceId": "specialist-bfl"
+        }
+      ],
+      "notes": [
+        "The documented FLUX.2 portfolio is image generation/editing. The separate Research record’s generic Language models/Sovereign AI labels are not supported by this source."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "runway",
+      "changes": {
+        "description": "Runway exposes media-generation and editing workflows through its REST API and Python SDK. Documented operations include image-to-video, text-to-video, text-to-image and separate audio-processing interfaces.",
+        "provides": "Media-generation APIs and asynchronous task workflows, with Python interfaces for video, image and audio operations.",
+        "howUsed": "Developers submit a media-generation request, monitor the task and retrieve its output. They select the specific endpoint and model supported for the intended workflow."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-runway",
+            "specialist-runway-api"
+          ],
+          "scope": "Runway API surface only; separate endpoints do not prove that every capability belongs to Gen-4 or that Runway developed every routed model."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-runway",
+            "specialist-runway-api"
+          ],
+          "scope": "Runway API surface only; separate endpoints do not prove that every capability belongs to Gen-4 or that Runway developed every routed model."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-runway",
+            "specialist-runway-api"
+          ],
+          "scope": "Runway API surface only; separate endpoints do not prove that every capability belongs to Gen-4 or that Runway developed every routed model."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Runway Image-to-Video API",
+          "kind": "API",
+          "role": "Image-conditioned video-generation requests",
+          "sourceIds": [
+            "specialist-runway-api"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "# ImageToVideo\n\nTypes:\n\n```python\nfrom runwayml.types import ImageToVideoCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/image_to_video\">client.image_to_video.<a href=\"./src/runwayml/resources/image_to_video.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/image_to_video_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/image_to_video_create_response.py\">ImageToVideoCreateResponse</a></code>",
+          "evidenceLine": 14,
+          "evidenceSourceId": "specialist-runway-api"
+        },
+        {
+          "name": "Runway Text-to-Video API",
+          "kind": "API",
+          "role": "Text-conditioned video-generation requests",
+          "sourceIds": [
+            "specialist-runway-api"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "# TextToVideo\n\nTypes:\n\n```python\nfrom runwayml.types import TextToVideoCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/text_to_video\">client.text_to_video.<a href=\"./src/runwayml/resources/text_to_video.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/text_to_video_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/text_to_video_create_response.py\">TextToVideoCreateResponse</a></code>",
+          "evidenceLine": 50,
+          "evidenceSourceId": "specialist-runway-api"
+        },
+        {
+          "name": "Runway Text-to-Image API",
+          "kind": "API",
+          "role": "Text-conditioned image-generation requests",
+          "sourceIds": [
+            "specialist-runway-api"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "# TextToImage\n\nTypes:\n\n```python\nfrom runwayml.types import TextToImageCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/text_to_image\">client.text_to_image.<a href=\"./src/runwayml/resources/text_to_image.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/text_to_image_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/text_to_image_create_response.py\">TextToImageCreateResponse</a></code>",
+          "evidenceLine": 62,
+          "evidenceSourceId": "specialist-runway-api"
+        },
+        {
+          "name": "Runway Audio APIs",
+          "kind": "API",
+          "role": "Separate speech generation, dubbing and audio-processing interfaces",
+          "sourceIds": [
+            "specialist-runway-api"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "# TextToSpeech\n\nTypes:\n\n```python\nfrom runwayml.types import TextToSpeechCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/text_to_speech\">client.text_to_speech.<a href=\"./src/runwayml/resources/text_to_speech.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/text_to_speech_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/text_to_speech_create_response.py\">TextToSpeechCreateResponse</a></code>\n\n# SoundEffect\n\nTypes:\n\n```python\nfrom runwayml.types import SoundEffectCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/sound_effect\">client.sound_effect.<a href=\"./src/runwayml/resources/sound_effect.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/sound_effect_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/sound_effect_create_response.py\">SoundEffectCreateResponse</a></code>\n\n# VoiceIsolation\n\nTypes:\n\n```python\nfrom runwayml.types import VoiceIsolationCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/voice_isolation\">client.voice_isolation.<a href=\"./src/runwayml/resources/voice_isolation.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/voice_isolation_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/voice_isolation_create_response.py\">VoiceIsolationCreateResponse</a></code>\n\n# VoiceDubbing\n\nTypes:\n\n```python\nfrom runwayml.types import VoiceDubbingCreateResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/voice_dubbing\">client.voice_dubbing.<a href=\"./src/runwayml/resources/voice_dubbing.py\">create</a>(\\*\\*<a href=\"src/runwayml/types/voice_dubbing_create_params.py\">params</a>) -> <a href=\"./src/runwayml/types/voice_dubbing_create_response.py\">VoiceDubbingCreateResponse</a></code>",
+          "evidenceLine": 86,
+          "evidenceSourceId": "specialist-runway-api"
+        }
+      ],
+      "notes": [
+        "The SDK example uses gen4_turbo for image-to-video. It does not establish a launch date, current full model lineup, or native audio capability for the catalog’s Runway Gen-4 record."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "luma-ai",
+      "changes": {
+        "description": "Luma AI provides image and video generation through an API and Python SDK. Its API reference includes image creation and reframing, video generation and modification, and generation-specific audio and upscaling operations.",
+        "provides": "Luma generation APIs for images and video, with asynchronous job access and documented editing/upscaling operations.",
+        "howUsed": "Applications submit a generation request through the Luma SDK, monitor the generation, and use the applicable image/video modification, reframing or upscaling endpoint.",
+        "website": "https://lumalabs.ai"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-luma",
+            "specialist-luma-api"
+          ],
+          "scope": "Luma API and generation workflows. The SDK example names ray-2; this alone is not a complete Ray family or release/lifecycle review."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-luma",
+            "specialist-luma-api"
+          ],
+          "scope": "Luma API and generation workflows. The SDK example names ray-2; this alone is not a complete Ray family or release/lifecycle review."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-luma",
+            "specialist-luma-api"
+          ],
+          "scope": "Luma API and generation workflows. The SDK example names ray-2; this alone is not a complete Ray family or release/lifecycle review."
+        },
+        "website": {
+          "sourceIds": [
+            "specialist-luma",
+            "specialist-luma-api"
+          ],
+          "scope": "Luma API and generation workflows. The SDK example names ray-2; this alone is not a complete Ray family or release/lifecycle review."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Luma Image Generation API",
+          "kind": "API",
+          "role": "Image generation and reframing",
+          "sourceIds": [
+            "specialist-luma-api"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "## Image\n\nMethods:\n\n- <code title=\"post /generations/image\">client.generations.image.<a href=\"./src/lumaai/resources/generations/image.py\">create</a>(\\*\\*<a href=\"src/lumaai/types/generations/image_create_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>\n- <code title=\"post /generations/image/reframe\">client.generations.image.<a href=\"./src/lumaai/resources/generations/image.py\">reframe</a>(\\*\\*<a href=\"src/lumaai/types/generations/image_reframe_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>",
+          "evidenceLine": 30,
+          "evidenceSourceId": "specialist-luma-api"
+        },
+        {
+          "name": "Luma Video Generation API",
+          "kind": "API",
+          "role": "Video generation, modification and reframing",
+          "sourceIds": [
+            "specialist-luma-api"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "## Video\n\nMethods:\n\n- <code title=\"post /generations/video\">client.generations.video.<a href=\"./src/lumaai/resources/generations/video.py\">create</a>(\\*\\*<a href=\"src/lumaai/types/generations/video_create_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>\n- <code title=\"post /generations/video/modify\">client.generations.video.<a href=\"./src/lumaai/resources/generations/video.py\">modify</a>(\\*\\*<a href=\"src/lumaai/types/generations/video_modify_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>\n- <code title=\"post /generations/video/reframe\">client.generations.video.<a href=\"./src/lumaai/resources/generations/video.py\">reframe</a>(\\*\\*<a href=\"src/lumaai/types/generations/video_reframe_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>",
+          "evidenceLine": 37,
+          "evidenceSourceId": "specialist-luma-api"
+        },
+        {
+          "name": "Luma Generation Audio API",
+          "kind": "API",
+          "role": "Attach an audio-generation request to a generation",
+          "sourceIds": [
+            "specialist-luma-api"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "- <code title=\"post /generations/{id}/audio\">client.generations.<a href=\"./src/lumaai/resources/generations/generations.py\">audio</a>(id, \\*\\*<a href=\"src/lumaai/types/generation_audio_params.py\">params</a>) -> <a href=\"./src/lumaai/types/generation.py\">Generation</a></code>",
+          "evidenceLine": 14,
+          "evidenceSourceId": "specialist-luma-api"
+        },
+        {
+          "name": "ray-2",
+          "kind": "Documented API identifier",
+          "role": "Video-generation identifier in the official SDK example",
+          "sourceIds": [
+            "specialist-luma"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented example identifier only; release date, pricing and account entitlement not established.",
+          "evidenceExcerpt": "generation = client.generations.create(\n    model=\"ray-2\",\n    aspect_ratio=\"16:9\",\n    loop=False,\n    prompt=\"A teddy bear in sunglasses playing electric guitar, dancing and headbanging in the jungle in front of a large beautiful waterfall\",\n)\nprint(generation.id)",
+          "evidenceLine": 33,
+          "evidenceSourceId": "specialist-luma"
+        }
+      ],
+      "notes": [
+        "A separate audio endpoint does not prove every Ray model has native audio generation."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "elevenlabs",
+      "changes": {
+        "description": "ElevenLabs provides speech-generation models and developer interfaces for voice workflows. Its Python SDK documents Eleven v3 and other speech models, voice management, ElevenAgents and a Speech Engine interface.",
+        "provides": "Text-to-speech model APIs, voice-management interfaces, real-time voice agents and server-side speech-engine integration.",
+        "howUsed": "Applications convert text into audio using a selected model and voice, stream speech, or connect a real-time agent workflow through ElevenAgents or Speech Engine.",
+        "website": "https://elevenlabs.io/"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "Official SDK model descriptions, text-to-speech example and voice-agent interfaces; not a complete ElevenLabs portfolio or independently measured performance review."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "Official SDK model descriptions, text-to-speech example and voice-agent interfaces; not a complete ElevenLabs portfolio or independently measured performance review."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "Official SDK model descriptions, text-to-speech example and voice-agent interfaces; not a complete ElevenLabs portfolio or independently measured performance review."
+        },
+        "website": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "Official SDK model descriptions, text-to-speech example and voice-agent interfaces; not a complete ElevenLabs portfolio or independently measured performance review."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Eleven v3",
+          "kind": "Speech model",
+          "role": "Text-to-speech model listed in the SDK",
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "documentedAttributes": {
+            "publisherStatedLanguageCoverage": "70+",
+            "documentedUse": "speech delivery and natural multi-speaker dialogue"
+          },
+          "evidenceExcerpt": "1. **Eleven v3** (`eleven_v3`)\n    - Dramatic delivery and performances\n    - 70+ languages supported\n    - Supported for natural multi-speaker dialogue",
+          "evidenceLine": 27,
+          "evidenceSourceId": "specialist-elevenlabs"
+        },
+        {
+          "name": "Eleven Multilingual v2",
+          "kind": "Speech model",
+          "role": "Text-to-speech model listed in the SDK",
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "documentedAttributes": {
+            "publisherStatedLanguageCoverage": "29"
+          },
+          "evidenceExcerpt": "2. **Eleven Multilingual v2** (`eleven_multilingual_v2`)\n\n    - Excels in stability, language diversity, and accent accuracy\n    - Supports 29 languages",
+          "evidenceLine": 32,
+          "evidenceSourceId": "specialist-elevenlabs"
+        },
+        {
+          "name": "Eleven Flash v2.5",
+          "kind": "Speech model",
+          "role": "Text-to-speech model listed in the SDK",
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "documentedAttributes": {
+            "publisherStatedLanguageCoverage": "32"
+          },
+          "evidenceExcerpt": "3. **Eleven Flash v2.5** (`eleven_flash_v2_5`)\n\n    - Ultra-low latency\n    - Supports 32 languages",
+          "evidenceLine": 38,
+          "evidenceSourceId": "specialist-elevenlabs"
+        },
+        {
+          "name": "Eleven Turbo v2.5",
+          "kind": "Speech model",
+          "role": "Text-to-speech model listed in the SDK",
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "documentedAttributes": {
+            "publisherStatedLanguageCoverage": "32"
+          },
+          "evidenceExcerpt": "4. **Eleven Turbo v2.5** (`eleven_turbo_v2_5`)\n\n    - Good balance of quality and latency\n    - Ideal for developer use cases where speed is crucial\n    - Supports 32 languages",
+          "evidenceLine": 44,
+          "evidenceSourceId": "specialist-elevenlabs"
+        },
+        {
+          "name": "ElevenAgents",
+          "kind": "Voice-agent platform",
+          "role": "Interactive agents with real-time audio",
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "## ElevenAgents\n\nBuild interactive AI agents with real-time audio capabilities using ElevenAgents.",
+          "evidenceLine": 166,
+          "evidenceSourceId": "specialist-elevenlabs"
+        },
+        {
+          "name": "Speech Engine",
+          "kind": "API integration",
+          "role": "Server-side transcript handling and streaming LLM responses for text-to-speech",
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "## Speech Engine\n\nSpeech Engine lets you build server-side voice agents that receive real-time transcripts from the ElevenLabs API and stream LLM responses back for text-to-speech synthesis. Your server acts as a WebSocket endpoint — ElevenLabs connects to it, sends user transcripts, and your code decides how to respond.\n\nSpeech Engine is async-only and available on `AsyncElevenLabs`.",
+          "evidenceLine": 269,
+          "evidenceSourceId": "specialist-elevenlabs"
+        }
+      ],
+      "notes": [],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "eleven-v3",
+      "changes": {
+        "description": "Eleven v3 is an ElevenLabs speech-generation model. The publisher’s SDK demonstrates text-to-speech output and describes multilingual delivery and natural multi-speaker dialogue.",
+        "products": [
+          "Text-to-speech",
+          "Multilingual speech",
+          "Multi-speaker dialogue"
+        ],
+        "provides": "Speech audio generated from text with a selected voice through the ElevenLabs API.",
+        "howUsed": "Applications call the text-to-speech interface with the eleven_v3 model identifier and receive audio in the selected output format."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "Explicit Eleven v3 model description and text_to_speech.convert example support speech/audio capabilities; replaces unsourced blanket Image/Video/Audio capability labels."
+        },
+        "products": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "Explicit Eleven v3 model description and text_to_speech.convert example support speech/audio capabilities; replaces unsourced blanket Image/Video/Audio capability labels."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "Explicit Eleven v3 model description and text_to_speech.convert example support speech/audio capabilities; replaces unsourced blanket Image/Video/Audio capability labels."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "Explicit Eleven v3 model description and text_to_speech.convert example support speech/audio capabilities; replaces unsourced blanket Image/Video/Audio capability labels."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Eleven v3",
+          "kind": "Speech model",
+          "role": "Text-to-speech and multi-speaker dialogue",
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "1. **Eleven v3** (`eleven_v3`)\n    - Dramatic delivery and performances\n    - 70+ languages supported\n    - Supported for natural multi-speaker dialogue",
+          "evidenceLine": 27,
+          "evidenceSourceId": "specialist-elevenlabs"
+        }
+      ],
+      "notes": [
+        "This is a model record, not the entire ElevenLabs platform. Image/video capabilities elsewhere in the company would not establish this model’s modalities."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "elevenlabs-conversational-ai",
+      "changes": {
+        "description": "ElevenLabs documents its real-time conversational agent interface as ElevenAgents. The SDK supports interactive audio conversations and connects client-side tools to agent workflows.",
+        "provides": "A voice-agent conversation interface and SDK integration for real-time audio applications.",
+        "howUsed": "Developers configure an agent conversation, connect an audio interface, and register application tools through the ElevenLabs SDK."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "ElevenAgents section and SDK conversation/tool examples. Existing entity ID is preserved; this does not prove a formal product-renaming effective date."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "ElevenAgents section and SDK conversation/tool examples. Existing entity ID is preserved; this does not prove a formal product-renaming effective date."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "scope": "ElevenAgents section and SDK conversation/tool examples. Existing entity ID is preserved; this does not prove a formal product-renaming effective date."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "ElevenAgents",
+          "kind": "Voice-agent platform",
+          "role": "Real-time audio agents",
+          "sourceIds": [
+            "specialist-elevenlabs"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "## ElevenAgents\n\nBuild interactive AI agents with real-time audio capabilities using ElevenAgents.",
+          "evidenceLine": 166,
+          "evidenceSourceId": "specialist-elevenlabs"
+        }
+      ],
+      "notes": [],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "hume-ai",
+      "changes": {
+        "description": "Hume AI exposes an Empathic Voice Interface and text-to-speech APIs through its Python SDK. The documentation separates their interfaces and supported operating systems.",
+        "provides": "Empathic Voice Interface and text-to-speech APIs with Python client support.",
+        "howUsed": "Applications connect to the appropriate empathic-voice or text-to-speech namespace, using the supported SDK/runtime environment for that product."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-hume"
+          ],
+          "scope": "Current documented SDK namespaces and compatibility, not a complete historical Hume product list or evidence for the inherited Music models label."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-hume"
+          ],
+          "scope": "Current documented SDK namespaces and compatibility, not a complete historical Hume product list or evidence for the inherited Music models label."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-hume"
+          ],
+          "scope": "Current documented SDK namespaces and compatibility, not a complete historical Hume product list or evidence for the inherited Music models label."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Empathic Voice Interface",
+          "kind": "Voice API",
+          "role": "Interactive empathic-voice interface",
+          "sourceIds": [
+            "specialist-hume"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "documentedAttributes": {
+            "documentedPythonVersions": "3.9–3.13",
+            "documentedOS": [
+              "macOS",
+              "Linux"
+            ]
+          },
+          "evidenceExcerpt": "- For the [Empathic Voice Interface](https://dev.hume.ai/docs/empathic-voice-interface-evi/overview), Python versions `3.9` through `3.13` are supported on macOS and Linux.",
+          "evidenceLine": 30,
+          "evidenceSourceId": "specialist-hume"
+        },
+        {
+          "name": "Hume Text-to-Speech",
+          "kind": "API",
+          "role": "Text-to-speech synthesis",
+          "sourceIds": [
+            "specialist-hume"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "documentedAttributes": {
+            "documentedPythonVersions": "3.9–3.13",
+            "documentedOS": [
+              "macOS",
+              "Linux",
+              "Windows"
+            ]
+          },
+          "evidenceExcerpt": "- For [Text-to-speech (TTS)](https://dev.hume.ai/docs/text-to-speech-tts/overview), Python versions `3.9` through `3.13` are supported on macOS, Linux, and Windows.",
+          "evidenceLine": 31,
+          "evidenceSourceId": "specialist-hume"
+        }
+      ],
+      "notes": [
+        "The README reports removed legacy interfaces; do not promote historical expression-measurement SDK methods as current without their own source."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "writer-ai",
+      "changes": {
+        "description": "Writer provides an API and Python SDK for language-model applications. Its documented API includes chat and completions, application execution, graph-based question answering, file handling, PDF parsing, web search and vision analysis.",
+        "provides": "Writer model/application APIs, graph and file workflows, and documented document-processing and search tools.",
+        "howUsed": "Developers call Writer’s SDK to run applications or model requests, upload files, query graphs and use the separately documented PDF, web-search or vision endpoints.",
+        "website": "https://writer.com"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-writer",
+            "specialist-writer-api"
+          ],
+          "scope": "Documented Writer API operations; not proof every Palmyra model itself has every API-level capability."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-writer",
+            "specialist-writer-api"
+          ],
+          "scope": "Documented Writer API operations; not proof every Palmyra model itself has every API-level capability."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-writer",
+            "specialist-writer-api"
+          ],
+          "scope": "Documented Writer API operations; not proof every Palmyra model itself has every API-level capability."
+        },
+        "website": {
+          "sourceIds": [
+            "specialist-writer-profile"
+          ],
+          "scope": "Website explicitly linked by the Writer GitHub organization profile; corporate facts and service availability not reverified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Writer API",
+          "kind": "API",
+          "role": "Chat, application and completion workflows",
+          "sourceIds": [
+            "specialist-writer-api",
+            "specialist-writer"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "- <code title=\"post /v1/chat\">client.chat.<a href=\"./src/writerai/resources/chat.py\">chat</a>(\\*\\*<a href=\"src/writerai/types/chat_chat_params.py\">params</a>) -> <a href=\"./src/writerai/types/chat_completion.py\">ChatCompletion</a></code>\n\n# Completions\n\nTypes:\n\n```python\nfrom writerai.types import Completion, CompletionChunk, CompletionParams\n```\n\nMethods:\n\n- <code title=\"post /v1/completions\">client.completions.<a href=\"./src/writerai/resources/completions.py\">create</a>(\\*\\*<a href=\"src/writerai/types/completion_create_params.py\">params</a>) -> <a href=\"./src/writerai/types/completion.py\">Completion</a></code>",
+          "evidenceLine": 90,
+          "evidenceSourceId": "specialist-writer-api"
+        },
+        {
+          "name": "Writer Graph APIs",
+          "kind": "API",
+          "role": "Graph/file management and graph question answering",
+          "sourceIds": [
+            "specialist-writer-api"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "- <code title=\"post /v1/graphs\">client.graphs.<a href=\"./src/writerai/resources/graphs.py\">create</a>(\\*\\*<a href=\"src/writerai/types/graph_create_params.py\">params</a>) -> <a href=\"./src/writerai/types/graph_create_response.py\">GraphCreateResponse</a></code>\n- <code title=\"get /v1/graphs/{graph_id}\">client.graphs.<a href=\"./src/writerai/resources/graphs.py\">retrieve</a>(graph_id) -> <a href=\"./src/writerai/types/graph.py\">Graph</a></code>\n- <code title=\"put /v1/graphs/{graph_id}\">client.graphs.<a href=\"./src/writerai/resources/graphs.py\">update</a>(graph_id, \\*\\*<a href=\"src/writerai/types/graph_update_params.py\">params</a>) -> <a href=\"./src/writerai/types/graph_update_response.py\">GraphUpdateResponse</a></code>\n- <code title=\"get /v1/graphs\">client.graphs.<a href=\"./src/writerai/resources/graphs.py\">list</a>(\\*\\*<a href=\"src/writerai/types/graph_list_params.py\">params</a>) -> <a href=\"./src/writerai/types/graph.py\">SyncCursorPage[Graph]</a></code>\n- <code title=\"delete /v1/graphs/{graph_id}\">client.graphs.<a href=\"./src/writerai/resources/graphs.py\">delete</a>(graph_id) -> <a href=\"./src/writerai/types/graph_delete_response.py\">GraphDeleteResponse</a></code>\n- <code title=\"post /v1/graphs/{graph_id}/file\">client.graphs.<a href=\"./src/writerai/resources/graphs.py\">add_file_to_graph</a>(graph_id, \\*\\*<a href=\"src/writerai/types/graph_add_file_to_graph_params.py\">params</a>) -> <a href=\"./src/writerai/types/file.py\">File</a></code>\n- <code title=\"post /v1/graphs/question\">client.graphs.<a href=\"./src/writerai/resources/graphs.py\">question</a>(\\*\\*<a href=\"src/writerai/types/graph_question_params.py\">params</a>) -> <a href=\"./src/writerai/types/question.py\">Question</a></code>",
+          "evidenceLine": 134,
+          "evidenceSourceId": "specialist-writer-api"
+        },
+        {
+          "name": "Writer Document/Search Tools",
+          "kind": "API",
+          "role": "PDF parsing, web search and vision-analysis endpoints",
+          "sourceIds": [
+            "specialist-writer-api"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "- <code title=\"post /v1/tools/pdf-parser/{file_id}\">client.tools.<a href=\"./src/writerai/resources/tools.py\">parse_pdf</a>(file_id, \\*\\*<a href=\"src/writerai/types/tool_parse_pdf_params.py\">params</a>) -> <a href=\"./src/writerai/types/tool_parse_pdf_response.py\">ToolParsePdfResponse</a></code>\n- <code title=\"post /v1/tools/web-search\">client.tools.<a href=\"./src/writerai/resources/tools.py\">web_search</a>(\\*\\*<a href=\"src/writerai/types/tool_web_search_params.py\">params</a>) -> <a href=\"./src/writerai/types/tool_web_search_response.py\">ToolWebSearchResponse</a></code>\n\n# Vision\n\nTypes:\n\n```python\nfrom writerai.types import VisionRequest, VisionResponse\n```\n\nMethods:\n\n- <code title=\"post /v1/vision\">client.vision.<a href=\"./src/writerai/resources/vision.py\">analyze</a>(\\*\\*<a href=\"src/writerai/types/vision_analyze_params.py\">params</a>) -> <a href=\"./src/writerai/types/vision_response.py\">VisionResponse</a></code>",
+          "evidenceLine": 170,
+          "evidenceSourceId": "specialist-writer-api"
+        },
+        {
+          "name": "palmyra-x5",
+          "kind": "Documented API identifier",
+          "role": "Model identifier used in official SDK chat examples",
+          "sourceIds": [
+            "specialist-writer"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "chat_completion = client.chat.chat(\n    messages=[\n        {\n            \"content\": \"Write a haiku about programming\",\n            \"role\": \"user\",\n        }\n    ],\n    model=\"palmyra-x5\",\n)\nprint(chat_completion.choices[0].message.content)",
+          "evidenceLine": 81,
+          "evidenceSourceId": "specialist-writer"
+        }
+      ],
+      "notes": [],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "writer-palmyra",
+      "changes": {
+        "description": "The Writer Palmyra entry represents a model family used through Writer’s API. The official Python SDK demonstrates the palmyra-x5 identifier in chat requests.",
+        "provides": "Model access through Writer’s chat interface, with palmyra-x5 documented in SDK examples.",
+        "howUsed": "Applications send messages to the Writer chat API using a supported model identifier and their configured API access."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-writer",
+            "specialist-writer-api"
+          ],
+          "scope": "SDK identifier and chat interface only; no complete Palmyra release, modality or benchmark claim."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-writer",
+            "specialist-writer-api"
+          ],
+          "scope": "SDK identifier and chat interface only; no complete Palmyra release, modality or benchmark claim."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-writer",
+            "specialist-writer-api"
+          ],
+          "scope": "SDK identifier and chat interface only; no complete Palmyra release, modality or benchmark claim."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "palmyra-x5",
+          "kind": "Documented API identifier",
+          "role": "Writer chat model example",
+          "sourceIds": [
+            "specialist-writer"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "chat_completion = client.chat.chat(\n    messages=[\n        {\n            \"content\": \"Write a haiku about programming\",\n            \"role\": \"user\",\n        }\n    ],\n    model=\"palmyra-x5\",\n)\nprint(chat_completion.choices[0].message.content)",
+          "evidenceLine": 81,
+          "evidenceSourceId": "specialist-writer"
+        }
+      ],
+      "notes": [
+        "The Company type needs review: Palmyra is a model-family label. Writer’s broader API includes capabilities that must not all be attributed to every Palmyra model."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "perplexity",
+      "changes": {
+        "description": "Perplexity provides search and model APIs through an official Python SDK. The SDK documents web search results, chat completions and streamed responses, including examples using the sonar identifier.",
+        "provides": "A Search API and chat-completion interfaces with synchronous, asynchronous and streaming Python clients.",
+        "howUsed": "Applications request web-search results with titles and URLs or send chat requests through the Perplexity SDK and consume complete or streamed responses."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-perplexity"
+          ],
+          "scope": "Official SDK search/chat operations and examples. No claim of exhaustive product coverage, source accuracy, Comet behavior or a Deep Research release date."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-perplexity"
+          ],
+          "scope": "Official SDK search/chat operations and examples. No claim of exhaustive product coverage, source accuracy, Comet behavior or a Deep Research release date."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-perplexity"
+          ],
+          "scope": "Official SDK search/chat operations and examples. No claim of exhaustive product coverage, source accuracy, Comet behavior or a Deep Research release date."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Perplexity Search API",
+          "kind": "API",
+          "role": "Web-search results",
+          "sourceIds": [
+            "specialist-perplexity"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "## Search API\n\nGet web search results:\n\n```python\nimport os\nfrom perplexity import Perplexity\n\nclient = Perplexity(\n    api_key=os.environ.get(\"PERPLEXITY_API_KEY\"),  # This is the default and can be omitted\n)\n\nsearch = client.search.create(query=\"latest AI developments 2024\", max_results=5)\n\nfor result in search.results:\n    print(f\"{result.title}: {result.url}\")\n```",
+          "evidenceLine": 21,
+          "evidenceSourceId": "specialist-perplexity"
+        },
+        {
+          "name": "Perplexity Chat Completions API",
+          "kind": "API",
+          "role": "Model responses with optional streaming",
+          "sourceIds": [
+            "specialist-perplexity"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "## Streaming responses\n\nWe provide support for streaming responses using Server Side Events (SSE).\n\n```python\nfrom perplexity import Perplexity\n\nclient = Perplexity()\n\nstream = client.chat.completions.create(\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": \"Tell me about the latest developments in AI\",\n        }\n    ],\n    model=\"sonar\",\n    stream=True,\n)",
+          "evidenceLine": 140,
+          "evidenceSourceId": "specialist-perplexity"
+        },
+        {
+          "name": "sonar",
+          "kind": "Documented API identifier",
+          "role": "Identifier used in chat examples",
+          "sourceIds": [
+            "specialist-perplexity"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "stream_chunk = client.chat.completions.create(\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": \"Tell me about the latest developments in AI\",\n        }\n    ],\n    model=\"sonar\",\n)",
+          "evidenceLine": 51,
+          "evidenceSourceId": "specialist-perplexity"
+        }
+      ],
+      "notes": [
+        "The separate Perplexity Deep Research and Comet records need their own product documentation; a generic chat/search SDK does not verify their complete capabilities."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "midjourney",
+      "changes": {
+        "website": "https://midjourney.com"
+      },
+      "fieldEvidence": {
+        "website": {
+          "sourceIds": [
+            "specialist-midjourney-profile"
+          ],
+          "scope": "Website linked by the Midjourney organization profile. Identity-link evidence only; products were not reverified."
+        }
+      },
+      "productFacts": [],
+      "notes": [
+        "Corporate site access returned proxy CONNECT 403. No newly verified product or current model-version facts are proposed."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "suno",
+      "changes": {
+        "description": "Suno publishes Bark, a text-to-audio model with downloadable checkpoints, and separately points users to its text-to-music service. Bark can generate multilingual speech and other audio, including music and sound effects.",
+        "provides": "Bark model checkpoints and inference tooling for generative audio; the publisher separately links its text-to-music offering.",
+        "howUsed": "Researchers run Bark checkpoints for generative text-to-audio experiments. Users seeking Suno’s separate text-to-music service follow the publisher’s service link and its own terms."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-suno-bark"
+          ],
+          "scope": "Bark’s publisher description and its explicit distinction from Suno text-to-music models; not a current Suno music-model release review."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-suno-bark"
+          ],
+          "scope": "Bark’s publisher description and its explicit distinction from Suno text-to-music models; not a current Suno music-model release review."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-suno-bark"
+          ],
+          "scope": "Bark’s publisher description and its explicit distinction from Suno text-to-music models; not a current Suno music-model release review."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Bark",
+          "kind": "Audio model",
+          "role": "Generative text-to-audio for multilingual speech, music and effects",
+          "sourceIds": [
+            "specialist-suno-bark"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Publisher states MIT licensing for Bark and calls it a research model; generated audio can deviate from the text prompt. This does not license other Suno services.",
+          "evidenceExcerpt": "Bark is a transformer-based text-to-audio model created by [Suno](https://suno.ai). Bark can generate highly realistic, multilingual speech as well as other audio - including music, background noise and simple sound effects. The model can also produce nonverbal communications like laughing, sighing and crying. To support the research community, we are providing access to pretrained model checkpoints, which are ready for inference and available for commercial use.",
+          "evidenceLine": 18,
+          "evidenceSourceId": "specialist-suno-bark"
+        }
+      ],
+      "notes": [
+        "Suno v5 is an inherited model label and is not verified by Bark documentation. Bark’s MIT statement must not be applied to Suno’s commercial music service."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "deepl-research",
+      "changes": {
+        "description": "DeepL’s API provides text and document translation and a separate Write API for improving or rephrasing text. The Python library also supports translation glossaries.",
+        "provides": "Text/document translation, text improvement through the Write API, and custom terminology glossaries.",
+        "howUsed": "Applications submit text or documents for translation, manage glossaries for preferred terminology, or call the separate Write API to improve wording."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-deepl"
+          ],
+          "scope": "DeepL API functionality represented by this existing record; does not establish a separate company or formal unit named DeepL Research."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-deepl"
+          ],
+          "scope": "DeepL API functionality represented by this existing record; does not establish a separate company or formal unit named DeepL Research."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-deepl"
+          ],
+          "scope": "DeepL API functionality represented by this existing record; does not establish a separate company or formal unit named DeepL Research."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "DeepL Translation API",
+          "kind": "API / feature",
+          "role": "Translate text and documents",
+          "sourceIds": [
+            "specialist-deepl"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "### Translating documents\n\nTo translate documents, you may call either `translate_document()` using file IO\nobjects, or `translate_document_from_filepath()` using file paths. For both\nfunctions, the first and second arguments correspond to the input and output\nfiles respectively.\n\nJust as for the `translate_text()` function, the `source_lang` and\n`target_lang` arguments specify the source and target language codes.",
+          "evidenceLine": 279,
+          "evidenceSourceId": "specialist-deepl"
+        },
+        {
+          "name": "DeepL Write API",
+          "kind": "API / feature",
+          "role": "Improve or rephrase text without translation",
+          "sourceIds": [
+            "specialist-deepl"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "### Improving text (Write API)\n\nYou can use the Write API to improve or rephrase text. This is implemented in\nthe `rephrase_text()` method. The first argument is a string containing the text\nyou want to translate, or a list of strings if you want to translate multiple texts.\n\n`target_lang` optionally specifies the target language, e.g. when you want to change\nthe variant of a text (for example, you can send an english text to the write API and\nuse `target_lang` to turn it into British or American English). Please note that the\nWrite API itself does NOT translate. If you wish to translate and improve a text, you\nwill need to make multiple calls in a chain.",
+          "evidenceLine": 224,
+          "evidenceSourceId": "specialist-deepl"
+        },
+        {
+          "name": "DeepL Glossaries",
+          "kind": "API / feature",
+          "role": "Custom terminology for translation",
+          "sourceIds": [
+            "specialist-deepl"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "### Glossaries\n\nGlossaries allow you to customize your translations using user-defined terms.\nMultiple glossaries can be stored with your account, each with a user-specified\nname and a uniquely-assigned ID.",
+          "evidenceLine": 354,
+          "evidenceSourceId": "specialist-deepl"
+        }
+      ],
+      "notes": [
+        "The Write API does not translate; translation plus rewriting requires separate calls. The current Research label and Company type need identity review."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "synthesia",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Corporate source access is blocked. A same-named GitHub account lacked an official company website/identity link, so it was not used as Synthesia AI product evidence."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "heygen",
+      "changes": {
+        "description": "HeyGen’s LiveAvatar web resources include a browser SDK and reference applications for real-time avatar sessions. The examples demonstrate video streaming, voice chat and optional client-side background replacement.",
+        "provides": "A LiveAvatar web SDK and reference browser applications for real-time avatar interactions.",
+        "howUsed": "Developers integrate the LiveAvatar web SDK, configure a session, display its video stream and connect voice-chat interactions using the published examples."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-heygen-live"
+          ],
+          "scope": "The @heygen LiveAvatar package and reference apps, not all HeyGen video-generation/localization products or current legal ownership."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-heygen-live"
+          ],
+          "scope": "The @heygen LiveAvatar package and reference apps, not all HeyGen video-generation/localization products or current legal ownership."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-heygen-live"
+          ],
+          "scope": "The @heygen LiveAvatar package and reference apps, not all HeyGen video-generation/localization products or current legal ownership."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "LiveAvatar Web SDK",
+          "kind": "SDK",
+          "role": "Web avatar sessions, video stream and voice chat",
+          "sourceIds": [
+            "specialist-heygen-live"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "This repository contains the web resources for LiveAvatar.\n\n### Packages\n\nWe offer the following web SDKs to help you quickly build with Live Avatar.\n\n- `@heygen/liveavatar-web-sdk`: [The LiveAvatar Web SDK](https://www.npmjs.com/package/@heygen/liveavatar-web-sdk)\n\n### Demos\n\nReference apps for building with LiveAvatar. Each is a standalone Next.js app under `apps/`.\n\n| Demo               | Path                                             | Port | What it shows                                                                                                                   |\n| ------------------ | ------------------------------------------------ | ---- | ------------------------------------------------------------------------------------------------------------------------------- |\n| Basic demo         | [`apps/demo`](./apps/demo)                       | 3001 | Minimal LiveAvatar session — config form, video stream, voice chat. Good starting point.                                        |",
+          "evidenceLine": 3,
+          "evidenceSourceId": "specialist-heygen-live"
+        },
+        {
+          "name": "LiveAvatar background-removal demo",
+          "kind": "Reference application",
+          "role": "Client-side chroma-key and background replacement",
+          "sourceIds": [
+            "specialist-heygen-live"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "| Background removal | [`apps/bg-removal-demo`](./apps/bg-removal-demo) | 3002 | Client-side chroma-key on the green-screen video stream. Swap background to color, image, or video URL with no session restart. |",
+          "evidenceLine": 18,
+          "evidenceSourceId": "specialist-heygen-live"
+        }
+      ],
+      "notes": [
+        "The current catalog record is an Application. The source establishes the publisher-namespaced LiveAvatar SDK, not a separately verified parent-company legal relationship."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "assemblyai",
+      "changes": {
+        "description": "AssemblyAI provides speech-to-text interfaces for prerecorded audio, short clips, dictation and live streams. Its SDK also documents transcript-understanding features and an LLM Gateway for routed model requests.",
+        "provides": "Transcription APIs, transcript-understanding workflows and an LLM Gateway with synchronous/asynchronous Python clients.",
+        "howUsed": "Developers choose the transcriber for recorded, short-form, dictation or streaming audio, then optionally process the resulting transcript through supported understanding or LLM Gateway workflows."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-assemblyai"
+          ],
+          "scope": "Transcriber selection table and LLM Gateway documentation. Third-party model routing does not make AssemblyAI the developer of those models."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-assemblyai"
+          ],
+          "scope": "Transcriber selection table and LLM Gateway documentation. Third-party model routing does not make AssemblyAI the developer of those models."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-assemblyai"
+          ],
+          "scope": "Transcriber selection table and LLM Gateway documentation. Third-party model routing does not make AssemblyAI the developer of those models."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "AssemblyAI Prerecorded Transcription",
+          "kind": "API / SDK interface",
+          "role": "Polled transcription jobs and audio-intelligence features",
+          "sourceIds": [
+            "specialist-assemblyai"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "| `assemblyai.prerecorded.v2.Transcriber` | Long-form audio, URLs, and the audio-intelligence features (speaker labels, chapters, sentiment, …), over the polled job API |\n| `assemblyai.prerecorded.v2.AsyncTranscriber` | The same, from asyncio code |",
+          "evidenceLine": 104,
+          "evidenceSourceId": "specialist-assemblyai"
+        },
+        {
+          "name": "AssemblyAI Sync STT",
+          "kind": "API / SDK interface",
+          "role": "Short audio clips returned in one request",
+          "sourceIds": [
+            "specialist-assemblyai"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "| `assemblyai.sync.v1.SyncTranscriber` | Short clips (≤120s, ≤40MB) where you want the transcript back in one request, at the lowest latency — from a file you already have (`transcribe()`) or uploaded while it is still being recorded (`open_live()`, `transcribe_live()`) |\n| `assemblyai.sync.v1.AsyncSyncTranscriber` | The same, from asyncio code |",
+          "evidenceLine": 106,
+          "evidenceSourceId": "specialist-assemblyai"
+        },
+        {
+          "name": "AssemblyAI Dictation",
+          "kind": "API / SDK interface",
+          "role": "Dictation transcript with optional LLM rewrite",
+          "sourceIds": [
+            "specialist-assemblyai"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "| `assemblyai.dictation.v1.DictationTranscriber` | Dictation: short spoken notes uploaded as they are spoken, returned as one transcript with an optional LLM rewrite (`final_text`). Push audio from a callback (`open_live()`) or hand over an iterator, file object, bytes or path (`transcribe_live()`) |\n| `assemblyai.dictation.v1.AsyncDictationTranscriber` | The same, from asyncio code |",
+          "evidenceLine": 108,
+          "evidenceSourceId": "specialist-assemblyai"
+        },
+        {
+          "name": "AssemblyAI Streaming STT",
+          "kind": "API / SDK interface",
+          "role": "Live audio transcription over WebSockets",
+          "sourceIds": [
+            "specialist-assemblyai"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "| `assemblyai.streaming.v3.RealTimeTranscriber` | Live audio (microphone, telephony, voice agents), transcribed as it arrives over a websocket session |\n| `assemblyai.streaming.v3.AsyncRealTimeTranscriber` | The same, from asyncio code |",
+          "evidenceLine": 110,
+          "evidenceSourceId": "specialist-assemblyai"
+        },
+        {
+          "name": "AssemblyAI LLM Gateway",
+          "kind": "API / SDK interface",
+          "role": "Routed chat completions and transcript-understanding workflows",
+          "sourceIds": [
+            "specialist-assemblyai"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "### **LLM Gateway Examples**\n\n`aai.LLMGateway` is a client for AssemblyAI's LLM Gateway — model listing, OpenAI-shaped chat completions routed to OpenAI/Claude/Gemini/Bedrock models, and speech understanding over an existing transcript. `aai.AsyncLLMGateway` is the asyncio counterpart, with the same resources and every API call a coroutine.\n\n[Read more about the LLM Gateway.](https://www.assemblyai.com/docs/llm-gateway/quickstart)",
+          "evidenceLine": 1353,
+          "evidenceSourceId": "specialist-assemblyai"
+        }
+      ],
+      "notes": [
+        "The inherited Voice synthesis and Music models labels are not verified by this SDK pass. No supplier relationship with routed model providers is inferred from interface support."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "speechmatics",
+      "changes": {
+        "description": "Speechmatics provides batch and real-time speech transcription, voice-agent interfaces and text-to-speech through its current Python SDK packages. The documentation separates each service and its integration requirements.",
+        "provides": "Batch and streaming speech-to-text, agent transcription/turn handling, voice-agent SDKs and text-to-speech interfaces.",
+        "howUsed": "Applications choose the batch, real-time, agent-STT, voice or TTS package for their workload and connect to the corresponding service with configured API access."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-speechmatics-current"
+          ],
+          "scope": "Current SDK package/functionality table. No music-model capability or broad latency/performance claim is inferred."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-speechmatics-current"
+          ],
+          "scope": "Current SDK package/functionality table. No music-model capability or broad latency/performance claim is inferred."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-speechmatics-current"
+          ],
+          "scope": "Current SDK package/functionality table. No music-model capability or broad latency/performance claim is inferred."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "speechmatics-batch",
+          "kind": "SDK/service interface",
+          "role": "Asynchronous batch transcription",
+          "sourceIds": [
+            "specialist-speechmatics-current"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "**[speechmatics-batch](./sdk/batch/README.md)** - Async batch transcription API\n\n- Upload audio files for processing\n- Get transcripts with timestamps, speakers, entities\n- Supports all audio intelligence features",
+          "evidenceLine": 73,
+          "evidenceSourceId": "specialist-speechmatics-current"
+        },
+        {
+          "name": "speechmatics-rt",
+          "kind": "SDK/service interface",
+          "role": "Real-time WebSocket transcription",
+          "sourceIds": [
+            "specialist-speechmatics-current"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "**[speechmatics-rt](./sdk/rt/README.md)** - Realtime WebSocket streaming\n\n- Stream audio for live transcription",
+          "evidenceLine": 79,
+          "evidenceSourceId": "specialist-speechmatics-current"
+        },
+        {
+          "name": "speechmatics-agent-stt",
+          "kind": "SDK/service interface",
+          "role": "Segment-level transcription and turn handling for agents",
+          "sourceIds": [
+            "specialist-speechmatics-current"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "**[speechmatics-agent-stt](./sdk/agent_stt/README.md)** - Agent STT SDK\n\n- Segment-level transcription for voice agents\n- Server-side VAD and turn detection, or bring your own (Pipecat, LiveKit)\n- Lightweight install: pure Python, no ML runtime or GPU required, all heavy lifting is done in the service itself",
+          "evidenceLine": 85,
+          "evidenceSourceId": "specialist-speechmatics-current"
+        },
+        {
+          "name": "speechmatics-voice",
+          "kind": "SDK/service interface",
+          "role": "Conversational voice-agent integration",
+          "sourceIds": [
+            "specialist-speechmatics-current"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "**[speechmatics-voice](./sdk/voice/README.md)** - Voice agent SDK\n\n- Build conversational AI applications\n- Speaker diarization and turn detection\n- Optional ML-based smart turn: `pip install speechmatics-voice[smart]`",
+          "evidenceLine": 91,
+          "evidenceSourceId": "specialist-speechmatics-current"
+        },
+        {
+          "name": "speechmatics-tts",
+          "kind": "SDK/service interface",
+          "role": "Text-to-speech in streaming and batch modes",
+          "sourceIds": [
+            "specialist-speechmatics-current"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "**[speechmatics-tts](./sdk/tts/README.md)** - Text-to-speech\n\n- Convert text to natural-sounding speech\n- Multiple voices and languages\n- Streaming and batch modes",
+          "evidenceLine": 97,
+          "evidenceSourceId": "specialist-speechmatics-current"
+        },
+        {
+          "name": "speechmatics-python (legacy)",
+          "kind": "Legacy SDK",
+          "role": "Former real-time/batch ASR client",
+          "sourceIds": [
+            "specialist-speechmatics"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Deprecated. README states no new features and bug/security patches only until 2025-12-31; use separately documented replacement packages.",
+          "evidenceExcerpt": "# Legacy Speechmatics Python Client\n\n> **⚠️ WARNING: This package (`speechmatics-python`) has been deprecated.**\n>\n> - **No new features** will be added\n> - **Bug fixes and security patches only** until **2025-12-31**\n>\n\n### Migration Path\n\n**New Official SDKs** (at [speechmatics-python-sdk](https://github.com/speechmatics/speechmatics-python-sdk)):\n\n| Old Package | New Package | Purpose | Migration Guide |\n|-------------|-------------|---------|-----------------|\n| `speechmatics-python` | [`speechmatics-batch`](https://pypi.org/project/speechmatics-batch) | Batch transcription | [📖 Batch Migration Guide](https://github.com/speechmatics/speechmatics-python-sdk/blob/main/sdk/batch/MIGRATION.md) |\n| `speechmatics-python` | [`speechmatics-rt`](https://pypi.org/project/speechmatics-rt) | Real-time transcription | [📖 RT Migration Guide](https://github.com/speechmatics/speechmatics-python-sdk/blob/main/sdk/rt/MIGRATION.md) |\n| `speechmatics.cli` | Not available (will be released as a separate package) | | |",
+          "evidenceLine": 1,
+          "evidenceSourceId": "specialist-speechmatics"
+        }
+      ],
+      "notes": [
+        "The legacy speechmatics-python package is deprecated; its README scheduled bug/security patches only until 2025-12-31. Current packages are separately documented."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "pika",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "pika.art was blocked by proxy CONNECT 403. Same-named GitHub repositories did not establish the intended company identity. The unrelated Python AMQP library named pika must not be used as Pika video-model evidence."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "fal-ai",
+      "changes": {
+        "description": "fal provides a serverless Python runtime for deploying and scaling code and serving machine-learning models. Its repository separates the fal deployment SDK from fal-client for calling model APIs or deployed endpoints.",
+        "provides": "A serverless application/model-serving runtime, a deployment SDK/CLI and a Python API client.",
+        "howUsed": "Developers use fal to define, test and deploy serverless applications, or fal-client to call a model API or their own deployed endpoint.",
+        "website": "https://fal.ai"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "specialist-fal"
+          ],
+          "scope": "Official runtime and package descriptions. Hosting a model does not establish that fal developed it or owns its underlying weights."
+        },
+        "provides": {
+          "sourceIds": [
+            "specialist-fal"
+          ],
+          "scope": "Official runtime and package descriptions. Hosting a model does not establish that fal developed it or owns its underlying weights."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "specialist-fal"
+          ],
+          "scope": "Official runtime and package descriptions. Hosting a model does not establish that fal developed it or owns its underlying weights."
+        },
+        "website": {
+          "sourceIds": [
+            "specialist-fal"
+          ],
+          "scope": "Official runtime and package descriptions. Hosting a model does not establish that fal developed it or owns its underlying weights."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "fal",
+          "kind": "Runtime / SDK",
+          "role": "Serverless Python application and model deployment",
+          "sourceIds": [
+            "specialist-fal"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "The `fal` package includes the Python SDK and CLI for building serverless apps, testing them with temporary URLs, and deploying them to production.",
+          "evidenceLine": 21,
+          "evidenceSourceId": "specialist-fal"
+        },
+        {
+          "name": "fal-client",
+          "kind": "SDK",
+          "role": "Call model APIs or deployed endpoints",
+          "sourceIds": [
+            "specialist-fal"
+          ],
+          "evidenceStatus": "documented_primary",
+          "scope": "Only this named product/interface and described role are documented; inherited portfolio labels are not collectively verified.",
+          "availability": "Documented in the inspected source; current pricing, account access, regional availability and commercial entitlement were not independently verified.",
+          "evidenceExcerpt": "- `fal-client` (in `projects/fal_client`): call fal model APIs or your deployed endpoints from Python",
+          "evidenceLine": 13,
+          "evidenceSourceId": "specialist-fal"
+        }
+      ],
+      "notes": [],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "ai21-labs-research",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "No separate research-company identity established by AI21 SDK documentation.",
+        "Related existing catalog record: ai21. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "stability-ai-research",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Research label needs parent/program mapping; no independent legal identity established.",
+        "Related existing catalog record: stability. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "black-forest-labs-research",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Generic language-model and sovereign-AI labels are not supported by the inspected FLUX image-model documentation.",
+        "Related existing catalog record: black-forest-labs. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "runway-research",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Company API capabilities do not establish a distinct research legal entity.",
+        "Related existing catalog record: runway. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "suno-research",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Bark has a research purpose, but that does not establish a separate company called Suno Research.",
+        "Related existing catalog record: suno. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "midjourney-models",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Model-family/program label requires parent mapping; current product details remain blocked.",
+        "Related existing catalog record: midjourney. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "perplexity-deep-research",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Generic Search/Chat SDK does not fully verify this named product’s capabilities.",
+        "Related existing catalog record: perplexity. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "perplexity-comet-agent",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Comet-specific product documentation remains required.",
+        "Related existing catalog record: perplexity. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "runway-gen-4",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Image-to-video example for gen4_turbo does not establish all Image/Video/Audio tags for the whole Gen-4 record.",
+        "Related existing catalog record: runway. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "luma-ray",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "ray-2 generation example does not establish native audio across the Ray model family.",
+        "Related existing catalog record: luma-ai. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "midjourney-v7",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "No current primary product evidence retrieved; inherited multimedia tags remain pending.",
+        "Related existing catalog record: midjourney. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "suno-v5",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Bark documentation does not verify this music-model version or its inherited Image/Video/Audio tags.",
+        "Related existing catalog record: suno. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    },
+    {
+      "entityId": "pika-2-2",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "No current primary product evidence retrieved; inherited multimedia tags remain pending.",
+        "Related existing catalog record: pika. Preserve both IDs until their exact identity relationship is established."
+      ],
+      "reviewedOn": "2026-10-20",
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ]
+    }
+  ],
+  "blockedSources": [
+    {
+      "url": "https://www.midjourney.com",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://www.synthesia.io",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://pika.art",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://github.com/HeyGen-Official/StreamingAvatarSDK",
+      "requestedPath": "README.md",
+      "error": "HTTP Error 404: Not Found",
+      "attemptedOn": "2026-10-20",
+      "interpretation": "Discovery/README lookup failed; no company or product lifecycle conclusion."
+    },
+    {
+      "url": "https://github.com/heygen-com/streaming-avatar-sdk",
+      "requestedPath": "README.md",
+      "error": "HTTP Error 404: Not Found",
+      "attemptedOn": "2026-10-20",
+      "interpretation": "Discovery/README lookup failed; no company or product lifecycle conclusion."
+    }
+  ]
+}

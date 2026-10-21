@@ -1,0 +1,24 @@
+{
+  "reviewedOn": "2026-10-20",
+  "inventoryRowsAssessed": 150,
+  "externalEvidenceStatuses": {
+    "not_freshly_verified": 123,
+    "access_blocked": 2,
+    "scoped_primary_evidence": 21,
+    "insufficient_source": 4
+  },
+  "completeCorporateProfiles": 0,
+  "identityConcerns": 31,
+  "genericProfilesAtInventorySnapshot": 150,
+  "note": "Local inventory review covers all 150 robotics records; external primary-source evidence is bounded to the named subset. Not-freshly-verified does not mean a company or product does not exist.",
+  "factsSummary": {
+    "roboticsInventoryRecords": 150,
+    "entitiesWithScopedPrimaryEvidence": 21,
+    "sources": 25,
+    "productFacts": 138,
+    "proposedFieldChanges": 88,
+    "proposedSoftwareTypeCorrections": 7,
+    "blockedCorporateSources": 4,
+    "completeCorporateProfiles": 0
+  }
+}

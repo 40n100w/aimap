@@ -1,0 +1,231 @@
+{
+  "reviewedOn": "2026-10-20",
+  "sources": [
+    {
+      "id": "hardware-accuracy-aws-graviton",
+      "url": "https://raw.githubusercontent.com/aws/aws-graviton-getting-started/8b322a4160b827be202beedaf35ce21b4c635603/README.md",
+      "title": "aws/aws-graviton-getting-started README",
+      "revision": "8b322a4160b827be202beedaf35ce21b4c635603",
+      "retrievedOn": "2026-10-20",
+      "sha256": "c0ce099969b9bb9e643fb63461c0174b60499b28089cbc78f4dda10e95b563ce",
+      "excerpt": "This repository provides technical guidance for users and developers using [Amazon EC2 instances powered by AWS Graviton processors](https://aws.amazon.com/ec2/graviton/) (including the latest generation Graviton5 processors). While it calls out specific features of the Graviton processors themselves, this repository is also generally useful for anyone running code on Arm-based systems.",
+      "excerptStartLine": 3,
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Processor architecture, documented family names and software guidance only. Does not establish all regional availability, pricing, training workloads, suppliers or company-wide hardware portfolio.",
+      "additionalExcerpts": [
+        {
+          "excerpt": "Processor|Graviton2\t|Graviton3(E)\t| Graviton4 | Graviton5 |",
+          "excerptStartLine": 53
+        },
+        {
+          "excerpt": "Architecture revision\t|ARMv8.2-a\t|ARMv8.4-a\t|Armv9.0-a | Armv9.2-a |",
+          "excerptStartLine": 61
+        }
+      ]
+    },
+    {
+      "id": "hardware-accuracy-broadcom-openbcm",
+      "url": "https://raw.githubusercontent.com/Broadcom-Network-Switching-Software/OpenBCM/6d2330ce1b4fc49d681cffcf09af408661be4c62/README.md",
+      "title": "Broadcom-Network-Switching-Software/OpenBCM README",
+      "revision": "6d2330ce1b4fc49d681cffcf09af408661be4c62",
+      "retrievedOn": "2026-10-20",
+      "sha256": "5fa4887d0fd208cbab59db44d413495c769ca0b9810fffbfed52304ee9d2a0b6",
+      "excerpt": "This release has support for XGS switch devices such as Trident (TD2, TD3, TD4), Tomahawk (TH, TH2, TH3)\nand DNX devices such as Ramon, Qumran (Q2A, Q2U) and Jericho (JR2, J2C).",
+      "excerptStartLine": 18,
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Documents OpenBCM support for the named switch devices; does not establish the complete/latest Tomahawk portfolio, commercial availability, customer deployments, InfiniBand, DPU or optical-DSP functionality.",
+      "additionalExcerpts": [
+        {
+          "excerpt": "OpenBCM Broadcom Switch Software Development Kit contains the source code for Broadcom network switch APIs \nand drivers for programming Broadcom network switch silicon based platforms.",
+          "excerptStartLine": 6
+        }
+      ]
+    },
+    {
+      "id": "hardware-accuracy-nvidia-jetson",
+      "url": "https://raw.githubusercontent.com/NVIDIA-AI-IOT/jetson-generative-ai-playground/156b1263af04d8181218da3d1a6bbd2a3c8b8e28/README.md",
+      "title": "NVIDIA-AI-IOT/jetson-generative-ai-playground README",
+      "revision": "156b1263af04d8181218da3d1a6bbd2a3c8b8e28",
+      "retrievedOn": "2026-10-20",
+      "sha256": "eb9a06404756d6e240a022b4eaa23c43605a008dc16347fea85263a7eb58471b",
+      "excerpt": "The NVIDIA Jetson AI Lab is your guide to running generative AI models entirely on-device with NVIDIA Jetson. Explore optimized tutorials, benchmarks, and hands-on examples for LLMs, VLMs, image generation, speech recognition, and more.",
+      "excerptStartLine": 7,
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Documents Jetson as on-device hardware for AI and the associated tutorial site. Does not establish each product module, production model deployments, NPU architecture, AI-PC positioning, quantities or current commercial availability."
+    }
+  ],
+  "entities": [
+    {
+      "entityId": "aws-graviton",
+      "changes": {
+        "type": "Technology",
+        "description": "AWS Graviton is a family of Arm-based processors used in Amazon EC2 instances. AWS publishes technical guidance for its documented processor generations and for building, migrating and optimizing software on Graviton.",
+        "products": [
+          "Graviton2",
+          "Graviton3 / Graviton3E",
+          "Graviton4",
+          "Graviton5"
+        ],
+        "provides": "Arm-based server processors powering Amazon EC2 instance families.",
+        "howUsed": "Applications run on Graviton-powered EC2 instances using Arm-compatible software; AWS documents compiler options, operating systems, containers and workload optimization.",
+        "website": "https://aws.amazon.com/ec2/graviton/"
+      },
+      "fieldEvidence": {
+        "type": {
+          "sourceIds": [
+            "hardware-accuracy-aws-graviton"
+          ],
+          "scope": "Classify the explicitly documented processor family as hardware technology, not a separate company. This is atlas taxonomy, not a legal-status finding."
+        },
+        "description": {
+          "sourceIds": [
+            "hardware-accuracy-aws-graviton"
+          ],
+          "scope": "Processor family and technical-guide scope only."
+        },
+        "products": {
+          "sourceIds": [
+            "hardware-accuracy-aws-graviton"
+          ],
+          "scope": "Named processor generations in the inspected AWS technical-guide table; not an exhaustive historical portfolio or a guarantee of access in every region."
+        },
+        "provides": {
+          "sourceIds": [
+            "hardware-accuracy-aws-graviton"
+          ],
+          "scope": "Arm architecture and use in EC2 established by the guide; no training/customer/supplier claim."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "hardware-accuracy-aws-graviton"
+          ],
+          "scope": "Software migration/build/deployment guidance described in the guide."
+        },
+        "website": {
+          "sourceIds": [
+            "hardware-accuracy-aws-graviton"
+          ],
+          "scope": "Product URL linked from the AWS technical guide; destination was not separately retrieved."
+        }
+      },
+      "notes": [
+        "Corrects the generic x86 / Arm server CPU / RISC-V bundle with the exact families documented in AWS guidance. Retain original data in Git history.",
+        "Does not add or remove any entity, nor infer Annapurna ownership or an accelerator training relationship."
+      ],
+      "productFacts": [
+        {
+          "name": "Graviton processor family",
+          "kind": "server processors",
+          "description": "Arm-based processors used in EC2; the inspected guide lists Graviton2, Graviton3(E), Graviton4 and Graviton5.",
+          "sourceIds": [
+            "hardware-accuracy-aws-graviton"
+          ],
+          "scope": "Architecture and documented family identities only; exact instance region, pricing and lifecycle require separate evidence."
+        }
+      ]
+    },
+    {
+      "entityId": "broadcom-tomahawk",
+      "changes": {
+        "type": "Technology",
+        "description": "Broadcom Tomahawk is a family of network-switch devices. Broadcom documents support for TH, TH2 and TH3 devices in its OpenBCM switch software development kit.",
+        "products": [
+          "Tomahawk switch devices (TH / TH2 / TH3 documented in OpenBCM)"
+        ],
+        "provides": "Network-switch silicon programmable through Broadcom OpenBCM APIs and drivers.",
+        "howUsed": "System software uses Broadcom switch APIs and drivers to program supported Tomahawk switch devices.",
+        "website": "https://github.com/Broadcom-Network-Switching-Software/OpenBCM"
+      },
+      "fieldEvidence": {
+        "type": {
+          "sourceIds": [
+            "hardware-accuracy-broadcom-openbcm"
+          ],
+          "scope": "The source identifies Tomahawk as network-switch devices, supporting a hardware-technology record rather than a company record."
+        },
+        "description": {
+          "sourceIds": [
+            "hardware-accuracy-broadcom-openbcm"
+          ],
+          "scope": "OpenBCM device support; not a complete or latest Tomahawk product-generation census."
+        },
+        "products": {
+          "sourceIds": [
+            "hardware-accuracy-broadcom-openbcm"
+          ],
+          "scope": "Only the TH / TH2 / TH3 device names explicitly listed by this OpenBCM release. This is a scoped documented subset."
+        },
+        "provides": {
+          "sourceIds": [
+            "hardware-accuracy-broadcom-openbcm"
+          ],
+          "scope": "Network-switch devices supported by OpenBCM; no unsupported generic InfiniBand/DPU/Optics DSP attribution."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "hardware-accuracy-broadcom-openbcm"
+          ],
+          "scope": "OpenBCM describes APIs and drivers for programming network-switch silicon."
+        },
+        "website": {
+          "sourceIds": [
+            "hardware-accuracy-broadcom-openbcm"
+          ],
+          "scope": "Primary vendor software documentation for this scoped device-support claim."
+        }
+      },
+      "notes": [
+        "Replaces the unsourced generic Ethernet / InfiniBand / DPU / Optics DSP portfolio with the narrow documented switch-device family.",
+        "Does not assert that TH3 is the latest generation. Other generations require their own sources.",
+        "No customer, deployment, throughput, current shipment or ownership claim established."
+      ]
+    },
+    {
+      "entityId": "nvidia-jetson",
+      "changes": {
+        "type": "Technology",
+        "description": "NVIDIA Jetson is hardware for running AI models on-device. NVIDIA Jetson AI Lab publishes tutorials, benchmarks and examples for local language, vision-language, image-generation and speech-recognition workloads.",
+        "provides": "On-device AI hardware and documented model-deployment examples through Jetson AI Lab.",
+        "howUsed": "Developers follow Jetson AI Lab tutorials to run supported AI workloads on local Jetson hardware.",
+        "website": "https://www.jetson-ai-lab.com"
+      },
+      "fieldEvidence": {
+        "type": {
+          "sourceIds": [
+            "hardware-accuracy-nvidia-jetson"
+          ],
+          "scope": "Source explicitly describes Jetson hardware; hardware technology is the appropriate atlas class rather than an independent company."
+        },
+        "description": {
+          "sourceIds": [
+            "hardware-accuracy-nvidia-jetson"
+          ],
+          "scope": "On-device AI hardware and tutorial coverage described by the README; not proof of production deployment or all module capabilities."
+        },
+        "provides": {
+          "sourceIds": [
+            "hardware-accuracy-nvidia-jetson"
+          ],
+          "scope": "Jetson hardware and the documented AI Lab example scope only."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "hardware-accuracy-nvidia-jetson"
+          ],
+          "scope": "Documented tutorial use; no performance or universal model-compatibility promise."
+        },
+        "website": {
+          "sourceIds": [
+            "hardware-accuracy-nvidia-jetson"
+          ],
+          "scope": "Documentation site linked by the inspected NVIDIA project."
+        }
+      },
+      "notes": [
+        "Existing generic Edge accelerator / AI PC / Embedded NPU tags are not substantiated by this source. Keep them visibly unreviewed unless separately corrected.",
+        "No release date, price, module inventory, NPU architecture, supplier or customer claim established."
+      ]
+    }
+  ],
+  "blockedSources": []
+}

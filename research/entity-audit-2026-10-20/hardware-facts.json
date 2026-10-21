@@ -1,0 +1,373 @@
+{
+  "reviewedOn": "2026-10-20",
+  "scope": "Existing hardware/material/equipment entity information; only supported field changes proposed. Legacy location evidence is separate.",
+  "sources": [
+    {
+      "id": "hardware-sk-hynix-hmsdk",
+      "url": "https://raw.githubusercontent.com/SKhynix/hmsdk/9c61f92675c9ae800a348e032abe612f07ef373f/README.md",
+      "title": "SK hynix HMSDK README",
+      "revision": "9c61f92675c9ae800a348e032abe612f07ef373f",
+      "retrievedOn": "2026-10-20",
+      "sha256": "413f8cbdb95101661d88aa54d7f4f18ba7eee2f75cc6bf6f061cf5874dd1aa8d",
+      "excerpt": "HMSDK stands for Heterogeneous Memory Software Development Kit and it is\nespecially designed to support CXL memory, which is a new promising memory\nsystem based on a CXL(Compute Express Link) open industry standard.",
+      "excerptStartLine": 3,
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Documents CXL memory software, not a hardware bill of materials, specific HBM generation, customer or current shipment status."
+    },
+    {
+      "id": "hardware-sk-hynix-cmpi",
+      "url": "https://raw.githubusercontent.com/SKhynix/cMPI/82ec770fbaaa69de84ba274b77c9f7d030857005/README.md",
+      "title": "SK hynix cMPI research artifacts",
+      "revision": "82ec770fbaaa69de84ba274b77c9f7d030857005",
+      "retrievedOn": "2026-10-20",
+      "sha256": "4dbc388f3ea81cf59f0ed9702cc8819946b7c526ff6635225a4f2040683fc419",
+      "excerpt": "This repository contains artifacts of the paper `cMPI: Using CXL Memory Sharing for MPI One-Sided and\nTwo-Sided Inter-Node Communications`, the first work to optimize MPI point-to-point communication (both\none-sided and two-sided) using CXL memory sharing on a real CXL platform.\n\nThere are:\n1. **mpich** -- An enhanced MPI implementation based on MPICH-4.2.3 that utilizes CXL Memory Sharing (CXL-SHM) to improve both one-sided and two-sided inter-node communications.\n2. **cxl_shm_tests** --A comprehensive benchmark suite designed to test the latency and bandwidth of CXL Memory Sharing.\n3. **mpi_run_bench** -- A script generation scaffold for the latency and bandwidth evaluation of MPI point-to-point inter-node communication over different interconnects.\n",
+      "excerptStartLine": 3,
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Research artifacts and benchmark implementation; not evidence of commercial availability, performance superiority, or a customer design win."
+    },
+    {
+      "id": "hardware-sk-hynix-memflow",
+      "url": "https://raw.githubusercontent.com/SKhynix/MemFlow/7f51a6252f426ad7f3f5988f23d9257cbc11ba5a/README.md",
+      "title": "SK hynix MemFlow README",
+      "revision": "7f51a6252f426ad7f3f5988f23d9257cbc11ba5a",
+      "retrievedOn": "2026-10-20",
+      "sha256": "3966e1575b2521c707498fa6fd9a877ed2285702f86726cea76d5a47bd9a155b",
+      "excerpt": "MemFlow finds relevant skills for your task in Claude Code. Register your\n`SKILL.md` files, then describe your task as usual. MemFlow searches your skills\nand gives Claude a short list of matches to read through MCP.\n\nThe current workflow uses Qdrant and an OpenAI-compatible embedding service.\nYou do not need a separate generation LLM. MemFlow stores and serves the\n`SKILL.md` text; accompanying scripts and reference files are not included.",
+      "excerptStartLine": 3,
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Developer tool for skill retrieval; the word memory here does not imply a DRAM/HBM hardware product. No production customers established."
+    },
+    {
+      "id": "hardware-sk-hynix-ltm100",
+      "url": "https://raw.githubusercontent.com/SKhynix/LTM100/e0d913beec7db129bbc1983a620d9319ed01bcae/README.md",
+      "title": "SK hynix LTM100 README",
+      "revision": "e0d913beec7db129bbc1983a620d9319ed01bcae",
+      "retrievedOn": "2026-10-20",
+      "sha256": "0c8047d967eeee87045193de6c2a6111d718c1dc6cbc59b539ecc7d59713bafa",
+      "excerpt": "LTM100 is an end-to-end multi-user **load benchmark** for Long-Term Memory\n(LTM) systems. It drives virtual users through realistic and focused memory\nworkloads and reports client-observable throughput, latency, rejection, and\nerror metrics.\n\nLTM100 measures **load, concurrency, and scalability behavior**, not retrieval\nor answer quality. It does not compute precision, recall, or MRR.\n",
+      "excerptStartLine": 3,
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Load benchmark for long-term-memory services; not a memory chip, language model, or retrieval-quality evaluation."
+    },
+    {
+      "id": "hardware-asml-matfrost",
+      "url": "https://raw.githubusercontent.com/ASML-Labs/MATFrost.jl/884de1ec1e618631bc8e2ec653c30dcf1de390c6/README.md",
+      "title": "ASML Labs MATFrost README",
+      "revision": "884de1ec1e618631bc8e2ec653c30dcf1de390c6",
+      "retrievedOn": "2026-10-20",
+      "sha256": "839bb83d69cee15a27df82155f656a508fbdda460adad2847f6529d6edf94029",
+      "excerpt": "MATFrost enables quick and easy embedding of Julia inside MATLAB. It is like Bifrost but between Julia and MATLAB\n\nCharacteristics:\n1. Interface defined on Julia side.\n2. Nested datatypes supported.\n3. Leveraging Julia environments for reproducible builds.",
+      "excerptStartLine": 9,
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Open-source Julia/MATLAB interoperability project. This does not document ASML lithography systems or establish a commercial product contract."
+    },
+    {
+      "id": "hardware-micron-dnvme",
+      "url": "https://raw.githubusercontent.com/micron-technology/dnvme/74c7ed7332a7fc3a3ae437845386c489585d1df6/README",
+      "title": "Micron Technology dnvme README",
+      "revision": "74c7ed7332a7fc3a3ae437845386c489585d1df6",
+      "retrievedOn": "2026-10-20",
+      "sha256": "62431614c3e7313f3ba305f76bf61107f6ffad6176cd77a3f09da82fbd68d0fe",
+      "excerpt": "This is the dnvm repository in the Nvme Compliance project.\n\nThis repo contains the Linux driver for the NVMe Compliance Suite.\n\nContact compliance@nvmexpress.org for more information.",
+      "excerptStartLine": 1,
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Repository documents a Linux compliance driver. It does not verify current Micron SSD, DRAM or HBM product families or commercial support."
+    },
+    {
+      "id": "hardware-asml-profile",
+      "url": "https://github.com/ASML-Labs",
+      "title": "ASML-Labs company GitHub profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "feb33c528a1793abd74ca318553731aa2a4730594ee73d30169bd67b10acfaad",
+      "excerpt": "ASML Netherlands B.V. has 25 repositories available. Follow their code on GitHub.",
+      "linkedOfficialWebsite": "https://www.asml.com",
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Mutable company profile; company website identity corroboration and broad self-description only. No legal status, founding date, leadership, hardware generation, customer or financial verification."
+    },
+    {
+      "id": "hardware-sk-hynix-profile",
+      "url": "https://github.com/SKhynix",
+      "title": "SKhynix company GitHub profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "6da11b800f4abcef6a66c82ba721bc63b7a4e368d3606ec907038b617c5f7375",
+      "excerpt": "Open Source Software at SK hynix. SK hynix has 17 repositories available. Follow their code on GitHub.",
+      "linkedOfficialWebsite": "https://www.skhynix.com",
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Mutable company profile; company website identity corroboration and broad self-description only. No legal status, founding date, leadership, hardware generation, customer or financial verification."
+    },
+    {
+      "id": "hardware-micron-profile",
+      "url": "https://github.com/micron-technology",
+      "title": "micron-technology company GitHub profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "99f2e081e7c5a9d2000640f47daece559c884aa9731746d37334094498c82887",
+      "excerpt": "We are a world leader in innovative memory solutions that transform how the world uses information. - Micron Technology",
+      "linkedOfficialWebsite": "https://www.micron.com/",
+      "evidenceOrigin": "retrieved_primary",
+      "limitations": "Mutable company profile; company website identity corroboration and broad self-description only. No legal status, founding date, leadership, hardware generation, customer or financial verification."
+    }
+  ],
+  "entities": [
+    {
+      "entityId": "asml",
+      "changes": {
+        "website": "https://www.asml.com"
+      },
+      "fieldEvidence": {
+        "website": {
+          "sourceIds": [
+            "hardware-asml-profile"
+          ],
+          "scope": "Corporate website linked from the inspected company GitHub profile; destination itself is not freshly verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "MATFrost.jl",
+          "kind": "open-source software",
+          "description": "Embeds Julia inside MATLAB with Julia-side interfaces, nested data types and Julia environments.",
+          "sourceIds": [
+            "hardware-asml-matfrost"
+          ],
+          "scope": "Software capability only; not a lithography-system product."
+        }
+      ],
+      "notes": [
+        "Existing hardware products remain outside this source review; do not mark the entire products field verified using these software sources.",
+        "No current founding, headquarters, leadership, ownership or model-maker customer claims were verified."
+      ]
+    },
+    {
+      "entityId": "sk-hynix",
+      "changes": {
+        "website": "https://www.skhynix.com"
+      },
+      "fieldEvidence": {
+        "website": {
+          "sourceIds": [
+            "hardware-sk-hynix-profile"
+          ],
+          "scope": "Corporate website linked from the inspected company GitHub profile; destination itself is not freshly verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "HMSDK",
+          "kind": "open-source software",
+          "description": "Heterogeneous Memory Software Development Kit designed to support CXL memory.",
+          "sourceIds": [
+            "hardware-sk-hynix-hmsdk"
+          ],
+          "scope": "CXL software functionality; no commercial hardware portfolio claim."
+        },
+        {
+          "name": "cMPI",
+          "kind": "research software and benchmarks",
+          "description": "Research implementation based on MPICH that uses CXL memory sharing for one-sided and two-sided inter-node communication, with associated benchmarks.",
+          "sourceIds": [
+            "hardware-sk-hynix-cmpi"
+          ],
+          "scope": "Research artifact, not a commercially supported product or customer deployment."
+        },
+        {
+          "name": "MemFlow",
+          "kind": "developer tool",
+          "description": "Finds registered skill documents for Claude Code using Qdrant and an OpenAI-compatible embedding service and supplies matches through MCP.",
+          "sourceIds": [
+            "hardware-sk-hynix-memflow"
+          ],
+          "scope": "Skill-retrieval software; not HBM/DRAM hardware or a model-maker supplier relationship."
+        },
+        {
+          "name": "LTM100",
+          "kind": "load benchmark",
+          "description": "Measures load, concurrency and scalability of long-term-memory services using virtual-user workloads; it does not measure retrieval or answer quality.",
+          "sourceIds": [
+            "hardware-sk-hynix-ltm100"
+          ],
+          "scope": "Benchmark scope only; not a trained language model, memory chip or production-service performance claim."
+        }
+      ],
+      "notes": [
+        "Existing hardware products remain outside this source review; do not mark the entire products field verified using these software sources.",
+        "No current founding, headquarters, leadership, ownership or model-maker customer claims were verified."
+      ]
+    },
+    {
+      "entityId": "micron",
+      "changes": {
+        "website": "https://www.micron.com/"
+      },
+      "fieldEvidence": {
+        "website": {
+          "sourceIds": [
+            "hardware-micron-profile"
+          ],
+          "scope": "Corporate website linked from the inspected company GitHub profile; destination itself is not freshly verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "dnvme",
+          "kind": "compliance software",
+          "description": "Linux driver for the NVMe Compliance Suite.",
+          "sourceIds": [
+            "hardware-micron-dnvme"
+          ],
+          "scope": "Documented repository role only; current commercial support and hardware product applicability are unverified."
+        }
+      ],
+      "notes": [
+        "Existing hardware products remain outside this source review; do not mark the entire products field verified using these software sources.",
+        "No current founding, headquarters, leadership, ownership or model-maker customer claims were verified."
+      ]
+    }
+  ],
+  "blockedSources": [
+    {
+      "url": "https://www.nanya.com/en",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://www.qct.io/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://www.tsmc.com/english",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://www.asml.com/en/company/about-asml",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://www.wistron.com/en/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://www.micron.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://amkor.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://www.appliedmaterials.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    }
+  ],
+  "priorityIssues": [
+    {
+      "entityId": "nanya-technology",
+      "currentType": "Technology",
+      "currentProducts": "DRAM; NAND; HBM",
+      "issue": "Company identity and portfolio require primary review. Generic memory-fab categories do not establish NAND or HBM products. Do not affirm those products as verified."
+    },
+    {
+      "entityId": "powertech-technology",
+      "currentType": "Technology",
+      "currentProducts": "2.5D; 3D integration; Chiplets",
+      "issue": "Company is treated as Technology; advanced-packaging category copy is not evidence of each product/service."
+    },
+    {
+      "entityId": "quanta-cloud-technology",
+      "currentType": "Technology",
+      "currentProducts": "GPU servers; Rack-scale systems",
+      "issue": "Resolve identity against existing QCT entry and Quanta Computer parent; retain all IDs and do not infer distinct independent suppliers."
+    },
+    {
+      "entityId": "qct",
+      "currentType": "Company",
+      "currentProducts": "GPU servers; Rack-scale systems; Liquid-cooled systems",
+      "issue": "Generic categories need model/platform-specific evidence; identity resolution with Quanta Cloud Technology is pending."
+    },
+    {
+      "entityId": "wistron",
+      "currentType": "Company",
+      "currentProducts": "GPU servers; Rack-scale systems",
+      "issue": "Missing website and detailed profile. Distinguish Wistron from Wiwynn and QCT; no sourced ownership/customer claim collected."
+    },
+    {
+      "entityId": "ibiden",
+      "currentType": "Company",
+      "currentProducts": "ABF; Copper-clad laminate; Leadframes",
+      "issue": "Category-wide materials list needs manufacturer-specific support. A substrate company should not automatically inherit every product in the category."
+    },
+    {
+      "entityId": "unimicron",
+      "currentType": "Company",
+      "currentProducts": "ABF; Copper-clad laminate; Leadframes",
+      "issue": "Resolve company/product identity and substantiate each substrate/laminate/leadframe capability separately."
+    },
+    {
+      "entityId": "tsmc",
+      "currentType": "Company",
+      "currentProducts": "N3; N2; CoWoS",
+      "issue": "Record exact process/package family, production/announcement status, source dates and capacity scope; current profile categories alone are insufficient."
+    },
+    {
+      "entityId": "applied-materials",
+      "currentType": "Company",
+      "currentProducts": "Deposition; Process control",
+      "issue": "General categories need concrete product families and process roles; no primary hardware documents accessible this pass."
+    },
+    {
+      "entityId": "lam-research",
+      "currentType": "Company",
+      "currentProducts": "Etch; Deposition",
+      "issue": "General categories need concrete product families and process roles; no primary hardware documents accessible this pass."
+    },
+    {
+      "entityId": "kla",
+      "currentType": "Company",
+      "currentProducts": "Inspection; Metrology",
+      "issue": "General categories need concrete product families and process roles; no primary hardware documents accessible this pass."
+    },
+    {
+      "entityId": "samsung-memory",
+      "currentType": "Company",
+      "currentProducts": "HBM; DDR5",
+      "issue": "Samsung Memory is a business/product grouping, not automatically a separate legal company; current generation/shipment/customer claims need evidence."
+    },
+    {
+      "entityId": "ase",
+      "currentType": "Company",
+      "currentProducts": "OSAT; Advanced packaging",
+      "issue": "Clarify ASE Technology holding/group versus ASE assembly/test business and product/service scope before merging corporate facts."
+    },
+    {
+      "entityId": "amkor",
+      "currentType": "Company",
+      "currentProducts": "OSAT; Advanced packaging",
+      "issue": "Recover dated address sources, then obtain primary product and packaging-family sources; no current hardware portfolio reverified."
+    },
+    {
+      "entityId": "jcet",
+      "currentType": "Company",
+      "currentProducts": "OSAT",
+      "issue": "General service label alone does not document specific packaging technologies, sites or customers."
+    }
+  ],
+  "recoveredEvidenceFile": "hardware-existing-location-evidence.json",
+  "summary": {
+    "retrievedPrimarySources": 9,
+    "entitiesWithProposedChanges": 3,
+    "documentedSoftwareOfferings": 6,
+    "companiesWithRecoveredLocationRecords": 77,
+    "recoveredHeadquartersRows": 127,
+    "newlyVerifiedHardwarePortfolios": 0
+  }
+}

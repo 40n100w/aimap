@@ -1,0 +1,57 @@
+{
+  "sourceFile": "data/office-locations.csv",
+  "sourceSha256": "48986984d985d39683e83075154385fb7d64e1b8a57eebdd5bd99391c6edb264",
+  "sourceReviewDateRange": [
+    "2026-08-24",
+    "2026-08-25"
+  ],
+  "rows": 2531,
+  "coreEntitiesJoined": 117,
+  "associations": 2585,
+  "joinBasisCounts": {
+    "companyId": 2489,
+    "companyId_and_entityIds": 42,
+    "entityIds": 54
+  },
+  "unresolvedAssociations": [],
+  "locationStatusCounts": {
+    "needs_review": 1155,
+    "map_ready": 630,
+    "geocoded": 297,
+    "address_verified": 449
+  },
+  "coordinateAccuracyCounts": {
+    "unlocated": 1600,
+    "building": 630,
+    "street_or_area_candidate": 273,
+    "building_candidate": 24,
+    "official_site_candidate": 1,
+    "unverified": 3
+  },
+  "headquartersRows": 159,
+  "headquartersStatusCounts": {
+    "needs_review": 32,
+    "address_verified": 48,
+    "map_ready": 53,
+    "geocoded": 26
+  },
+  "groupIds": {
+    "samsung-electronics": 42,
+    "shin-etsu-group": 65,
+    "advantest-group": 68
+  },
+  "allSourceUrlsPresent": true,
+  "headquartersScope": "Not resolved. Preserve multiple rows and source text; do not promote to current global headquarters.",
+  "identityQueueRows": 456,
+  "identityQueuePriorityCounts": {
+    "P0": 4,
+    "P1": 452
+  },
+  "identityQueueIssueCounts": {
+    "organization_vs_product_type": 247,
+    "overlapping_brand_parent_product_or_historical_identity": 84,
+    "product_or_business_unit_labeled_company": 101,
+    "commercial_status_or_institution_scope": 31,
+    "facility_labeled_company": 9
+  }
+}

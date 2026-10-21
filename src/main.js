@@ -28,6 +28,7 @@ async function start() {
     scene = new TextScene(mount, entities, relationships, select);
   }
   ui = new UI(entities, relationships, scene, select, [], {}, loadMapData);
+  ui.enter();
   const mobileUI = new MobileUI(ui, scene);
   new UpdatesView(ui, mobileUI);
   document.querySelector('#app').setAttribute('data-ready', 'true');

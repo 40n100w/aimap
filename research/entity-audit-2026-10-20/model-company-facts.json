@@ -1,0 +1,2445 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-20",
+  "coverage": {
+    "entityCount": 19,
+    "entitiesWithProposedChanges": 15,
+    "sourceCount": 29,
+    "productFactCount": 68,
+    "scope": "Targeted review of existing main model-maker records; no claim of complete legal-company diligence or exhaustive products."
+  },
+  "sources": [
+    {
+      "id": "model-openai",
+      "repository": "openai/openai-python",
+      "url": "https://raw.githubusercontent.com/openai/openai-python/ae2a6c2a79e462d1e5ee2240354a5714289e1670/README.md",
+      "revision": "ae2a6c2a79e462d1e5ee2240354a5714289e1670",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "48e4ff40310a1fb39c2a868b115a3cddf745c8e9d504db439e3b61c294a06836",
+      "bytes": 42167,
+      "title": "openai/openai-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.10+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [HTTPX2](https://httpx2.pydantic.dev/).",
+      "excerpts": [
+        {
+          "line": 6,
+          "excerpt": "The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.10+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [HTTPX2](https://httpx2.pydantic.dev/)."
+        },
+        {
+          "line": 27,
+          "excerpt": "The primary API for interacting with OpenAI models is the [Responses API](https://developers.openai.com/api/reference/resources/responses). You can generate text from the model with the code below."
+        },
+        {
+          "line": 391,
+          "excerpt": "The Realtime API enables you to build low-latency, multi-modal conversational experiences. It currently supports text and audio as both input and output, as well as [function calling](https://platform.openai.com/docs/guides/function-calling) through a WebSocket connection."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-openai-agents",
+      "repository": "openai/openai-agents-python",
+      "url": "https://raw.githubusercontent.com/openai/openai-agents-python/64cd5dfc5a1579870dcbed0ea42b27aa84033fee/README.md",
+      "revision": "64cd5dfc5a1579870dcbed0ea42b27aa84033fee",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "cf68cb43182d6ea4f79a32421f6723e8ee2cc0f68f97524da7f300e9fc77940b",
+      "bytes": 9009,
+      "title": "openai/openai-agents-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The OpenAI Agents SDK is a lightweight yet powerful framework for building multi-agent workflows. It is provider-agnostic, supporting the OpenAI Responses and Chat Completions APIs, as well as 100+ other LLMs.",
+      "excerpts": [
+        {
+          "line": 3,
+          "excerpt": "The OpenAI Agents SDK is a lightweight yet powerful framework for building multi-agent workflows. It is provider-agnostic, supporting the OpenAI Responses and Chat Completions APIs, as well as 100+ other LLMs."
+        },
+        {
+          "line": 10,
+          "excerpt": "### Core concepts:\n\n1. [**Agents**](https://openai.github.io/openai-agents-python/agents): LLMs configured with instructions, tools, guardrails, and handoffs\n1. [**Sandbox agents**](https://openai.github.io/openai-agents-python/sandbox_agents): Agents preconfigured to work with a container to perform work over long time horizons.\n1. [**Realtime agents**](https://openai.github.io/openai-agents-python/realtime/quickstart/): Build powerful voice agents with `gpt-realtime-2.1` and full agent features\n1. [**Voice agents**](https://openai.github.io/openai-agents-python/voice/quickstart/): Build voice pipelines that combine speech-to-text, an agent workflow, and text-to-speech\n1. **[Agents as tools](https://openai.github.io/openai-agents-python/tools/#agents-as-tools) / [Handoffs](https://openai.github.io/openai-agents-python/handoffs/)**: Delegating to other agents for specific tasks\n1. [**Tools**](https://openai.github.io/openai-agents-python/tools/): Various Tools let agents take actions (functions, MCP, hosted tools)\n1. [**Guardrails**](https://openai.github.io/openai-agents-python/guardrails/): Configurable safety checks for input and output validation\n1. [**Human in the loop**](https://openai.github.io/openai-agents-python/human_in_the_loop/): Built-in mechanisms for involving humans across agent runs\n1. [**Sessions**](https://openai.github.io/openai-agents-python/sessions/): Automatic conversation history management across agent runs\n1. [**Tracing**](https://openai.github.io/openai-agents-python/tracing/): Built-in tracking of agent runs, allowing you to view, debug and optimize your workflows\n"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-codex",
+      "repository": "openai/codex",
+      "url": "https://raw.githubusercontent.com/openai/codex/35757adb728b268a1e75eabeb3e4cf9a6def5c18/README.md",
+      "revision": "35757adb728b268a1e75eabeb3e4cf9a6def5c18",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7",
+      "bytes": 3334,
+      "title": "openai/codex / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "<p align=\"center\"><strong>Codex CLI</strong> is a coding agent from OpenAI that runs locally on your computer.\n<p align=\"center\">\n  <img src=\"https://github.com/openai/codex/blob/main/.github/codex-cli-splash.png\" alt=\"Codex CLI splash\" width=\"80%\" />\n</p>\n</br>\nIf you want Codex in your code editor (VS Code, Cursor, Windsurf), <a href=\"https://developers.openai.com/codex/ide\">install in your IDE.</a>\n</br>If you want the desktop app experience, run <code>codex app</code> or visit <a href=\"https://chatgpt.com/codex?app-landing-page=true\">the Codex App page</a>.\n</br>If you are looking for the <em>cloud-based agent</em> from OpenAI, <strong>Codex Web</strong>, go to <a href=\"https://chatgpt.com/codex\">chatgpt.com/codex</a>.</p>",
+      "excerpts": [
+        {
+          "line": 1,
+          "excerpt": "<p align=\"center\"><strong>Codex CLI</strong> is a coding agent from OpenAI that runs locally on your computer.\n<p align=\"center\">\n  <img src=\"https://github.com/openai/codex/blob/main/.github/codex-cli-splash.png\" alt=\"Codex CLI splash\" width=\"80%\" />\n</p>\n</br>\nIf you want Codex in your code editor (VS Code, Cursor, Windsurf), <a href=\"https://developers.openai.com/codex/ide\">install in your IDE.</a>\n</br>If you want the desktop app experience, run <code>codex app</code> or visit <a href=\"https://chatgpt.com/codex?app-landing-page=true\">the Codex App page</a>.\n</br>If you are looking for the <em>cloud-based agent</em> from OpenAI, <strong>Codex Web</strong>, go to <a href=\"https://chatgpt.com/codex\">chatgpt.com/codex</a>.</p>"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-anthropic",
+      "repository": "anthropics/anthropic-sdk-python",
+      "url": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-python/5738a256035e35285857fde0e89ae9b11b805f2f/README.md",
+      "revision": "5738a256035e35285857fde0e89ae9b11b805f2f",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "05c7f018e77a7a0fd94679317f03a5720bbf257f1e43bfdd25162e42afb5a35e",
+      "bytes": 3343,
+      "title": "anthropics/anthropic-sdk-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The Claude SDK for Python provides access to the [Claude API](https://docs.anthropic.com/en/api/) from Python applications.",
+      "excerpts": [
+        {
+          "line": 5,
+          "excerpt": "The Claude SDK for Python provides access to the [Claude API](https://docs.anthropic.com/en/api/) from Python applications."
+        },
+        {
+          "line": 9,
+          "excerpt": "Tool helpers (`@beta_tool`, the tool runner and `ToolError`) are documented in [tools.md](tools.md). The browser and computer toolset classes have their own guides, [browser-toolset.md](browser-toolset.md) and [computer-toolset.md](computer-toolset.md)."
+        },
+        {
+          "line": 31,
+          "excerpt": "message = client.messages.create(\n    max_tokens=1024,\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": \"Hello, Claude\",\n        }\n    ],\n\n    model=\"claude-opus-5-5\",\n)\n"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-claude-code",
+      "repository": "anthropics/claude-code",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-code/49b8c35f8c57493c2f0eba1429ccaa9638ab8712/README.md",
+      "revision": "49b8c35f8c57493c2f0eba1429ccaa9638ab8712",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "aa0d8b80ac083e1591be0789273f447058cc9187b4331634a5614155da27778d",
+      "bytes": 2873,
+      "title": "anthropics/claude-code / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows -- all through natural language commands. Use it in your terminal, IDE, or tag @claude on Github.",
+      "excerpts": [
+        {
+          "line": 7,
+          "excerpt": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows -- all through natural language commands. Use it in your terminal, IDE, or tag @claude on Github."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-google-genai",
+      "repository": "googleapis/python-genai",
+      "url": "https://raw.githubusercontent.com/googleapis/python-genai/4c1abccf258c9247218e66610790043893cd6950/README.md",
+      "revision": "4c1abccf258c9247218e66610790043893cd6950",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "66952d47594d7a9c588782f57cb02d04fa4fd27b108112fd06b036234cdebc34",
+      "bytes": 56828,
+      "title": "googleapis/python-genai / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Google Gen AI Python SDK provides an interface for developers to integrate\nGoogle's generative models into their Python applications. It supports\nthe [Gemini Developer API](https://ai.google.dev/gemini-api/docs) and\n[Gemini Enterprise Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform)\nAPIs.",
+      "excerpts": [
+        {
+          "line": 11,
+          "excerpt": "Google Gen AI Python SDK provides an interface for developers to integrate\nGoogle's generative models into their Python applications. It supports\nthe [Gemini Developer API](https://ai.google.dev/gemini-api/docs) and\n[Gemini Enterprise Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform)\nAPIs."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-gemma",
+      "repository": "google/gemma_pytorch",
+      "url": "https://raw.githubusercontent.com/google/gemma_pytorch/014acb7ac4563a5f77c76d7ff98f31b568c16508/README.md",
+      "revision": "014acb7ac4563a5f77c76d7ff98f31b568c16508",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "86f6cd7c50eec67f1ad74b54a59c40c40748dde840b405bda897f92a754f201d",
+      "bytes": 5754,
+      "title": "google/gemma_pytorch / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "**Gemma** is a family of lightweight, state-of-the art open models built from research and technology used to create Google Gemini models. They include both text-only and multimodal decoder-only large language models, with open weights, pre-trained variants, and instruction-tuned variants. For more details, please check out the following links:\n\n * [Gemma on Google AI](https://ai.google.dev/gemma)\n * [Gemma on Kaggle](https://www.kaggle.com/models/google/gemma-3)\n * [Gemma on Vertex AI Model Garden](https://pantheon.corp.google.com/vertex-ai/publishers/google/model-garden/gemma3)\n\nThis is the official PyTorch implementation of Gemma models. We provide model and inference implementations using both PyTorch and PyTorch/XLA, and support running inference on CPU, GPU and TPU.",
+      "excerpts": [
+        {
+          "line": 3,
+          "excerpt": "**Gemma** is a family of lightweight, state-of-the art open models built from research and technology used to create Google Gemini models. They include both text-only and multimodal decoder-only large language models, with open weights, pre-trained variants, and instruction-tuned variants. For more details, please check out the following links:\n\n * [Gemma on Google AI](https://ai.google.dev/gemma)\n * [Gemma on Kaggle](https://www.kaggle.com/models/google/gemma-3)\n * [Gemma on Vertex AI Model Garden](https://pantheon.corp.google.com/vertex-ai/publishers/google/model-garden/gemma3)\n\nThis is the official PyTorch implementation of Gemma models. We provide model and inference implementations using both PyTorch and PyTorch/XLA, and support running inference on CPU, GPU and TPU."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-alphafold",
+      "repository": "google-deepmind/alphafold3",
+      "url": "https://raw.githubusercontent.com/google-deepmind/alphafold3/131ab9e7420066523c62546199243f7a9b3e3e78/README.md",
+      "revision": "131ab9e7420066523c62546199243f7a9b3e3e78",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "0aff5538016f91aae06209319e4514e23a2fc6156854271f75873f8b78e0e44f",
+      "bytes": 13259,
+      "title": "google-deepmind/alphafold3 / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "This package provides an implementation of the inference pipeline of\nAlphaFold 3. See below for how to access the model parameters. You may only use\nAlphaFold 3 model parameters if received directly from Google. Use is subject to\nthese\n[terms of use](https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md).",
+      "excerpts": [
+        {
+          "line": 5,
+          "excerpt": "This package provides an implementation of the inference pipeline of\nAlphaFold 3. See below for how to access the model parameters. You may only use\nAlphaFold 3 model parameters if received directly from Google. Use is subject to\nthese\n[terms of use](https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md)."
+        },
+        {
+          "line": 20,
+          "excerpt": "AlphaFold 3 is also available at\n[alphafoldserver.com](https://alphafoldserver.com) for non-commercial use,\nthough with a more limited set of ligands and covalent modifications.\n\nFor commercial use, AlphaFold 3 is available via"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-llama",
+      "repository": "meta-llama/llama-models",
+      "url": "https://raw.githubusercontent.com/meta-llama/llama-models/0e0b8c519242d5833d8c11bffc1232b77ad7f301/README.md",
+      "revision": "0e0b8c519242d5833d8c11bffc1232b77ad7f301",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "0ac5f064caca753d78aa286ca382cf7e819b54b1f90edca9a905786b2aac238e",
+      "bytes": 10065,
+      "title": "meta-llama/llama-models / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "| Llama 2 | 7/18/2023 | 7B, 13B, 70B | 4K | Sentencepiece | [Use Policy](models/llama2/USE_POLICY.md) | [License](models/llama2/LICENSE) | [Model Card](models/llama2/MODEL_CARD.md) |\n| Llama 3 | 4/18/2024 | 8B, 70B | 8K | TikToken-based | [Use Policy](models/llama3/USE_POLICY.md) | [License](models/llama3/LICENSE) | [Model Card](models/llama3/MODEL_CARD.md) |\n| Llama 3.1 | 7/23/2024 | 8B, 70B, 405B | 128K | TikToken-based | [Use Policy](models/llama3_1/USE_POLICY.md) | [License](models/llama3_1/LICENSE) | [Model Card](models/llama3_1/MODEL_CARD.md) |\n| Llama 3.2 | 9/25/2024 | 1B, 3B | 128K | TikToken-based | [Use Policy](models/llama3_2/USE_POLICY.md) | [License](models/llama3_2/LICENSE) | [Model Card](models/llama3_2/MODEL_CARD.md) |\n| Llama 3.2-Vision | 9/25/2024 | 11B, 90B | 128K | TikToken-based | [Use Policy](models/llama3_2/USE_POLICY.md) | [License](models/llama3_2/LICENSE) | [Model Card](models/llama3_2/MODEL_CARD_VISION.md) |\n| Llama 3.3 | 12/04/2024 | 70B | 128K | TikToken-based | [Use Policy](models/llama3_3/USE_POLICY.md) | [License](models/llama3_3/LICENSE) | [Model Card](models/llama3_3/MODEL_CARD.md) |\n| Llama 4 | 4/5/2025 | Scout-17B-16E, Maverick-17B-128E | 10M, 1M | TikToken-based | [Use Policy](models/llama4/USE_POLICY.md) | [License](models/llama4/LICENSE) | [Model Card](models/llama4/MODEL_CARD.md) |",
+      "excerpts": [
+        {
+          "line": 27,
+          "excerpt": "| Llama 2 | 7/18/2023 | 7B, 13B, 70B | 4K | Sentencepiece | [Use Policy](models/llama2/USE_POLICY.md) | [License](models/llama2/LICENSE) | [Model Card](models/llama2/MODEL_CARD.md) |\n| Llama 3 | 4/18/2024 | 8B, 70B | 8K | TikToken-based | [Use Policy](models/llama3/USE_POLICY.md) | [License](models/llama3/LICENSE) | [Model Card](models/llama3/MODEL_CARD.md) |\n| Llama 3.1 | 7/23/2024 | 8B, 70B, 405B | 128K | TikToken-based | [Use Policy](models/llama3_1/USE_POLICY.md) | [License](models/llama3_1/LICENSE) | [Model Card](models/llama3_1/MODEL_CARD.md) |\n| Llama 3.2 | 9/25/2024 | 1B, 3B | 128K | TikToken-based | [Use Policy](models/llama3_2/USE_POLICY.md) | [License](models/llama3_2/LICENSE) | [Model Card](models/llama3_2/MODEL_CARD.md) |\n| Llama 3.2-Vision | 9/25/2024 | 11B, 90B | 128K | TikToken-based | [Use Policy](models/llama3_2/USE_POLICY.md) | [License](models/llama3_2/LICENSE) | [Model Card](models/llama3_2/MODEL_CARD_VISION.md) |\n| Llama 3.3 | 12/04/2024 | 70B | 128K | TikToken-based | [Use Policy](models/llama3_3/USE_POLICY.md) | [License](models/llama3_3/LICENSE) | [Model Card](models/llama3_3/MODEL_CARD.md) |\n| Llama 4 | 4/5/2025 | Scout-17B-16E, Maverick-17B-128E | 10M, 1M | TikToken-based | [Use Policy](models/llama4/USE_POLICY.md) | [License](models/llama4/LICENSE) | [Model Card](models/llama4/MODEL_CARD.md) |"
+        },
+        {
+          "line": 18,
+          "excerpt": "Our mission is to empower individuals and industry through this opportunity while fostering an environment of discovery and ethical AI advancements. The model weights are licensed for researchers and commercial entities, upholding the principles of openness."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-xai",
+      "repository": "xai-org/xai-sdk-python",
+      "url": "https://raw.githubusercontent.com/xai-org/xai-sdk-python/1d9e1dffc9a0521ede0e6bc7f2b906177b940d34/README.md",
+      "revision": "1d9e1dffc9a0521ede0e6bc7f2b906177b940d34",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "31b35957625483405e0595d8f41f62ae67f18a79d390dc0690dc2bd99c4de20e",
+      "bytes": 26333,
+      "title": "xai-org/xai-sdk-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The xAI Python SDK is a gRPC-based Python library for interacting with xAI's APIs. Built for Python 3.10 and above, it offers both **synchronous** and **asynchronous** clients.\n\nWhether you're generating text, images, videos, or structured outputs, the xAI SDK is designed to be intuitive, robust, and developer-friendly.",
+      "excerpts": [
+        {
+          "line": 18,
+          "excerpt": "The xAI Python SDK is a gRPC-based Python library for interacting with xAI's APIs. Built for Python 3.10 and above, it offers both **synchronous** and **asynchronous** clients.\n\nWhether you're generating text, images, videos, or structured outputs, the xAI SDK is designed to be intuitive, robust, and developer-friendly."
+        },
+        {
+          "line": 89,
+          "excerpt": "    model=\"grok-4.6\","
+        },
+        {
+          "line": 179,
+          "excerpt": "Generate videos from text prompts using the `grok-imagine-video` model. The SDK handles the asynchronous polling workflow automatically — you submit a prompt and receive the completed video response."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-mistral",
+      "repository": "mistralai/client-python",
+      "url": "https://raw.githubusercontent.com/mistralai/client-python/08c7956a8267e8fbaf4b6cecd5be4ca9c3dfeda3/README.md",
+      "revision": "08c7956a8267e8fbaf4b6cecd5be4ca9c3dfeda3",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "6350dd706fcf8fa38de0d8336d7f4d4944b9bc66d2e729dcd93bf2e3ff122239",
+      "bytes": 68016,
+      "title": "mistralai/client-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Mistral AI API: Our Chat Completion and Embeddings APIs specification. Create your account on [La Plateforme](https://console.mistral.ai) to get access and read the [docs](https://docs.mistral.ai) to learn how to use it.",
+      "excerpts": [
+        {
+          "line": 36,
+          "excerpt": "Mistral AI API: Our Chat Completion and Embeddings APIs specification. Create your account on [La Plateforme](https://console.mistral.ai) to get access and read the [docs](https://docs.mistral.ai) to learn how to use it."
+        },
+        {
+          "line": 496,
+          "excerpt": "### [Audio.Agents](docs/sdks/audioagents/README.md)\n\n* [list](docs/sdks/audioagents/README.md#list) - List audio agents\n* [create](docs/sdks/audioagents/README.md#create) - Create an audio agent\n* [get](docs/sdks/audioagents/README.md#get) - Get an audio agent\n* [update](docs/sdks/audioagents/README.md#update) - Update an audio agent\n* [delete](docs/sdks/audioagents/README.md#delete) - Delete an audio agent\n* [list_versions](docs/sdks/audioagents/README.md#list_versions) - List audio agent versions\n* [list_sessions](docs/sdks/audioagents/README.md#list_sessions) - List audio agent sessions\n\n### [Audio.Sessions](docs/sdks/audiosessions/README.md)\n\n* [create](docs/sdks/audiosessions/README.md#create) - Create an agent session\n* [get](docs/sdks/audiosessions/README.md#get) - Get session status\n* [close](docs/sdks/audiosessions/README.md#close) - Stop an agent session\n\n### [Audio.Speech](docs/sdks/speech/README.md)\n\n* [complete](docs/sdks/speech/README.md#complete) - Speech\n\n### [Audio.Transcriptions](docs/sdks/transcriptions/README.md)\n\n* [complete](docs/sdks/transcriptions/README.md#complete) - Create Transcription\n* [stream](docs/sdks/transcriptions/README.md#stream) - Create Streaming Transcription (SSE)\n\n### [Audio.Voices](docs/sdks/voices/README.md)"
+        },
+        {
+          "line": 798,
+          "excerpt": "### [Classifiers](docs/sdks/classifiers/README.md)\n\n* [moderate](docs/sdks/classifiers/README.md#moderate) - Moderations\n* [moderate_chat](docs/sdks/classifiers/README.md#moderate_chat) - Chat Moderations\n* [classify](docs/sdks/classifiers/README.md#classify) - Classifications\n* [classify_chat](docs/sdks/classifiers/README.md#classify_chat) - Chat Classifications\n\n### [Embeddings](docs/sdks/embeddings/README.md)\n\n* [create](docs/sdks/embeddings/README.md#create) - Embeddings"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-mistral-vibe",
+      "repository": "mistralai/mistral-vibe",
+      "url": "https://raw.githubusercontent.com/mistralai/mistral-vibe/dd2c04ce717c417731ab89c333cd0a72541e33ba/README.md",
+      "revision": "dd2c04ce717c417731ab89c333cd0a72541e33ba",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "4305a8779d85c4f2b56152650569a587364061604776b17f30050af690e779dc",
+      "bytes": 73310,
+      "title": "mistralai/mistral-vibe / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Mistral Vibe is a command-line coding assistant powered by Mistral's models. It provides a conversational interface to your codebase, allowing you to use natural language to explore, modify, and interact with your projects through a powerful set of tools.",
+      "excerpts": [
+        {
+          "line": 22,
+          "excerpt": "Mistral Vibe is a command-line coding assistant powered by Mistral's models. It provides a conversational interface to your codebase, allowing you to use natural language to explore, modify, and interact with your projects through a powerful set of tools."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-cohere",
+      "repository": "cohere-ai/cohere-python",
+      "url": "https://raw.githubusercontent.com/cohere-ai/cohere-python/489321e3bd1b2631371169e9372caceb04119c79/README.md",
+      "revision": "489321e3bd1b2631371169e9372caceb04119c79",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "135b58d36d42e09ed2d52c86d2b102a6798017fbb0fa5cfec5bcd606dd49728f",
+      "bytes": 5271,
+      "title": "cohere-ai/cohere-python / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The Cohere Python SDK allows access to Cohere models across many different platforms: the cohere platform, AWS (Bedrock, Sagemaker), Azure, GCP and Oracle OCI. For a full list of support and snippets, please take a look at the [SDK support docs page](https://docs.cohere.com/docs/cohere-works-everywhere).",
+      "excerpts": [
+        {
+          "line": 9,
+          "excerpt": "The Cohere Python SDK allows access to Cohere models across many different platforms: the cohere platform, AWS (Bedrock, Sagemaker), Azure, GCP and Oracle OCI. For a full list of support and snippets, please take a look at the [SDK support docs page](https://docs.cohere.com/docs/cohere-works-everywhere)."
+        },
+        {
+          "line": 140,
+          "excerpt": "### Supported OCI APIs\n\nThe OCI client supports the following Cohere APIs:\n- **Embed**: Full support for all embedding models\n- **Chat**: Full support with both V1 (`OciClient`) and V2 (`OciClientV2`) APIs\n  - Streaming available via `chat_stream()`\n  - Supports Command-R and Command-A model families\n\n### OCI Model Availability and Limitations\n\n**Available on OCI On-Demand Inference:**\n- ✅ **Embed models**: available on OCI Generative AI\n- ✅ **Chat models**: available via `OciClient` (V1) and `OciClientV2` (V2)\n\n**Not Available on OCI On-Demand Inference:**\n- ❌ **Generate API**: OCI TEXT_GENERATION models are base models that require fine-tuning before deployment\n- ❌ **Rerank API**: OCI TEXT_RERANK models are base models that require fine-tuning before deployment\n- ❌ **Multiple Embedding Types**: OCI on-demand models only support single embedding type per request (cannot request both `float` and `int8` simultaneously)\n\n**Note**: To use Generate or Rerank models on OCI, you need to:\n1. Fine-tune the base model using OCI's fine-tuning service\n2. Deploy the fine-tuned model to a dedicated endpoint\n3. Update your code to use the deployed model endpoint\n"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-deepseek",
+      "repository": "deepseek-ai/DeepSeek-R1",
+      "url": "https://raw.githubusercontent.com/deepseek-ai/DeepSeek-R1/0cf78561f1d51c84a21b2190626b21116d5c68bb/README.md",
+      "revision": "0cf78561f1d51c84a21b2190626b21116d5c68bb",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "4ed979e497121ae4dd9f1573da1668219f43be55d62cc0bf2be5429211a67486",
+      "bytes": 20736,
+      "title": "deepseek-ai/DeepSeek-R1 / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "We introduce our first-generation reasoning models, DeepSeek-R1-Zero and DeepSeek-R1. \nDeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning.\nWith RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors.\nHowever, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. To address these issues and further enhance reasoning performance,\nwe introduce DeepSeek-R1, which incorporates cold-start data before RL.\nDeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks. \nTo support the research community, we have open-sourced DeepSeek-R1-Zero, DeepSeek-R1, and six dense models distilled from DeepSeek-R1 based on Llama and Qwen. DeepSeek-R1-Distill-Qwen-32B outperforms OpenAI-o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.\n",
+      "excerpts": [
+        {
+          "line": 33,
+          "excerpt": "We introduce our first-generation reasoning models, DeepSeek-R1-Zero and DeepSeek-R1. \nDeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning.\nWith RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors.\nHowever, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. To address these issues and further enhance reasoning performance,\nwe introduce DeepSeek-R1, which incorporates cold-start data before RL.\nDeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks. \nTo support the research community, we have open-sourced DeepSeek-R1-Zero, DeepSeek-R1, and six dense models distilled from DeepSeek-R1 based on Llama and Qwen. DeepSeek-R1-Distill-Qwen-32B outperforms OpenAI-o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.\n"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-qwen",
+      "repository": "QwenLM/Qwen3.5",
+      "url": "https://raw.githubusercontent.com/QwenLM/Qwen3.5/2ea10dc725823bf7c3e21ce8557cbe15245132ae/README.md",
+      "revision": "2ea10dc725823bf7c3e21ce8557cbe15245132ae",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "a71ec46607f81d6056336fb0a8431a26a1c7d8db6ac568a0c021c36f1ed3c92e",
+      "bytes": 14334,
+      "title": "QwenLM/Qwen3.5 / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions ([Issues](https://github.com/QwenLM/Qwen3.8/issues)), and share your ideas with the community ([Discussions](https://github.com/QwenLM/Qwen3.8/discussions)).",
+      "excerpts": [
+        {
+          "line": 13,
+          "excerpt": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions ([Issues](https://github.com/QwenLM/Qwen3.8/issues)), and share your ideas with the community ([Discussions](https://github.com/QwenLM/Qwen3.8/discussions))."
+        },
+        {
+          "line": 17,
+          "excerpt": "### Qwen3.8\n\nFor the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability.\n\nQwen3.8 features the following enhancements:\n- **Core Capabilities**: Comprehensive improvements across coding, professional work, research, and long-horizon agentic tasks.\n- **Agent Execution**: Stronger autonomous planning and better handling of environment feedback, leading to more reliable end-to-end task completion.\n- **Downstream Compatibility**: Broader support for popular harnesses and development tools, making it easier to integrate into your existing stack.\n- **Flexible Thinking Control**: Reasoning depth can be tuned with `reasoning_effort`, and reasoning context from historical messages is retained via `preserve_thinking`."
+        },
+        {
+          "line": 98,
+          "excerpt": "#### Qwen Studio\n\nIf you simply want to try Qwen3.8, [Qwen Studio](https://chat.qwen.ai) is an AI assistant for everyone. It’s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities.\n\n#### Qoder\n\nQwen3.8 is now available directly on [Qoder](https://qoder.com/). Qoder is an agentic coding platform designed for real software development. Qoder is available as a standalone application. Follow [its documentation](https://docs.qoder.com/quick-start) to get started!\n\n#### QwenWork\n\nQwen3.8 is now available directly on [QwenWork](https://qwenwork.cn). QwenWork is a one-stop AI working platform launched by Alibaba. Follow [its documentation](https://qwenwork.cn/docs/getting-started/basic-workflow) to get started!\n\n#### Qwen API\n\n[QwenCloud](https://www.qwencloud.com) provides first-class support for Qwen3.8, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.8 in your own applications.\n\n#### Qwen Code\n\n[Qwen Code](https://qwen.ai/qwencode) is an open-source AI agent for the terminal, optimized for Qwen models. It helps you understand large codebases, automate tedious work, and ship faster. Follow [its documentation](https://qwenlm.github.io/qwen-code-docs/) to get started!\n\n### Local Use"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-qwen-code",
+      "repository": "QwenLM/qwen-code",
+      "url": "https://raw.githubusercontent.com/QwenLM/qwen-code/4b136b527f96d9432fe6944f47ec42e663fdf09f/README.md",
+      "revision": "4b136b527f96d9432fe6944f47ec42e663fdf09f",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "8ad684d5404161d34d879e640d94a5d51ba9243ec9b06f44217d06b8509ec2ef",
+      "bytes": 12081,
+      "title": "QwenLM/qwen-code / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "**The open-source AI coding agent for your terminal, editor, desktop, browser, and chat.**",
+      "excerpts": [
+        {
+          "line": 10,
+          "excerpt": "**The open-source AI coding agent for your terminal, editor, desktop, browser, and chat.**"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-kimi",
+      "repository": "MoonshotAI/Kimi-K3",
+      "url": "https://raw.githubusercontent.com/MoonshotAI/Kimi-K3/3cb39dfd32e51c3328e2e4b4af21341247d06c43/README.md",
+      "revision": "3cb39dfd32e51c3328e2e4b4af21341247d06c43",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "849a303d849486aac61d1f0c253e3a1148ca59e801be807151c2dc3cce57ccb2",
+      "bytes": 45004,
+      "title": "MoonshotAI/Kimi-K3 / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world's first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and reasoning.\n\n### Key Features\n- **New Architecture**: Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), and scales up MoE sparsity with a Stable LatentMoE framework that activates 16 out of 896 experts — yielding an approximate 2.5× improvement in overall scaling efficiency over Kimi K2.\n- **Long-Horizon Coding**: Operating with minimal human oversight, Kimi K3 sustains long engineering sessions, navigates massive repositories, and orchestrates terminal tools — from GPU kernel optimization and compiler development to vision-in-the-loop game dev, CAD, and even chip design.\n- **Agentic Knowledge Work**: Kimi K3 advances end-to-end knowledge work, producing deep research with interactive visualizations, widgets and dashboards, and motion design and video editing, powered by its native multimodal architecture.\n- **Native Multimodality & Long Context**: Kimi K3 understands text, images, and video within the same model, and supports a 1-million-token context window.",
+      "excerpts": [
+        {
+          "line": 30,
+          "excerpt": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world's first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and reasoning.\n\n### Key Features\n- **New Architecture**: Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), and scales up MoE sparsity with a Stable LatentMoE framework that activates 16 out of 896 experts — yielding an approximate 2.5× improvement in overall scaling efficiency over Kimi K2.\n- **Long-Horizon Coding**: Operating with minimal human oversight, Kimi K3 sustains long engineering sessions, navigates massive repositories, and orchestrates terminal tools — from GPU kernel optimization and compiler development to vision-in-the-loop game dev, CAD, and even chip design.\n- **Agentic Knowledge Work**: Kimi K3 advances end-to-end knowledge work, producing deep research with interactive visualizations, widgets and dashboards, and motion design and video editing, powered by its native multimodal architecture.\n- **Native Multimodality & Long Context**: Kimi K3 understands text, images, and video within the same model, and supports a 1-million-token context window."
+        },
+        {
+          "line": 9,
+          "excerpt": "  <a href=\"https://www.moonshot.ai\" target=\"_blank\"><img alt=\"Homepage\" src=\"https://img.shields.io/badge/Homepage-Moonshot%20AI-white?logo=Kimi&logoColor=white\"/></a>"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-glm",
+      "repository": "zai-org/GLM-5",
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-5/83c03d317378f86f0a012f7c4cd48b6243c7e69b/README.md",
+      "revision": "83c03d317378f86f0a012f7c4cd48b6243c7e69b",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "78ebb1936e94a4c4412bca2abc1c9cbe599455df12fb1373e75c495cb043651e",
+      "bytes": 15185,
+      "title": "zai-org/GLM-5 / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "    📍 Use GLM-5.3 & GLM-5.3-Flash API services on <a href=\"https://docs.z.ai/guides/llm/glm-5.3\">Z.ai API Platform. </a>\n    <br>\n    🔜 Try GLM-5.3 & GLM-5.3-Flash at <a href=\"https://z.ai\">z.ai</a>.",
+      "excerpts": [
+        {
+          "line": 11,
+          "excerpt": "    📍 Use GLM-5.3 & GLM-5.3-Flash API services on <a href=\"https://docs.z.ai/guides/llm/glm-5.3\">Z.ai API Platform. </a>\n    <br>\n    🔜 Try GLM-5.3 & GLM-5.3-Flash at <a href=\"https://z.ai\">z.ai</a>."
+        },
+        {
+          "line": 73,
+          "excerpt": "## Download Model\n\n| Model              | Download Links                                                                                                                                    | Model Size | Precision |\n|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|------------|-----------|\n| GLM-5.3            | [🤗 Hugging Face](https://huggingface.co/zai-org/GLM-5.3)<br> [🤖 ModelScope](https://modelscope.cn/models/ZhipuAI/GLM-5.3)                       | 744B-A40B  | FP8       |\n| GLM-5.3-BF16       | [🤗 Hugging Face](https://huggingface.co/zai-org/GLM-5.3-BF16)<br> [🤖 ModelScope](https://modelscope.cn/models/ZhipuAI/GLM-5.3-BF16)             | 744B-A40B  | BF16      |\n| GLM-5.3-Flash      | [🤗 Hugging Face](https://huggingface.co/zai-org/GLM-5.3-Flash)<br> [🤖 ModelScope](https://modelscope.cn/models/ZhipuAI/GLM-5.3-Flash)           | 320B-A18B  | FP8       |\n| GLM-5.3-Flash-BF16 | [🤗 Hugging Face](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16)<br> [🤖 ModelScope](https://modelscope.cn/models/ZhipuAI/GLM-5.3-Flash-BF16) | 320B-A18B  | BF16      |\n| GLM-5.2            | [🤗 Hugging Face](https://huggingface.co/zai-org/GLM-5.2)<br> [🤖 ModelScope](https://modelscope.cn/models/ZhipuAI/GLM-5.2)                       | 744B-A40B  | BF16      |\n| GLM-5.2-FP8        | [🤗 Hugging Face](https://huggingface.co/zai-org/GLM-5.2-FP8)<br> [🤖 ModelScope](https://modelscope.cn/models/ZhipuAI/GLM-5.2-FP8)               | 744B-A40B  | FP8       |\n| GLM-5.1            | [🤗 Hugging Face](https://huggingface.co/zai-org/GLM-5.1)<br> [🤖 ModelScope](https://modelscope.cn/models/ZhipuAI/GLM-5.1)                       | 744B-A40B  | BF16      |\n| GLM-5.1-FP8        | [🤗 Hugging Face](https://huggingface.co/zai-org/GLM-5.1-FP8)<br> [🤖 ModelScope](https://modelscope.cn/models/ZhipuAI/GLM-5.1-FP8)               | 744B-A40B  | FP8       |\n| GLM-5              | [🤗 Hugging Face](https://huggingface.co/zai-org/GLM-5)<br> [🤖 ModelScope](https://modelscope.cn/models/ZhipuAI/GLM-5)                           | 744B-A40B  | BF16      |\n| GLM-5-FP8          | [🤗 Hugging Face](https://huggingface.co/zai-org/GLM-5-FP8)<br> [🤖 ModelScope](https://modelscope.cn/models/ZhipuAI/GLM-5-FP8)                   | 744B-A40B  | FP8       |\n"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-minimax",
+      "repository": "MiniMax-AI/MiniMax-M3",
+      "url": "https://raw.githubusercontent.com/MiniMax-AI/MiniMax-M3/79882a353ea7d8b3b52ecaf6523ba7ab2a6fb6e5/README.md",
+      "revision": "79882a353ea7d8b3b52ecaf6523ba7ab2a6fb6e5",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "a223cf692dd0da954e819a8ec6870d7f08002fb97e6fe39e65c5582350b1a820",
+      "bytes": 4950,
+      "title": "MiniMax-AI/MiniMax-M3 / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "MiniMax-M3 is a native multimodal model with 1M context. It has ~428B parameters and ~23B activated parameters.\n\n**Highlights:**\n- **Native Multimodality:** M3 undergoes mixed-modality training from the very first step, enabling deeper semantic fusion across text, image, and video.\n- **Context Scaling via Sparse Attention:** M3 introduces MiniMax Sparse Attention (MSA) to improve long context efficiency. M3 delivers 9× prefill and 15× decode speedups compared to M2 at 1M context, reducing per-token compute to 1/20.\n- **Coding & Cowork Capability:** M3 achieves frontier-level performance across long-horizon agentic benchmarks, excelling in both coding and cowork.",
+      "excerpts": [
+        {
+          "line": 20,
+          "excerpt": "MiniMax-M3 is a native multimodal model with 1M context. It has ~428B parameters and ~23B activated parameters.\n\n**Highlights:**\n- **Native Multimodality:** M3 undergoes mixed-modality training from the very first step, enabling deeper semantic fusion across text, image, and video.\n- **Context Scaling via Sparse Attention:** M3 introduces MiniMax Sparse Attention (MSA) to improve long context efficiency. M3 delivers 9× prefill and 15× decode speedups compared to M2 at 1M context, reducing per-token compute to 1/20.\n- **Coding & Cowork Capability:** M3 achieves frontier-level performance across long-horizon agentic benchmarks, excelling in both coding and cowork."
+        },
+        {
+          "line": 42,
+          "excerpt": "## How to Use\n\n- [MiniMax Agent](https://agent.minimax.io/)\n- [MiniMax API](https://platform.minimax.io/)\n\nM3 supports three reasoning modes through the `thinking` parameter:\n- **`enabled`** — Reasoning is always enabled.\n- **`adaptive`** — M3 automatically determines when additional reasoning is beneficial.\n- **`disabled`** — Reasoning is disabled to minimize latency and maximize throughput."
+        },
+        {
+          "line": 9,
+          "excerpt": "  <a href=\"https://www.minimax.io\" target=\"_blank\"><img src=\"https://img.shields.io/badge/MiniMax%20Website-FF6C37?style=for-the-badge&logo=minimax&logoColor=white\" alt=\"MiniMax Website\"></a>"
+        },
+        {
+          "line": 34,
+          "excerpt": "M3 is powered by [**MiniMax Sparse Attention (MSA)**](https://github.com/MiniMax-AI/MSA), a high-performance sparse attention operator designed for million-token contexts. Compared with GQA, MSA dramatically reduces the attention compute and memory footprint while preserving model quality."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-bytedance",
+      "repository": "ByteDance-Seed/Seed-OSS",
+      "url": "https://raw.githubusercontent.com/ByteDance-Seed/Seed-OSS/98e12be7c784c46ea98a4f816babb09965899ae0/README.md",
+      "revision": "98e12be7c784c46ea98a4f816babb09965899ae0",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "dc77b73bbcfaa28939855cb1a6107ee380096b305734a76db7deedb30ea8aeba",
+      "bytes": 19590,
+      "title": "ByteDance-Seed/Seed-OSS / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Seed-OSS is a series of open-source large language models developed by ByteDance's Seed Team, designed for powerful long-context, reasoning, agent and general capabilities, and versatile developer-friendly features. Although trained with only 12T tokens, Seed-OSS achieves excellent performance on several popular open benchmarks.\n\nWe release this series of models to the open-source community under the Apache-2.0 license.",
+      "excerpts": [
+        {
+          "line": 34,
+          "excerpt": "Seed-OSS is a series of open-source large language models developed by ByteDance's Seed Team, designed for powerful long-context, reasoning, agent and general capabilities, and versatile developer-friendly features. Although trained with only 12T tokens, Seed-OSS achieves excellent performance on several popular open benchmarks.\n\nWe release this series of models to the open-source community under the Apache-2.0 license."
+        },
+        {
+          "line": 31,
+          "excerpt": "- [2025/08/20]🔥We release `Seed-OSS-36B-Base` (both with and without synthetic data versions) and `Seed-OSS-36B-Instruct`."
+        },
+        {
+          "line": 10,
+          "excerpt": "  <a href=\"https://seed.bytedance.com/\">\n    <img src=\"https://img.shields.io/badge/Website-%231e37ff?style=for-the-badge&logo=bytedance&logoColor=white\"></a>"
+        },
+        {
+          "line": 75,
+          "excerpt": "Incorporating synthetic instruction data into pretraining leads to improved performance on most benchmarks. We adopt the version augmented with synthetic instruction data (i.e., *w/ syn.*) as `Seed-OSS-36B-Base`. We also release `Seed-OSS-36B-Base-woSyn` trained without such data (i.e., *w/o syn.*), offering the community a high-performance foundation model unaffected by synthetic instruction data."
+        },
+        {
+          "line": 46,
+          "excerpt": "- **Native Long Context**: Trained with up-to-512K long context natively."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-hunyuan",
+      "repository": "Tencent-Hunyuan/Hunyuan-A13B",
+      "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/Hunyuan-A13B/2798f3c8b6a69e0ce93950b0d2417203cf950fa0/README.md",
+      "revision": "2798f3c8b6a69e0ce93950b0d2417203cf950fa0",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "9478e5caa038b006ca480aaf4b58733db98eb971445b6ba58a1fb7ff31aefa0d",
+      "bytes": 17676,
+      "title": "Tencent-Hunyuan/Hunyuan-A13B / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Welcome to the official repository of **Hunyuan-A13B**, an innovative and open-source large language model (LLM) built on a fine-grained Mixture-of-Experts (MoE) architecture. Designed for efficiency and scalability, Hunyuan-A13B delivers cutting-edge performance with minimal computational overhead, making it an ideal choice for advanced reasoning and general-purpose applications, especially in resource-constrained environments.\n\n## Model Introduction\n\nWith the rapid advancement of artificial intelligence technology, large language models (LLMs) have achieved remarkable progress in natural language processing, computer vision, and scientific tasks. However, as model scales continue to expand, optimizing resource consumption while maintaining high performance has become a critical challenge. To address this, we have explored Mixture of Experts (MoE) architectures. The newly introduced Hunyuan-A13B model features a total of 80 billion parameters with 13 billion active parameters. It not only delivers high-performance results but also achieves optimal resource efficiency, successfully balancing computational power and resource utilization.",
+      "excerpts": [
+        {
+          "line": 31,
+          "excerpt": "Welcome to the official repository of **Hunyuan-A13B**, an innovative and open-source large language model (LLM) built on a fine-grained Mixture-of-Experts (MoE) architecture. Designed for efficiency and scalability, Hunyuan-A13B delivers cutting-edge performance with minimal computational overhead, making it an ideal choice for advanced reasoning and general-purpose applications, especially in resource-constrained environments.\n\n## Model Introduction\n\nWith the rapid advancement of artificial intelligence technology, large language models (LLMs) have achieved remarkable progress in natural language processing, computer vision, and scientific tasks. However, as model scales continue to expand, optimizing resource consumption while maintaining high performance has become a critical challenge. To address this, we have explored Mixture of Experts (MoE) architectures. The newly introduced Hunyuan-A13B model features a total of 80 billion parameters with 13 billion active parameters. It not only delivers high-performance results but also achieves optimal resource efficiency, successfully balancing computational power and resource utilization."
+        },
+        {
+          "line": 37,
+          "excerpt": "### Key Features and Advantages\n\n- **Compact yet Powerful**: With only 13 billion active parameters (out of a total of 80 billion), the model delivers competitive performance on a wide range of benchmark tasks, rivaling much larger models.\n- **Hybrid Reasoning Support**: Supports both fast and slow thinking modes, allowing users to flexibly choose according to their needs.\n- **Ultra-Long Context Understanding**: Natively supports a 256K context window, maintaining stable performance on long-text tasks.\n- **Enhanced Agent Capabilities**: Optimized for agent tasks, achieving leading results on benchmarks such as BFCL-v3, τ-Bench and C3-Bench.\n- **Efficient Inference**: Utilizes Grouped Query Attention (GQA) and supports multiple quantization formats, enabling highly efficient inference."
+        },
+        {
+          "line": 52,
+          "excerpt": "* 2025.6.27 We have open-sourced  **Hunyuan-A13B-Pretrain** , **Hunyuan-A13B-Instruct** , **Hunyuan-A13B-Instruct-FP8** , **Hunyuan-A13B-Instruct-GPTQ-Int4** on Hugging Face. In addition, we have released a <a href=\"report/Hunyuan_A13B_Technical_Report.pdf\">technical report </a> and a training and inference operation manual, which provide detailed information about the model’s capabilities as well as the operations for training and inference."
+        },
+        {
+          "line": 13,
+          "excerpt": "    🖥️&nbsp;<a href=\"https://hunyuan.tencent.com\" style=\"color: red;\"><b>Official Website</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;\n    🕖&nbsp;<a href=\"https://cloud.tencent.com/product/hunyuan\"><b>HunyuanAPI</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;\n    🕹️&nbsp;<a href=\"https://hunyuan.tencent.com/?model=hunyuan-a13b\"><b>Demo</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-ernie",
+      "repository": "PaddlePaddle/ERNIE",
+      "url": "https://raw.githubusercontent.com/PaddlePaddle/ERNIE/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md",
+      "revision": "790a50b045d1aca2753d5395d8bec0806b2e6925",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "673bc9274a93fa9c5bc74a9591c525e7707f7f63b87255fc3ef55afafe775b19",
+      "bytes": 20541,
+      "title": "PaddlePaddle/ERNIE / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "We introduce ERNIE 4.5, a new family of large-scale multimodal models comprising 10 distinct variants. The model family consist of Mixture-of-Experts (MoE) models with 47B and 3B active parameters, with the largest model having 424B total parameters, as well as a 0.3B dense model. For the MoE architecture, we propose a novel heterogeneous modality structure, which supports parameter sharing across modalities while also allowing dedicated parameters for each individual modality.  This MoE architecture has the advantage to enhance multimodal understanding without compromising, and even improving, performance on text-related tasks. All of our models are trained with optimal efficiency using the [PaddlePaddle](https://github.com/PaddlePaddle/Paddle) deep learning framework, which also enables high-performance inference and streamlined deployment for them. We achieve 47% Model FLOPs Utilization (MFU) in our largest ERNIE 4.5 language model pre-training. Experimental results show that our models achieve state-of-the-art performance across multiple text and multimodal benchmarks, especially in instruction following, world knowledge memorization, visual understanding and multimodal reasoning. All models are publicly accessible under Apache 2.0 to support future research and development in the field. Additionally, we open source the development toolkits for ERNIE 4.5, featuring industrial-grade capabilities, resource-efficient training and inference workflows, and multi-hardware compatibility.",
+      "excerpts": [
+        {
+          "line": 55,
+          "excerpt": "We introduce ERNIE 4.5, a new family of large-scale multimodal models comprising 10 distinct variants. The model family consist of Mixture-of-Experts (MoE) models with 47B and 3B active parameters, with the largest model having 424B total parameters, as well as a 0.3B dense model. For the MoE architecture, we propose a novel heterogeneous modality structure, which supports parameter sharing across modalities while also allowing dedicated parameters for each individual modality.  This MoE architecture has the advantage to enhance multimodal understanding without compromising, and even improving, performance on text-related tasks. All of our models are trained with optimal efficiency using the [PaddlePaddle](https://github.com/PaddlePaddle/Paddle) deep learning framework, which also enables high-performance inference and streamlined deployment for them. We achieve 47% Model FLOPs Utilization (MFU) in our largest ERNIE 4.5 language model pre-training. Experimental results show that our models achieve state-of-the-art performance across multiple text and multimodal benchmarks, especially in instruction following, world knowledge memorization, visual understanding and multimodal reasoning. All models are publicly accessible under Apache 2.0 to support future research and development in the field. Additionally, we open source the development toolkits for ERNIE 4.5, featuring industrial-grade capabilities, resource-efficient training and inference workflows, and multi-hardware compatibility."
+        },
+        {
+          "line": 17,
+          "excerpt": "**[2025-11] 🔥 Released ERNIEKit v1.5:**\n\n- **New Features**\n    - [ERNIE-4.5-VL-28B-A3B-Thinking] Supports SFT training and function call training for ERNIE-4.5-VL-28B-A3B-Thinking (https://huggingface.co/baidu/ERNIE-4.5-VL-28B-A3B-Thinking)."
+        },
+        {
+          "line": 7,
+          "excerpt": "[ERNIE Bot](https://ernie.baidu.com/) |  [🤗Hugging Face](https://huggingface.co/baidu) | [AI Studio](https://aistudio.baidu.com/modelsoverview)"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-apple-fm",
+      "repository": "apple/python-apple-fm-sdk",
+      "url": "https://raw.githubusercontent.com/apple/python-apple-fm-sdk/0249f35fce855a6701debaed569b6827fc6f5706/README.md",
+      "revision": "0249f35fce855a6701debaed569b6827fc6f5706",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "3cc40c5a31a46a1f6b288437b29f15c02565e43b36fe4fd748d15e69284ca90a",
+      "bytes": 4217,
+      "title": "apple/python-apple-fm-sdk / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Python bindings for Apple's [Foundation Models framework](https://developer.apple.com/documentation/foundationmodels), providing access to the on-device foundation model\nat the core of Apple Intelligence on macOS.",
+      "excerpts": [
+        {
+          "line": 3,
+          "excerpt": "Python bindings for Apple's [Foundation Models framework](https://developer.apple.com/documentation/foundationmodels), providing access to the on-device foundation model\nat the core of Apple Intelligence on macOS."
+        },
+        {
+          "line": 10,
+          "excerpt": "You can:\n\n- **Evaluate Swift Foundation Models app features** by running batch inference and analyzing results from Python\n- Perform **on-device inference** with the system foundation model\n- Stream **real-time text generation** responses\n- Use **guided generation** with structured output schemas and constraints\n- Get **type-safe responses** using Python decorators for guided generation\n- Configure **custom model settings** for different model options\n- Process **transcripts exported from Swift apps** for quality analysis"
+        },
+        {
+          "line": 25,
+          "excerpt": "## Requirements\n\n- macOS 26.0+\n- Download [Xcode 26.0+](https://developer.apple.com/xcode/) and agree to the [Xcode and Apple SDKs agreement](https://www.apple.com/legal/sla/docs/xcode.pdf) in the Xcode app.\n- Python 3.10+\n- Apple Intelligence turned on for [a compatible Mac](https://support.apple.com/en-us/121115)"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-amazon",
+      "repository": "aws-samples/amazon-nova-samples",
+      "url": "https://raw.githubusercontent.com/aws-samples/amazon-nova-samples/0585cf443c998284ac6b9fdbfc0b41a1bc0619ea/README.md",
+      "revision": "0585cf443c998284ac6b9fdbfc0b41a1bc0619ea",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "2350c26cae942d7aeb83fac777d08069342f15e8a1022f59b769831974282bb2",
+      "bytes": 2604,
+      "title": "aws-samples/amazon-nova-samples / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "# Amazon Nova model cookbook \n\n## Getting Started\n\nTo get started with the code examples, ensure you have access to [Amazon Bedrock](https://aws.amazon.com/bedrock/). Then clone this repo and navigate to one of the folders above. Detailed instructions are provided in each folder's README.",
+      "excerpts": [
+        {
+          "line": 1,
+          "excerpt": "# Amazon Nova model cookbook \n\n## Getting Started\n\nTo get started with the code examples, ensure you have access to [Amazon Bedrock](https://aws.amazon.com/bedrock/). Then clone this repo and navigate to one of the folders above. Detailed instructions are provided in each folder's README."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-amazon-speech",
+      "repository": "aws-samples/amazon-nova-samples",
+      "url": "https://raw.githubusercontent.com/aws-samples/amazon-nova-samples/0585cf443c998284ac6b9fdbfc0b41a1bc0619ea/speech-to-speech/README.md",
+      "revision": "0585cf443c998284ac6b9fdbfc0b41a1bc0619ea",
+      "path": "speech-to-speech/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "ef83b1c7385bdd7fb1df763884ab57566ae5557483d07bc5d4c6f81bf6dbde96",
+      "bytes": 8500,
+      "title": "aws-samples/amazon-nova-samples / speech-to-speech/README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "The Amazon Nova Sonic model provides real-time, conversational interactions through bidirectional audio streaming. Amazon Nova Sonic processes and responds to real-time speech as it occurs, enabling natural, human-like conversational experiences.\n\nThe Amazon Nova Sonic model uses the `InvokeModelWithBidirectionalStream` API, which enables real-time bidirectional streaming conversations. This differs from traditional request-response patterns by maintaining an open channel for continuous audio streaming in both directions.",
+      "excerpts": [
+        {
+          "line": 8,
+          "excerpt": "The Amazon Nova Sonic model provides real-time, conversational interactions through bidirectional audio streaming. Amazon Nova Sonic processes and responds to real-time speech as it occurs, enabling natural, human-like conversational experiences.\n\nThe Amazon Nova Sonic model uses the `InvokeModelWithBidirectionalStream` API, which enables real-time bidirectional streaming conversations. This differs from traditional request-response patterns by maintaining an open channel for continuous audio streaming in both directions."
+        },
+        {
+          "line": 3,
+          "excerpt": ">**Note:** We have announced Amazon Nova 2 Sonic on Dec 2nd, 2025.\n➡️ Existing examples continue to work with model ID `amazon.nova-2-sonic-v1:0`\n➡️ Updated examples using Amazon Nova 2 Sonic are available in the [`amazon-nova-2-sonic`](amazon-nova-2-sonic/) directory.\n➡️ A prompt-engineering best-practices guide for Amazon Nova Sonic 2.5 voice agents is available in the [`amazon-nova-2.5-sonic`](amazon-nova-2.5-sonic/) directory."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-amazon-embeddings",
+      "repository": "aws-samples/amazon-nova-samples",
+      "url": "https://raw.githubusercontent.com/aws-samples/amazon-nova-samples/0585cf443c998284ac6b9fdbfc0b41a1bc0619ea/multimodal-embeddings/README.md",
+      "revision": "0585cf443c998284ac6b9fdbfc0b41a1bc0619ea",
+      "path": "multimodal-embeddings/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "fb5495fa899248adb17340f6de9b73d87dd1672496f8b22f0c07541dcc7067af",
+      "bytes": 4197,
+      "title": "aws-samples/amazon-nova-samples / multimodal-embeddings/README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Comprehensive sample code and tutorials for Amazon Nova's multimodal embeddings model, demonstrating how to generate embeddings from text, images, videos, and documents for real-world applications.",
+      "excerpts": [
+        {
+          "line": 3,
+          "excerpt": "Comprehensive sample code and tutorials for Amazon Nova's multimodal embeddings model, demonstrating how to generate embeddings from text, images, videos, and documents for real-world applications."
+        },
+        {
+          "line": 17,
+          "excerpt": "| 🎵 [`04_basics_audio_embeddings.ipynb`](getting-started/04_basics_audio_embeddings.ipynb) | Audio | Audio content processing and feature extraction |"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-amazon-understanding",
+      "repository": "aws-samples/amazon-nova-samples",
+      "url": "https://raw.githubusercontent.com/aws-samples/amazon-nova-samples/0585cf443c998284ac6b9fdbfc0b41a1bc0619ea/multimodal-understanding/README.md",
+      "revision": "0585cf443c998284ac6b9fdbfc0b41a1bc0619ea",
+      "path": "multimodal-understanding/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "67acac5728fbf1f25183e27a0eeaf4d15b6c75d8f06ac15fcedce6fb1ca47b89",
+      "bytes": 15639,
+      "title": "aws-samples/amazon-nova-samples / multimodal-understanding/README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "| Long Context Intelligent Document Understanding with Premier | A How to Guide on leveraging long context(1m) of Premier to understand long documents                            | [Link](https://github.com/aws-samples/amazon-nova-samples/tree/main/multimodal-understanding/repeatable-patterns/14-document-longcontext-idp)                     |\n| Deeper Chain of Thought with Premier                         | A How to Guide on leveraging deeper chain of thought with Premier                                                | [Link](https://github.com/aws-samples/amazon-nova-samples/blob/main/multimodal-understanding/repeatable-patterns/17-chain-of-thought/text/chain-of-thought.ipynb) |\n| Citations with Amazon Nova                                   | A How to Guide on leveraging citations with Amazon Nova                                                          | [Link](https://github.com/aws-samples/amazon-nova-samples/tree/main/multimodal-understanding/repeatable-patterns/26-nova-citations)                               |",
+      "excerpts": [
+        {
+          "line": 21,
+          "excerpt": "| Long Context Intelligent Document Understanding with Premier | A How to Guide on leveraging long context(1m) of Premier to understand long documents                            | [Link](https://github.com/aws-samples/amazon-nova-samples/tree/main/multimodal-understanding/repeatable-patterns/14-document-longcontext-idp)                     |\n| Deeper Chain of Thought with Premier                         | A How to Guide on leveraging deeper chain of thought with Premier                                                | [Link](https://github.com/aws-samples/amazon-nova-samples/blob/main/multimodal-understanding/repeatable-patterns/17-chain-of-thought/text/chain-of-thought.ipynb) |\n| Citations with Amazon Nova                                   | A How to Guide on leveraging citations with Amazon Nova                                                          | [Link](https://github.com/aws-samples/amazon-nova-samples/tree/main/multimodal-understanding/repeatable-patterns/26-nova-citations)                               |"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-ibm",
+      "repository": "ibm-granite/granite-4.0-language-models",
+      "url": "https://raw.githubusercontent.com/ibm-granite/granite-4.0-language-models/de23701d1627c767cfc91a0ccfa360a5b247dde2/README.md",
+      "revision": "de23701d1627c767cfc91a0ccfa360a5b247dde2",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "d152bcf0037c120c56f3280b39efb3802b85b28310f4a2ece68243356aaae375",
+      "bytes": 14724,
+      "title": "ibm-granite/granite-4.0-language-models / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "Granite 4.0 language models are lightweight, state-of-the-art open foundation models that natively support multilingual capabilities, a wide range of coding tasks—including fill-in-the-middle (FIM) code completion—retrieval-augmented generation (RAG), tool usage, and structured JSON output.\n\nOur models are developed using a combination of advanced techniques such as structured chat formatting, supervised fine-tuning, reinforcement learning–based model alignment, and model merging. Granite 4.0 features significantly improved *instruction-following* and *tool-calling* capabilities, making it highly effective for enterprise applications and an ideal choice for deployment in environments with constrained compute resources.\n\nAll models are publicly released under the Apache 2.0 license, allowing free use for both research and commercial purposes. The data curation and training processes were specifically designed for enterprise scenarios and customization, incorporating governance, risk, and compliance (GRC) evaluations alongside IBM’s standard data clearance and document quality review procedures.\n\nThe initial release of the Granite 4.0 models included three sizes—micro, tiny, and small—built on dense, dense-hybrid, and mixture-of-experts (MoE) hybrid architectures. Additional model sizes have been added gradually. We provide both base models (checkpoints after pretraining) and instruct models (checkpoints fine-tuned for dialogue, instruction following, helpfulness, and safety).",
+      "excerpts": [
+        {
+          "line": 12,
+          "excerpt": "Granite 4.0 language models are lightweight, state-of-the-art open foundation models that natively support multilingual capabilities, a wide range of coding tasks—including fill-in-the-middle (FIM) code completion—retrieval-augmented generation (RAG), tool usage, and structured JSON output.\n\nOur models are developed using a combination of advanced techniques such as structured chat formatting, supervised fine-tuning, reinforcement learning–based model alignment, and model merging. Granite 4.0 features significantly improved *instruction-following* and *tool-calling* capabilities, making it highly effective for enterprise applications and an ideal choice for deployment in environments with constrained compute resources.\n\nAll models are publicly released under the Apache 2.0 license, allowing free use for both research and commercial purposes. The data curation and training processes were specifically designed for enterprise scenarios and customization, incorporating governance, risk, and compliance (GRC) evaluations alongside IBM’s standard data clearance and document quality review procedures.\n\nThe initial release of the Granite 4.0 models included three sizes—micro, tiny, and small—built on dense, dense-hybrid, and mixture-of-experts (MoE) hybrid architectures. Additional model sizes have been added gradually. We provide both base models (checkpoints after pretraining) and instruct models (checkpoints fine-tuned for dialogue, instruction following, helpfulness, and safety)."
+        },
+        {
+          "line": 24,
+          "excerpt": "## How to Use our Models?\nTo use any of our models, pick an appropriate `model_path` from:\n1. `iibm-granite/granite-4.0-micro-base`\n2. `ibm-granite/granite-4.0-micro`\n3. `ibm-granite/granite-4.0-h-micro-base`\n4. `ibm-granite/granite-4.0-h-micro`\n5. `ibm-granite/granite-4.0-h-tiny-base`\n6. `ibm-granite/granite-4.0-h-tiny`\n7. `ibm-granite/granite-4.0-h-small-base`\n8. `ibm-granite/granite-4.0-h-small`\n9. `ibm-granite/granite-4.0-8b-base`\n10. `ibm-granite/granite-4.0-8b`\n"
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    },
+    {
+      "id": "model-amazon-act-sdk",
+      "repository": "aws/nova-act",
+      "url": "https://raw.githubusercontent.com/aws/nova-act/eb13ab52e043abf0e49c68b030aaf750fa2afe97/README.md",
+      "revision": "eb13ab52e043abf0e49c68b030aaf750fa2afe97",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "7ace8eda84d6b75ab303536c32eb51e262c16d96543bc307d8a7b73a1e54f9cb",
+      "bytes": 68237,
+      "title": "aws/nova-act / README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "reviewedOn": "2026-10-20",
+      "excerpt": "A Python SDK for Amazon Nova Act.\n\nAmazon Nova Act is available as a new AWS service to build and manage fleets of reliable AI agents for automating production UI workflows at scale. Nova Act completes repetitive UI workflows in the browser and escalates to a human supervisor when appropriate. You can define workflows by combining the flexibility of natural language with Python code. Start by exploring in the web playground at nova.amazon.com/act, develop and debug in your IDE, deploy to AWS, and monitor your workflows in the AWS Console, all in just a few steps.\n\n(Preview) Nova Act also integrates with external tools through API calls, remote MCP, or agentic frameworks, such as Strands Agents.",
+      "excerpts": [
+        {
+          "line": 3,
+          "excerpt": "A Python SDK for Amazon Nova Act.\n\nAmazon Nova Act is available as a new AWS service to build and manage fleets of reliable AI agents for automating production UI workflows at scale. Nova Act completes repetitive UI workflows in the browser and escalates to a human supervisor when appropriate. You can define workflows by combining the flexibility of natural language with Python code. Start by exploring in the web playground at nova.amazon.com/act, develop and debug in your IDE, deploy to AWS, and monitor your workflows in the AWS Console, all in just a few steps.\n\n(Preview) Nova Act also integrates with external tools through API calls, remote MCP, or agentic frameworks, such as Strands Agents."
+        },
+        {
+          "line": 10,
+          "excerpt": "> #### ⚠️ Important: Nova Act SDK versions older than 3.0 are no longer supported. Users must upgrade to the latest version to receive security updates and new features."
+        }
+      ],
+      "limitations": "Documentation verifies the stated product/interface scope, not current pricing, universal availability, legal ownership, headquarters, leadership, original training infrastructure, customer contracts or a complete portfolio."
+    }
+  ],
+  "entities": [
+    {
+      "entityId": "openai",
+      "changes": {
+        "provides": "Model APIs for text generation and real-time text/audio interaction, Codex coding tools, and the Agents SDK for tool-using workflows.",
+        "howUsed": "Applications call the Responses or Realtime APIs. Developers use Codex in local, editor or cloud coding workflows and the Agents SDK to connect models, tools, handoffs and tracing."
+      },
+      "fieldEvidence": {
+        "provides": {
+          "sourceIds": [
+            "model-openai",
+            "model-codex",
+            "model-openai-agents"
+          ],
+          "scope": "Product interfaces and documented workflows only; model identifiers, lifecycle and corporate facts outside this scope."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-openai",
+            "model-codex",
+            "model-openai-agents"
+          ],
+          "scope": "Product interfaces and documented workflows only; model identifiers, lifecycle and corporate facts outside this scope."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Responses API",
+          "kind": "API",
+          "role": "Text-generation model interface",
+          "sourceIds": [
+            "model-openai"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Realtime API",
+          "kind": "API",
+          "role": "Text/audio conversational streaming with function calling",
+          "sourceIds": [
+            "model-openai"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Codex CLI",
+          "kind": "Coding agent",
+          "role": "Local coding agent; README also points to IDE, app and web experiences",
+          "sourceIds": [
+            "model-codex"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "OpenAI Agents SDK",
+          "kind": "Framework",
+          "role": "Provider-agnostic agent workflows, tools, handoffs and tracing",
+          "sourceIds": [
+            "model-openai-agents"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [
+        "The existing GPT and image-model identifier list was not reverified by this SDK README pass. Existing October 18 enum evidence remains separate."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "anthropic",
+      "changes": {
+        "provides": "Claude model access through the Messages API, Python tool-use helpers, and Claude Code for terminal and IDE coding workflows.",
+        "howUsed": "Applications call Claude through the SDK and configure tool helpers. Developers use Claude Code to inspect projects, explain code, execute coding tasks and work with Git."
+      },
+      "fieldEvidence": {
+        "provides": {
+          "sourceIds": [
+            "model-anthropic",
+            "model-claude-code"
+          ],
+          "scope": "Claude API and Claude Code capabilities documented by the respective first-party repositories; not a revalidation of every model identifier."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-anthropic",
+            "model-claude-code"
+          ],
+          "scope": "Claude API and Claude Code capabilities documented by the respective first-party repositories; not a revalidation of every model identifier."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Claude API",
+          "kind": "API",
+          "role": "Model access through the Messages interface",
+          "sourceIds": [
+            "model-anthropic"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Claude SDK for Python",
+          "kind": "SDK",
+          "role": "Python API access and documented tool helpers",
+          "sourceIds": [
+            "model-anthropic"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Claude Code",
+          "kind": "Coding agent",
+          "role": "Terminal/IDE coding workflows",
+          "sourceIds": [
+            "model-claude-code"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "deepmind",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [
+        {
+          "name": "Gemini Developer API",
+          "kind": "API",
+          "role": "Developer integration with Google generative models",
+          "sourceIds": [
+            "model-google-genai"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Gemma",
+          "kind": "Model family",
+          "role": "Text-only and multimodal open-weight models; official PyTorch/PyTorch-XLA inference implementations",
+          "sourceIds": [
+            "model-gemma"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "publishedVariants": [
+              "pretrained",
+              "instruction-tuned"
+            ],
+            "modalities": [
+              "text-only",
+              "multimodal"
+            ],
+            "implementationRuntimes": [
+              "PyTorch",
+              "PyTorch/XLA"
+            ],
+            "documentedInferencePlatforms": [
+              "CPU",
+              "GPU",
+              "TPU"
+            ]
+          }
+        },
+        {
+          "name": "AlphaFold 3",
+          "kind": "Scientific model/software",
+          "role": "Biomolecular structure inference pipeline",
+          "sourceIds": [
+            "model-alphafold"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Parameter access is subject to Google terms; the linked AlphaFold Server is described for non-commercial use. No broader license conclusion.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [
+        "Google-branded API distribution does not establish a separate commercial contract with the DeepMind unit. Existing Gemini, Veo and Lyria version inventory was not comprehensively refreshed here.",
+        "AlphaFold 3 server and model-parameter usage have their own restrictions; do not label the entire portfolio unrestricted open source."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "meta-ai",
+      "changes": {
+        "provides": "Llama model weights, model cards, inference examples and download tools.",
+        "howUsed": "Developers download a selected Llama model and tokenizer, follow its model card and deployment guidance, and comply with that release’s license and acceptable-use policy."
+      },
+      "fieldEvidence": {
+        "provides": {
+          "sourceIds": [
+            "model-llama"
+          ],
+          "scope": "Published Llama model table, model cards, download instructions and per-release license links; not a complete Meta company portfolio."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-llama"
+          ],
+          "scope": "Published Llama model table, model cards, download instructions and per-release license links; not a complete Meta company portfolio."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Llama 2",
+          "kind": "Model family / variant",
+          "role": "Documented downloadable Llama release",
+          "sourceIds": [
+            "model-llama"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Historical or current release listed in the publisher table; license and model card are release-specific.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Llama 3",
+          "kind": "Model family / variant",
+          "role": "Documented downloadable Llama release",
+          "sourceIds": [
+            "model-llama"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Historical or current release listed in the publisher table; license and model card are release-specific.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Llama 3.1",
+          "kind": "Model family / variant",
+          "role": "Documented downloadable Llama release",
+          "sourceIds": [
+            "model-llama"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Historical or current release listed in the publisher table; license and model card are release-specific.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Llama 3.2",
+          "kind": "Model family / variant",
+          "role": "Documented downloadable Llama release",
+          "sourceIds": [
+            "model-llama"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Historical or current release listed in the publisher table; license and model card are release-specific.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Llama 3.2 Vision",
+          "kind": "Model family / variant",
+          "role": "Documented downloadable Llama release",
+          "sourceIds": [
+            "model-llama"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Historical or current release listed in the publisher table; license and model card are release-specific.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Llama 3.3",
+          "kind": "Model family / variant",
+          "role": "Documented downloadable Llama release",
+          "sourceIds": [
+            "model-llama"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Historical or current release listed in the publisher table; license and model card are release-specific.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Llama 4 Scout",
+          "kind": "Model family / variant",
+          "role": "Documented downloadable Llama release",
+          "sourceIds": [
+            "model-llama"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Historical or current release listed in the publisher table; license and model card are release-specific.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Llama 4 Maverick",
+          "kind": "Model family / variant",
+          "role": "Documented downloadable Llama release",
+          "sourceIds": [
+            "model-llama"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Historical or current release listed in the publisher table; license and model card are release-specific.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "xai",
+      "changes": {
+        "description": "xAI provides Grok model APIs and a Python SDK for text, image and video workflows. The SDK documents chat, streaming, tool calling and structured output interfaces.",
+        "provides": "Grok API access for text and multimodal workflows, with synchronous and asynchronous Python clients.",
+        "howUsed": "Applications call Grok through the xAI SDK for chat and streaming responses, image understanding or generation, video generation, and tool-using workflows."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "model-xai"
+          ],
+          "scope": "API and SDK functionality demonstrated in the official xAI SDK. No corporate ownership, training-cluster, pricing or universal-access claim."
+        },
+        "provides": {
+          "sourceIds": [
+            "model-xai"
+          ],
+          "scope": "API and SDK functionality demonstrated in the official xAI SDK. No corporate ownership, training-cluster, pricing or universal-access claim."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-xai"
+          ],
+          "scope": "API and SDK functionality demonstrated in the official xAI SDK. No corporate ownership, training-cluster, pricing or universal-access claim."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Grok",
+          "kind": "Model/API family",
+          "role": "Text and multimodal model API access",
+          "sourceIds": [
+            "model-xai"
+          ],
+          "scope": "An identifier in an SDK example confirms documented interface usage, not release date, benchmark ranking or account entitlement.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "xAI Python SDK",
+          "kind": "SDK",
+          "role": "Synchronous/asynchronous Python clients",
+          "sourceIds": [
+            "model-xai"
+          ],
+          "scope": "An identifier in an SDK example confirms documented interface usage, not release date, benchmark ranking or account entitlement.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "grok-4.6",
+          "kind": "Documented API identifier",
+          "role": "Identifier used in chat and image-understanding examples",
+          "sourceIds": [
+            "model-xai"
+          ],
+          "scope": "An identifier in an SDK example confirms documented interface usage, not release date, benchmark ranking or account entitlement.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "grok-imagine-video",
+          "kind": "Documented API identifier",
+          "role": "Video-generation identifier in the SDK example",
+          "sourceIds": [
+            "model-xai"
+          ],
+          "scope": "An identifier in an SDK example confirms documented interface usage, not release date, benchmark ranking or account entitlement.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "mistral",
+      "changes": {
+        "provides": "Model API clients for chat, embeddings, audio and classification operations, plus Mistral Vibe for command-line coding workflows.",
+        "howUsed": "Applications call the documented Mistral API operations with appropriate access. Developers use Vibe to explore and modify projects through a conversational command-line interface."
+      },
+      "fieldEvidence": {
+        "provides": {
+          "sourceIds": [
+            "model-mistral",
+            "model-mistral-vibe"
+          ],
+          "scope": "SDK-listed operations and Vibe workflow; availability may differ for beta APIs and account entitlements."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-mistral",
+            "model-mistral-vibe"
+          ],
+          "scope": "SDK-listed operations and Vibe workflow; availability may differ for beta APIs and account entitlements."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "La Plateforme",
+          "kind": "API platform",
+          "role": "Account/API access for Mistral chat and embeddings",
+          "sourceIds": [
+            "model-mistral"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Mistral Vibe",
+          "kind": "Coding agent",
+          "role": "Command-line coding assistant",
+          "sourceIds": [
+            "model-mistral-vibe"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Mistral Audio APIs",
+          "kind": "API operations",
+          "role": "Speech, transcription, voices and audio-agent/session operations listed in the SDK",
+          "sourceIds": [
+            "model-mistral"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "cohere",
+      "changes": {
+        "provides": "Chat and embedding models accessed through the Cohere SDK and supported platform clients.",
+        "howUsed": "Applications use Cohere chat, streaming and embedding interfaces. The OCI client documents Command-R, Command-A and Embed support; model availability and endpoint requirements depend on the chosen platform."
+      },
+      "fieldEvidence": {
+        "provides": {
+          "sourceIds": [
+            "model-cohere"
+          ],
+          "scope": "Cohere SDK functionality and its stated OCI client scope, including explicit OCI availability limitations."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-cohere"
+          ],
+          "scope": "Cohere SDK functionality and its stated OCI client scope, including explicit OCI availability limitations."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Command-R",
+          "kind": "Model family",
+          "role": "Chat family named in OCI client documentation",
+          "sourceIds": [
+            "model-cohere"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Command-A",
+          "kind": "Model family",
+          "role": "Chat family named in OCI client documentation",
+          "sourceIds": [
+            "model-cohere"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Embed",
+          "kind": "Model family",
+          "role": "Embedding models accessed through supported clients",
+          "sourceIds": [
+            "model-cohere"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Cohere Python SDK",
+          "kind": "SDK",
+          "role": "Native and supported cloud-client interfaces",
+          "sourceIds": [
+            "model-cohere"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [
+        "The README says Generate and Rerank are not available on OCI on-demand inference and require dedicated fine-tuned endpoints there. Do not generalize that limitation to all Cohere services."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "deepseek",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [
+        {
+          "name": "DeepSeek-R1",
+          "kind": "Model / family",
+          "role": "Reasoning model with cold-start data before reinforcement learning",
+          "sourceIds": [
+            "model-deepseek"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "DeepSeek-R1-Zero",
+          "kind": "Model / family",
+          "role": "Reasoning research model trained with reinforcement learning without preliminary supervised fine-tuning",
+          "sourceIds": [
+            "model-deepseek"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "DeepSeek-R1-Distill",
+          "kind": "Model / family",
+          "role": "Six distilled dense models based on Llama and Qwen",
+          "sourceIds": [
+            "model-deepseek"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [
+        "Existing V4 Pro/Flash items rely on a separately scoped NVIDIA deployment source. This R1 README does not reverify V4 release or training details."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "qwen",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [
+        {
+          "name": "Qwen3.5",
+          "kind": "Model family",
+          "role": "Published open-model series",
+          "sourceIds": [
+            "model-qwen"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Qwen3.6",
+          "kind": "Model family",
+          "role": "Published open-model series",
+          "sourceIds": [
+            "model-qwen"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Qwen3.8",
+          "kind": "Model family",
+          "role": "Published model series with reasoning-effort controls",
+          "sourceIds": [
+            "model-qwen"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Qwen Code",
+          "kind": "Coding agent",
+          "role": "Open-source coding agent across terminal, editor, desktop, browser and chat",
+          "sourceIds": [
+            "model-qwen-code"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Qwen Studio",
+          "kind": "Application",
+          "role": "Official access path linked by the model repository",
+          "sourceIds": [
+            "model-qwen"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [
+        "The publisher README now covers Qwen3.5, Qwen3.6 and Qwen3.8 in the same repository. Qwen API/deployment instructions do not identify original training chips or supplier contracts."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "moonshot-ai",
+      "changes": {
+        "website": "https://www.moonshot.ai"
+      },
+      "fieldEvidence": {
+        "website": {
+          "sourceIds": [
+            "model-kimi"
+          ],
+          "scope": "Homepage link explicitly identified in the publisher repository; destination availability was not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Kimi K3",
+          "kind": "Model",
+          "role": "Open-weight native multimodal model with documented text/image/video input and one-million-token context",
+          "sourceIds": [
+            "model-kimi"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "totalParameters": "2.8T",
+            "contextWindow": "1M",
+            "inputModalities": [
+              "text",
+              "image",
+              "video"
+            ],
+            "architectureComponents": [
+              "Kimi Delta Attention",
+              "Attention Residuals"
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "The document confirms Kimi K3 open weights, native multimodality and a stated one-million-token context; publisher performance superlatives were not adopted."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "zhipu-ai",
+      "changes": {
+        "website": "https://z.ai"
+      },
+      "fieldEvidence": {
+        "website": {
+          "sourceIds": [
+            "model-glm"
+          ],
+          "scope": "Publisher-linked Z.ai product/API site, not legal company identity or current corporate ownership."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "GLM-5",
+          "kind": "Model",
+          "role": "Publisher-listed model with downloadable variants; GLM-5.3 and Flash also have linked API access",
+          "sourceIds": [
+            "model-glm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "modelSize": "744B-A40B",
+            "listedPrecisions": [
+              "BF16",
+              "FP8"
+            ]
+          }
+        },
+        {
+          "name": "GLM-5.1",
+          "kind": "Model",
+          "role": "Publisher-listed model with downloadable variants; GLM-5.3 and Flash also have linked API access",
+          "sourceIds": [
+            "model-glm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "modelSize": "744B-A40B",
+            "listedPrecisions": [
+              "BF16",
+              "FP8"
+            ]
+          }
+        },
+        {
+          "name": "GLM-5.2",
+          "kind": "Model",
+          "role": "Publisher-listed model with downloadable variants; GLM-5.3 and Flash also have linked API access",
+          "sourceIds": [
+            "model-glm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "modelSize": "744B-A40B",
+            "listedPrecisions": [
+              "BF16",
+              "FP8"
+            ]
+          }
+        },
+        {
+          "name": "GLM-5.3",
+          "kind": "Model",
+          "role": "Publisher-listed model with downloadable variants; GLM-5.3 and Flash also have linked API access",
+          "sourceIds": [
+            "model-glm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "modelSize": "744B-A40B",
+            "listedPrecisions": [
+              "BF16",
+              "FP8"
+            ]
+          }
+        },
+        {
+          "name": "GLM-5.3-Flash",
+          "kind": "Model",
+          "role": "Publisher-listed model with downloadable variants; GLM-5.3 and Flash also have linked API access",
+          "sourceIds": [
+            "model-glm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "modelSize": "320B-A18B",
+            "listedPrecisions": [
+              "BF16",
+              "FP8"
+            ]
+          }
+        }
+      ],
+      "notes": [],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "minimax",
+      "changes": {
+        "website": "https://www.minimax.io"
+      },
+      "fieldEvidence": {
+        "website": {
+          "sourceIds": [
+            "model-minimax"
+          ],
+          "scope": "Homepage explicitly labeled MiniMax Website in the publisher model repository."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "MiniMax-M3",
+          "kind": "Model",
+          "role": "Native multimodal model for text, images and video with documented one-million-token context",
+          "sourceIds": [
+            "model-minimax"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "totalParameters": "approximately 428B",
+            "activeParameters": "approximately 23B",
+            "contextWindow": "1M",
+            "inputModalities": [
+              "text",
+              "image",
+              "video"
+            ]
+          }
+        },
+        {
+          "name": "MiniMax Sparse Attention",
+          "kind": "Software/operator",
+          "role": "Sparse-attention operator used by M3",
+          "sourceIds": [
+            "model-minimax"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "MiniMax Agent",
+          "kind": "Application",
+          "role": "Publisher-linked model access application",
+          "sourceIds": [
+            "model-minimax"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "MiniMax API",
+          "kind": "API",
+          "role": "Publisher-linked API access",
+          "sourceIds": [
+            "model-minimax"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "bytedance-seed",
+      "changes": {
+        "description": "ByteDance Seed is the team behind Seed-OSS, a series of language models with published base and instruction-tuned checkpoints. Its documentation describes long-context, reasoning and tool-use workflows.",
+        "provides": "Seed-OSS base and instruction-tuned model checkpoints, including versions with and without synthetic instruction data in pretraining.",
+        "howUsed": "Researchers and developers download a selected Seed-OSS checkpoint for local inference or post-training and follow the publisher’s deployment instructions and Apache-2.0 licensing.",
+        "website": "https://seed.bytedance.com/"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "model-bytedance"
+          ],
+          "scope": "The Seed-OSS repository explicitly identifies ByteDance Seed Team, its website, model variants and Apache-2.0 release."
+        },
+        "provides": {
+          "sourceIds": [
+            "model-bytedance"
+          ],
+          "scope": "The Seed-OSS repository explicitly identifies ByteDance Seed Team, its website, model variants and Apache-2.0 release."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-bytedance"
+          ],
+          "scope": "The Seed-OSS repository explicitly identifies ByteDance Seed Team, its website, model variants and Apache-2.0 release."
+        },
+        "website": {
+          "sourceIds": [
+            "model-bytedance"
+          ],
+          "scope": "The Seed-OSS repository explicitly identifies ByteDance Seed Team, its website, model variants and Apache-2.0 release."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Seed-OSS-36B-Base",
+          "kind": "Model",
+          "role": "Documented Seed-OSS checkpoint",
+          "sourceIds": [
+            "model-bytedance"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "The publisher records an August 20, 2025 release under Apache-2.0; no claim that it is ByteDance’s newest model.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "parameterCount": "36B",
+            "nativeContext": "512K",
+            "licenseStatement": "Apache-2.0",
+            "releaseDateInSource": "2025-08-20"
+          }
+        },
+        {
+          "name": "Seed-OSS-36B-Base-woSyn",
+          "kind": "Model",
+          "role": "Documented Seed-OSS checkpoint",
+          "sourceIds": [
+            "model-bytedance"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "The publisher records an August 20, 2025 release under Apache-2.0; no claim that it is ByteDance’s newest model.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "parameterCount": "36B",
+            "nativeContext": "512K",
+            "licenseStatement": "Apache-2.0",
+            "releaseDateInSource": "2025-08-20"
+          }
+        },
+        {
+          "name": "Seed-OSS-36B-Instruct",
+          "kind": "Model",
+          "role": "Documented Seed-OSS checkpoint",
+          "sourceIds": [
+            "model-bytedance"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "The publisher records an August 20, 2025 release under Apache-2.0; no claim that it is ByteDance’s newest model.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "parameterCount": "36B",
+            "nativeContext": "512K",
+            "licenseStatement": "Apache-2.0",
+            "releaseDateInSource": "2025-08-20"
+          }
+        }
+      ],
+      "notes": [
+        "Doubao remains an inherited product label; this Seed-OSS review does not newly verify Doubao service scope, pricing or availability."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "tencent-hunyuan",
+      "changes": {
+        "description": "Tencent Hunyuan publishes the Hunyuan-A13B language model and related checkpoints. The model uses a mixture-of-experts architecture, with documented fast and slow reasoning modes and a 256K context window.",
+        "provides": "Hunyuan-A13B pretrained, instruction-tuned and quantized checkpoints, a technical report, and training/inference guidance.",
+        "howUsed": "Developers select a Hunyuan checkpoint and follow its training or inference manual, or use the Hunyuan API linked by the publisher. License and API access terms should be checked separately.",
+        "website": "https://hunyuan.tencent.com"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "model-hunyuan"
+          ],
+          "scope": "The official repository documents model identity, variants, reasoning/context features and website/API links; not original training hardware or full Tencent portfolio."
+        },
+        "provides": {
+          "sourceIds": [
+            "model-hunyuan"
+          ],
+          "scope": "The official repository documents model identity, variants, reasoning/context features and website/API links; not original training hardware or full Tencent portfolio."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-hunyuan"
+          ],
+          "scope": "The official repository documents model identity, variants, reasoning/context features and website/API links; not original training hardware or full Tencent portfolio."
+        },
+        "website": {
+          "sourceIds": [
+            "model-hunyuan"
+          ],
+          "scope": "The official repository documents model identity, variants, reasoning/context features and website/API links; not original training hardware or full Tencent portfolio."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Hunyuan-A13B-Pretrain",
+          "kind": "Model checkpoint",
+          "role": "Published Hunyuan-A13B variant",
+          "sourceIds": [
+            "model-hunyuan"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels. Fast/slow reasoning modes are documented for the Instruct checkpoint; they are not asserted for this Pretrain checkpoint.",
+          "availability": "Publisher records June 27, 2025 release; no claim this is the latest Hunyuan family.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "totalParameters": "80B",
+            "activeParameters": "13B",
+            "contextWindow": "256K",
+            "releaseDateInSource": "2025-06-27"
+          }
+        },
+        {
+          "name": "Hunyuan-A13B-Instruct",
+          "kind": "Model checkpoint",
+          "role": "Published Hunyuan-A13B variant",
+          "sourceIds": [
+            "model-hunyuan"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Publisher records June 27, 2025 release; no claim this is the latest Hunyuan family.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "totalParameters": "80B",
+            "activeParameters": "13B",
+            "contextWindow": "256K",
+            "reasoningModes": [
+              "fast",
+              "slow"
+            ],
+            "releaseDateInSource": "2025-06-27"
+          }
+        },
+        {
+          "name": "Hunyuan-A13B-Instruct-FP8",
+          "kind": "Model checkpoint",
+          "role": "Published Hunyuan-A13B variant",
+          "sourceIds": [
+            "model-hunyuan"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Publisher records June 27, 2025 release; no claim this is the latest Hunyuan family.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "totalParameters": "80B",
+            "activeParameters": "13B",
+            "contextWindow": "256K",
+            "reasoningModes": [
+              "fast",
+              "slow"
+            ],
+            "releaseDateInSource": "2025-06-27"
+          }
+        },
+        {
+          "name": "Hunyuan-A13B-Instruct-GPTQ-Int4",
+          "kind": "Model checkpoint",
+          "role": "Published Hunyuan-A13B variant",
+          "sourceIds": [
+            "model-hunyuan"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Publisher records June 27, 2025 release; no claim this is the latest Hunyuan family.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "totalParameters": "80B",
+            "activeParameters": "13B",
+            "contextWindow": "256K",
+            "reasoningModes": [
+              "fast",
+              "slow"
+            ],
+            "releaseDateInSource": "2025-06-27"
+          }
+        }
+      ],
+      "notes": [],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "baidu-ernie",
+      "changes": {
+        "description": "Baidu’s ERNIE 4.5 model repository documents a family of text and multimodal models alongside ERNIEKit development tools. It provides model variants, training instructions and deployment guidance built around PaddlePaddle.",
+        "provides": "ERNIE 4.5 model checkpoints and ERNIEKit tools for supervised fine-tuning and related model-development workflows.",
+        "howUsed": "Developers choose an ERNIE checkpoint, use ERNIEKit for supported adaptation workflows, and follow PaddlePaddle/FastDeploy guidance for inference. The repository also links ERNIE Bot and AI Studio."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "model-ernie"
+          ],
+          "scope": "ERNIE 4.5 introduction, ERNIEKit release notes and official Baidu service links; capabilities apply to documented releases, not all ERNIE versions."
+        },
+        "provides": {
+          "sourceIds": [
+            "model-ernie"
+          ],
+          "scope": "ERNIE 4.5 introduction, ERNIEKit release notes and official Baidu service links; capabilities apply to documented releases, not all ERNIE versions."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-ernie"
+          ],
+          "scope": "ERNIE 4.5 introduction, ERNIEKit release notes and official Baidu service links; capabilities apply to documented releases, not all ERNIE versions."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "ERNIE 4.5",
+          "kind": "Model family",
+          "role": "Text and multimodal model variants",
+          "sourceIds": [
+            "model-ernie"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "ERNIEKit",
+          "kind": "Development toolkit",
+          "role": "Tools for ERNIE development and supported fine-tuning",
+          "sourceIds": [
+            "model-ernie"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "ERNIE Bot",
+          "kind": "Application",
+          "role": "Publisher-linked conversational service",
+          "sourceIds": [
+            "model-ernie"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        }
+      ],
+      "notes": [],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "apple-foundation-models",
+      "changes": {
+        "description": "Apple’s Foundation Models framework gives applications access to the on-device model used by Apple Intelligence. Its Python SDK supports evaluating app features, text generation and guided structured output on compatible Macs.",
+        "provides": "A Foundation Models framework and Python SDK for on-device inference, streaming text generation and guided generation.",
+        "howUsed": "Developers use the system foundation model through Apple’s framework or Python SDK, check model availability, and generate text or structured responses on supported devices."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "model-apple-fm"
+          ],
+          "scope": "On-device Foundation Models access and Python SDK features. The documented Python environment requires macOS 26+, Xcode 26+, Python 3.10+ and Apple Intelligence on a compatible Mac."
+        },
+        "provides": {
+          "sourceIds": [
+            "model-apple-fm"
+          ],
+          "scope": "On-device Foundation Models access and Python SDK features. The documented Python environment requires macOS 26+, Xcode 26+, Python 3.10+ and Apple Intelligence on a compatible Mac."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-apple-fm"
+          ],
+          "scope": "On-device Foundation Models access and Python SDK features. The documented Python environment requires macOS 26+, Xcode 26+, Python 3.10+ and Apple Intelligence on a compatible Mac."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Foundation Models framework",
+          "kind": "Framework",
+          "role": "Access to Apple Intelligence’s on-device system model",
+          "sourceIds": [
+            "model-apple-fm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Foundation Models SDK for Python",
+          "kind": "SDK",
+          "role": "Python bindings for on-device inference, evaluation and guided generation",
+          "sourceIds": [
+            "model-apple-fm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Requires macOS 26+, Xcode 26+, Python 3.10+, and Apple Intelligence enabled on a compatible Mac; model availability is explicitly checked in the example.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "minimumMacOS": "26.0",
+            "minimumXcode": "26.0",
+            "minimumPython": "3.10",
+            "deviceRequirement": "Apple Intelligence enabled on a compatible Mac",
+            "operations": [
+              "on-device inference",
+              "streamed text",
+              "guided generation",
+              "Swift app evaluation"
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "This catalog entry represents a model/framework program, not an independent company. The source does not establish its formal lab organization, original training hardware or private-cloud model stack.",
+        "The prior generic labels Large multimodal models and Reasoning models are not verified by this on-device SDK source. Preserve them only as unreviewed legacy labels or review separately."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "amazon-agi-lab",
+      "changes": {
+        "description": "Amazon’s Nova portfolio includes models and tools for multimodal understanding, conversational speech, embeddings and browser automation. The official Nova samples document these separate workflows and their integration requirements.",
+        "provides": "Amazon Nova model workflows for multimodal understanding, Nova Sonic conversational speech, multimodal embeddings and Nova Act browser automation.",
+        "howUsed": "Developers use the relevant Nova examples and SDKs, enable the required service access, and build text/image/video, voice, retrieval or browser-agent workflows."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "model-amazon",
+            "model-amazon-understanding",
+            "model-amazon-speech",
+            "model-amazon-embeddings",
+            "model-amazon-act-sdk"
+          ],
+          "scope": "Amazon Nova product/workflow scope only. This supports the product portfolio represented by the existing record, not the formal identity or full responsibilities of a legal entity called Amazon AGI Lab."
+        },
+        "provides": {
+          "sourceIds": [
+            "model-amazon",
+            "model-amazon-understanding",
+            "model-amazon-speech",
+            "model-amazon-embeddings",
+            "model-amazon-act-sdk"
+          ],
+          "scope": "Amazon Nova product/workflow scope only. This supports the product portfolio represented by the existing record, not the formal identity or full responsibilities of a legal entity called Amazon AGI Lab."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-amazon",
+            "model-amazon-understanding",
+            "model-amazon-speech",
+            "model-amazon-embeddings",
+            "model-amazon-act-sdk"
+          ],
+          "scope": "Amazon Nova product/workflow scope only. This supports the product portfolio represented by the existing record, not the formal identity or full responsibilities of a legal entity called Amazon AGI Lab."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Amazon Nova",
+          "kind": "Model family",
+          "role": "Text and multimodal understanding workflows",
+          "sourceIds": [
+            "model-amazon-understanding"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Amazon Nova Sonic",
+          "kind": "Model family",
+          "role": "Real-time bidirectional speech interaction",
+          "sourceIds": [
+            "model-amazon-speech"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Amazon Nova Multimodal Embeddings",
+          "kind": "Model/API",
+          "role": "Embeddings for multimodal retrieval workflows",
+          "sourceIds": [
+            "model-amazon-embeddings"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Documented in the retrieved source; current access, region, pricing and lifecycle are not independently verified.",
+          "evidenceStatus": "documented_primary"
+        },
+        {
+          "name": "Amazon Nova Act",
+          "kind": "Model/SDK",
+          "role": "Browser-action agent workflows",
+          "sourceIds": [
+            "model-amazon-act-sdk"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "The current SDK README describes an AWS service; API-key and IAM-based usage have separate terms. External tools are labeled preview. Sample-folder wording that calls the whole product an early preview is not used as its current lifecycle.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "productRole": "AWS service and Python SDK for UI/browser workflow automation",
+            "sdkLifecycleNotice": "SDK versions older than 3.0 no longer supported",
+            "externalToolsStatus": "Preview in the retrieved SDK README"
+          }
+        }
+      ],
+      "notes": [
+        "The Amazon AGI Lab name is an existing catalog organizational label; the sources establish Amazon Nova products, not a separately incorporated company or comprehensive lab charter.",
+        "The samples describe some Nova Act content as early research preview; lifecycle statements must be sourced from the current product documentation, not inferred from the sample folder.",
+        "Resolved a source conflict: the sample README calls Nova Act an early preview, while the current aws/nova-act SDK README describes an AWS service. Prefer the current product SDK source for that scoped status; external-tool integrations remain marked preview."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "ibm-granite",
+      "changes": {
+        "description": "IBM Granite is a model family, including the Granite 4.0 language models. The publisher documents multilingual generation, coding, retrieval-augmented generation, tool use and structured JSON output, with base and instruction-tuned checkpoints.",
+        "provides": "Granite 4.0 base and instruction-tuned model checkpoints, model cards and inference examples released under Apache-2.0.",
+        "howUsed": "Developers select a Granite checkpoint, load it through a supported inference stack, and use the documented chat formats for generation, tool calling, structured output or code completion."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "model-ibm"
+          ],
+          "scope": "Granite 4.0 repository overview, model variants, licensing statement and inference examples."
+        },
+        "provides": {
+          "sourceIds": [
+            "model-ibm"
+          ],
+          "scope": "Granite 4.0 repository overview, model variants, licensing statement and inference examples."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "model-ibm"
+          ],
+          "scope": "Granite 4.0 repository overview, model variants, licensing statement and inference examples."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Granite 4.0 Micro",
+          "kind": "Model / size family",
+          "role": "Documented Granite 4.0 base/instruct model variants",
+          "sourceIds": [
+            "model-ibm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Publisher states Apache-2.0 release; individual model cards determine supported formats and other details.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "checkpointStages": [
+              "base",
+              "instruct"
+            ],
+            "licenseStatement": "Apache-2.0"
+          }
+        },
+        {
+          "name": "Granite 4.0 H-Micro",
+          "kind": "Model / size family",
+          "role": "Documented Granite 4.0 base/instruct model variants",
+          "sourceIds": [
+            "model-ibm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Publisher states Apache-2.0 release; individual model cards determine supported formats and other details.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "checkpointStages": [
+              "base",
+              "instruct"
+            ],
+            "licenseStatement": "Apache-2.0"
+          }
+        },
+        {
+          "name": "Granite 4.0 H-Tiny",
+          "kind": "Model / size family",
+          "role": "Documented Granite 4.0 base/instruct model variants",
+          "sourceIds": [
+            "model-ibm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Publisher states Apache-2.0 release; individual model cards determine supported formats and other details.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "checkpointStages": [
+              "base",
+              "instruct"
+            ],
+            "licenseStatement": "Apache-2.0"
+          }
+        },
+        {
+          "name": "Granite 4.0 H-Small",
+          "kind": "Model / size family",
+          "role": "Documented Granite 4.0 base/instruct model variants",
+          "sourceIds": [
+            "model-ibm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Publisher states Apache-2.0 release; individual model cards determine supported formats and other details.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "checkpointStages": [
+              "base",
+              "instruct"
+            ],
+            "licenseStatement": "Apache-2.0"
+          }
+        },
+        {
+          "name": "Granite 4.0 8B",
+          "kind": "Model / size family",
+          "role": "Documented Granite 4.0 base/instruct model variants",
+          "sourceIds": [
+            "model-ibm"
+          ],
+          "scope": "Only the named product and described role are supported; does not validate all inherited product labels.",
+          "availability": "Publisher states Apache-2.0 release; individual model cards determine supported formats and other details.",
+          "evidenceStatus": "documented_primary",
+          "documentedAttributes": {
+            "checkpointStages": [
+              "base",
+              "instruct"
+            ],
+            "licenseStatement": "Apache-2.0"
+          }
+        }
+      ],
+      "notes": [
+        "IBM Granite is a model-family/program label, not a separate commercial company. Preserve the stable ID and resolve its parent-company/product classification explicitly.",
+        "Do not repeat publisher marketing terms such as state-of-the-art as independent benchmark conclusions."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    },
+    {
+      "entityId": "huawei",
+      "changes": {},
+      "fieldEvidence": {},
+      "productFacts": [],
+      "notes": [
+        "Existing Huawei company profile fields are already populated from prior corporate sources. This pass did not reverify them. A guessed Huawei-Pangu repository path returned 404; that is not evidence that Pangu is absent or discontinued."
+      ],
+      "unresolvedFields": [
+        "legalOrganizationIdentity",
+        "founded",
+        "leadership",
+        "headquarters",
+        "corporateOwnership",
+        "completeProductPortfolio",
+        "customerSupplierContracts",
+        "trainingInfrastructure"
+      ],
+      "reviewedOn": "2026-10-20",
+      "companySpecificSupplyChainStatus": "Not established by this product-documentation review."
+    }
+  ],
+  "blockedSources": [
+    {
+      "url": "https://www.anthropic.com/company",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://openai.com/about/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://deepmind.google/about/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2025/06/apple-supercharges-its-tools-and-technologies-for-developers/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "attemptedOn": "2026-10-20"
+    },
+    {
+      "url": "https://github.com/apple/ml-foundation-models",
+      "error": "HTTP Error 404: Not Found",
+      "attemptedOn": "2026-10-20",
+      "interpretation": "A guessed path failed; not evidence of a missing or discontinued company/product.",
+      "requestedPath": "README.md",
+      "requestScope": "Repository discovery or README lookup; no company-lifecycle conclusion."
+    },
+    {
+      "url": "https://github.com/aws-samples/amazon-nova-samples",
+      "error": "HTTP Error 404: Not Found",
+      "attemptedOn": "2026-10-20",
+      "interpretation": "A guessed path failed; not evidence of a missing or discontinued company/product.",
+      "requestedPath": "multimodal-generation/README.md",
+      "requestScope": "Repository discovery or README lookup; no company-lifecycle conclusion."
+    },
+    {
+      "url": "https://github.com/Huawei-Pangu/Pangu",
+      "error": "HTTP Error 404: Not Found",
+      "attemptedOn": "2026-10-20",
+      "interpretation": "A guessed path failed; not evidence of a missing or discontinued company/product.",
+      "requestedPath": "README.md",
+      "requestScope": "Repository discovery or README lookup; no company-lifecycle conclusion."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "reviewedOn": "2026-10-20",
+  "entries": 2038,
+  "companyLabLabeled": 1098,
+  "scopedEvidenceEntities": 143,
+  "withoutNewFieldOrProductEvidence": 1895,
+  "fieldFacts": 399,
+  "productFacts": 472,
+  "primarySources": 196,
+  "locationEvidenceEntities": 117,
+  "missingFields": {
+    "website": 1875,
+    "founded": 2030,
+    "leadership": 2030,
+    "headquarters": 2030,
+    "provides": 1825,
+    "howUsed": 1825,
+    "profileSources": 1801
+  },
+  "productionEntitySha256": "4f7850f7ba840cf86adb0e27af77bba7c32cb61c2f4456cbdc1ddde821fbac31",
+  "limitations": "Presence, baseline heuristics and field-specific evidence are separate. No company has been certified as having a complete current dossier or portfolio."
+}

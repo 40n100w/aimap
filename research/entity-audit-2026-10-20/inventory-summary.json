@@ -1,0 +1,712 @@
+{
+  "assessmentDate": "2026-10-20",
+  "method": "Every core catalog record assessed mechanically; named identity groups and kind overrides are research leads, not independently sourced corporate facts. No production record was edited.",
+  "entityCount": 2038,
+  "entityTypes": {
+    "Material": 8,
+    "Infrastructure": 2,
+    "Company": 1085,
+    "Technology": 53,
+    "Platform": 198,
+    "Model lab": 21,
+    "Research lab": 2,
+    "Model": 141,
+    "Project": 5,
+    "Framework": 150,
+    "Standard": 1,
+    "Application": 244,
+    "Agent": 127,
+    "Protocol": 1
+  },
+  "genericDescriptionCount": 1861,
+  "genericProfileCount": 1871,
+  "missingFieldCounts": {
+    "website": 1944,
+    "founded": 2030,
+    "leadership": 2030,
+    "headquarters": 2030,
+    "provides": 1916,
+    "howUsed": 1916,
+    "profileSources": 1916,
+    "specificCountry": 1415,
+    "timelineYear": 1940,
+    "datedCatalogReview": 1930
+  },
+  "companyLabLabeledCount": 1108,
+  "companyLabLabeledMissingFieldCounts": {
+    "website": 1092,
+    "founded": 1100,
+    "leadership": 1100,
+    "headquarters": 1100,
+    "provides": 1075,
+    "howUsed": 1075,
+    "profileSources": 1075,
+    "timelineYear": 1054,
+    "datedCatalogReview": 1079,
+    "specificCountry": 754
+  },
+  "kindAssessmentCounts": {
+    "material_or_infrastructure_record": 10,
+    "organization_or_business_unit_candidate": 973,
+    "model_product_or_service_record": 512,
+    "research_community_or_standards_organization_candidate": 31,
+    "software_standard_or_project_record": 155,
+    "organization_candidate_with_product_like_type": 247,
+    "product_system_or_business_unit_candidate": 101,
+    "facility_or_manufacturing_site_candidate": 9
+  },
+  "commercialScopeCounts": {
+    "commercial_ownership_not_inferred_from_record_type": 165,
+    "commercial_organization_or_unit_candidate_requires_identity_check": 1220,
+    "product_service_or_facility_owner_requires_identification": 622,
+    "commercial_status_or_nonprofit_affiliation_requires_identity_check": 31
+  },
+  "websiteLinkKindCounts": {
+    "not_recorded": 1944,
+    "external_site_link_requires_scope_review": 19,
+    "repository": 9,
+    "raw_source_document": 66
+  },
+  "productEvidenceStateCounts": {
+    "no_profile_or_product_review_sources": 1916,
+    "profile_citations_without_product_field_mapping": 14,
+    "scoped_catalog_review_not_full_product_catalog": 108
+  },
+  "priorityCounts": {
+    "P0": 84,
+    "P2": 637,
+    "P1": 1317
+  },
+  "identityReviewGroups": [
+    {
+      "group": "quanta",
+      "entityIds": [
+        "qct",
+        "quanta-cloud-technology",
+        "quanta-computer"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "coherent",
+      "entityIds": [
+        "coherent",
+        "coherent-corp",
+        "ii-vi-photonics",
+        "coherent-sherman"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "innolight",
+      "entityIds": [
+        "innolight",
+        "innolight-technology"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "eoptolink",
+      "entityIds": [
+        "eoptolink",
+        "eoptolink-technology"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "accelink",
+      "entityIds": [
+        "accelink",
+        "accelink-technologies"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "mitac",
+      "entityIds": [
+        "mitac-computing",
+        "mitac-computing-technology"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "unimicron",
+      "entityIds": [
+        "unimicron",
+        "unimicron-technology"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "lumentum",
+      "entityIds": [
+        "lumentum",
+        "lumentum-holdings",
+        "lumentum-wafer-fab"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "kinsus",
+      "entityIds": [
+        "kinsus",
+        "kinsus-interconnect"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "siliconware",
+      "entityIds": [
+        "spil",
+        "siliconware-precision"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "tongfu",
+      "entityIds": [
+        "tongfu",
+        "tfme"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "changxin",
+      "entityIds": [
+        "cxmt",
+        "changxin-memory"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "kurita",
+      "entityIds": [
+        "kurita",
+        "kurita-water-industries"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "compal",
+      "entityIds": [
+        "compal",
+        "compal-electronics"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "eaton",
+      "entityIds": [
+        "eaton",
+        "eaton-electrical"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "boyd",
+      "entityIds": [
+        "boyd",
+        "boyd-corporation"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "green-revolution-cooling",
+      "entityIds": [
+        "green-revolution-cooling",
+        "grc"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "schneider",
+      "entityIds": [
+        "schneider",
+        "schneider-electric-secure-power",
+        "schneider-motivair-cdu"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "cummins",
+      "entityIds": [
+        "cummins-power",
+        "cummins-power-generation",
+        "cummins-power-systems"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "ge-vernova-grid",
+      "entityIds": [
+        "ge-vernova-grid",
+        "ge-vernova-grid-solutions"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "caterpillar-power",
+      "entityIds": [
+        "caterpillar-power",
+        "caterpillar-electric-power"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "rebellions-sapeon",
+      "entityIds": [
+        "rebellions",
+        "sapeon"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "kohler-rehlko",
+      "entityIds": [
+        "kohler-energy",
+        "rehlko"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "robotics-geek",
+      "entityIds": [
+        "geek-robotics",
+        "geekplus"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "cradle",
+      "entityIds": [
+        "cradle",
+        "cradle-ai"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "mosaic-research",
+      "entityIds": [
+        "databricks-mosaic-research",
+        "databricks-mosaic-ai-research"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "defined-ai",
+      "entityIds": [
+        "defined-ai",
+        "defined-ai-data-marketplace"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "phoenix",
+      "entityIds": [
+        "phoenix-by-arize",
+        "phoenix-arize"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "giskard",
+      "entityIds": [
+        "giskard",
+        "giskard-ai"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "ovhcloud",
+      "entityIds": [
+        "ovhcloud",
+        "ovhcloud-public-cloud",
+        "ovhcloud-data-centers"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "modal",
+      "entityIds": [
+        "modal",
+        "modal-labs",
+        "modal-training"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "baseten",
+      "entityIds": [
+        "baseten",
+        "baseten-cloud"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "beam",
+      "entityIds": [
+        "beam",
+        "beam-cloud"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "paige",
+      "entityIds": [
+        "paige",
+        "paige-ai"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "photomath",
+      "entityIds": [
+        "photomath",
+        "photomath-ai"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "socratic",
+      "entityIds": [
+        "socratic",
+        "socratic-by-google"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "magicschool",
+      "entityIds": [
+        "magicschool",
+        "magicschool-ai"
+      ],
+      "status": "unverified_identity_review_group"
+    },
+    {
+      "group": "bedrock-agents",
+      "entityIds": [
+        "amazon-bedrock-agents",
+        "aws-bedrock-agents"
+      ],
+      "status": "unverified_identity_review_group"
+    }
+  ],
+  "locationEvidence": {
+    "allLocationRows": 2531,
+    "allDistinctCompanyIds": 112,
+    "coreEntitiesWithJoinedLocationRows": 117,
+    "coreEntitiesWithJoinedHeadquartersRows": 110,
+    "coreEntitiesWithHeadquartersRowsButBlankProfileHeadquarters": 109,
+    "entitiesWithLocationEvidenceButNoProfileOrReviewSources": [
+      "shin-etsu",
+      "sumco",
+      "jsr",
+      "ajinomoto",
+      "nsig",
+      "nata-opto",
+      "huate-gas",
+      "anji-microelectronics",
+      "jiangfeng-materials",
+      "asml",
+      "applied-materials",
+      "lam-research",
+      "kla",
+      "tokyo-electron",
+      "canon",
+      "nikon",
+      "asm-international",
+      "screen",
+      "disco",
+      "advantest",
+      "teradyne",
+      "synopsys",
+      "cadence",
+      "arm",
+      "coherent",
+      "smee",
+      "hwatsing",
+      "empyrean",
+      "tsmc",
+      "samsung-foundry",
+      "intel-foundry",
+      "globalfoundries",
+      "umc",
+      "ase",
+      "amkor",
+      "jcet",
+      "tongfu",
+      "huatian",
+      "nexchip",
+      "intel",
+      "broadcom",
+      "tenstorrent",
+      "qualcomm",
+      "sk-hynix",
+      "samsung-memory",
+      "micron",
+      "marvell",
+      "cambricon",
+      "sophgo",
+      "iluvatar-corex",
+      "supermicro",
+      "dell",
+      "hpe",
+      "lenovo",
+      "arista",
+      "cisco",
+      "vertiv",
+      "coreweave",
+      "corning",
+      "lumentum",
+      "h3c",
+      "xfusion",
+      "gds",
+      "vnet",
+      "cloudflare",
+      "sensetime",
+      "shengshu-vidu",
+      "scale-ai",
+      "lakera",
+      "siliconflow",
+      "cohu",
+      "onto-innovation",
+      "formfactor",
+      "camtek",
+      "nova",
+      "park-systems",
+      "jeol",
+      "raith",
+      "nearfield-instruments",
+      "allen-institute-for-ai",
+      "isomorphic-labs",
+      "sakana-ai",
+      "aleph-alpha-research",
+      "writer-ai",
+      "generate-biomedicines-research",
+      "luma-ai",
+      "recursion",
+      "black-forest-labs-research",
+      "typeface",
+      "recursion-valence-labs",
+      "airi",
+      "pika",
+      "generate-biomedicines",
+      "cradle-ai",
+      "ai21-labs-research",
+      "contextual-ai",
+      "resemble-ai",
+      "profluent",
+      "inceptive",
+      "speechmatics",
+      "cradle",
+      "bria-ai",
+      "hume-ai",
+      "latent-labs",
+      "udio"
+    ],
+    "limitations": "Existing location records retain their own status, address source, date and coordinate accuracy. Not freshly reverified; multiple headquarters rows may concern subsidiaries or historical entities."
+  },
+  "repeatedProductBundles": [
+    {
+      "products": [
+        "Retrieval",
+        "Prompt pipelines"
+      ],
+      "recordCount": 19
+    },
+    {
+      "products": [
+        "Open-weight LLMs",
+        "Research models"
+      ],
+      "recordCount": 17
+    },
+    {
+      "products": [
+        "Speech recognition",
+        "Voice synthesis",
+        "Music models"
+      ],
+      "recordCount": 17
+    },
+    {
+      "products": [
+        "Language models",
+        "Multimodal models",
+        "Regional languages"
+      ],
+      "recordCount": 17
+    },
+    {
+      "products": [
+        "Language models",
+        "Sovereign AI",
+        "Multimodal models"
+      ],
+      "recordCount": 17
+    },
+    {
+      "products": [
+        "Domain models",
+        "Private deployment",
+        "Industry AI"
+      ],
+      "recordCount": 17
+    },
+    {
+      "products": [
+        "Foundation models",
+        "Multimodal AI",
+        "Industry models"
+      ],
+      "recordCount": 17
+    },
+    {
+      "products": [
+        "Kernel compiler",
+        "Graph compiler",
+        "Runtime"
+      ],
+      "recordCount": 17
+    },
+    {
+      "products": [
+        "Desktop inference",
+        "Quantization"
+      ],
+      "recordCount": 17
+    },
+    {
+      "products": [
+        "GPU instances",
+        "Bare metal accelerators"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "IaaS",
+        "Managed AI"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "Large multimodal models",
+        "Reasoning models"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "Biology",
+        "Chemistry",
+        "Weather",
+        "Materials"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "Image generation",
+        "Video generation"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "Model serving",
+        "GPU scheduling",
+        "Inference optimization"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "Distributed training",
+        "Fine-tuning",
+        "RLHF"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "Lakehouse",
+        "Streaming",
+        "Feature store"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "Vector database",
+        "Hybrid search",
+        "RAG"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "Tracing",
+        "Evaluation",
+        "Testing"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "Human feedback",
+        "Synthetic data",
+        "Data curation"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "Pipelines",
+        "Registry",
+        "Deployment"
+      ],
+      "recordCount": 16
+    },
+    {
+      "products": [
+        "GPU servers",
+        "Rack-scale systems"
+      ],
+      "recordCount": 15
+    },
+    {
+      "products": [
+        "Transceivers",
+        "Coherent optics",
+        "CPO"
+      ],
+      "recordCount": 15
+    },
+    {
+      "products": [
+        "Parallel file systems",
+        "Object storage",
+        "NVMe"
+      ],
+      "recordCount": 15
+    },
+    {
+      "products": [
+        "UPS",
+        "Busway",
+        "Switchgear",
+        "Transformers"
+      ],
+      "recordCount": 15
+    }
+  ],
+  "inputSha256": {
+    "entities.csv": "1a3cb81a0fd469b6a64e0147455b1015685f5fa561693ca8ad9d173ff4958270",
+    "office-locations.csv": "48986984d985d39683e83075154385fb7d64e1b8a57eebdd5bd99391c6edb264",
+    "catalog-reviews.csv": "043fff4dbd3981b7253a5aef1d692bccb1e6a65d297d9e2665f8ea585526b25f",
+    "relationships.csv": "a7b0f1e3cce2eb305e365d6dd129b48da49f00a03a3ad4b24b0b500e9aa640ab",
+    "aliases.csv": "19fdf82f44e236128cc5e3aff71444a5a2fafa526a3ca33c966d79e3d0ea9620"
+  }
+}

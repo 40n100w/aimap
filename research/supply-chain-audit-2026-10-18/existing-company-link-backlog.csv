@@ -1,0 +1,44 @@
+entityId,name,group,legacyIncidentEdges,sourceLinkedNonIllustrativeEdges,researchQuestion
+coreweave,CoreWeave,cloud_capacity,4,1,"Find exact customer, capacity contract, site and delivery dates; separate hosted inference from original model training."
+crusoe,Crusoe,cloud_capacity,1,0,"Find exact customer, capacity contract, site and delivery dates; separate hosted inference from original model training."
+nscale,Nscale,cloud_capacity,1,0,"Find exact customer, capacity contract, site and delivery dates; separate hosted inference from original model training."
+lambda,Lambda,cloud_capacity,1,0,"Find exact customer, capacity contract, site and delivery dates; separate hosted inference from original model training."
+fluidstack,Fluidstack,cloud_capacity,0,0,"Find exact customer, capacity contract, site and delivery dates; separate hosted inference from original model training."
+iren,IREN,cloud_capacity,0,0,"Find exact customer, capacity contract, site and delivery dates; separate hosted inference from original model training."
+applied-digital,Applied Digital,cloud_capacity,0,0,"Find exact customer, capacity contract, site and delivery dates; separate hosted inference from original model training."
+nebius,Nebius,cloud_capacity,0,0,"Find exact customer, capacity contract, site and delivery dates; separate hosted inference from original model training."
+oracle-cloud,Oracle Cloud,cloud_capacity,2,0,"Find exact customer, capacity contract, site and delivery dates; separate hosted inference from original model training."
+sk-hynix,SK hynix,memory_and_packaging,2,1,Tie accelerator generation to disclosed memory/package/foundry; avoid assuming an HBM supplier for every chip.
+micron,Micron,memory_and_packaging,1,0,Tie accelerator generation to disclosed memory/package/foundry; avoid assuming an HBM supplier for every chip.
+samsung-memory,Samsung Memory,memory_and_packaging,1,0,Tie accelerator generation to disclosed memory/package/foundry; avoid assuming an HBM supplier for every chip.
+tsmc,TSMC,memory_and_packaging,19,17,Tie accelerator generation to disclosed memory/package/foundry; avoid assuming an HBM supplier for every chip.
+ase,ASE Technology,memory_and_packaging,2,2,Tie accelerator generation to disclosed memory/package/foundry; avoid assuming an HBM supplier for every chip.
+amkor,Amkor,memory_and_packaging,0,0,Tie accelerator generation to disclosed memory/package/foundry; avoid assuming an HBM supplier for every chip.
+wistron,Wistron,servers_and_networking,0,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+qct,QCT,servers_and_networking,0,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+quanta-computer,Quanta Computer,servers_and_networking,0,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+foxconn-industrial-internet,Foxconn Industrial Internet,servers_and_networking,1,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+wiwynn,Wiwynn,servers_and_networking,1,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+dell,Dell Technologies,servers_and_networking,2,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+supermicro,Supermicro,servers_and_networking,1,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+arista,Arista Networks,servers_and_networking,2,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+marvell,Marvell,servers_and_networking,1,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+broadcom,Broadcom,servers_and_networking,3,2,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+fabrinet,Fabrinet,servers_and_networking,0,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+innolight,Innolight,servers_and_networking,0,0,Document specific server/rack/platform supply or interconnect design win; trace through OEM/ODM to customer only when each link is supported.
+vertiv,Vertiv,power_and_cooling,1,0,"Find site-specific construction, equipment, PPA or utility service disclosure and distinguish future from operating infrastructure."
+schneider,Schneider Electric,power_and_cooling,1,0,"Find site-specific construction, equipment, PPA or utility service disclosure and distinguish future from operating infrastructure."
+eaton,Eaton,power_and_cooling,0,0,"Find site-specific construction, equipment, PPA or utility service disclosure and distinguish future from operating infrastructure."
+corning,Corning,power_and_cooling,1,0,"Find site-specific construction, equipment, PPA or utility service disclosure and distinguish future from operating infrastructure."
+bechtel,Bechtel,power_and_cooling,1,0,"Find site-specific construction, equipment, PPA or utility service disclosure and distinguish future from operating infrastructure."
+entergy,Entergy,power_and_cooling,0,0,"Find site-specific construction, equipment, PPA or utility service disclosure and distinguish future from operating infrastructure."
+talen-energy,Talen Energy,power_and_cooling,0,0,"Find site-specific construction, equipment, PPA or utility service disclosure and distinguish future from operating infrastructure."
+constellation-energy,Constellation Energy,power_and_cooling,0,0,"Find site-specific construction, equipment, PPA or utility service disclosure and distinguish future from operating infrastructure."
+scale-ai,Scale AI,human_data,0,0,Document service and named customer/model scope; general human-data capability does not identify a model training supplier.
+surge-ai,Surge AI,human_data,0,0,Document service and named customer/model scope; general human-data capability does not identify a model training supplier.
+sama,Sama,human_data,0,0,Document service and named customer/model scope; general human-data capability does not identify a model training supplier.
+imerit,iMerit,human_data,0,0,Document service and named customer/model scope; general human-data capability does not identify a model training supplier.
+labelbox,Labelbox,human_data,0,0,Document service and named customer/model scope; general human-data capability does not identify a model training supplier.
+appen,Appen,human_data,0,0,Document service and named customer/model scope; general human-data capability does not identify a model training supplier.
+invisible-technologies,Invisible Technologies,human_data,0,0,Document service and named customer/model scope; general human-data capability does not identify a model training supplier.
+toloka,Toloka,human_data,0,0,Document service and named customer/model scope; general human-data capability does not identify a model training supplier.

@@ -8,6 +8,7 @@ import { entities, relationships, aliases } from './load-csv-data.mjs';
 import { coverageSummary } from '../src/coverage.js';
 import { relationshipSummary } from '../src/relationships.js';
 import { checkUpdates } from './check-updates-browser.mjs';
+import { checkEntityInformation } from './check-entity-information-browser.mjs';
 
 const catalogCoverage = coverageSummary(entities, relationships);
 const nvidiaLinks = relationshipSummary(relationships, 'nvidia', aliases).total;
@@ -51,6 +52,9 @@ async function check(name, callback, width = 1440, height = width < 900 ? 844 : 
 async function ready(page) {
   await page.goto(base, {waitUntil:'domcontentloaded'});
   await page.locator('#app[data-ready="true"]').waitFor();
+  assert.equal(await page.locator('.intro').count(), 0, 'The atlas opens without a welcome screen');
+  assert.equal(await page.locator('[aria-modal="true"]').count(), 0, 'Startup must not open a dialog');
+  assert.equal(await page.locator('#searchInput').evaluate(input => input === document.activeElement), false, 'Startup must not open the mobile keyboard');
 }
 async function searchNvidia(page) {
   if (await page.locator('[data-mobile="search"]').isVisible()) await page.locator('[data-mobile="search"]').tap();
@@ -76,15 +80,15 @@ async function mobileMenuAction(page, action) {
 }
 try {
   browser = await chromium.launch({executablePath, headless:true, args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader','--disable-dev-shm-usage']});
-  if (process.env.BROWSER_SUITE !== 'updates') {
+  if (!['updates', 'entity'].includes(process.env.BROWSER_SUITE)) {
   await check('desktop exploration, coverage, fonts and optional map tiles', async page => {
     const csv = []; page.on('request', request => { if (request.url().endsWith('.csv')) csv.push(request.url()); });
     await ready(page);
     assert.equal(csv.length, 8, 'Map datasets must load on demand');
     await page.evaluate(() => document.fonts.ready);
     assert.ok(await page.evaluate(() => document.fonts.check('400 16px Manrope') && document.fonts.check('400 12px "DM Mono"')));
-    await screenshot(page, 'desktop-landing');
-    await page.locator('[data-action="explore"]').click();
+    await screenshot(page, 'desktop-startup');
+
     await searchNvidia(page);
     const counts = await page.locator('.entity-stats strong').allTextContents();
     assert.equal(Number(counts[3]), nvidiaLinks);
@@ -106,10 +110,14 @@ try {
     assert.match(await page.locator('#cableDetail h2').innerText(), /Train a frontier model/i);
     await page.locator('[data-close-cable]').click();
     await screenshot(page, 'desktop-map');
+    await page.reload();
+    await page.locator('#app[data-ready="true"]').waitFor();
+    assert.ok(await page.locator('.control-dock').isVisible(), 'Controls are ready after reloading');
+    assert.equal(await page.locator('.intro, [aria-modal="true"]').count(), 0);
   });
   await check('refreshed catalog records, scoped reviews and historical lifecycle notes', async page => {
     await ready(page);
-    await page.locator('[data-action="explore"]').click();
+
     for (const [id, query, expected] of [
       ['gemini-4-argon', 'Gemini 4 Argon', /software engineering/],
       ['azure', 'Microsoft Azure', /Microsoft Foundry/],
@@ -128,8 +136,12 @@ try {
     assert.match(method, /Map and network datasets retain their own snapshot dates/);
   });
   for (const width of [390, 320]) await check(`mobile navigation and compact map at ${width}px`, async page => {
-    await ready(page); await screenshot(page, `mobile-${width}-landing`);
-    await page.locator('[data-action="explore"]').click();
+    await ready(page); await screenshot(page, `mobile-${width}-startup`);
+    await page.reload();
+    await page.locator('#app[data-ready="true"]').waitFor();
+    assert.ok(await page.locator('[data-mobile="search"]').isVisible(), 'Mobile controls are ready after reloading');
+    assert.equal(await page.locator('.intro, [aria-modal="true"]').count(), 0);
+    assert.equal(await page.locator('#searchInput').evaluate(input => input === document.activeElement), false);
     for (const view of ['models', 'timeline', 'map', 'architecture', 'gravity', 'ecosystem']) {
       await page.locator(`[data-view="${view}"]`).click();
       assert.equal(await page.locator(`[data-view="${view}"]`).getAttribute('aria-pressed'), 'true');
@@ -161,7 +173,7 @@ try {
     await page.locator('[data-view="models"]').click();
   }, width);
   await check('touch search, accessible sheets, filters, time and guided journeys', async page => {
-    await ready(page); await page.locator('[data-action="explore"]').tap();
+    await ready(page);
     await searchNvidia(page); await mobileDialog(page, '#detailPanel');
     assert.ok(await page.locator('.profile-sources a').count()>0);
     await page.locator('#detailPanel .relation-row a').last().scrollIntoViewIfNeeded();
@@ -211,7 +223,7 @@ try {
     await mobileMenuAction(page, 'methodology'); await mobileDialog(page, '#methodPanel');
     assert.match(await page.locator('#methodPanel').innerText(), /catalog review/);
     await page.keyboard.press('Escape');
-    assert.equal(await page.locator('[inert]:not(.intro)').count(), 0);
+    assert.equal(await page.locator('[inert]').count(), 0);
   }, 390);
   await check('touch models, timeline year browsing, complete profiles and traces', async page => {
     await ready(page); await page.locator('[data-view="models"]').tap();
@@ -271,10 +283,10 @@ try {
     await page.locator('.china-network-legend summary').tap();
     await page.locator('.leaflet-control-zoom-in').tap();
     await page.locator('[data-view="ecosystem"]').tap();
-    assert.equal(await page.locator('[inert]:not(.intro)').count(),0);
+    assert.equal(await page.locator('[inert]').count(),0);
   }, 390);
   for(const [width,height] of [[430,932],[768,1024],[844,390],[1024,600]]) await check(`touch layout and panel bounds at ${width}×${height}`, async page => {
-    await ready(page); await page.locator('[data-action="explore"]').tap();
+    await ready(page);
     for(const button of await page.locator('.view-switch button').all()) {
       const b=await button.boundingBox();
       assert.ok(b.width>=44 && b.height>=44 && b.x>=0 && b.x+b.width<=width+1 && b.y+b.height<=height+1);
@@ -288,7 +300,7 @@ try {
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   }, width, height, true);
   await check('mobile gestures, short search viewport and desktop resize cleanup', async page => {
-    await ready(page); await page.locator('[data-action="explore"]').tap();
+    await ready(page);
     const cdp=await page.context().newCDPSession(page);
     const touch=(type,points)=>cdp.send('Input.dispatchTouchEvent',{type,touchPoints:points.map(([id,x,y])=>({id,x,y}))});
     await touch('touchStart',[[1,160,420]]); await touch('touchMove',[[1,240,450]]); await touch('touchMove',[[1,160,420]]); await touch('touchEnd',[]);
@@ -302,7 +314,7 @@ try {
     await page.setViewportSize({width:1440,height:1000});
     await page.waitForFunction(()=>!document.body.classList.contains('mobile-layout'));
     assert.equal(await page.locator('.mobile-dialog').count(),0);
-    assert.equal(await page.locator('[inert]:not(.intro)').count(),0);
+    assert.equal(await page.locator('[inert]').count(),0);
     assert.equal(await page.locator('[data-mobile="search"]').isVisible(),false);
     assert.ok(await page.locator('.top-actions').isVisible());
     await searchNvidia(page);
@@ -339,7 +351,7 @@ try {
   });
   await check('partial map failure preserves markers and recovers on retry', async page => {
     await page.route('**/data/submarine-cable-routes.csv', route => route.abort());
-    await ready(page); await page.locator('[data-action="explore"]').click(); await searchNvidia(page);
+    await ready(page); await searchNvidia(page);
     await page.locator('[data-view="map"]').click();
     await page.locator('[data-retry-map]').waitFor();
     assert.match(await page.locator('[data-map-data-message]').innerText(), /1 map data file/);
@@ -383,7 +395,8 @@ try {
     await page.locator('#app[data-ready="true"]').waitFor();
   });
   }
-  await checkUpdates({check,ready,screenshot,base});
+  if (process.env.BROWSER_SUITE !== 'updates') await checkEntityInformation({check,ready,mobileDialog});
+  if (process.env.BROWSER_SUITE !== 'entity') await checkUpdates({check,ready,screenshot,base});
 } finally {
   await browser?.close();
   await new Promise(resolve => server.close(resolve));

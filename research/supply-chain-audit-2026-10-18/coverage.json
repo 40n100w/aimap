@@ -1,0 +1,1186 @@
+{
+  "schemaVersion": 1,
+  "repositoryCommit": "e722474b769402b7e7c83262d05191c1db20b56b",
+  "definitions": {
+    "connected": "At least one incident legacy relationships.csv row after alias resolution; no direction, evidence quality, or supply-chain completeness implied.",
+    "companyLabLabels": "Company, Model lab, or Research lab type. Counts are labels, not deduplicated legal organizations.",
+    "sourceLinkedNonIllustrative": "A nonempty sourceUrl and legacy status confirmed or reported. Source presence is not independent verification.",
+    "makerScope": "19 selected global general-purpose model-making organizations/units; not a ranking or an exhaustive list of all model developers.",
+    "excludedFromGraphCounts": "Reviewed updates ledger, representative-paths.csv, map datasets and office locations are reported separately and do not create legacy graph edges."
+  },
+  "totals": {
+    "entries": 2038,
+    "connected": 362,
+    "isolated": 1676,
+    "withSourceLinkedNonIllustrativeEdge": 284,
+    "models": 141,
+    "relationships": 552,
+    "withSourceUrl": 302,
+    "sourceLinkedNonIllustrativeEdges": 283,
+    "confirmedWithoutSourceUrl": 66,
+    "withAnyActiveDate": 32,
+    "unresolvedEndpointIds": []
+  },
+  "entityTypes": {
+    "Agent": 127,
+    "Application": 244,
+    "Company": 1085,
+    "Framework": 150,
+    "Infrastructure": 2,
+    "Material": 8,
+    "Model": 141,
+    "Model lab": 21,
+    "Platform": 198,
+    "Project": 5,
+    "Protocol": 1,
+    "Research lab": 2,
+    "Standard": 1,
+    "Technology": 53
+  },
+  "companyLabLabeled": {
+    "entries": 1108,
+    "connected": 146,
+    "isolated": 962,
+    "withSourceLinkedNonIllustrativeEdge": 104
+  },
+  "physicalAndCloudLayers": {
+    "entries": 811,
+    "connected": 94,
+    "isolated": 717,
+    "withSourceLinkedNonIllustrativeEdge": 57
+  },
+  "relationshipStatuses": {
+    "confirmed": {
+      "count": 342,
+      "withSourceUrl": 276
+    },
+    "inferred": {
+      "count": 1,
+      "withSourceUrl": 0
+    },
+    "reported": {
+      "count": 27,
+      "withSourceUrl": 7
+    },
+    "representative": {
+      "count": 182,
+      "withSourceUrl": 19
+    }
+  },
+  "relationshipTypes": {
+    "APPLIED_TO": 1,
+    "COMPETES_WITH": 1,
+    "DEPENDS_ON": 7,
+    "DEPLOYED_BY": 10,
+    "DESIGNS": 5,
+    "DEVELOPS": 168,
+    "EXPOSES": 1,
+    "HOSTS": 1,
+    "INTEGRATES_WITH": 31,
+    "INVESTS_IN": 1,
+    "MANUFACTURES": 9,
+    "PARTNERS_WITH": 15,
+    "PROVIDES_EQUIPMENT_TO": 20,
+    "PROVIDES_MEMORY_TO": 3,
+    "PROVIDES_NETWORKING_TO": 1,
+    "PROVIDES_PACKAGING_TO": 3,
+    "RUNS_ON": 180,
+    "SUPPLIES": 26,
+    "TRAINS_ON": 51,
+    "USES_MODEL_FROM": 18
+  },
+  "layers": [
+    {
+      "id": "materials",
+      "name": "Raw materials & industrial inputs",
+      "entries": 120,
+      "connected": 10,
+      "isolated": 110,
+      "withSourceLinkedNonIllustrativeEdge": 4
+    },
+    {
+      "id": "equipment",
+      "name": "Semiconductor equipment & components",
+      "entries": 140,
+      "connected": 18,
+      "isolated": 122,
+      "withSourceLinkedNonIllustrativeEdge": 14
+    },
+    {
+      "id": "fabrication",
+      "name": "Fabrication & advanced packaging",
+      "entries": 90,
+      "connected": 10,
+      "isolated": 80,
+      "withSourceLinkedNonIllustrativeEdge": 8
+    },
+    {
+      "id": "compute",
+      "name": "Compute hardware",
+      "entries": 141,
+      "connected": 26,
+      "isolated": 115,
+      "withSourceLinkedNonIllustrativeEdge": 21
+    },
+    {
+      "id": "datacenter",
+      "name": "Data center & system hardware",
+      "entries": 220,
+      "connected": 17,
+      "isolated": 203,
+      "withSourceLinkedNonIllustrativeEdge": 2
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud & hyperscalers",
+      "entries": 100,
+      "connected": 13,
+      "isolated": 87,
+      "withSourceLinkedNonIllustrativeEdge": 8
+    },
+    {
+      "id": "models",
+      "name": "Foundation model labs",
+      "entries": 334,
+      "connected": 185,
+      "isolated": 149,
+      "withSourceLinkedNonIllustrativeEdge": 185
+    },
+    {
+      "id": "infra",
+      "name": "Model & AI infrastructure",
+      "entries": 200,
+      "connected": 10,
+      "isolated": 190,
+      "withSourceLinkedNonIllustrativeEdge": 6
+    },
+    {
+      "id": "developer",
+      "name": "AI developer stack",
+      "entries": 152,
+      "connected": 20,
+      "isolated": 132,
+      "withSourceLinkedNonIllustrativeEdge": 11
+    },
+    {
+      "id": "agents",
+      "name": "AI harness & agent layer",
+      "entries": 141,
+      "connected": 23,
+      "isolated": 118,
+      "withSourceLinkedNonIllustrativeEdge": 9
+    },
+    {
+      "id": "applications",
+      "name": "Application companies",
+      "entries": 250,
+      "connected": 17,
+      "isolated": 233,
+      "withSourceLinkedNonIllustrativeEdge": 9
+    },
+    {
+      "id": "robotics",
+      "name": "Robotics & physical AI",
+      "entries": 150,
+      "connected": 13,
+      "isolated": 137,
+      "withSourceLinkedNonIllustrativeEdge": 7
+    }
+  ],
+  "makers": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "coreModelCount": 21,
+      "modelIds": [
+        "gpt-6-1-sol",
+        "gpt-5-6-sol",
+        "gpt-5-6-terra",
+        "gpt-5-6-luna",
+        "gpt-5-5",
+        "gpt-5-3-codex",
+        "gpt-5-2",
+        "gpt-5-1",
+        "gpt-5",
+        "gpt-5-mini",
+        "gpt-5-nano",
+        "o3",
+        "o4-mini",
+        "sora-2",
+        "gpt-image-2",
+        "gpt-oss-120b",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6-luna",
+        "gpt-image-2-5-sunburst",
+        "gpt-image-2-5-flare"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "coreweave",
+          "target": "openai",
+          "type": "HOSTS",
+          "explanation": "GPU cloud capacity has supported model workloads.",
+          "status": "reported",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "openai",
+          "target": "azure",
+          "type": "TRAINS_ON",
+          "explanation": "Azure infrastructure has supported OpenAI training and serving.",
+          "status": "confirmed",
+          "activeFrom": 2019,
+          "activeTo": null
+        },
+        {
+          "source": "openai",
+          "target": "azure",
+          "type": "INVESTS_IN",
+          "explanation": "Microsoft is a major OpenAI investor and partner.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "pytorch",
+          "target": "openai",
+          "type": "INTEGRATES_WITH",
+          "explanation": "PyTorch is widely used for model research and training.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "openrouter",
+          "target": "openai",
+          "type": "INTEGRATES_WITH",
+          "explanation": "Routes requests to OpenAI models.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "chatgpt",
+          "target": "openai",
+          "type": "USES_MODEL_FROM",
+          "explanation": "ChatGPT is the primary product interface for OpenAI models.",
+          "status": "confirmed",
+          "activeFrom": 2022,
+          "activeTo": null
+        },
+        {
+          "source": "cursor",
+          "target": "openai",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Cursor supports OpenAI models among multiple providers.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "github-copilot",
+          "target": "openai",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Copilot has used OpenAI models alongside other models.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "openai-agents",
+          "target": "openai",
+          "type": "USES_MODEL_FROM",
+          "explanation": "SDK orchestrates OpenAI models and tools.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "perplexity",
+          "target": "openai",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Perplexity uses multiple foundation model providers.",
+          "status": "reported",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "notion",
+          "target": "openai",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Notion has integrated OpenAI model capabilities.",
+          "status": "reported",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "salesforce",
+          "target": "openai",
+          "type": "PARTNERS_WITH",
+          "explanation": "Enterprise model integrations connect Salesforce and OpenAI.",
+          "status": "reported",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "intercom-fin",
+          "target": "openai",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Intercom Fin has used OpenAI model infrastructure.",
+          "status": "reported",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "coreModelCount": 14,
+      "modelIds": [
+        "claude-opus-5-5",
+        "claude-fable-5",
+        "claude-opus-5",
+        "claude-sonnet-5",
+        "claude-opus-4-8",
+        "claude-opus-4-7",
+        "claude-sonnet-4-6",
+        "claude-sonnet-4-5",
+        "claude-haiku-4-5",
+        "claude-mythos-5",
+        "claude-sonnet-5-5",
+        "claude-haiku-5-5",
+        "claude-mythos-5-1",
+        "claude-fable-5-1"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "anthropic",
+          "target": "aws",
+          "type": "TRAINS_ON",
+          "explanation": "AWS is Anthropic’s primary cloud and training partner.",
+          "status": "confirmed",
+          "activeFrom": 2023,
+          "activeTo": null
+        },
+        {
+          "source": "anthropic",
+          "target": "google-cloud",
+          "type": "TRAINS_ON",
+          "explanation": "Anthropic also uses Google Cloud infrastructure.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "openrouter",
+          "target": "anthropic",
+          "type": "INTEGRATES_WITH",
+          "explanation": "Routes requests to Anthropic models.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "claude-code",
+          "target": "anthropic",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Claude Code wraps Claude models in a coding harness.",
+          "status": "confirmed",
+          "activeFrom": 2025,
+          "activeTo": null
+        },
+        {
+          "source": "cursor",
+          "target": "anthropic",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Cursor supports Claude models among multiple providers.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "mcp",
+          "target": "anthropic",
+          "type": "DESIGNS",
+          "explanation": "Anthropic introduced MCP as an open protocol.",
+          "status": "confirmed",
+          "activeFrom": 2024,
+          "activeTo": null
+        },
+        {
+          "source": "perplexity",
+          "target": "anthropic",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Perplexity offers Claude-family models.",
+          "status": "reported",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "coreModelCount": 21,
+      "modelIds": [
+        "gemini-4-argon",
+        "gemini-3-7-flash",
+        "gemini-3-6-flash",
+        "gemini-3-5-flash",
+        "gemini-3-1-pro",
+        "nano-banana-2",
+        "nano-banana-2-lite",
+        "nano-banana-pro",
+        "gemini-omni-flash",
+        "veo-3-1",
+        "lyria-3-pro",
+        "gemini-embedding-2",
+        "gemini-robotics-er-2",
+        "gemini-robotics-er-1-6",
+        "alphafold-3",
+        "gemini-3-8-flash",
+        "gemma-3",
+        "gemini-3-5-flash-lite",
+        "gemini-3-8-tts",
+        "lyria-3-5",
+        "nano-banana-2-1"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "deepmind",
+          "target": "google-cloud",
+          "type": "RUNS_ON",
+          "explanation": "Gemini training and serving uses Google infrastructure.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "jax",
+          "target": "deepmind",
+          "type": "INTEGRATES_WITH",
+          "explanation": "JAX is central to Google research workloads.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "waymo",
+          "target": "deepmind",
+          "type": "PARTNERS_WITH",
+          "explanation": "Both are part of Alphabet’s AI ecosystem.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "google-adk",
+          "target": "deepmind",
+          "type": "INTEGRATES_WITH",
+          "explanation": "Google ADK supports Gemini models and Google’s agent ecosystem.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "google-workspace-gemini",
+          "target": "deepmind",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Workspace Gemini uses Google Gemini models.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "deepmind",
+          "target": "google-tpu",
+          "type": "TRAINS_ON",
+          "explanation": "Google documents its Gemini training and serving infrastructure around TPU systems.",
+          "status": "confirmed",
+          "sourceUrl": "https://cloud.google.com/tpu",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "meta-ai",
+      "name": "Meta AI",
+      "coreModelCount": 7,
+      "modelIds": [
+        "llama-4-scout",
+        "llama-4-maverick",
+        "llama-guard-4",
+        "llama-3-3-70b",
+        "meta-movie-gen",
+        "muse-spark",
+        "llama-3-1-405b"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "meta-ai",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "Meta trains large models on NVIDIA GPU clusters.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "pytorch",
+          "target": "meta-ai",
+          "type": "DEPENDS_ON",
+          "explanation": "PyTorch originated at Meta and underpins its AI stack.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "llamacpp",
+          "target": "meta-ai",
+          "type": "INTEGRATES_WITH",
+          "explanation": "llama.cpp popularized efficient local execution of Llama-family models.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "coreModelCount": 3,
+      "modelIds": [
+        "grok-4-5",
+        "grok-imagine",
+        "grok-voice"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "xai",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "xAI trains models on large NVIDIA GPU clusters.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "coreModelCount": 9,
+      "modelIds": [
+        "mistral-medium-3-5",
+        "mistral-small-4",
+        "mistral-large-3",
+        "devstral-2",
+        "mistral-ocr-4",
+        "robostral-navigate",
+        "shieldstral",
+        "voxtral",
+        "codestral"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "mistral",
+          "target": "azure",
+          "type": "PARTNERS_WITH",
+          "explanation": "Azure distributes and supports Mistral models.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "mistral",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "NVIDIA is a representative compute or hosting path for Mistral AI; public evidence does not establish it as the training system for every model release.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "coreModelCount": 4,
+      "modelIds": [
+        "cohere-command-a",
+        "north-mini-code",
+        "cohere-embed",
+        "command-r-open"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "cohere",
+          "target": "oracle-cloud",
+          "type": "PARTNERS_WITH",
+          "explanation": "OCI provides infrastructure and distribution for Cohere.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "cohere",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "NVIDIA is a representative compute or hosting path for Cohere; public evidence does not establish it as the training system for every model release.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "coreModelCount": 4,
+      "modelIds": [
+        "deepseek-v4-pro",
+        "deepseek-v4-flash",
+        "deepseek-r1",
+        "deepseek-v3"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "deepseek",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "Public technical reports describe NVIDIA GPU training.",
+          "status": "reported",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "deepseek",
+          "target": "huawei-ascend",
+          "type": "RUNS_ON",
+          "explanation": "Huawei states that its teams optimized Ascend 910B and 910C inference for DeepSeek workloads during 2025.",
+          "status": "confirmed",
+          "sourceUrl": "https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech",
+          "activeFrom": 2025,
+          "activeTo": null
+        },
+        {
+          "source": "deepseek",
+          "target": "huawei-cloud",
+          "type": "DEPLOYED_BY",
+          "explanation": "Huawei Cloud documents deployment architectures for DeepSeek inference and states that it supported the model’s fast-growing traffic.",
+          "status": "confirmed",
+          "sourceUrl": "https://support.huaweicloud.com/intl/en-us/deepseek-aislt/aislt-deepseek.pdf",
+          "activeFrom": 2025,
+          "activeTo": null
+        },
+        {
+          "source": "cambricon",
+          "target": "deepseek",
+          "type": "INTEGRATES_WITH",
+          "explanation": "Cambricon documents model adaptation across its MLU hardware and software stack.",
+          "status": "confirmed",
+          "sourceUrl": "https://developer.cambricon.com/index/article/index.html",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "deepseek-app",
+          "target": "deepseek",
+          "type": "USES_MODEL_FROM",
+          "explanation": "DeepSeek’s official application exposes its model family to end users.",
+          "status": "confirmed",
+          "sourceUrl": "https://www.deepseek.com/",
+          "activeFrom": 2025,
+          "activeTo": null
+        },
+        {
+          "source": "deepseek",
+          "target": "alibaba-cloud",
+          "type": "DEPLOYED_BY",
+          "explanation": "Alibaba Cloud Model Studio lists DeepSeek among the third-party model families available as managed services.",
+          "status": "confirmed",
+          "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio",
+          "activeFrom": 2025,
+          "activeTo": null
+        },
+        {
+          "source": "deepseek",
+          "target": "moore-threads",
+          "type": "RUNS_ON",
+          "explanation": "Moore Threads publishes supported DeepSeek deployments and model-specific optimizations for its MUSA GPU stack.",
+          "status": "confirmed",
+          "sourceUrl": "https://en.mthreads.com/product/S5000",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen / Alibaba",
+      "coreModelCount": 8,
+      "modelIds": [
+        "qwen3-8",
+        "qwen3-max",
+        "qwen3",
+        "qwen-coder",
+        "qwen-vl",
+        "qwen2-5-max",
+        "qwen3-5",
+        "qwen3-6"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "modelscope",
+          "target": "qwen",
+          "type": "INTEGRATES_WITH",
+          "explanation": "ModelScope distributes Qwen models for download, fine-tuning, evaluation and deployment.",
+          "status": "confirmed",
+          "sourceUrl": "https://www.alibabacloud.com/help/en/pai/use-cases/secure-encryption-inference-service",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "qwen-agent",
+          "target": "qwen",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Qwen-Agent is Alibaba’s open-source framework for building tool-using applications with Qwen models.",
+          "status": "confirmed",
+          "sourceUrl": "https://github.com/QwenLM/Qwen-Agent",
+          "activeFrom": 2023,
+          "activeTo": null
+        },
+        {
+          "source": "qwen",
+          "target": "alibaba-cloud",
+          "type": "RUNS_ON",
+          "explanation": "Alibaba Cloud Model Studio provides the Qwen model family through managed and OpenAI-compatible APIs.",
+          "status": "confirmed",
+          "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio",
+          "activeFrom": 2023,
+          "activeTo": null
+        },
+        {
+          "source": "qwen",
+          "target": "moore-threads",
+          "type": "RUNS_ON",
+          "explanation": "Moore Threads states that its S5000 GPU platform provides optimized support for Qwen architectures.",
+          "status": "confirmed",
+          "sourceUrl": "https://en.mthreads.com/product/S5000",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "qwen",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "NVIDIA accelerators are a representative training path for the Qwen family; exact chips vary and are not asserted for every release.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "moonshot-ai",
+      "name": "Moonshot AI",
+      "coreModelCount": 3,
+      "modelIds": [
+        "kimi-k3",
+        "kimi-k2-7-code",
+        "kimi-k2-6"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "moonshot-ai",
+          "target": "hugging-face",
+          "type": "INTEGRATES_WITH",
+          "explanation": "Moonshot publishes model artifacts through Hugging Face.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "kimi-app",
+          "target": "moonshot-ai",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Kimi is Moonshot AI’s user-facing assistant and research product.",
+          "status": "confirmed",
+          "sourceUrl": "https://www.kimi.com/",
+          "activeFrom": 2023,
+          "activeTo": null
+        },
+        {
+          "source": "moonshot-ai",
+          "target": "alibaba-cloud",
+          "type": "DEPLOYED_BY",
+          "explanation": "Alibaba Cloud Model Studio lists Kimi among the third-party model families available as managed services.",
+          "status": "confirmed",
+          "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio",
+          "activeFrom": 2023,
+          "activeTo": null
+        },
+        {
+          "source": "moonshot-ai",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "NVIDIA is a representative compute or hosting path for Moonshot AI; public evidence does not establish it as the training system for every model release.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "zhipu-ai",
+      "name": "Z.ai / Zhipu AI",
+      "coreModelCount": 3,
+      "modelIds": [
+        "glm-5-3",
+        "glm-5-2",
+        "glm-5-3-flash"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "zhipu-ai",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "Illustrative GPU path only; the source does not establish the original training hardware or location.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "coreModelCount": 1,
+      "modelIds": [
+        "minimax-m3"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "minimax",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "NVIDIA is a representative compute or hosting path for MiniMax; public evidence does not establish it as the training system for every model release.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "bytedance-seed",
+      "name": "ByteDance Seed",
+      "coreModelCount": 1,
+      "modelIds": [
+        "doubao-model"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "coze",
+          "target": "bytedance-seed",
+          "type": "INTEGRATES_WITH",
+          "explanation": "Coze is ByteDance’s agent-development platform and integrates models from its ecosystem.",
+          "status": "confirmed",
+          "sourceUrl": "https://www.coze.com/",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "bytedance-seed",
+          "target": "volcano-engine",
+          "type": "DEPLOYED_BY",
+          "explanation": "Volcano Engine is ByteDance’s enterprise distribution and API platform for the Doubao/Seed model portfolio.",
+          "status": "confirmed",
+          "sourceUrl": "https://www.volcengine.com/product/doubao",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "bytedance-seed",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "NVIDIA is a representative compute or hosting path for ByteDance Seed; public evidence does not establish it as the training system for every model release.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "tencent-hunyuan",
+      "name": "Tencent Hunyuan",
+      "coreModelCount": 1,
+      "modelIds": [
+        "hunyuan"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "tencent-yuanbao",
+          "target": "tencent-hunyuan",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Tencent Yuanbao is a user-facing assistant powered by Tencent’s model ecosystem.",
+          "status": "confirmed",
+          "sourceUrl": "https://yuanbao.tencent.com/",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "tencent-hunyuan",
+          "target": "tencent-cloud",
+          "type": "RUNS_ON",
+          "explanation": "Tencent exposes Hunyuan to enterprises through Tencent Cloud APIs and its model-as-a-service platform.",
+          "status": "confirmed",
+          "sourceUrl": "https://www.tencent.com/tencent-unveils-hunyuan-its-proprietary-large-foundation-model-on-tencent-cloud/",
+          "activeFrom": 2023,
+          "activeTo": null
+        },
+        {
+          "source": "tencent-hunyuan",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "NVIDIA is a representative compute or hosting path for Tencent Hunyuan; public evidence does not establish it as the training system for every model release.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "baidu-ernie",
+      "name": "Baidu ERNIE",
+      "coreModelCount": 1,
+      "modelIds": [
+        "ernie"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "ernie-bot",
+          "target": "baidu-ernie",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Baidu states that ERNIE Bot is powered by its in-house ERNIE foundation model.",
+          "status": "confirmed",
+          "sourceUrl": "https://ir.baidu.com/static-files/6053f234-9dbd-4afb-b300-7fcba9cb6f27",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "qianfan-agent",
+          "target": "baidu-ernie",
+          "type": "USES_MODEL_FROM",
+          "explanation": "Qianfan AgentBuilder provides an enterprise application layer for Baidu’s model ecosystem.",
+          "status": "confirmed",
+          "sourceUrl": "https://cloud.baidu.com/product/qianfan.html",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "baidu-ernie",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "NVIDIA is a representative compute or hosting path for Baidu ERNIE; public evidence does not establish it as the training system for every model release.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "huawei",
+      "name": "Huawei",
+      "coreModelCount": 0,
+      "modelIds": [],
+      "directNonDeveloperEdges": [],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "amazon-agi-lab",
+      "name": "Amazon AGI Lab",
+      "coreModelCount": 1,
+      "modelIds": [
+        "amazon-nova-premier"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "amazon-agi-lab",
+          "target": "aws",
+          "type": "RUNS_ON",
+          "explanation": "Amazon model development uses AWS infrastructure.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "amazon-agi-lab",
+          "target": "aws",
+          "type": "TRAINS_ON",
+          "explanation": "Amazon develops and serves Nova within AWS infrastructure.",
+          "status": "confirmed",
+          "sourceUrl": "https://aws.amazon.com/ai/generative-ai/nova/",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "apple-foundation-models",
+      "name": "Apple Foundation Models",
+      "coreModelCount": 1,
+      "modelIds": [
+        "apple-on-device-model"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "apple-foundation-models",
+          "target": "apple-m-series",
+          "type": "RUNS_ON",
+          "explanation": "Apple foundation models are optimized for Apple silicon.",
+          "status": "confirmed",
+          "activeFrom": null,
+          "activeTo": null
+        },
+        {
+          "source": "apple-foundation-models",
+          "target": "apple-m-series",
+          "type": "TRAINS_ON",
+          "explanation": "Apple M-series is a representative compute or hosting path for Apple Foundation Models; public evidence does not establish it as the training system for every model release.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    },
+    {
+      "id": "ibm-granite",
+      "name": "IBM Granite",
+      "coreModelCount": 1,
+      "modelIds": [
+        "ibm-granite-4"
+      ],
+      "directNonDeveloperEdges": [
+        {
+          "source": "ibm-granite",
+          "target": "nvidia",
+          "type": "TRAINS_ON",
+          "explanation": "NVIDIA is a representative compute or hosting path for IBM Granite; public evidence does not establish it as the training system for every model release.",
+          "status": "representative",
+          "activeFrom": null,
+          "activeTo": null
+        }
+      ],
+      "modelTrainingEdges": []
+    }
+  ],
+  "trainingMap": {
+    "rows": 8,
+    "references": [
+      {
+        "id": "deepseek-v3",
+        "name": "DeepSeek-V3",
+        "coreEntityType": "Model",
+        "evidenceLevel": "hardware_confirmed_location_unknown"
+      },
+      {
+        "id": "pangu-ultra",
+        "name": "Pangu Ultra",
+        "coreEntityType": null,
+        "evidenceLevel": "hardware_confirmed_location_unknown"
+      },
+      {
+        "id": "kimi-k2",
+        "name": "Kimi K2",
+        "coreEntityType": null,
+        "evidenceLevel": "training_confirmed_infrastructure_unknown"
+      },
+      {
+        "id": "qwen",
+        "name": "Qwen family",
+        "coreEntityType": "Model lab",
+        "evidenceLevel": "platform_region_not_original_training"
+      },
+      {
+        "id": "hunyuan",
+        "name": "Hunyuan-Large",
+        "coreEntityType": "Model",
+        "evidenceLevel": "training_confirmed_infrastructure_unknown"
+      },
+      {
+        "id": "baichuan-7b",
+        "name": "Baichuan-7B",
+        "coreEntityType": null,
+        "evidenceLevel": "hardware_confirmed_location_unknown"
+      },
+      {
+        "id": "glm",
+        "name": "GLM family",
+        "coreEntityType": null,
+        "evidenceLevel": "training_confirmed_infrastructure_unknown"
+      },
+      {
+        "id": "ernie",
+        "name": "ERNIE family",
+        "coreEntityType": "Model",
+        "evidenceLevel": "training_confirmed_infrastructure_unknown"
+      }
+    ]
+  },
+  "reviewedLedger": {
+    "events": 3,
+    "versions": 8,
+    "sources": 3,
+    "note": "Separately reviewed claims; not evidence that all legacy relationships are reviewed."
+  },
+  "inputSha256": {
+    "aliases.csv": "19fdf82f44e236128cc5e3aff71444a5a2fafa526a3ca33c966d79e3d0ea9620",
+    "asia-system-links.csv": "344f470f452fceae5751213f1d18a2fa208a8948ea6163e92e8df4e9ff4fcbd5",
+    "asia-system-nodes.csv": "2e20c4162296e09c8295e01ee60673377f410b584e5a5f851c2a5a1c7ad19632",
+    "catalog-reviews.csv": "043fff4dbd3981b7253a5aef1d692bccb1e6a65d297d9e2665f8ea585526b25f",
+    "china-fiber-links.csv": "c8c4c47784de5639f39b3bc99ae6fc655733ca8a2ffcd294164abe99c5794396",
+    "china-fiber-networks.csv": "92ef031a3bed56887a01877a3219b8cbeca13148eb14f26f38f43e6f8941553a",
+    "china-fiber-nodes.csv": "c39232390bc7590172f9626f3c7890112719b31af5707a0c5a496c72610c42f3",
+    "data-center-campuses.csv": "1fe8b3609b7a4bbe5ea77de92395db7043bf4e01b38fc7e40aac921703b52b13",
+    "data-center-network-links.csv": "32a559a789afe445b9532762c90239d51406c27835093680d528438d41658ccd",
+    "entities.csv": "1a3cb81a0fd469b6a64e0147455b1015685f5fa561693ca8ad9d173ff4958270",
+    "internet-exchanges.csv": "401dd5997f439adec50361f96859b39feee43c727269f014b1f7e80f86db6228",
+    "journeys.csv": "f81af6b47621b36f541e1ec357a975b6cf2f566f4334d56f6a525f821fcf8e67",
+    "layers.csv": "9e520ffb3c0691e053318544c52698ae0d124988e0bf35eb367ba735d5f07ee1",
+    "model-inference-regions.csv": "9730b2d8f8066dc3177f5c249c0b1d3d764ae49496052f894c2e6d81359e9198",
+    "model-network-links.csv": "c0967938e5da1924f7309d41de9e2322e09da5ee65e0445cbb22a3d05da409bf",
+    "model-organization-sites.csv": "d1e798aac20e237e3b12c646cad1e738d3f06ddc5aa7ce10c32104d437ec7a6b",
+    "model-training-evidence.csv": "ac8531f108d693bf7937ffc8cc0a194707b1d5d526b0820652fbf4be6ae1d3fa",
+    "national-compute-corridors.csv": "53a2e72cf2aafaa1553a0bc115747774ecaaa1e03c83a4fb4ac5808716f6c05e",
+    "national-compute-hubs.csv": "cd7a2b521da3c16eba438d58caac75b36189818674fd831ff3d03c14603b3bc1",
+    "office-locations.csv": "48986984d985d39683e83075154385fb7d64e1b8a57eebdd5bd99391c6edb264",
+    "relationships.csv": "a7b0f1e3cce2eb305e365d6dd129b48da49f00a03a3ad4b24b0b500e9aa640ab",
+    "representative-paths.csv": "d084fd7fdaa7efe0945ff3080944bd62561f700388be4392cb062dd307c0778e",
+    "settings.csv": "a9052a4a8bd4f410fa62d44214504997614d829bbf9bc799a4388fd890853903",
+    "submarine-cable-landings.csv": "df0e07fedfcc5a85679e838e37fcb10fddd9b94eb677054e55b82432f3d6b71f",
+    "submarine-cable-routes.csv": "ce0cce59b0f4c18efbc9a9d4064788105e522199d9b5d8a32a3a5639562648c7",
+    "submarine-cables.csv": "a975be877e61842e1eb4681452ae4e7bb3e721d891b6b51bae91fbe859c0829a",
+    "updates.json": "cb503b19230e1998058f2e7c32cb32411cd0d1c6608f3a37b4f69aa6a55288c4"
+  }
+}

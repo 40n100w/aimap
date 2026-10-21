@@ -1,0 +1,342 @@
+{
+  "assessedOn": "2026-10-20",
+  "scope": "Editorial accuracy priorities and source-backed correction leads; unsourced issues are not claims that the current value is false. Preserve every entity ID.",
+  "correctionEvidenceFile": "hardware-accuracy-facts.json",
+  "issues": [
+    {
+      "id": "accuracy-nanya-technology-products",
+      "entityId": "nanya-technology",
+      "field": "products",
+      "currentValue": [
+        "DRAM",
+        "NAND",
+        "HBM"
+      ],
+      "issue": "The DRAM / NAND / HBM list is a generic memory-category bundle. NAND and HBM are not established by any inspected company-specific source.",
+      "sourceNeeded": "A Nanya-owned current product catalog or annual report identifying actual DRAM, NAND and/or HBM products; absence from an unrelated repository is not disproof.",
+      "priority": "P0",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-ibiden-products",
+      "entityId": "ibiden",
+      "field": "products",
+      "currentValue": [
+        "ABF",
+        "Copper-clad laminate",
+        "Leadframes"
+      ],
+      "issue": "The ABF / copper-clad laminate / leadframes bundle conflates substrate material, finished substrate and other component categories without company-specific support.",
+      "sourceNeeded": "IBIDEN electronic-products pages or annual-report segment disclosures identifying the actual products and their relation to ABF material.",
+      "priority": "P0",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-unimicron-products",
+      "entityId": "unimicron",
+      "field": "products",
+      "currentValue": [
+        "ABF",
+        "Copper-clad laminate",
+        "Leadframes"
+      ],
+      "issue": "A category-wide ABF / copper-clad laminate / leadframes list is not evidence that Unimicron manufactures every listed item.",
+      "sourceNeeded": "Unimicron current product catalog and corporate product/segment disclosures.",
+      "priority": "P0",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-tokyo-ohka-kogyo-products",
+      "entityId": "tokyo-ohka-kogyo",
+      "field": "products",
+      "currentValue": [
+        "EUV resist",
+        "Photomasks",
+        "Pellicles"
+      ],
+      "issue": "EUV resist / photomasks / pellicles is a generic lithography-material bundle; the profile does not substantiate each product as supplied by Tokyo Ohka Kogyo.",
+      "sourceNeeded": "TOK official product pages or segment report establishing each material/product separately.",
+      "priority": "P0",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-aws-graviton-products",
+      "entityId": "aws-graviton",
+      "field": "products",
+      "currentValue": [
+        "x86",
+        "Arm server CPU",
+        "RISC-V"
+      ],
+      "issue": "x86 and RISC-V generic category tags conflict with the inspected AWS guide identifying Arm-based Graviton processor families.",
+      "sourceNeeded": "Use the pinned AWS technical-guide architecture and processor-family table; regional availability remains separate.",
+      "priority": "P0",
+      "assessment": "primary_correction_available",
+      "sourceIds": [
+        "hardware-accuracy-aws-graviton"
+      ],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-broadcom-tomahawk-products",
+      "entityId": "broadcom-tomahawk",
+      "field": "products",
+      "currentValue": [
+        "Ethernet",
+        "InfiniBand",
+        "DPU",
+        "Optics DSP"
+      ],
+      "issue": "Generic Ethernet / InfiniBand / DPU / Optics DSP categories do not identify the Tomahawk device family. The inspected Broadcom source identifies network-switch devices.",
+      "sourceNeeded": "Use the pinned OpenBCM supported-device scope; obtain separate primary documents for later generations or additional capabilities.",
+      "priority": "P0",
+      "assessment": "primary_correction_available",
+      "sourceIds": [
+        "hardware-accuracy-broadcom-openbcm"
+      ],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-samsung-pm1743-products",
+      "entityId": "samsung-pm1743",
+      "field": "products",
+      "currentValue": [
+        "NVMe",
+        "SSD controllers",
+        "High-capacity drives"
+      ],
+      "issue": "NVMe / SSD controllers / High-capacity drives is a storage-category bundle, not a specific PM1743 product description; a drive product does not establish standalone controller products.",
+      "sourceNeeded": "Samsung Semiconductor PM1743 datasheet/product page with device type, interface, form factors and capacities.",
+      "priority": "P0",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-nvidia-jetson-products",
+      "entityId": "nvidia-jetson",
+      "field": "products",
+      "currentValue": [
+        "Edge accelerator",
+        "AI PC",
+        "Embedded NPU"
+      ],
+      "issue": "The Edge accelerator / AI PC / Embedded NPU bundle is not substantiated by the Jetson source inspected here. That source establishes on-device AI hardware only.",
+      "sourceNeeded": "NVIDIA Jetson product/module specifications documenting processor architecture and intended system classes.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-nanya-technology-type",
+      "entityId": "nanya-technology",
+      "field": "type",
+      "currentValue": "Technology",
+      "issue": "An organization candidate is labeled Technology, potentially hiding corporate information fields and treating an organization name as a hardware product. This remains an identity review flag until sourced.",
+      "sourceNeeded": "Official company/about page or corporate filing establishing identity; resolve parent, brand and duplicate records before reclassifying.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-powertech-technology-type",
+      "entityId": "powertech-technology",
+      "field": "type",
+      "currentValue": "Technology",
+      "issue": "An organization candidate is labeled Technology, potentially hiding corporate information fields and treating an organization name as a hardware product. This remains an identity review flag until sourced.",
+      "sourceNeeded": "Official company/about page or corporate filing establishing identity; resolve parent, brand and duplicate records before reclassifying.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-unimicron-technology-type",
+      "entityId": "unimicron-technology",
+      "field": "type",
+      "currentValue": "Technology",
+      "issue": "An organization candidate is labeled Technology, potentially hiding corporate information fields and treating an organization name as a hardware product. This remains an identity review flag until sourced.",
+      "sourceNeeded": "Official company/about page or corporate filing establishing identity; resolve parent, brand and duplicate records before reclassifying.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-naura-technology-type",
+      "entityId": "naura-technology",
+      "field": "type",
+      "currentValue": "Technology",
+      "issue": "An organization candidate is labeled Technology, potentially hiding corporate information fields and treating an organization name as a hardware product. This remains an identity review flag until sourced.",
+      "sourceNeeded": "Official company/about page or corporate filing establishing identity; resolve parent, brand and duplicate records before reclassifying.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-innolight-technology-type",
+      "entityId": "innolight-technology",
+      "field": "type",
+      "currentValue": "Technology",
+      "issue": "An organization candidate is labeled Technology, potentially hiding corporate information fields and treating an organization name as a hardware product. This remains an identity review flag until sourced.",
+      "sourceNeeded": "Official company/about page or corporate filing establishing identity; resolve parent, brand and duplicate records before reclassifying.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-quanta-cloud-technology-type",
+      "entityId": "quanta-cloud-technology",
+      "field": "type",
+      "currentValue": "Technology",
+      "issue": "An organization candidate is labeled Technology, potentially hiding corporate information fields and treating an organization name as a hardware product. This remains an identity review flag until sourced.",
+      "sourceNeeded": "Official company/about page or corporate filing establishing identity; resolve parent, brand and duplicate records before reclassifying.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-aws-graviton-type",
+      "entityId": "aws-graviton",
+      "field": "type",
+      "currentValue": "Company",
+      "issue": "The record is labeled Company while the inspected primary documentation describes a hardware processor/device/platform.",
+      "sourceNeeded": "Use the scoped primary hardware documentation; preserve the same entity ID and treat its vendor as a distinct organization.",
+      "priority": "P0",
+      "assessment": "primary_correction_available",
+      "sourceIds": [
+        "hardware-accuracy-aws-graviton"
+      ],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-broadcom-tomahawk-type",
+      "entityId": "broadcom-tomahawk",
+      "field": "type",
+      "currentValue": "Company",
+      "issue": "The record is labeled Company while the inspected primary documentation describes a hardware processor/device/platform.",
+      "sourceNeeded": "Use the scoped primary hardware documentation; preserve the same entity ID and treat its vendor as a distinct organization.",
+      "priority": "P0",
+      "assessment": "primary_correction_available",
+      "sourceIds": [
+        "hardware-accuracy-broadcom-openbcm"
+      ],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-nvidia-jetson-type",
+      "entityId": "nvidia-jetson",
+      "field": "type",
+      "currentValue": "Company",
+      "issue": "The record is labeled Company while the inspected primary documentation describes a hardware processor/device/platform.",
+      "sourceNeeded": "Use the scoped primary hardware documentation; preserve the same entity ID and treat its vendor as a distinct organization.",
+      "priority": "P0",
+      "assessment": "primary_correction_available",
+      "sourceIds": [
+        "hardware-accuracy-nvidia-jetson"
+      ],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-apple-m-series-type",
+      "entityId": "apple-m-series",
+      "field": "type",
+      "currentValue": "Company",
+      "issue": "The Company label may attach headquarters/leadership to a hardware product family rather than its vendor.",
+      "sourceNeeded": "Vendor-owned product documentation defining the product and a separately sourced organization relationship.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-huawei-ascend-type",
+      "entityId": "huawei-ascend",
+      "field": "type",
+      "currentValue": "Company",
+      "issue": "The Company label may attach headquarters/leadership to a hardware product family rather than its vendor.",
+      "sourceNeeded": "Vendor-owned product documentation defining the product and a separately sourced organization relationship.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-samsung-pm1743-type",
+      "entityId": "samsung-pm1743",
+      "field": "type",
+      "currentValue": "Company",
+      "issue": "The Company label may attach headquarters/leadership to a hardware product family rather than its vendor.",
+      "sourceNeeded": "Vendor-owned product documentation defining the product and a separately sourced organization relationship.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-coherent-sherman-type",
+      "entityId": "coherent-sherman",
+      "field": "type",
+      "currentValue": "Company",
+      "issue": "The name appears to identify a manufacturing site or site business. A Company label alone does not establish a distinct legal company.",
+      "sourceNeeded": "Official site/facility description and legal operating-entity evidence; do not merge with the parent without identity review.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-quanta-cloud-technology-name",
+      "entityId": "quanta-cloud-technology",
+      "field": "name",
+      "currentValue": "Quanta Cloud Technology",
+      "issue": "Possible overlap with QCT and parent/brand relationship with Quanta Computer. Counting all as independent suppliers may inflate coverage.",
+      "sourceNeeded": "QCT/Quanta corporate descriptions and dated group/subsidiary disclosures; distinguish alias from parent/child relationship.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-unimicron-technology-name",
+      "entityId": "unimicron-technology",
+      "field": "name",
+      "currentValue": "Unimicron Technology",
+      "issue": "Possible overlapping identity with Unimicron; current type differs between the records.",
+      "sourceNeeded": "Company legal/trading-name disclosure and product scope before aliasing or adding parent relationships.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    },
+    {
+      "id": "accuracy-innolight-technology-name",
+      "entityId": "innolight-technology",
+      "field": "name",
+      "currentValue": "Innolight Technology",
+      "issue": "Possible overlapping identity with Innolight; category/type differences may describe one supplier twice.",
+      "sourceNeeded": "Company legal/trading names and dated corporate structure disclosure; preserve both IDs until resolved.",
+      "priority": "P1",
+      "assessment": "editorial_review_needed",
+      "sourceIds": [],
+      "preserveEntity": true
+    }
+  ],
+  "sourceDiscoveryLimitations": [
+    "Nanya/IBIDEN/Powertech targeted GitHub organization/repository discovery found no attributable first-party product source. No third-party mirrored catalog was accepted.",
+    "Corporate sites remain proxy-blocked; source absence does not establish a negative product claim."
+  ]
+}

@@ -1,0 +1,565 @@
+[
+  {
+    "url": "https://www.nanya.com/en",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.nanya.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.qct.io/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.qct.io",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.tsmc.com/english",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.tsmc.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.asml.com/en/company/about-asml",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.asml.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.wistron.com/en/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.wistron.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.micron.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.micron.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://amkor.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "amkor.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.appliedmaterials.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.appliedmaterials.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.anthropic.com/company",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.anthropic.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://openai.com/about/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "openai.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://deepmind.google/about/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "deepmind.google",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.apple.com/newsroom/2025/06/apple-supercharges-its-tools-and-technologies-for-developers/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.apple.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://github.com/apple/ml-foundation-models",
+    "error": "HTTP Error 404: Not Found",
+    "attemptedOn": "2026-10-20",
+    "interpretation": "A guessed path failed; not evidence of a missing or discontinued company/product.",
+    "requestedPath": "README.md",
+    "requestScope": "Repository discovery or README lookup; no company-lifecycle conclusion.",
+    "domain": "github.com",
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://github.com/aws-samples/amazon-nova-samples",
+    "error": "HTTP Error 404: Not Found",
+    "attemptedOn": "2026-10-20",
+    "interpretation": "A guessed path failed; not evidence of a missing or discontinued company/product.",
+    "requestedPath": "multimodal-generation/README.md",
+    "requestScope": "Repository discovery or README lookup; no company-lifecycle conclusion.",
+    "domain": "github.com",
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://github.com/Huawei-Pangu/Pangu",
+    "error": "HTTP Error 404: Not Found",
+    "attemptedOn": "2026-10-20",
+    "interpretation": "A guessed path failed; not evidence of a missing or discontinued company/product.",
+    "requestedPath": "README.md",
+    "requestScope": "Repository discovery or README lookup; no company-lifecycle conclusion.",
+    "domain": "github.com",
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://www.coreweave.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.coreweave.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.vertiv.com/en-us/contacts/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.vertiv.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.eaton.com/us/en-us/company/about-us.html",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.eaton.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.marvell.com/company/offices.html",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.marvell.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.se.com/ww/en/about-us/company-profile/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.se.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://iren.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "iren.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.applieddigital.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.applieddigital.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.nscale.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.nscale.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.fluidstack.io/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.fluidstack.io",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://lambda.ai/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "lambda.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://scale.com",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "scale.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.surgeai.com",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.surgeai.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://imerit.net",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "imerit.net",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.sama.com",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.sama.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://labelbox.com",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "labelbox.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://appen.com",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "appen.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.invisible.co",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.invisible.co",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://toloka.ai",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "toloka.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.defined.ai",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.defined.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://huggingface.co",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "huggingface.co",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.together.ai",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.together.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://fireworks.ai",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "fireworks.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://openrouter.ai",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "openrouter.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.langchain.com",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.langchain.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.pinecone.io",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.pinecone.io",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://weaviate.io",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "weaviate.io",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://wandb.ai",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "wandb.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "scaleapi/scaleapi-python",
+    "error": "HTTP Error 404: Not Found",
+    "domain": null,
+    "failureKind": "not_found"
+  },
+  {
+    "url": "fw-ai/fireworks-ai-python",
+    "error": "HTTP Error 404: Not Found",
+    "domain": null,
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://www.surgehq.ai",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.surgehq.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://invisibletech.ai",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "invisibletech.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://tendem.ai",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "tendem.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.nvidia.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.nvidia.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.amd.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.amd.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.intel.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.intel.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.dell.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.dell.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.hpe.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.hpe.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.lenovo.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.lenovo.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.supermicro.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.supermicro.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.cisco.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.cisco.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.juniper.net/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.juniper.net",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.qualcomm.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.qualcomm.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.arm.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.arm.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.cerebras.ai/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.cerebras.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://groq.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "groq.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://tenstorrent.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "tenstorrent.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.netapp.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.netapp.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.purestorage.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.purestorage.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://vastdata.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "vastdata.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.weka.io/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.weka.io",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.ddn.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "domain": "www.ddn.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/DataDog/documentation/b54c8d69efd611e3c2634515f56bc0a0dd299221/content/en/bits_ai/_index.md",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedOn": "2026-10-20",
+    "scope": "Attempted source discovery; failure is not evidence of company/product absence.",
+    "domain": "raw.githubusercontent.com",
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://github.com/getsentry/seer",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedOn": "2026-10-20",
+    "scope": "Attempted source discovery; failure is not evidence of company/product absence.",
+    "domain": "github.com",
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://github.com/JetBrains/ai-assistant",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedOn": "2026-10-20",
+    "scope": "Attempted source discovery; failure is not evidence of company/product absence.",
+    "domain": "github.com",
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://github.com/replit/replit-docs",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedOn": "2026-10-20",
+    "scope": "Attempted source discovery; failure is not evidence of company/product absence.",
+    "domain": "github.com",
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://github.com/getsentry/sentry_seer_types",
+    "error": "'NoneType' object has no attribute 'group'",
+    "retrievedOn": "2026-10-20",
+    "scope": "Attempted source discovery; failure is not evidence of company/product absence.",
+    "domain": "github.com",
+    "failureKind": "other_failure"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/elastic/kibana/c01aae1fc4171f1a5776267417e6becfd8ef3829/x-pack/solutions/observability/plugins/observability_ai_assistant/README.md",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedOn": "2026-10-20",
+    "scope": "Attempted source discovery; failure is not evidence of company/product absence.",
+    "domain": "raw.githubusercontent.com",
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://github.com/DataDog/documentation/tree/master/content/en",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedOn": "2026-10-20",
+    "scope": "Attempted source discovery; failure is not evidence of company/product absence.",
+    "domain": "github.com",
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://www.jetbrains.com/ai/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "retrievedOn": "2026-10-20",
+    "scope": "Attempted source discovery; failure is not evidence of company/product absence.",
+    "domain": "www.jetbrains.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://docs.replit.com/replitai/agent",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "retrievedOn": "2026-10-20",
+    "scope": "Attempted source discovery; failure is not evidence of company/product absence.",
+    "domain": "docs.replit.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.midjourney.com",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.midjourney.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://www.synthesia.io",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.synthesia.io",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://pika.art",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "pika.art",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "url": "https://github.com/HeyGen-Official/StreamingAvatarSDK",
+    "requestedPath": "README.md",
+    "error": "HTTP Error 404: Not Found",
+    "attemptedOn": "2026-10-20",
+    "interpretation": "Discovery/README lookup failed; no company or product lifecycle conclusion.",
+    "domain": "github.com",
+    "failureKind": "not_found"
+  },
+  {
+    "url": "https://github.com/heygen-com/streaming-avatar-sdk",
+    "requestedPath": "README.md",
+    "error": "HTTP Error 404: Not Found",
+    "attemptedOn": "2026-10-20",
+    "interpretation": "Discovery/README lookup failed; no company or product lifecycle conclusion.",
+    "domain": "github.com",
+    "failureKind": "not_found"
+  },
+  {
+    "entityId": "figure",
+    "url": "https://www.figure.ai",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.figure.ai",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "entityId": "agility",
+    "url": "https://www.agilityrobotics.com",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.agilityrobotics.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "entityId": "abb-robotics",
+    "url": "https://new.abb.com/products/robotics",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "new.abb.com",
+    "failureKind": "proxy_denied"
+  },
+  {
+    "entityId": "fanuc",
+    "url": "https://www.fanucamerica.com",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "attemptedOn": "2026-10-20",
+    "domain": "www.fanucamerica.com",
+    "failureKind": "proxy_denied"
+  }
+]

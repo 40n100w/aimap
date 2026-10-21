@@ -1,0 +1,1552 @@
+{
+  "reviewedOn": "2026-10-20",
+  "scope": "Additional scoped product review of 19 existing compute/server/network/storage companies. Existing hardware portfolios and company summaries are not replaced by support-tool descriptions.",
+  "sources": [
+    {
+      "id": "systems-nvidia-nccl",
+      "url": "https://raw.githubusercontent.com/NVIDIA/nccl/3e46c089f4ae4732722a419eb6096aead7e47a30/README.md",
+      "revision": "3e46c089f4ae4732722a419eb6096aead7e47a30",
+      "retrievedOn": "2026-10-20",
+      "sha256": "d81efb277cb5113e703bcbfa56f6b3eba561dce9feb07435a336b65339246018",
+      "title": "NVIDIA/nccl \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "NCCL (pronounced \"Nickel\") is a stand-alone library of standard communication routines for GPUs, implementing all-reduce, all-gather, reduce, broadcast, reduce-scatter, as well as any send/receive based communication pattern. It has been optimized to achieve high bandwidth on platforms using PCIe, NVLink, NVswitch, as well as networking using InfiniBand Verbs or TCP/IP sockets. NCCL supports an arbitrary number of GPUs installed in a single node or across multiple nodes, and can be used in either single- or multi-process (e.g., MPI) applications.",
+      "excerptStartLine": 7,
+      "scope": "NVIDIA NCCL collective GPU communication routines and supported transport mechanisms.",
+      "limitations": "This source documents named products or technical interfaces, not current sales availability, full corporate ownership, leadership, headquarters, customer contracts or the complete product portfolio."
+    },
+    {
+      "id": "systems-amd-hardware",
+      "url": "https://raw.githubusercontent.com/ROCm/rocm-install-on-linux/b34c33a9c31e82854597c289a1991fd6ac5a33b9/docs/reference/system-requirements.rst",
+      "revision": "b34c33a9c31e82854597c289a1991fd6ac5a33b9",
+      "retrievedOn": "2026-10-20",
+      "sha256": "7dd8d8f06daccaaca3d9022da3ce763a3e0db274ceab765d85468e5e83b0f0d4",
+      "title": "ROCm/rocm-install-on-linux \u2014 docs/reference/system-requirements.rst",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "      \"AMD Instinct MI355X\", \"MI350\", \"CDNA4\", \"gfx950\", \"\u2705 [#mi350x-os]_\"\n      \"AMD Instinct MI350X\", \"MI350\", \"CDNA4\", \"gfx950\", \"\u2705 [#mi350x-os]_\"\n      \"AMD Instinct MI325X\", \"MI300\", \"CDNA3\", \"gfx942\", \"\u2705 [#mi325x-os]_\"\n      \"AMD Instinct MI300X\", \"MI300\", \"CDNA3\", \"gfx942\", \"\u2705 [#mi300x-os]_\"\n      \"AMD Instinct MI300A\", \"MI300\", \"CDNA3\", \"gfx942\", \"\u2705 [#mi300A-os]_\"\n      \"AMD Instinct MI250X\", \"MI200\", \"CDNA2\", \"gfx90a\", \"\u2705 [#mi200x-os]_\"\n      \"AMD Instinct MI250\", \"MI200\", \"CDNA2\", \"gfx90a\", \"\u2705 [#mi200x-os]_\"",
+      "excerptStartLine": 43,
+      "scope": "AMD Instinct device names, CDNA architectures and ROCm compatibility.",
+      "limitations": "Compatibility table establishes listed devices and software support with OS-specific footnotes. It does not establish current sales, newest generations, production volume or model-maker allocations."
+    },
+    {
+      "id": "systems-intel-openvino",
+      "url": "https://raw.githubusercontent.com/openvinotoolkit/openvino/7de55d7fb2c8297d8c97fbab83174c2d0d9ce622/README.md",
+      "revision": "7de55d7fb2c8297d8c97fbab83174c2d0d9ce622",
+      "retrievedOn": "2026-10-20",
+      "sha256": "8bb5835c8674f04a67a326e0136ff4b2913500a1c78cd1e1b154cef5c73f9684",
+      "title": "openvinotoolkit/openvino \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "- **Inference Optimization**: Boost deep learning performance in computer vision, automatic speech recognition, generative AI, natural language processing with large and small language models, and many other common tasks.\n- **Flexible Model Support**: Use models trained with popular frameworks such as PyTorch, TensorFlow, ONNX, Keras, PaddlePaddle, and JAX/Flax. Directly integrate models built with transformers and diffusers from the Hugging Face Hub using Optimum Intel. Convert and deploy models without original frameworks.\n- **Broad Platform Compatibility**: Reduce resource demands and efficiently deploy on a range of platforms from edge to cloud. OpenVINO\u2122 supports inference on CPU (x86, ARM), GPU (Intel integrated & discrete GPU) and AI accelerators (Intel NPU).\n- **Community and Ecosystem**: Join an active community contributing to the enhancement of deep learning performance across various domains.",
+      "excerptStartLine": 23,
+      "scope": "OpenVINO inference optimization, model conversion and CPU/GPU/NPU platform support.",
+      "limitations": "This source documents named products or technical interfaces, not current sales availability, full corporate ownership, leadership, headquarters, customer contracts or the complete product portfolio."
+    },
+    {
+      "id": "systems-dell-powerscale",
+      "url": "https://raw.githubusercontent.com/dell/ansible-powerscale/9e3ce782b82af02325f47e00fe45210c40322439/README.md",
+      "revision": "9e3ce782b82af02325f47e00fe45210c40322439",
+      "retrievedOn": "2026-10-20",
+      "sha256": "ab5f1238216761eb476128e6f4a0e5a97573d03079419d5fa758eeecb9589032",
+      "title": "dell/ansible-powerscale \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The Ansible Modules for Dell Technologies (Dell) PowerScale allow Data Center and IT administrators to use RedHat Ansible to automate and orchestrate the configuration and management of Dell PowerScale arrays.\n\nThe Ansible Modules for Dell PowerScale support the following features:\n- Create user, groups, filesystem, NFS export, smart quotas, SMB share, snapshot and snapshot schedule of a filesystem.\n- Modify user, groups, filesystem, access zone, NFS export, smart quotas, SMB share, snapshot and snapshot schedule of a filesystem.\n- Delete user, groups, filesystem, NFS export, smart quotas, SMB share, snapshot and snapshot schedule of a filesystem.\n- Get details of user, groups, node, filesystem, access zone, NFS export, smart quotas, SMB share, snapshot and snapshot schedule of a filesystem.\n- Get details of SyncIQ policies, SyncIQ jobs, SyncIQ reports, SyncIQ target reports and SyncIQ performance rules of the cluster.\n- Add, modify and remove Active Directory and LDAP to Authentication providers list.",
+      "excerptStartLine": 11,
+      "scope": "Dell PowerScale arrays and automation for file systems, NFS/SMB, quotas and snapshots.",
+      "limitations": "This source documents named products or technical interfaces, not current sales availability, full corporate ownership, leadership, headquarters, customer contracts or the complete product portfolio."
+    },
+    {
+      "id": "systems-hpe-oneview",
+      "url": "https://raw.githubusercontent.com/HewlettPackard/oneview-python/76377c71c8343cd8332c82c9ed18b51f9f234f2d/README.md",
+      "revision": "76377c71c8343cd8332c82c9ed18b51f9f234f2d",
+      "retrievedOn": "2026-10-20",
+      "sha256": "86c4861b6883b90279f96d56d71ce6cf55ce24008f253510928afcbc0690531b",
+      "title": "HewlettPackard/oneview-python \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "HPE OneView makes it simple to deploy and manage today\u2019s complex hybrid cloud infrastructure. HPE OneView can help you transform your data center to software-defined, and it supports HPE\u2019s broad portfolio of servers, storage, and networking solutions, ensuring the simple and automated management of your hybrid infrastructure. Software-defined intelligence enables a template-driven approach for deploying, provisioning, updating, and integrating compute, storage, and networking infrastructure.\n\nThe HPE OneView Python library provides a pure Python interface to the HPE OneView REST APIs. It depends on the [Python-Future](http://python-future.org/index.html) library to provide Python 2/3 compatibility.",
+      "excerptStartLine": 12,
+      "scope": "OneView manages compute, storage and networking infrastructure; Python SDK interfaces with its APIs.",
+      "limitations": "This source documents named products or technical interfaces, not current sales availability, full corporate ownership, leadership, headquarters, customer contracts or the complete product portfolio.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 14,
+          "excerpt": "The HPE OneView Python library provides a pure Python interface to the HPE OneView REST APIs. It depends on the [Python-Future](http://python-future.org/index.html) library to provide Python 2/3 compatibility."
+        }
+      ]
+    },
+    {
+      "id": "systems-lenovo-xclarity",
+      "url": "https://raw.githubusercontent.com/lenovo/pylxca/1098b1a1a5151c838f2b7bfe62a392bbd38dcf2d/README",
+      "revision": "1098b1a1a5151c838f2b7bfe62a392bbd38dcf2d",
+      "retrievedOn": "2026-10-20",
+      "sha256": "278322f4d85287386c137063d5197c48bb2fe3046e4d6f2f3ba2c3b876e6c7bf",
+      "title": "lenovo/pylxca \u2014 README",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "PyLXCA is Python based interface for Lenovo xClarity Administration APIs.\n\nPyLXCA command-line interface (CLI) provides a Python-based library of \ncommands to automate provisioning and resource management from an OpenStack \nenvironment, such as Ansible or Puppet.\n\nThe Lenovo XClarity Administrator PYLXCA CLI provide an interface to \nLenovo XClarity Administrator REST APIs to automate functions such as:\n*\tLogging in to Lenovo XClarity Administrator\n*\tManaging and unmanaging chassis, servers, storage systems, and \ntop-of-rack switches (endpoints)\n*\tViewing inventory data for endpoints and components\n*\tDeploying an operating-system image to one or more servers\n*\tConfiguring servers through the use of Configuration Patterns\n*\tApplying firmware updates to endpoints",
+      "excerptStartLine": 5,
+      "scope": "Lenovo XClarity Administrator and PyLXCA inventory, provisioning, configuration and firmware-management functions.",
+      "limitations": "This source documents named products or technical interfaces, not current sales availability, full corporate ownership, leadership, headquarters, customer contracts or the complete product portfolio."
+    },
+    {
+      "id": "systems-supermicro-redfish",
+      "url": "https://raw.githubusercontent.com/supermicro/redfish/ea5ea99eda0b7ac50d48ca7faa307dfcd3f41e05/README.md",
+      "revision": "ea5ea99eda0b7ac50d48ca7faa307dfcd3f41e05",
+      "retrievedOn": "2026-10-20",
+      "sha256": "8c6c5df84008e11bf92da2d6a31c6540a5244acf474fc40300145fe4c93c7bfa",
+      "title": "supermicro/redfish \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "## Supported Platforms\nSupermicro Systems\n* X12 BigTwin 2U 4-Node System: [SYS-220BT-HNC8R](https://www.supermicro.com/en/products/system/bigtwin/2u/sys-220bt-hnc8r)\n* X12 BigTwin 2U 2-Node System: [SYS-620BT-DNC8R](https://www.supermicro.com/en/products/system/bigtwin/2u/sys-620bt-dnc8r)\n* X12 Ultra 2U System: [SYS-220U-TNR](https://www.supermicro.com/en/products/system/ultra/2u/sys-220u-tnr)\n* X12 Ultra 1U System: [SYS-120U-TNR](https://www.supermicro.com/en/products/system/Ultra/1U/SYS-120U-TNR)\n* H12 WIO 1U System: [AS-1114S-WN10RT](https://www.supermicro.com/en/Aplus/system/1U/1114/AS-1114S-WN10RT.cfm)\n\nSupermicro Motherboards\n* X12 BigTwin MB: [X12DPT-B6](https://www.supermicro.com/en/products/motherboard/x12dpt-b6)\n* X12 Ultra MB: [X12DPU-6](https://www.supermicro.com/en/products/motherboard/x12dpu-6)\n* H12 WIO MB: [H12SSW-NTR](https://www.supermicro.com/en/products/motherboard/H12SSW-NTR)\n",
+      "excerptStartLine": 29,
+      "scope": "Explicit server and motherboard names supported by the documented Supermicro Redfish implementation.",
+      "limitations": "This may be a historical platform list. It does not establish latest Supermicro products, current shipping status, GPU configurations or AI-model deployments.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 13,
+          "excerpt": "This is collection of JSON files containing Redfish APIs to securely remote manage **flagship Supermicro systems** with AST2600 BMC onboard. This guide helps you interact with Supermicro servers **within minutes** via Redfish APIs."
+        },
+        {
+          "excerptStartLine": 107,
+          "excerpt": "To see Redfish in action, check out Supermicro's orchestration software, SuperCloud Composer, based of Redfish standards: https://www.supermicro.com/en/solutions/management-software/supercloud-composer"
+        }
+      ]
+    },
+    {
+      "id": "systems-cisco-nxos",
+      "url": "https://raw.githubusercontent.com/CiscoDevNet/terraform-provider-nxos/69d5fa1483744b19ebe8414de069e6c2b8d29127/README.md",
+      "revision": "69d5fa1483744b19ebe8414de069e6c2b8d29127",
+      "retrievedOn": "2026-10-20",
+      "sha256": "99f81ed2b03f9d8dee22bd32c07ba078d5a3e6592942193539ba28950bad2624",
+      "title": "CiscoDevNet/terraform-provider-nxos \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The NXOS provider provides resources to interact with one or more Cisco NX-OS devices.\n\nAll resources and data sources have been tested with the following releases.\n\n| Platform  | Version |\n| --------- | ------- |\n| Nexus 9Kv | 10.5(6) |\n| Nexus 9Kv | 10.6(4) |",
+      "excerptStartLine": 5,
+      "scope": "NX-OS device management and Nexus 9Kv versions listed as tested by this provider.",
+      "limitations": "Provider testing on virtual Nexus 9Kv is not evidence about physical Nexus switch inventory, Silicon One design wins or supplier/customer relationships."
+    },
+    {
+      "id": "systems-juniper-pyez",
+      "url": "https://raw.githubusercontent.com/Juniper/py-junos-eznc/e5f22e749ade574424bcc1d8bd6b5e48c81110ac/README.md",
+      "revision": "e5f22e749ade574424bcc1d8bd6b5e48c81110ac",
+      "retrievedOn": "2026-10-20",
+      "sha256": "b12080880485d5e542a70263fad2913f8e476d1aa6669bb38e9fba5bf1731f27",
+      "title": "Juniper/py-junos-eznc \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "_Junos PyEZ_ is a Python library to remotely manage/automate Junos devices.  The user is ***NOT*** required: (a) to be a \"Software Programmer\u2122\", (b) have sophisticated knowledge of Junos, or (b) have a complex understanding of the Junos XML API.  ",
+      "excerptStartLine": 22,
+      "scope": "Junos PyEZ automates Junos device management.",
+      "limitations": "This source documents named products or technical interfaces, not current sales availability, full corporate ownership, leadership, headquarters, customer contracts or the complete product portfolio.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 44,
+          "excerpt": "* Remote connectivity and management of Junos devices via NETCONF\n* Provide \"facts\" about the device such as software-version, serial-number, etc.\n* Retrieve \"operational\" or \"run-state\" information as Tables/Views\n* Retrieve configuration information as Tables/Views\n* Make configuration changes in unstructured and structured ways\n* Provide common utilities for tasks such as secure copy of files and software updates"
+        }
+      ]
+    },
+    {
+      "id": "systems-qualcomm-hub",
+      "url": "https://raw.githubusercontent.com/qualcomm/ai-hub-models/6930b5cd5f9fe39ab07d32aea879283b813ef99d/README.md",
+      "revision": "6930b5cd5f9fe39ab07d32aea879283b813ef99d",
+      "retrievedOn": "2026-10-20",
+      "sha256": "db8fc4af499d460009c2814066008d606f2eaf8469d88cfcb2d517f7378afa50",
+      "title": "qualcomm/ai-hub-models \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The Qualcomm\u00ae AI Hub Models are a collection of\nstate-of-the-art machine learning models optimized for deployment on Qualcomm\u00ae devices.\n\n* [List of Models by Category](#model-directory)\n* [On-Device Performance Data](https://aihub.qualcomm.com/models)\n* [Device-Native Sample Apps](https://github.com/qualcomm/ai-hub-apps)\n",
+      "excerptStartLine": 8,
+      "scope": "Qualcomm AI Hub model collection and device deployment.",
+      "limitations": "Model optimization/hosted-device profiling is not proof Qualcomm developed the original model, trained it, or supplied a named lab.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 67,
+          "excerpt": "#### 1. Configure AI Hub Workbench Access\n\n[Create a Qualcomm\u00ae ID](https://myaccount.qualcomm.com/signup), use it to [login to Qualcomm\u00ae AI Hub Workbench](https://workbench.aihub.qualcomm.com/),"
+        }
+      ]
+    },
+    {
+      "id": "systems-arm-compute",
+      "url": "https://raw.githubusercontent.com/ARM-software/ComputeLibrary/80bbedb606746dcc1451cffedf3931d9fec3f53c/README.md",
+      "revision": "80bbedb606746dcc1451cffedf3931d9fec3f53c",
+      "retrievedOn": "2026-10-20",
+      "sha256": "9dcf9265c2a81b064ea9793379ef9d1235710a40c2d7c253e4664389ba3dc7d3",
+      "title": "ARM-software/ComputeLibrary \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The Compute Library is a collection of low-level machine learning functions optimized for Arm\u00ae Cortex\u00ae-A, Arm\u00ae Neoverse\u2122 and Arm\u00ae Mali\u2122 GPUs architectures.<br>",
+      "excerptStartLine": 18,
+      "scope": "Arm Compute Library targets Cortex-A, Neoverse and Mali GPU architectures.",
+      "limitations": "Names and compatibility are verified; no customer license terms, specific deployed chip, latest processor generation or independent performance claims are established.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 51,
+          "excerpt": "## Supported Architectures/Technologies\n\n- Arm\u00ae CPUs:\n    - Arm\u00ae Cortex\u00ae-A processor family using Arm\u00ae Neon\u2122 technology\n    - Arm\u00ae Neoverse\u2122 processor family\n    - Arm\u00ae Cortex\u00ae-R processor family with Armv8-R AArch64 architecture using Arm\u00ae Neon\u2122 technology\n    - Arm\u00ae Cortex\u00ae-X1 processor using Arm\u00ae Neon\u2122 technology\n\n- Arm\u00ae Mali\u2122 GPUs:\n    - Arm\u00ae Mali\u2122-G processor family\n    - Arm\u00ae Mali\u2122-T processor family\n"
+        }
+      ]
+    },
+    {
+      "id": "systems-cerebras",
+      "url": "https://raw.githubusercontent.com/Cerebras/cerebras-cloud-sdk-python/cacaf754daf384c7066e6584f06363b6f15f8599/README.md",
+      "revision": "cacaf754daf384c7066e6584f06363b6f15f8599",
+      "retrievedOn": "2026-10-20",
+      "sha256": "ef5782798d14b72ab7e08261737d969142870e1d4d582fc76dbeec1984bb9cb7",
+      "title": "Cerebras/cerebras-cloud-sdk-python \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "At Cerebras, we've developed the world's largest and fastest AI processor, the Wafer-Scale Engine-3 (WSE-3). The Cerebras CS-3 system, powered by the WSE-3, represents a new class of AI supercomputer that sets the standard for generative AI training and inference with unparalleled performance and scalability.",
+      "excerptStartLine": 14,
+      "scope": "Cerebras names WSE-3 processor and CS-3 system.",
+      "limitations": "Ignore marketing superlatives about speed/size; names and described system/processor relationship do not establish current customer deployments or independent benchmark performance.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 6,
+          "excerpt": "The Cerebras Python library provides convenient access to the Cerebras REST API from any Python 3.9+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx)."
+        },
+        {
+          "excerptStartLine": 32,
+          "excerpt": "The REST API documentation can be found on [inference-docs.cerebras.ai](https://inference-docs.cerebras.ai). The full API of this library can be found in [api.md](api.md)."
+        }
+      ]
+    },
+    {
+      "id": "systems-groq",
+      "url": "https://raw.githubusercontent.com/groq/groq-python/55066d94acca028c3cb74e050f2711b80ade6298/README.md",
+      "revision": "55066d94acca028c3cb74e050f2711b80ade6298",
+      "retrievedOn": "2026-10-20",
+      "sha256": "fbe2d274b599ac6cb9bf4a201bd80301f8274edfa3f6e6718da6794afc1473ae",
+      "title": "groq/groq-python \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The Groq Python library provides convenient access to the Groq REST API from any Python 3.10+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx).",
+      "excerptStartLine": 6,
+      "scope": "Groq REST API and official synchronous/asynchronous Python client.",
+      "limitations": "This source documents named products or technical interfaces, not current sales availability, full corporate ownership, leadership, headquarters, customer contracts or the complete product portfolio."
+    },
+    {
+      "id": "systems-tenstorrent",
+      "url": "https://raw.githubusercontent.com/tenstorrent/tt-metal/dd144b10ddf4e94bde47ffbea0e195e03ab271b8/README.md",
+      "revision": "dd144b10ddf4e94bde47ffbea0e195e03ab271b8",
+      "retrievedOn": "2026-10-20",
+      "sha256": "d43b9ad4bfb4b4b5bbccbd80824c02f663140fb22d252e65d7e0ee1e4eba20ab",
+      "title": "tenstorrent/tt-metal \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "**TT-NN** is a Python & C++ Neural Network OP library.",
+      "excerptStartLine": 14,
+      "scope": "TT-NN neural-network operator library, TT-Metalium programming model, and named hardware in the same pinned README.",
+      "limitations": "Model demos and reported benchmarks establish software examples on named platforms, not original training suppliers, customer contracts or independently verified performance.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 99,
+          "excerpt": "**TT-Metalium** is our low-level programming model, enabling kernel development for Tenstorrent hardware."
+        },
+        {
+          "excerptStartLine": 43,
+          "excerpt": "| 32    | [Galaxy (Wormhole)](https://tenstorrent.com/hardware/galaxy) | 53      | 72.5  | 80              | 2268.8  | [v0.65.0-rc7](https://github.com/tenstorrent/tt-metal/tree/v0.65.0-rc7) | [59be953](https://github.com/tenstorrent/vllm/tree/59be953f2bbd21e227f9ef4b779f545f9c3bf599/tt_metal) |"
+        },
+        {
+          "excerptStartLine": 48,
+          "excerpt": "| 32 | [n300 (Wormhole)](https://tenstorrent.com/hardware/wormhole) | 109 | 22.1 | 30 | 707.2 | [v0.62.0-rc35](https://github.com/tenstorrent/tt-metal/tree/v0.62.0-rc35) | [ced0161](https://github.com/tenstorrent/vllm/tree/ced0161dc223e6d8aca5f44a6c43d13070c3fba6/tt_metal) |"
+        },
+        {
+          "excerptStartLine": 59,
+          "excerpt": "| 1     | [p150 (Blackhole)](https://tenstorrent.com/hardware/blackhole)        | 63       | 263.4  |            | 263.4   | [v0.65.0-dev20251208](https://github.com/tenstorrent/tt-metal/tree/v0.65.0-dev20251208) |"
+        }
+      ]
+    },
+    {
+      "id": "systems-netapp-trident",
+      "url": "https://raw.githubusercontent.com/NetApp/trident/0072ab2a160673db64302b7bc9967b5aa943d5ef/README.md",
+      "revision": "0072ab2a160673db64302b7bc9967b5aa943d5ef",
+      "retrievedOn": "2026-10-20",
+      "sha256": "a79219eb88dd20ab950d1409b00e32b2fb795a4cb994a6d87b1c150532fe6371",
+      "title": "NetApp/trident \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Trident is a fully supported open source project maintained by [NetApp](https://www.netapp.com). It has been designed\nfrom the ground up to help you meet your containerized applications' persistence demands using industry-standard\ninterfaces, such as the [Container Storage Interface (CSI)](https://kubernetes-csi.github.io/docs/introduction.html).\n\nTrident deploys in Kubernetes clusters as pods and provides dynamic storage orchestration services for your Kubernetes workloads. It enables your containerized applications to quickly and easily consume persistent storage from NetApp\u2019s broad portfolio that\nincludes [ONTAP](https://www.netapp.com/data-management/ontap-data-management-software) (AFF/FAS/Select/Cloud), [Element](https://www.netapp.com/data-management/element-software) (HCI/SolidFire), as well as the [Azure NetApp Files](https://www.netapp.com/azure/azure-netapp-files/)\nservice, [Google Cloud NetApp Volumes](https://www.netapp.com/google-cloud/netapp-volumes/), and [Amazon FSx for ONTAP](https://www.netapp.com/aws/fsx-ontap/).",
+      "excerptStartLine": 10,
+      "scope": "Trident persistent-storage orchestration and explicitly named ONTAP, Element and cloud-service integrations.",
+      "limitations": "This source documents named products or technical interfaces, not current sales availability, full corporate ownership, leadership, headquarters, customer contracts or the complete product portfolio."
+    },
+    {
+      "id": "systems-pure-client",
+      "url": "https://raw.githubusercontent.com/PureStorage-OpenConnect/py-pure-client/15b60b01f8ff6ca8ffb1eba8a61986a8597a25f3/README.md",
+      "revision": "15b60b01f8ff6ca8ffb1eba8a61986a8597a25f3",
+      "retrievedOn": "2026-10-20",
+      "sha256": "6737b19a875ea8cdb7ea192ca0c88357f4018ff5eac9edeb322f2161ba9fdc10",
+      "title": "PureStorage-OpenConnect/py-pure-client \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "# Everpure Unified Python SDK\n\n## Overview\n\nThe `py-pure-client` Python package provides clients that use the Pure1 1.x REST API,\nthe FlashArray REST 2.x API, and the FlashBlade REST 2.x API.\n\nFor the current FlashBlade REST 1.x Python SDK, [see here](https://github.com/purestorage/purity_fb_python_client).",
+      "excerptStartLine": 1,
+      "scope": "Python clients for Pure1, FlashArray and FlashBlade REST APIs; repository currently titles the SDK Everpure.",
+      "limitations": "SDK naming does not alone establish a legal company rename or ownership event. Preserve the existing Pure Storage entity and flag the corporate identity for separate dated review."
+    },
+    {
+      "id": "systems-vast-db",
+      "url": "https://raw.githubusercontent.com/vast-data/vastdb_sdk/01cfba84c9849647723c5897e18f819d865cfe3f/README.md",
+      "revision": "01cfba84c9849647723c5897e18f819d865cfe3f",
+      "retrievedOn": "2026-10-20",
+      "sha256": "e228309241e2db7851a9157f01464a94d4035cb84716c886737e970bce8c5003",
+      "title": "vast-data/vastdb_sdk \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "A Python SDK for seamless interaction with [VAST Database](https://vastdata.com/database) and [VAST Catalog](https://vastdata.com/blog/vast-catalog-treat-your-file-system-like-a-database). Enables powerful data operations including:\n\n- Schema and table management\n- Efficient data ingest and querying\n- Advanced filtering with predicate pushdown\n- Direct integration with PyArrow and DuckDB\n- File system querying through VAST Catalog",
+      "excerptStartLine": 5,
+      "scope": "VAST Database and Catalog data operations including schema/table management, ingestion/querying and filesystem queries.",
+      "limitations": "This source documents named products or technical interfaces, not current sales availability, full corporate ownership, leadership, headquarters, customer contracts or the complete product portfolio."
+    },
+    {
+      "id": "systems-weka-csi",
+      "url": "https://raw.githubusercontent.com/weka/csi-wekafs/7fb1c5d177ec91617aaf09a63e30810fe1550139/README.md",
+      "revision": "7fb1c5d177ec91617aaf09a63e30810fe1550139",
+      "retrievedOn": "2026-10-20",
+      "sha256": "f45a4dedc5a1a150f2dafba88503c9dd381dce372f82ad1ab3be2d52b38f165b",
+      "title": "weka/csi-wekafs \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "# CSI WekaFS Driver\nHelm chart for Deployment of WekaIO Container Storage Interface (CSI) plugin for WekaFS - the world fastest filesystem",
+      "excerptStartLine": 1,
+      "scope": "WEKA filesystem and Kubernetes CSI integration.",
+      "limitations": "Ignore the fastest-filesystem marketing claim. Verify product role only, not performance ranking, commercial availability or model customer exposure.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 15,
+          "excerpt": "| WekaIO, Inc. | <csi@weka.io> | <https://weka.io> |"
+        },
+        {
+          "excerptStartLine": 24,
+          "excerpt": "- Weka system pre-configured and Weka client installed and registered in cluster for each Kubernetes node"
+        }
+      ]
+    },
+    {
+      "id": "systems-ddn-exa",
+      "url": "https://raw.githubusercontent.com/DDNStorage/exa-csi-driver/4a08666d1ab2eff2ef53428e9f1ffbe57175baf1/README.md",
+      "revision": "4a08666d1ab2eff2ef53428e9f1ffbe57175baf1",
+      "retrievedOn": "2026-10-20",
+      "sha256": "dd3009853bf09e21815c0ab26115890b16d7dc1a8e4a069adc9bc70860a0e673",
+      "title": "DDNStorage/exa-csi-driver \u2014 README.md",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "## Compatibility matrix\n|CSI driver version|EXAScaler client version|EXA Scaler server version|\n|--- |---|---|\n|>=2.9.2|>=2.14.0-ddn255|>=6.3.8 C1|\n|2.9.0 and 2.9.1|>=2.14.0-ddn255|6.3.8|\n|>=2.8.0|>=2.14.0-ddn252|>=6.3.7|\n|>=2.7.0|>=2.14.0-ddn235|>=6.3.5-2026021300|\n|2.3.0 to 2.6.0|>=2.14.0-ddn182|6.3.2 to 6.3.4|\n\n## Feature List",
+      "excerptStartLine": 5,
+      "scope": "EXAScaler storage client/server and CSI driver compatibility; supported storage features elsewhere in the same document.",
+      "limitations": "This source documents named products or technical interfaces, not current sales availability, full corporate ownership, leadership, headquarters, customer contracts or the complete product portfolio.",
+      "additionalExcerpts": [
+        {
+          "excerptStartLine": 14,
+          "excerpt": "## Feature List\n|Feature|Feature Status|CSI Driver Version|CSI Spec Version|Kubernetes Version|Openshift Version|Arm64 support|\n|--- |--- |--- |--- |--- |--- |--- |\n|Static Provisioning|GA|>= 1.0.0|>= 1.0.0|>=1.18|>=4.13|>=2.6.0|\n|Dynamic Provisioning|GA|>= 1.0.0|>= 1.0.0|>=1.18|>=4.13|>=2.6.0|\n|RW mode|GA|>= 1.0.0|>= 1.0.0|>=1.18|>=4.13|>=2.6.0|\n|RO mode|GA|>= 1.0.0|>= 1.0.0|>=1.18|>=4.13|>=2.6.0|\n|Expand volume|GA|>= 1.0.0|>= 1.1.0|>=1.18|>=4.13|>=2.6.0|\n|StorageClass Secrets|GA|>= 1.0.0|>=1.0.0|>=1.18|>=4.13|>=2.6.0|\n|Mount options|GA|>= 1.0.0|>= 1.0.0|>=1.18|>=4.13|>=2.6.0|\n|Topology|GA|>= 2.0.0|>= 1.0.0|>=1.17|>=4.13|>=2.6.0|\n|Snapshots|GA|>= 2.2.6|>= 1.0.0|>=1.17|>=4.13|>=2.6.0|\n|Exascaler Hot Nodes|GA|>= 2.3.0|>= 1.0.0|>=1.18| Not supported yet|Not supported yet|\n|Compression|GA|>= 2.3.5|>= 1.0.0|>=1.17|>=4.13|>=2.6.0|\n|Encryption|GA|>= 2.3.5|>= 1.0.0|>=1.17| Not supported yet|>=2.6.0|\n|Disable Volume Quota|GA|>= 2.10.0|>= 1.0.0|>=1.18|>=4.13|>=2.6.0|\n|Automated Lustre Module Install|GA|>= 2.9.0|N/A|>=1.24|>=4.13|>=2.9.0|\n"
+        }
+      ]
+    },
+    {
+      "id": "systems-supermicro-identity",
+      "url": "https://github.com/Supermicro",
+      "title": "Supermicro organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "3a3beef51afa360068b769b58b4d223e29c83e3d499802f4f9caaf8047c6ebe3",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://www.supermicro.com\" href=\"https://www.supermicro.com\">https://www.supermicro.com</a>",
+      "scope": "Company-associated organization links the stated official or developer website.",
+      "limitations": "Mutable profile; the corporate site was not readable through the environment. This confirms linked identity, not site availability or corporate facts."
+    },
+    {
+      "id": "systems-ddn-identity",
+      "url": "https://github.com/DDNStorage",
+      "title": "DDNStorage organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "03b4b8921209740ac26a5f421e22dc8d4a413141e5143372af440027ca0cbca1",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://www.ddn.com/\" href=\"https://www.ddn.com/\">https://www.ddn.com/</a>",
+      "scope": "Company-associated organization links the stated official or developer website.",
+      "limitations": "Mutable profile; the corporate site was not readable through the environment. This confirms linked identity, not site availability or corporate facts."
+    },
+    {
+      "id": "systems-vast-data-identity",
+      "url": "https://github.com/vast-data",
+      "title": "vast-data organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "a3f24469d0f2f7f18d1288df113c65837d7ab968320af74be6d772e781babe22",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://vastdata.com/\" href=\"https://vastdata.com/\">https://vastdata.com/</a>",
+      "scope": "Company-associated organization links the stated official or developer website.",
+      "limitations": "Mutable profile; the corporate site was not readable through the environment. This confirms linked identity, not site availability or corporate facts."
+    },
+    {
+      "id": "systems-lenovo-identity",
+      "url": "https://github.com/lenovo",
+      "title": "lenovo organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "b73734492d4f16037b9cf74f2ce5ce1d8a6b1136050a6330247ed488eb743023",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://www.lenovo.com\" href=\"https://www.lenovo.com\">https://www.lenovo.com</a>",
+      "scope": "Company-associated organization links the stated official or developer website.",
+      "limitations": "Mutable profile; the corporate site was not readable through the environment. This confirms linked identity, not site availability or corporate facts."
+    },
+    {
+      "id": "systems-netapp-identity",
+      "url": "https://github.com/NetApp",
+      "title": "NetApp organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "c3584f44b6f1b43f235c2f0bef75eaa404bca7ecb861dac84f621c4f0cd5d479",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://netapp.com\" href=\"https://netapp.com\">https://netapp.com</a>",
+      "scope": "Company-associated organization links the stated official or developer website.",
+      "limitations": "Mutable profile; the corporate site was not readable through the environment. This confirms linked identity, not site availability or corporate facts."
+    },
+    {
+      "id": "systems-hpe-identity",
+      "url": "https://github.com/HewlettPackard",
+      "title": "HewlettPackard organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "6e038d3a4ca997389af77b74316a0955ea45cca7a1cea285fc8e46be6e2f1cf3",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"http://www.hpe.com\" href=\"http://www.hpe.com\">http://www.hpe.com</a>",
+      "scope": "Company-associated organization links the stated official or developer website.",
+      "limitations": "Mutable profile; the corporate site was not readable through the environment. This confirms linked identity, not site availability or corporate facts."
+    },
+    {
+      "id": "systems-dell-identity",
+      "url": "https://github.com/dell",
+      "title": "dell organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "33825bab332bb33ae907942708eddebee193b52cd7d5cb1f152cfa07cae2667a",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://developer.dell.com/\" href=\"https://developer.dell.com/\">https://developer.dell.com/</a>",
+      "scope": "Company-associated organization links the stated official or developer website.",
+      "limitations": "Mutable profile; the corporate site was not readable through the environment. This confirms linked identity, not site availability or corporate facts."
+    },
+    {
+      "id": "systems-tenstorrent-identity",
+      "url": "https://github.com/tenstorrent",
+      "title": "tenstorrent organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "305e836cbd10c867ab70bde14979c8052b3e13dcbfdef1c2571ae9eed7436ba7",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"www.tenstorrent.com\" href=\"https://www.tenstorrent.com\">https://www.tenstorrent.com</a>",
+      "scope": "Company-associated organization links the stated official or developer website.",
+      "limitations": "Mutable profile; the corporate site was not readable through the environment. This confirms linked identity, not site availability or corporate facts."
+    },
+    {
+      "id": "systems-qualcomm-identity",
+      "url": "https://github.com/qualcomm",
+      "title": "qualcomm organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "15acc55d8afe0629ab0029d6c69aaef533718dd6119c86c877ab306bdd4970ab",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"https://qualcomm.com/developer\" href=\"https://qualcomm.com/developer\">https://qualcomm.com/developer</a>",
+      "scope": "Company-associated organization links the stated official or developer website.",
+      "limitations": "Mutable profile; the corporate site was not readable through the environment. This confirms linked identity, not site availability or corporate facts."
+    },
+    {
+      "id": "systems-arm-identity",
+      "url": "https://github.com/ARM-software",
+      "title": "ARM-software organization profile",
+      "revision": null,
+      "retrievedOn": "2026-10-20",
+      "sha256": "c2d4111414c59471410434f2cafac19bcb4c140d856fa213600290befed8756b",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "<a rel=\"nofollow\" itemprop=\"url\" class=\"Link--primary\" title=\"www.arm.com\" href=\"https://www.arm.com\">https://www.arm.com</a>",
+      "scope": "Company-associated organization links the stated official or developer website.",
+      "limitations": "Mutable profile; the corporate site was not readable through the environment. This confirms linked identity, not site availability or corporate facts."
+    }
+  ],
+  "entities": [
+    {
+      "entityId": "nvidia",
+      "changes": {
+        "products": [
+          "NCCL"
+        ]
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-nvidia-nccl"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "NCCL",
+          "kind": "software_library",
+          "role": "Collective and point-to-point GPU communication routines across devices and nodes, using transports such as PCIe, NVLink, InfiniBand or TCP/IP.",
+          "sourceIds": [
+            "systems-nvidia-nccl"
+          ],
+          "scope": "GPU communication software only; this adds a documented supporting component without replacing the hardware portfolio."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository.",
+        "Existing NVIDIA hardware and TensorRT/BioNeMo portfolio summaries are preserved; this tranche adds NCCL communication-stack evidence only."
+      ]
+    },
+    {
+      "entityId": "amd",
+      "changes": {
+        "products": [
+          "Instinct MI355X",
+          "Instinct MI350X",
+          "Instinct MI325X",
+          "Instinct MI300X",
+          "Instinct MI300A"
+        ]
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-amd-hardware"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Instinct MI355X",
+          "kind": "accelerator_hardware",
+          "role": "AMD Instinct device listed in the ROCm compatibility table as CDNA4 / gfx950.",
+          "sourceIds": [
+            "systems-amd-hardware"
+          ],
+          "scope": "Device identity, architecture and scoped ROCm support; OS footnotes apply. No latest-generation, sales-availability or named model-training claim."
+        },
+        {
+          "name": "Instinct MI350X",
+          "kind": "accelerator_hardware",
+          "role": "AMD Instinct device listed in the ROCm compatibility table as CDNA4 / gfx950.",
+          "sourceIds": [
+            "systems-amd-hardware"
+          ],
+          "scope": "Device identity, architecture and scoped ROCm support; OS footnotes apply. No latest-generation, sales-availability or named model-training claim."
+        },
+        {
+          "name": "Instinct MI325X",
+          "kind": "accelerator_hardware",
+          "role": "AMD Instinct device listed in the ROCm compatibility table as CDNA3 / gfx942.",
+          "sourceIds": [
+            "systems-amd-hardware"
+          ],
+          "scope": "Device identity, architecture and scoped ROCm support; OS footnotes apply. No latest-generation, sales-availability or named model-training claim."
+        },
+        {
+          "name": "Instinct MI300X",
+          "kind": "accelerator_hardware",
+          "role": "AMD Instinct device listed in the ROCm compatibility table as CDNA3 / gfx942.",
+          "sourceIds": [
+            "systems-amd-hardware"
+          ],
+          "scope": "Device identity, architecture and scoped ROCm support; OS footnotes apply. No latest-generation, sales-availability or named model-training claim."
+        },
+        {
+          "name": "Instinct MI300A",
+          "kind": "accelerator_hardware",
+          "role": "AMD Instinct device listed in the ROCm compatibility table as CDNA3 / gfx942.",
+          "sourceIds": [
+            "systems-amd-hardware"
+          ],
+          "scope": "Device identity, architecture and scoped ROCm support; OS footnotes apply. No latest-generation, sales-availability or named model-training claim."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "intel",
+      "changes": {
+        "products": [
+          "OpenVINO"
+        ]
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-intel-openvino"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "OpenVINO",
+          "kind": "inference_toolkit",
+          "role": "Software for optimizing and deploying trained models across supported CPUs, Intel GPUs and Intel NPUs.",
+          "sourceIds": [
+            "systems-intel-openvino"
+          ],
+          "scope": "Inference software and platform compatibility; does not establish the Xeon/Gaudi hardware roadmap, original model training or a company-wide portfolio review."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository.",
+        "Existing Xeon/Gaudi labels are not reverified by an OpenVINO software source; keep those product facts pending independent hardware documentation."
+      ]
+    },
+    {
+      "entityId": "dell",
+      "changes": {
+        "products": [
+          "PowerScale",
+          "Ansible Modules for Dell PowerScale"
+        ],
+        "website": "https://developer.dell.com/"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-dell-powerscale"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-dell-identity"
+          ],
+          "scope": "Official/developer website linked by the company-associated organization profile; destination accessibility not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "PowerScale",
+          "kind": "storage_platform",
+          "role": "Dell storage arrays managed through documented filesystem, NFS-export, SMB-share, quota and snapshot operations.",
+          "sourceIds": [
+            "systems-dell-powerscale"
+          ],
+          "scope": "Array identity and documented storage functions; no performance, physical appliance generation or deployment/capacity claim."
+        },
+        {
+          "name": "Ansible Modules for Dell PowerScale",
+          "kind": "management_tool",
+          "role": "Ansible modules for automating PowerScale storage configuration and management.",
+          "sourceIds": [
+            "systems-dell-powerscale"
+          ],
+          "scope": "Supporting management software, separate from the storage arrays and Dell server portfolio."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "hpe",
+      "changes": {
+        "products": [
+          "HPE OneView",
+          "HPE OneView Python SDK"
+        ],
+        "website": "http://www.hpe.com"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-hpe-oneview"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-hpe-identity"
+          ],
+          "scope": "Official/developer website linked by the company-associated organization profile; destination accessibility not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "HPE OneView",
+          "kind": "infrastructure_management",
+          "role": "Infrastructure-management software for deploying, provisioning and updating compute, storage and networking resources.",
+          "sourceIds": [
+            "systems-hpe-oneview"
+          ],
+          "scope": "The source describes OneView and HPE infrastructure domains; it does not verify every ProLiant/Cray/Synergy hardware model."
+        },
+        {
+          "name": "HPE OneView Python SDK",
+          "kind": "software_sdk",
+          "role": "Python interface to HPE OneView REST APIs.",
+          "sourceIds": [
+            "systems-hpe-oneview"
+          ],
+          "scope": "Client software supporting OneView; distinct from managed servers, storage and networking hardware."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "lenovo",
+      "changes": {
+        "products": [
+          "Lenovo XClarity Administrator",
+          "PyLXCA"
+        ],
+        "website": "https://www.lenovo.com"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-lenovo-xclarity"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-lenovo-identity"
+          ],
+          "scope": "Official/developer website linked by the company-associated organization profile; destination accessibility not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Lenovo XClarity Administrator",
+          "kind": "infrastructure_management",
+          "role": "Management interfaces for hardware inventory, server configuration, operating-system deployment and endpoint firmware updates.",
+          "sourceIds": [
+            "systems-lenovo-xclarity"
+          ],
+          "scope": "The README identifies endpoints including chassis, servers, storage and top-of-rack switches; current ThinkSystem/Neptune catalog remains unreviewed."
+        },
+        {
+          "name": "PyLXCA",
+          "kind": "management_tool",
+          "role": "Python client and command-line interface for automating Lenovo XClarity Administrator operations.",
+          "sourceIds": [
+            "systems-lenovo-xclarity"
+          ],
+          "scope": "Support tooling rather than server hardware. The README mixes historical installation examples with updated prerequisites; no version-lifecycle claim is inferred."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "supermicro",
+      "changes": {
+        "products": [
+          "Supermicro Redfish APIs",
+          "SYS-220BT-HNC8R",
+          "SYS-620BT-DNC8R",
+          "SYS-220U-TNR",
+          "SYS-120U-TNR",
+          "AS-1114S-WN10RT"
+        ],
+        "website": "https://www.supermicro.com"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-supermicro-redfish"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-supermicro-identity"
+          ],
+          "scope": "Official/developer website linked by the company-associated organization profile; destination accessibility not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Supermicro Redfish APIs",
+          "kind": "management_api",
+          "role": "APIs for remote management and monitoring of supported Supermicro systems with AST2600 BMCs.",
+          "sourceIds": [
+            "systems-supermicro-redfish"
+          ],
+          "scope": "The source limits supported systems and requires applicable licenses; it does not establish all server configurations or current product availability."
+        },
+        {
+          "name": "SYS-220BT-HNC8R",
+          "kind": "server_hardware",
+          "role": "X12 BigTwin 2U four-node system listed in Supermicro's Redfish supported-platform documentation.",
+          "sourceIds": [
+            "systems-supermicro-redfish"
+          ],
+          "scope": "Documented model identity/form factor and management support, possibly historical. No current shipping, AI accelerator, liquid-cooling or latest-generation claim."
+        },
+        {
+          "name": "SYS-620BT-DNC8R",
+          "kind": "server_hardware",
+          "role": "X12 BigTwin 2U two-node system listed in Supermicro's Redfish supported-platform documentation.",
+          "sourceIds": [
+            "systems-supermicro-redfish"
+          ],
+          "scope": "Documented model identity/form factor and management support, possibly historical. No current shipping, AI accelerator, liquid-cooling or latest-generation claim."
+        },
+        {
+          "name": "SYS-220U-TNR",
+          "kind": "server_hardware",
+          "role": "X12 Ultra 2U system listed in Supermicro's Redfish supported-platform documentation.",
+          "sourceIds": [
+            "systems-supermicro-redfish"
+          ],
+          "scope": "Documented model identity/form factor and management support, possibly historical. No current shipping, AI accelerator, liquid-cooling or latest-generation claim."
+        },
+        {
+          "name": "SYS-120U-TNR",
+          "kind": "server_hardware",
+          "role": "X12 Ultra 1U system listed in Supermicro's Redfish supported-platform documentation.",
+          "sourceIds": [
+            "systems-supermicro-redfish"
+          ],
+          "scope": "Documented model identity/form factor and management support, possibly historical. No current shipping, AI accelerator, liquid-cooling or latest-generation claim."
+        },
+        {
+          "name": "AS-1114S-WN10RT",
+          "kind": "server_hardware",
+          "role": "H12 WIO 1U system listed in Supermicro's Redfish supported-platform documentation.",
+          "sourceIds": [
+            "systems-supermicro-redfish"
+          ],
+          "scope": "Documented model identity/form factor and management support, possibly historical. No current shipping, AI accelerator, liquid-cooling or latest-generation claim."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository.",
+        "The retrieved Redfish list documents X12/H12 servers, not a current AI rack catalog. Preserve historical identity without presenting this list as the latest products."
+      ]
+    },
+    {
+      "entityId": "cisco",
+      "changes": {
+        "products": [
+          "Cisco NX-OS",
+          "NX-OS Terraform Provider"
+        ]
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-cisco-nxos"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Cisco NX-OS",
+          "kind": "network_software",
+          "role": "Cisco device software managed through the NX-API REST interface.",
+          "sourceIds": [
+            "systems-cisco-nxos"
+          ],
+          "scope": "The source establishes the network software/interface; it does not establish physical switch capacity or Silicon One hardware."
+        },
+        {
+          "name": "NX-OS Terraform Provider",
+          "kind": "management_tool",
+          "role": "Terraform provider for interacting with Cisco NX-OS devices.",
+          "sourceIds": [
+            "systems-cisco-nxos"
+          ],
+          "scope": "Support software tested on the listed Nexus 9Kv virtual-platform releases; no physical switch deployment is inferred."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "juniper-networks",
+      "changes": {
+        "products": [
+          "Junos",
+          "Junos PyEZ"
+        ]
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-juniper-pyez"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Junos",
+          "kind": "network_software",
+          "role": "Juniper device software exposed to remote automation through NETCONF and configuration interfaces.",
+          "sourceIds": [
+            "systems-juniper-pyez"
+          ],
+          "scope": "The PyEZ source establishes Junos device integration; no current router/switch model list or corporate ownership claim."
+        },
+        {
+          "name": "Junos PyEZ",
+          "kind": "management_tool",
+          "role": "Python library for automating Junos operational queries, configuration changes, file transfer and software updates.",
+          "sourceIds": [
+            "systems-juniper-pyez"
+          ],
+          "scope": "Supporting network-automation library, distinct from router and switch hardware; current support/version policy requires its own review."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "qualcomm",
+      "changes": {
+        "products": [
+          "Qualcomm AI Hub Models",
+          "Qualcomm AI Hub Workbench"
+        ],
+        "website": "https://qualcomm.com/developer"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-qualcomm-hub"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-qualcomm-identity"
+          ],
+          "scope": "Official/developer website linked by the company-associated organization profile; destination accessibility not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Qualcomm AI Hub Models",
+          "kind": "model_optimization_collection",
+          "role": "A collection of machine-learning models optimized for deployment on Qualcomm devices, with export, evaluation and deployment tooling.",
+          "sourceIds": [
+            "systems-qualcomm-hub"
+          ],
+          "scope": "Optimization/distribution of model implementations, not original model authorship or training-supplier evidence."
+        },
+        {
+          "name": "Qualcomm AI Hub Workbench",
+          "kind": "developer_service",
+          "role": "Service used to compile and profile supported models on hosted Qualcomm devices.",
+          "sourceIds": [
+            "systems-qualcomm-hub"
+          ],
+          "scope": "A development and profiling service, not proof of customer production inference or original model pretraining; access requires configured credentials."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "arm",
+      "changes": {
+        "products": [
+          "Arm Compute Library",
+          "Cortex-A",
+          "Neoverse",
+          "Mali"
+        ],
+        "website": "https://www.arm.com"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-arm-compute"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-arm-identity"
+          ],
+          "scope": "Official/developer website linked by the company-associated organization profile; destination accessibility not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Arm Compute Library",
+          "kind": "software_library",
+          "role": "Low-level machine-learning functions optimized for Arm processor and GPU architectures.",
+          "sourceIds": [
+            "systems-arm-compute"
+          ],
+          "scope": "Supporting ML software; no independently verified comparative performance or completeness of Arm IP offerings."
+        },
+        {
+          "name": "Cortex-A",
+          "kind": "processor_architecture_family",
+          "role": "Arm processor family named as a Compute Library target.",
+          "sourceIds": [
+            "systems-arm-compute"
+          ],
+          "scope": "Architecture/family identity and software targeting only; no specific licensed chip, customer design or current generation established."
+        },
+        {
+          "name": "Neoverse",
+          "kind": "processor_architecture_family",
+          "role": "Arm processor family named as a Compute Library target.",
+          "sourceIds": [
+            "systems-arm-compute"
+          ],
+          "scope": "Architecture/family identity and software targeting only; no specific licensed chip, customer design or current generation established."
+        },
+        {
+          "name": "Mali",
+          "kind": "gpu_architecture_family",
+          "role": "Arm GPU family named as a Compute Library target.",
+          "sourceIds": [
+            "systems-arm-compute"
+          ],
+          "scope": "Architecture/family identity and software targeting only; no specific licensed chip, customer design or current generation established."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "cerebras",
+      "changes": {
+        "products": [
+          "WSE-3",
+          "CS-3",
+          "Cerebras Inference API"
+        ]
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-cerebras"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "WSE-3",
+          "kind": "accelerator_processor",
+          "role": "Cerebras Wafer-Scale Engine-3 processor identified as powering the CS-3 system.",
+          "sourceIds": [
+            "systems-cerebras"
+          ],
+          "scope": "Processor identity and system association; marketing superlatives and independent performance comparisons are excluded."
+        },
+        {
+          "name": "CS-3",
+          "kind": "compute_system",
+          "role": "Cerebras AI system powered by WSE-3 and described for training and inference workloads.",
+          "sourceIds": [
+            "systems-cerebras"
+          ],
+          "scope": "System identity and stated intended workload role; not a new benchmark result, customer deployment or allocation claim."
+        },
+        {
+          "name": "Cerebras Inference API",
+          "kind": "inference_service_api",
+          "role": "Cerebras REST API accessed through its official synchronous/asynchronous Python clients.",
+          "sourceIds": [
+            "systems-cerebras"
+          ],
+          "scope": "API and SDK access path only; no fleet capacity, price, universal model availability or named upstream supplier claim."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "groq",
+      "changes": {
+        "products": [
+          "Groq API",
+          "Groq Python SDK"
+        ]
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-groq"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "Groq API",
+          "kind": "inference_service_api",
+          "role": "REST API for hosted model requests, including documented chat-completion workflows.",
+          "sourceIds": [
+            "systems-groq"
+          ],
+          "scope": "API identity and client workflow; no LPU generation, original model-training role or available capacity inferred."
+        },
+        {
+          "name": "Groq Python SDK",
+          "kind": "software_sdk",
+          "role": "Typed synchronous and asynchronous Python clients for the Groq REST API.",
+          "sourceIds": [
+            "systems-groq"
+          ],
+          "scope": "Client software, separate from the inference service and hardware; API examples do not establish original model ownership."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "tenstorrent",
+      "changes": {
+        "products": [
+          "TT-NN",
+          "TT-Metalium",
+          "Galaxy (Wormhole)",
+          "n300 (Wormhole)",
+          "p150 (Blackhole)"
+        ],
+        "website": "https://www.tenstorrent.com"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-tenstorrent"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-tenstorrent-identity"
+          ],
+          "scope": "Official/developer website linked by the company-associated organization profile; destination accessibility not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "TT-NN",
+          "kind": "software_library",
+          "role": "Python and C++ neural-network operator library for Tenstorrent hardware.",
+          "sourceIds": [
+            "systems-tenstorrent"
+          ],
+          "scope": "Operator-library identity; demo model names do not prove original training customers."
+        },
+        {
+          "name": "TT-Metalium",
+          "kind": "programming_stack",
+          "role": "Low-level programming model for developing kernels on Tenstorrent hardware.",
+          "sourceIds": [
+            "systems-tenstorrent"
+          ],
+          "scope": "Kernel-development software, distinct from the accelerator hardware and a commercial hosting service."
+        },
+        {
+          "name": "Galaxy (Wormhole)",
+          "kind": "compute_system",
+          "role": "Wormhole-based Tenstorrent hardware platform used in the documented model demos.",
+          "sourceIds": [
+            "systems-tenstorrent"
+          ],
+          "scope": "Named demo platform only; no independently verified performance, latest-system or production-use claim."
+        },
+        {
+          "name": "n300 (Wormhole)",
+          "kind": "accelerator_hardware",
+          "role": "Wormhole-based hardware named in Tenstorrent model-demo results.",
+          "sourceIds": [
+            "systems-tenstorrent"
+          ],
+          "scope": "Hardware identity and demo context; no current inventory or customer allocation implied."
+        },
+        {
+          "name": "p150 (Blackhole)",
+          "kind": "accelerator_hardware",
+          "role": "Blackhole-based hardware named in Tenstorrent model-demo results.",
+          "sourceIds": [
+            "systems-tenstorrent"
+          ],
+          "scope": "Hardware identity and software demonstration; the same README says Blackhole software optimization is under development."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "netapp",
+      "changes": {
+        "products": [
+          "ONTAP",
+          "Element",
+          "Trident",
+          "Azure NetApp Files",
+          "Google Cloud NetApp Volumes",
+          "Amazon FSx for ONTAP"
+        ],
+        "website": "https://netapp.com"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-netapp-trident"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-netapp-identity"
+          ],
+          "scope": "Official/developer website linked by the company-associated organization profile; destination accessibility not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "ONTAP",
+          "kind": "storage_software_platform",
+          "role": "NetApp data-management platform named as a Trident persistent-storage backend, including AFF/FAS/Select/Cloud forms.",
+          "sourceIds": [
+            "systems-netapp-trident"
+          ],
+          "scope": "Product/platform identity and integration scope; not all appliance specifications or cloud availability."
+        },
+        {
+          "name": "Element",
+          "kind": "storage_software_platform",
+          "role": "NetApp storage software named as a Trident backend for HCI/SolidFire.",
+          "sourceIds": [
+            "systems-netapp-trident"
+          ],
+          "scope": "Backend identity and container-storage integration only; no current sales/support lifecycle claim."
+        },
+        {
+          "name": "Trident",
+          "kind": "storage_orchestration_software",
+          "role": "NetApp-maintained Kubernetes storage orchestration using CSI for persistent volumes and data-management workflows.",
+          "sourceIds": [
+            "systems-netapp-trident"
+          ],
+          "scope": "Software for consuming storage backends; it is not itself a storage appliance."
+        },
+        {
+          "name": "Azure NetApp Files",
+          "kind": "cloud_service_integration",
+          "role": "Azure-hosted file-storage integration named by NetApp Trident.",
+          "sourceIds": [
+            "systems-netapp-trident"
+          ],
+          "scope": "Listed as a supported ecosystem integration; this does not assert NetApp independently owns or operates the hyperscaler service, nor guarantee regional availability."
+        },
+        {
+          "name": "Google Cloud NetApp Volumes",
+          "kind": "cloud_service_integration",
+          "role": "Google Cloud storage integration named by NetApp Trident.",
+          "sourceIds": [
+            "systems-netapp-trident"
+          ],
+          "scope": "Listed as a supported ecosystem integration; this does not assert NetApp independently owns or operates the hyperscaler service, nor guarantee regional availability."
+        },
+        {
+          "name": "Amazon FSx for ONTAP",
+          "kind": "cloud_service_integration",
+          "role": "AWS-hosted ONTAP integration named by NetApp Trident.",
+          "sourceIds": [
+            "systems-netapp-trident"
+          ],
+          "scope": "Listed as a supported ecosystem integration; this does not assert NetApp independently owns or operates the hyperscaler service, nor guarantee regional availability."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "pure-storage",
+      "changes": {
+        "products": [
+          "FlashArray REST API",
+          "FlashBlade REST API",
+          "Pure1 REST API",
+          "py-pure-client"
+        ]
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-pure-client"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "FlashArray REST API",
+          "kind": "storage_management_api",
+          "role": "FlashArray management API supported by the py-pure-client SDK.",
+          "sourceIds": [
+            "systems-pure-client"
+          ],
+          "scope": "API identity/interface only; no current FlashArray hardware lineup or company rename claim."
+        },
+        {
+          "name": "FlashBlade REST API",
+          "kind": "storage_management_api",
+          "role": "FlashBlade management API supported by the py-pure-client SDK.",
+          "sourceIds": [
+            "systems-pure-client"
+          ],
+          "scope": "API identity/interface only; no current FlashBlade hardware lineup, workload performance or ownership claim."
+        },
+        {
+          "name": "Pure1 REST API",
+          "kind": "storage_management_api",
+          "role": "Pure1 management API supported by the py-pure-client SDK.",
+          "sourceIds": [
+            "systems-pure-client"
+          ],
+          "scope": "API identity only; complete Pure1 commercial capabilities and current corporate naming remain outside this source."
+        },
+        {
+          "name": "py-pure-client",
+          "kind": "software_sdk",
+          "role": "Unified Python clients for Pure1, FlashArray and FlashBlade REST APIs.",
+          "sourceIds": [
+            "systems-pure-client"
+          ],
+          "scope": "The pinned README titles this SDK Everpure Unified Python SDK. Keep that title as source evidence; do not silently rename the legal company from it."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository.",
+        "Corporate identity review needed: the organization profile and current SDK README use Everpure, while existing IDs and FlashArray/FlashBlade API namespaces retain Pure Storage identifiers. These sources alone do not establish legal renaming/ownership or effective dates. Preserve the current record and history."
+      ]
+    },
+    {
+      "entityId": "vast-data",
+      "changes": {
+        "products": [
+          "VAST Database",
+          "VAST Catalog",
+          "VAST DB Python SDK"
+        ],
+        "website": "https://vastdata.com/"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-vast-db"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-vast-data-identity"
+          ],
+          "scope": "Official/developer website linked by the company-associated organization profile; destination accessibility not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "VAST Database",
+          "kind": "database_platform",
+          "role": "Database platform accessed through schema/table management, ingest and query operations in the VAST DB SDK.",
+          "sourceIds": [
+            "systems-vast-db"
+          ],
+          "scope": "Database role and documented SDK operations; no benchmark, pricing or complete AI-platform claim."
+        },
+        {
+          "name": "VAST Catalog",
+          "kind": "data_catalog",
+          "role": "Filesystem-query capability exposed through the VAST DB SDK.",
+          "sourceIds": [
+            "systems-vast-db"
+          ],
+          "scope": "Named catalog capability and filesystem querying; not an inferred data supply or model-maker contract."
+        },
+        {
+          "name": "VAST DB Python SDK",
+          "kind": "software_sdk",
+          "role": "Python access to VAST Database and Catalog, with data ingest, querying, predicate pushdown and PyArrow/DuckDB integration.",
+          "sourceIds": [
+            "systems-vast-db"
+          ],
+          "scope": "Software client and named data operations, separate from underlying storage hardware or commercial capacity."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "weka",
+      "changes": {
+        "products": [
+          "WekaFS",
+          "WEKA CSI Plugin"
+        ],
+        "website": "https://weka.io"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-weka-csi"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-weka-csi"
+          ],
+          "scope": "The README maintainer table identifies WekaIO, Inc. and links weka.io; destination accessibility was not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "WekaFS",
+          "kind": "filesystem_platform",
+          "role": "WEKA filesystem exposed to Kubernetes workloads through the CSI plugin.",
+          "sourceIds": [
+            "systems-weka-csi"
+          ],
+          "scope": "Filesystem identity and integration only; the source marketing performance superlative is not adopted."
+        },
+        {
+          "name": "WEKA CSI Plugin",
+          "kind": "storage_integration_tool",
+          "role": "Kubernetes Container Storage Interface integration for a preconfigured WEKA system.",
+          "sourceIds": [
+            "systems-weka-csi"
+          ],
+          "scope": "Support/integration software; requires the underlying WEKA system and applicable clients, rather than providing an independent storage service."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    },
+    {
+      "entityId": "ddn",
+      "changes": {
+        "products": [
+          "EXAScaler",
+          "EXAScaler CSI file driver"
+        ],
+        "website": "https://www.ddn.com/"
+      },
+      "fieldEvidence": {
+        "products": {
+          "sourceIds": [
+            "systems-ddn-exa"
+          ],
+          "scope": "Documented product/interface subset only; retain existing unreviewed portfolio items and use granular productFacts for independent claims."
+        },
+        "website": {
+          "sourceIds": [
+            "systems-ddn-identity"
+          ],
+          "scope": "Official/developer website linked by the company-associated organization profile; destination accessibility not verified."
+        }
+      },
+      "productFacts": [
+        {
+          "name": "EXAScaler",
+          "kind": "storage_platform",
+          "role": "DDN storage platform with documented client/server compatibility and Lustre-based access in its CSI integration.",
+          "sourceIds": [
+            "systems-ddn-exa"
+          ],
+          "scope": "Platform name and integration role only; no AI-appliance model, performance or current capacity claim."
+        },
+        {
+          "name": "EXAScaler CSI file driver",
+          "kind": "storage_integration_tool",
+          "role": "CSI driver providing Kubernetes/OpenShift access, provisioning and volume features for supported EXAScaler systems.",
+          "sourceIds": [
+            "systems-ddn-exa"
+          ],
+          "scope": "Support software with version-specific feature/compatibility tables; individual capabilities may have platform restrictions."
+        }
+      ],
+      "notes": [
+        "Scoped product review only. Current leadership, headquarters, ownership, founding dates, sales availability and complete company portfolios remain unverified. Supporting SDKs and drivers are explicitly separate from hardware/services; no company overview is replaced by an incidental repository."
+      ]
+    }
+  ],
+  "blockedSources": [
+    {
+      "url": "https://www.nvidia.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.amd.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.intel.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.dell.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.hpe.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.lenovo.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.supermicro.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.cisco.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.juniper.net/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.qualcomm.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.arm.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.cerebras.ai/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://groq.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://tenstorrent.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.netapp.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.purestorage.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://vastdata.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.weka.io/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.ddn.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ]
+}

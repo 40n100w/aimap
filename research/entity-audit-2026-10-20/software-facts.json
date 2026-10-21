@@ -1,0 +1,2132 @@
+{
+  "reviewedOn": "2026-10-20",
+  "scope": "17 existing commercial software/data organizations or ecosystem entries, plus three existing related product/framework records. No production data changed.",
+  "sources": [
+    {
+      "id": "software-surge-sdk",
+      "url": "https://raw.githubusercontent.com/surge-ai/surge-python/517cc8303b1ab7e83f24d6c18617a9e07ac4890b/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "3ad7623ad324ad4104c9bd55a5beae93ee95cc72116323d70f1e506373b4e8a8",
+      "bytes": 3182,
+      "repository": "surge-ai/surge-python",
+      "revision": "517cc8303b1ab7e83f24d6c18617a9e07ac4890b",
+      "path": "README.md",
+      "title": "Surge Python SDK",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The Surge Python SDK provides convenient access to the Surge API from applications written in the Python language.",
+      "excerpts": [
+        {
+          "startLine": 3,
+          "text": "The Surge Python SDK provides convenient access to the Surge API from applications written in the Python language."
+        },
+        {
+          "startLine": 58,
+          "text": "If you have a blueprint, you can use it as a template to get a new batch of data annotated.\nYou can add new labeling tasks from a CSV or with a list of dictionaries."
+        },
+        {
+          "startLine": 37,
+          "text": "Once the API key has been set, you can list all of the Projects under your Surge account or retrieve a specific Project by its ID."
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-labelbox-sdk",
+      "url": "https://raw.githubusercontent.com/Labelbox/labelbox-python/3519710026b21e9c4986c97a9876b147e6a1a577/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "cf69692dda123ed6db3b9eb97cc62739165d7081d14cf759d90da73f9b1e2436",
+      "bytes": 6607,
+      "repository": "Labelbox/labelbox-python",
+      "revision": "3519710026b21e9c4986c97a9876b147e6a1a577",
+      "path": "README.md",
+      "title": "Labelbox Python SDK",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "With Labelbox, enterprises can easily curate and annotate data, generate high-quality human feedback data for computer vision and language models, evaluate and improve model performance, and automate tasks by seamlessly combining AI and human-centric workflows. The academic and research community also relies on Labelbox for cutting-edge AI research and experimentation.",
+      "excerpts": [
+        {
+          "startLine": 18,
+          "text": "With Labelbox, enterprises can easily curate and annotate data, generate high-quality human feedback data for computer vision and language models, evaluate and improve model performance, and automate tasks by seamlessly combining AI and human-centric workflows. The academic and research community also relies on Labelbox for cutting-edge AI research and experimentation."
+        },
+        {
+          "startLine": 61,
+          "text": "dataset = client.create_dataset(name=\"Test Dataset\")\ndata_rows = [{\"row_data\": \"My First Data Row\", \"global_key\": \"first-data-row\"}]\ntask = dataset.create_data_rows(data_rows)\ntask.wait_till_done()"
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-toloka-sdk",
+      "url": "https://raw.githubusercontent.com/Toloka/toloka-kit/e5e0450d42d46a6aad357784d3d9c86a721662de/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "980b082c15f63bb846d1fb2adac9d6fbaf7a18c4b43a59810e927354c55d9c94",
+      "bytes": 5937,
+      "repository": "Toloka/toloka-kit",
+      "revision": "e5e0450d42d46a6aad357784d3d9c86a721662de",
+      "path": "README.md",
+      "title": "Toloka-Kit",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Toloka-Kit is a Python library for working with [Toloka API](https://toloka.ai/docs/api/api-reference/?utm_source=github&utm_medium=site&utm_campaign=tolokakit).\n\nThe API allows you to build scalable and fully automated human-in-the-loop ML pipelines, and integrate them into your processes. The toolkit makes integration easier. You can use it with Jupyter notebooks.\n\n* Support for all common Toloka use cases: creating projects, adding pools, uploading tasks, and so on.\n* Toloka entities are represented as Python classes. You can use them instead of accessing the API using JSON representations.\n* There’s no need to validate JSON files and work with them directly.\n* Support of both synchronous and asynchronous (via async/await) executions.\n* Streaming support: build complex pipelines which send and receive data in real time. For example, you can [pass data between two related projects](https://github.com/Toloka/toloka-kit/blob/main/examples/6.streaming_pipelines/streaming_pipelines.ipynb): one for data labeling, and another for its validation.",
+      "excerpts": [
+        {
+          "startLine": 15,
+          "text": "Toloka-Kit is a Python library for working with [Toloka API](https://toloka.ai/docs/api/api-reference/?utm_source=github&utm_medium=site&utm_campaign=tolokakit).\n\nThe API allows you to build scalable and fully automated human-in-the-loop ML pipelines, and integrate them into your processes. The toolkit makes integration easier. You can use it with Jupyter notebooks.\n\n* Support for all common Toloka use cases: creating projects, adding pools, uploading tasks, and so on.\n* Toloka entities are represented as Python classes. You can use them instead of accessing the API using JSON representations.\n* There’s no need to validate JSON files and work with them directly.\n* Support of both synchronous and asynchronous (via async/await) executions.\n* Streaming support: build complex pipelines which send and receive data in real time. For example, you can [pass data between two related projects](https://github.com/Toloka/toloka-kit/blob/main/examples/6.streaming_pipelines/streaming_pipelines.ipynb): one for data labeling, and another for its validation."
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-toloka-forge",
+      "repository": "Toloka/tolokaforge",
+      "url": "https://raw.githubusercontent.com/Toloka/tolokaforge/79c5e1aaa9176fd08b02103beea4efbd1d7c9421/README.md",
+      "revision": "79c5e1aaa9176fd08b02103beea4efbd1d7c9421",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "a82eaa83fe527a855dd09c89c2256c628f9f324505390ed6c2bd2c23b25f50fc",
+      "bytes": 17228,
+      "title": "Tolokaforge",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "A benchmarking harness for evaluating tool-using LLM agents. Multi-turn agent/user loops, sandboxed execution, deterministic grading, and rich telemetry — across any provider via LiteLLM.",
+      "excerpts": [
+        {
+          "startLine": 3,
+          "text": "A benchmarking harness for evaluating tool-using LLM agents. Multi-turn agent/user loops, sandboxed execution, deterministic grading, and rich telemetry — across any provider via LiteLLM."
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-toloka-tendem",
+      "repository": "Toloka/tendem-mcp",
+      "url": "https://raw.githubusercontent.com/Toloka/tendem-mcp/683885a2f63a57e0f56d4f3cd59cb03e702c080f/README.md",
+      "revision": "683885a2f63a57e0f56d4f3cd59cb03e702c080f",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "b834d7833a25bfb77563dafed165b0ccd3da63ca1cca36c3a0435464c13ddb7b",
+      "bytes": 7815,
+      "title": "Tendem MCP",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "[Tendem](https://tendem.ai) gives your AI direct access to vetted human experts\nfor the work an agent alone can't nail: judgment-heavy research, competitive\nanalysis, copywriting and editing, design review, data cleaning, and complex\nmulti-step tasks. You (or your agent) submit a task in plain English — Tendem\n**scopes the work, quotes a transparent price, and delivers verified results**\nback into the chat as files, reports, or structured outputs. Agent *plus* expert\nraises the quality ceiling of what you can ship well beyond what either does\nalone.",
+      "excerpts": [
+        {
+          "startLine": 6,
+          "text": "[Tendem](https://tendem.ai) gives your AI direct access to vetted human experts\nfor the work an agent alone can't nail: judgment-heavy research, competitive\nanalysis, copywriting and editing, design review, data cleaning, and complex\nmulti-step tasks. You (or your agent) submit a task in plain English — Tendem\n**scopes the work, quotes a transparent price, and delivers verified results**\nback into the chat as files, reports, or structured outputs. Agent *plus* expert\nraises the quality ceiling of what you can ship well beyond what either does\nalone."
+        },
+        {
+          "startLine": 20,
+          "text": "This repo is the **official distribution home** for the Tendem MCP plugin — the\npart that lives in your AI client. Install it and your assistant arrives already\nknowing how to drive the full Tendem lifecycle: create → scope → approve →\nfetch, with clean polling and spend safety built in."
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-sama-sdk",
+      "repository": "Samasource/sama-python-client",
+      "url": "https://raw.githubusercontent.com/Samasource/sama-python-client/66f0d19055516c01220898011cba0299d12e5a1e/README.md",
+      "revision": "66f0d19055516c01220898011cba0299d12e5a1e",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "a5e49917252c9cb8bc7dc624553817ff413a0b996bb34308027cd5440d5ce193",
+      "bytes": 14405,
+      "title": "Sama Python SDK and Databricks Connector",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "This is the Python Client for the [Sama API endpoints](https://docs.sama.com/reference/documentation) and Databricks Connector.\n\nSee our [Python SDK tutorial](https://github.com/Samasource/sama-python-client/blob/main/Sama_Python_SDK_Tutorial.ipynb) and [Databricks Connector tutorial](https://github.com/Samasource/sama-python-client/blob/main/Sama_Databricks_Connector_Tutorial.ipynb).",
+      "excerpts": [
+        {
+          "startLine": 5,
+          "text": "This is the Python Client for the [Sama API endpoints](https://docs.sama.com/reference/documentation) and Databricks Connector.\n\nSee our [Python SDK tutorial](https://github.com/Samasource/sama-python-client/blob/main/Sama_Python_SDK_Tutorial.ipynb) and [Databricks Connector tutorial](https://github.com/Samasource/sama-python-client/blob/main/Sama_Databricks_Connector_Tutorial.ipynb)."
+        },
+        {
+          "startLine": 34,
+          "text": "This class provides methods to interact with SamaHub API endpoints."
+        },
+        {
+          "startLine": 25,
+          "text": "client.create_task_batch_from_table(\"project_id\", spark_df) # spark_df contains inputs to tasks\nspark_df = client.get_delivered_tasks_to_table(spark, \"project_id\", from_timestamp=\"2023-09-02T10:23:36.536167366Z\")"
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-scale-nucleus",
+      "repository": "scaleapi/nucleus-python-client",
+      "url": "https://raw.githubusercontent.com/scaleapi/nucleus-python-client/ee5b15135fb29e6a2e755fad39bbbfd76231b123/README.md",
+      "revision": "ee5b15135fb29e6a2e755fad39bbbfd76231b123",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "7fcb2d530ae96f09774bfc443aeaedab28cc1fe5b51832b585804e593198d45d",
+      "bytes": 6087,
+      "title": "Scale Nucleus Python client",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Scale Nucleus helps you:\n\n- Visualize your data\n- Curate interesting slices within your dataset\n- Review and manage annotations\n- Measure and debug your model performance",
+      "excerpts": [
+        {
+          "startLine": 7,
+          "text": "Scale Nucleus helps you:\n\n- Visualize your data\n- Curate interesting slices within your dataset\n- Review and manage annotations\n- Measure and debug your model performance"
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-scale-agentex",
+      "repository": "scaleapi/scale-agentex",
+      "url": "https://raw.githubusercontent.com/scaleapi/scale-agentex/4ccf8b80b217e35e767cf1b066bfe60c52c97085/README.md",
+      "revision": "4ccf8b80b217e35e767cf1b066bfe60c52c97085",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "e0d00298c38c086e47dfc416b05e4b4130eadebd50c40f08c369a58b6dcdf71e",
+      "bytes": 23429,
+      "title": "Scale Agentex",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Agentex is designed to be future-proof, enabling you to build, deploy, and scale agents at any level (L1–L5). As your needs grow, you can seamlessly progress from basic to advanced agentic AI—without changing your core architecture.",
+      "excerpts": [
+        {
+          "startLine": 33,
+          "text": "Agentex is designed to be future-proof, enabling you to build, deploy, and scale agents at any level (L1–L5). As your needs grow, you can seamlessly progress from basic to advanced agentic AI—without changing your core architecture."
+        },
+        {
+          "startLine": 41,
+          "text": "| **[Docs Site](https://agentex.sgp.scale.com/docs)** | **Concepts**: More in depth details on the what, why, and how of building L1-L5 agents.<br><br>**Enterprise Support**: Description of how our zero-ops deployment works. Learn how to share hundreds of agents with the rest of your company. Each agent is hosted and scaled independently on cloud-agnostic infrastructure. |"
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-scale-llm",
+      "repository": "scaleapi/llm-engine",
+      "url": "https://raw.githubusercontent.com/scaleapi/llm-engine/0fd3f0d469c7ef9583f50d287484f17ab4f27f0b/README.md",
+      "revision": "0fd3f0d469c7ef9583f50d287484f17ab4f27f0b",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "3b8bde3fe329d6cee1bf660c8a8109e1c99c5b2f70f44659c477a7b80a09b2e8",
+      "bytes": 3934,
+      "title": "Scale LLM Engine",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Scale's LLM Engine is the easiest way to customize and serve LLMs. In LLM Engine, models can be accessed via Scale's hosted version or by using the Helm charts in this repository to run model inference and fine-tuning in your own infrastructure.",
+      "excerpts": [
+        {
+          "startLine": 9,
+          "text": "Scale's LLM Engine is the easiest way to customize and serve LLMs. In LLM Engine, models can be accessed via Scale's hosted version or by using the Helm charts in this repository to run model inference and fine-tuning in your own infrastructure."
+        },
+        {
+          "startLine": 25,
+          "text": "LLM Engine is a Python library, CLI, and Helm chart that provides\neverything you need to serve and fine-tune foundation models, whether you use\nScale's hosted infrastructure or do it in your own cloud infrastructure using\nKubernetes."
+        }
+      ],
+      "limitations": "Repository documents model fine-tuning/serving and hosted/self-hosted approaches. Its examples and coming-soon statements may be historical; current hosted service availability and ownership were not verified."
+    },
+    {
+      "id": "software-hf-hub",
+      "url": "https://raw.githubusercontent.com/huggingface/huggingface_hub/7be42171a19384563bd437bc3cfe54e5b35c58a8/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "ef11081839bdea72c6ae7be4832e4d4c94ef76e5888b0ddd935850c675e7d91a",
+      "bytes": 9571,
+      "repository": "huggingface/huggingface_hub",
+      "revision": "7be42171a19384563bd437bc3cfe54e5b35c58a8",
+      "path": "README.md",
+      "title": "Hugging Face Hub Python client",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The `huggingface_hub` library allows you to interact with the [Hugging Face Hub](https://huggingface.co/), a platform democratizing open-source Machine Learning for creators and collaborators. Discover pre-trained models and datasets for your projects, play with the thousands of machine learning apps hosted on the Hub, or create and share your own models, datasets and demos with the community. Everything ships in one package with two interfaces: the [`hf` CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli) for your terminal and the `huggingface_hub` library for Python — both designed to work well for humans and AI agents. Use them to:\n\n- [Download files](https://huggingface.co/docs/huggingface_hub/en/guides/download) from the Hub.\n- [Upload files](https://huggingface.co/docs/huggingface_hub/en/guides/upload) to the Hub.\n- [Manage your repositories](https://huggingface.co/docs/huggingface_hub/en/guides/repository).\n- [Run Inference](https://huggingface.co/docs/huggingface_hub/en/guides/inference) on deployed models.\n- [Run Jobs](https://huggingface.co/docs/huggingface_hub/en/guides/jobs) on Hugging Face infrastructure.\n- [Search](https://huggingface.co/docs/huggingface_hub/en/guides/search) for models, datasets and Spaces.\n- [Share Model Cards](https://huggingface.co/docs/huggingface_hub/en/guides/model-cards) to document your models.\n- [Engage with the community](https://huggingface.co/docs/huggingface_hub/en/guides/community) through PRs and comments.\n- Do all of the above from the terminal with the [`hf` CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli).",
+      "excerpts": [
+        {
+          "startLine": 88,
+          "text": "The `huggingface_hub` library allows you to interact with the [Hugging Face Hub](https://huggingface.co/), a platform democratizing open-source Machine Learning for creators and collaborators. Discover pre-trained models and datasets for your projects, play with the thousands of machine learning apps hosted on the Hub, or create and share your own models, datasets and demos with the community. Everything ships in one package with two interfaces: the [`hf` CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli) for your terminal and the `huggingface_hub` library for Python — both designed to work well for humans and AI agents. Use them to:\n\n- [Download files](https://huggingface.co/docs/huggingface_hub/en/guides/download) from the Hub.\n- [Upload files](https://huggingface.co/docs/huggingface_hub/en/guides/upload) to the Hub.\n- [Manage your repositories](https://huggingface.co/docs/huggingface_hub/en/guides/repository).\n- [Run Inference](https://huggingface.co/docs/huggingface_hub/en/guides/inference) on deployed models.\n- [Run Jobs](https://huggingface.co/docs/huggingface_hub/en/guides/jobs) on Hugging Face infrastructure.\n- [Search](https://huggingface.co/docs/huggingface_hub/en/guides/search) for models, datasets and Spaces.\n- [Share Model Cards](https://huggingface.co/docs/huggingface_hub/en/guides/model-cards) to document your models.\n- [Engage with the community](https://huggingface.co/docs/huggingface_hub/en/guides/community) through PRs and comments.\n- Do all of the above from the terminal with the [`hf` CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli)."
+        },
+        {
+          "startLine": 75,
+          "text": "hf buckets sync ./checkpoints hf://buckets/username/my-bucket\n\n# Run a job on Hugging Face infrastructure"
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-together-sdk",
+      "url": "https://raw.githubusercontent.com/togethercomputer/together-py/2467aa7b3a058f26cc1066b6dcf45d95895a7ac8/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "83ebd1a94ded34e443beff52163a1e7818c6fa66071e671578ecf0e6fb6629e9",
+      "bytes": 24215,
+      "repository": "togethercomputer/together-py",
+      "revision": "2467aa7b3a058f26cc1066b6dcf45d95895a7ac8",
+      "path": "README.md",
+      "title": "Together Python API library",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The Together Python library provides convenient access to the Together REST API from any Python 3.9+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx).",
+      "excerpts": [
+        {
+          "startLine": 6,
+          "text": "The Together Python library provides convenient access to the Together REST API from any Python 3.9+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx)."
+        },
+        {
+          "startLine": 26,
+          "text": "The RL training SDK (`together.post_training`) is included. Its Tinker-compatible entry point,\n`together.post_training.tinker`, additionally requires the `tinker` extra (Python 3.11+)."
+        },
+        {
+          "startLine": 178,
+          "text": "## Realtime transcription\n\nTranscribe live audio — a microphone, a phone call, a meeting — as it is being\nspoken. You stream PCM audio over a WebSocket and receive interim text within\nmoments and a finalized transcript for each utterance. Requires the `realtime`"
+        },
+        {
+          "startLine": 666,
+          "text": "### Fine-tuning\n\n```bash\n# `tg ft` and `tg fine-tuning` are equivalent\n\n# Help\ntg ft --help\n\n# Create fine-tune job\ntg ft create \\\n  --model togethercomputer/llama-2-7b-chat \\\n  --training-file file-711d8724-b3e3-4ae2-b516-94841958117d\n\n# List fine-tune jobs"
+        },
+        {
+          "startLine": 714,
+          "text": "### Clusters\n\n```bash\n# Help\ntg clusters --help\n\n# Create a cluster\ntg clusters create\n\n# List clusters\ntg clusters list\n\n# Retrieve cluster details\ntg clusters retrieve [cluster-id]\n\n# Update a cluster\ntg clusters update [cluster-id]\n\n# Retrieve Together cluster configuration options such as regions, gpu types and drivers available\ntg clusters list-regions"
+        },
+        {
+          "startLine": 755,
+          "text": "### Jig (Container Deployments)\n\n```bash\n# Help\ntg beta jig --help\n\n# Initialize jig configuration (creates pyproject.toml)\ntg beta jig init\n\n# Generate Dockerfile from config\ntg beta jig dockerfile\n\n# Build container image\ntg beta jig build\ntg beta jig build --tag v1.0 --warmup\n\n# Push image to registry\ntg beta jig push\ntg beta jig push --tag v1.0\n\n# Deploy model (builds, pushes, and deploys)\ntg beta jig deploy\ntg beta jig deploy --build-only\ntg beta jig deploy --image existing-image:tag"
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-fireworks-cookbook",
+      "repository": "fw-ai/cookbook",
+      "url": "https://raw.githubusercontent.com/fw-ai/cookbook/552943f94400364d9854038282aba59b6ac4e594/README.md",
+      "revision": "552943f94400364d9854038282aba59b6ac4e594",
+      "path": "README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "936b99e6a1e943a96317527235def6d57aca7ab811e58dfe1c8e2e8a625f4b41",
+      "bytes": 3966,
+      "title": "Fireworks AI Cookbook",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Training loops and worked examples for RL (GRPO, IGPO, SAO/PPO), preference\noptimization (DPO, ORPO), SFT, distillation and embedding fine-tuning on\n[Fireworks](https://fireworks.ai). Full docs: [Training API](https://docs.fireworks.ai/fine-tuning/training-api/introduction).",
+      "excerpts": [
+        {
+          "startLine": 3,
+          "text": "Training loops and worked examples for RL (GRPO, IGPO, SAO/PPO), preference\noptimization (DPO, ORPO), SFT, distillation and embedding fine-tuning on\n[Fireworks](https://fireworks.ai). Full docs: [Training API](https://docs.fireworks.ai/fine-tuning/training-api/introduction)."
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-openrouter-sdk",
+      "url": "https://raw.githubusercontent.com/OpenRouterTeam/python-sdk/586c2b3d5373e220d91af4c9523955e157b8f7ab/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "b0d90ae1d2cfb087984c037f2805a9030c813fecca443ca34ec58f18049bb82f",
+      "bytes": 10526,
+      "repository": "OpenRouterTeam/python-sdk",
+      "revision": "586c2b3d5373e220d91af4c9523955e157b8f7ab",
+      "path": "README.md",
+      "title": "OpenRouter Python SDK",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The [OpenRouter SDK](https://openrouter.ai/docs/sdks/python) is a Python toolkit designed to help you build AI-powered features and solutions. Giving you easy access to 400+ models across providers in an easy and type-safe way.\n\nThe OpenRouter Python SDK is stable as of v1.0.",
+      "excerpts": [
+        {
+          "startLine": 5,
+          "text": "The [OpenRouter SDK](https://openrouter.ai/docs/sdks/python) is a Python toolkit designed to help you build AI-powered features and solutions. Giving you easy access to 400+ models across providers in an easy and type-safe way.\n\nThe OpenRouter Python SDK is stable as of v1.0."
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-langchain",
+      "url": "https://raw.githubusercontent.com/langchain-ai/langchain/e6d83ef6a6e2482cd55691023c51e45d7584a94f/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "9e6d706b38215c6979ef398ba72181b0f9099b8150f317c4c221877456c2dc2e",
+      "bytes": 5935,
+      "repository": "langchain-ai/langchain",
+      "revision": "e6d83ef6a6e2482cd55691023c51e45d7584a94f",
+      "path": "README.md",
+      "title": "LangChain framework",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves.",
+      "excerpts": [
+        {
+          "startLine": 24,
+          "text": "LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves."
+        },
+        {
+          "startLine": 42,
+          "text": "If you're looking for more advanced customization or agent orchestration, check out [LangGraph](https://github.com/langchain-ai/langgraph), our framework for building controllable agent workflows."
+        },
+        {
+          "startLine": 53,
+          "text": "- **[Deep Agents](https://docs.langchain.com/oss/python/deepagents/)** — Build agents that can plan, use subagents, and leverage file systems for complex tasks\n- **[LangGraph](https://docs.langchain.com/oss/python/langgraph/overview)** — Build agents that can reliably handle complex tasks with our low-level agent orchestration framework\n- **[Integrations](https://docs.langchain.com/oss/python/integrations/providers/overview)** — Chat & embedding models, tools & toolkits, and more\n- **[LangSmith](https://www.langchain.com/langsmith)** — Agent evals, observability, and debugging for LLM apps\n- **[LangSmith Deployment](https://docs.langchain.com/langsmith/deployments)** — Deploy and scale agents with a purpose-built platform for long-running, stateful workflows"
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-pinecone-sdk",
+      "url": "https://raw.githubusercontent.com/pinecone-io/pinecone-python-client/33e63a4bf6310fc048f416636c442b90218e5314/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "2f930a7a01fc2065803e51870427440c5eb16aceca6f4a9e63e411d161f6c2a1",
+      "bytes": 5172,
+      "repository": "pinecone-io/pinecone-python-client",
+      "revision": "33e63a4bf6310fc048f416636c442b90218e5314",
+      "path": "README.md",
+      "title": "Pinecone Python SDK",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "The Pinecone Python SDK provides a client for the [Pinecone](https://www.pinecone.io/) vector database. Use it to create and manage indexes, upsert and query records, and run inference operations from Python.",
+      "excerpts": [
+        {
+          "startLine": 3,
+          "text": "The Pinecone Python SDK provides a client for the [Pinecone](https://www.pinecone.io/) vector database. Use it to create and manage indexes, upsert and query records, and run inference operations from Python."
+        },
+        {
+          "startLine": 17,
+          "text": "An index declares its fields as a schema. Declaring a schema makes it a document\nindex: you read and write it through `index.documents`, and each record is a JSON\ndocument whose fields you named yourself."
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-weaviate",
+      "url": "https://raw.githubusercontent.com/weaviate/weaviate/1baf16202f883ad7410eaa9e4c01e214635d32ad/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "8dc0086a08ce896fca55ed99881694a5baae63a4e671489cb98c3e6a07da096a",
+      "bytes": 19636,
+      "repository": "weaviate/weaviate",
+      "revision": "1baf16202f883ad7410eaa9e4c01e214635d32ad",
+      "path": "README.md",
+      "title": "Weaviate database",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "**Weaviate** is a cloud-native vector database that stores both objects and vectors, enabling semantic search at scale. It combines vector similarity search with keyword filtering, retrieval-augmented generation (RAG), and reranking in a single query interface. Common use cases include RAG systems, semantic and image search, recommendation engines, chatbots, and content classification.\n\nWeaviate supports two approaches to store vectors: automatic vectorization at import using [integrated models](https://docs.weaviate.io/weaviate/model-providers) (OpenAI, Cohere, HuggingFace, and others) or direct import of [pre-computed vector embeddings](https://docs.weaviate.io/weaviate/starter-guides/custom-vectors). Production deployments benefit from built-in multi-tenancy, replication, RBAC authorization, and [many other features](#weaviate-features).",
+      "excerpts": [
+        {
+          "startLine": 9,
+          "text": "**Weaviate** is a cloud-native vector database that stores both objects and vectors, enabling semantic search at scale. It combines vector similarity search with keyword filtering, retrieval-augmented generation (RAG), and reranking in a single query interface. Common use cases include RAG systems, semantic and image search, recommendation engines, chatbots, and content classification.\n\nWeaviate supports two approaches to store vectors: automatic vectorization at import using [integrated models](https://docs.weaviate.io/weaviate/model-providers) (OpenAI, Cohere, HuggingFace, and others) or direct import of [pre-computed vector embeddings](https://docs.weaviate.io/weaviate/starter-guides/custom-vectors). Production deployments benefit from built-in multi-tenancy, replication, RBAC authorization, and [many other features](#weaviate-features)."
+        },
+        {
+          "startLine": 20,
+          "text": "Weaviate offers multiple installation and deployment options:\n\n- [Docker](https://docs.weaviate.io/deploy/installation-guides/docker-installation)\n- [Kubernetes](https://docs.weaviate.io/deploy/installation-guides/k8s-installation)\n- [Weaviate Cloud](https://console.weaviate.cloud)"
+        },
+        {
+          "startLine": 191,
+          "text": "This repository contains code in our Community Edition and our Enterprise Edition. Most of this repository is available under the BSD 3-Clause License. Files in our wl/ folder are only available under a commercial license with a license key issued by us. If you are interested in a commercial license, please contact us at [http://weaviate.io/enterprise-edition](http://weaviate.io/enterprise-edition). Our binaries, [available for download here](https://github.com/weaviate/weaviate/releases), combine these two elements. Enterprise features require a license key."
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "id": "software-wandb",
+      "url": "https://raw.githubusercontent.com/wandb/wandb/dda9f931d389c9419171b01eb64ec7233f7d249a/README.md",
+      "retrievedOn": "2026-10-20",
+      "sha256": "a98d28dabf4834c40f7c30b12fa5ae170250d1fbfd23d5023b1f008cac671adc",
+      "bytes": 6429,
+      "repository": "wandb/wandb",
+      "revision": "dda9f931d389c9419171b01eb64ec7233f7d249a",
+      "path": "README.md",
+      "title": "Weights & Biases Python library",
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "Use W&B to build better models faster. Track and visualize all the pieces of your machine learning pipeline, from datasets to production machine learning models. Get started with W&B today, [sign up for a W&B account](https://wandb.com?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=readme)!",
+      "excerpts": [
+        {
+          "startLine": 15,
+          "text": "Use W&B to build better models faster. Track and visualize all the pieces of your machine learning pipeline, from datasets to production machine learning models. Get started with W&B today, [sign up for a W&B account](https://wandb.com?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=readme)!"
+        },
+        {
+          "startLine": 19,
+          "text": "Building an LLM app? Track, debug, evaluate, and monitor LLM apps with [Weave](https://wandb.github.io/weave?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=readme), our new suite of tools for GenAI."
+        },
+        {
+          "startLine": 85,
+          "text": "Weights & Biases is available in the cloud or installed on your private infrastructure. Set up a W&B Server in a production environment in one of three ways:\n\n1. [Multi-tenant Cloud](https://docs.wandb.ai/platform/hosting/hosting-options/multi_tenant_cloud?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=hosting): Fully managed platform deployed in W&B’s Google Cloud Platform (GCP) account in GCP’s North America regions.\n2. [Dedicated Cloud](https://docs.wandb.ai/platform/hosting/hosting-options/dedicated_cloud?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=hosting): Single-tenant, fully managed platform deployed in W&B’s AWS, GCP, or Azure cloud accounts. Each Dedicated Cloud instance has its own isolated network, compute and storage from other W&B Dedicated Cloud instances.\n3. [Self-Managed](https://docs.wandb.ai/platform/hosting/hosting-options/self-managed?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=hosting): Deploy W&B Server on your AWS, GCP, or Azure cloud account or within your on-premises infrastructure."
+        }
+      ],
+      "limitations": "Establishes documented software capabilities only; current commercial availability, complete portfolio, ownership, founding, leadership, headquarters and customer contracts were not verified."
+    },
+    {
+      "url": "https://github.com/scaleapi",
+      "retrievedOn": "2026-10-20",
+      "sha256": "5af1d9ee7301ad01eb55aaf80fe549668e3ce3758cbe6d588cd66c9a74d1c59b",
+      "bytes": 303305,
+      "id": "software-org-scaleapi",
+      "title": "scaleapi GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://scale.com\"",
+      "websiteListed": "https://scale.com",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/surge-ai",
+      "retrievedOn": "2026-10-20",
+      "sha256": "ed9520030ecd9948768e9283f7a3a3acbf25258342cf46665b01b24c47f6a1f0",
+      "bytes": 278256,
+      "id": "software-org-surge-ai",
+      "title": "surge-ai GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://www.surgehq.ai\"",
+      "websiteListed": "https://www.surgehq.ai",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/Labelbox",
+      "retrievedOn": "2026-10-20",
+      "sha256": "dffe745000641aeedd71700f933e0dbae7a888274b4c229f7d7dd4253bba80ab",
+      "bytes": 285238,
+      "id": "software-org-Labelbox",
+      "title": "Labelbox GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://www.labelbox.com/\"",
+      "websiteListed": "https://www.labelbox.com/",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/Toloka",
+      "retrievedOn": "2026-10-20",
+      "sha256": "52adf88526ff9558b29bfad21fc1ef204abc0b3b409e69d59d9d61488e9b1bac",
+      "bytes": 282034,
+      "id": "software-org-Toloka",
+      "title": "Toloka GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://toloka.ai\"",
+      "websiteListed": "https://toloka.ai",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/Samasource",
+      "retrievedOn": "2026-10-20",
+      "sha256": "5d522a9154eaa0f48f3330eb9133a664f2f5e8b47fc95275b272c55da0eeac8c",
+      "bytes": 282847,
+      "id": "software-org-Samasource",
+      "title": "Samasource GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"http://sama.com\"",
+      "websiteListed": "http://sama.com",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/huggingface",
+      "retrievedOn": "2026-10-20",
+      "sha256": "4db86fecb0f65d2ef6c021ec185d04a7c830de1c67dcdae36a28fd5ee14743e5",
+      "bytes": 331212,
+      "id": "software-org-huggingface",
+      "title": "huggingface GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://huggingface.co/\"",
+      "websiteListed": "https://huggingface.co/",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/fw-ai",
+      "retrievedOn": "2026-10-20",
+      "sha256": "b0a53b598744f82d7f3cdccfb76b16f0671ee9d7d3137fb79521f58853a26357",
+      "bytes": 297966,
+      "id": "software-org-fw-ai",
+      "title": "fw-ai GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://fireworks.ai\"",
+      "websiteListed": "https://fireworks.ai",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/OpenRouterTeam",
+      "retrievedOn": "2026-10-20",
+      "sha256": "350347003da4d2c3f2bab9f32355e77723046c3b5ff6c1f76d6354aff48df22b",
+      "bytes": 310382,
+      "id": "software-org-OpenRouterTeam",
+      "title": "OpenRouterTeam GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://openrouter.ai\"",
+      "websiteListed": "https://openrouter.ai",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/pinecone-io",
+      "retrievedOn": "2026-10-20",
+      "sha256": "fa3a6a4566d88405536761327b88b86f8fdbb3c775776875c649d797a50e0a3a",
+      "bytes": 312520,
+      "id": "software-org-pinecone-io",
+      "title": "pinecone-io GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://www.pinecone.io\"",
+      "websiteListed": "https://www.pinecone.io",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/weaviate",
+      "retrievedOn": "2026-10-20",
+      "sha256": "7da526d084166bc0e812ce579e0b7b64a631b2af20d6f9d0440f0d5f27595147",
+      "bytes": 306422,
+      "id": "software-org-weaviate",
+      "title": "weaviate GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://weaviate.io\"",
+      "websiteListed": "https://weaviate.io",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/wandb",
+      "retrievedOn": "2026-10-20",
+      "sha256": "d275480b65f9ce60fd252c8fd738fd2ff57fe035c1787a93d24cc97d117000b9",
+      "bytes": 309900,
+      "id": "software-org-wandb",
+      "title": "wandb GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://wandb.ai\"",
+      "websiteListed": "https://wandb.ai",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    },
+    {
+      "url": "https://github.com/invisible-tech",
+      "retrievedOn": "2026-10-20",
+      "sha256": "4945f365a6dcecfc8ddb0aead4fce249014ddf3ff0ad3c42771daa0500a1a55d",
+      "bytes": 288904,
+      "id": "software-org-invisible-tech",
+      "title": "invisible-tech GitHub organization profile",
+      "revision": null,
+      "evidenceOrigin": "retrieved_primary",
+      "excerpt": "href=\"https://invisibletech.ai\"",
+      "websiteListed": "https://invisibletech.ai",
+      "limitations": "Mutable organization profile corroborates the linked company/service domain only. It does not establish corporate legal status, current ownership or the whole product portfolio. Corporate website could not be retrieved."
+    }
+  ],
+  "entities": [
+    {
+      "entityId": "scale-ai",
+      "changes": {
+        "description": "Scale AI publishes tools for dataset curation, model evaluation, agent deployment and language-model fine-tuning and serving. Its documented projects include Nucleus, Agentex and LLM Engine.",
+        "products": [
+          "Scale Nucleus",
+          "Agentex",
+          "LLM Engine"
+        ],
+        "provides": "Nucleus supports data visualization, dataset slices, annotation review and model debugging. Agentex supports agent deployment; LLM Engine documents model fine-tuning and inference interfaces.",
+        "howUsed": "Teams inspect datasets and annotations in Nucleus, build and deploy agents through Agentex, or use LLM Engine libraries and deployment tooling for language-model workloads.",
+        "website": "https://scale.com"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-scale-nucleus",
+            "software-scale-agentex",
+            "software-scale-llm"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-scale-nucleus",
+            "software-scale-agentex",
+            "software-scale-llm"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-scale-nucleus",
+            "software-scale-agentex",
+            "software-scale-llm"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-scale-nucleus",
+            "software-scale-agentex",
+            "software-scale-llm"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-org-scaleapi"
+          ],
+          "scope": "Corporate/service domain explicitly linked by the matching GitHub organization; live corporate website was blocked."
+        }
+      },
+      "notes": [
+        "The existing Data labeling and Evaluation entries are capability labels, not a verified named-product inventory. The revised list is a documented subset; other Scale product lines remain unreviewed.",
+        "LLM Engine documentation includes historical examples and coming-soon features; no claim of current hosted availability is made.",
+        "Corporate ownership, founding and leadership were not reverified.",
+        "Dated location evidence exists separately in office-locations.csv (2026-08-25); this is not a new corporate HQ verification."
+      ],
+      "historicalLocationEvidence": [
+        {
+          "locationName": "San Francisco headquarters",
+          "locationType": "headquarters",
+          "address": "650 Townsend Street, San Francisco, CA 94103, United States",
+          "sourceUrl": "https://scale.com/legal/privacy",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "scale-ai-001",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        },
+        {
+          "locationName": "London international headquarters",
+          "locationType": "headquarters",
+          "address": "2 Pancras Square, London N1C 4AG, United Kingdom",
+          "sourceUrl": "https://scale.com/blog/global-office-expansion-2025",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "scale-ai-002",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        },
+        {
+          "locationName": "New York City office",
+          "locationType": "office",
+          "address": "One World Trade Center, 285 Fulton Street, New York, NY 10007, United States",
+          "sourceUrl": "https://scale.com/blog/global-office-expansion-2025",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "scale-ai-003",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        }
+      ],
+      "productFacts": [
+        {
+          "name": "Scale Nucleus",
+          "kind": "data_platform",
+          "description": "Visualize data, curate dataset slices, review annotations and debug model performance.",
+          "sourceIds": [
+            "software-scale-nucleus"
+          ],
+          "scope": "Documented Nucleus capabilities; current account availability and the complete commercial feature set were not checked.",
+          "evidenceExcerpt": "Scale Nucleus helps you:\n\n- Visualize your data\n- Curate interesting slices within your dataset\n- Review and manage annotations\n- Measure and debug your model performance",
+          "excerptStartLine": 7
+        },
+        {
+          "name": "Agentex",
+          "kind": "agent_platform",
+          "description": "Build, deploy and scale agents with a development server, UI and Python SDK integration.",
+          "sourceIds": [
+            "software-scale-agentex"
+          ],
+          "scope": "Documented agent platform and development tooling; no inference about deployment customers or paid-service availability.",
+          "evidenceExcerpt": "Agentex is designed to be future-proof, enabling you to build, deploy, and scale agents at any level (L1–L5). As your needs grow, you can seamlessly progress from basic to advanced agentic AI—without changing your core architecture.",
+          "excerptStartLine": 33
+        },
+        {
+          "name": "LLM Engine",
+          "kind": "software_toolkit",
+          "description": "Serve and fine-tune language models through Python, CLI and deployment tooling.",
+          "sourceIds": [
+            "software-scale-llm"
+          ],
+          "scope": "Documents hosted and self-hosted approaches. Examples and coming-soon text may be historical; current hosted availability is unverified.",
+          "evidenceExcerpt": "LLM Engine is a Python library, CLI, and Helm chart that provides\neverything you need to serve and fine-tune foundation models, whether you use\nScale's hosted infrastructure or do it in your own cloud infrastructure using\nKubernetes.",
+          "excerptStartLine": 25
+        }
+      ]
+    },
+    {
+      "entityId": "surge-ai",
+      "changes": {
+        "description": "Surge AI documents an API and Python SDK for managing data-annotation projects, creating labeling tasks and retrieving results.",
+        "products": [
+          "Surge API",
+          "Surge Python SDK"
+        ],
+        "provides": "Programmatic project and task management, blueprint-based annotation batches, and result exports.",
+        "howUsed": "Customers create projects from blueprints, submit task data or CSV batches, and download completed results through the SDK.",
+        "website": "https://www.surgehq.ai"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-surge-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-surge-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-surge-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-surge-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-org-surge-ai"
+          ],
+          "scope": "Corporate/service domain explicitly linked by the matching GitHub organization; live corporate website was blocked."
+        }
+      },
+      "notes": [
+        "The current Platform type conflates the organization with its service; establish the intended company identity before changing type.",
+        "The SDK does not substantiate the legacy blanket Synthetic data claim or name any original model-maker training customer."
+      ],
+      "productFacts": [
+        {
+          "name": "Surge API",
+          "kind": "service_api",
+          "description": "Create annotation projects and labeling tasks, and retrieve project results.",
+          "sourceIds": [
+            "software-surge-sdk"
+          ],
+          "scope": "Documented annotation project/task interface, not a full catalog of human-data services or named customer contracts.",
+          "evidenceExcerpt": "If you have a blueprint, you can use it as a template to get a new batch of data annotated.\nYou can add new labeling tasks from a CSV or with a list of dictionaries.",
+          "excerptStartLine": 58
+        },
+        {
+          "name": "Surge Python SDK",
+          "kind": "sdk",
+          "description": "Access the Surge API from Python, including project/task management and result export.",
+          "sourceIds": [
+            "software-surge-sdk"
+          ],
+          "scope": "Python client capability documented in the publisher repository; current service entitlement and the full API surface were not tested.",
+          "evidenceExcerpt": "The Surge Python SDK provides convenient access to the Surge API from applications written in the Python language.",
+          "excerptStartLine": 3
+        }
+      ]
+    },
+    {
+      "entityId": "labelbox",
+      "changes": {
+        "description": "Labelbox provides workflows for data curation and annotation, human feedback for vision and language models, and model evaluation. Its Python SDK manages datasets and related platform operations.",
+        "products": [
+          "Labelbox platform",
+          "Labelbox Python SDK"
+        ],
+        "provides": "Data curation, annotation, human-feedback collection and model evaluation capabilities, with programmatic dataset management.",
+        "howUsed": "Teams create datasets, upload data rows, and integrate labeling and evaluation workflows into their applications using the SDK.",
+        "website": "https://www.labelbox.com/"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-labelbox-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-labelbox-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-labelbox-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-labelbox-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-org-Labelbox"
+          ],
+          "scope": "Corporate/service domain explicitly linked by the matching GitHub organization; live corporate website was blocked."
+        }
+      },
+      "notes": [
+        "Company versus platform identity remains a separate modeling decision; the inspected source establishes the Labelbox platform.",
+        "Synthetic data is not established by the inspected README."
+      ],
+      "productFacts": [
+        {
+          "name": "Labelbox platform",
+          "kind": "data_platform",
+          "description": "Curate and annotate data, collect human feedback, and evaluate model performance.",
+          "sourceIds": [
+            "software-labelbox-sdk"
+          ],
+          "scope": "Capabilities stated in the publisher SDK documentation; not proof of independent performance, all modalities, or customer contracts.",
+          "evidenceExcerpt": "With Labelbox, enterprises can easily curate and annotate data, generate high-quality human feedback data for computer vision and language models, evaluate and improve model performance, and automate tasks by seamlessly combining AI and human-centric workflows. The academic and research community also relies on Labelbox for cutting-edge AI research and experimentation.",
+          "excerptStartLine": 18
+        },
+        {
+          "name": "Labelbox Python SDK",
+          "kind": "sdk",
+          "description": "Create datasets and upload data rows through a Python client.",
+          "sourceIds": [
+            "software-labelbox-sdk"
+          ],
+          "scope": "Concrete SDK dataset workflow inspected; this is not a claim that all platform features are available through every client version.",
+          "evidenceExcerpt": "import labelbox as lb\n\nclient = lb.Client(API_KEY) # API_KEY = API Key generated from labelbox.com\ndataset = client.create_dataset(name=\"Test Dataset\")\ndata_rows = [{\"row_data\": \"My First Data Row\", \"global_key\": \"first-data-row\"}]\ntask = dataset.create_data_rows(data_rows)",
+          "excerptStartLine": 58
+        }
+      ]
+    },
+    {
+      "entityId": "toloka",
+      "changes": {
+        "description": "Toloka documents human-in-the-loop data pipelines through Toloka-Kit, agent evaluation through Tolokaforge, and a Tendem MCP integration for delegating tasks to human experts.",
+        "products": [
+          "Toloka-Kit",
+          "Tolokaforge",
+          "Tendem MCP"
+        ],
+        "provides": "Project, pool and task management for human-data workflows; an agent benchmarking harness; and client integrations for expert task delegation.",
+        "howUsed": "Developers integrate data-labeling pipelines with Toloka APIs, run agent evaluations with Tolokaforge, or use the Tendem integration to submit scoped tasks to human experts.",
+        "website": "https://toloka.ai"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-toloka-sdk",
+            "software-toloka-forge",
+            "software-toloka-tendem"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-toloka-sdk",
+            "software-toloka-forge",
+            "software-toloka-tendem"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-toloka-sdk",
+            "software-toloka-forge",
+            "software-toloka-tendem"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-toloka-sdk",
+            "software-toloka-forge",
+            "software-toloka-tendem"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-org-Toloka"
+          ],
+          "scope": "Corporate/service domain explicitly linked by the matching GitHub organization; live corporate website was blocked."
+        }
+      },
+      "notes": [
+        "These are documented tools and integrations, not proof of a particular lab buying data or a complete current corporate portfolio.",
+        "Model-provider support in Tolokaforge is compatibility, not a commercial customer relationship.",
+        "Corporate ownership and any distinction among Toloka, Toloka AI and Tendem require separate legal-identity sources."
+      ],
+      "productFacts": [
+        {
+          "name": "Toloka-Kit",
+          "kind": "sdk",
+          "description": "Build human-in-the-loop data pipelines using Toloka projects, pools, tasks and synchronous or asynchronous clients.",
+          "sourceIds": [
+            "software-toloka-sdk"
+          ],
+          "scope": "Documented client and workflow capabilities; no present-day commercial availability or customer assertion.",
+          "evidenceExcerpt": "Toloka-Kit is a Python library for working with [Toloka API](https://toloka.ai/docs/api/api-reference/?utm_source=github&utm_medium=site&utm_campaign=tolokakit).\n\nThe API allows you to build scalable and fully automated human-in-the-loop ML pipelines, and integrate them into your processes. The toolkit makes integration easier. You can use it with Jupyter notebooks.\n\n* Support for all common Toloka use cases: creating projects, adding pools, uploading tasks, and so on.\n* Toloka entities are represented as Python classes. You can use them instead of accessing the API using JSON representations.\n* There’s no need to validate JSON files and work with them directly.\n* Support of both synchronous and asynchronous (via async/await) executions.\n* Streaming support: build complex pipelines which send and receive data in real time. For example, you can [pass data between two related projects](https://github.com/Toloka/toloka-kit/blob/main/examples/6.streaming_pipelines/streaming_pipelines.ipynb): one for data labeling, and another for its validation.",
+          "excerptStartLine": 15
+        },
+        {
+          "name": "Tolokaforge",
+          "kind": "evaluation_framework",
+          "description": "Evaluate tool-using agents with multi-turn loops, sandboxed execution, deterministic grading and telemetry.",
+          "sourceIds": [
+            "software-toloka-forge"
+          ],
+          "scope": "Open project functionality only. Supported providers are compatibility targets rather than customers.",
+          "evidenceExcerpt": "A benchmarking harness for evaluating tool-using LLM agents. Multi-turn agent/user loops, sandboxed execution, deterministic grading, and rich telemetry — across any provider via LiteLLM.",
+          "excerptStartLine": 3
+        },
+        {
+          "name": "Tendem MCP",
+          "kind": "integration",
+          "description": "Connect AI clients to a hosted service for submitting scoped tasks to human experts and retrieving results.",
+          "sourceIds": [
+            "software-toloka-tendem"
+          ],
+          "scope": "Official client integration published in the Toloka organization. The MCP server is hosted separately; legal ownership and commercial entitlement were not established.",
+          "evidenceExcerpt": "This repo is the **official distribution home** for the Tendem MCP plugin — the\npart that lives in your AI client. Install it and your assistant arrives already\nknowing how to drive the full Tendem lifecycle: create → scope → approve →\nfetch, with clean polling and spend safety built in.\n\n> The MCP server itself is **hosted** at `https://mcp.tendem.ai/mcp` — it is not\n> in this repo. This repo contains the client-side plugins, skills, and rules\n> that teach your AI client to use the hosted server well.",
+          "excerptStartLine": 20
+        }
+      ]
+    },
+    {
+      "entityId": "sama",
+      "changes": {
+        "description": "Sama documents SamaHub task APIs, a Python SDK and a Databricks connector for submitting task batches and retrieving delivered results.",
+        "products": [
+          "SamaHub API",
+          "Sama Python SDK",
+          "Sama Databricks Connector"
+        ],
+        "provides": "Programmatic task submission and delivered-result retrieval, including import/export workflows with Databricks DataFrames.",
+        "howUsed": "Teams send task inputs and pre-annotations to SamaHub, then retrieve delivered tasks through the API or into Databricks tables."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-sama-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-sama-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-sama-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-sama-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        }
+      },
+      "notes": [
+        "The matching Samasource organization profile links http://sama.com; the corporate homepage was blocked, so a new canonical HTTPS homepage is not asserted here.",
+        "This source establishes platform interfaces, not the complete current range of human-data services or any named model-maker contract."
+      ],
+      "productFacts": [
+        {
+          "name": "SamaHub API",
+          "kind": "service_api",
+          "description": "Create task batches and retrieve delivered task results through project-based API endpoints.",
+          "sourceIds": [
+            "software-sama-sdk"
+          ],
+          "scope": "SamaHub endpoints documented by the publisher client; no complete human-data service inventory or customer assertion.",
+          "evidenceExcerpt": "This class provides methods to interact with SamaHub API endpoints.",
+          "excerptStartLine": 34
+        },
+        {
+          "name": "Sama Python SDK",
+          "kind": "sdk",
+          "description": "Submit task inputs and obtain delivered results from Sama APIs using Python.",
+          "sourceIds": [
+            "software-sama-sdk"
+          ],
+          "scope": "Publisher SDK identity and example workflow, not a claim of current service availability for all users.",
+          "evidenceExcerpt": "This is the Python Client for the [Sama API endpoints](https://docs.sama.com/reference/documentation) and Databricks Connector.",
+          "excerptStartLine": 5
+        },
+        {
+          "name": "Sama Databricks Connector",
+          "kind": "integration",
+          "description": "Create task batches from DataFrames and return delivered results to Databricks tables.",
+          "sourceIds": [
+            "software-sama-sdk"
+          ],
+          "scope": "Documented connector data flow; compatibility does not imply a commercial partnership or shared customer.",
+          "evidenceExcerpt": "client.create_task_batch_from_table(\"project_id\", spark_df) # spark_df contains inputs to tasks\nspark_df = client.get_delivered_tasks_to_table(spark, \"project_id\", from_timestamp=\"2023-09-02T10:23:36.536167366Z\")",
+          "excerptStartLine": 25
+        }
+      ]
+    },
+    {
+      "entityId": "hugging-face",
+      "changes": {
+        "description": "Hugging Face operates a hub for models, datasets and machine-learning applications. Its Hub client and hf CLI support artifact management, inference requests, compute jobs and storage-bucket workflows.",
+        "products": [
+          "Hugging Face Hub",
+          "huggingface_hub",
+          "hf CLI",
+          "Hugging Face Jobs",
+          "Storage Buckets"
+        ],
+        "provides": "Model and dataset discovery, versioned file downloads and uploads, repository management, inference clients, jobs and command-line storage operations.",
+        "howUsed": "Teams share and retrieve artifacts, manage model and dataset repositories, call deployed models, and run jobs through the Hub library or hf CLI.",
+        "website": "https://huggingface.co/"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-hf-hub"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-hf-hub"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-hf-hub"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-hf-hub"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-org-huggingface"
+          ],
+          "scope": "Corporate/service domain explicitly linked by the matching GitHub organization; live corporate website was blocked."
+        }
+      },
+      "notes": [
+        "The Hub is a platform; huggingface_hub and hf are software clients, while Jobs and buckets are documented service capabilities.",
+        "Model hosting does not make Hugging Face the developer of every model listed on the Hub.",
+        "Dated location evidence exists separately in office-locations.csv (2026-08-25); this is not a new corporate HQ verification."
+      ],
+      "historicalLocationEvidence": [
+        {
+          "locationName": "New York office",
+          "locationType": "headquarters",
+          "address": "20 Jay Street, Suite 620, Brooklyn, NY 11201, United States",
+          "sourceUrl": "https://huggingface.co/datasets/huggingface/policy-docs/resolve/main/2023_OMB%20EO%20RFC.pdf?download=true",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "hugging-face-001",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        },
+        {
+          "locationName": "Paris office",
+          "locationType": "office",
+          "address": "9 rue des Colonnes, 75002 Paris, France",
+          "sourceUrl": "https://huggingface.co/privacy",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "hugging-face-002",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        }
+      ],
+      "productFacts": [
+        {
+          "name": "Hugging Face Hub",
+          "kind": "platform",
+          "description": "Discover, share and retrieve models, datasets and machine-learning application artifacts.",
+          "sourceIds": [
+            "software-hf-hub"
+          ],
+          "scope": "Hub functionality described by the official client. Hosted third-party models are not necessarily developed by Hugging Face.",
+          "evidenceExcerpt": "The `huggingface_hub` library allows you to interact with the [Hugging Face Hub](https://huggingface.co/), a platform democratizing open-source Machine Learning for creators and collaborators. Discover pre-trained models and datasets for your projects, play with the thousands of machine learning apps hosted on the Hub, or create and share your own models, datasets and demos with the community. Everything ships in one package with two interfaces: the [`hf` CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli) for your terminal and the `huggingface_hub` library for Python — both designed to work well for humans and AI agents. Use them to:",
+          "excerptStartLine": 88
+        },
+        {
+          "name": "huggingface_hub",
+          "kind": "sdk",
+          "description": "Manage Hub repositories and artifacts and invoke documented inference and job operations from Python.",
+          "sourceIds": [
+            "software-hf-hub"
+          ],
+          "scope": "Python client functionality; does not establish access to every model, service or paid feature.",
+          "evidenceExcerpt": "The `huggingface_hub` library allows you to interact with the [Hugging Face Hub](https://huggingface.co/), a platform democratizing open-source Machine Learning for creators and collaborators. Discover pre-trained models and datasets for your projects, play with the thousands of machine learning apps hosted on the Hub, or create and share your own models, datasets and demos with the community. Everything ships in one package with two interfaces: the [`hf` CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli) for your terminal and the `huggingface_hub` library for Python — both designed to work well for humans and AI agents. Use them to:\n\n- [Download files](https://huggingface.co/docs/huggingface_hub/en/guides/download) from the Hub.\n- [Upload files](https://huggingface.co/docs/huggingface_hub/en/guides/upload) to the Hub.\n- [Manage your repositories](https://huggingface.co/docs/huggingface_hub/en/guides/repository).\n- [Run Inference](https://huggingface.co/docs/huggingface_hub/en/guides/inference) on deployed models.\n- [Run Jobs](https://huggingface.co/docs/huggingface_hub/en/guides/jobs) on Hugging Face infrastructure.\n- [Search](https://huggingface.co/docs/huggingface_hub/en/guides/search) for models, datasets and Spaces.\n- [Share Model Cards](https://huggingface.co/docs/huggingface_hub/en/guides/model-cards) to document your models.\n- [Engage with the community](https://huggingface.co/docs/huggingface_hub/en/guides/community) through PRs and comments.\n- Do all of the above from the terminal with the [`hf` CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli).",
+          "excerptStartLine": 88
+        },
+        {
+          "name": "hf CLI",
+          "kind": "command_line_tool",
+          "description": "Use Hub artifact, repository, inference, job and storage operations from a terminal.",
+          "sourceIds": [
+            "software-hf-hub"
+          ],
+          "scope": "Command-line interface documented with the Hub client; exact permissions and feature availability depend on account and version.",
+          "evidenceExcerpt": "The `huggingface_hub` library allows you to interact with the [Hugging Face Hub](https://huggingface.co/), a platform democratizing open-source Machine Learning for creators and collaborators. Discover pre-trained models and datasets for your projects, play with the thousands of machine learning apps hosted on the Hub, or create and share your own models, datasets and demos with the community. Everything ships in one package with two interfaces: the [`hf` CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli) for your terminal and the `huggingface_hub` library for Python — both designed to work well for humans and AI agents. Use them to:\n\n- [Download files](https://huggingface.co/docs/huggingface_hub/en/guides/download) from the Hub.\n- [Upload files](https://huggingface.co/docs/huggingface_hub/en/guides/upload) to the Hub.\n- [Manage your repositories](https://huggingface.co/docs/huggingface_hub/en/guides/repository).\n- [Run Inference](https://huggingface.co/docs/huggingface_hub/en/guides/inference) on deployed models.\n- [Run Jobs](https://huggingface.co/docs/huggingface_hub/en/guides/jobs) on Hugging Face infrastructure.\n- [Search](https://huggingface.co/docs/huggingface_hub/en/guides/search) for models, datasets and Spaces.\n- [Share Model Cards](https://huggingface.co/docs/huggingface_hub/en/guides/model-cards) to document your models.\n- [Engage with the community](https://huggingface.co/docs/huggingface_hub/en/guides/community) through PRs and comments.\n- Do all of the above from the terminal with the [`hf` CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli).",
+          "excerptStartLine": 88
+        },
+        {
+          "name": "Hugging Face Jobs",
+          "kind": "service_capability",
+          "description": "Run compute jobs on Hugging Face infrastructure through the documented Hub interface.",
+          "sourceIds": [
+            "software-hf-hub"
+          ],
+          "scope": "Documented job-execution capability. Hardware allocation, regions, prices, available capacity and workload customers were not verified.",
+          "evidenceExcerpt": "- [Run Jobs](https://huggingface.co/docs/huggingface_hub/en/guides/jobs) on Hugging Face infrastructure.",
+          "excerptStartLine": 94
+        },
+        {
+          "name": "Storage Buckets",
+          "kind": "service_capability",
+          "description": "Synchronize local files with Hub storage buckets using the hf CLI.",
+          "sourceIds": [
+            "software-hf-hub"
+          ],
+          "scope": "The inspected evidence is a bucket-sync CLI example. This is a service capability, not a separately verified commercial product line.",
+          "evidenceExcerpt": "hf buckets sync ./checkpoints hf://buckets/username/my-bucket",
+          "excerptStartLine": 75
+        }
+      ]
+    },
+    {
+      "entityId": "together-ai",
+      "changes": {
+        "description": "Together AI documents APIs for model inference, fine-tuning, reinforcement-learning post-training, GPU cluster management and Jig container deployments. Its Python SDK also documents a beta realtime transcription interface.",
+        "products": [
+          "Together API",
+          "Fine-tuning",
+          "RL Training SDK",
+          "GPU Clusters",
+          "Jig",
+          "Realtime transcription (beta)"
+        ],
+        "provides": "Synchronous and asynchronous model clients, post-training tools, cluster and storage management, container deployment commands and realtime audio transcription interfaces.",
+        "howUsed": "Developers submit inference and training requests or manage clusters and containers through the SDK and CLI; realtime transcription streams audio over a WebSocket."
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-together-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-together-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-together-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-together-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        }
+      },
+      "notes": [
+        "SDK operations demonstrate documented interfaces; they do not establish entitlement, available capacity, current pricing or general availability.",
+        "The source links https://docs.together.ai/; the corporate homepage and organizational metadata remain unverified.",
+        "Jig and realtime transcription are beta interfaces in the inspected SDK."
+      ],
+      "productFacts": [
+        {
+          "name": "Together API",
+          "kind": "service_api",
+          "description": "Access Together model-service operations with synchronous and asynchronous Python clients.",
+          "sourceIds": [
+            "software-together-sdk"
+          ],
+          "scope": "Documented REST API/client access; specific model access and service entitlement were not tested.",
+          "evidenceExcerpt": "The Together Python library provides convenient access to the Together REST API from any Python 3.9+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx).",
+          "excerptStartLine": 6
+        },
+        {
+          "name": "Fine-tuning",
+          "kind": "service_capability",
+          "description": "Create, list and inspect fine-tuning jobs and work with resulting checkpoints or weights through the CLI.",
+          "sourceIds": [
+            "software-together-sdk"
+          ],
+          "scope": "A documented API/CLI capability rather than an independent branded product. Service access, pricing and training capacity remain unverified.",
+          "evidenceExcerpt": "### Fine-tuning\n\n```bash\n# `tg ft` and `tg fine-tuning` are equivalent\n\n# Help\ntg ft --help\n\n# Create fine-tune job\ntg ft create \\\n  --model togethercomputer/llama-2-7b-chat \\\n  --training-file file-711d8724-b3e3-4ae2-b516-94841958117d\n\n# List fine-tune jobs\ntg ft list\n\n# Retrieve fine-tune job details\ntg ft retrieve ft-c66a5c18-1d6d-43c9-94bd-32d756425b4b\n\n# List fine-tune job events\ntg ft list-events ft-c66a5c18-1d6d-43c9-94bd-32d756425b4b\n\n# List fine-tune checkpoints\ntg ft list-checkpoints ft-c66a5c18-1d6d-43c9-94bd-32d756425b4b\n\n# Cancel running job\ntg ft cancel ft-c66a5c18-1d6d-43c9-94bd-32d756425b4b\n\n# Download fine-tuned model weights\ntg ft download ft-c66a5c18-1d6d-43c9-94bd-32d756425b4b\n\n# Delete fine-tuned model weights\ntg ft delete ft-c66a5c18-1d6d-43c9-94bd-32d756425b4b",
+          "excerptStartLine": 666
+        },
+        {
+          "name": "RL Training SDK",
+          "kind": "sdk",
+          "description": "Use Together reinforcement-learning post-training interfaces, including a Tinker-compatible entry point.",
+          "sourceIds": [
+            "software-together-sdk"
+          ],
+          "scope": "SDK inclusion and interface compatibility are documented; this does not prove a commercial relationship with Tinker or availability to every account.",
+          "evidenceExcerpt": "The RL training SDK (`together.post_training`) is included. Its Tinker-compatible entry point,\n`together.post_training.tinker`, additionally requires the `tinker` extra (Python 3.11+).",
+          "excerptStartLine": 26
+        },
+        {
+          "name": "GPU Clusters",
+          "kind": "service_capability",
+          "description": "Create and manage compute clusters and inspect supported region, GPU and driver configuration options.",
+          "sourceIds": [
+            "software-together-sdk"
+          ],
+          "scope": "Documented cluster-management interface; no available GPU count, capacity reservation, physical facility or customer workload is established.",
+          "evidenceExcerpt": "### Clusters\n\n```bash\n# Help\ntg clusters --help\n\n# Create a cluster\ntg clusters create\n\n# List clusters\ntg clusters list\n\n# Retrieve cluster details\ntg clusters retrieve [cluster-id]\n\n# Update a cluster\ntg clusters update [cluster-id]\n\n# Retrieve Together cluster configuration options such as regions, gpu types and drivers available\ntg clusters list-regions\n```",
+          "excerptStartLine": 714
+        },
+        {
+          "name": "Jig",
+          "kind": "deployment_tooling",
+          "description": "Build, push and deploy container workloads through Together CLI commands.",
+          "sourceIds": [
+            "software-together-sdk"
+          ],
+          "scope": "Commands use the beta Jig namespace. General availability and production deployment/customer claims are not established.",
+          "evidenceExcerpt": "### Jig (Container Deployments)\n\n```bash\n# Help\ntg beta jig --help\n\n# Initialize jig configuration (creates pyproject.toml)\ntg beta jig init\n\n# Generate Dockerfile from config\ntg beta jig dockerfile\n\n# Build container image\ntg beta jig build\ntg beta jig build --tag v1.0 --warmup\n\n# Push image to registry\ntg beta jig push\ntg beta jig push --tag v1.0\n\n# Deploy model (builds, pushes, and deploys)\ntg beta jig deploy\ntg beta jig deploy --build-only\ntg beta jig deploy --image existing-image:tag",
+          "excerptStartLine": 755
+        },
+        {
+          "name": "Realtime transcription (beta)",
+          "kind": "service_capability",
+          "description": "Stream live PCM audio over WebSocket and receive interim and finalized transcription text.",
+          "sourceIds": [
+            "software-together-sdk"
+          ],
+          "scope": "Documented beta interface; endpoint entitlement, service reliability, pricing and measured latency were not verified.",
+          "evidenceExcerpt": "## Realtime transcription\n\nTranscribe live audio — a microphone, a phone call, a meeting — as it is being\nspoken. You stream PCM audio over a WebSocket and receive interim text within\nmoments and a finalized transcript for each utterance. Requires the `realtime`\nextra:\n\n```sh\nuv add \"together[realtime]\"\n```\n\nUse `client.beta.realtime.transcription()`: a session built for live sources. If\nthe connection drops mid-conversation, the session holds on to the speech the\nserver hadn't transcribed yet, reconnects automatically, and picks up where\nthe transcript left off — words spoken during the outage still come back as",
+          "excerptStartLine": 178
+        }
+      ]
+    },
+    {
+      "entityId": "fireworks",
+      "changes": {
+        "description": "Fireworks AI documents training workflows for reinforcement learning, preference optimization, supervised fine-tuning, distillation and embedding fine-tuning. Its cookbook contains worked training examples.",
+        "products": [
+          "Fireworks Training API",
+          "Fireworks AI Cookbook"
+        ],
+        "provides": "Documented training interfaces and example loops for GRPO, IGPO, SAO/PPO, DPO, ORPO, supervised fine-tuning, distillation and embedding adaptation.",
+        "howUsed": "Teams adapt the cookbook training recipes to their datasets and evaluation criteria and use the documented Fireworks Training API.",
+        "website": "https://fireworks.ai"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-fireworks-cookbook"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-fireworks-cookbook"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-fireworks-cookbook"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-fireworks-cookbook"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-org-fw-ai"
+          ],
+          "scope": "Corporate/service domain explicitly linked by the matching GitHub organization; live corporate website was blocked."
+        }
+      },
+      "notes": [
+        "This is a training-product review only. Inference portfolio, company ownership, service availability and physical compute regions remain unverified.",
+        "Dated location evidence exists separately in office-locations.csv (2026-08-25); this is not a new corporate HQ verification."
+      ],
+      "historicalLocationEvidence": [
+        {
+          "locationName": "Redwood City headquarters",
+          "locationType": "headquarters",
+          "address": "The Sequoia Building, 2317 Broadway Street, Suite 200, Redwood City, CA 94063, United States",
+          "sourceUrl": "https://fireworks.ai/terms-of-service",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "fireworks-001",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        }
+      ],
+      "productFacts": [
+        {
+          "name": "Fireworks Training API",
+          "kind": "service_api",
+          "description": "Support model-training workflows for reinforcement learning, preference optimization, supervised fine-tuning, distillation and embedding adaptation.",
+          "sourceIds": [
+            "software-fireworks-cookbook"
+          ],
+          "scope": "The cookbook links the Training API and lists these workflow families. It does not establish current access, capacity, price or the inference portfolio.",
+          "evidenceExcerpt": "Training loops and worked examples for RL (GRPO, IGPO, SAO/PPO), preference\noptimization (DPO, ORPO), SFT, distillation and embedding fine-tuning on\n[Fireworks](https://fireworks.ai). Full docs: [Training API](https://docs.fireworks.ai/fine-tuning/training-api/introduction).",
+          "excerptStartLine": 3
+        },
+        {
+          "name": "Fireworks AI Cookbook",
+          "kind": "example_collection",
+          "description": "Provide worked examples and training loops for supported Fireworks training methods.",
+          "sourceIds": [
+            "software-fireworks-cookbook"
+          ],
+          "scope": "A published example collection rather than a separately proven commercial service; examples are not measured performance or customer disclosures.",
+          "evidenceExcerpt": "Training loops and worked examples for RL (GRPO, IGPO, SAO/PPO), preference\noptimization (DPO, ORPO), SFT, distillation and embedding fine-tuning on\n[Fireworks](https://fireworks.ai). Full docs: [Training API](https://docs.fireworks.ai/fine-tuning/training-api/introduction).",
+          "excerptStartLine": 3
+        }
+      ]
+    },
+    {
+      "entityId": "openrouter",
+      "changes": {
+        "description": "OpenRouter provides a common interface for accessing models from multiple providers. Its official Python SDK offers typed access to the service.",
+        "products": [
+          "OpenRouter API",
+          "OpenRouter Python SDK"
+        ],
+        "provides": "A unified model-service interface and a typed Python client for integrating supported providers.",
+        "howUsed": "Applications configure service credentials, select a supported model and issue requests through the OpenRouter client.",
+        "website": "https://openrouter.ai"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-openrouter-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-openrouter-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-openrouter-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-openrouter-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-org-OpenRouterTeam"
+          ],
+          "scope": "Corporate/service domain explicitly linked by the matching GitHub organization; live corporate website was blocked."
+        }
+      },
+      "notes": [
+        "The README advertises a model count, but no fixed count is copied into the profile because inventories and access vary.",
+        "Access to another provider through an API is not a training, hardware supply or ownership relationship.",
+        "Dated location evidence exists separately in office-locations.csv (2026-08-25); this is not a new corporate HQ verification."
+      ],
+      "historicalLocationEvidence": [
+        {
+          "locationName": "New York office",
+          "locationType": "headquarters",
+          "address": "169 Madison Avenue, Suite 2404, New York, NY 10016, United States",
+          "sourceUrl": "https://openrouter.ai/terms-of-service-enterprise",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "openrouter-001",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        }
+      ],
+      "productFacts": [
+        {
+          "name": "OpenRouter API",
+          "kind": "service_api",
+          "description": "Provide a common interface for model access across providers.",
+          "sourceIds": [
+            "software-openrouter-sdk"
+          ],
+          "scope": "Cross-provider access described by the official SDK. No fixed model count, pricing guarantee, availability guarantee or training relationship is asserted.",
+          "evidenceExcerpt": "The [OpenRouter SDK](https://openrouter.ai/docs/sdks/python) is a Python toolkit designed to help you build AI-powered features and solutions. Giving you easy access to 400+ models across providers in an easy and type-safe way.",
+          "excerptStartLine": 5
+        },
+        {
+          "name": "OpenRouter Python SDK",
+          "kind": "sdk",
+          "description": "Provide a typed Python client for integrating OpenRouter model services.",
+          "sourceIds": [
+            "software-openrouter-sdk"
+          ],
+          "scope": "SDK role and stable v1.0 statement documented; current package installation and access to individual providers were not tested.",
+          "evidenceExcerpt": "The [OpenRouter SDK](https://openrouter.ai/docs/sdks/python) is a Python toolkit designed to help you build AI-powered features and solutions. Giving you easy access to 400+ models across providers in an easy and type-safe way.\n\nThe OpenRouter Python SDK is stable as of v1.0.",
+          "excerptStartLine": 5
+        }
+      ]
+    },
+    {
+      "entityId": "langchain",
+      "changes": {
+        "description": "LangChain is a framework for building agents and language-model applications from interoperable components and integrations. The project documentation distinguishes it from LangGraph orchestration and LangSmith evaluation and observability.",
+        "products": [
+          "LangChain framework"
+        ],
+        "provides": "Standard interfaces for model calls, embeddings, vector stores, tools and other application components.",
+        "howUsed": "Developers combine model integrations with tools and data sources; related LangGraph and LangSmith products address orchestration and application evaluation.",
+        "website": "https://docs.langchain.com/oss/python/langchain/overview"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        }
+      },
+      "notes": [
+        "Preserve this entry as a Framework; do not attach the corporation’s headquarters or founding date to this software-project record.",
+        "LangChain company identity is distinct from LangChain framework. The source documents LangSmith Deployment; it does not alone justify renaming or merging the existing langgraph-platform record."
+      ],
+      "productFacts": [
+        {
+          "name": "LangChain framework",
+          "kind": "framework",
+          "description": "Build agents and language-model applications from interoperable components and third-party integrations.",
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Software framework role; this is not a corporate identity, founding-date or headquarters claim.",
+          "evidenceExcerpt": "LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves.",
+          "excerptStartLine": 24
+        }
+      ]
+    },
+    {
+      "entityId": "pinecone",
+      "changes": {
+        "description": "Pinecone provides a vector database and APIs for managing indexes, upserting and querying records, and inference operations. Its Python SDK supports document indexes with explicitly declared fields.",
+        "products": [
+          "Pinecone vector database",
+          "Pinecone Python SDK"
+        ],
+        "provides": "Managed vector and document-index operations, record storage and retrieval, and inference interfaces.",
+        "howUsed": "Applications define an index schema, write records with vectors and metadata, and search the index for matching documents.",
+        "website": "https://www.pinecone.io"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-pinecone-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-pinecone-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-pinecone-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-pinecone-sdk"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-org-pinecone-io"
+          ],
+          "scope": "Corporate/service domain explicitly linked by the matching GitHub organization; live corporate website was blocked."
+        }
+      },
+      "notes": [
+        "Vector indexes, record queries and inference operations are capabilities, not three independent branded products.",
+        "The example cloud/region does not establish all available service regions or physical facilities.",
+        "Dated location evidence exists separately in office-locations.csv (2026-08-25); this is not a new corporate HQ verification."
+      ],
+      "historicalLocationEvidence": [
+        {
+          "locationName": "New York City HQ",
+          "locationType": "headquarters",
+          "address": "127 W 26th St., 6th Floor, New York, NY 10001, United States",
+          "sourceUrl": "https://www.pinecone.io/careers/",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "pinecone-001",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        },
+        {
+          "locationName": "Tel Aviv office",
+          "locationType": "office",
+          "address": "4 Ein Zeitim St., Floor 1, Tel Aviv 6744840, Israel",
+          "sourceUrl": "https://www.pinecone.io/careers/",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "pinecone-002",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        }
+      ],
+      "productFacts": [
+        {
+          "name": "Pinecone vector database",
+          "kind": "database_service",
+          "description": "Create indexes, store and query records, and use documented vector/database inference operations.",
+          "sourceIds": [
+            "software-pinecone-sdk"
+          ],
+          "scope": "Database/API capabilities documented in the official SDK. No complete feature, licensing, cloud-region or physical-facility inventory is established.",
+          "evidenceExcerpt": "The Pinecone Python SDK provides a client for the [Pinecone](https://www.pinecone.io/) vector database. Use it to create and manage indexes, upsert and query records, and run inference operations from Python.",
+          "excerptStartLine": 3
+        },
+        {
+          "name": "Pinecone Python SDK",
+          "kind": "sdk",
+          "description": "Manage Pinecone indexes and records and run inference operations from Python.",
+          "sourceIds": [
+            "software-pinecone-sdk"
+          ],
+          "scope": "Client functionality rather than an independent database service; examples do not prove all service regions or deployment options.",
+          "evidenceExcerpt": "The Pinecone Python SDK provides a client for the [Pinecone](https://www.pinecone.io/) vector database. Use it to create and manage indexes, upsert and query records, and run inference operations from Python.",
+          "excerptStartLine": 3
+        }
+      ]
+    },
+    {
+      "entityId": "weaviate",
+      "changes": {
+        "description": "Weaviate develops database software that stores objects and vectors and combines vector similarity search with keyword filtering, retrieval-augmented generation and reranking. Its documentation describes cloud and self-managed deployments.",
+        "products": [
+          "Weaviate Database",
+          "Weaviate Cloud"
+        ],
+        "provides": "Object/vector storage, integrated or supplied embeddings, hybrid retrieval, multi-tenancy and access controls. The repository distinguishes Community Edition from licensed Enterprise Edition features.",
+        "howUsed": "Teams ingest objects and embeddings, then query them for search, recommendations and retrieval workflows using client libraries or database APIs.",
+        "website": "https://weaviate.io"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-weaviate"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-weaviate"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-weaviate"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-weaviate"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-org-weaviate"
+          ],
+          "scope": "Corporate/service domain explicitly linked by the matching GitHub organization; live corporate website was blocked."
+        }
+      },
+      "notes": [
+        "Cloud, Docker and Kubernetes are deployment choices. Integration with model providers does not establish those providers as customers.",
+        "The prior office-research outcome says fully remote; do not convert a legal establishment or notice address into an employee headquarters."
+      ],
+      "productFacts": [
+        {
+          "name": "Weaviate Database",
+          "kind": "database_software",
+          "description": "Store objects and vectors and combine similarity search, keyword filtering, retrieval-augmented generation and reranking.",
+          "sourceIds": [
+            "software-weaviate"
+          ],
+          "scope": "Documented database capabilities. Community and Enterprise features have different licensing; no complete license or performance assessment is implied.",
+          "evidenceExcerpt": "**Weaviate** is a cloud-native vector database that stores both objects and vectors, enabling semantic search at scale. It combines vector similarity search with keyword filtering, retrieval-augmented generation (RAG), and reranking in a single query interface. Common use cases include RAG systems, semantic and image search, recommendation engines, chatbots, and content classification.\n\nWeaviate supports two approaches to store vectors: automatic vectorization at import using [integrated models](https://docs.weaviate.io/weaviate/model-providers) (OpenAI, Cohere, HuggingFace, and others) or direct import of [pre-computed vector embeddings](https://docs.weaviate.io/weaviate/starter-guides/custom-vectors). Production deployments benefit from built-in multi-tenancy, replication, RBAC authorization, and [many other features](#weaviate-features).",
+          "excerptStartLine": 9
+        },
+        {
+          "name": "Weaviate Cloud",
+          "kind": "hosted_service",
+          "description": "Offer a hosted deployment option for the Weaviate database.",
+          "sourceIds": [
+            "software-weaviate"
+          ],
+          "scope": "Explicitly listed deployment option; account access, pricing, regions, capacity and service terms were not verified.",
+          "evidenceExcerpt": "Weaviate offers multiple installation and deployment options:\n\n- [Docker](https://docs.weaviate.io/deploy/installation-guides/docker-installation)\n- [Kubernetes](https://docs.weaviate.io/deploy/installation-guides/k8s-installation)\n- [Weaviate Cloud](https://console.weaviate.cloud)",
+          "excerptStartLine": 20
+        }
+      ]
+    },
+    {
+      "entityId": "weights-biases",
+      "changes": {
+        "description": "Weights & Biases provides tools for experiment tracking and model-application inspection. Its documentation describes Weave for tracing and evaluation, plus cloud and self-managed hosting options.",
+        "products": [
+          "Weights & Biases",
+          "Weave",
+          "W&B Server"
+        ],
+        "provides": "Experiment metrics and visualizations, model-application tracing and evaluation, and managed or self-managed deployment options.",
+        "howUsed": "Researchers log parameters and training metrics; application teams inspect model behavior with Weave and choose a documented hosting option.",
+        "website": "https://wandb.ai"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "products": {
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Documented technical profile and a selected portfolio from inspected first-party repositories; not an exhaustive commercial product catalog or a verified customer list."
+        },
+        "website": {
+          "sourceIds": [
+            "software-org-wandb"
+          ],
+          "scope": "Corporate/service domain explicitly linked by the matching GitHub organization; live corporate website was blocked."
+        }
+      },
+      "notes": [
+        "Hosting options do not establish an exact facility used by a customer.",
+        "Current corporate ownership and any parent-company relationship were not reverified.",
+        "Dated location evidence exists separately in office-locations.csv (2026-08-25); this is not a new corporate HQ verification."
+      ],
+      "historicalLocationEvidence": [
+        {
+          "locationName": "U.S. headquarters",
+          "locationType": "headquarters",
+          "address": "400 Alabama Street, Suite 202, San Francisco, CA 94110, United States",
+          "sourceUrl": "https://wandb.ai/site/dpa/",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "weights-biases-001",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        },
+        {
+          "locationName": "Berlin office",
+          "locationType": "office",
+          "address": "Stresemannstraße 123, 10963 Berlin, Germany",
+          "sourceUrl": "https://wandb.ai/site/ko/company/about-us/",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "weights-biases-002",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        },
+        {
+          "locationName": "Tokyo office",
+          "locationType": "office",
+          "address": "Tokyo Square Garden, 14F, 3 Chome-1-1 Kyobashi, Chuo City, Tokyo 104-0031, Japan",
+          "sourceUrl": "https://wandb.ai/site/ko/company/about-us/",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "weights-biases-003",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        },
+        {
+          "locationName": "London office",
+          "locationType": "office",
+          "address": "10 York Road, London SE1 7ND, United Kingdom",
+          "sourceUrl": "https://wandb.ai/site/ko/company/about-us/",
+          "recordVerifiedOn": "2026-08-25",
+          "evidenceOrigin": "existing_record",
+          "localRecordId": "weights-biases-004",
+          "limitations": "Existing atlas location record inspected; original corporate page was not freshly retrieved. Do not promote to a current headquarters claim."
+        }
+      ],
+      "productFacts": [
+        {
+          "name": "Weights & Biases",
+          "kind": "experiment_tracking_platform",
+          "description": "Track and visualize machine-learning experiments, datasets and models.",
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Documented tracking platform role, not a comprehensive product catalog or verified corporate ownership claim.",
+          "evidenceExcerpt": "Use W&B to build better models faster. Track and visualize all the pieces of your machine learning pipeline, from datasets to production machine learning models. Get started with W&B today, [sign up for a W&B account](https://wandb.com?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=readme)!",
+          "excerptStartLine": 15
+        },
+        {
+          "name": "Weave",
+          "kind": "application_observability_product",
+          "description": "Track, debug, evaluate and monitor language-model applications.",
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Product role explicitly described in W&B documentation; commercial terms and current access were not tested.",
+          "evidenceExcerpt": "Building an LLM app? Track, debug, evaluate, and monitor LLM apps with [Weave](https://wandb.github.io/weave?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=readme), our new suite of tools for GenAI.",
+          "excerptStartLine": 19
+        },
+        {
+          "name": "W&B Server",
+          "kind": "deployment_product",
+          "description": "Run the W&B platform through managed cloud or self-managed infrastructure deployment options.",
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Documented hosting choices, not a disclosed physical facility, customer allocation or infrastructure contract.",
+          "evidenceExcerpt": "Weights & Biases is available in the cloud or installed on your private infrastructure. Set up a W&B Server in a production environment in one of three ways:\n\n1. [Multi-tenant Cloud](https://docs.wandb.ai/platform/hosting/hosting-options/multi_tenant_cloud?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=hosting): Fully managed platform deployed in W&B’s Google Cloud Platform (GCP) account in GCP’s North America regions.\n2. [Dedicated Cloud](https://docs.wandb.ai/platform/hosting/hosting-options/dedicated_cloud?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=hosting): Single-tenant, fully managed platform deployed in W&B’s AWS, GCP, or Azure cloud accounts. Each Dedicated Cloud instance has its own isolated network, compute and storage from other W&B Dedicated Cloud instances.\n3. [Self-Managed](https://docs.wandb.ai/platform/hosting/hosting-options/self-managed?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=hosting): Deploy W&B Server on your AWS, GCP, or Azure cloud account or within your on-premises infrastructure.",
+          "excerptStartLine": 85
+        }
+      ]
+    },
+    {
+      "entityId": "invisible-technologies",
+      "changes": {
+        "website": "https://invisibletech.ai"
+      },
+      "fieldEvidence": {
+        "website": {
+          "sourceIds": [
+            "software-org-invisible-tech"
+          ],
+          "scope": "Matching GitHub organization profile explicitly links this company domain."
+        }
+      },
+      "notes": [
+        "Corporate site blocked. The profile alone is insufficient to replace generic service/product labels with a verified product portfolio.",
+        "The profile does not establish founding, current leadership, headquarters or customer contracts."
+      ]
+    },
+    {
+      "entityId": "langsmith",
+      "changes": {
+        "description": "LangSmith is documented as a product for agent evaluation, observability and debugging of language-model applications.",
+        "products": [
+          "LangSmith"
+        ],
+        "provides": "Agent evaluation, observability and application debugging tools.",
+        "howUsed": "Development teams inspect, evaluate and debug agent and language-model application behavior.",
+        "website": "https://www.langchain.com/langsmith"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Product capabilities explicitly listed in the LangChain ecosystem documentation."
+        },
+        "products": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Product capabilities explicitly listed in the LangChain ecosystem documentation."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Product capabilities explicitly listed in the LangChain ecosystem documentation."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Product capabilities explicitly listed in the LangChain ecosystem documentation."
+        },
+        "website": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Product capabilities explicitly listed in the LangChain ecosystem documentation."
+        }
+      },
+      "notes": [
+        "This product record should remain distinct from the LangChain corporation and framework. Commercial terms and access were not tested."
+      ],
+      "productFacts": [
+        {
+          "name": "LangSmith",
+          "kind": "application_observability_product",
+          "description": "Evaluate agents and observe and debug language-model applications.",
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Product capabilities from the publisher ecosystem list; distinct from LangChain framework and corporation.",
+          "evidenceExcerpt": "- **[LangSmith](https://www.langchain.com/langsmith)** — Agent evals, observability, and debugging for LLM apps",
+          "excerptStartLine": 56
+        }
+      ]
+    },
+    {
+      "entityId": "langgraph",
+      "changes": {
+        "description": "LangGraph is a low-level framework for building controllable agent workflows.",
+        "products": [
+          "LangGraph"
+        ],
+        "provides": "Agent orchestration and workflow control abstractions.",
+        "howUsed": "Developers use it when applications need more explicit agent orchestration than the higher-level LangChain interface.",
+        "website": "https://github.com/langchain-ai/langgraph"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "LangGraph role and official repository are explicitly linked by the LangChain project."
+        },
+        "products": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "LangGraph role and official repository are explicitly linked by the LangChain project."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "LangGraph role and official repository are explicitly linked by the LangChain project."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "LangGraph role and official repository are explicitly linked by the LangChain project."
+        },
+        "website": {
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "LangGraph role and official repository are explicitly linked by the LangChain project."
+        }
+      },
+      "notes": [
+        "Framework documentation does not establish a separate company."
+      ],
+      "productFacts": [
+        {
+          "name": "LangGraph",
+          "kind": "framework",
+          "description": "Build controllable agent workflows with low-level agent orchestration.",
+          "sourceIds": [
+            "software-langchain"
+          ],
+          "scope": "Framework role in the publisher ecosystem documentation; no independent corporate identity or hosted-platform identity is inferred.",
+          "evidenceExcerpt": "- **[LangGraph](https://docs.langchain.com/oss/python/langgraph/overview)** — Build agents that can reliably handle complex tasks with our low-level agent orchestration framework",
+          "excerptStartLine": 54
+        }
+      ]
+    },
+    {
+      "entityId": "weights-and-biases-weave",
+      "changes": {
+        "description": "Weave is a Weights & Biases suite for tracking, debugging, evaluating and monitoring language-model applications.",
+        "products": [
+          "Weave"
+        ],
+        "provides": "Tools for model-application inspection, evaluation and monitoring.",
+        "howUsed": "Application teams use Weave to inspect and compare the behavior of language-model applications.",
+        "website": "https://wandb.github.io/weave"
+      },
+      "fieldEvidence": {
+        "description": {
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Weave name, purpose and documentation URL are explicitly linked in the W&B README."
+        },
+        "products": {
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Weave name, purpose and documentation URL are explicitly linked in the W&B README."
+        },
+        "provides": {
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Weave name, purpose and documentation URL are explicitly linked in the W&B README."
+        },
+        "howUsed": {
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Weave name, purpose and documentation URL are explicitly linked in the W&B README."
+        },
+        "website": {
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Weave name, purpose and documentation URL are explicitly linked in the W&B README."
+        }
+      },
+      "notes": [
+        "This is a product entry, not a second company; no separate corporate identity is asserted."
+      ],
+      "productFacts": [
+        {
+          "name": "Weave",
+          "kind": "application_observability_product",
+          "description": "Track, debug, evaluate and monitor language-model applications.",
+          "sourceIds": [
+            "software-wandb"
+          ],
+          "scope": "Same documented product as the Weave item in the company portfolio; this existing product record is not a second company.",
+          "evidenceExcerpt": "Building an LLM app? Track, debug, evaluate, and monitor LLM apps with [Weave](https://wandb.github.io/weave?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=readme), our new suite of tools for GenAI.",
+          "excerptStartLine": 19
+        }
+      ]
+    },
+    {
+      "entityId": "imerit",
+      "changes": {},
+      "fieldEvidence": {},
+      "notes": [
+        "iMerit: corporate website blocked; empty or ambiguous GitHub profile did not establish product facts.",
+        "Legacy Human feedback / Synthetic data / Data curation values repeat a category template and remain unverified.",
+        "Current type, country, founding, leadership, headquarters, named products and ownership require a primary-source review."
+      ]
+    },
+    {
+      "entityId": "appen",
+      "changes": {},
+      "fieldEvidence": {},
+      "notes": [
+        "Appen: corporate website blocked; empty or ambiguous GitHub profile did not establish product facts.",
+        "Legacy Human feedback / Synthetic data / Data curation values repeat a category template and remain unverified.",
+        "Current type, country, founding, leadership, headquarters, named products and ownership require a primary-source review."
+      ]
+    },
+    {
+      "entityId": "defined-ai",
+      "changes": {},
+      "fieldEvidence": {},
+      "notes": [
+        "Defined.ai: corporate website blocked; empty or ambiguous GitHub profile did not establish product facts.",
+        "Legacy Human feedback / Synthetic data / Data curation values repeat a category template and remain unverified.",
+        "Current type, country, founding, leadership, headquarters, named products and ownership require a primary-source review."
+      ]
+    }
+  ],
+  "blockedSources": [
+    {
+      "url": "https://scale.com",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.surgeai.com",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://imerit.net",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.sama.com",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://labelbox.com",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://appen.com",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.invisible.co",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://toloka.ai",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.defined.ai",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://huggingface.co",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.together.ai",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://fireworks.ai",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://openrouter.ai",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.langchain.com",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.pinecone.io",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://weaviate.io",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://wandb.ai",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "scaleapi/scaleapi-python",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "fw-ai/fireworks-ai-python",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.surgehq.ai",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://invisibletech.ai",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://tendem.ai",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ],
+  "limitations": [
+    "Corporate homepages returned proxy CONNECT 403. GitHub documentation supports bounded technical and product facts, not a complete company dossier.",
+    "No founding dates, leadership identities, current headquarters or new customer/supplier contracts are proposed.",
+    "Fields with proposed changes have per-field primary-source evidence; omitted fields remain unverified."
+  ]
+}

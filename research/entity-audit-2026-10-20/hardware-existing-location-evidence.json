@@ -1,0 +1,2673 @@
+{
+  "sourceFile": "research/office-locations/locations.json",
+  "sourceFileSha256": "32f33fcba7eb4e08c3113cd5e8410931046828973c1a661539a842ef9e40ccb6",
+  "records": [
+    {
+      "entityId": "advantest",
+      "name": "Advantest",
+      "locationRecordCount": 68,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.advantest.com/en/about/offices/advanfacilities/",
+        "https://www.advantest.com/en/about/offices/advantest-academy/",
+        "https://www.advantest.com/en/about/offices/advantest-france-sas/",
+        "https://www.advantest.com/en/about/offices/advantest-india-private-limited/",
+        "https://www.advantest.com/en/about/offices/advantest-israel/",
+        "https://www.advantest.com/en/about/offices/advantest-italia-srl/",
+        "https://www.advantest.com/en/about/offices/advantest-kyushu-system/",
+        "https://www.advantest.com/en/about/offices/advantest-penang-malaysia/",
+        "https://www.advantest.com/en/about/offices/advantest-philippines/",
+        "https://www.advantest.com/en/about/offices/advantest-pre-owned-solutions/",
+        "https://www.advantest.com/en/about/offices/advantest-sales-support-sdn-bhd/",
+        "https://www.advantest.com/en/about/offices/advantest-shanghai/",
+        "https://www.advantest.com/en/about/offices/advantest-suzhou/",
+        "https://www.advantest.com/en/about/offices/advantest-test-solutions/",
+        "https://www.advantest.com/en/about/offices/advantest-thailand/",
+        "https://www.advantest.com/en/about/offices/advantest-vietnam/",
+        "https://www.advantest.com/en/about/offices/ais-pakistan/",
+        "https://www.advantest.com/en/about/offices/ais/",
+        "https://www.advantest.com/en/about/offices/amerang-germany/",
+        "https://www.advantest.com/en/about/offices/america-offices/",
+        "https://www.advantest.com/en/about/offices/austin-texas/",
+        "https://www.advantest.com/en/about/offices/beijing/",
+        "https://www.advantest.com/en/about/offices/berlin-germany/",
+        "https://www.advantest.com/en/about/offices/boeblingen-germany/",
+        "https://www.advantest.com/en/about/offices/chengdu/",
+        "https://www.advantest.com/en/about/offices/china-offices/",
+        "https://www.advantest.com/en/about/offices/crea-srl/",
+        "https://www.advantest.com/en/about/offices/dresden-germany/",
+        "https://www.advantest.com/en/about/offices/duisburg-germany/",
+        "https://www.advantest.com/en/about/offices/essai/",
+        "https://www.advantest.com/en/about/offices/europe-offices/",
+        "https://www.advantest.com/en/about/offices/fort-collins-colorado/",
+        "https://www.advantest.com/en/about/offices/giheung/",
+        "https://www.advantest.com/en/about/offices/gunma-factory/",
+        "https://www.advantest.com/en/about/offices/gunma-rd-center/",
+        "https://www.advantest.com/en/about/offices/hefei/",
+        "https://www.advantest.com/en/about/offices/icheon/",
+        "https://www.advantest.com/en/about/offices/japan-offices/",
+        "https://www.advantest.com/en/about/offices/kaohsiung/",
+        "https://www.advantest.com/en/about/offices/kitakyushu-rd-center/",
+        "https://www.advantest.com/en/about/offices/korea-offices/",
+        "https://www.advantest.com/en/about/offices/kumamoto/",
+        "https://www.advantest.com/en/about/offices/nagoya/",
+        "https://www.advantest.com/en/about/offices/rd-altanova/",
+        "https://www.advantest.com/en/about/offices/richadson-texas/",
+        "https://www.advantest.com/en/about/offices/saitama-rd-center/",
+        "https://www.advantest.com/en/about/offices/san-diego-california/",
+        "https://www.advantest.com/en/about/offices/sendai-laboratory/",
+        "https://www.advantest.com/en/about/offices/shenzhen/",
+        "https://www.advantest.com/en/about/offices/somerset/",
+        "https://www.advantest.com/en/about/offices/southeast-asia-offices/",
+        "https://www.advantest.com/en/about/offices/taichung/",
+        "https://www.advantest.com/en/about/offices/tainan/",
+        "https://www.advantest.com/en/about/offices/taiwan-offices/",
+        "https://www.advantest.com/en/about/offices/wuhan/",
+        "https://www.advantest.com/en/about/offices/xiamen/",
+        "https://www.advantest.com/en/about/offices/xian/"
+      ],
+      "headquartersRecords": [],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "ajinomoto",
+      "name": "Ajinomoto Fine-Techno",
+      "locationRecordCount": 2,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.aft-website.com/en/company/access/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "ajinomoto-001",
+          "locationName": "Ajinomoto Fine-Techno Kawasaki Headquarters",
+          "address": "1-2 Suzuki-cho, Kawasaki-ku, Kawasaki, Kanagawa 210-0801, Japan",
+          "country": "Japan",
+          "status": "map_ready",
+          "sourceUrl": "https://www.aft-website.com/en/company/access/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "amd",
+      "name": "AMD",
+      "locationRecordCount": 127,
+      "existingProfileWebsite": "https://www.amd.com/en/products/accelerators/instinct/mi400.html",
+      "candidateSourceUrls": [
+        "https://www.amd.com/en/corporate/locations.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "amd-120",
+          "locationName": "AMD Santa Clara",
+          "address": "2485 Augustine Drive, Santa Clara, CA 95054, United States",
+          "country": "United States",
+          "status": "address_verified",
+          "sourceUrl": "https://www.amd.com/en/corporate/locations.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "amkor",
+      "name": "Amkor",
+      "locationRecordCount": 29,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://amkor.com/contact-us/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "amkor-001",
+          "locationName": "Amkor Corporate Headquarters",
+          "address": "2045 East Innovation Circle, Tempe, AZ 85284, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://amkor.com/contact-us/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "anji-microelectronics",
+      "name": "Anji Microelectronics",
+      "locationRecordCount": 3,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.anjimicro.com/zoujinanji.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "anji-microelectronics-001",
+          "locationName": "Anji Microelectronics Shanghai Headquarters",
+          "address": "Building T6-5, South Area, Jinqiao Comprehensive Free Trade Zone, 5001 Huadong Road, Pudong New Area, Shanghai 201201, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://www.anjimicro.com/zoujinanji.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "applied-materials",
+      "name": "Applied Materials",
+      "locationRecordCount": 116,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.appliedmaterials.com/in/en/contact/locations.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "applied-materials-003",
+          "locationName": "Applied Materials Corporate Headquarters",
+          "address": "3050 Bowers Avenue, Santa Clara, CA 95054-3299, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.appliedmaterials.com/in/en/contact/locations.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "applied-materials-029",
+          "locationName": "Applied Materials Hoofddorp",
+          "address": "Spicalaan 57, 2132 JG Hoofddorp, Netherlands",
+          "country": "Netherlands",
+          "status": "map_ready",
+          "sourceUrl": "https://www.appliedmaterials.com/in/en/contact/locations.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "applied-materials-060",
+          "locationName": "Applied Materials Shanghai Headquarters",
+          "address": "Building 7, Lane 20 Yindong Road, Zhangjiang Science City, Pudong New Area, Shanghai 201210, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://www.appliedmaterials.com/in/en/contact/locations.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "applied-materials-073",
+          "locationName": "Applied Materials Hsinchu Headquarters",
+          "address": "32 R&D Road II, Hsinchu Science Park, Hsinchu 300092, Taiwan",
+          "country": "Taiwan",
+          "status": "needs_review",
+          "sourceUrl": "https://www.appliedmaterials.com/in/en/contact/locations.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "applied-materials-083",
+          "locationName": "Applied Materials Seongnam Headquarters",
+          "address": "5th Floor, Korea Design Center, 322 Yanghyeon-ro, Bundang-gu, Seongnam-si, Gyeonggi-do 13496, South Korea",
+          "country": "South Korea",
+          "status": "needs_review",
+          "sourceUrl": "https://www.appliedmaterials.com/in/en/contact/locations.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "applied-materials-096",
+          "locationName": "Applied Materials Tokyo Headquarters",
+          "address": "Yokoso Rainbow Tower, 3-20-20 Kaigan, Minato-ku, Tokyo 108-8444, Japan",
+          "country": "Japan",
+          "status": "needs_review",
+          "sourceUrl": "https://www.appliedmaterials.com/in/en/contact/locations.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "arista",
+      "name": "Arista Networks",
+      "locationRecordCount": 15,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.arista.com/en/company/contact-us"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "arista-001",
+          "locationName": "Arista Networks Santa Clara",
+          "address": "5453 Great America Parkway, Santa Clara, CA 95054, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.arista.com/en/company/contact-us",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "arm",
+      "name": "Arm",
+      "locationRecordCount": 30,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.arm.com/company/offices"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "arm-021",
+          "locationName": "Arm Global Headquarters, Cambridge",
+          "address": "Global Headquarters: 110 Fulbourn Road, Cambridge, CB1 9NJ, United Kingdom,",
+          "country": "United Kingdom",
+          "status": "address_verified",
+          "sourceUrl": "https://www.arm.com/company/offices",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "arm-029",
+          "locationName": "Arm US Headquarters, San Jose",
+          "address": "120 Rose Orchard Way, San Jose, CA 95134-1358",
+          "country": "United States",
+          "status": "address_verified",
+          "sourceUrl": "https://www.arm.com/company/offices",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "ase",
+      "name": "ASE Technology",
+      "locationRecordCount": 24,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://ase.aseglobal.com/about-ase/contact/global-sales/",
+        "https://ase.aseglobal.com/about-ase/manufacturing-facilities/"
+      ],
+      "headquartersRecords": [],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "asm-international",
+      "name": "ASM International",
+      "locationRecordCount": 17,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.asm.com/contact-us"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "asm-international-001",
+          "locationName": "ASM Almere",
+          "address": "Versterkerstraat 8, 1322 AP Almere, Netherlands",
+          "country": "Netherlands",
+          "status": "map_ready",
+          "sourceUrl": "https://www.asm.com/contact-us",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "asml",
+      "name": "ASML",
+      "locationRecordCount": 68,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.asml.com/en/company/about-asml/locations"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "asml-020",
+          "locationName": "ASML Shanghai (China Headquarters)",
+          "address": "Jinke Road 2889, 7F/9F, Building A & 11F, Building B, Chamtime Plaza, Pudong New Area, 201203 Shanghai, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://www.asml.com/en/company/about-asml/locations",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "asml-034",
+          "locationName": "ASML Tokyo (Japan HQ)",
+          "address": "Kita Shinagawa 4\u20117\u201135, 4F, Gotenyama Trust Tower Building, 140\u20110001 Tokyo, Japan",
+          "country": "Japan",
+          "status": "address_verified",
+          "sourceUrl": "https://www.asml.com/en/company/about-asml/locations",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "asml-040",
+          "locationName": "ASML Hwaseong (South Korea HQ)",
+          "address": "47, Dongtan\u2011daero 9ga\u2011gil, Hwaseong\u2011si, Gyeonggi\u2011do, 18488 Hwaseong\u2011si, South Korea",
+          "country": "South Korea",
+          "status": "address_verified",
+          "sourceUrl": "https://www.asml.com/en/company/about-asml/locations",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "asml-044",
+          "locationName": "ASML Hsinchu (Taiwan HQ)",
+          "address": "Sec. 3, Gongdao 5th Road #1, 11F., East Dist., 300042 Hsinchu City, Taiwan",
+          "country": "Taiwan",
+          "status": "address_verified",
+          "sourceUrl": "https://www.asml.com/en/company/about-asml/locations",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "broadcom",
+      "name": "Broadcom",
+      "locationRecordCount": 92,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.broadcom.com/company/contact"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "broadcom-001",
+          "locationName": "California, Palo Alto (Corporate Headquarters)",
+          "address": "3421 Hillview Ave, Palo Alto, California, 94304, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.broadcom.com/company/contact",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "cadence",
+      "name": "Cadence",
+      "locationRecordCount": 16,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://login.cadence.com/content/cadence-www/global/en_US/home/training/emea/germany.html",
+        "https://www.cadence.com/en_US/home/company/cadence-offices.html",
+        "https://www.cadence.com/en_US/home/company/contact-us.html",
+        "https://www.cadence.com/en_US/home/training/apac/india.html",
+        "https://www.cadence.com/en_US/home/training/contact.html",
+        "https://www.cadence.com/zh_CN/home/company/contact-us-china.html",
+        "https://www.cadence.com/zh_CN/home/company/newsroom/media-contacts.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "cadence-001",
+          "locationName": "San Jose corporate headquarters",
+          "address": "2655 Seely Avenue, San Jose, CA 95134, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.cadence.com/en_US/home/company/cadence-offices.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "cadence-002",
+          "locationName": "Dublin international headquarters",
+          "address": "Block S, Eastpoint Business Park, Fairview, Dublin 3, Ireland",
+          "country": "Ireland",
+          "status": "geocoded",
+          "sourceUrl": "https://www.cadence.com/en_US/home/company/contact-us.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "cambricon",
+      "name": "Cambricon",
+      "locationRecordCount": 9,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.cambricon.com/index.php?a=lists&c=index&catid=7+nav1&m=content"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "cambricon-001",
+          "locationName": "Beijing headquarters",
+          "address": "\u5317\u4eac\u5e02\u6d77\u6dc0\u533a\u77e5\u6625\u8def7\u53f7\u81f4\u771f\u5927\u53a6D\u5ea75\u300111\u300113\u300116\u300121\u5c42, China",
+          "country": "China",
+          "status": "geocoded",
+          "sourceUrl": "https://www.cambricon.com/index.php?a=lists&c=index&catid=7+nav1&m=content",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "camtek",
+      "name": "Camtek",
+      "locationRecordCount": 10,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.camtek.com/contact/asia/",
+        "https://www.camtek.com/contact/europe/",
+        "https://www.camtek.com/contact/frt-metrology/",
+        "https://www.camtek.com/contact/headquarters/",
+        "https://www.camtek.com/contact/usa/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "camtek-001",
+          "locationName": "Camtek Migdal HaEmek Headquarters",
+          "address": "Ramat Gavriel Industrial Zone, Migdal HaEmek 2309407, Israel",
+          "country": "Israel",
+          "status": "needs_review",
+          "sourceUrl": "https://www.camtek.com/contact/headquarters/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "canon",
+      "name": "Canon",
+      "locationRecordCount": 11,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://anelva.canon/en/business/pdf/pu_detail22.pdf",
+        "https://canon.jp/biz/product/indtech/ab/en/canon-semicon",
+        "https://cnt.canon.com/about/",
+        "https://global.canon/en/corporate/location.html",
+        "https://global.canon/en/news/2022/20221006-2.html",
+        "https://semicon.canon/en/corporate/profile.html",
+        "https://www.usa.canon.com/business/industrial/contact-semiconductor-products"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "canon-001",
+          "locationName": "Canon Shimomaruko Headquarters",
+          "address": "3-30-2 Shimomaruko, Ota-ku, Tokyo 146-8501, Japan",
+          "country": "Japan",
+          "status": "geocoded",
+          "sourceUrl": "https://global.canon/en/corporate/location.html",
+          "sourceType": "company_operations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "cerebras",
+      "name": "Cerebras",
+      "locationRecordCount": 3,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://piceapp.com/gst-number-search/cerebras-systems-india-private-limited-29aadcw1936b1zg/",
+        "https://www.linkedin.com/company/cerebras-systems",
+        "https://www.sec.gov/Archives/edgar/data/2021728/000162828026044941/cbrs-20260623.htm"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "cerebras-001",
+          "locationName": "Sunnyvale headquarters",
+          "address": "1237 E Arques Avenue, Sunnyvale, CA 94085, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026044941/cbrs-20260623.htm",
+          "sourceType": "official_regulatory_filing",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "cisco",
+      "name": "Cisco",
+      "locationRecordCount": 125,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.cisco.com/site/us/en/about/contact-cisco/global-office-locations.html",
+        "https://www.cisco.com/site/us/en/about/contact-cisco/office-locations.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "cisco-003",
+          "locationName": "San Jose corporate headquarters",
+          "address": "3098 Olsen Drive, San Jose, CA 95128, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.cisco.com/site/us/en/about/contact-cisco/office-locations.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "coherent",
+      "name": "Coherent",
+      "locationRecordCount": 100,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.coherent.com/company/locations/americas/canada/coherent-canada-inc",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-beavercreek",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-bloomfield",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-budd-lake",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-champaign",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-corp-hq",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-dallas",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-detroit",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-east-granby",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-easton",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-epiworks",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-eugene",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-fremont1",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-fremont2",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-fremont3",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-hillsborough",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-horsham",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-huntsville",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-innovion",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-m-cubed",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-marlow",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-monroe",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-monrovia",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-new-port-richey",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-newark1",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-pine-brook",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-pittsburgh",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-plymouth",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-port-richey",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-richmond",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-san-jose",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-santa-clara",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-santa-rosa",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-sherman",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-starkville",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-sunnyvale",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-sunnyvale2",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-traverse-city",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-tustin",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-warren",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-warrendale",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-wilmington",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-wilsonville",
+        "https://www.coherent.com/company/locations/americas/united-states/coherent-woburn",
+        "https://www.coherent.com/company/locations/apac/australia/coherent-sydney",
+        "https://www.coherent.com/company/locations/apac/china/coherent-fuzhou",
+        "https://www.coherent.com/company/locations/apac/china/coherent-guangzhou",
+        "https://www.coherent.com/company/locations/apac/china/coherent-shanghai",
+        "https://www.coherent.com/company/locations/apac/china/coherent-shenzhen2",
+        "https://www.coherent.com/company/locations/apac/china/coherent-suzhou2",
+        "https://www.coherent.com/company/locations/apac/china/coherent-wuxi",
+        "https://www.coherent.com/company/locations/apac/india/coherent-hyderabad",
+        "https://www.coherent.com/company/locations/apac/japan/coherent-atsugi",
+        "https://www.coherent.com/company/locations/apac/japan/coherent-osaka",
+        "https://www.coherent.com/company/locations/apac/japan/coherent-tokyo",
+        "https://www.coherent.com/company/locations/apac/korea/coherent-anseong",
+        "https://www.coherent.com/company/locations/apac/korea/coherent-asan-si",
+        "https://www.coherent.com/company/locations/apac/korea/coherent-daejeon",
+        "https://www.coherent.com/company/locations/apac/korea/coherent-gumi-si",
+        "https://www.coherent.com/company/locations/apac/korea/coherent-yangsan-si",
+        "https://www.coherent.com/company/locations/apac/malaysia/coherent-ipoh",
+        "https://www.coherent.com/company/locations/apac/malaysia/coherent-penang",
+        "https://www.coherent.com/company/locations/apac/philippines/coherent-calamba-city",
+        "https://www.coherent.com/company/locations/apac/philippines/coherent-laguna",
+        "https://www.coherent.com/company/locations/apac/philippines/coherent-rosario",
+        "https://www.coherent.com/company/locations/apac/taiwan/coherent-hshinchu",
+        "https://www.coherent.com/company/locations/apac/taiwan/coherent-taipei",
+        "https://www.coherent.com/company/locations/apac/vietnam/coherent-hanoi",
+        "https://www.coherent.com/company/locations/apac/vietnam/coherent-yen-phong-district",
+        "https://www.coherent.com/company/locations/emea/belgium/coherent-gent",
+        "https://www.coherent.com/company/locations/emea/finland/coherent-tampere",
+        "https://www.coherent.com/company/locations/emea/france/coherent-lisses",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-berlin",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-eching",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-freiburg",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-gilching",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-gottingen",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-gunding",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-hamburg",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-idar-oberstein",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-kaiserslautern",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-kleinmachnow",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-luebeck",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-mainz",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-overath",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-rheinland-pfalz",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-sulzheim",
+        "https://www.coherent.com/company/locations/emea/germany/coherent-weiterstadt",
+        "https://www.coherent.com/company/locations/emea/israel/coherent-rehovot",
+        "https://www.coherent.com/company/locations/emea/italy/coherent-milan",
+        "https://www.coherent.com/company/locations/emea/italy/coherent-monza",
+        "https://www.coherent.com/company/locations/emea/netherlands/coherent-zeist",
+        "https://www.coherent.com/company/locations/emea/scotland/coherent-glasgow",
+        "https://www.coherent.com/company/locations/emea/spain/coherent-pamplona",
+        "https://www.coherent.com/company/locations/emea/sweden/coherent-kista",
+        "https://www.coherent.com/company/locations/emea/sweden/coherent-molndal",
+        "https://www.coherent.com/company/locations/emea/switzerland/coherent-belp",
+        "https://www.coherent.com/company/locations/emea/switzerland/coherent-zurich",
+        "https://www.coherent.com/company/locations/emea/united-kingdom/coherent-newton-aycliffe",
+        "https://www.coherent.com/company/locations/emea/united-kingdom/coherent-paignton"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "coherent-001",
+          "locationName": "Coherent Corp. - Global Headquarters",
+          "address": "375 Saxonburg Boulevard, Saxonburg, PA, 16056, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.coherent.com/company/locations/americas/united-states/coherent-corp-hq",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "cohu",
+      "name": "Cohu",
+      "locationRecordCount": 27,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.cohu.com/locations/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "cohu-001",
+          "locationName": "Cohu San Diego Headquarters",
+          "address": "17087 Via Del Campo, San Diego, CA 92127-1711, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.cohu.com/locations/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "coreweave",
+      "name": "CoreWeave",
+      "locationRecordCount": 7,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.coreweave.com/coreweave-company-culture",
+        "https://www.coreweave.com/news/coreweave-expands-office-in-washington-d-c"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "coreweave-002",
+          "locationName": "Livingston headquarters",
+          "address": "290 W Mt Pleasant Ave, Suite 4100, Livingston, NJ 07039, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.coreweave.com/coreweave-company-culture",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        },
+        {
+          "id": "coreweave-006",
+          "locationName": "London European headquarters",
+          "address": "Second Floor, Connexion House, Dray Walk, London E1 6QL, United Kingdom",
+          "country": "United Kingdom",
+          "status": "needs_review",
+          "sourceUrl": "https://www.coreweave.com/coreweave-company-culture",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "corning",
+      "name": "Corning",
+      "locationRecordCount": 1,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.corning.com/worldwide/en/about-us/company-profile.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "corning-001",
+          "locationName": "World headquarters",
+          "address": "One Riverfront Plaza, Corning, NY 14831, United States",
+          "country": "United States",
+          "status": "address_verified",
+          "sourceUrl": "https://www.corning.com/worldwide/en/about-us/company-profile.html",
+          "sourceType": "official_company_profile",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "dell",
+      "name": "Dell Technologies",
+      "locationRecordCount": 16,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.dell.com/en-hk/lp/legal/terms-of-sale-consumer",
+        "https://www.dell.com/en-us/lp/contact-us",
+        "https://www.dell.com/ja-jp/blog/837894/",
+        "https://www.dell.com/pl-pl/lp/contact-us"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "dell-001",
+          "locationName": "Round Rock global headquarters",
+          "address": "1 Dell Way, Round Rock, TX 78664, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.dell.com/en-us/lp/contact-us",
+          "sourceType": "official_company_contact_page",
+          "verifiedOn": "2026-08-25"
+        },
+        {
+          "id": "dell-006",
+          "locationName": "Tokyo headquarters",
+          "address": "Otemachi One Tower, 17F, 1-2-1 Otemachi, Chiyoda-ku, Tokyo 100-8159, Japan",
+          "country": "Japan",
+          "status": "map_ready",
+          "sourceUrl": "https://www.dell.com/ja-jp/blog/837894/",
+          "sourceType": "official_legal_or_subsidiary_page",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "disco",
+      "name": "DISCO",
+      "locationRecordCount": 55,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.disco.co.jp/eg/network/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "disco-001",
+          "locationName": "DISCO Japan Head Office and R&D Center",
+          "address": "13-11 Omori-Kita 2-chome, Ota-ku, Tokyo 143-8580 Japan",
+          "country": "Japan",
+          "status": "map_ready",
+          "sourceUrl": "https://www.disco.co.jp/eg/network/",
+          "sourceType": "company_locations_endpoint",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "empyrean",
+      "name": "Empyrean Technology",
+      "locationRecordCount": 8,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.empyrean.com.cn/company/contact-us.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "empyrean-001",
+          "locationName": "Beijing headquarters",
+          "address": "2F, Tower A, Wangjing Science and Technology Park, 2 Lize Middle 2nd Road, Chaoyang District, Beijing, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://www.empyrean.com.cn/company/contact-us.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "formfactor",
+      "name": "FormFactor",
+      "locationRecordCount": 13,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.formfactor.com/sales-service/contact-and-locations/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "formfactor-001",
+          "locationName": "FormFactor Livermore Headquarters",
+          "address": "7005 Southfront Road, Livermore, CA 94551, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.formfactor.com/sales-service/contact-and-locations/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "gds",
+      "name": "GDS Holdings",
+      "locationRecordCount": 6,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.gds-services.com/zh_cn/Contact.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "gds-002",
+          "locationName": "Shanghai headquarters",
+          "address": "Floors 4 and 5, Building C, Sunland International, 999 Zhouhai Road, Pudong, Shanghai 200137, China",
+          "country": "China",
+          "status": "address_verified",
+          "sourceUrl": "https://www.gds-services.com/zh_cn/Contact.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "globalfoundries",
+      "name": "GlobalFoundries",
+      "locationRecordCount": 35,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://gf.com/about-gf/contact-us/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "globalfoundries-004",
+          "locationName": "GlobalFoundries Malta",
+          "address": "400 Stonebreak Road Extension, Malta, NY 12020, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://gf.com/about-gf/contact-us/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "groq",
+      "name": "Groq",
+      "locationRecordCount": 3,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://console.groq.com/docs/legal/archive",
+        "https://groq.com/privacy-policy"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "groq-001",
+          "locationName": "San Jose office",
+          "address": "2700 Zanker Road, Suite 150, San Jose, CA 95134, United States",
+          "country": "United States",
+          "status": "needs_review",
+          "sourceUrl": "https://console.groq.com/docs/legal/archive",
+          "sourceType": "official_company_legal_document",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "h3c",
+      "name": "H3C",
+      "locationRecordCount": 93,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.h3c.com/cn/d_202405/2157260_30008_0.htm",
+        "https://www.h3c.com/en/About_Us/Contact_Us/Offices/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "h3c-001",
+          "locationName": "\u5317\u4eac\u603b\u90e8 (\u5317\u4eac\u603b\u90e8)",
+          "address": "\u5317\u4eac\u5e02\u6d77\u6dc0\u533a\u77e5\u6625\u8def7\u53f7\u9662\u81f4\u771f\u5927\u53a622\u5c42, 100191, China",
+          "country": "China",
+          "status": "address_verified",
+          "sourceUrl": "https://www.h3c.com/cn/d_202405/2157260_30008_0.htm",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        },
+        {
+          "id": "h3c-002",
+          "locationName": "\u5317\u4eac\u603b\u90e8 (\u5317\u4eac\u603b\u90e8)",
+          "address": "\u5317\u4eac\u5e02\u671d\u9633\u533a\u5e7f\u987a\u5357\u5927\u88578\u53f7\u9662\u5229\u661f\u884c\u4e2d\u5fc31\u53f7\u697c, 100102, China",
+          "country": "China",
+          "status": "address_verified",
+          "sourceUrl": "https://www.h3c.com/cn/d_202405/2157260_30008_0.htm",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "hpe",
+      "name": "HPE",
+      "locationRecordCount": 8,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.hpe.com/us/en/contact-hpe.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "hpe-001",
+          "locationName": "Spring worldwide headquarters",
+          "address": "1701 E Mossy Oaks Rd, Spring, TX 77389, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.hpe.com/us/en/contact-hpe.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "huate-gas",
+      "name": "Huate Gas",
+      "locationRecordCount": 1,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://huategas.com/en/Company/list.aspx"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "huate-gas-001",
+          "locationName": "Huate Gas Foshan Headquarters",
+          "address": "East Foot of Wentouling, Fengxi Village, Heshun, Lishui Town, Nanhai District, Foshan, Guangdong 528244, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://huategas.com/en/Company/list.aspx",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "huatian",
+      "name": "Huatian Technology",
+      "locationRecordCount": 12,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://epaper.stcn.com/att/202508/02/ZQ02B067-CR_eBook.pdf",
+        "https://sthjj.nanjing.gov.cn/ztzl/xzxkhxzzfxxgs/pcjxxgk/pk/hpnpxmgs_68867/202602/t20260206_5788587.html",
+        "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?CompanyCode=80050100&gather=1&id=12045582",
+        "https://www.ht-tech.com/",
+        "https://www.phoenix.gov/content/dam/phoenix/waterservicessite/documents/2017_IPP_Annual_Report_Final.pdf",
+        "https://www.unisemgroup.com/company-info/contact/",
+        "https://www.unisemgroup.com/investor-relations/ir-contact/",
+        "https://www.unisemgroup.com/wp-content/uploads/2024/12/2025-WW-Calendar.pdf",
+        "https://www.unisemgroup.com/wp-content/uploads/2026/05/ESD_ESD0081_USP.pdf"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "huatian-001",
+          "locationName": "Xi\u2019an headquarters and production base",
+          "address": "105 Fengcheng 5th Road, Xi\u2019an Economic and Technological Development Zone, Xi\u2019an, Shaanxi 710018, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://www.ht-tech.com/",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "hwatsing",
+      "name": "Hwatsing Technology",
+      "locationRecordCount": 1,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.hwatsing.com/relation_site.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "hwatsing-001",
+          "locationName": "Hwatsing Tianjin headquarters",
+          "address": "11 Juxing Road, Xianshuigu Town, Jinnan District, Tianjin 300350, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://www.hwatsing.com/relation_site.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "iluvatar-corex",
+      "name": "Iluvatar CoreX",
+      "locationRecordCount": 7,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://newsfile.futunn.com/public/NN-PersistNoticeAttachment/7781/20260427/12124708-0.PDF",
+        "https://www.iluvatar.com/concactus"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "iluvatar-corex-001",
+          "locationName": "Shanghai headquarters",
+          "address": "\u4e0a\u6d77\u5e02\u95f5\u884c\u533a\u9648\u884c\u516c\u8def2168\u53f73\u5e62, China",
+          "country": "China",
+          "status": "geocoded",
+          "sourceUrl": "https://www.iluvatar.com/concactus",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "intel",
+      "name": "Intel",
+      "locationRecordCount": 56,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.intel.com/content/www/us/en/privacy/intel-privacy-notice.html",
+        "https://www.intel.com/content/www/us/en/support/campus-locations.html",
+        "https://www.intel.in/content/dam/www/public/us/en/documents/corporate-information/intel-eea-bcrs.pdf"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "intel-001",
+          "locationName": "Santa Clara corporate headquarters",
+          "address": "2200 Mission College Boulevard, Santa Clara, CA 95054, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.intel.com/content/www/us/en/support/campus-locations.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "intel-foundry",
+      "name": "Intel Foundry",
+      "locationRecordCount": 12,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://cdrdv2-public.intel.com/891637/Invoice%20Requirements%20By%20Country-Region.pdf",
+        "https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2026-01/0222427-cert-qms-eng-intel-corporation-main-appendix.pdf",
+        "https://www.intel.com/content/dam/www/public/us/en/documents/corporate-information/19-4326-d-chengdu-cdat-certificate.pdf",
+        "https://www.intel.com/content/dam/www/public/us/en/documents/corporate-information/intel-bcr-eea-final-2025.pdf",
+        "https://www.intel.com/content/www/us/en/corporate-responsibility/intel-in-israel.html",
+        "https://www.intel.com/content/www/us/en/support/campus-locations.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "intel-foundry-001",
+          "locationName": "Santa Clara headquarters",
+          "address": "2200 Mission College Boulevard, Santa Clara, CA 95054, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.intel.com/content/www/us/en/support/campus-locations.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "jcet",
+      "name": "JCET",
+      "locationRecordCount": 8,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.jcetglobal.com/uploads/2023%26e5%26b9%26b4%26e9%2695%26bf%26e7%2694%26b5%26e7%26a7%2691%26e6%268a%2680ESG%26e6%268a%25a5%26e5%2591%268a-EN.PDF",
+        "https://www.jcetglobal.com/uploads/27001%26e8%268b%26b1%26e6%2696%2687-%26e6%2680%26bb%26e8%26af%2681.pdf",
+        "https://www.jcetglobal.com/uploads/SCK%20IATF16949.pdf"
+      ],
+      "headquartersRecords": [],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "jeol",
+      "name": "JEOL",
+      "locationRecordCount": 47,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.jeol.co.jp/corporate/outline/branches.html",
+        "https://www.jeol.com/corporate/outline/overseas_relative/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "jeol-001",
+          "locationName": "JEOL Akishima Headquarters and Works",
+          "address": "3-1-2 Musashino, Akishima, Tokyo 196-8558, Japan",
+          "country": "Japan",
+          "status": "geocoded",
+          "sourceUrl": "https://www.jeol.co.jp/corporate/outline/branches.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "jiangfeng-materials",
+      "name": "Jiangfeng Electronic Materials",
+      "locationRecordCount": 1,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://static.cninfo.com.cn/finalpage/2026-04-16/1225108969.PDF"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "jiangfeng-materials-001",
+          "locationName": "Jiangfeng Electronic Materials Yuyao Headquarters",
+          "address": "Anshan Road, Mingbang Technology Industrial Park, Yuyao Economic Development Zone, Ningbo, Zhejiang, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-16/1225108969.PDF",
+          "sourceType": "regulatory_filing",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "jsr",
+      "name": "JSR",
+      "locationRecordCount": 37,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.jsr.co.jp/jsr_e/company/group.html",
+        "https://www.jsr.co.jp/jsr_e/company/group_oversea.html",
+        "https://www.jsr.co.jp/jsr_e/company/office.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "jsr-001",
+          "locationName": "JSR Headquarters",
+          "address": "Shiodome Sumitomo Building, 22F, 1-9-2 Higashi-Shimbashi, Minato-ku, Tokyo 105-8640, Japan",
+          "country": "Japan",
+          "status": "map_ready",
+          "sourceUrl": "https://www.jsr.co.jp/jsr_e/company/office.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "kla",
+      "name": "KLA",
+      "locationRecordCount": 11,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.kla.com/wp-content/uploads/ISO_45001-KLA-Safety-Mgmt-Syst-2025-2028.pdf",
+        "https://www.kla.com/wp-content/uploads/KLA_Candidate_Privacy_Notice_2025.09.08_for_US.pdf"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "kla-001",
+          "locationName": "KLA Corporate Headquarters",
+          "address": "1 Technology Drive, Milpitas, CA 95035-7916, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.kla.com/wp-content/uploads/ISO_45001-KLA-Safety-Mgmt-Syst-2025-2028.pdf",
+          "sourceType": "company_certification",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "lam-research",
+      "name": "Lam Research",
+      "locationRecordCount": 158,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.lamresearch.com/company/locations/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "lam-research-132",
+          "locationName": "Fremont (Corporate HQ) (CA-01)",
+          "address": "4650 Cushing Parkway, Fremont, CA 94538",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.lamresearch.com/company/locations/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "lam-research-135",
+          "locationName": "Lam Research Corporation",
+          "address": "4650 Cushing Parkway, Fremont, CA 94538, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.lamresearch.com/company/locations/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "lenovo",
+      "name": "Lenovo",
+      "locationRecordCount": 12,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.lenovo.com/content/dam/lenovo/site-design/esg-document-library/global/corp-policies/gsc/List_of_Lenovo_Mfg_Sites_and_Suppliers.pdf",
+        "https://www.lenovo.com/ie/en/about/locations/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "lenovo-001",
+          "locationName": "Beijing headquarters",
+          "address": "Building 2, No. 10, Courtyard Xibeiwang East Road, Haidian District, Beijing 100094, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://www.lenovo.com/ie/en/about/locations/",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        },
+        {
+          "id": "lenovo-002",
+          "locationName": "Morrisville headquarters",
+          "address": "8001 Development Drive, Morrisville, NC 27560, United States",
+          "country": "United States",
+          "status": "needs_review",
+          "sourceUrl": "https://www.lenovo.com/ie/en/about/locations/",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "lumentum",
+      "name": "Lumentum",
+      "locationRecordCount": 21,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.lumentum.com/en/about-us/office-locations"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "lumentum-001",
+          "locationName": "Corporate headquarters",
+          "address": "1001 Ridder Park Drive, San Jose, CA 95131, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.lumentum.com/en/about-us/office-locations",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "marvell",
+      "name": "Marvell",
+      "locationRecordCount": 55,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000011/mrvl-20260131.htm",
+        "https://www.marvell.com/company/offices.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "marvell-001",
+          "locationName": "Wilmington corporate headquarters",
+          "address": "1000 N. West Street, Suite 1200, Wilmington, DE 19801, United States",
+          "country": "United States",
+          "status": "needs_review",
+          "sourceUrl": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000011/mrvl-20260131.htm",
+          "sourceType": "regulatory_filing",
+          "verifiedOn": "2026-08-25"
+        },
+        {
+          "id": "marvell-003",
+          "locationName": "Santa Clara U.S. headquarters",
+          "address": "5488 Marvell Lane, Santa Clara, CA 95054, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.marvell.com/company/offices.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "micron",
+      "name": "Micron",
+      "locationRecordCount": 43,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.micron.com/about/locations"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "micron-035",
+          "locationName": "Micron Boise, U.S.A.",
+          "address": "8000 S Federal Way, Boise, Idaho 83716, USA",
+          "country": "United States",
+          "status": "address_verified",
+          "sourceUrl": "https://www.micron.com/about/locations",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "nata-opto",
+      "name": "Nata Opto-electronic Materials",
+      "locationRecordCount": 2,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://sonatamaterials.com/Marketing-Network/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "nata-opto-001",
+          "locationName": "Nata Suzhou Headquarters",
+          "address": "67 Pingsheng Road, Shengpu, Suzhou Industrial Park, Suzhou, Jiangsu 215126, China",
+          "country": "China",
+          "status": "geocoded",
+          "sourceUrl": "https://sonatamaterials.com/Marketing-Network/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "nearfield-instruments",
+      "name": "Nearfield Instruments",
+      "locationRecordCount": 6,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.nearfieldinstruments.com/contact/",
+        "https://www.nearfieldinstruments.com/portfolio/nearfield-instruments-establishes-korean-subsidiary/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "nearfield-instruments-001",
+          "locationName": "Nearfield Instruments Rotterdam Headquarters",
+          "address": "Vareseweg 5, 3047 AT Rotterdam, Netherlands",
+          "country": "Netherlands",
+          "status": "geocoded",
+          "sourceUrl": "https://www.nearfieldinstruments.com/contact/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "nexchip",
+      "name": "Nexchip Semiconductor",
+      "locationRecordCount": 1,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.nexchip.com.cn/zh-cn/About/Contact"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "nexchip-001",
+          "locationName": "Hefei headquarters and wafer-fab campus",
+          "address": "88 Xifeihe Road, Hefei Comprehensive Bonded Zone, Xinzhan District, Hefei, Anhui 230012, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://www.nexchip.com.cn/zh-cn/About/Contact",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "nikon",
+      "name": "Nikon",
+      "locationRecordCount": 15,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.nikon.com/business/semi/network/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "nikon-001",
+          "locationName": "Nikon Tokyo",
+          "address": "1-5-20 Nishioi, Shinagawa-ku, Tokyo 140-8601, Japan",
+          "country": "Japan",
+          "status": "geocoded",
+          "sourceUrl": "https://www.nikon.com/business/semi/network/",
+          "sourceType": "company_business_network",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "nova",
+      "name": "Nova",
+      "locationRecordCount": 10,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.novami.com/nova-office/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "nova-001",
+          "locationName": "Nova Rehovot Headquarters",
+          "address": "5 David Fikes Street, Rehovot 7632805, Israel",
+          "country": "Israel",
+          "status": "needs_review",
+          "sourceUrl": "https://www.novami.com/nova-office/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "nsig",
+      "name": "National Silicon Industry Group",
+      "locationRecordCount": 4,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://static.sse.com.cn/stock/disclosure/announcement/c/202506/688126_20250626_OSBF.pdf",
+        "https://www.nsig.com/en/contact"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "nsig-001",
+          "locationName": "National Silicon Industry Group Office",
+          "address": "1000 Yunshui Road, Nicheng, Pudong New Area, Shanghai 201306, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://static.sse.com.cn/stock/disclosure/announcement/c/202506/688126_20250626_OSBF.pdf",
+          "sourceType": "regulatory_filing",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "nvidia",
+      "name": "NVIDIA",
+      "locationRecordCount": 10,
+      "existingProfileWebsite": "https://www.nvidia.com/en-us/data-center/technologies/rubin/",
+      "candidateSourceUrls": [
+        "https://developer.download.nvidia.com/drive/docs/drive-agx-thor-regulatory-compliance-and-safety-guide-sku10.pdf",
+        "https://images.nvidia.com/aem-dam/Solutions/design-visualization/quadro-product-literature/rtx-pro-blackwell-online-qsg-210x148mm-20250718-r14.pdf",
+        "https://images.nvidia.com/content/geforce/technologies/frameview/frameview-1-7-user-guide-web-version.pdf",
+        "https://www.nvidia.com/content/dam/en-zz/Solutions/support/VisitoMap.pdf"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "nvidia-001",
+          "locationName": "Santa Clara Endeavor headquarters",
+          "address": "2788 San Tomas Expressway, Santa Clara, CA 95051, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.nvidia.com/content/dam/en-zz/Solutions/support/VisitoMap.pdf",
+          "sourceType": "official_company_campus_map",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "onto-innovation",
+      "name": "Onto Innovation",
+      "locationRecordCount": 26,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://ontoinnovation.com/locations/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "onto-innovation-020",
+          "locationName": "Onto Innovation Headquarters",
+          "address": "16 Jonspin Road, Wilmington, MA 01887",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://ontoinnovation.com/locations/",
+          "sourceType": "company_locations_endpoint",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "park-systems",
+      "name": "Park Systems",
+      "locationRecordCount": 17,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.parksystems.com/en/company/locations"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "park-systems-001",
+          "locationName": "Park Systems Global Headquarters",
+          "address": "150 Gwacheon-daero 12-gil, Gwacheon-si, Gyeonggi-do 13824, South Korea",
+          "country": "South Korea",
+          "status": "map_ready",
+          "sourceUrl": "https://www.parksystems.com/en/company/locations",
+          "sourceType": "company_locations_endpoint",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "qualcomm",
+      "name": "Qualcomm",
+      "locationRecordCount": 205,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.qualcomm.com/company/facilities/offices"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "qualcomm-165",
+          "locationName": "San Diego (N)",
+          "address": "5775 Morehouse Dr., San Diego, CA, 92121, USA",
+          "country": "USA",
+          "status": "map_ready",
+          "sourceUrl": "https://www.qualcomm.com/company/facilities/offices",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "raith",
+      "name": "Raith",
+      "locationRecordCount": 12,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://raith.com/company/locations-and-representatives/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "raith-001",
+          "locationName": "Raith Dortmund Headquarters",
+          "address": "Konrad-Adenauer-Allee 8, 44263 Dortmund, Germany",
+          "country": "Germany",
+          "status": "map_ready",
+          "sourceUrl": "https://raith.com/company/locations-and-representatives/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "samsung-foundry",
+      "name": "Samsung Foundry",
+      "locationRecordCount": 42,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://semiconductor.samsung.com/about-us/locations/",
+        "https://semiconductor.samsung.com/support/contact-info/global-network/americas/",
+        "https://semiconductor.samsung.com/support/contact-info/global-network/china/",
+        "https://semiconductor.samsung.com/support/contact-info/global-network/europe-middle-east-africa/",
+        "https://semiconductor.samsung.com/support/contact-info/global-network/japan/",
+        "https://semiconductor.samsung.com/support/contact-info/global-network/singapore/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "samsung-semiconductor-041",
+          "locationName": "Samsung Semiconductor San Jose",
+          "address": "3655 North First Street, San Jose, California 95134-1713, USA",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://semiconductor.samsung.com/about-us/locations/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "screen",
+      "name": "SCREEN Holdings",
+      "locationRecordCount": 21,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.screen.co.jp/en/about/organization",
+        "https://www.screen.co.jp/spe/en/company/network/domestic"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "screen-001",
+          "locationName": "SCREEN Kyoto Head Office",
+          "address": "Tenjinkita-machi 1-1, Teranouchi-agaru 4-chome, Horikawa-dori, Kamigyo-ku, Kyoto 602-8585, Japan",
+          "country": "Japan",
+          "status": "needs_review",
+          "sourceUrl": "https://www.screen.co.jp/spe/en/company/network/domestic",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "screen-011",
+          "locationName": "SCREEN Santa Clara Head Office",
+          "address": "3151 Jay Street, Suite 210, Santa Clara, CA 95054, United States",
+          "country": "United States",
+          "status": "needs_review",
+          "sourceUrl": "https://www.screen.co.jp/en/about/organization",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "screen-012",
+          "locationName": "SCREEN Ismaning Head Office",
+          "address": "Fraunhoferstrasse 7, 85737 Ismaning, Germany",
+          "country": "Germany",
+          "status": "map_ready",
+          "sourceUrl": "https://www.screen.co.jp/en/about/organization",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "screen-019",
+          "locationName": "SCREEN Hsinchu",
+          "address": "311 Kao-tsui Road, Hsinchu 300070, Taiwan",
+          "country": "Taiwan",
+          "status": "needs_review",
+          "sourceUrl": "https://www.screen.co.jp/en/about/organization",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "shin-etsu",
+      "name": "Shin-Etsu Chemical",
+      "locationRecordCount": 75,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.shinetsu.co.jp/en/company/network/office/",
+        "https://www.shinetsu.co.jp/en/company/network/plant/",
+        "https://www.shinetsu.co.jp/en/company/network/worldwide/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "shin-etsu-001",
+          "locationName": "Shin-Etsu Head Office",
+          "address": "Marunouchi Eiraku Building, 4-1 Marunouchi 1-chome, Chiyoda-ku, Tokyo 100-0005, Japan",
+          "country": "Japan",
+          "status": "needs_review",
+          "sourceUrl": "https://www.shinetsu.co.jp/en/company/network/office/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "sk-hynix",
+      "name": "SK hynix",
+      "locationRecordCount": 31,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.skhynix.com/company/UI-FR-CP06/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "sk-hynix-003",
+          "locationName": "SK hynix Headquarters",
+          "address": "Xiyong Comprehensive Bonded Zone B Block v2-4/02, Shapingba district, Chongqing, China (400030)",
+          "country": "China",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-004",
+          "locationName": "SK hynix Headquarters",
+          "address": "No. 109, Huaihe Road East, Dalian Economic & Technical Development Area, Liaoning",
+          "country": "China",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-007",
+          "locationName": "SK hynix Wuxi Headquarters (Sales office)",
+          "address": "Lot K7, Wuxi High-tech Zone Comprehensive Bonded Zone in New District, Wuxi, Jiangsu Province, China (214028)",
+          "country": "China",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-010",
+          "locationName": "SK hynix Headquarters",
+          "address": "Main Airport Center, Unterschweinstiege 2-14, Frankfurt am Main, Germany (60549)",
+          "country": "Germany",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-011",
+          "locationName": "SK hynix Headquarters",
+          "address": "Room 2202, 22/F, Lee Garden Three, 1 Sunning Road, Causeway Bay, Hong Kong",
+          "country": "Hong Kong",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-012",
+          "locationName": "SK hynix Headquarters",
+          "address": "Unit No. 3D, Uppals Plaza M6, 3rd Floor, Plot No. 6 District Centre, Jasola, New Delhi, INDIA (110025)",
+          "country": "India",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-014",
+          "locationName": "SK hynix Headquarters",
+          "address": "23F, Shiroyama Trust Tower,4-3-1 Toranomon, Minatoku, Tokyo, Japan (105-6023)",
+          "country": "Japan",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-017",
+          "locationName": "SK hynix Headquarters",
+          "address": "Juliusza Slowackiego str., 224, 4th floor, 80-298 Gdansk, Poland",
+          "country": "Poland",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-018",
+          "locationName": "SK hynix Headquarters",
+          "address": "9 Straits View #12-07/12 Marina One West Tower, Singapore (018937)",
+          "country": "Singapore",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-021",
+          "locationName": "SK hynix Icheon Campus (Headquarters)",
+          "address": "2091, Gyeongchung-daero, Bubal-eub, Icheon-si, Gyeonggi-do, Korea (17336)",
+          "country": "South Korea",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-023",
+          "locationName": "SK hynix Headquarters",
+          "address": "10F. No.308, Zhifu Rd., Zhongshan Dist., Taipei City, Taiwan (10466)",
+          "country": "Taiwan",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-024",
+          "locationName": "SK hynix Headquarters",
+          "address": "6F-1, No. 6, Taiyuen 1st St. (Taiyuen Hi-Tech Industrial Park), Zhubei City, Hsinchu County 30288, Taiwan",
+          "country": "Taiwan",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-025",
+          "locationName": "SK hynix Headquarters",
+          "address": "Unit 4, Horizon Business Village, 1 Brooklands Road, Weybridge, Surrey KT13 0TJ",
+          "country": "United Kingdom",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-027",
+          "locationName": "SK hynix Headquarters",
+          "address": "3101 North 1st Street, San Jose, USA (95134)",
+          "country": "United States",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "sk-hynix-028",
+          "locationName": "SK hynix Headquarters",
+          "address": "3103 North 1st Street, San Jose, CA 95134 USA",
+          "country": "United States",
+          "status": "address_verified",
+          "sourceUrl": "https://www.skhynix.com/company/UI-FR-CP06/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "smee",
+      "name": "Shanghai Micro Electronics Equipment",
+      "locationRecordCount": 1,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.smee.com.cn/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "smee-001",
+          "locationName": "SMEE Shanghai headquarters",
+          "address": "1525 Zhangdong Road, Zhangjiang High-Tech Park, Pudong New Area, Shanghai, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://www.smee.com.cn/",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "smic",
+      "name": "SMIC",
+      "locationRecordCount": 9,
+      "existingProfileWebsite": "https://www.smics.com/en",
+      "candidateSourceUrls": [
+        "https://www.smics.com/uploads/1_%26e4%26b8%26ad%26e8%268a%26af%26e5%269b%26bd%26e9%2699%2685%26e7%26a4%26be%26e4%26bc%269a%26e8%26b4%26a3%26e4%26bb%26bb%26e6%268a%26a5%26e5%2691%268a-%26e8%268b%26b1%26e6%2696%2687%26e6%268c%2682%26e7%26bd%2691%26e7%2689%26887.26-5.pdf"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "smic-001",
+          "locationName": "SMIC Shanghai Headquarters",
+          "address": "No. 18 Zhangjiang Road, Pudong New Area, Shanghai 201203, China",
+          "country": "China",
+          "status": "needs_review",
+          "sourceUrl": "https://www.smics.com/uploads/1_%26e4%26b8%26ad%26e8%268a%26af%26e5%269b%26bd%26e9%2699%2685%26e7%26a4%26be%26e4%26bc%269a%26e8%26b4%26a3%26e4%26bb%26bb%26e6%268a%26a5%26e5%2691%268a-%26e8%268b%26b1%26e6%2696%2687%26e6%268c%2682%26e7%26bd%2691%26e7%2689%26887.26-5.pdf",
+          "sourceType": "company_report",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "sophgo",
+      "name": "SOPHGO",
+      "locationRecordCount": 1,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.sophgo.com/about-us/index.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "sophgo-001",
+          "locationName": "Beijing headquarters",
+          "address": "\u5317\u4eac\u5e02\u6d77\u6dc0\u533a\u4e30\u8c6a\u4e1c\u8def9\u53f7\u96626\u53f7\u697c, China",
+          "country": "China",
+          "status": "geocoded",
+          "sourceUrl": "https://www.sophgo.com/about-us/index.html",
+          "sourceType": "official_company_contact_page",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "sumco",
+      "name": "SUMCO",
+      "locationRecordCount": 10,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.sumcosi.com/english/corporate/profile.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "sumco-001",
+          "locationName": "SUMCO Head Office and Tokyo Sales",
+          "address": "1-2-1 Shibaura, Minato-ku, Tokyo 105-8634, Japan",
+          "country": "Japan",
+          "status": "geocoded",
+          "sourceUrl": "https://www.sumcosi.com/english/corporate/profile.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "supermicro",
+      "name": "Supermicro",
+      "locationRecordCount": 12,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.supermicro.com/en/about/contact"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "supermicro-001",
+          "locationName": "Supermicro Corporate Headquarters",
+          "address": "980 Rock Avenue, San Jose, CA 95131, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.supermicro.com/en/about/contact",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "supermicro-004",
+          "locationName": "Supermicro EMEA Headquarters",
+          "address": "Het Sterrenbeeld 28, 5215 ML 's-Hertogenbosch, The Netherlands",
+          "country": "The Netherlands",
+          "status": "geocoded",
+          "sourceUrl": "https://www.supermicro.com/en/about/contact",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "supermicro-006",
+          "locationName": "Supermicro APAC Headquarters",
+          "address": "3F, No. 150, Jian 1st Road, Zhonghe District, New Taipei City 235, Taiwan",
+          "country": "Taiwan",
+          "status": "needs_review",
+          "sourceUrl": "https://www.supermicro.com/en/about/contact",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "synopsys",
+      "name": "Synopsys",
+      "locationRecordCount": 95,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.synopsys.com/company/contact-synopsys/office-locations.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "synopsys-095",
+          "locationName": "Sunnyvale worldwide headquarters",
+          "address": "675 Almanor Ave, Sunnyvale, CA 94085, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.synopsys.com/company/contact-synopsys/office-locations.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "tenstorrent",
+      "name": "Tenstorrent",
+      "locationRecordCount": 12,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://open.tenstorrent.com/about"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "tenstorrent-004",
+          "locationName": "Austin headquarters",
+          "address": "7717 Southwest Parkway, Building 3, Suite 200, Austin, TX 78735, United States",
+          "country": "United States",
+          "status": "needs_review",
+          "sourceUrl": "https://open.tenstorrent.com/about",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "teradyne",
+      "name": "Teradyne",
+      "locationRecordCount": 51,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.teradyne.com/ja/company/contact-teradyne/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "teradyne-009",
+          "locationName": "Teradyne Corporate Headquarters",
+          "address": "600 Riverpark Drive, North Reading, MA 01864, United States",
+          "country": "United States",
+          "status": "map_ready",
+          "sourceUrl": "https://www.teradyne.com/ja/company/contact-teradyne/",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "tokyo-electron",
+      "name": "Tokyo Electron",
+      "locationRecordCount": 102,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.tel.com/about/locations/tea.html",
+        "https://www.tel.com/about/locations/ted.html",
+        "https://www.tel.com/about/locations/tee.html",
+        "https://www.tel.com/about/locations/tek.html",
+        "https://www.tel.com/about/locations/tel_us.html",
+        "https://www.tel.com/about/locations/telbp.html",
+        "https://www.tel.com/about/locations/telin.html",
+        "https://www.tel.com/about/locations/telmsl.html",
+        "https://www.tel.com/about/locations/telsolar.html",
+        "https://www.tel.com/about/locations/tep.html",
+        "https://www.tel.com/about/locations/tes.html",
+        "https://www.tel.com/about/locations/tet.html",
+        "https://www.tel.com/about/locations/tey.html",
+        "https://www.tel.com/about/locations/tfe.html",
+        "https://www.tel.com/about/locations/tkl.html",
+        "https://www.tel.com/about/locations/tks.html",
+        "https://www.tel.com/about/locations/tmea.html",
+        "https://www.tel.com/about/locations/tml.html",
+        "https://www.tel.com/about/locations/tmy.html",
+        "https://www.tel.com/about/locations/tsi.html",
+        "https://www.tel.com/about/locations/tsl.html",
+        "https://www.tel.com/about/locations/ttad.html",
+        "https://www.tel.com/about/locations/tyl.html",
+        "https://www.tel.com/about/summary/index.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "tokyo-electron-001",
+          "locationName": "Tokyo Electron (Kunshan) Ltd. Head Office",
+          "address": "No.8, Dongguang Road, Kunshan Economic & Technical Development Zone Jiangsu 215300, China",
+          "country": "China",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tks.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-002",
+          "locationName": "Tokyo Electron (Shanghai) Logistic Center Ltd. Head Office",
+          "address": "PART 101A, B and 201, No.211 North Fute Road,, China (Shanghai) Pilot Free Trade Zone,, Shanghai 200131 China",
+          "country": "China",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tsl.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-011",
+          "locationName": "Tokyo Electron (Shanghai) Ltd. Head Office",
+          "address": "No.555 Gaosi Rd., Zhangjiang Hi-Tech Park, Shanghai, 201203 China",
+          "country": "China",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tes.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-015",
+          "locationName": "Tokyo Electron India Pvt. Ltd. Head Office",
+          "address": "7, Barakhamba Road, New Delhi, Delhi, India 110001",
+          "country": "India",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/telin.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-016",
+          "locationName": "TEL Magnetic Solutions Ltd. Head Office",
+          "address": "Unit J, Furry Park Industrial Estate, Santry, Dublin 9 Ireland",
+          "country": "Ireland",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/telmsl.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-019",
+          "locationName": "Tokyo Electron Israel Ltd. Head Office",
+          "address": "1 Leshem street 1st Floor, West Entrance, Gat 2000, Kiryat Gat Israel.",
+          "country": "Israel",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tey.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-034",
+          "locationName": "Tokyo Electron Device Ltd. Head Office",
+          "address": "Shibuya Sakura Stage SHIBUYA Tower,, 1-1-1 Sakuragaoka-cho, Shibuya-ku, Tokyo 150-6234",
+          "country": "Japan",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/ted.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-044",
+          "locationName": "Tokyo Electron Global Headquarters",
+          "address": "Akasaka Biz Tower, 3-1 Akasaka 5-chome,, Minato-ku, Tokyo 107-6325 tel +81-3-5561-7000",
+          "country": "Japan",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/summary/index.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-056",
+          "locationName": "Tokyo Electron (Malaysia) Sdn. Bhd. Head Office",
+          "address": "Unit Nos. 1-1-5, 1-1-6, 1-1-7 & 1-1-10, Jalan Bayan Indah, Queens Waterfront Q1,, 11900 Bayan Lepas, Penang, Malaysia",
+          "country": "Malaysia",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tmy.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-058",
+          "locationName": "Tokyo Electron Philippines Semiconductor Support Inc. Head Office",
+          "address": "Room 321, Philippine Social Science Center, 372-C Commonwealth Ave., Diliman, Quezon City, Second District, National Capital Region, Philippines 1101",
+          "country": "Philippines",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tep.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-061",
+          "locationName": "Tokyo Electron Singapore Pte. Ltd. Head Office",
+          "address": "1 Paya Lebar Link, #14-05 PLQ 2, Paya Lebar Quarter, Singapore 408533",
+          "country": "Singapore",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tsi.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-069",
+          "locationName": "Tokyo Electron Korea Ltd. Head Office",
+          "address": "56, Samsung 1-ro 1-gil, Dongtan-gu, , Hwaseong-si, Gyeonggi-do, 18449 Korea",
+          "country": "South Korea",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tek.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-070",
+          "locationName": "TEL Solar Services AG Head Office",
+          "address": "A) For Laser Systems: Corning Laser Technologies GmbH, Robert-Stirling-Ring 2, DE-82152 Krailling, Germany, Contact e-mail, , B) For all other TEL Solar equipment (incl. Display (FTP) equipment): Evatec AG, Hauptstrasse 1a CH-9477 Truebbach, Switzerland, Contact e-mail",
+          "country": "Switzerland",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/telsolar.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-080",
+          "locationName": "Tokyo Electron Taiwan Ltd. Head Office",
+          "address": "No.7, Dusing Rd., Hsinchu Science Park, Hsin-chu City 300096, Taiwan, R.O.C.",
+          "country": "Taiwan",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tet.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-083",
+          "locationName": "Tokyo Electron Europe Ltd. Head Office",
+          "address": "Pioneer, Crawley Business Quarter,, Fleming Way, Crawley,, West Sussex, RH10 9QL, England U.K.",
+          "country": "United Kingdom",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tee.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-085",
+          "locationName": "TEL Manufacturing and Engineering of America, Inc. Head Office",
+          "address": "3455 Lyman Boulevard, Chaska, MN 55318-3052, U.S.A.",
+          "country": "United States",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tmea.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-086",
+          "locationName": "TEL Technology & AI Design Inc. Head Office",
+          "address": "3011 North First St,, San Jose, CA 95134 U.S.A.",
+          "country": "United States",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/ttad.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        },
+        {
+          "id": "tokyo-electron-100",
+          "locationName": "Tokyo Electron America, Inc. Head Office",
+          "address": "401 S 1st St, Suite 900,, Austin, TX 78704 U.S.A.",
+          "country": "United States",
+          "status": "address_verified",
+          "sourceUrl": "https://www.tel.com/about/locations/tea.html",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "tongfu",
+      "name": "Tongfu Microelectronics",
+      "locationRecordCount": 9,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://en.tfme.com/contact.html",
+        "https://tf-amd.com.my/contact/",
+        "https://www.suzhou.gov.cn/szsrmzf/szyw/202411/04aa4b3c180a4b5f824540d5aaef9853.shtml"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "tongfu-001",
+          "locationName": "Nantong headquarters",
+          "address": "288 Chongchuan Road, Nantong, Jiangsu 226004, China",
+          "country": "China",
+          "status": "geocoded",
+          "sourceUrl": "https://en.tfme.com/contact.html",
+          "sourceType": "official_company_directory",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "tsmc",
+      "name": "TSMC",
+      "locationRecordCount": 15,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.tsmc.com/english/contact-us"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "tsmc-001",
+          "locationName": "TSMC Corporate Headquarters",
+          "address": "No. 8, Li-Hsin Road 6, Hsinchu Science Park, Hsinchu 300-096, Taiwan",
+          "country": "Taiwan",
+          "status": "needs_review",
+          "sourceUrl": "https://www.tsmc.com/english/contact-us",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "umc",
+      "name": "UMC",
+      "locationRecordCount": 7,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.umc.com/en/Html/worldwide_contacts"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "umc-001",
+          "locationName": "UMC Headquarters",
+          "address": "No. 3, Li-Hsin 2nd Road, Hsinchu Science Park, Hsinchu, Taiwan",
+          "country": "Taiwan",
+          "status": "geocoded",
+          "sourceUrl": "https://www.umc.com/en/Html/worldwide_contacts",
+          "sourceType": "company_locations_page",
+          "verifiedOn": "2026-08-24"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "vertiv",
+      "name": "Vertiv",
+      "locationRecordCount": 6,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.vertiv.com/en-us/contacts/"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "vertiv-001",
+          "locationName": "Global headquarters",
+          "address": "505 N Cleveland Ave, Westerville, OH 43082, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.vertiv.com/en-us/contacts/",
+          "sourceType": "official_company_contact_page",
+          "verifiedOn": "2026-08-25"
+        },
+        {
+          "id": "vertiv-006",
+          "locationName": "Americas headquarters",
+          "address": "610 Executive Campus Drive, Westerville, OH 43082, United States",
+          "country": "United States",
+          "status": "geocoded",
+          "sourceUrl": "https://www.vertiv.com/en-us/contacts/",
+          "sourceType": "official_company_contact_page",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "vnet",
+      "name": "VNET Group",
+      "locationRecordCount": 1,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.vnet.com/en/contactus.html"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "vnet-001",
+          "locationName": "Beijing headquarters",
+          "address": "Guanjie Building Southeast, 1st Floor, 10 Jiuxianqiao East Road, Chaoyang District, Beijing 100016, China",
+          "country": "China",
+          "status": "address_verified",
+          "sourceUrl": "https://www.vnet.com/en/contactus.html",
+          "sourceType": "official_company_contact_page",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    },
+    {
+      "entityId": "xfusion",
+      "name": "xFusion",
+      "locationRecordCount": 15,
+      "existingProfileWebsite": "",
+      "candidateSourceUrls": [
+        "https://www.xfusion.com/en/about",
+        "https://www.xfusion.com/en/contact-us",
+        "https://www.xfusion.com/wp-content/uploads/2024/11/FusionDirector-Intelligent-Management-Software-Technical-White-Paper.pdf"
+      ],
+      "headquartersRecords": [
+        {
+          "id": "xfusion-001",
+          "locationName": "Singapore headquarters",
+          "address": "Mapletree Business City, 20E Pasir Panjang Road #06-24, Singapore 117439",
+          "country": "Singapore",
+          "status": "map_ready",
+          "sourceUrl": "https://www.xfusion.com/en/contact-us",
+          "sourceType": "official_company_directory_with_map_coordinates",
+          "verifiedOn": "2026-08-25"
+        }
+      ],
+      "evidenceOrigin": "existing_record",
+      "inspectedOn": "2026-10-20",
+      "freshlyVerified": false,
+      "limitations": "Recovered from prior atlas research, not re-retrieved corporate source content. HQ labels can denote regional/subsidiary headquarters or historical addresses; map status is not current corporate verification. Do not collapse to one current corporate-HQ field."
+    }
+  ]
+}

@@ -7,6 +7,7 @@ following the append-only [update workflow](../docs/updates.md).
 
 ## The files
 
+- `entity-facts.json` — field-specific and product-specific evidence, with source excerpts and dates; includes historical location references without promoting them to current headquarters. See the [company information workflow](../docs/entity-information.md).
 - `updates.json` — reviewed events, pinned sources, scoped claim versions and separately assessed potential effects; the event ledger is independent of illustrative atlas relationships
 - `entities.csv` — every searchable node and its profile text
 - `catalog-reviews.csv` — entity-level review dates, the precise scope checked, and primary documentation URLs; a review does not imply that all corporate facts or deployments were audited
